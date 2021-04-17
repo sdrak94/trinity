@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
 <skill id="5600" levels="1" name="Betrayal Mark">
-  <set name="power" val="15100"/>
+  <set name="power" val="12100"/>
   <set name="staticPower" val="true"/>
   <set name="baseCritRate" val="0"/>
   <set name="SSBoost" val="2"/>

@@ -1119,7 +1119,7 @@
   </for>
 </skill>
 <skill id="4276" levels="5" name="Weak Point against Bow/Crossbow Weapons">
-  <table name="#Tab-bowVuln"> 1.1 1.15 1.2 1.35 1.40 </table>
+  <table name="#Tab-bowVuln"> 1.1 1.15 1.25 1.40 1.5 </table>
   <set name="target" val="TARGET_SELF"/>
   <set name="skillType" val="BUFF"/>
   <set name="desc" val="Receives more damage from bow/crossbow"/>

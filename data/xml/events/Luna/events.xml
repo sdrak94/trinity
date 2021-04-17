@@ -14,7 +14,7 @@
 	-->
 		<schedule>
 			<eventsPool>
-				<pool bucoPool="Domination,CTF,TeamVsTeam,DM,HuntingGrounds" />
+				<pool bucoPool="Domination,CTF,TeamVsTeam,HuntingGrounds" />
 			</eventsPool>
 			<!-- Sunday = 1, Saturday = 7 -->
 			<day day="1"> <!-- Sunday -->
@@ -140,14 +140,14 @@
 				<event eventId="random" time="16:30" />
 				<event eventId="SiegeEvent" time="18:00" />
 				<event eventId="random" time="19:30" />
-				<event eventId="SiegeEvent" time="21:00" />
+				<!--<event eventId="SiegeEvent" time="21:00" /> -->
 				<event eventId="random" time="22:30" />
 			</day>
 		</schedule>
-		<event id="0" Type="Domination" Name="Keucereus Base" Description="Event Description" regAll="true" JoinLocName="Gludin Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
-			<spawnRegNpc npcId="865000" spawnX="-81958" spawnY="150844" spawnZ="-3130" />
+		<event id="0" Type="Domination" Name="Keucereus Base" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<doublePvPs doublePvPs="true"/>
-			<timers joinTime="1" eventTime="15" />
+			<timers joinTime="15" eventTime="15" />
 			<players minPlayers="2" maxPlayers="500" />
 			<teams>
 				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
@@ -331,9 +331,9 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="3" Type="TeamVsTeam" Name="Hellbound Quary" Description="Event Description" regAll="true" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="3" Type="TeamVsTeam" Name="Hellbound Quary" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
-			<timers joinTime="1" eventTime="15" />
+			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
 			<players minPlayers="2" maxPlayers="500" />
 			<teams>
@@ -702,68 +702,7 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="10" Type="SiegeEvent" Name="Floran Fortress" Description="Event Description" regAll="false" JoinLocName="Primeval Island" instanceId="1" respawnDelay="10" respawnDelayMul="2" minLvL="85" maxLvL="95">
-			<spawnRegNpc npcId="865000" spawnX="10449" spawnY="-24878" spawnZ="-3661" />>
-			<timers joinTime="15" eventTime="20" />
-			<doublePvPs doublePvPs="true"/>
-			<players minPlayers="2" maxPlayers="500" />
-			<teams>
-				<team id="0" name="Green" nameColor="0x62FF76" titleColor="0x949494"/>
-				<team id="1" name="Orange" nameColor="0x1d7ce7" titleColor="0x949494"/>
-			</teams>
-			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
-			
-			<startType type="assault" />
-			<sortType type="pvp" />
-			<sealers sealers="3" />
-			
-			<centerLoc spawn="5252,149756,-2730"  range="20000"/>
-			<flagLoc flagId="35233" spawn="5606,149756,-1967" />
-			<teamSpawns>
-				<spawn teamId="Green" spawn="11476,150766,-3310" />
-				<spawn teamId="Orange" spawn="5252,149756,-2730" />
-			</teamSpawns>
-			<doors>
-				<door doorId="20220021" />
-				<door doorId="20220026" />
-				<door doorId="20220022" />
-				<door doorId="20220023" />
-				<door doorId="20220024" />
-				<door doorId="20220025" />
-			</doors>
-			<fences>
-				<fence fenceId="24180021" />
-				<fence fenceId="24180020" />
-			</fences>
-			<npcSpawns>
-				<spawn npcId="90001" spawnX="10973" spawnY="150822" spawnZ="-3294" />
-				<spawn npcId="90001" spawnX="5051" spawnY="149764" spawnZ="-2730" />
-			</npcSpawns>
-			<rewards>
-				<winner>
-					<reward itemId="6392" ammount="15" chance="100" static="false"/>
-					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
-				</winner>
-				<loser>
-					<reward itemId="6392" ammount="8" chance="100" static="false"/>
-					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
-				</loser>
-				<tie>
-					<reward itemId="6392" ammount="10" chance="100" static="false"/>
-					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
-				</tie>
-			</rewards>
-		</event>
-		<event id="11" Type="DM" Name="Hunter's Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="10" Type="DM" Name="Hunter's Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -818,7 +757,7 @@
 				</loser>
 			</rewards>
 		</event>
-		<event id="12" Type="HuntingGrounds" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="11" Type="HuntingGrounds" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -869,7 +808,7 @@
 				</tie>
 			</rewards>
 		</event>	
-		<event id="13" Type="CTF" Name="MoS" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="12" Type="CTF" Name="MoS" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -927,7 +866,7 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="14" Type="TeamVsTeam" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="13" Type="TeamVsTeam" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -978,7 +917,7 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="15" Type="CTF" Name="Dwarven Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="14" Type="CTF" Name="Dwarven Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -1036,7 +975,7 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="16" Type="CTF" Name="Cruma Tower" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="15" Type="CTF" Name="Cruma Tower" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<timers joinTime="15" eventTime="15" />
 			<doublePvPs doublePvPs="true"/>
@@ -1093,11 +1032,12 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="17" Type="Domination" Name="Anomic Foundry" Description="Event Description" regAll="true" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+
+		<event id="16" Type="Domination" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<doublePvPs doublePvPs="true"/>
-			<timers joinTime="1" eventTime="15" />
-			<players minPlayers="1" maxPlayers="500" />
+			<timers joinTime="15" eventTime="15" />
+			<players minPlayers="2" maxPlayers="500" />
 			<teams>
 				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
 				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
@@ -1116,16 +1056,18 @@
 				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
 			</npcSpawns>
 			<fences>
-				<fence fenceId="268449135" />
-				<fence fenceId="268449169" />
-				<fence fenceId="268449170" />
-				<fence fenceId="268449171" />
-				<fence fenceId="268449172" />
-				<fence fenceId="268449173" />
-				<fence fenceId="268449174" />
-				<fence fenceId="268482201" />
-				<fence fenceId="268482203" />
-				<fence fenceId="268482304" />
+				<fence fenceId="268545792" />
+				<fence fenceId="268545890" />
+				<fence fenceId="268551383" />
+				<fence fenceId="268551447" />
+				<fence fenceId="268551479" />
+				<fence fenceId="268551509" />
+				<fence fenceId="268551528" />
+				<fence fenceId="268551563" />
+				<fence fenceId="268551584" />
+				<fence fenceId="268551599" />
+				<fence fenceId="268551661" />
+				<fence fenceId="268551773" />
 			</fences>
 			<rewards>
 				<winner>
@@ -1151,7 +1093,7 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="18" Type="TeamVsTeam" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="17" Type="TeamVsTeam" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
 			<doublePvPs doublePvPs="true"/>
 			<timers joinTime="15" eventTime="15" />
@@ -1174,74 +1116,18 @@
 				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
 			</npcSpawns>
 			<fences>
-				<fence fenceId="268545746" />
-				<fence fenceId="268545771" />
-				<fence fenceId="268545777" />
-				<fence fenceId="268545780" />
-				<fence fenceId="268545788" />
 				<fence fenceId="268545792" />
-				<fence fenceId="268545808" />
-				<fence fenceId="268545868" />
-				<fence fenceId="268545874" />
 				<fence fenceId="268545890" />
-			</fences>
-			<rewards>
-				<winner>
-					<reward itemId="6392" ammount="10" chance="100" static="false"/>
-					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
-				</winner>
-				<loser>
-					<reward itemId="6392" ammount="6" chance="100" static="false"/>
-					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
-				</loser>
-				<tie>
-					<reward itemId="6392" ammount="8" chance="100" static="false"/>
-					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
-					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
-					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
-					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
-				</tie>
-			</rewards>
-		</event>
-		<event id="19" Type="HuntingGrounds" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
-			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
-			<doublePvPs doublePvPs="true"/>
-			<timers joinTime="15" eventTime="15" />
-			<players minPlayers="2" maxPlayers="500" />
-			<teams>
-				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
-				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
-			</teams>
-			<spawnBaseNpc npcId="865001" spawnX="28510" spawnY="245062" spawnZ="-3697" />
-			<teamSpawns>
-				<spawn teamId="Red" spawn="28720, 247229, -3685" />
-				<spawn teamId="Red" spawn="28111, 246912, -3691" />
-				<spawn teamId="Red" spawn="28382, 246729, -3695" />
-				<spawn teamId="Blue" spawn="28757, 242423, -3483" />
-				<spawn teamId="Blue" spawn="29505, 243072, -3624" />
-				<spawn teamId="Blue" spawn="29267, 242600, -3502" />
-			</teamSpawns>
-			<npcSpawns>
-				<spawn npcId="90001" spawnX="28667" spawnY="247255" spawnZ="-3694" title="Red Buffer" />
-				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
-			</npcSpawns>
-			<fences>
-				<fence fenceId="268545746" />
-				<fence fenceId="268545771" />
-				<fence fenceId="268545777" />
-				<fence fenceId="268545780" />
-				<fence fenceId="268545788" />
-				<fence fenceId="268545792" />
-				<fence fenceId="268545808" />
-				<fence fenceId="268545868" />
-				<fence fenceId="268545874" />
-				<fence fenceId="268545890" />
+				<fence fenceId="268551383" />
+				<fence fenceId="268551447" />
+				<fence fenceId="268551479" />
+				<fence fenceId="268551509" />
+				<fence fenceId="268551528" />
+				<fence fenceId="268551563" />
+				<fence fenceId="268551584" />
+				<fence fenceId="268551599" />
+				<fence fenceId="268551661" />
+				<fence fenceId="268551773" />
 			</fences>
 			<rewards>
 				<winner>

@@ -1619,7 +1619,7 @@
   </for>
 </item>
 
-<item id='992000' name="Blue Dread Slayer"><!--fixed-->
+<item id='992000' name="Red Dread Slayer"><!--fixed-->
   <for>
     <set val="580" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1670,7 +1670,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992001' name="Blue Dread Talon"><!--fixed-->
+<item id='992001' name="Red Dread Talon"><!--fixed-->
   <for>
     <set val="557" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1729,7 +1729,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992002' name="Blue Dread Banshee"><!--fixed-->
+<item id='992002' name="Red Dread Banshee"><!--fixed-->
   <for>
     <set val="433" order="0x08" stat="pAtk"/>
     <set val="368" order="0x08" stat="mAtk"/>
@@ -1768,7 +1768,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992003' name="Blue Dread Zanbato"><!--fixed-->
+<item id='992003' name="Red Dread Zanbato"><!--fixed-->
   <for>
     <set val="705" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1814,7 +1814,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992004' name="Blue Dread Lance"><!--fixed-->
+<item id='992004' name="Red Dread Lance"><!--fixed-->
   <for>
     <set val="563" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1862,7 +1862,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992005' name="Blue Dread Crusher"><!--fixed-->
+<item id='992005' name="Red Dread Crusher"><!--fixed-->
   <for>
     <set val="692" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1911,7 +1911,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992006' name="Blue Dread Claws"><!--fixed-->
+<item id='992006' name="Red Dread Claws"><!--fixed-->
   <for>
     <set val="735" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1964,7 +1964,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992007' name="Blue Dread Scepter">
+<item id='992007' name="Red Dread Scepter">
   <for>
     <set val="425" order="0x08" stat="pAtk"/>
     <set val="321" order="0x08" stat="mAtk"/>
@@ -2005,7 +2005,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992008' name="Blue Dread Shot"><!--fixed-->
+<item id='992008' name="Red Dread Shot"><!--fixed-->
   <for>
     <set val="1077" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2047,7 +2047,7 @@
   </for>
 </item>
 
-<item id='992009' name="Blue Dread Warmace"><!--fixed-->
+<item id='992009' name="Red Dread Warmace"><!--fixed-->
   <for>
     <set val="709" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2095,7 +2095,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992010' name="Blue Dread Staff">
+<item id='992010' name="Red Dread Staff">
   <for>
     <set val="518" order="0x08" stat="pAtk"/>
     <set val="431" order="0x08" stat="mAtk"/>
@@ -2137,7 +2137,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992011' name="Blue Dread Rapier"><!--fixed-->
+<item id='992011' name="Red Dread Rapier"><!--fixed-->
   <for>
     <set val="585" order="0x08" stat="pAtk"/>
     <set val="242" order="0x08" stat="mAtk"/>
@@ -2190,7 +2190,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992012' name="Blue Dread Nagan"><!--fixed-->
+<item id='992012' name="Red Dread Nagan"><!--fixed-->
   <for>
     <set val="666" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2242,7 +2242,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992013' name="Blue Dread Bowgun"><!--fixed-->
+<item id='992013' name="Red Dread Bowgun"><!--fixed-->
   <for>
     <set val="673" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2296,7 +2296,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992014' name="Blue Dread Sins"><!--fixed-->
+<item id='992014' name="Red Dread Sins"><!--fixed-->
   <for>
     <set val="735" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2347,7 +2347,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992015' name="Blue Dread Shield">
+<item id='992015' name="Red Dread Shield">
   <for>
 	<add val="5000" order="0x40" stat="maxPdam"/>
 	<add val="5000" order="0x40" stat="maxMdam"/>
@@ -2376,7 +2376,7 @@
 	</basemul>
   </for>
 </item>
-<item id='992017' name="Blue Dread Twisters"><!--fixed-->
+<item id='992017' name="Red Dread Twisters"><!--fixed-->
   <for>
     <set val="557" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -2427,4 +2427,11 @@
 	</basemul>
   </for>
 </item>
+
+
+
+
+
+
+
 </list>

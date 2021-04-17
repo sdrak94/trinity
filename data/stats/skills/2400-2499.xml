@@ -600,7 +600,7 @@
     </and>
   </cond>
 </skill>
-<skill id="2443" levels="1" name="Protection of Alignment"> 
+<skill id="2443" levels="1" name="Protection of Alignment">
   <set name="target" val="TARGET_SELF"/>
   <set name="skillType" val="LEARN_SKILL"/>
   <set name="learnSkillId" val="757"/>

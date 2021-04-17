@@ -10,7 +10,7 @@
 	<enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
 	<basemul val="0.6" order="0x40" stat="rCrit"/>
-	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="accCombat"/>
 	<add val="0.45" order="0x40" stat="cAtk"/>
 	<basemul val="0.195" order="0x40" stat="pAtkSpd"/>
 	<basemul val="0.03" order="0x40" stat="pAtk"/>
@@ -23,10 +23,10 @@
     <add val="60" order="0x40" stat="knockbackDistAdd"/>
 	<add val="150" order="0x40" stat="pAtkRange"/>
 	<add val="15" order="0x40" stat="pSkillEvasReduce"/>
-	<sub val="4" order="0x40" stat="rEvas"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+
+	
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<basemul val="0.05" order="0x40" stat="pDef">
 	  <or>
 	  <player hasSkill="13000"/>
@@ -66,22 +66,16 @@
 	<mul val='0.80' order='0x30' stat='mReuse'/>
 	<add val='200' order='0x40' stat='mDef'/>
 	<add val='200' order='0x40' stat='mAtkSpd'/>
+	<add val='20' order='0x40' stat='pAtkSpd'/>
 	<add val='60' order='0x40' stat='pAtkAngle'/>
 	<add val="5" order="0x40" stat="extraHit">
 	<not>
 		   <using kind="Shield"/>
 	</not>
 	</add>
-	<sub val="40" order="0x40" stat="pAtkSpd">
-		   <using kind="Shield"/>
-	</sub>
-	<sub val="40" order="0x40" stat="rCrit">
-		   <using kind="Shield"/>
-	</sub>
-	<add val='5' order='0x40' stat='rEvas'/>
-	<add val="3" order="0x40" stat="accCombat"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+
+	
 	<!--extra2-->
 		<!--extra-->
 	<basemul val="0.02" order="0x40" stat="pAtk"/>
@@ -130,16 +124,16 @@
 	<add val="0.4" order="0x60" stat="cAtk"/>
 	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
     <sub val="0.15" order="0x40" stat="pReuse"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<!--extra2-->
 	<add val="1" order="0x40" stat="skillRetryChange">
 	  <using skillid="494"/>
 	</add>
 	<add stat="pAtkAngle" val="100" order="0x40"/>
 	<add stat="atkCountMax" val="1" order="0x40"/>
-	<add val="3" order="0x40" stat="accCombat"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="0" order="0x40" stat="accCombat"/>
+
+	
 	<!--extra2-->
 	<!--extra-->
 		<sub val="0.05" order="0x40" stat="cAtk"/>
@@ -167,7 +161,7 @@
 	</basemul>
   </for>
 </item>
-<item id='83056' name="Corrupted Ghost Fists">
+<item id='83056' name="Corrupted Claws">
   <for>
     <set val="735" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -176,22 +170,22 @@
     <set val="325" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
 	<basemul val="0.8" order="0x40" stat="rCrit"/>
-	<add val="0.5" order="0x40" stat="cAtk"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
 	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="1" order="0x40" stat="chargeMax"/>
+	<add val="0.18" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="pAtk"/>
 	<!--<add val="1" order="0x40" stat="atkCountMax"/>-->
-	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.16" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<!--extra2-->
-	<add val="5" order="0x40" stat="accCombat"/>
-	<add val="50" order="0x40" stat="rCrit"/>
-	<add val="50" order="0x40" stat="pAtkSpd"/>
 	<add val="25" order="0x40" stat="absorbDamStatic"/>
-	<add val="1.10" order="0x40" stat="moreDamMP"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="0.35" order="0x40" stat="moreDamMP"/>
 	<!--extra2-->
 	<!--extra-->
 	<sub val="0.20" order="0x40" stat="cAtk"/>
@@ -233,7 +227,7 @@
     <set val="325" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
 	<add val="0.4" order="0x40" stat="cAtk"/>
 	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
@@ -243,14 +237,14 @@
 	<add val='60' order='0x40' stat='pAtkRange'/>
 	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
     <sub val="0.15" order="0x40" stat="pReuse"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 		<!--extra2-->
-	<add val="200" order="0x40" stat="addDmg">
+	<add val="150" order="0x40" stat="addDmg">
 	   <target active_effect_id="763"/>
 	</add>
-	<add val="3" order="0x40" stat="accCombat"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+
+	
 	<!--extra2-->
 	<!--extra-->
 	<basemul val="0.07" order="0x40" stat="pAtk"/>
@@ -288,24 +282,24 @@
     <enchant val="0" order="0x0C" stat="mAtk"/>
 	<basemul val="0.7" order="0x40" stat="rCrit"/>
 	<add val="0.45" order="0x40" stat="cAtk"/>
-	<basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.19" order="0x40" stat="pAtkSpd"/>
 	<add val="100" order='0x40' stat='mAtkSpd'/>
 	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
 	<basemul val="0.0" order="0x40" stat="pAtk"/>
-    <sub val="0.2" order="0x40" stat="pReuse"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+    <sub val="0.25" order="0x40" stat="pReuse"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 		<!--extra2-->
 	<add val="20" order="0x40" stat="negateShld"/>
-	<add val="9" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="7" order="0x40" stat="rEvas"/>
 	<add val='20' order='0x40' stat='pAtkRange'/>
 	<add val="10" order="0x40" stat="aoePercent"/>
 	<add val='60' order='0x40' stat='pAtkAngle'/>
 	<add val="4" order="0x40" stat="extraHit"/>
-	<mul val='0.84' order='0x30' stat='pReuse'/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 		<!--extra-->
 	<sub val="0.05" order="0x40" stat="cAtk"/>
@@ -344,21 +338,25 @@
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
 	<basemul val="1.8" order="0x40" stat="rCrit"/>
-	<mul val="0.85" order="0x40" stat="pAtk"/>
-	<mul val="0.90" order="0x40" stat="maxHp"/>
-	<mul val="0.90" order="0x40" stat="maxCp"/>
-	<mul val="0.92" order="0x40" stat="pDef"/>
-	<mul val="0.92" order="0x40" stat="mDef"/>
+	<mul val="0.85" order="0x50" stat="pAtk"/>
+	<mul val="0.90" order="0x50" stat="maxHp"/>
+	<mul val="0.90" order="0x50" stat="maxCp"/>
+	<mul val="0.94" order="0x50" stat="pDef"/>
+	<mul val="0.94" order="0x50" stat="mDef"/>
 	<add val="0.4" order="0x40" stat="cAtk"/>
-	<add val="3" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
 	<mul val="0.8" order="0x50" stat="reducePdef">
 	    <game chance="20"/>
 	 </mul>
+	 <add val="0.5" order="0x40" stat="cAtk">
+	    <game chance="25"/>
+	 </add>
 	<add val="150" order="0x40" stat="critMax"/>
 	<add order="0x10" stat="pAtkSpdMax" val="100"/>
 	<add val="5" order="0x40" stat="extraHit"/>
 	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<add val="0.1" order="0x40" stat="pvpPhysDmg">
 	  <player behind="true"/>
 	</add>
@@ -392,21 +390,24 @@
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
 	<basemul val="1.8" order="0x40" stat="rCrit"/>
-	<mul val="0.85" order="0x40" stat="pAtk"/>
-	<mul val="0.90" order="0x40" stat="maxHp"/>
-	<mul val="0.90" order="0x40" stat="maxCp"/>
-	<mul val="0.92" order="0x40" stat="pDef"/>
-	<mul val="0.92" order="0x40" stat="mDef"/>
+	<mul val="0.85" order="0x50" stat="pAtk"/>
+	<mul val="0.90" order="0x50" stat="maxHp"/>
+	<mul val="0.90" order="0x50" stat="maxCp"/>
+	<mul val="0.94" order="0x50" stat="pDef"/>
+	<mul val="0.94" order="0x50" stat="mDef"/>
 	<add val="0.4" order="0x40" stat="cAtk"/>
-	<add val="3" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="accCombat"/>
 	<mul val="0.8" order="0x50" stat="reducePdef">
 	    <game chance="20"/>
 	 </mul>
+	 <add val="0.5" order="0x40" stat="cAtk">
+	    <game chance="25"/>
+	 </add>
 	<add val="150" order="0x40" stat="critMax"/>
 	<add order="0x10" stat="pAtkSpdMax" val="100"/>
 	<add val="5" order="0x40" stat="extraHit"/>
 	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<add val="0.1" order="0x40" stat="pvpPhysDmg">
 	  <player behind="true"/>
 	</add>
@@ -430,7 +431,7 @@
   </for>
 </item>
 
-<item id='17637' name="Corrupted Dragon's Tooth"><!--fixed-->
+<item id='17637' name="Corrupted Mortis Resa"><!--fixed-->
   <for>
     <set val="557" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -439,19 +440,18 @@
     <set val="433" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<basemul val="0.10" order="0x40" stat="maxHp"/>
 	<basemul val="0.80" order="0x40" stat="rCrit"/>
 	<add val="0.50" order="0x40" stat="cAtk"/>
-	<add val="8" order="0x40" stat="rEvas"/>
 	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
 	<add val="20" order='0x40' stat='blowRate'/>
 	<add val="7" order="0x40" stat="mSkillEvas"/>
 	<add val="7" order="0x40" stat="pSkillEvas"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<basemul val="0.10" order="0x40" stat="pAtkSpd"/>
 	<add val="0.08" order="0x40" stat="damHeavy"/>
 	<add val="15" order="0x40" stat="pSkillEvasReduce"/>
@@ -476,6 +476,7 @@
 	<basemul val="0.06" order="0x40" stat="pAtkSpd"/>
 	<sub val="0.05" order="0x40" stat="cAtk"/>
 	<add val="32" order="0x40" stat="rCrit"/>
+	<add val="6" order="0x40" stat="rEvas"/>
 	<!--extra-->
 	<basemul val="0.05" order="0x40" stat="pDef">
 	  <or>
@@ -514,7 +515,7 @@
 	<basemul val="0.8" order="0x40" stat="mCritRate"/>
 	<basemul val="0.15" order="0x40" stat="mAtkSpd"/>
 	<mul val="0.88" order="0x50" stat="reduceMdef"/>
-	<add val="0.25" order="0x40" stat="cAtkMagic"/>
+	<add val="0.30" order="0x40" stat="cAtkMagic"/>
 	<basemul val="0.35" order="0x40" stat="mAtk"/>
     <sub val="0.15" order="0x40" stat="mReuse"/>
 	<basemul val="0.05" order="0x40" stat="runSpd"/>
@@ -544,13 +545,8 @@
 	       <player class_id_restriction="95,110,115,116"/>
 	   </not>
 	 </add>
-	 <add val="50" order='0x40' stat='mCritRate'>
-	   <not>
-	       <player class_id_restriction="95,110,115,116"/>
-	   </not>
-	 </add>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 	<!--extra-->
 	<basemul val="0.26" order="0x40" stat="mAtk"/>
@@ -673,7 +669,7 @@
     <set val="379" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<add val="0.4" order="0x40" stat="cAtk"/>
+	<add val="0.45" order="0x40" stat="cAtk"/>
 	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
@@ -688,17 +684,17 @@
 	<!--extra-->
 		<!--extra2-->
     <add val="150" order="0x40" stat="rCrit"/>
-	<add val="40" order="0x40" stat="negateShld"/>
-	<add val="100" order="0x40" stat="bonusHp"/>
-	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="25" order="0x40" stat="negateShld"/>
+	<add val="50" order="0x40" stat="bonusHp"/>
+	<add val="2" order="0x40" stat="accCombat"/>
 	<add val="80" order="0x40" stat="pAtkSpd"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<add val="8" order="0x40" stat="runSpd"/>
-	<add val="10" order="0x40" stat="effectDurationChange">
+	<add val="12" order="0x40" stat="effectDurationChange">
 	   <using skillid="176"/>
 	</add>
-	<sub val="10" order="0x40" stat="effectDurationChange">
+	<sub val="12" order="0x40" stat="effectDurationChange">
 	   <using skillid="139"/>
 	</sub>
 	<sub val="10" order="0x40" stat="skillPowerBoost">
@@ -780,7 +776,7 @@
 	</basemul>
   </for>
 </item>-->
-<item id='31156' name="Corrupted Lost Staff">
+<item id='31156' name="Corrupted High Dawn Lawshenwiz">
   <for>
     <set val="425" order="0x08" stat="pAtk"/>
     <set val="321" order="0x08" stat="mAtk"/>
@@ -792,8 +788,8 @@
     <add val="0.10" order="0x40" stat="giveHp"/>
 	<basemul val="0.05" order="0x40" stat="runSpd"/>
 	<mul order="0x30" val="0.7" stat="MpConsume"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 	<mul val="0" order="0x80" stat="debuffVuln"/>
 	<set val="1700" order="0x95" stat="mAtkSpd">
@@ -839,7 +835,7 @@
 	<enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
 	<basemul val="0.6" order="0x40" stat="rCrit"/>
-	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="accCombat"/>
 	<add val="0.45" order="0x40" stat="cAtk"/>
 	<basemul val="0.195" order="0x40" stat="pAtkSpd"/>
 	<basemul val="0.03" order="0x40" stat="pAtk"/>
@@ -852,9 +848,9 @@
     <add val="60" order="0x40" stat="knockbackDistAdd"/>
 	<add val="150" order="0x40" stat="pAtkRange"/>
 	<add val="15" order="0x40" stat="pSkillEvasReduce"/>
-	<sub val="4" order="0x40" stat="rEvas"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+
+	
 	<basemul val="0.05" order="0x40" stat="runSpd"/>
 	<basemul val="0.05" order="0x40" stat="pDef">
 	  <or>
@@ -893,15 +889,15 @@
 	<add val="5" order="0x40" stat="runSpd"/>
 	<add val="100" order="0x40" stat="addDmg"/>
 	<!--extra2-->
-	<add val="40" order="0x40" stat="negateShld"/>
-	<add val="4" order="0x40" stat="accCombat"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
-	<add val="4" order="0x40" stat="runSpd"/>
-	<add val="10" order="0x40" stat="effectDurationChange">
+	<add val="35" order="0x40" stat="negateShld"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+
+	
+	<add val="3" order="0x40" stat="runSpd"/>
+	<add val="12" order="0x40" stat="effectDurationChange">
 	   <using skillid="176"/>
 	</add>
-	<sub val="10" order="0x40" stat="effectDurationChange">
+	<sub val="12" order="0x40" stat="effectDurationChange">
 	   <using skillid="139"/>
 	</sub>
 	<sub val="10" order="0x40" stat="skillPowerBoost">
@@ -910,7 +906,7 @@
 	<!--extra2-->
 		<!--extra-->
 	<basemul val="0.22" order="0x40" stat="pAtk"/>
-	<sub val="0.35" order="0x40" stat="cAtk"/>
+	<sub val="0.30" order="0x40" stat="cAtk"/>
 	<!--extra-->
 		<basemul val="0.05" order="0x40" stat="pDef">
 	  <or>
@@ -960,8 +956,8 @@
 	<add val="20" order="0x40" stat="spellCancelRes"/>
 	<mul order="0x30" stat="debuffProf" val="1.2"/>
 	<add val="6" order="0x40" stat="runSpd"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<mul val="0.96" order="0x50" stat="pDef"/>
+	
 	<add val="0.08" order="0x40" stat="damHeavy"/>
 	<!--extra2-->
 		<!--extra-->
@@ -1001,7 +997,7 @@
 	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
 	<basemul val="0.0" order="0x40" stat="pAtk"/>
-	<add val="6" order="0x40" stat="accCombat"/>
+	<add val="9" order="0x40" stat="accCombat"/>
 	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
 	<basemul val="0.14" order="0x40" stat="mAtkSpd"/>
 	<basemul val="0.5" order="0x40" stat="mAtk"/>
@@ -1022,8 +1018,8 @@
 	   <using skillid="505"/>
 	</add>
     <mul val="0.9" order="0x50" stat="reduceMdef"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 		<!--extra-->
 	<basemul val="0.00" order="0x40" stat="pAtk"/>
@@ -1071,17 +1067,15 @@
     <add val="200" order="0x40" stat="cAtkBleed"/>
 	<add val='100' order='0x40' stat='rushDistAdd'/>
 	<!--extra2-->
+	<add val="2" order="0x40" stat="accCombat"/>
 	<add val="100" order="0x40" stat="mAtkRange">
 	   <using skillid="526"/>
 	</add>
-	<mul val="0.90" order="0x50" stat="reducePdef">
+	<mul val="0.85" order="0x50" stat="reducePdef">
 	   <game chance="25"/>
 	 </mul>
-	 <add val="0.50" order="0x40" stat="cAtk">
-	    <game chance="15"/>
-	 </add>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 	<!--extra-->
 	<sub val="0.05" order="0x40" stat="cAtk"/>
@@ -1131,19 +1125,19 @@
 	<add val="5" order="0x40" stat="accCombat"/>
 	<add val="150" order="0x40" stat="pAtkRange"/>
 	<basemul val="0.2" order="0x40" stat="pAtkSpd"/>
-	<add order="0x40" stat="negateAutoTarget" val="15"/>
 	<add val='5' order='0x40' stat='evadeAOEHit'/>
 	<add val="0.1" order="0x40" stat="damHeavy"/>
     <sub val="0.15" order="0x40" stat="pReuse"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<!--extra2-->
 	<add val="10" order="0x40" stat="doubleShot"/>
-	<add order="0x40" stat="negateAutoTarget" val="25"/>
+	<add order="0x40" stat="negateAutoTarget" val="30"/>
 	<add val="10" order="0x40" stat="spellCancelAdd"/>
 	<add val="10" order="0x40" stat="attackCancelAdd"/>
-	<add val="4" order="0x40" stat="accCombat"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+
+	
 	<!--extra2-->
 		<!--extra-->
 
@@ -1175,7 +1169,7 @@
 	</basemul>
   </for>
 </item>
-<item id='31175' name="Corrupted Dual Mordenkainens"><!--fixed-->
+<item id='31175' name="Corrupted Satan's Dual Blades"><!--fixed-->
   <for>
     <set val="661" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1183,12 +1177,15 @@
     <set val="325" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.125" order="0x40" stat="pAtkSpd"/>
 	<basemul val="0.6" order="0x40" stat="pAtk"/>
     <sub val="0.05" order="0x40" stat="pReuse"/>
 	<add val="0.15" order="0x40" stat="skillDam"/>
-	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<!--extra2-->
+	<add val="1" order="0x40" stat="skillRetryChange">
+	  <using skillid="5"/>
+	</add>
 	<add val="10" order="0x40" stat="skillCritAdd"/>
 	<sub val="0.10" order="0x40" stat="pReuse"/>
 	<add val="10" order="0x40" stat="effectDurationChange">
@@ -1197,15 +1194,59 @@
 	<sub val="10000" order="0x40" stat="skillReuseChange">
    	   <using skillid="451"/>
 	</sub>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 	<!--extra-->
 	<basemul val="0.65" order="0x40" stat="pAtk"/>
 	<add val="4" order="0x40" stat="accCombat"/>
 	<add val="0.1" order="0x40" stat="damHeavy"/>
-	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<add val='7' order='0x40' stat='pSkillEvasReduce'/>
 	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='31188' name="Green Draconic Bow"><!--fixed-->
+  <for>
+    <set val="1077" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+	<enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="6" order="0x40" stat="accCombat"/>
+	<add val="0.45" order="0x40" stat="cAtk"/>
+	<basemul val="0.195" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<add val="20" order="0x40" stat="rangedPiercing"/>
+	<add val="5" order="0x40" stat="knockback"/>
+    <add val="60" order="0x40" stat="knockbackDistAdd"/>
+	<add val="150" order="0x40" stat="pAtkRange"/>
+	<add val="15" order="0x40" stat="pSkillEvasReduce"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+
+	
+	<basemul val="0.06" order="0x40" stat="runSpd"/>
 	<basemul val="0.05" order="0x40" stat="pDef">
 	  <or>
 	  <player hasSkill="13000"/>
@@ -1251,7 +1292,7 @@
 	</basemul>
   </for>
 </item>-->
-<item id='17644' name="Corrupted Dragon's Teeth"><!--fixed-->
+<item id='17644' name="Corrupted Dual Mortis Resa"><!--fixed-->
   <for>
     <set val="557" order="0x08" stat="pAtk"/>
     <set val="237" order="0x08" stat="mAtk"/>
@@ -1276,8 +1317,8 @@
 	   </add>
 	<add val="0.08" order="0x40" stat="damHeavy"/>
 	<add val="15" order="0x40" stat="pSkillEvasReduce"/>
-	<mul val="0.94" order="0x40" stat="pDef"/>
-	<mul val="0.94" order="0x40" stat="mDef"/>
+
+	
 	<!--extra2-->
 		<!--extra-->
 	<basemul val="0.445" order="0x40" stat="pAtk"/>
@@ -1310,7 +1351,67 @@
 	</basemul>
   </for>
 </item>
-<item id='15758' name="Rykross Shield">
+
+<item id='31176' name="Corrupted Satan's Blade">
+  <for>
+    <set val="580" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<mul val="1.2" order="0x30" stat="rShld"/>
+	<mul val="1.25" order="0x30" stat="sDef"/>
+	<add val="0.135" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.135" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.135" order="0x40" stat="pvpMagicalDmg"/>
+	<mul val="1.08" order="0x30" stat="skillDam"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<basemul val="0.20" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra2-->
+	<mul val="0.85" order="0x30" stat="debuffVuln"/>
+	<basemul val="0.12" order="0x40" stat="pDef"/>
+	<basemul val="0.12" order="0x40" stat="mDef"/>
+	<basemul val="0.20" order="0x40" stat="pAtk"/>
+	<add order="0x40" stat="runSpd" val="6"/>
+	<add order="0x40" stat="accCombat" val="6"/>
+	<add order="0x40" stat="magicDamVul" val="0.15"/>
+	<add order="0x40" stat="critVuln" val="0.05"/>
+  	<add val="0.15" order="0x40" stat="pvpPhysVul"/>
+	<!--extra2-->
+	<!--extra-->
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.050" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='15758' name="Corrupted Shield">
   <for>
 	<add val="5000" order="0x40" stat="maxPdam"/>
 	<add val="5000" order="0x40" stat="maxMdam"/>
@@ -1339,7 +1440,7 @@
 	</basemul>
   </for>
 </item>
-<item id='15759' name="Rykross Shield">
+<item id='15759' name="Corrupted Shield">
   <for>
 	<add val="5000" order="0x40" stat="maxPdam"/>
 	<add val="5000" order="0x40" stat="maxMdam"/>
@@ -1368,7 +1469,65 @@
 	</basemul>
   </for>
 </item>
-<item id='15760' name="Rykross Shield">
+<item id='15760' name="Corrupted Shield">
+  <for>
+	<add val="5000" order="0x40" stat="maxPdam"/>
+	<add val="5000" order="0x40" stat="maxMdam"/>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="506" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+	<add val="5" order="0x40" stat="reflectSkillPhysic"/>
+	<mul val="0.9" order="0x30" stat="bowWpnVuln"/>
+	<mul val="0.9" order="0x30" stat="crossbowWpnVuln"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="rShldPerfAdd"/>
+	<basemul val="0.08" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.08" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='15761' name="Corrupted Shield">
+  <for>
+	<add val="5000" order="0x40" stat="maxPdam"/>
+	<add val="5000" order="0x40" stat="maxMdam"/>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="506" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+	<add val="5" order="0x40" stat="reflectSkillPhysic"/>
+	<mul val="0.9" order="0x30" stat="bowWpnVuln"/>
+	<mul val="0.9" order="0x30" stat="crossbowWpnVuln"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="rShldPerfAdd"/>
+	<basemul val="0.08" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.08" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='15762' name="Corrupted Shield">
   <for>
 	<add val="5000" order="0x40" stat="maxPdam"/>
 	<add val="5000" order="0x40" stat="maxMdam"/>

@@ -371,7 +371,10 @@
   <cond msg="Can be used when HP is below 33 percent.">
   <or>
     <player hp="33"/>
-	<using slotitem="80112;9"/>
+		<and>
+			<player hp="50"/>
+			<using slotitem="81121;9"/>
+		</and>
 	</or>
   </cond>
 	<for>
@@ -582,10 +585,10 @@
 </skill>
 <skill id="525" levels="6" name="Decoy" enchantLevels1="30" enchantLevels2="30" enchantLevels3="30">
   <table name="#ench2Reuse"> 119000 118000 117000 116000 115000 114000 113000 111000 110000 109000 108000 107000 106000 105000 104000 103000 102000 101000 90000 89000 88000 87000 86000 84000 83000 82000 81000 80000 79000 78000 </table>
-  <table name="#ench3Duration"> 21000 22000 23000 24000 25000 26000 27000 28000 29000 30000 31000 32000 33000 34000 35000 36000 37000 38000 39000 40000 41000 42000 43000 44000 45000 46000 47000 48000 49000 50000 51000 52000 53000 54000 </table>
+  <table name="#ench3Duration"> 19000 20000 21000 22000 23000 24000 25000 26000 27000 28000 29000 30000 31000 32000 33000 34000 35000 36000 37000 38000 39000 40000 43000 44000 45000 46000 47000 48000 49000 50000 51000 52000 53000 54000 </table>
   <table name="#npcId"> 13071 13072 13073 13074 13075 13076 </table>
   <set name="target" val="TARGET_SELF"/>
-  <set name="summonTotalLifeTime" val="21000"/>
+  <set name="summonTotalLifeTime" val="18000"/>
   <set name="hpConsume" val="800"/>
   <set name="mpConsume" val="300"/>
   <set name="hitTime" val="3210"/>
@@ -608,7 +611,7 @@
 	<set name="weaponsAllowed" val="428628"/>
 	<set name="hpConsume" val="200"/>
 	<set name="mpConsume" val="200"/>
-    <set name="power" val="13990"/>
+    <set name="power" val="10990"/>
     <set name="hitTime" val="1800"/>
 	<set name="ignoreShld" val="true"/>
 	<set name="coolTime" val="650"/>

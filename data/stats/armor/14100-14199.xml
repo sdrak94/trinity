@@ -125,7 +125,7 @@
     <add val="50" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
 	<enchant val="0" order="0x50" stat="maxHp"/>
-	<add val="0.1" order="0x40" stat="vengeancePdam">
+	<add val="10" order="0x40" stat="reflectDam">
 		<and>
 		   <using slotitem="14163;1"/>
 		   <using slotitem="14165;5"/>

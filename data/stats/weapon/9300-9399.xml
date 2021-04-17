@@ -768,9 +768,9 @@
    <set val="406" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-   <mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-   <sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+   <sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9365" name="Laevateinn - Haste">
@@ -781,9 +781,9 @@
     <set val="406" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9366" name="Laevateinn - Health">
@@ -794,9 +794,9 @@
    <set val="406" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9367" name="Laevateinn - Focus">
@@ -810,9 +810,9 @@
        <!-- SA: Focus -->
    <add val="84" order="0x40" stat="rCrit"/>
     <!-- Enhances damage to target during PvP -->
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9368" name="Gram">
@@ -824,9 +824,9 @@
    <set val="350" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9369" name="Gram - Haste">
@@ -838,9 +838,9 @@
     <set val="350" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9370" name="Gram - Health">
@@ -852,9 +852,9 @@
    <set val="350" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9371" name="Gram - Focus">
@@ -867,9 +867,9 @@
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
     <!-- Enhances damage to target during PvP -->
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9372" name="Sarnga">
@@ -880,9 +880,9 @@
    <set val="303" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9373" name="Sarnga - Cheap Shot">
@@ -900,9 +900,9 @@
       </and> 
    </set>
     <!-- Enhances damage to target during PvP -->
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9374" name="Sarnga - Focus">
@@ -913,9 +913,9 @@
    <set val="303" order="0x08" stat="pAtkSpd"/>
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9375" name="Sarnga - Critical Slow">
@@ -927,9 +927,9 @@
    <enchant val="0" order="0x0C" stat="pAtk"/>
    <enchant val="0" order="0x0C" stat="mAtk"/>
     <!-- Enhances damage to target during PvP -->
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="9376" name="Dynasty Rapier">

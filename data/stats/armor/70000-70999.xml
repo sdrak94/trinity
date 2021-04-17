@@ -251,4 +251,19 @@
     <enchant val="0" order="0x0C" stat="mDef"/>
   </for>
 </item>
+<item id="850011" name="Fafurion's Tear">
+  <for>
+    <add val="161" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850012" name="Superior Fafurion' Tear">
+  <for>
+    <add val="161" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+
 </list>

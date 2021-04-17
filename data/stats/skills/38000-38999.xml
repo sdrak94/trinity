@@ -11,13 +11,13 @@
 		<mul val="1.03" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
-	  	<sub val="0.135" order="0x40" stat="skillDam">
+	  	<sub val="0.195" order="0x40" stat="skillDam">
 	  	  <player olympiad="false"/>
 		 </sub>
 		 <add val="0.27" order="0x40" stat="skillDam">
 			<player olympiad="true"/>
 		 </add>
-		 <add val="40" order="0x40" stat="pAtkSpd">
+		 <add val="35" order="0x40" stat="pAtkSpd">
 	  	  <player olympiad="false"/>
 		 </add>
 		<mul val="1" order="0x30" stat="pvpMagicalDmg">
@@ -25,7 +25,7 @@
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.075" order="0x40" stat="pvmDam"/>
-	  <mul val="0.965" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.940" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
@@ -33,7 +33,7 @@
 	  </mul>
 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
-	<mul val="0.05" order="0x50" stat="pAtk">  
+	<mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38001"/>
 	  <player hasSkill="38002"/>
@@ -138,7 +138,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38002"/>
@@ -246,7 +246,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -301,8 +301,11 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
 	<mul order="0x30" stat="magicDamVul" val="0.825"/>
-	<sub val="0.085" order="0x40" stat="damHeavy"/>
-		  <mul val="0.97" order="0x30" stat="pvpPhysDmg">
+	<add val="0.04" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+	</add>
+	<sub val="0.05" order="0x40" stat="damHeavy"/>
+	<mul val="0.97" order="0x30" stat="pvpPhysDmg">
 		<player active_effect_id="313"/>
 	  </mul>
 	<mul val="1.05" order="0x30" stat="pvpPhysDmg">
@@ -331,7 +334,7 @@
 				<using kind="Bow"/>
 			</not>
 		</sub>
-	  <mul val="0.885" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.95" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.88" order="0x30" stat="pvpMagicalDmg">
@@ -347,7 +350,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38002"/>
@@ -413,8 +416,8 @@
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.00" order="0x40" stat="pvmDam"/>
-	  <sub val="0.01" order="0x40" stat="damRobe"/>
-	  <add val="0.00" order="0x40" stat="damHeavy">
+	  <sub val="0.00" order="0x40" stat="damRobe"/>
+	  <add val="0.02" order="0x40" stat="damHeavy">
 	  	  	   <player olympiad="false"/>
 	  </add>
 	  <add val="0.01" order="0x40" stat="damLight">
@@ -441,10 +444,10 @@
         <using kind="Bow"/>
 		</and>
       </sub>
-	  	<sub val="0.05" order="0x40" stat="skillDam">
+	  	<add val="0.02" order="0x40" stat="skillDam">
         <player olympiad="false"/>
-      </sub>
-	  <sub val="0.07" order="0x40" stat="skillDam">
+      </add>
+	  <sub val="0.001" order="0x40" stat="skillDam">
 	  <and>
         <player olympiad="false"/>
 		<player behind="false"/>
@@ -459,7 +462,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -515,7 +518,7 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.899"/>
-	<add val="0.05" order="0x40" stat="skillDam">
+	<add val="0.170" order="0x40" stat="skillDam">
         <player olympiad="false"/>
       </add>
 	  	<add val="0.045" order="0x40" stat="skillDam">
@@ -549,13 +552,13 @@
 	  <mul val="0.97" order="0x50" stat="mAtkSpd">
         <player olympiad="false"/>
       </mul>
-	  <add val="65" order="0x40" stat="pDef">
+	  <add val="110" order="0x40" stat="pDef">
 	       <player olympiad="false"/>
       </add>
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -615,8 +618,8 @@
 	  	  <mul order="0x30" stat="debuffProf" val="1.15">
         <player olympiad="true"/>
 		</mul>
-		<add val="0.035" order="0x40" stat="skillDam">
-        <player olympiad="false"/>
+		<add val="0.17" order="0x40" stat="skillDam">
+			<player olympiad="false"/>
 		</add>
 		<add val="0.10" order="0x40" stat="skillDam">
         <player olympiad="true"/>
@@ -655,7 +658,7 @@
 	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
         <player olympiad="false"/>
       </mul>
-	  <add val="65" order="0x40" stat="pDef">
+	  <add val="110" order="0x40" stat="pDef">
 	       <player olympiad="false"/>
       </add>
 	  <add val="65" order="0x40" stat="pDef">
@@ -664,7 +667,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -718,6 +721,15 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.899"/>
+		<add val="3" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 <add val="1" order="0x10" stat="STR">
+        <player olympiad="false"/>
+     </add>
+	 <add val="2" order="0x10" stat="DEX">
+        <player olympiad="false"/>
+     </add>
   <mul val="1" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
@@ -756,7 +768,7 @@
 		  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -819,14 +831,17 @@
         <player olympiad="true"/>
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
-	  <sub val="10" order="0x40" stat="runSpd">
+	  <sub val="6" order="0x40" stat="runSpd">
         <player olympiad="false"/>
       </sub>
 	  <sub val="800" order="0x40" stat="mAtkSpd">
         <using kind="Heavy"/>
       </sub>
-	  <mul order="0x50" stat="regMp" val="0.6"/>
-	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  <add val="20" order="0x40" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </add>
+	  <mul order="0x50" stat="regMp" val="0.85"/>
+	  <mul val="1.03" order="0x30" stat="MpConsume"/>
 	  
 	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
@@ -880,7 +895,7 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
      <mul order="0x30" stat="magicDamVul" val="0.825"/>
-  <mul val="1.2" order="0x30" stat="pvpPhysDmg">
+	 <mul val="1.2" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
       <mul val="1" order="0x30" stat="pvpMagicalDmg">
@@ -890,12 +905,19 @@
 	  <add val="27" order="0x40" stat="runSpd">
         <player olympiad="false"/>
       </add>
-	  <sub val="60" order="0x40" stat="accCombat"/>
+	  <sub val="1000" order="0x40" stat="pAtk">
+	  				<player olympiad="false"/>
+	  </sub>
+	  <sub val="0.07" order="0x40" stat="skillDam">
+				<player olympiad="false"/>
+	  </sub>
+	  <sub val="5" order="0x40" stat="accCombat"/>
+	  <add val="40" order="0x40" stat="rCrit"/>
 	  <sub val="800" order="0x40" stat="mAtkSpd">
         <using kind="Heavy"/>
       </sub>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -992,7 +1014,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1055,7 +1077,7 @@
       <using kind="Blunt,Big Blunt"/>
 	  </and>
     </add>
-	   <mul order="0x40" stat="pvpPhysDmg" val="0.87">
+	   <mul order="0x40" stat="pvpPhysDmg" val="0.82">
 	  	   <and>
 	   <player olympiad="false"/>
       <using kind="Blunt,Big Blunt"/>
@@ -1086,7 +1108,7 @@
 		<player olympiad="false"/>
 		</and>
       </sub>
-	  <mul val="0.9750" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.875" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
@@ -1098,6 +1120,12 @@
 	  <add val="20" order="0x40" stat="pAtkSpd">
 	  <and>
 			<using kind="heavy"/>
+		<player olympiad="false"/>
+		</and>
+	  </add>
+	  <add val="80" order="0x40" stat="pDef">
+	  <and>
+			<using kind="light"/>
 		<player olympiad="false"/>
 		</and>
 	  </add>
@@ -1113,7 +1141,7 @@
 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.85"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.85"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1178,10 +1206,10 @@
 	  	 <add val="30" order="0x40" stat="rCrit">
 			<player olympiad="false"/>
       </add>
-	  <add val="0.03" order="0x40" stat="damHeavy">
+	  <add val="0.04" order="0x40" stat="damHeavy">
 	  	  	   <player olympiad="false"/>
 	  </add>
-	  <add val="0.04" order="0x40" stat="damLight">
+	  <add val="0.045" order="0x40" stat="damLight">
 	  	  	  <player olympiad="false"/>
 	  </add>
 	  <add order="0x40" stat="blowRate" val="12">
@@ -1204,10 +1232,10 @@
 	  <sub val="250" order="0x40" stat="pAtk">
         <player olympiad="false"/>
       </sub>
-	  <add val="0.04" order="0x40" stat="skillDam">
+	  <add val="0.075" order="0x40" stat="skillDam">
         <player olympiad="false"/>
       </add>
-	  	  <add val="0.050" order="0x40" stat="skillDam">
+	  	  <add val="0.090" order="0x40" stat="skillDam">
 		  <and>
         <player olympiad="false"/>
 		<player behind="true"/>
@@ -1231,7 +1259,7 @@
 	  <add order="0x40" stat="mSkillEvas" val="3"/>
 	  <add val="4" order="0x40" stat="rEvasAbs"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1285,7 +1313,10 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.829"/>
-	<sub val="0.09" order="0x40" stat="damHeavy"/>
+	<sub val="0.05" order="0x40" stat="damHeavy"/>
+	<add val="0.04" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+	</add>
 		<mul val="0.95" order="0x50" stat="pAtk">
 			<not>
 				<using kind="Bow"/>
@@ -1315,7 +1346,7 @@
 	  <add val="750" order="0x40" stat="maxCp">
 	  	  <player olympiad="false"/>
 	  </add>
-	  <mul val="1.0" order="0x30" stat="pvpPhysDmg">
+	  <mul val="1.055" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
@@ -1331,7 +1362,7 @@
 	   <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1385,7 +1416,7 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.899"/>
-	<add val="0.035" order="0x40" stat="skillDam">
+	<add val="0.17" order="0x40" stat="skillDam">
         <player olympiad="false"/>
       </add>
 	  <add val="0.06" order="0x40" stat="skillDam">
@@ -1425,13 +1456,13 @@
 	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
         <player olympiad="false"/>
       </mul>
-	  <add val="65" order="0x40" stat="pDef">
+	  <add val="110" order="0x40" stat="pDef">
 	       <player olympiad="false"/>
       </add>
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1504,7 +1535,7 @@
 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1565,18 +1596,18 @@
         <player olympiad="true"/>
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
-	  <sub val="10" order="0x40" stat="runSpd">
+	  <sub val="6" order="0x40" stat="runSpd">
         <player olympiad="false"/>
       </sub>
 	  <sub val="800" order="0x40" stat="mAtkSpd">
         <using kind="Heavy"/>
       </sub>
-	  <add val="80" order="0x40" stat="mAtkSpd">
+	  <add val="160" order="0x40" stat="mAtkSpd">
         <player olympiad="false"/>
       </add>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
-	  <mul order="0x50" stat="regMp" val="0.6"/>
-	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  <mul order="0x50" stat="regMp" val="0.85"/>
+	  <mul val="1.03" order="0x30" stat="MpConsume"/>
 	  
 	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
@@ -1678,7 +1709,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1762,7 +1793,7 @@
 	  <sub val="4000" order="0x40" stat="pAtk">
         <using kind="Bow"/>
       </sub>
-	  <mul val="0.885" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.910" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.95" order="0x30" stat="pvpMagicalDmg">
@@ -1786,7 +1817,7 @@
 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1841,7 +1872,7 @@
   <for>
   <mul order="0x30" stat="magicDamVul" val="0.825"/>
   <sub val="0.00" order="0x40" stat="damRobe"/>
-  	  <add val="0.00" order="0x40" stat="damHeavy">
+  	  <add val="0.03" order="0x40" stat="damHeavy">
 	  	  	   <player olympiad="false"/>
 	  </add>
 	  <add val="0.03" order="0x40" stat="damLight">
@@ -1882,10 +1913,10 @@
         <using kind="Bow"/>
 		</and>
       </sub>
-	  	  <sub val="0.07" order="0x40" stat="skillDam">
+	  	  <sub val="0.03" order="0x40" stat="skillDam">
         <player olympiad="false"/>
       </sub>
-	  <sub val="0.04" order="0x40" stat="skillDam">
+	  <sub val="0.01" order="0x40" stat="skillDam">
 	  <and>
         <player olympiad="false"/>
 		<player behind="true"/>
@@ -1900,7 +1931,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -1954,7 +1985,10 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.825"/>
-	<sub val="0.09" order="0x40" stat="damHeavy"/>
+	<sub val="0.0475" order="0x40" stat="damHeavy"/>
+	<add val="0.04" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+	</add>
 		<mul val="0.92" order="0x50" stat="pAtk">
 			<not>
 				<using kind="Bow"/>
@@ -1973,7 +2007,7 @@
 				<using kind="Bow"/>
 			</not>
 		</sub>
-    <mul val="0.95" order="0x30" stat="pvpPhysDmg">
+    <mul val="0.975" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
       <mul val="1" order="0x30" stat="pvpMagicalDmg">
@@ -1982,7 +2016,7 @@
 	  <add val="750" order="0x40" stat="maxCp"/>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.05" order="0x40" stat="pvmDam"/>
-	  <mul val="0.87" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.93" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.975" order="0x30" stat="pvpPhysDmg">
@@ -2002,7 +2036,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2056,7 +2090,7 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
   <mul order="0x30" stat="magicDamVul" val="0.899"/>
-  	<add val="0.055" order="0x40" stat="skillDam">
+  	<add val="0.150" order="0x40" stat="skillDam">
         <player olympiad="false"/>
       </add>
 	  <add val="0.04" order="0x40" stat="skillDam">
@@ -2093,13 +2127,13 @@
 	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
         <player olympiad="false"/>
       </mul>
-	  <add val="65" order="0x40" stat="pDef">
+	  <add val="110" order="0x40" stat="pDef">
 	       <player olympiad="false"/>
       </add>
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2153,6 +2187,15 @@
   <set name="target" val="TARGET_SELF"/>
   <for>
     <mul order="0x30" stat="magicDamVul" val="0.909"/>
+	<add val="3" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 <add val="2" order="0x10" stat="STR">
+        <player olympiad="false"/>
+     </add>
+	 <add val="4" order="0x10" stat="DEX">
+        <player olympiad="false"/>
+     </add>
   <mul val="0.95" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
@@ -2167,6 +2210,9 @@
 	  <sub val="100" order='0x40' stat="rCrit">
 		<player olympiad="false"/>
 	  </sub>
+	  <add val="16" order='0x40' stat="accCombat">
+		<player olympiad="false"/>
+	  </add>
 	  <sub val="0.15" order="0x40" stat="skillDam">
 	  	  <player olympiad="false"/>
 	</sub>
@@ -2203,7 +2249,7 @@
 		  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2260,20 +2306,21 @@
   <sub val="0.065" order="0x40" stat="giveHp"/>
   <sub val="0.055" order="0x40" stat="gainHp"/>
     <mul order="0x30" stat="magicDamVul" val="0.909"/>
-  <mul val="1" order="0x30" stat="pvpPhysDmg">
+	<mul val="1" order="0x30" stat="pvpPhysDmg">
         <player olympiad="true"/>
       </mul>
 		<mul val="1.05" order="0x30" stat="pvpMagicalDmg">
         <player olympiad="true"/>
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
-	  	  <mul order="0x50" stat="regMp" val="0.60"/>
 	  <sub val="800" order="0x40" stat="mAtkSpd">
         <using kind="Heavy"/>
       </sub>
-	 
-	  <mul order="0x50" stat="regMp" val="0.6"/>
-	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  <add val="140" order="0x40" stat="mAtkSpd">
+	          <player olympiad="false"/>
+      </add>
+	  <mul order="0x50" stat="regMp" val="0.85"/>
+	  <mul val="1.03" order="0x30" stat="MpConsume"/>
 	  
 	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
@@ -2327,23 +2374,23 @@
   <set name="skillType" val="BUFF"/>
   <set name="target" val="TARGET_SELF"/>
   <for>
-    <mul order="0x30" stat="magicDamVul" val="0.825"/>
-  <mul val="0.9" order="0x30" stat="pvpPhysDmg">
-        <player olympiad="true"/>
-      </mul>
-   <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
-        <player olympiad="true"/>
-      </mul>
-	 <sub order="0x40" stat="runSpd" val="6">
-  <player olympiad="true"/>
-  </sub>
-  <mul order="0x30" stat="stunProf" val="0.5">
+		<mul order="0x30" stat="magicDamVul" val="0.825"/>
+		<mul val="0.9" order="0x30" stat="pvpPhysDmg">
+			<player olympiad="true"/>
+		</mul>
+		<mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+			<player olympiad="true"/>
+		</mul>
+		 <sub order="0x40" stat="runSpd" val="6">
+			<player olympiad="true"/>
+		</sub>
+		<mul order="0x30" stat="stunProf" val="0.5">
         <player olympiad="true"/>
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.1" order="0x40" stat="pvmDam"/>
-	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
-	  <player olympiad="false"/>
+	  <mul val="0.92" order="0x30" stat="pvpPhysDmg">
+		<player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
 	  <player olympiad="false"/>
@@ -2354,16 +2401,16 @@
 		  <player olympiad="false"/>
 		  </and>
       </sub>
-	  	  <mul val="0.97" order="0x50" stat="maxHp">
-        <player olympiad="false"/>
+	  <mul val="0.97" order="0x50" stat="maxHp">
+			<player olympiad="false"/>
       </mul>
-	  <sub val="0.04" order="0x40" stat="skillDam">
-        <player olympiad="false"/>
+	  <sub val="0.01" order="0x40" stat="skillDam">
+			<player olympiad="false"/>
       </sub>
-	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2423,7 +2470,7 @@
       </mul>
 	  <add val="0.10" order="0x40" stat="skillDam">
 	  	  <player olympiad="true"/>
-	</add>
+		</add>
      <mul val="1" order="0x30" stat="pvpMagicalDmg">
         <player olympiad="true"/>
       </mul>
@@ -2451,16 +2498,16 @@
         <player olympiad="false"/>
       </sub>
 	  <!--extra-->
-	    <sub val="0.255" order="0x40" stat="skillDam">
+	    <sub val="0.225" order="0x40" stat="skillDam">
 	  	  <player olympiad="false"/>
 		  </sub>
 		  <add val="0.15" order="0x40" stat="cAtk">
-	  	  <player olympiad="false"/>
+			<player olympiad="false"/>
 		  </add>
 		  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2620,30 +2667,29 @@
 	  <mul order="0x30" stat="debuffProf" val="0.75">
         <player olympiad="false"/>
       </mul>
-	  <mul val="1.1" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.915" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
 	  <player olympiad="false"/>
 	  </mul>
-	  <add val="8" order="0x40" stat="runSpd">
+	  <add val="5" order="0x40" stat="runSpd">
         <player olympiad="false"/>
       </add>
-	  <add val="60" order='0x40' stat="rCrit">
+	  <add val="40" order='0x40' stat="rCrit">
 	  <player olympiad="false"/>
 	  </add>
 	  <sub val="8000" order="0x40" stat="pAtk">
         <using kind="Dagger,Dual Dagger"/>
       </sub>
-	  <add val="5" order="0x40" stat="accCombat">
+	  <add val="4" order="0x40" stat="accCombat">
 	  <player olympiad="false"/>
 	  </add>
 	  
 		
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
-	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  <mul val="0.04" order="0x50" stat="pAtk">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2707,7 +2753,7 @@
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.1" order="0x40" stat="pvmDam"/>
-	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.88" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
@@ -2728,7 +2774,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2796,7 +2842,7 @@
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.1" order="0x40" stat="pvmDam"/>
-	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.88" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
@@ -2817,7 +2863,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2881,13 +2927,13 @@
       </mul>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.15" order="0x40" stat="pvmDam"/>
-      <mul val="0.94" order="0x30" stat="pvpPhysDmg">
+      <mul val="0.92" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
 	  <player olympiad="false"/>
 	  </mul>
-	  <sub val="0.02" order="0x40" stat="skillDam">
+	  <sub val="0.10" order="0x40" stat="skillDam">
 	  <player olympiad="false"/>
 	  </sub>
 	 <add val="0.05" order="0x40" stat="skillDam">
@@ -2902,10 +2948,10 @@
 		<add val="1" order="0x10" stat="CON">
         <player olympiad="false"/>
      </add>
-	 	<add order="0x40" stat="rCrit" val="30">
+	 	<add order="0x40" stat="rCrit" val="20">
 	  	  <player olympiad="false"/>
 	  </add>
-	  	<add order="0x40" stat="pAtkSpd" val="20">
+	  	<add order="0x40" stat="pAtkSpd" val="10">
 	  	  <player olympiad="false"/>
 	  </add>
 	 <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
@@ -2954,7 +3000,7 @@
 		<using skillid="483"/>
 	</mul>
 	
-		  	  <mul val="0.05" order="0x50" stat="pAtk">  
+		  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -2991,7 +3037,7 @@
 	  <player hasSkill="38033"/>
 	  <player hasSkill="38034"/>
 	  <player hasSkill="38035"/>
-	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1090"/>
 	  <player hasSkill="1268"/>
 	   <player hasSkill="94"/>
 	   <player hasSkill="1016"/>
@@ -3033,7 +3079,7 @@
 	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
-	  <mul val="0.96" order="0x30" stat="pvpMagicalDmg">
+	  <mul val="0.94" order="0x30" stat="pvpMagicalDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <add val="6" order="0x40" stat="accCombat">
@@ -3056,7 +3102,7 @@
         <using kind="Light"/>
       </mul>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -3116,6 +3162,9 @@
 	    <sub val="0.12" order="0x40" stat="skillDam">
 			<player olympiad="true"/>
       </sub>
+	  <sub val="0.035" order="0x40" stat="skillDam">
+			<player olympiad="false"/>
+      </sub>
 		<add val="0.05" order="0x40" stat="atkReuse"/>
 	  	<add val="0.05" order="0x40" stat="atkReuse">
 					  <player olympiad="false"/>
@@ -3135,7 +3184,7 @@
     <mul val="1.07" order="0x50" stat="pAtk">
         <player olympiad="false"/>
 	</mul>
-        <mul val="0.905" order="0x30" stat="pvpPhysDmg">
+       <mul val="0.800" order="0x30" stat="pvpPhysDmg">
 		<player olympiad="false"/>
 	  </mul>
 		<sub order="0x40" stat="runSpd" val="15">
@@ -3150,7 +3199,7 @@
   	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -3228,7 +3277,7 @@
       </mul>
 	  <add val="0.07" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.1" order="0x40" stat="pvmDam"/>
-	  <mul val="0.935" order="0x30" stat="pvpPhysDmg">
+	  <mul val="0.965" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="1.0" order="0x30" stat="pvpMagicalDmg">
@@ -3273,7 +3322,7 @@
 	 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -3340,11 +3389,11 @@
 			</add>
 	  <add val="0.05" order="0x40" stat="pvmVuln"/>
 	  <sub val="0.075" order="0x40" stat="pvmDam"/>
-	  <sub val="5" order="0x40" stat="aoePercent"/> 
-	  <mul val="1.00" order="0x30" stat="pvpPhysDmg">
+	  <sub val="3" order="0x40" stat="aoePercent"/> 
+	  <mul val="0.995" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
-	  <mul val="1.04" order="0x30" stat="pAtk">
+	  <mul val="1.03" order="0x30" stat="pAtk">
 	  <player olympiad="false"/>
 	  </mul>
 	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
@@ -3357,7 +3406,7 @@
 	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -3434,7 +3483,7 @@
 	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
 	  <player olympiad="false"/>
 	  </mul>
-	  <mul val="0.96" order="0x30" stat="pvpMagicalDmg">
+	  <mul val="0.94" order="0x30" stat="pvpMagicalDmg">
 	  <player olympiad="false"/>
 	  </mul>
 	  <add val="6" order="0x40" stat="accCombat">
@@ -3467,7 +3516,7 @@
 	 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
       <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
 	  
-	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
 	  	  <or>
 	  <player hasSkill="38000"/>
 	  <player hasSkill="38001"/>
@@ -3890,7 +3939,7 @@
 	  <mul val= "1.25" order="0x40" stat="rapierWpnVuln"/>
 	  <mul val= "1.25" order="0x40" stat="ancientWpnVuln"/>
 	  <mul val="0.55" order="0x30" stat="regHp"/>
-	  <sun val="0.30" order="0x40" stat="damRobe"/>
+	  <sub val="0.30" order="0x40" stat="damRobe"/>
 	  <sub val="0.30" order="0x40" stat="damLight"/>
 	  <sub val="0.30" order="0x40" stat="damHeavy"/>
 	  </for>
@@ -3971,6 +4020,7 @@
 	  <mul val="0.45" order="0x30" stat="mAtk"/>
 	  <mul val="1.05" order="0x30" stat="maxHp"/>
 	  <sub val="0.45" order="0x40" stat="skillDam"/>
+	  <mul order="0x30" stat="regHp" val="0.1"/>
 	  </for>
 	</skill>
 	
@@ -4007,25 +4057,25 @@
 	  <set name="magicLvl" val="1"/>
 	  <set name="operateType" val="OP_PASSIVE"/>
 		<for>
-		<mul order="0x30" stat="magicDamVul" val= "1.10"/>
-		<mul val= "1.15" order="0x40" stat="swordWpnVuln"/>
-		<mul val= "1.10" order="0x40" stat="bluntWpnVuln"/>
-		<mul val= "1.05" order="0x40" stat="daggerWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="bowWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="crossbowWpnVuln"/>
-		<mul val= "1.10" order="0x40" stat="poleWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="fistWpnVuln"/>
-		<mul val= "1.10" order="0x40" stat="dualWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="dualFistWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="bigSwordWpnVuln"/>
-		<mul val= "1.15" order="0x40" stat="bigBluntWpnVuln"/>
-		<mul val= "1.05" order="0x40" stat="dualDaggerWpnVuln"/>
-		<mul val= "1.10" order="0x40" stat="rapierWpnVuln"/>
-		<mul val= "1.10" order="0x40" stat="ancientWpnVuln"/>
-		<mul val="0.60" order="0x50" stat="maxHp"/>
-		<sub val="0.10" order="0x40" stat="damRobe"/>
-		<sub val="0.10" order="0x40" stat="damLight"/>
-		<sub val="0.10" order="0x40" stat="damHeavy"/>
+		<mul order="0x30" stat="magicDamVul" val= "1.00"/>
+		<mul val= "1.00" order="0x40" stat="swordWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="bluntWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="daggerWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="bowWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="crossbowWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="poleWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="fistWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="dualWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="dualFistWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="bigSwordWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="bigBluntWpnVuln"/>
+		<mul val= "1.00" order="0x40" stat="dualDaggerWpnVuln"/>
+		<mul val= "1.0" order="0x40" stat="rapierWpnVuln"/>
+		<mul val= "1.0" order="0x40" stat="ancientWpnVuln"/>
+		<mul val="1.00" order="0x50" stat="maxHp"/>
+		<add val="0.05" order="0x40" stat="damRobe"/>
+		<add val="0.05" order="0x40" stat="damLight"/>
+		<sub val="0.00" order="0x40" stat="damHeavy"/>
 	  </for>
 	</skill>
 	
@@ -4275,7 +4325,81 @@
 	  </for>
 	</skill>
 	
+		<skill id="38103" levels="1" name="Debuff Resist ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x30" stat="sleepVuln" val="0.05"/> 
+			<mul order="0x30" stat="rootVuln" val="0.05"/> 
+			<mul order="0x30" stat="derangementVuln" val="0.05"/>
+			<mul order="0x30" stat="stunVuln" val="0.05"/>
+	  </for>
+	</skill>
 	
 	
+<skill id="38104" levels="1" name="Fafurion's Pierce">
+  <set name="mpConsume" val="30"/>
+  <set name="power" val="7400"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="hitTime" val="1650"/>
+  <set name="coolTime" val="600"/>
+  <set name="olyNerf" val="5000"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="baseCritRate" val="30"/>
+  <set name="SSBoost" val="1.9"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="magicLvl" val="76"/>
+  <set name="overHit" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="castRange" val="65"/>
+  <set name="skillRadius" val="65"/>
+  <set name="areaAngle" val="13"/>
+  <set name="effectRange" val="450"/>
+  <set name="displayId" val="921"/>
+</skill>
+<skill id="38105" levels="1" name="Fafurion's Earthquake" enchantLevels1="15" enchantLevels2="15" enchantLevels3="15">
+  <table name="#ench1power"> 6848 6948 6948 7048 7048 7148 7148 7248 7248 7348 7448 7448 7548 7548 7648 </table>
+  <table name="#enchElementPower"> 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 </table> 
+  <set name="hpConsumePerc" val="10"/>
+  <set name="weaponsAllowed" val="16456"/> <!-- Pole -->
+  <set name="magicLvl" val="78"/>
+  <set name="mpConsume" val="120"/>
+  <set name="power" val="6348"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="olyNerf" val="2300"/>
+  <set name="SSBoost" val="2.7"/>
+  <set name="displayId" val="347"/>
+  <set name="minLand" val="40">
+  <player olympiad="true"/>
+  </set>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="150"/>
+  <set name="effectRange" val="400"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="isDebuff" val="true"/>
+  <set name="maxLand" val="76"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="8500"/>
+  <set name="hitTime" val="2200"/>
+  <set name="coolTime" val="480"/>
+  <set name="baseCritRate" val="15"/>
+  <enchant1 name="power" val="#ench1power"/>
+  <enchant3 name="elementPower" val="#enchElementPower"/>
+  <enchant3 name="element" val="3"/> <!-- earth -->
+  <for>
+  	<add order="0x40" stat="skillDam" val="0.12">
+	<and>
+	  <using skillid="347"/>
+      <using kind="Big Blunt"/>
+	  </and>
+    </add>
+     <effect name="RemoveTarget" val="0" noicon="1" effectType="DEBUFF" effectPower="100"/>
+  </for>
+</skill>
 	
  </list>

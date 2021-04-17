@@ -198,17 +198,18 @@
   <set name="chanceType" val="ON_CRIT"/>
   <for>
     <!-- The following values are copied from Infinity Blade SA -->
-    <mul order="0x50" stat="maxHp" val="1.15"/> <!-- HP +25% -->
+    <mul order="0x50" stat="maxHp" val="1.2"/> <!-- HP +25% -->
     <mul order="0x50" stat="maxMp" val="1.3"/> <!-- MP +30% -->
-    <mul order="0x50" stat="maxCp" val="1.3"/> <!-- CP +50% -->
-    <mul order="0x50" stat="cAtk" val="1.1"/> <!-- Shield P.Def. +33% -->
-	<mul order="0x50" stat="mAtkSpd" val="1.1"/> <!-- Shield P.Def. +33% -->
-	<add order="0x50" stat="mAtkSpd" val="75"/>
-	<mul order="0x50" stat="pAtkSpd" val="1.05"/>
-	<mul order="0x50" stat="mAtk" val="0.93"/>
-	<mul order="0x50" stat="rCrit" val="1.1"/> <!-- Shield P.Def. +33% -->
-	<mul order="0x30" stat="mReuse" val="0.8"/> <!-- Shield P.Def. +33% -->
-	<mul order="0x30" stat="pReuse" val="0.8"/> <!-- Shield P.Def. +33% -->
+    <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
+    <add order="0x40" stat="cAtk" val="0.30"/> <!-- Shield P.Def. +33% -->
+	<add val="0.10" order="0x40" stat="skillDam"/>
+	<add order="0x40" stat="mAtkSpd" val="75"/>
+	<add order="0x40" stat="pAtkSpd" val="75"/>
+	<add order="0x40" stat="rCrit" val="90"/>
+	<add order="0x40" stat="accCombat" val="8"/> <!-- PVP Damage Bonus +5% -->
+	<add order="0x40" stat="runSpd" val="8"/> <!-- PVP Damage Bonus +5% -->
+	<mul order="0x30" stat="mReuse" val="0.85"/> <!-- Shield P.Def. +33% -->
+	<mul order="0x30" stat="pReuse" val="0.85"/> <!-- Shield P.Def. +33% -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->

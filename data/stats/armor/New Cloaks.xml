@@ -107,7 +107,7 @@
     <add val='500' order='0x40' stat='maxHp'/>
 	<add val="10" order='0x40' stat='blowRate'/>
 	<add val="3" order="0x40" stat="rEvas"/>
-	<basemul val="0.08" order="0x40" stat="pAtk"/>
+	<basemul val="0.10" order="0x40" stat="pAtk"/>
 	<add val='15' order='0x40' stat='pAtkSpd'/>
 	<add order="0x40" stat="runSpd" val="3"/>
    </for>
@@ -122,8 +122,8 @@
 	<add val="0.05" order="0x40" stat="skillDam"/>
 	<add val="3" order="0x40" stat="accCombat"/>-->
     <add val='500' order='0x40' stat='maxHp'/>
-	<basemul val="0.12" order="0x40" stat="pAtk"/>
-	<add val="25" order='0x40' stat='pAtkSpd'/>
+	<basemul val="0.10" order="0x40" stat="pAtk"/>
+	<add val="20" order='0x40' stat='pAtkSpd'/>
 	<add val="0.03" order="0x40" stat="skillDam"/>
 	<add val="3" order="0x40" stat="accCombat"/>
 	<add order="0x40" stat="runSpd" val="3"/>
@@ -325,7 +325,7 @@
     <add val='650' order='0x40' stat='maxHp'/>
 	<add val="12" order='0x40' stat='blowRate'/>
 	<add val="4" order="0x40" stat="rEvas"/>
-	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<basemul val="0.14" order="0x40" stat="pAtk"/>
 	<add val='15' order='0x40' stat='pAtkSpd'/>
 	<add val="3" order="0x40" stat="skillCritAdd"/>
 	<add order="0x40" stat="runSpd" val="3"/>
@@ -341,9 +341,9 @@
 	<add val="0.05" order="0x40" stat="skillDam"/>
 	<add val="3" order="0x40" stat="accCombat"/>-->
     <add val='650' order='0x40' stat='maxHp'/>
-	<basemul val="0.16" order="0x40" stat="pAtk"/>
+	<basemul val="0.14" order="0x40" stat="pAtk"/>
 	<add val="25" order='0x40' stat='pAtkSpd'/>
-	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="0.04" order="0x40" stat="skillDam"/>
 	<add val="4" order="0x40" stat="accCombat"/>
 	<mul val="0.98" order="0x40" stat="reducePdef"/>
 	<add order="0x40" stat="runSpd" val="3"/>
@@ -563,7 +563,7 @@
     <add val='650' order='0x40' stat='maxHp'/>
 	<add val="12" order='0x40' stat='blowRate'/>
 	<add val="4" order="0x40" stat="rEvas"/>
-	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<basemul val="0.14" order="0x40" stat="pAtk"/>
 	<add val='15' order='0x40' stat='pAtkSpd'/>
 	<add val="3" order="0x40" stat="skillCritAdd"/>
 	<add order="0x40" stat="runSpd" val="3"/>

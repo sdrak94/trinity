@@ -899,6 +899,56 @@
 	</weapon>
 
 		
-
+<!--Finale Blades-->
+	<weapon id="999113" name="Blue Finale Blades" type="Dual Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999114" name="Purple Finale Blades" type="Dual Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	
+	
+	<weapon id="999115" name="Red Corrupted Finale Blades" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999116" name="Blue Corrupted Finale Blades" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999117" name="Purple Corrupted Finale Blades" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	
+	
+	<weapon id="999118" name="Blue Glow Red Finale Blades" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999119" name="Blue Glow Blue Finale Blades" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999120" name="Blue Glow Purple Finale Blades" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	
+	
+	<weapon id="999121" name="Red Glow Red Finale Blades" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999122" name="Red Glow Blue Finale Blades" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
+	<weapon id="999123" name="Red Glow Purple Finale Blades" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="999111" />
+	</weapon>
 
 </list>

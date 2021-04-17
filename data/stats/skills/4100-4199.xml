@@ -169,7 +169,7 @@
   <set name="castRange" val="600"/>
   <set name="effectRange" val="1100"/>
   <for>
-    <effect count="15" name="Fear" time="2" val="0" stackOrder="1" stackType="turn_flee"/>
+    <effect count="3" name="Fear" time="2" val="0" stackOrder="1" stackType="turn_flee"/>
   </for>
 </skill>
 <skill id="4109" levels="1" name="Curse of Antharas">
@@ -185,7 +185,7 @@
   <set name="skillType" val="DEBUFF"/>
   <set name="operateType" val="OP_ACTIVE"/>
   <for>
-    <effect name="Debuff" time="120" val="0" stackOrder="1" stackType="antaras_debuff">
+    <effect name="Debuff" time="20" val="0" stackOrder="1" stackType="antaras_debuff">
       <sub order="0x40" stat="accCombat" val="19"/>
       <sub order="0x40" stat="rEvas" val="19"/>
       <mul order="0x30" stat="mAtk" val="0.85"/>
@@ -230,7 +230,7 @@
   <set name="castRange" val="1000"/>
   <set name="effectRange" val="1500"/>
   <for>
-    <effect name="Petrification" time="120" val="0" stackOrder="120" stackType="turn_stone"/>
+    <effect name="Petrification" time="15" val="0" stackOrder="120" stackType="turn_stone"/>
   </for>
 </skill>
 <skill id="4112" levels="1" name="Ordinary Attack">

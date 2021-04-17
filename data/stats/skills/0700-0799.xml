@@ -720,7 +720,12 @@
   <set name="activationElements" val="0,1,2,3,4,5"/>
   <set name="chanceType" val="ON_HIT_BY_OFFENSIVE_SKILL"/>
   <for>
-     <basemul order="0x40" stat="mDef" val="0.066"/>
+     <basemul order="0x40" stat="mDef" val="0.066">
+	 		<and>
+	        <player olympiad="false"/>
+			<player HasItem="10549"/>
+		</and>
+      </basemul>
   </for>
 </skill>
 <skill id="756" levels="1" name="Protection of Elemental">
@@ -734,10 +739,30 @@
   <set name="activationElements" val="0,1,2,3"/>
   <set name="chanceType" val="ON_HIT_BY_OFFENSIVE_SKILL"/>
   <for>
-      <add order="0x40" stat="fireRes" val="10"/>
-      <add order="0x40" stat="waterRes" val="10"/>
-      <add order="0x40" stat="windRes" val="10"/>
-      <add order="0x40" stat="earthRes" val="10"/>
+      <add order="0x40" stat="fireRes" val="10">
+	  	 		<and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="waterRes" val="10">
+	  	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="windRes" val="10">
+	  	 <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="earthRes" val="10">
+	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
   </for>
 </skill>
 <skill id="757" levels="1" name="Protection of Alignment">
@@ -751,8 +776,18 @@
   <set name="activationElements" val="4,5"/>
   <set name="chanceType" val="ON_HIT_BY_OFFENSIVE_SKILL"/>
   <for>
-      <add order="0x40" stat="holyRes" val="10"/>
-      <add order="0x40" stat="darkRes" val="10"/>
+      <add order="0x40" stat="holyRes" val="10">
+	  	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10551"/>
+		</and>
+      </add>
+      <add order="0x40" stat="darkRes" val="10">
+	  	  	<and>
+	        <player olympiad="false"/>
+			<player HasItem="10551"/>
+		</and>
+      </add>
   </for>
 </skill>
 <skill id="758" levels="1" name="Fighter's Will">
@@ -1446,7 +1481,9 @@
     <effect name="Paralyze" time="4" val="0" effectPower="50" effectType="PARALYZE"/>
   </for>
 </skill>
-<skill id="792" levels="1" name="Betrayal Mark">
+<skill id="792" levels="2" name="Betrayal Mark">
+  <table name="#time"> 25 10 </table>
+  <table name="#activationChance"> 30 25 </table>
   <set name="power" val="140"/>
   <set name="target" val="TARGET_ONE"/>
   <set name="mpConsume" val="600"/>
@@ -1460,7 +1497,7 @@
   <set name="castRange" val="600"/>
   <set name="effectRange" val="1100"/>
   <for>
-      <effect name="ChanceSkillTrigger" time="35" val="0" special="stigmashilien" triggeredId="5600" chanceType="ON_ATTACKED" activationChance="30"/>
+      <effect name="ChanceSkillTrigger" time="#time" val="0" special="stigmashilien" triggeredId="5600" chanceType="ON_ATTACKED" activationChance="#activationChance"/>
 	</for>
 </skill>
 <skill id="793" levels="1" name="Rush Impact" enchantLevels1="15" enchantLevels2="15" enchantLevels3="15" enchantLevels4="15" enchantLevels5="15" enchantLevels6="15" enchantLevels7="15">

@@ -115,14 +115,53 @@
 		<reward itemId="526080" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 		<reward itemId="526120" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 	</capsule>
-		<capsule id="801121" name="Lucky Box" >
+	<capsule id="801121" name="Lucky Box" >
 		<reward itemId="571121" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 		<reward itemId="571120" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	
+	<capsule id="816500" name="Lucky Box" >
+		<reward itemId="526500" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526510" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+		<capsule id="816520" name="Lucky Box" >
+		<reward itemId="526520" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526530" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+		<capsule id="816540" name="Lucky Box" >
+		<reward itemId="526540" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526550" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+		<capsule id="816560" name="Lucky Box" >
+		<reward itemId="526560" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526570" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+		<capsule id="816580" name="Lucky Box" >
+		<reward itemId="526580" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526590" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	<capsule id="816600" name="Lucky Box" >
+		<reward itemId="526600" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+		<reward itemId="526610" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 	</capsule>
 	    <capsule id="999018" name="Lucky Box" >
 		<reward itemId="999008" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 	</capsule>
-		<capsule id="999019" name="Lucky Box" >
-		<reward itemId="999009" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	<capsule id="999019" name="Lucky Box" >
+			<reward itemId="999009" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	<capsule id="999020" name="Lucky Box" >
+			<reward itemId="999010" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	<capsule id="999021" name="Lucky Box" >
+			<reward itemId="999011" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	<capsule id="999022" name="Lucky Box" >
+			<reward itemId="999012" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+	</capsule>
+	<capsule id="999023" name="Lucky Box" >
+			<reward itemId="999010" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+			<reward itemId="999011" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
+			<reward itemId="999012" ammount="1" enchant="0-0" chance="10000" proEnchant="false"/>
 	</capsule>
 </list>

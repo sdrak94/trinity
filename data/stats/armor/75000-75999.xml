@@ -2,9 +2,12 @@
 <list>
 <item id='75000' name="Cloak of Aden">
   <for>
-    <add val='10' order='0x10' stat='pDef'/>
+    <add val='50' order='0x40' stat='pDef'/>
     <enchant val='0' order='0x40' stat='pDef'/>
-	<add val='8' order='0x40' stat='runSpd'/>
+	<add val='4' order='0x40' stat='runSpd'/>
+	<add order="0x40" stat="pAtkSpd" val="10"/>
+	<add order="0x40" stat="mAtkSpd" val="15"/>
+
   </for>
 </item>
 <item id='75001' name="Cloak of Dion">
@@ -48,10 +51,11 @@
 </item>
 <item id='75007' name="Cloak of Rune">
   <for>
-    <add val='10' order='0x10' stat='pDef'/>
+    <add val='50' order='0x40' stat='pDef'/>
     <enchant val='0' order='0x40' stat='pDef'/>
-	<basemul val='0.05' order='0x40' stat='pAtkSpd'/>
-	<basemul val='0.06' order='0x40' stat='mAtkSpd'/>
+	<add val='4' order='0x40' stat='runSpd'/>
+	<add order="0x40" stat="pAtkSpd" val="10"/>
+	<add order="0x40" stat="mAtkSpd" val="15"/>
   </for>
 </item>
 <item id='75008' name="Cloak of Schuttgart">

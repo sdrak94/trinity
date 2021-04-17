@@ -348,7 +348,8 @@
   <set name="flyRadius" val="540"/>
   <set name="isMagic" val="true"/>
   <set name="operateType" val="OP_ACTIVE"/>
-  <set name="reuseDelay" val="22000"/>
+  <set name="reuseDelay" val="50000"/>
+  <set name="staticReuse" val="true"/>
   <set name="skillType" val="BUFF"/>
   <set name="target" val="TARGET_SELF"/>
   <for>

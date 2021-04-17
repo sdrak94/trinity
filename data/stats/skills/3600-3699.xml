@@ -546,11 +546,14 @@
   <set name="skillType" val="BUFF"/>
   <set name="operateType" val="OP_PASSIVE"/>
   <for>    <!-- The following values are copied from Infinity Cleaver SA -->
-    <add order="0x40" stat="cAtkAdd" val="655"/> <!-- P.Atk. +504 on a critical hit -->
-    <mul order="0x50" stat="maxHp" val="1.1"/> <!-- HP +25% -->
-    <mul order="0x50" stat="maxCp" val="1.3"/> <!-- CP +50% -->
-    <add order="0x40" stat="rCrit" val="50"/> <!-- Critical +78.7 -->
-	<add order="0x40" stat="rEvas" val="7"/> <!-- Critical +78.7 -->
+    <add order="0x40" stat="cAtkAdd" val="1000"/> <!-- P.Atk. +504 on a critical hit -->
+    <mul order="0x50" stat="maxHp" val="1.2"/> <!-- HP +25% -->
+    <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
+    <add order="0x40" stat="rCrit" val="70"/> <!-- Critical +78.7 -->
+	<add val="0.10" order="0x40" stat="skillDam"/>
+	<mul order="0x30" stat="pReuse" val="0.85"/> <!-- Shield P.Def. +33% -->
+	<add order="0x40" stat="accCombat" val="7"/> <!-- Critical +78.7 -->
+	<add order="0x40" stat="runSpd" val="7"/> <!-- Critical +78.7 -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
@@ -569,15 +572,19 @@
   <set name="chanceType" val="ON_CRIT"/>
   <for>
     <!-- The following values are copied from Infinity Bow SA -->
+	<mul order="0x50" stat="maxHp" val="1.2"/> <!-- CP +50% -->
     <mul order="0x50" stat="maxMp" val="1.3"/> <!-- MP +30% -->
     <mul order="0x50" stat="maxCp" val="1.4"/> <!-- CP +50% -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="atkReuse" val="0.81"/> <!-- 19% Quick Recovery -->
-	<mul order="0x50" stat="pAtkSpd" val="1.1"/> <!-- 19% Quick Recovery -->
-    <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.88"/> <!-- MP Consumption -12% --> <!-- Gessing -->
-  </for>
+	<add order="0x40" stat="runSpd" val="10"/> <!-- 19% Quick Recovery -->
+	<add order="0x40" stat="rEvas" val="8"/> 
+	<add order="0x40" stat="accCombat" val="8"/> 
+	<add order="0x40" stat="rCrit" val="50"/> 
+	<add order="0x40" stat="pAtkSpd" val="80"/> <!-- 19% Quick Recovery -->
+	<add order="0x40" stat="pAtkRange" val="150"/> </for>
 </skill>
 <skill id="3636" levels="1" name="Dynasty Platinum Plate - Shield Master">
   <set name="target" val="TARGET_SELF"/>

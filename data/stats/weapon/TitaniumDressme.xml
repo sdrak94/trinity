@@ -1,0 +1,1256 @@
+<list>
+<!-- alt dressme-->
+<item id='900180' name="Titanium Razors">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="5" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.25" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+			<!--extra-->
+	<basemul val="0.265" order="0x40" stat="pAtk"/>
+	<add val="0.15" order="0x40" stat="cAtk"/>
+	<sub order="0x40" stat="cAtkSkill" val="0.035"/>
+	<sub val="0.03" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900190" name="Titanium Blades">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="1.1" order="0x40" stat="rCrit"/>
+	<add val="5" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<sub val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+		<!--extra-->
+	<basemul val="0.0575" order="0x40" stat="pAtk"/>
+	<sub val="2" order="0x40" stat="accCombat"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900200" name="Titanium Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="483" order="0x08" stat="sDef"/>
+	<set val="19" order="0x08" stat="rShld"/>
+	<mul val="1.30" order="0x30" stat="sDef"/>
+	<add val="5" order="0x40" stat="rShldPerfAdd"/>
+	<add val="50" order="0x40" stat="delDmgShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="900210" name="Titanium Cutter">
+  <for>
+    <set val="508" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.12" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+		<!--extra-->
+	<base val="0.07" order="0x40" stat="rCrit"/>
+	<basemul val="0.05" order="0x40" stat="maxHp"/>
+	<add val="0.20" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900220" name="Titanium Dagger">
+  <for>
+    <set val="444" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="0.3" order="0x40" stat="cAtk"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="9" order="0x40" stat="rEvas"/>
+	<basemul val="1.2" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.165" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="0.07" order="0x40" stat="pvpPhysSkillsDmg">
+		  <player behind="true"/>
+	</add>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900230" name="Titanium Hammer">
+  <for>
+    <set val="578" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x40" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order="0x40" stat="pDef"/>
+	<mul val="1.15" order="0x30" stat="sDef"/>
+	<mul val="1.15" order="0x30" stat="rShld"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900240" name="Titanium Maul">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="0.3" order="0x40" stat="cAtk"/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.15" order="0x40" stat="pAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.22" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900250" name="Titanium Destroyer">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.2" order="0x40" stat="cAtk"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900260" name="Titanium Knuckles">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<!--<basemul val="0.2" order="0x40" stat="pAtk"/>-->
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<add val="5" order="0x40" stat="rEvasAbs"/>
+	<basemul val="0.8" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<!--extra-->
+	<sub val="3" order="0x40" stat="accCombat"/>
+    <basemul val="0.05" order="0x40" stat="pAtk"/>
+	<!--extra-->
+		<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900270" name="Titanium Spear">
+  <for>
+    <set val="508" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="90" order="0x40" stat="pAtkAngle"/>
+	<add val="10" order="0x40" stat="pAtkRange"/>
+	<add val="10" order="0x40" stat="aoePercent"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.15" order="0x40" stat="pReuse"/>
+	<!--extra-->
+	<basemul val="0.070" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900280" name="Titanium Baton">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="300" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="180" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.80" order="0x40" stat="mCritRate"/>
+	<basemul val="0.35" order="0x40" stat="mAtk"/>
+	<add val="100" order="0x10" stat="mAtkSpdMaxAdd"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<!--extra-->
+	<basemul val="0.28" order="0x40" stat="mAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900290" name="Titanium Cane">
+  <for>
+    <set val="495" order="0x08" stat="pAtk"/>
+    <set val="341" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="maxCp"/>
+	<basemul val="0.4" order="0x40" stat="maxMp"/>
+	<add val="75" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="mCritRate"/>
+	<add val="150" order="0x40" stat="pDef"/>
+	<basemul val="0.8" order="0x40" stat="mAtk"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add order="0x40" stat="transDamMana" val="12"/>
+	<add order="0x40" stat="giveHp" val="0.2"/>
+	<add order="0x40" stat="gainHp" val="0.15"/>
+	<!--extra-->
+	<basemul val="0.50" order="0x40" stat="mAtk"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900300" name="Titanium Phantom">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="300" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="mAtkSpd"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<basemul val="1.3" order="0x40" stat="mCritRate"/>
+	<sub val="0.25" order="0x40" stat="mReuse"/>
+	<add val="0.12" order="0x40" stat="gainHp"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="0.12" order="0x40" stat="giveHp"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900310" name="Titanium Hawk">
+  <for>
+    <set val="928" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="7" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.955" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="50" order="0x40" stat="pAtkRange"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.24" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900320" name="Titanium Saber">
+  <for>
+    <set val="460" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<basemul val="1" order="0x40" stat="rCrit"/>
+	<basemul val="0.35" order="0x40" stat="mCritRate"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.18" order="0x40" stat="mAtkSpd"/>
+	<add val="0.00" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.00" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.00" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<add val="3" order="0x40" stat="pSkillEvas"/>
+		<!--extra-->
+	<add val="0.15" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900330" name="Titanium Charger">
+  <for>
+    <set val="549" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="pAtk"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="1" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<sub val="0.15" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+    <mul val="1.20" order="0x30" stat="skillPowerBoost">
+	    <or>
+	     <using skillId="493"/>
+		 <using skillId="494"/>
+		 <using skillId="495"/>
+		 <using skillId="793"/>
+	    </or>
+	 </mul>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="900340" name="Titanium Raven">
+  <for>
+    <set val="599" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<sub val="0.13" order="0x40" stat="atkReuse"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<basemul val="0.25" order="0x40" stat="pAtk"/>
+	<mul val="1.00" order="0x30" stat="pvpPhysDmg"/>
+	<basemul val="1.2" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="mReuse"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+		<player hasSkill="8284"/>
+		<player hasSkill="8286"/>
+		<player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+		<player hasSkill="8284"/>
+		<player hasSkill="8286"/>
+		<player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<!--alt-->
+
+
+<!-- Legacy TIt-->
+<item id='930180' name="Titanium Razors">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="5" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.25" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+			<!--extra-->
+	<basemul val="0.265" order="0x40" stat="pAtk"/>
+	<add val="0.15" order="0x40" stat="cAtk"/>
+	<sub order="0x40" stat="cAtkSkill" val="0.035"/>
+	<sub val="0.03" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930190" name="Titanium Blades">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="1.1" order="0x40" stat="rCrit"/>
+	<add val="5" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<sub val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+		<!--extra-->
+	<basemul val="0.0575" order="0x40" stat="pAtk"/>
+	<sub val="2" order="0x40" stat="accCombat"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930200" name="Titanium Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="483" order="0x08" stat="sDef"/>
+	<set val="19" order="0x08" stat="rShld"/>
+	<mul val="1.30" order="0x30" stat="sDef"/>
+	<add val="5" order="0x40" stat="rShldPerfAdd"/>
+	<add val="50" order="0x40" stat="delDmgShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="930210" name="Titanium Cutter">
+  <for>
+    <set val="508" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.12" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+		<!--extra-->
+	<base val="0.07" order="0x40" stat="rCrit"/>
+	<basemul val="0.05" order="0x40" stat="maxHp"/>
+	<add val="0.20" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930220" name="Titanium Dagger">
+  <for>
+    <set val="444" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="0.3" order="0x40" stat="cAtk"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="9" order="0x40" stat="rEvas"/>
+	<basemul val="1.2" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.165" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="0.07" order="0x40" stat="pvpPhysSkillsDmg">
+		  <player behind="true"/>
+	</add>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930230" name="Titanium Hammer">
+  <for>
+    <set val="578" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x40" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order="0x40" stat="pDef"/>
+	<mul val="1.15" order="0x30" stat="sDef"/>
+	<mul val="1.15" order="0x30" stat="rShld"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930240" name="Titanium Maul">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="0.3" order="0x40" stat="cAtk"/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.15" order="0x40" stat="pAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.22" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930250" name="Titanium Destroyer">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.2" order="0x40" stat="cAtk"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930260" name="Titanium Knuckles">
+  <for>
+    <set val="618" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<!--<basemul val="0.2" order="0x40" stat="pAtk"/>-->
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<add val="5" order="0x40" stat="rEvasAbs"/>
+	<basemul val="0.8" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<!--extra-->
+	<sub val="3" order="0x40" stat="accCombat"/>
+    <basemul val="0.05" order="0x40" stat="pAtk"/>
+	<!--extra-->
+		<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930270" name="Titanium Spear">
+  <for>
+    <set val="508" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="8" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="90" order="0x40" stat="pAtkAngle"/>
+	<add val="10" order="0x40" stat="pAtkRange"/>
+	<add val="10" order="0x40" stat="aoePercent"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.15" order="0x40" stat="pReuse"/>
+	<!--extra-->
+	<basemul val="0.070" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930280" name="Titanium Baton">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="300" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="180" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.80" order="0x40" stat="mCritRate"/>
+	<basemul val="0.35" order="0x40" stat="mAtk"/>
+	<add val="100" order="0x10" stat="mAtkSpdMaxAdd"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<!--extra-->
+	<basemul val="0.28" order="0x40" stat="mAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930290" name="Titanium Cane">
+  <for>
+    <set val="495" order="0x08" stat="pAtk"/>
+    <set val="341" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="maxCp"/>
+	<basemul val="0.4" order="0x40" stat="maxMp"/>
+	<add val="75" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="mCritRate"/>
+	<add val="150" order="0x40" stat="pDef"/>
+	<basemul val="0.8" order="0x40" stat="mAtk"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add order="0x40" stat="transDamMana" val="12"/>
+	<add order="0x40" stat="giveHp" val="0.2"/>
+	<add order="0x40" stat="gainHp" val="0.15"/>
+	<!--extra-->
+	<basemul val="0.50" order="0x40" stat="mAtk"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930300" name="Titanium Phantom">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="300" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x40" stat="mAtkSpd"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<basemul val="1.3" order="0x40" stat="mCritRate"/>
+	<sub val="0.25" order="0x40" stat="mReuse"/>
+	<add val="0.12" order="0x40" stat="gainHp"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="0.12" order="0x40" stat="giveHp"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930310" name="Titanium Hawk">
+  <for>
+    <set val="928" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="7" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.955" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="50" order="0x40" stat="pAtkRange"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.24" order="0x40" stat="pAtkSpd"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930320" name="Titanium Saber">
+  <for>
+    <set val="460" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<basemul val="1" order="0x40" stat="rCrit"/>
+	<basemul val="0.35" order="0x40" stat="mCritRate"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.18" order="0x40" stat="mAtkSpd"/>
+	<add val="0.00" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.00" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.00" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="pReuse"/>
+	<add val="3" order="0x40" stat="pSkillEvas"/>
+		<!--extra-->
+	<add val="0.15" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930330" name="Titanium Charger">
+  <for>
+    <set val="549" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="pAtk"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="2" order="0x40" stat="rEvas"/>
+	<basemul val="1" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<sub val="0.15" order="0x40" stat="pReuse"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+    <mul val="1.20" order="0x30" stat="skillPowerBoost">
+	    <or>
+	     <using skillId="493"/>
+		 <using skillId="494"/>
+		 <using skillId="495"/>
+		 <using skillId="793"/>
+	    </or>
+	 </mul>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<item id="930340" name="Titanium Raven">
+  <for>
+    <set val="599" order="0x08" stat="pAtk"/>
+    <set val="226" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<sub val="0.13" order="0x40" stat="atkReuse"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<basemul val="0.25" order="0x40" stat="pAtk"/>
+	<mul val="1.00" order="0x30" stat="pvpPhysDmg"/>
+	<basemul val="1.2" order="0x40" stat="rCrit"/>
+	<add val="4" order="0x40" stat="skillCritAdd"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+	<add val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.18" order="0x40" stat="mReuse"/>
+	<add val="1" order="0x10" stat="STR">
+	  <or>
+		<player hasSkill="8284"/>
+		<player hasSkill="8286"/>
+		<player hasSkill="8288"/>
+	  </or>
+	</add>
+	<add val="1" order="0x10" stat="INT">
+	  <or>
+		<player hasSkill="8284"/>
+		<player hasSkill="8286"/>
+		<player hasSkill="8288"/>
+	  </or>
+	</add>
+  </for>
+</item>
+<!--Legacy Tit-->
+</list>

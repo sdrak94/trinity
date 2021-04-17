@@ -6,6 +6,19 @@
                 <set name="skillType" val="BUFF" />
                 <set name="operateType" val="OP_PASSIVE" />
                 <for>
+				
+					
+                    <set order="0x99" stat="pAtkRange" val="700" >
+					<not>
+					<using kind="Bow"/>
+					</not>
+					</set>
+                    <set order="0x99" stat="pAtkSpd" val="150" >
+					<not>
+					<using kind="Bow"/>
+					</not>
+					</set>
+				
                         <set order="0x99" stat="maxHp" val="1000" />
                         <set order="0x99" stat="maxMp" val="1000" />
                         <set order="0x99" stat="maxCp" val="100" />
@@ -16,13 +29,22 @@
                         <set order="0x99" stat="mAtk" val="1800" />
                         <set order="0x99" stat="pDef" val="300" />
                         <set order="0x99" stat="mDef" val="300" />
-                        <set order="0x99" stat="pAtkSpd" val="600" />
+                        <set order="0x99" stat="pAtkSpd" val="600" >
+							<using kind="Bow"/>
+						</set>
                         <set order="0x99" stat="mAtkSpd" val="500" />
                         <set order="0x99" stat="cAtk" val="1.25" />
                         <set order="0x99" stat="cAtkAdd" val="0" />
                        
-                        <set order="0x99" stat="pAtkRange" val="1000" />
+						<set order="0x99" stat="pAtkRange" val="1000" >
+							<using kind="Bow"/>
+						</set>
+						
                         <set order="0x99" stat="atkReuse" val="1" />
+                        <set order="0x99" stat="rangedPiercing" val="0" />
+						<set order="0x99" stat="rShld" val="0" />
+						
+						
                        
                         <set order="0x99" stat="rEvas" val="140" />
                         <set order="0x99" stat="rCrit" val="150" />
@@ -40,12 +62,10 @@
                         <set order="0x99" stat="MEN" val="25" />
                        
                         <set order="0x99" stat="BowMpConsumeRate" val="0" />
-                       
-                        <set order="0x99" stat="rShldPerfAdd" val="0" />
-                        <set order="0x99" stat="rShld" val="0" />
-                        <set order="0x99" stat="rShldMax" val="0" />
-                        <set order="0x99" stat="negateShld" val="1" />
-                        <set order="0x99" stat="atkCountMax" val="1" />
+                        <set order="0x99" stat="BowMpConsumeRate" val="0" />
+						
+						<set val="0" order="0x99" stat="rEvasAbs"/>
+						
                         <set order="0x99" stat="reflectDam" val="0" />
                         <set order="0x99" stat="reflectSkillMagic" val="0" />
                         <set order="0x99" stat="reflectSkillPhysic" val="0" />

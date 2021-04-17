@@ -335,6 +335,7 @@
   <set name="castRange" val="400"/>
   <set name="effectRange" val="900"/>
   <set name="aggroPoints" val="#aggro"/>
+  <set name="koreanDisabled" val="true"/>
 </skill>
 <skill id="1018" levels="3" name="Purify">
   <table name="#negateLvl"> 3 7 9 </table>
@@ -662,13 +663,15 @@
       <basemul order="0x40" stat="maxHp" val="#maxHp"/>
 	  <add order="0x40" stat="maxHp" val="2000"/>
 	  <add order="0x40" stat="rEvas" val="2"/>
-	  <mul order="0x50" stat="poleWpnVuln" val="0.78"/>
-	  <mul val="0.975" order="0x40" stat="daggerWpnVuln"/>
-	  <mul val="0.975" order="0x40" stat="dualDaggerWpnVuln"/>
-	  <mul val="1.0235" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul order="0x50" stat="poleWpnVuln" val="0.91"/>
+	  <mul val="1.02" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="1.02" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.9235" order="0x40" stat="crossbowWpnVuln"/>
 	  <mul val="0.985" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.98" order="0x40" stat="ancientWpnVuln"/>
+	  <mul val="0.870" order="0x40" stat="bigSwordWpnVuln"/>
 	  <add order="0x40" stat="pSkillEvasReduce" val="3"/>
-	  <mul order="0x30" stat="magicDamVul" val="0.95">
+	  <mul order="0x30" stat="magicDamVul" val="0.900">
 	  	  <player olympiad="false"/>
 	  </mul>
 	  <mul order="0x50" stat="stunVuln" val="1.05">

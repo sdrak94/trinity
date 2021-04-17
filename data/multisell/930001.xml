@@ -39,19 +39,19 @@
     <production id="99956" count="1"/> 
     </item>
 	<item id="8"> 
-		<ingredient id="97003" count="100000"/> 
-		<ingredient id="4355" count="80000"/> 
-		<ingredient id="50024" count="12"/>
-		<ingredient id="6393" count="20"/>
-		<ingredient id="4356" count="10"/> 		
+		<ingredient id="97003" count="80000"/> 
+		<ingredient id="4355" count="60000"/> 
+		<ingredient id="50024" count="10"/>
+		<ingredient id="6393" count="15"/>
+		<ingredient id="4356" count="8"/> 		
 		<production id="800300" count="1"/> 
     </item>
 		<item id="9"> 
-		<ingredient id="97003" count="100000"/> 
-		<ingredient id="4355" count="80000"/> 
-		<ingredient id="50024" count="12"/>
-		<ingredient id="6393" count="20"/>
-		<ingredient id="4356" count="10"/> 		
+		<ingredient id="97003" count="80000"/> 
+		<ingredient id="4355" count="60000"/> 
+		<ingredient id="50024" count="10"/>
+		<ingredient id="6393" count="15"/>
+		<ingredient id="4356" count="8"/> 		
 		<production id="99952" count="1"/> 
     </item>
 		<item id="10"> 

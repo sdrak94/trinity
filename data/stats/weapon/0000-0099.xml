@@ -215,7 +215,7 @@
 	<sub val="0.1" order="0x40" stat="pReuse"/>
 	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
-	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<add val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="66" name="Gladius">

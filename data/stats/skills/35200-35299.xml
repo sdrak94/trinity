@@ -5,7 +5,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="pAtk" val="100">
+		<and>
 	        <player olympiad="false"/>
+			<player HasItem="60078"/>
+			<not>
+			<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -32,7 +38,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="pDef" val="30">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60079"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -59,7 +71,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="mAtk" val="300">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60080"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -86,7 +104,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="mDef" val="30">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60081"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>			
+		</and>
       </add>
   </for>
  </skill>
@@ -113,7 +137,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="pAtk" val="250">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60082"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -140,7 +170,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="mAtk" val="500">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60083"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -167,7 +203,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="mAtkSpd" val="20">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60084"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -194,7 +236,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="rCrit" val="25">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60085"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -221,7 +269,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="pDef" val="50">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60086"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -248,7 +302,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="mDef" val="50">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60087"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -275,7 +335,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add val="300" order="0x40" stat="maxCp">
-		        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60088"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -302,20 +368,51 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <mul val='0.94' order='0x30' stat='stunVuln'>
-  	        <player olympiad="false"/>
+  	  		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60089"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </mul>
   <mul val='0.94' order='0x30' stat='sleepVuln'>
-    	        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60089"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </mul>
   <mul val='0.94' order='0x30' stat='paralyzeVuln'>
-    	        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60089"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </mul>
   <mul val="0.94" order="0x30" stat="debuffVuln">
-    	        <player olympiad="false"/>
+	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="60089"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </mul>
   <mul val='0.94' order='0x30' stat='sleepVuln'>
-    	        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60089"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </mul>
+
   </for>
  </skill>
  <skill id="35223" levels="1" name="Resist Trait">
@@ -341,7 +438,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="pAtkSpd" val="20">
-			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60090"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -368,7 +471,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="rEvas" val="2">
-			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60091"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -398,12 +507,20 @@
 	<and>
 	<player olympiad="false"/>
 	  <using kind="Bow"/>
+	  <player HasItem="60092"/>
+	  <not>
+				<player inzone="s80zone"/>
+			</not>
 	  </and>
 	</add>
 	<add order="0x40" stat="pAtkRange" val="40">
 	<and>
 	<player olympiad="false"/>
-	  <using kind="Bow"/>
+	  <using kind="Crossbow"/>
+	  <player HasItem="60092"/>
+	  <not>
+				<player inzone="s80zone"/>
+	</not>
 	  </and>
 	</add>
   </for>
@@ -431,7 +548,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add val="20" order='0x40' stat='rCrit'>
-		<player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60093"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -458,7 +581,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add order="0x40" stat="maxHp" val="300">
-				        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60094"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -485,7 +614,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<sub val="0.04" order="0x40" stat="critVuln">
-				        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60095"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </sub>
   </for>
  </skill>
@@ -512,10 +647,22 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="60" order="0x40" stat="pDef">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60096"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="60" order="0x40" stat="mDef">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60096"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -542,10 +689,22 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add order="0x40" stat="maxMp" val="500">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60097"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add order="0x40" stat="maxHp" val="800">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60097"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -572,16 +731,40 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="15" order="0x40" stat="fireRes">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60098"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="15" order="0x40" stat="waterRes">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60098"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="15" order="0x40" stat="windRes">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60098"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="15" order="0x40" stat="earthRes">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60098"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -608,16 +791,40 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="400" order="0x40" stat="mAtk"> 
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60099"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="200" order="0x40" stat="pAtk">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60099"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="20" order='0x40' stat='pAtkSpd'>
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60099"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="20" order='0x40' stat='mAtkSpd'>
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60099"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -644,7 +851,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<sub val="0.04" order="0x40" stat="magicDamVul">
-				        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60100"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </sub>
   </for>
  </skill>
@@ -671,8 +884,15 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<mul val="1.20" order="0x30" stat="skillPowerBoost">
-	  <using skillid="1013"/>
-   </mul>
+			<and>
+			<using skillid="1013"/>
+	        <player olympiad="false"/>
+			<player HasItem="60101"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
+      </mul>
   </for>
  </skill>
  <skill id="35247" levels="1" name="Mana Gain">
@@ -698,10 +918,20 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<mul val="1.20" order="0x30" stat="skillPowerBoost">
-	  <using skillid="1398"/>
+	  	<and>
+			<using skillid="1398"/>
+	        <player olympiad="false"/>
+			<player HasItem="60102"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
    </mul>
    <add order="0x40" stat="maxMp" val="500">
-   			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60102"/>
+		</and>
       </add>
   </for>
  </skill>
@@ -728,7 +958,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
 	<add val="0.10" order="0x40" stat="gainHp">
-				        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60103"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -755,10 +991,22 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="20" order="0x40" stat="holyRes">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60104"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   <add val="20" order="0x40" stat="darkRes">
-  			   <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60104"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -784,7 +1032,15 @@
   <set name="skillType" val="BUFF"/>
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
-  <add val="0.04" order="0x40" stat="giveHp"/>
+  <add val="0.04" order="0x40" stat="giveHp">
+  		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60105"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
+      </add>
   </for>
  </skill>
  <skill id="35255" levels="1" name="Counter Heal">
@@ -810,7 +1066,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add order="0x40" stat="maxMp" val="300">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60106"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -837,8 +1099,14 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <mul val="1.1" order="0x40" stat="regMp">
-  			        <player olympiad="false"/>
-      </mul>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60107"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
+   </mul>
   </for>
  </skill>
  <skill id="35259" levels="1" name="Mana Recovery">
@@ -864,8 +1132,14 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add order="0x40" stat="delDmg" val="40">
-       <player olympiad="false"/>
-   </add>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60108"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
+      </add>
   </for>
  </skill>
  <skill id="35261" levels="1" name="Counter Barrier">
@@ -891,7 +1165,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="4" order="0x40" stat="absorbDam">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60109"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>
@@ -918,7 +1198,13 @@
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
   <add val="2" order="0x40" stat="accCombat">
-  			        <player olympiad="false"/>
+		<and>
+	        <player olympiad="false"/>
+			<player HasItem="60110"/>
+			<not>
+				<player inzone="s80zone"/>
+			</not>
+		</and>
       </add>
   </for>
  </skill>

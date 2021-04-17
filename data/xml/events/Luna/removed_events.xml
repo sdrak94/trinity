@@ -248,3 +248,64 @@
 				</tie>
 			</rewards>
 		</event>	
+		<event id="10" Type="SiegeEvent" Name="Floran Fortress" Description="Event Description" regAll="false" JoinLocName="Primeval Island" instanceId="1" respawnDelay="10" respawnDelayMul="2" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="10449" spawnY="-24878" spawnZ="-3661" />>
+			<timers joinTime="15" eventTime="20" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Green" nameColor="0x62FF76" titleColor="0x949494"/>
+				<team id="1" name="Orange" nameColor="0x1d7ce7" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			<sealers sealers="3" />
+			
+			<centerLoc spawn="5252,149756,-2730"  range="20000"/>
+			<flagLoc flagId="35233" spawn="5606,149756,-1967" />
+			<teamSpawns>
+				<spawn teamId="Green" spawn="11476,150766,-3310" />
+				<spawn teamId="Orange" spawn="5252,149756,-2730" />
+			</teamSpawns>
+			<doors>
+				<door doorId="20220021" />
+				<door doorId="20220026" />
+				<door doorId="20220022" />
+				<door doorId="20220023" />
+				<door doorId="20220024" />
+				<door doorId="20220025" />
+			</doors>
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="10973" spawnY="150822" spawnZ="-3294" />
+				<spawn npcId="90001" spawnX="5051" spawnY="149764" spawnZ="-2730" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="15" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>

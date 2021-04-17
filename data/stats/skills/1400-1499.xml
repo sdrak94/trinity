@@ -169,6 +169,7 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="castRange" val="400"/>
   <set name="effectRange" val="900"/>
+  <set name="koreanDisabled" val="true"/>
   <for>
     <effect name="PhoenixBless" time="300" val="0"/>
   </for>
@@ -569,7 +570,7 @@
   <set name="negateId" val="1430"/>
   <for>
     <effect count="10" name="ManaHealOverTime" time="3" noicon="1" val="#mhot"/>
-    <effect name="ImmobileBuff" time="30" val="0" abnormal="imprison1">
+    <effect name="ImmobileBuff" time="30" val="0" abnormal="imprison1" stackOrder="1" stackType="Harmony">
       <mul order="0x50" stat="pDef" val="0.4">
 	    <not>
 		    <using slotitem="81015;16"/>
@@ -1006,7 +1007,8 @@
   <set name="magicLvl" val="74"/>
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="power" val="200"/>
-  <set name="reuseDelay" val="28000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="reuseDelay" val="50000"/>
   <set name="skillRadius" val="150"/>
   <set name="skillType" val="PDAM"/>
   <set name="soulMaxConsumeCount" val="5"/>
@@ -1038,11 +1040,11 @@
 	<set name="reuseDelay" val="6000"/>
     <set name="isMagic" val="true"/>
     <set name="operateType" val="OP_ACTIVE"/>
-    <set name="power" val="150"/> <!-- Guessing -->
+    <set name="power" val="140"/> <!-- Guessing -->
     <set name="skillType" val="MDAM"/>
     <set name="target" val="TARGET_AREA"/>
-	<set name="skillRadius" val="600"/>
-	<set name="effectRange" val="1500"/>
+	<set name="skillRadius" val="500"/>
+	<set name="effectRange" val="1300"/>
 	<set name="soulConsumeCount" val="5"/>
 	<cond msg="You need to be farther away from target to cast Chain Lightning.">
          <target mindistance="150"/>
@@ -1136,9 +1138,9 @@
   <set name="isDebuff" val="true"/>
   <set name="minLand" val="33"/>
   <set name="operateType" val="OP_ACTIVE"/>
-  <set name="power" val="165"/>
+  <set name="power" val="160"/>
   <set name="reuseDelay" val="21000"/> <!-- Guess -->
-  <set name="skillRadius" val="180"/>
+  <set name="skillRadius" val="170"/>
   <set name="skillType" val="MDAM"/>
   <set name="target" val="TARGET_AURA"/>
   <for>
@@ -1635,7 +1637,7 @@
   <set name="soulConsumeCount" val="20"/>
   <set name="aggroPoints" val="95000"/>
   <for>
-    <effect name="ImmobileBuff" time="30" val="0" abnormal="imprison1">
+    <effect name="ImmobileBuff" time="30" val="0" abnormal="imprison1" stackOrder="2" stackType="Harmony">
 	 <mul order="0x50" stat="rEvas" val="0.1"/>
 	 <mul order="0x50" stat="pAtkSpd" val="0.84"/>
 	 <mul order="0x50" stat="mAtkSpd" val="0.84"/>

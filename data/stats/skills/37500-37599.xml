@@ -283,14 +283,14 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="castRange" val="400"/>
   <set name="effectRange" val="900"/>
-  <set name="canBeDispeled" val="false"/>
+  <set name="canBeDispeled" val="true"/>
    <for>
-    <effect name="Buff" time="7200" val="0">
+    <effect name="Buff" time="7200" val="0" stackOrder="#exp" stackType="BoostDrop">
 	<mul val="#exp" order="0x30" stat="rExp"/>
 	</effect>
   </for>
 </skill>
-<skill id="37513" levels="3" name="Exp Boost Buff">
+<skill id="37513" levels="3" name="Drop Boost Buff">
   <table name="#Drop"> 1.10 1.20 1.30 </table>
   <set name="target" val="TARGET_ONE"/>
   <set name="reuseDelay" val="60000"/>
@@ -302,9 +302,9 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="castRange" val="400"/>
   <set name="effectRange" val="900"/>
-  <set name="canBeDispeled" val="false"/>
+  <set name="canBeDispeled" val="true"/>
    <for>
-    <effect name="Buff" time="7200" val="0">
+    <effect name="Buff" time="7200" val="0" stackOrder="#Drop" stackType="BoostExp">
 	<mul val="#Drop" order="0x30" stat="rDrop"/>
 	</effect>
   </for>
@@ -646,7 +646,8 @@
   <set name="castRange" val="800"/>
   <set name="baseCritRate" val="-105"/>
   <set name="effectRange" val="1400"/>
-  <set name="displayId" val="11028"/>
+  <!--<set name="displayId" val="11028"/>-->
+  <set name="displayId" val="891"/>
 </skill>
 <skill id="37591" levels="1" name="Whirl Stun">
   <set name="power" val="5000"/>

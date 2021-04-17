@@ -1496,7 +1496,7 @@
 		<stat name="name" val="Forgotten Temple"/>
 	</zone>
 	<!-- Frintezza -->
-	<zone id="12005" type="KoreanZone" shape="NPoly" minZ="-5120" maxZ="-2500"/>
+	<zone id="12005" type="EventZone" shape="NPoly" minZ="-5120" maxZ="-2500"/>
 	<!-- Pagan's Temple -->
 	<zone id="60003" type="PaganZone" shape="Cylinder" minZ="-25320" maxZ="-5120" rad="210447"/> 
 	<!--Rod-->

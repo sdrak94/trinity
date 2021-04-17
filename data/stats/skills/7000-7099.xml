@@ -332,6 +332,7 @@
   <set name="magicLvl" val="80"/>
   <set name="target" val="TARGET_ONE"/>
   <set name="hitTime" val="800"/>
+  <set name="castRange" val="400"/>
   <set name="staticHitTime" val="true"/>
   <set name="power" val="120"/>
   <set name="staticReuse" val="true"/>

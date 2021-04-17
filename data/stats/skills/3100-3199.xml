@@ -986,7 +986,7 @@
   <set name="staticReuse" val="true"/>
 </skill>
 <skill id="3161" levels="3" name="Item Skill: Skill Clarity">
-  <table name="#PhysicalMpConsumeRate"> 0.95 0.92 0.9 </table>
+  <table name="#MagicalMpConsumeRate"> 0.95 0.92 0.9 </table>
   <table name="#mpInitialConsume"> 11 13 14 </table>
   <table name="#mpConsume"> 43 49 55 </table>
   <set name="mpInitialConsume" val="#mpInitialConsume"/>
@@ -1000,7 +1000,7 @@
   <set name="staticHitTime" val="true"/>
   <set name="staticReuse" val="true"/>
   <for>
-    <mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate"/>
+    <mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate"/>
   </for>
 </skill>
 <skill id="3162" levels="3" name="Item Skill: Spell Clarity">

@@ -633,8 +633,8 @@
 </skill>
 <skill id="3557" levels="2" name="Necklace of Valakas">
 <table name="#baseStat"> 0 1 </table>
-  <table name="#maxHp"> 0.1 0.2 </table>
-  <table name="#pAtk"> 0.05 0.12 </table>
+  <table name="#maxHp"> 0.1 0.27 </table>
+  <table name="#pAtk"> 0.05 0.14 </table>
   <table name="#mAtk"> 0.08 0.15 </table>
   <table name="#mCritRate"> 0.1 0.15 </table>
   <table name="#waterRes"> 5 15 </table>
@@ -1051,10 +1051,11 @@
   <set name="skillType" val="BUFF"/>
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
-    <add order="0x40" stat="cAtkAdd" val="3804"/> <!-- P.Atk. +504 on a critical hit -->
+    <add order="0x40" stat="cAtkAdd" val="1504"/> <!-- P.Atk. +504 on a critical hit -->
     <mul order="0x40" stat="maxHp" val="1.25"/> <!-- HP +25% -->
     <mul order="0x40" stat="maxCp" val="1.5"/> <!-- CP +50% -->
-    <add order="0x40" stat="rCrit" val="100"/> <!-- Critical +78.7 -->
+    <add order="0x40" stat="rCrit" val="80"/> <!-- Critical +78.7 -->
+	<add order="0x40" stat="accCombat" val="8"/> <!-- Critical +78.7 -->
 	<add order="0x40" stat="runSpd" val="12"/> <!-- Critical +78.7 -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
@@ -1075,7 +1076,10 @@
   <for>
     <mul order="0x50" stat="maxHp" val="1.25"/> <!-- HP +25% -->
     <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
-	<mul order="0x50" stat="pAtk" val="1.4"/> <!-- Atk. Spd. +7% -->
+	<mul order="0x50" stat="pAtk" val="1.21"/> <!-- Atk. Spd. +7% -->
+	<add order="0x40" stat="accCombat" val="6"/> <!-- Critical +78.7 -->
+	<add order="0x40" stat="runSpd" val="8"/> <!-- Critical +78.7 -->
+	<add order="0x40" stat="rCrit" val="60"/> <!-- Critical +78.7 -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
@@ -1109,9 +1113,12 @@
     <mul order="0x50" stat="maxHp" val="1.20"/> <!-- HP +25% -->
     <mul order="0x50" stat="maxMp" val="1.3"/> <!-- MP +30% -->
     <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
-    <add order="0x40" stat="rCrit" val="78"/> <!-- Critical +78.7 -->
+    <add order="0x40" stat="rCrit" val="90"/> <!-- Critical +78.7 -->
 	<add order="0x40" stat="runSpd" val="10"/> <!-- Critical +78.7 -->
-	<add order="0x40" stat="pAtkSpd" val="100"/> <!-- Critical +78.7 -->
+	<add order="0x40" stat="pAtkSpd" val="100"/> <!-- Attack Speed +100 -->
+	<add order="0x40" stat="mAtkSpd" val="100"/> <!-- Attack Speed +100 -->
+	<add order="0x40" stat="accCombat" val="8"/> <!-- Accuracy +8 -->
+	<add order="0x40" stat="rEvas" val="8"/> <!-- Evasion 8 -->
 	<sub order="0x40" stat="pReuse" val="0.3"/> <!-- Critical +78.7 -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
@@ -1148,8 +1155,8 @@
     <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
     <add order="0x40" stat="rEvas" val="5"/> <!-- Evasion +3.15 -->
 	<sub order="0x40" stat="pReuse" val="0.25"/> <!-- Evasion +3.15 -->
-	<mul order="0x50" stat="cAtk" val="1.4"/> <!-- Evasion +3.15 -->
-	<add order="0x40" stat="rCrit" val="70"/> <!-- Evasion +3.15 -->
+	<mul order="0x50" stat="cAtk" val="1.35"/> <!-- Evasion +3.15 -->
+	<add order="0x40" stat="rCrit" val="120"/> <!-- Evasion +3.15 -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
@@ -1181,6 +1188,7 @@
   <for>
     <mul order="0x50" stat="maxMp" val="1.3"/> <!-- MP +30% -->
     <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
+	<mul order="0x50" stat="maxHp" val="1.2"/> <!-- HP +50% -->
     <mul order="0x50" stat="pAtkSpd" val="1.1"/> <!-- Atk. Spd. +3% -->
 	<mul order="0x50" stat="pReuse" val="0.75"/> <!-- Atk. Spd. +3% -->
     <add order="0x40" stat="regMp" val="0.51"/> <!-- MP regen per tick +0.51 -->
@@ -1220,7 +1228,7 @@
   <set name="chanceType" val="ON_CRIT"/>
   <for>
     <mul order="0x50" stat="maxHp" val="1.25"/> <!-- HP +25% -->
-    <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
+    <mul order="0x50" stat="maxCp" val="1.35"/> <!-- CP +35% -->
     <mul order="0x50" stat="pAtkSpd" val="1.08"/> <!-- Atk. Spd. +7% -->
     <add order="0x40" stat="accCombat" val="5"/> <!-- Accuracy +4.89 -->
 	<add order="0x40" stat="pAtkAngle" val="200"/> <!-- Accuracy +4.89 -->
@@ -1252,11 +1260,12 @@
   <set name="chanceType" val="ON_CRIT"/>
   <for>
     <mul order="0x50" stat="maxMp" val="1.3"/> <!-- MP +30% -->
-    <mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
+	<mul order="0x50" stat="maxHp" val="1.20"/> <!-- HP +20% -->
+	<mul order="0x50" stat="maxCp" val="1.5"/> <!-- CP +50% -->
     <mul order="0x30" stat="pvpPhysDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpMagicalDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
     <mul order="0x30" stat="pvpPhysSkillsDmg" val="1.05"/> <!-- PVP Damage Bonus +5% -->
-    <mul order="0x50" stat="atkReuse" val="0.75"/> <!-- 19% Quick Recovery -->
+    <mul order="0x50" stat="atkReuse" val="0.80"/> <!-- 19% Quick Recovery -->
 	<add order="0x40" stat="runSpd" val="10"/> <!-- 19% Quick Recovery -->
 	<add order="0x40" stat="rEvas" val="8"/> 
 	<add order="0x40" stat="accCombat" val="8"/> 
@@ -1291,7 +1300,7 @@
   <set name="chanceType" val="ON_MAGIC_GOOD"/>
   <for>
     <mul order="0x50" stat="maxMp" val="1.4"/> <!-- MP +30% -->
-    <mul order="0x50" stat="maxCp" val="1.25"/> <!-- CP +50% -->
+    <mul order="0x50" stat="maxCp" val="1.3"/> <!-- CP +50% -->
 	<mul order="0x50" stat="maxHp" val="1.3"/>
     <add order="0x40" stat="mAtk" val="6233"/> <!-- M.Atk. +29.67 -->
 	<add order="0x40" stat="mAtkRange" val="200"/>

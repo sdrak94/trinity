@@ -4,8 +4,8 @@
 	<ingredient id="200000" count="15"/> 
     <production id="13897" count="1"/> 
     </item>
-	<!--<item id="2">
+	<item id="2">
 	<ingredient id="200000" count="40"/> 
     <production id="83500" count="1"/> 
-    </item>-->
+    </item>
 </list>

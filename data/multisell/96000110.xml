@@ -4,10 +4,10 @@
 	<ingredient id="200000" count="15"/> 
     <production id="9592" count="1"/> 
     </item>
-	<!--<item id="2"> 
+	<item id="2"> 
 	<ingredient id="200000" count="40"/> 
     <production id="83509" count="1"/> 
-    </item>-->
+    </item>
 	<item id="4"> 
 	<ingredient id="570140" count="1" /> 
     <production id="570140" count="1" /> 
@@ -16,26 +16,26 @@
 	<ingredient id="570140" count="1" /> 
     <production id="570140" count="1" /> 
   </item>
-      <item id="6"> 
-	<ingredient id="570140" count="1" /> 
-    <production id="570140" count="1" /> 
-  </item>
-    <item id="7"> 
-	<ingredient id="570140" count="1" /> 
-    <production id="570140" count="1" /> 
-  </item>
-	<item id="8"> 
+	<item id="6"> 
 	 <ingredient id="200000" count="30"/> 
     <production id="73050" count="1"/> 
     </item>
-	<item id="9"> 
+	<item id="7"> 
 	 <ingredient id="200000" count="30"/> 
     <production id="73051" count="1"/> 
     </item>
-	<item id="10"> 
+	<item id="8"> 
 	 <ingredient id="200000" count="30"/> 
     <production id="73052" count="1"/> 
     </item>
+	      <item id="9"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+    <item id="10"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
 	
 	<item id="11"> 
 	<ingredient id="570140" count="1" /> 
@@ -50,7 +50,7 @@
     <production id="570140" count="1" /> 
   </item>
 	
-	<!--<item id="14"> 
+	<item id="14"> 
 	 <ingredient id="200000" count="65"/> 
     <production id="73053" count="1"/> 
     </item>
@@ -61,5 +61,5 @@
 	<item id="16"> 
 	 <ingredient id="200000" count="65"/> 
     <production id="73055" count="1"/> 
-    </item>-->
+    </item>
 </list>

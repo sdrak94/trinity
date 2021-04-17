@@ -331,7 +331,7 @@
 </skill>
 <skill id="227" levels="50" name="Light Armor Mastery" enchantLevels1="30">
   <table name="#pDef"> 4.2 5.3 6.5 7.7 9 9.9 10.8 12.7 13.7 14.8 16.9 18 19.1 21.5 22.7 24 25.3 26.6 27.9 29.3 30.7 32.1 33.6 35 36.5 38.1 39.6 41.2 42.8 44.5 46.1 47.8 49.5 51.3 53 54.8 56.6 58.4 60.2 62.1 64 65.8 67.7 69.7 71.6 73.5 75.5 77.4 79.4 81.3 </table>
-  <table name="#ench1pDef"> 85 86 86 87 87 88 88 89 90 90 91 91 92 92 93 94 94 95 95 96 96 97 98 98 99 99 100 100 101 102 </table>
+  <table name="#ench1pDef"> 85 86 87 88 88 89 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 99 99 100 100 101 102 </table>
   <table name="#rEvas"> 3 3 5 5 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 </table>
   <set name="target" val="TARGET_SELF"/>
   <set name="skillType" val="BUFF"/>
@@ -924,7 +924,7 @@
 <skill id="246" levels="1" name="Seal of Ruler">
   <set name="target" val="TARGET_HOLY"/>
   <set name="reuseDelay" val="4000"/>
-  <set name="hitTime" val="5000"/>
+  <set name="hitTime" val="75000"/>
   <set name="staticReuse" val="true"/>
   <set name="staticHitTime" val="true"/>
   <set name="skillType" val="TAKECASTLE"/>

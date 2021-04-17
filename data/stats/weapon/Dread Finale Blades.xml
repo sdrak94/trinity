@@ -69,4 +69,423 @@
 	</basemul>
   </for>
 </item>-->
+
+
+<!--dressme-->
+
+<item id='999112' name="Red Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999113' name="Blue Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999114' name="Purple Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+
+
+<item id='999115' name="Red Corrupted Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999116' name="Blue Corrupted Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999117' name="Purple Corrupted Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+
+
+<item id='999118' name="Blue Glow Red Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999119' name="Blue Glow Blue Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999120' name="Blue Glow Purple Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+
+
+<item id='999121' name="Red Glow Red Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999122' name="Red Glow Blue Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+<item id='999123' name="Red Glow Purple Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<!--<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>-->
+  </for>
+</item>
+
 </list>

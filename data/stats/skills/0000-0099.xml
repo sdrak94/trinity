@@ -547,13 +547,13 @@
   <set name="overHit" val="true"/>
   <set name="SSBoost" val="3.0"/>
   <set name="pvpMulti" val="1.5"/>
-  <set name="reuseDelay" val="4000"/>
-  <set name="hitTime" val="2900"/>
+  <set name="reuseDelay" val="3800"/>
+  <set name="hitTime" val="3100"/>
   <set name="coolTime" val="700"/>
   <set name="skillType" val="PDAM"/>
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="castRange" val="950"/>
-  <set name="effectRange" val="1300"/>
+  <set name="effectRange" val="1200"/>
   <enchant1 name="power" val="#ench1Power"/>
   <enchant3 name="elementPower" val="#enchElementPower"/>
   <enchant3 name="element" val="0"/>
@@ -664,7 +664,7 @@
   <set name="hitTime" val="1550"/>
   <set name="coolTime" val="720"/>
   <set name="skillType" val="BLOW"/>
-  <set name="baseCritRate" val="10"/>
+  <set name="baseCritRate" val="35"/>
   <set name="lethal1" val="1"/>
   <set name="lethal2" val="1"/>
   <set name="pvpMulti" val="0.99"/>
@@ -1100,7 +1100,7 @@
   <table name="#magicLvl"> 42 49 55 60 64 68 72 </table>
   <set name="magicLvl" val="#magicLvl"/>
   <set name="target" val="TARGET_SELF"/>
-  <set name="reuseDelay" val="10000"/>
+  <set name="reuseDelay" val="30000"/>
   <set name="hitTime" val="2000"/>
   <set name="skillType" val="SUMMON"/>
   <set name="isMagic" val="true"/>
@@ -1539,7 +1539,10 @@
 			</not>-->
 	  </mul>
       <sub order="0x40" stat="rEvas" val="6"/>
-	  <mul order="0x30" stat="pDef" val="0.9">
+	  <mul order="0x30" stat="pDef" val="0.96">
+	        <using slotitem="31174;9"/>
+      </mul>
+	  <mul order="0x30" stat="mDef" val="0.96">
 	        <using slotitem="31174;9"/>
       </mul>
 	  <basemul order="0x40" stat="pAtk" val="1.30">

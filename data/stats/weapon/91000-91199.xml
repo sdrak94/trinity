@@ -159,11 +159,11 @@
    <add val="60" order="0x40" stat="pAtkRange"/>   
    <add val="60" order="0x40" stat="mAtkRange"/>   
    <add val='80' order='0x40' stat='rCrit'/>
-   <add stat="absorbDam" val="6" order="0x40"/>
-   <add stat="absorbDamSkill" val="6" order="0x40"/>
-   <add stat="pAtkAngle" val="100" order="0x40"/>
-   <sub val="0.02" order="0x40" stat="pvpPhysSkillsDmg"/>
-	<mul val="0.96" order="0x40" stat="pvpPhysDmg"/>
+   <add stat="absorbDam" val="8" order="0x40"/>
+   <add stat="absorbDamSkill" val="8" order="0x40"/>
+   <add stat="pAtkAngle" val="80" order="0x40"/>
+   <sub val="0.01" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.025" order="0x40" stat="pvpPhysDmg"/>
 	<mul val="1.02" order="0x40" stat="pvpMagicalDmg"/>
    <add stat="atkCountMax" val="1" order="0x40"/>
    <!--extra-->
@@ -448,7 +448,7 @@
 	<sub val="0.05" order="0x40" stat="atkReuse"/>
 	<add val="100" order="0x40" stat="negateAtkTarget"/>
 	<add val="0.25" order="0x40" stat="cAtk"/>
-	<add val="850" order="0x40" stat="pAtk"/>
+	<add val="1100" order="0x40" stat="pAtk"/>
   </for>
 </item>
 <item id='91017' name="Draconian Firebrand">

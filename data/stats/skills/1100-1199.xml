@@ -717,11 +717,11 @@
   <set name="target" val="TARGET_AURA"/>
   <set name="powerMulti" val="2.75"/>
   <set name="mpConsume" val="300"/>
-  <set name="skillRadius" val="180"/>
+  <set name="skillRadius" val="160"/>
   <set name="element" val="0"/> <!-- Fire -->
   <set name="elementPower" val="20"/>
   <set name="reuseDelay" val="10000"/>
-  <set name="hitTime" val="5000"/>
+  <set name="hitTime" val="5200"/>
   <set name="skillType" val="MDAM"/>
   <set name="isMagic" val="true"/>
   <set name="operateType" val="OP_ACTIVE"/>
@@ -755,11 +755,11 @@
   <set name="power" val="#power"/>
   <set name="target" val="TARGET_FRONT_AREA"/>
   <set name="powerMulti" val="1.25"/>
-  <set name="areaAngle" val="12"/>
-  <set name="skillRadius" val="550"/>
+  <set name="areaAngle" val="10"/>
+  <set name="skillRadius" val="500"/>
   <set name="element" val="1"/> <!-- Water -->
   <set name="elementPower" val="20"/>
-  <set name="hitTime" val="4500"/>
+  <set name="hitTime" val="4700"/>
   <set name="skillType" val="MDAM"/>
   <set name="isMagic" val="true"/>
   <set name="operateType" val="OP_ACTIVE"/>

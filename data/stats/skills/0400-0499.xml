@@ -1193,6 +1193,7 @@
   <set name="staticReuse" val="true"/>
   <set name="isMagic" val="true"/>
   <set name="operateType" val="OP_ACTIVE"/>
+  <set name="koreanDisabled" val="true"/>
   <for>
     <effect name="PhoenixBless" time="600" val="0"/>
   </for>
@@ -1234,7 +1235,7 @@
   <for>
     <effect count="60" name="HealOverTime" noicon="1" time="2" val="900"/>
     <effect count="60" name="ManaHealOverTime" noicon="1" time="2" val="200"/>
-    <effect name="ImmobileBuff" time="120" val="0" abnormal="imprison1">
+    <effect name="ImmobileBuff" time="120" val="0" abnormal="imprison1" stackOrder="1" stackType="Harmony">
       <mul order="0x50" stat="pDef" val="0.8">
 	     <using kind="Heavy,Light"/>
 	  </mul>

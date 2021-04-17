@@ -614,6 +614,7 @@
   <set name="skillRadius" val="1000"/>
   <for>
     <effect name="Buff" time="360" val="0">
+	  <mul order="0x30" stat="magicDamVul" val="1.05"/>
       <basemul order="0x40" stat="maxHp" val="0.2"/>
 	  <mul order="0x30" stat="regHp" val="1.4"/>
     </effect>

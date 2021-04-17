@@ -85,10 +85,10 @@
    <for>
 	 
 	 <add val="0.08" order="0x40" stat="damLight"/>
-	 <basemul val="0.25" order="0x40" stat="pAtk">
+	 <basemul val="0.30" order="0x40" stat="pAtk">
 	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
 	 </basemul>
-	 <sub val="0.15" order="0x40" stat="pReuse">
+	 <sub val="0.20" order="0x40" stat="pReuse">
 	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
 	 </sub>
       <mul order="0x30" stat="daggerWpnVuln" val="0.90"/>
@@ -107,10 +107,10 @@
 <item id="13512" name="Warmonger's Circlet">
     <for>
      <add val="0.1" order="0x40" stat="damHeavy"/>
-	 <basemul val="0.25" order="0x40" stat="pAtk">
+	 <basemul val="0.30" order="0x40" stat="pAtk">
 	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
 	 </basemul>
-	 <sub val="0.15" order="0x40" stat="pReuse">
+	 <sub val="0.20" order="0x40" stat="pReuse">
 	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
 	 </sub>
       <mul order="0x30" stat="bluntWpnVuln" val="0.90"/>

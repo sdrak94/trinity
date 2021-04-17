@@ -359,8 +359,9 @@
   <set name="skillType" val="BUFF"/>
   <set name="operateType" val="OP_PASSIVE"/>
   <for>
+	<add order="0x40" stat="mAtkSpd" val="30"/>
 	<add val="5" order='0x40' stat="runSpd"/>
-	<basemul val='0.4' order='0x40' stat="mCritRate"/>
+	<add val="40" order='0x40' stat='mCritRate'/>
 	<add val='50' order='0x40' stat="skillRadiusBoost"/>
 	<sub val="0.05" order="0x40" stat="mReuse"/>
 	<mul val="0.9" order="0x30" stat="MpConsume"/>
@@ -392,7 +393,49 @@
 	</add>
   </for>
 </skill>
-
+<skill id="94200" levels="2" name="Fafurion's Tear">
+<table name="#baseStat"> 0 1 </table>
+  <table name="#maxHp"> 0.1 0.27 </table>
+  <table name="#pAtkSpd"> 0.04 0.08 </table>
+  <table name="#pAtk"> 0.04 0.10 </table>
+  <table name="#mCritRate"> 0.1 0.15 </table>
+  <table name="#waterRes"> 5 25 </table>
+  <table name="#fireRes"> 10 15 </table>
+  <table name="#waterPower"> 15 20 </table>
+  <table name="#mReuse"> 0.09 0.15 </table>
+  <table name="#pReuse"> 0.09 0.16 </table>
+  <table name="#paravuln"> 1 0.82 </table>
+  <table name="#sleepvuln"> 0.8 0.67 </table>
+  <table name="#debuffreduce"> 1 0.7 </table>
+  <table name="#runSpd"> 3 3 </table>
+  <table name="#pSkillEvas"> 0 5 </table>
+  <table name="#mSkillEvas"> 0 5 </table>
+  <table name="#pvmVuln"> 1 0.94 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <basemul order="0x40" stat="maxHp" val="#maxHp"/>
+    <basemul order="0x40" stat="pAtkSpd" val="#pAtkSpd"/>
+	<basemul order="0x40" stat="pAtk" val="#pAtk"/>
+    <basemul order="0x40" stat="mCritRate" val="#mCritRate"/>
+    <add order="0x40" stat="waterRes" val="#waterRes"/>
+	<add order="0x40" stat="waterPower" val="#waterPower"/>
+	<add order="0x40" stat="fireRes" val="#fireRes"/>
+    <mul order="0x30" stat="sleepVuln" val="#sleepvuln"/>
+    <mul order="0x30" stat="sleepProf" val="1.4"/>
+	<mul order="0x30" stat="paralyzeVuln" val="#paravuln"/>
+    <sub order="0x40" stat="mReuse" val="#mReuse"/>
+    <sub order="0x40" stat="pReuse" val="#pReuse"/>
+	<add order="0x10" stat="WIT" val="#baseStat"/>
+	<add order="0x10" stat="DEX" val="#baseStat"/>
+	<add order="0x40" stat="pSkillEvas" val="#pSkillEvas"/>
+	<add order="0x40" stat="mSkillEvas" val="#mSkillEvas"/>
+	<mul order="0x30" stat="debuffReduce" val="#debuffreduce"/>
+	<add order="0x40" stat="runSpd" val="#runSpd"/>
+	<mul order="0x30" stat="debuffVuln" val="#pvmVuln"/>
+  </for>
+</skill>
 <skill id="9421" levels="1" name="Middle one">
   <set name="target" val="TARGET_SELF"/>
   <set name="skillType" val="BUFF"/>

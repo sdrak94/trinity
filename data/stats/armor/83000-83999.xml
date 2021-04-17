@@ -3,8 +3,11 @@
   <for>
     <add val="12" order="0x10" stat="pDef"/>
     <enchant val="0" order="0x50" stat="pDef"/>
-	<enchant val="0" order="0x50" stat="mDef"/>
-    <basemul val="0.2" order="0x40" stat="mAtk"/>
+	<enchant val="0" order="0x50" stat="mAtk"/>
+	<enchant val="0" order="0x51" stat="mAtk"/>
+	<enchant val="0" order="0x60" stat="mAtk"/>
+	<enchant val="0" order="0x61" stat="mAtk"/>
+    <basemul val="0.25" order="0x40" stat="mAtk"/>
 	<basemul val="0.15" order="0x40" stat="mDef"/>
 	<basemul val="0.05" order="0x40" stat="pDef"/>
 	<sub val="0.10" order="0x40" stat="pvmVuln"/>

@@ -383,14 +383,14 @@
 </item>
 <item id="9455" name="Dynasty Earring">
   <for>
-    <add val="94" order="0x10" stat="mDef"/>
+    <add val="90" order="0x10" stat="mDef"/>
     <add val="35" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
   </for>
 </item>
 <item id="9456" name="Dynasty Amulet">
   <for>
-    <add val="120" order="0x10" stat="mDef"/>
+    <add val="110" order="0x10" stat="mDef"/>
     <add val="46" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
 	<add val="0.15" order="0x40" stat="gainHp">
@@ -469,14 +469,14 @@
 </item>
 <item id="9457" name="Dynasty Ring">
   <for>
-    <add val="60" order="0x10" stat="mDef"/>
+    <add val="55" order="0x10" stat="mDef"/>
     <add val="23" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
   </for>
 </item>
 <item id="9458" name="Dynasty Pendant">
   <for>
-    <add val="94" order="0x10" stat="mDef"/>
+    <add val="84" order="0x10" stat="mDef"/>
     <add val="35" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
   </for>
@@ -490,7 +490,7 @@
 </item>
 <item id="9460" name="Dynasty Band">
   <for>
-    <add val="60" order="0x10" stat="mDef"/>
+    <add val="52" order="0x10" stat="mDef"/>
     <add val="23" order="0x40" stat="maxMp"/>
     <enchant val="0" order="0x0C" stat="mDef"/>
   </for>

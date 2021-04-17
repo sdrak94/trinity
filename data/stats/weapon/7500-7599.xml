@@ -20,9 +20,9 @@
     <set val="293" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="7576" name="Draconic Bow - Cheap Shot">
@@ -40,9 +40,9 @@
           <game skill="false" chance="26"/> 
        </and> 
     </set>
-   <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+   <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="7577" name="Draconic Bow - Focus">
@@ -54,9 +54,9 @@
     <set val="293" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-	<mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 <item id="7578" name="Draconic Bow - Critical Slow">
@@ -68,9 +68,9 @@
     <set val="293" order="0x08" stat="pAtkSpd"/>
     <enchant val="0" order="0x0C" stat="pAtk"/>
     <enchant val="0" order="0x0C" stat="mAtk"/>
-    <mul val="0.7" order="0x30" stat="pvpPhysDmg"/>
-	<mul val="0.7" order="0x30" stat="pvpMagicalDmg"/>
-	<sub val="0.3" order="0x40" stat="pvpPhysSkillsDmg"/>
+    <mul val="0.95" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
   </for>
 </item>
 </list>

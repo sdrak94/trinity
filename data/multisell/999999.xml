@@ -85,34 +85,46 @@
 		<ingredient id="200000" count="130"/> 
 		<production id="600052" count="1"/> 
     </item>
-		<!-- gia meta-->
+ <item id="22"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+      <item id="23"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+      <item id="24"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
 	
 
-	<!--<item id="22"> 
-	<ingredient id="200000" count="10"/> 
+	<item id="25"> 
+	<ingredient id="200000" count="20"/> 
     <production id="9552" count="10"/> 
     </item>
-	<item id="23"> 
-    <ingredient id="200000" count="10"/> 
+	<item id="26"> 
+    <ingredient id="200000" count="20"/> 
     <production id="9553" count="10"/> 
     </item>
-	<item id="24"> 
-   <ingredient id="200000" count="10"/> 
+	<item id="27"> 
+	<ingredient id="200000" count="20"/> 
     <production id="9554" count="10"/> 
     </item>
-	<item id="25"> 
-   <ingredient id="200000" count="10"/> 
+	<item id="28"> 
+	<ingredient id="200000" count="20"/> 
     <production id="9555" count="10"/> 
     </item>
-	<item id="26"> 
-    <ingredient id="200000" count="10"/> 
+	<item id="29"> 
+    <ingredient id="200000" count="20"/> 
     <production id="9556" count="10"/> 
     </item>
-	<item id="27"> 
-    <ingredient id="200000" count="10"/> 
+	<item id="30"> 
+    <ingredient id="200000" count="20"/> 
     <production id="9557" count="10"/> 
     </item>
-	<item id="28"> 
+	<!--gia meta-->
+	<!--<item id="28"> 
     <ingredient id="200000" count="40"/> 
     <production id="99975" count="1"/> 
     </item>

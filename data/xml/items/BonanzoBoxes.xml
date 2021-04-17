@@ -1,40 +1,40 @@
 <?xml version='1.0' encoding='utf-8'?>
 <list>
-	<box id="800000" name="PvP Reward Chest" title="Bronze Reward Chest">
+	<box id="800000" name="Bronze PvP Reward Chest" title="Bronze Reward Chest">
 		<reward itemId="6392" ammount="10" enchant="0-0" chance="2000"/>
 		<reward itemId="10486" ammount="5" enchant="0-0" chance="2000"/>
 		<reward itemId="12822" ammount="5" enchant="0-0" chance="1500"/>
 		<reward itemId="62002" ammount="2" enchant="0-0" chance="1500"/>
 		<reward itemId="62021" ammount="2" enchant="0-0" chance="1500"/>
 		<reward itemId="4356" ammount="1" enchant="0-0" chance="500"/>
-		<reward itemId="6578" ammount="5" enchant="0-0" chance="400"/>
-		<reward itemId="6577" ammount="2" enchant="0-0" chance="400"/>
-		<reward itemId="99982" ammount="1" enchant="0-0" chance="100"/>
-		<reward itemId="99996" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="5" enchant="0-0" chance="490"/>
+		<reward itemId="6577" ammount="2" enchant="0-0" chance="490"/>
+		<reward itemId="99982" ammount="1" enchant="0-0" chance="10" chanceDisp="1"/>
+		<reward itemId="99996" ammount="1" enchant="0-0" chance="10" chanceDisp="1"/>
 	</box>
-	<box id="800001" name="PvP Reward Chest" title="Silver Reward Chest">
+	<box id="800001" name="Silver PvP Reward Chest" title="Silver Reward Chest">
 		<reward itemId="6392" ammount="20" enchant="0-0" chance="2000"/>
 		<reward itemId="10486" ammount="10" enchant="0-0" chance="2000"/>
 		<reward itemId="12822" ammount="10" enchant="0-0" chance="1500"/>
 		<reward itemId="62003" ammount="3" enchant="0-0" chance="1500"/>
 		<reward itemId="62022" ammount="3" enchant="0-0" chance="1500"/>
 		<reward itemId="4356" ammount="2" enchant="0-0" chance="500"/>
-		<reward itemId="6578" ammount="8" enchant="0-0" chance="400"/>
-		<reward itemId="6577" ammount="3" enchant="0-0" chance="400"/>
-		<reward itemId="99987" ammount="1" enchant="0-0" chance="100"/>
-		<reward itemId="99997" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="8" enchant="0-0" chance="497"/>
+		<reward itemId="6577" ammount="3" enchant="0-0" chance="497"/>
+		<reward itemId="99987" ammount="1" enchant="0-0" chance="3" chanceDisp="1"/>
+		<reward itemId="99997" ammount="1" enchant="0-0" chance="3" chanceDisp="1"/>
 	</box>
-	<box id="800002" name="PvP Reward Chest" title="Golden Reward Chest">
+	<box id="800002" name="Golden PvP Reward Chest" title="Golden Reward Chest">
 		<reward itemId="6392" ammount="60" enchant="0-0" chance="2000"/>
 		<reward itemId="10486" ammount="20" enchant="0-0" chance="2000"/>
 		<reward itemId="12822" ammount="20" enchant="0-0" chance="1500"/>
-		<reward itemId="62004" ammount="4" enchant="0-0" chance="1500"/>
-		<reward itemId="62023" ammount="4" enchant="0-0" chance="1500"/>
+		<reward itemId="62004" ammount="3" enchant="0-0" chance="1500"/>
+		<reward itemId="62023" ammount="3" enchant="0-0" chance="1500"/>
 		<reward itemId="4356" ammount="5" enchant="0-0" chance="500"/>
-		<reward itemId="6578" ammount="15" enchant="0-0" chance="400"/>
-		<reward itemId="6577" ammount="6" enchant="0-0" chance="400"/>
-		<reward itemId="22014" ammount="1" enchant="0-0" chance="100"/>
-		<reward itemId="22016" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="15" enchant="0-0" chance="499"/>
+		<reward itemId="6577" ammount="6" enchant="0-0" chance="499"/>
+		<reward itemId="22014" ammount="1" enchant="0-0" chance="1" chanceDisp="1"/>
+		<reward itemId="22016" ammount="1" enchant="0-0" chance="1" chanceDisp="1"/>
 	</box>
 		<!--<box id="800000" name="PvP Reward Chest" title="Bronze Reward Chest">
 		<reward itemId="6392" ammount="10" enchant="0-0" chance="3000"/>
@@ -74,17 +74,17 @@
 	</box>-->
 	
 	    <!--unique lucky boxes-->
-		<box id="800003" name="Small Fortune Chest" title="Small Fortune Chest">
+	<box id="800003" name="Small Fortune Chest" title="Small Fortune Chest">
 		<reward itemId="6392" ammount="20" enchant="0-0" chance="5000"/>
 		<reward itemId="10486" ammount="7" enchant="0-0" chance="1500"/>
 		<reward itemId="12822" ammount="7" enchant="0-0" chance="1500"/>
 		<reward itemId="9627" ammount="8" enchant="0-0" chance="500"/>
 		<reward itemId="6393" ammount="2" enchant="0-0" chance="400"/>
 		<reward itemId="4356" ammount="2" enchant="0-0" chance="300"/>
-		<reward itemId="6578" ammount="5" enchant="0-0" chance="300"/>
-		<reward itemId="6577" ammount="3" enchant="0-0" chance="300"/>
-		<reward itemId="99982" ammount="1" enchant="0-0" chance="100"/>
-		<reward itemId="99996" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="5" enchant="0-0" chance="350"/>
+		<reward itemId="6577" ammount="3" enchant="0-0" chance="350"/>
+		<reward itemId="99982" ammount="1" enchant="0-0" chance="50"/>
+		<reward itemId="99996" ammount="1" enchant="0-0" chance="50"/>
 	</box>
 	<box id="800004" name="Medium Fortune Chest" title="Medium Fortune Chest">
 		<reward itemId="6393" ammount="5" enchant="0-0" chance="5000"/>
@@ -93,10 +93,10 @@
 		<reward itemId="800100" ammount="10" enchant="0-0" chance="500"/>
 		<reward itemId="6393" ammount="8" enchant="0-0" chance="400"/>
 		<reward itemId="4356" ammount="8" enchant="0-0" chance="300"/>
-		<reward itemId="6578" ammount="22" enchant="0-0" chance="300"/>
-		<reward itemId="6577" ammount="12" enchant="0-0" chance="300"/>
-		<reward itemId="99987" ammount="2" enchant="0-0" chance="100"/>
-		<reward itemId="99997" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="22" enchant="0-0" chance="390"/>
+		<reward itemId="6577" ammount="12" enchant="0-0" chance="390"/>
+		<reward itemId="99987" ammount="2" enchant="0-0" chance="10"/>
+		<reward itemId="99997" ammount="1" enchant="0-0" chance="10"/>
 	</box>
 	<box id="800005" name="Large Fortune Chest" title="Large Fortune Chest">
 		<reward itemId="6393" ammount="20" enchant="0-0" chance="5000"/>
@@ -105,9 +105,119 @@
 		<reward itemId="6393" ammount="35" enchant="0-0" chance="500"/>
 		<reward itemId="6393" ammount="40" enchant="0-0" chance="400"/>
 		<reward itemId="4356" ammount="40" enchant="0-0" chance="300"/>
-		<reward itemId="6578" ammount="78" enchant="0-0" chance="300"/>
-		<reward itemId="6577" ammount="45" enchant="0-0" chance="300"/>
-		<reward itemId="22014" ammount="1" enchant="0-0" chance="100"/>
-		<reward itemId="22016" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="6578" ammount="78" enchant="0-0" chance="390"/>
+		<reward itemId="6577" ammount="45" enchant="0-0" chance="390"/>
+		<reward itemId="22014" ammount="1" enchant="0-0" chance="10"/>
+		<reward itemId="22016" ammount="1" enchant="0-0" chance="10"/>
+	</box>
+	
+	<!--rb boxes-->
+		<box id="800200" name="Valakas' Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850000" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800201" name="Frintezza's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850005" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800202" name="Antharas' Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850001" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800203" name="Zaken's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850003" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800204" name="Baylor's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850007" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800205" name="Baium's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850002" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800206" name="Ant Queen's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850004" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+		<box id="800207" name="Beleth's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="400"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="100"/>
+		<reward itemId="850006" ammount="1" enchant="0-0" chance="100"/>
+	</box>
+	<box id="800208" name="Fafurion's Chest" title="Grand Boss Chest">
+		<reward itemId="62002" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62021" ammount="1" enchant="0-0" chance="3000"/>
+		<reward itemId="62003" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62022" ammount="1" enchant="0-0" chance="1000"/>
+		<reward itemId="62004" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62023" ammount="1" enchant="0-0" chance="500"/>
+		<reward itemId="62004" ammount="2" enchant="0-0" chance="499"/>
+		<reward itemId="62023" ammount="2" enchant="0-0" chance="499"/>
+		<reward itemId="50028" ammount="1" enchant="0-0" chance="1" chanceDisp="1"/>
+		<reward itemId="850011" ammount="1" enchant="0-0" chance="1" chanceDisp="1"/>
 	</box>
 </list>

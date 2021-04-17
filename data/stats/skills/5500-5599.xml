@@ -362,8 +362,18 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <for>
     <effect name="Buff" time="12" val="0">
-      <basemul order="0x40" stat="mDef" val="0.14"/>
-	  <basemul order="0x40" stat="pDef" val="0.14"/>
+      <basemul order="0x40" stat="mDef" val="0.14">
+	  	 	<and>
+	        <player olympiad="false"/>
+			<player HasItem="10549"/>
+		</and>
+      </basemul>
+	  <basemul order="0x40" stat="pDef" val="0.14">
+	  	 	<and>
+	        <player olympiad="false"/>
+			<player HasItem="10549"/>
+		</and>
+      </basemul>
     </effect>
   </for>
 </skill>
@@ -375,10 +385,30 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <for>
     <effect name="Buff" time="12" val="0">
-      <add order="0x40" stat="fireRes" val="20"/>
-      <add order="0x40" stat="waterRes" val="20"/>
-      <add order="0x40" stat="windRes" val="20"/>
-      <add order="0x40" stat="earthRes" val="20"/>
+      <add order="0x40" stat="fireRes" val="20">
+	  	 		<and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="waterRes" val="20">
+	  	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="windRes" val="20">
+	  	 <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
+      <add order="0x40" stat="earthRes" val="20">
+	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10550"/>
+		</and>
+      </add>
     </effect>
   </for>
 </skill>
@@ -390,8 +420,18 @@
   <set name="operateType" val="OP_ACTIVE"/>
   <for>
     <effect name="Buff" time="12" val="0">
-      <add order="0x40" stat="holyRes" val="20"/>
-      <add order="0x40" stat="darkRes" val="20"/>
+      <add order="0x40" stat="holyRes" val="20">
+	  	  <and>
+	        <player olympiad="false"/>
+			<player HasItem="10551"/>
+		</and>
+      </add>
+      <add order="0x40" stat="darkRes" val="20">
+	  	  	<and>
+	        <player olympiad="false"/>
+			<player HasItem="10551"/>
+		</and>
+      </add>
     </effect>
   </for>
 </skill>
