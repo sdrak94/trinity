@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="False">
+    <item id="1"> 
+	<ingredient id="51003" count="5"/>
+    <production id="60078" count="1"/> 
+    </item>
+	<item id="2"> 
+	<ingredient id="51003" count="5"/> 
+    <production id="60079" count="1"/> 
+    </item>
+	<item id="3"> 
+	<ingredient id="51003" count="5"/> 
+    <production id="60080" count="1"/> 
+    </item>
+	<item id="4"> 
+	<ingredient id="51003" count="5"/> 
+    <production id="60081" count="1"/> 
+    </item>
+	<item id="5"> 
+	<ingredient id="51003" count="5"/> 
+    <production id="60107" count="1"/> 
+    </item>
+	<item id="6"> 
+	<ingredient id="51003" count="5"/> 
+    <production id="60088" count="1"/> 
+    </item>
+	<item id="7"> <!--HP-->
+	<ingredient id="51003" count="5"/> 
+    <production id="60094" count="1"/> 
+    </item>
+	<item id="8"> <!--MP-->
+	<ingredient id="51003" count="5"/> 
+    <production id="60106" count="1"/> 
+    </item>
+	<item id="9"> <!--Evas-->
+	<ingredient id="51003" count="5"/> 
+    <production id="60091" count="1"/> 
+    </item>
+	<item id="10"> <!--Accuracy-->
+	<ingredient id="51003" count="5"/> 
+    <production id="60110" count="1"/> 
+    </item>
+</list>

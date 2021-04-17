@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/dressme/armor.xsd">
+
+	<dress id="100" name="Red Archer Suit" type="LIGHT">
+		<set chest="32721" legs="-1" gloves="-1" feet="-1" />
+		<price id="327210" count="1" />
+		<limitedTimePrice id="837210" count="1" hours="72" />
+        <limitedTimePrice2 id="847210" count="1" hours="168" />
+	</dress>
+	<dress id="101" name="Red Archer Suit" type="HEAVY">
+		<set chest="32721" legs="-1" gloves="-1" feet="-1" />
+		<price id="327210" count="1" />
+		<limitedTimePrice id="837210" count="1" hours="72" />
+        <limitedTimePrice2 id="847210" count="1" hours="168" />
+	</dress>
+	<dress id="102" name="Red Archer Suit" type="ROBE">
+		<set chest="32721" legs="-1" gloves="-1" feet="-1" />
+		<price id="327210" count="1" />
+		<limitedTimePrice id="837210" count="1" hours="72" />
+        <limitedTimePrice2 id="847210" count="1" hours="168" />
+	</dress>
+
+	<dress id="103" name="King Suit" type="LIGHT">
+		<set chest="32722" legs="-1" gloves="-1" feet="-1" />
+		<price id="327220" count="1" />
+		<limitedTimePrice id="837220" count="1" hours="72" />
+        <limitedTimePrice2 id="847220" count="1" hours="168" />
+	</dress>
+	<dress id="104" name="King Suit" type="HEAVY">
+		<set chest="32722" legs="-1" gloves="-1" feet="-1" />
+		<price id="327220" count="1" />
+		<limitedTimePrice id="837220" count="1" hours="72" />
+        <limitedTimePrice2 id="847220" count="1" hours="168" />
+	</dress>
+	<dress id="105" name="King Suit" type="ROBE">
+		<set chest="32722" legs="-1" gloves="-1" feet="-1" />
+		<price id="327220" count="1" />
+		<limitedTimePrice id="837220" count="1" hours="72" />
+        <limitedTimePrice2 id="847220" count="1" hours="168" />
+	</dress>
+
+	<dress id="106" name="Cowboy Suit" type="LIGHT">
+		<set chest="32723" legs="-1" gloves="-1" feet="-1" />
+		<price id="327230" count="1" />
+		<limitedTimePrice id="837230" count="1" hours="72" />
+        <limitedTimePrice2 id="847230" count="1" hours="168" />
+	</dress>
+	<dress id="107" name="Cowboy Suit" type="HEAVY">
+		<set chest="32723" legs="-1" gloves="-1" feet="-1" />
+		<price id="327230" count="1" />
+		<limitedTimePrice id="837230" count="1" hours="72" />
+        <limitedTimePrice2 id="847230" count="1" hours="168" />
+	</dress>
+	<dress id="108" name="Cowboy Suit" type="ROBE">
+		<set chest="32723" legs="-1" gloves="-1" feet="-1" />
+		<price id="327230" count="1" />
+		<limitedTimePrice id="837230" count="1" hours="72" />
+        <limitedTimePrice2 id="847230" count="1" hours="168" />
+	</dress>
+	
+	<dress id="109" name="Shaolin Suit" type="LIGHT">
+		<set chest="32724" legs="-1" gloves="-1" feet="-1" />
+		<price id="327240" count="1" />
+		<limitedTimePrice id="837240" count="1" hours="72" />
+        <limitedTimePrice2 id="847240" count="1" hours="168" />
+	</dress>
+	<dress id="110" name="Shaolin Suit" type="HEAVY">
+		<set chest="32724" legs="-1" gloves="-1" feet="-1" />
+		<price id="327240" count="1" />
+		<limitedTimePrice id="837240" count="1" hours="72" />
+        <limitedTimePrice2 id="847240" count="1" hours="168" />
+	</dress>
+	<dress id="111" name="Shaolin Suit" type="ROBE">
+		<set chest="32724" legs="-1" gloves="-1" feet="-1" />
+		<price id="327240" count="1" />
+		<limitedTimePrice id="837240" count="1" hours="72" />
+        <limitedTimePrice2 id="847240" count="1" hours="168" />
+	</dress>
+	
+	<dress id="112" name="Samurai Suit" type="LIGHT">
+		<set chest="32725" legs="-1" gloves="-1" feet="-1" />
+		<price id="327250" count="1" />
+		<limitedTimePrice id="837250" count="1" hours="72" />
+        <limitedTimePrice2 id="847250" count="1" hours="168" />
+	</dress>
+	<dress id="113" name="Samurai Suit" type="HEAVY">
+		<set chest="32725" legs="-1" gloves="-1" feet="-1" />
+		<price id="327250" count="1" />
+		<limitedTimePrice id="837250" count="1" hours="72" />
+        <limitedTimePrice2 id="847250" count="1" hours="168" />
+	</dress>
+	<dress id="114" name="Samurai Suit" type="ROBE">
+		<set chest="32725" legs="-1" gloves="-1" feet="-1" />
+		<price id="327250" count="1" />
+		<limitedTimePrice id="837250" count="1" hours="72" />
+        <limitedTimePrice2 id="847250" count="1" hours="168" />
+	</dress>
+	
+	<dress id="115" name="Dubai Suit" type="LIGHT">
+		<set chest="32726" legs="-1" gloves="-1" feet="-1" />
+		<price id="327260" count="1" />
+		<limitedTimePrice id="837260" count="1" hours="72" />
+        <limitedTimePrice2 id="847260" count="1" hours="168" />
+	</dress>
+	<dress id="116" name="Dubai Suit" type="HEAVY">
+		<set chest="32726" legs="-1" gloves="-1" feet="-1" />
+		<price id="327260" count="1" />
+		<limitedTimePrice id="837260" count="1" hours="72" />
+        <limitedTimePrice2 id="847260" count="1" hours="168" />
+	</dress>
+	<dress id="117" name="Dubai Suit" type="ROBE">
+		<set chest="32726" legs="-1" gloves="-1" feet="-1" />
+		<price id="327260" count="1" />
+		<limitedTimePrice id="837260" count="1" hours="72" />
+        <limitedTimePrice2 id="847260" count="1" hours="168" />
+	</dress>
+	
+	<dress id="118" name="Guardian Suit" type="LIGHT">
+		<set chest="32727" legs="-1" gloves="-1" feet="-1" />
+		<price id="327270" count="1" />
+		<limitedTimePrice id="837270" count="1" hours="72" />
+        <limitedTimePrice2 id="847270" count="1" hours="168" />
+	</dress>
+	<dress id="119" name="Guardian Suit" type="HEAVY">
+		<set chest="32727" legs="-1" gloves="-1" feet="-1" />
+		<price id="327270" count="1" />
+		<limitedTimePrice id="837270" count="1" hours="72" />
+        <limitedTimePrice2 id="847270" count="1" hours="168" />
+	</dress>
+	<dress id="120" name="Guardian Suit" type="ROBE">
+		<set chest="32727" legs="-1" gloves="-1" feet="-1" />
+		<price id="327270" count="1" />
+		<limitedTimePrice id="837270" count="1" hours="72" />
+        <limitedTimePrice2 id="847270" count="1" hours="168" />
+	</dress>
+	
+	<dress id="121" name="Legionary Suit" type="LIGHT">
+		<set chest="32728" legs="-1" gloves="-1" feet="-1" />
+		<price id="327280" count="1" />
+		<limitedTimePrice id="837280" count="1" hours="72" />
+        <limitedTimePrice2 id="847280" count="1" hours="168" />
+	</dress>
+	<dress id="122" name="Legionary Suit" type="HEAVY">
+		<set chest="32728" legs="-1" gloves="-1" feet="-1" />
+		<price id="327280" count="1" />
+		<limitedTimePrice id="837280" count="1" hours="72" />
+        <limitedTimePrice2 id="847280" count="1" hours="168" />
+	</dress>
+	<dress id="123" name="Legionary Suit" type="ROBE">
+		<set chest="32728" legs="-1" gloves="-1" feet="-1" />
+		<price id="327280" count="1" />
+		<limitedTimePrice id="837280" count="1" hours="72" />
+        <limitedTimePrice2 id="847280" count="1" hours="168" />
+	</dress>
+	
+	<dress id="124" name="Wolverine Suit" type="LIGHT">
+		<set chest="32063" legs="-1" gloves="-1" feet="-1" />
+		<price id="320630" count="1" />
+		<limitedTimePrice id="830630" count="1" hours="72" />
+        <limitedTimePrice2 id="840630" count="1" hours="168" />
+	</dress>
+	<dress id="125" name="Wolverine Suit" type="HEAVY">
+		<set chest="32063" legs="-1" gloves="-1" feet="-1" />
+		<price id="320630" count="1" />
+		<limitedTimePrice id="830630" count="1" hours="72" />
+        <limitedTimePrice2 id="840630" count="1" hours="168" />
+	</dress>
+	<dress id="126" name="Wolverine Suit" type="ROBE">
+		<set chest="32063" legs="-1" gloves="-1" feet="-1" />
+		<price id="320630" count="1" />
+		<limitedTimePrice id="830630" count="1" hours="72" />
+        <limitedTimePrice2 id="840630" count="1" hours="168" />
+	</dress>
+	
+	<dress id="127" name="White Assassin Suit" type="LIGHT">
+		<set chest="31855" legs="-1" gloves="-1" feet="-1" />
+		<price id="318550" count="1" />
+		<limitedTimePrice id="838550" count="1" hours="72" />
+        <limitedTimePrice2 id="848550" count="1" hours="168" />
+	</dress>
+	<dress id="128" name="White Assassin Suit" type="HEAVY">
+		<set chest="31855" legs="-1" gloves="-1" feet="-1" />
+		<price id="318550" count="1" />
+		<limitedTimePrice id="838550" count="1" hours="72" />
+        <limitedTimePrice2 id="848550" count="1" hours="168" />
+	</dress>
+	<dress id="129" name="White Assassin Suit" type="ROBE">
+		<set chest="31855" legs="-1" gloves="-1" feet="-1" />
+		<price id="318550" count="1" />
+		<limitedTimePrice id="838550" count="1" hours="72" />
+        <limitedTimePrice2 id="848550" count="1" hours="168" />
+	</dress>
+	
+	<dress id="130" name="Dark Assassin Suit" type="LIGHT">
+		<set chest="57012" legs="-1" gloves="-1" feet="-1" />
+		<price id="570120" count="1" />
+		<limitedTimePrice id="830120" count="1" hours="72" />
+        <limitedTimePrice2 id="840120" count="1" hours="168" />
+	</dress>
+	<dress id="131" name="Dark Assassin Suit" type="HEAVY">
+		<set chest="57012" legs="-1" gloves="-1" feet="-1" />
+		<price id="570120" count="1" />
+		<limitedTimePrice id="830120" count="1" hours="72" />
+        <limitedTimePrice2 id="840120" count="1" hours="168" />
+	</dress>
+	<dress id="132" name="Dark Assassin Suit" type="ROBE">
+		<set chest="57012" legs="-1" gloves="-1" feet="-1" />
+		<price id="570120" count="1" />
+		<limitedTimePrice id="830120" count="1" hours="72" />
+        <limitedTimePrice2 id="840120" count="1" hours="168" />
+	</dress>
+	
+	<dress id="136" name="Musketeer Cat Suit" type="LIGHT">
+		<set chest="32600" legs="-1" gloves="-1" feet="-1" />
+		<price id="326000" count="1" />
+		<limitedTimePrice id="836000" count="1" hours="72" />
+        <limitedTimePrice2 id="846000" count="1" hours="168" />
+	</dress>
+	<dress id="137" name="Musketeer Cat Suit" type="HEAVY">
+		<set chest="32600" legs="-1" gloves="-1" feet="-1" />
+		<price id="326000" count="1" />
+		<limitedTimePrice id="836000" count="1" hours="72" />
+        <limitedTimePrice2 id="846000" count="1" hours="168" />
+	</dress>
+	<dress id="138" name="Musketeer Cat Suit" type="ROBE">
+		<set chest="32600" legs="-1" gloves="-1" feet="-1" />
+		<price id="326000" count="1" />
+		<limitedTimePrice id="836000" count="1" hours="72" />
+        <limitedTimePrice2 id="846000" count="1" hours="168" />
+	</dress>
+	
+	<dress id="139" name="White Wolf Suit" type="LIGHT">
+		<set chest="32602" legs="-1" gloves="-1" feet="-1" />
+		<price id="326020" count="1" />
+		<limitedTimePrice id="836020" count="1" hours="72" />
+        <limitedTimePrice2 id="846020" count="1" hours="168" />
+	</dress>
+	<dress id="140" name="White Wolf Suit" type="HEAVY">
+		<set chest="32602" legs="-1" gloves="-1" feet="-1" />
+		<price id="326020" count="1" />
+		<limitedTimePrice id="836020" count="1" hours="72" />
+        <limitedTimePrice2 id="846020" count="1" hours="168" />
+	</dress>
+	<dress id="141" name="White Wolf Suit" type="ROBE">
+		<set chest="32602" legs="-1" gloves="-1" feet="-1" />
+		<price id="326020" count="1" />
+		<limitedTimePrice id="836020" count="1" hours="72" />
+        <limitedTimePrice2 id="846020" count="1" hours="168" />
+	</dress>
+	
+	<dress id="142" name="Fat Cat Suit" type="LIGHT">
+		<set chest="32604" legs="-1" gloves="-1" feet="-1" />
+		<price id="326040" count="1" />
+		<limitedTimePrice id="836040" count="1" hours="72" />
+        <limitedTimePrice2 id="846040" count="1" hours="168" />
+	</dress>
+	<dress id="143" name="Fat Cat Suit" type="HEAVY">
+		<set chest="32604" legs="-1" gloves="-1" feet="-1" />
+		<price id="326040" count="1" />
+		<limitedTimePrice id="836040" count="1" hours="72" />
+        <limitedTimePrice2 id="846040" count="1" hours="168" />
+	</dress>
+	<dress id="144" name="Fat Cat Suit" type="ROBE">
+		<set chest="32604" legs="-1" gloves="-1" feet="-1" />
+		<price id="326040" count="1" />
+		<limitedTimePrice id="836040" count="1" hours="72" />
+        <limitedTimePrice2 id="846040" count="1" hours="168" />
+	</dress>
+	
+	<dress id="145" name="Vampire Suit" type="LIGHT">
+		<set chest="32606" legs="-1" gloves="-1" feet="-1" />
+		<price id="326060" count="1" />
+		<limitedTimePrice id="836060" count="1" hours="72" />
+        <limitedTimePrice2 id="846060" count="1" hours="168" />
+	</dress>
+	<dress id="146" name="Vampire Suit" type="HEAVY">
+		<set chest="32606" legs="-1" gloves="-1" feet="-1" />
+		<price id="326060" count="1" />
+		<limitedTimePrice id="836060" count="1" hours="72" />
+        <limitedTimePrice2 id="846060" count="1" hours="168" />
+	</dress>
+	<dress id="147" name="Vampire Suit" type="ROBE">
+		<set chest="32606" legs="-1" gloves="-1" feet="-1" />
+		<price id="326060" count="1" />
+		<limitedTimePrice id="836060" count="1" hours="72" />
+        <limitedTimePrice2 id="846060" count="1" hours="168" />
+	</dress>
+	
+	<dress id="148" name="Green Light Suit" type="LIGHT">
+		<set chest="32610" legs="-1" gloves="-1" feet="-1" />
+		<price id="326100" count="1" />
+		<limitedTimePrice id="836100" count="1" hours="72" />
+        <limitedTimePrice2 id="846100" count="1" hours="168" />
+	</dress>
+	<dress id="149" name="Green Light Suit" type="HEAVY">
+		<set chest="32610" legs="-1" gloves="-1" feet="-1" />
+		<price id="326100" count="1" />
+		<limitedTimePrice id="836100" count="1" hours="72" />
+        <limitedTimePrice2 id="846100" count="1" hours="168" />
+	</dress>
+	<dress id="150" name="Green Light Suit" type="ROBE">
+		<set chest="32610" legs="-1" gloves="-1" feet="-1" />
+		<price id="326100" count="1" />
+		<limitedTimePrice id="836100" count="1" hours="72" />
+        <limitedTimePrice2 id="846100" count="1" hours="168" />
+	</dress>
+	
+	<dress id="151" name="Dragon Slayer" type="LIGHT">
+		<set chest="32612" legs="-1" gloves="-1" feet="-1" />
+		<price id="326120" count="1" />
+		<limitedTimePrice id="836120" count="1" hours="72" />
+        <limitedTimePrice2 id="846120" count="1" hours="168" />
+	</dress>
+	<dress id="152" name="Dragon Slayer" type="HEAVY">
+		<set chest="32612" legs="-1" gloves="-1" feet="-1" />
+		<price id="326120" count="1" />
+		<limitedTimePrice id="836120" count="1" hours="72" />
+        <limitedTimePrice2 id="846120" count="1" hours="168" />
+	</dress>
+	<dress id="153" name="Dragon Slayer" type="ROBE">
+		<set chest="32612" legs="-1" gloves="-1" feet="-1" />
+		<price id="326120" count="1" />
+		<limitedTimePrice id="836120" count="1" hours="72" />
+        <limitedTimePrice2 id="846120" count="1" hours="168" />
+	</dress>
+	
+	<dress id="154" name="Shining Slayer" type="LIGHT">
+		<set chest="32909" legs="-1" gloves="-1" feet="-1" />
+		<price id="329090" count="1" />
+		<limitedTimePrice id="839090" count="1" hours="72" />
+        <limitedTimePrice2 id="849090" count="1" hours="168" />
+	</dress>
+	<dress id="155" name="Shining Slayer" type="HEAVY">
+		<set chest="32909" legs="-1" gloves="-1" feet="-1" />
+		<price id="329090" count="1" />
+		<limitedTimePrice id="839090" count="1" hours="72" />
+        <limitedTimePrice2 id="849090" count="1" hours="168" />
+	</dress>
+	<dress id="156" name="Shining Slayer" type="ROBE">
+		<set chest="32909" legs="-1" gloves="-1" feet="-1" />
+		<price id="329090" count="1" />
+		<limitedTimePrice id="839090" count="1" hours="72" />
+        <limitedTimePrice2 id="849090" count="1" hours="168" />
+	</dress>
+	
+	<dress id="157" name="Lannister Slayer" type="LIGHT">
+		<set chest="32910" legs="-1" gloves="-1" feet="-1" />
+		<price id="329100" count="1" />
+		<limitedTimePrice id="839100" count="1" hours="72" />
+        <limitedTimePrice2 id="849100" count="1" hours="168" />
+	</dress>
+	<dress id="158" name="Lannister Slayer" type="HEAVY">
+		<set chest="32910" legs="-1" gloves="-1" feet="-1" />
+		<price id="329100" count="1" />
+		<limitedTimePrice id="839100" count="1" hours="72" />
+        <limitedTimePrice2 id="849100" count="1" hours="168" />
+	</dress>
+	<dress id="159" name="Lannister Slayer" type="ROBE">
+		<set chest="32910" legs="-1" gloves="-1" feet="-1" />
+		<price id="329100" count="1" />
+		<limitedTimePrice id="839100" count="1" hours="72" />
+        <limitedTimePrice2 id="849100" count="1" hours="168" />
+	</dress>
+	
+	<dress id="160" name="RoboCop Suit" type="LIGHT">
+		<set chest="32608" legs="-1" gloves="-1" feet="-1" />
+		<price id="326080" count="1" />
+		<limitedTimePrice id="836080" count="1" hours="72" />
+        <limitedTimePrice2 id="846080" count="1" hours="168" />
+	</dress>
+	<dress id="161" name="RoboCop Suit" type="HEAVY">
+		<set chest="32608" legs="-1" gloves="-1" feet="-1" />
+		<price id="326080" count="1" />
+		<limitedTimePrice id="836080" count="1" hours="72" />
+        <limitedTimePrice2 id="846080" count="1" hours="168" />
+	</dress>
+	<dress id="162" name="RoboCop Suit" type="ROBE">
+		<set chest="32608" legs="-1" gloves="-1" feet="-1" />
+		<price id="326080" count="1" />
+		<limitedTimePrice id="836080" count="1" hours="72" />
+        <limitedTimePrice2 id="846080" count="1" hours="168" />
+	</dress>
+	
+
+	
+	<dress id="163" name="Dark Cyborg" type="LIGHT">
+		<set chest="42608" legs="42609" gloves="42610" feet="42611" />
+		<price id="426080" count="1" />
+		<limitedTimePrice id="837080" count="1" hours="72" />
+        <limitedTimePrice2 id="847080" count="1" hours="168" />
+	</dress>
+	<dress id="164" name="Dark Cyborg" type="HEAVY">
+		<set chest="42608" legs="42609" gloves="42610" feet="42611" />
+		<price id="426080" count="1" />
+		<limitedTimePrice id="837080" count="1" hours="72" />
+        <limitedTimePrice2 id="847080" count="1" hours="168" />
+	</dress>
+	<dress id="165" name="Dark Cyborg" type="ROBE">
+		<set chest="42608" legs="42609" gloves="42610" feet="42611" />
+		<price id="426080" count="1" />
+		<limitedTimePrice id="837080" count="1" hours="72" />
+        <limitedTimePrice2 id="847080" count="1" hours="168" />
+	</dress>
+	
+	<dress id="166" name="Cultist Suit" type="LIGHT">
+		<set chest="42619" legs="-1" gloves="-1" feet="-1" />
+		<price id="426190" count="1" />
+		<limitedTimePrice id="836190" count="1" hours="72" />
+        <limitedTimePrice2 id="846190" count="1" hours="168" />
+	</dress>
+	<dress id="167" name="Cultist Suit" type="HEAVY">
+		<set chest="42619" legs="-1" gloves="-1" feet="-1" />
+		<price id="426190" count="1" />
+		<limitedTimePrice id="836190" count="1" hours="72" />
+        <limitedTimePrice2 id="846190" count="1" hours="168" />
+	</dress>
+	<dress id="168" name="Cultist Suit" type="ROBE">
+		<set chest="42619" legs="-1" gloves="-1" feet="-1" />
+		<price id="426190" count="1" />
+		<limitedTimePrice id="836190" count="1" hours="72" />
+        <limitedTimePrice2 id="846190" count="1" hours="168" />
+	</dress>
+
+	<dress id="169" name="Red Pirate Suit" type="LIGHT">
+		<set chest="42650" legs="-1" gloves="-1" feet="-1" />
+		<price id="426500" count="1" />
+		<limitedTimePrice id="836500" count="1" hours="72" />
+        <limitedTimePrice2 id="846500" count="1" hours="168" />
+	</dress>
+	<dress id="170" name="Red Pirate Suit" type="HEAVY">
+		<set chest="42650" legs="-1" gloves="-1" feet="-1" />
+		<price id="426500" count="1" />
+		<limitedTimePrice id="836500" count="1" hours="72" />
+        <limitedTimePrice2 id="846500" count="1" hours="168" />
+	</dress>
+	<dress id="171" name="Red Pirate Suit" type="ROBE">
+		<set chest="42650" legs="-1" gloves="-1" feet="-1" />
+		<price id="426500" count="1" />
+		<limitedTimePrice id="836500" count="1" hours="72" />
+        <limitedTimePrice2 id="846500" count="1" hours="168" />
+	</dress>
+	
+	<dress id="172" name="Blue Pirate Suit" type="LIGHT">
+		<set chest="42652" legs="-1" gloves="-1" feet="-1" />
+		<price id="426520" count="1" />
+		<limitedTimePrice id="836520" count="1" hours="72" />
+        <limitedTimePrice2 id="846520" count="1" hours="168" />
+	</dress>
+	<dress id="173" name="Blue Pirate Suit" type="HEAVY">
+		<set chest="42652" legs="-1" gloves="-1" feet="-1" />
+		<price id="426520" count="1" />
+		<limitedTimePrice id="836520" count="1" hours="72" />
+        <limitedTimePrice2 id="846520" count="1" hours="168" />
+	</dress>
+	<dress id="174" name="Blue Pirate Suit" type="ROBE">
+		<set chest="42652" legs="-1" gloves="-1" feet="-1" />
+		<price id="426520" count="1" />
+		<limitedTimePrice id="836520" count="1" hours="72" />
+        <limitedTimePrice2 id="846520" count="1" hours="168" />
+	</dress>
+	
+	<dress id="175" name="Ninja Suit" type="LIGHT">
+		<set chest="42660" legs="42661" gloves="42662" feet="42663" />
+		<price id="426600" count="1" />
+		<limitedTimePrice id="836600" count="1" hours="72" />
+        <limitedTimePrice2 id="846600" count="1" hours="168" />
+	</dress>
+	<dress id="176" name="Ninja Suit" type="HEAVY">
+		<set chest="42660" legs="42661" gloves="42662" feet="42663" />
+		<price id="426600" count="1" />
+		<limitedTimePrice id="836600" count="1" hours="72" />
+        <limitedTimePrice2 id="846600" count="1" hours="168" />
+	</dress>
+	<dress id="177" name="Ninja Suit" type="ROBE">
+		<set chest="42660" legs="42661" gloves="42662" feet="42663" />
+		<price id="426600" count="1" />
+		<limitedTimePrice id="836600" count="1" hours="72" />
+        <limitedTimePrice2 id="846600" count="1" hours="168" />
+	</dress>
+	
+	<dress id="178" name="Green Archer Suit" type="LIGHT">
+		<set chest="42721" legs="-1" gloves="-1" feet="-1" />
+		<price id="427010" count="1" />
+		<limitedTimePrice id="837010" count="1" hours="72" />
+        <limitedTimePrice2 id="847010" count="1" hours="168" />
+	</dress>
+	<dress id="179" name="Green Archer Suit" type="HEAVY">
+		<set chest="42721" legs="-1" gloves="-1" feet="-1" />
+		<price id="427010" count="1" />
+		<limitedTimePrice id="837010" count="1" hours="72" />
+        <limitedTimePrice2 id="847010" count="1" hours="168" />
+	</dress>
+	<dress id="180" name="Green Archer Suit" type="ROBE">
+		<set chest="42721" legs="-1" gloves="-1" feet="-1" />
+		<price id="427010" count="1" />
+		<limitedTimePrice id="837010" count="1" hours="72" />
+        <limitedTimePrice2 id="847010" count="1" hours="168" />
+	</dress>
+	
+	<dress id="181" name="White Navy Suit" type="LIGHT">
+		<set chest="42780" legs="-1" gloves="-1" feet="-1" />
+		<price id="427800" count="1" />
+		<limitedTimePrice id="837800" count="1" hours="72" />
+        <limitedTimePrice2 id="847800" count="1" hours="168" />
+	</dress>
+	<dress id="182" name="White Navy Suit" type="HEAVY">
+		<set chest="42780" legs="-1" gloves="-1" feet="-1" />
+		<price id="427800" count="1" />
+		<limitedTimePrice id="837800" count="1" hours="72" />
+        <limitedTimePrice2 id="847800" count="1" hours="168" />
+	</dress>
+	<dress id="183" name="White Navy Suit" type="ROBE">
+		<set chest="42780" legs="-1" gloves="-1" feet="-1" />
+		<price id="427800" count="1" />
+		<limitedTimePrice id="837800" count="1" hours="72" />
+        <limitedTimePrice2 id="847800" count="1" hours="168" />
+	</dress>
+	
+	<dress id="184" name="Chaos Knight Suit" type="LIGHT">
+		<set chest="42790" legs="-1" gloves="-1" feet="-1" />
+		<price id="427900" count="1" />
+		<limitedTimePrice id="837900" count="1" hours="72" />
+        <limitedTimePrice2 id="847900" count="1" hours="168" />
+	</dress>
+	<dress id="185" name="Chaos Knight Suit" type="HEAVY">
+		<set chest="42790" legs="-1" gloves="-1" feet="-1" />
+		<price id="427900" count="1" />
+		<limitedTimePrice id="837900" count="1" hours="72" />
+        <limitedTimePrice2 id="847900" count="1" hours="168" />
+	</dress>
+	<dress id="186" name="Chaos Knight Suit" type="ROBE">
+		<set chest="42790" legs="-1" gloves="-1" feet="-1" />
+		<price id="427900" count="1" />
+		<limitedTimePrice id="837900" count="1" hours="72" />
+        <limitedTimePrice2 id="847900" count="1" hours="168" />
+	</dress>
+	
+	<dress id="187" name="Black Cyborg" type="LIGHT">
+		<set chest="52608" legs="52609" gloves="52610" feet="52611" />
+		<price id="526080" count="1" />
+		<limitedTimePrice id="838080" count="1" hours="72" />
+        <limitedTimePrice2 id="848080" count="1" hours="168" />
+	</dress>
+	<dress id="188" name="Black Cyborg" type="HEAVY">
+		<set chest="52608" legs="52609" gloves="52610" feet="52611" />
+		<price id="526080" count="1" />
+		<limitedTimePrice id="838080" count="1" hours="72" />
+        <limitedTimePrice2 id="848080" count="1" hours="168" />
+	</dress>
+	<dress id="189" name="Black Cyborg" type="ROBE">
+		<set chest="52608" legs="52609" gloves="52610" feet="52611" />
+		<price id="526080" count="1" />
+		<limitedTimePrice id="838080" count="1" hours="72" />
+        <limitedTimePrice2 id="848080" count="1" hours="168" />
+	</dress>
+	
+	<dress id="190" name="Fallen Angel Suit" type="LIGHT">
+		<set chest="52780" legs="-1" gloves="-1" feet="-1" />
+		<price id="571121" count="1" />
+		<limitedTimePrice id="831121" count="1" hours="72" />
+        <limitedTimePrice2 id="841121" count="1" hours="168" />
+	</dress>
+	<dress id="191" name="Fallen Angel Suit" type="HEAVY">
+		<set chest="52780" legs="-1" gloves="-1" feet="-1" />
+		<price id="571121" count="1" />
+		<limitedTimePrice id="831121" count="1" hours="72" />
+        <limitedTimePrice2 id="841121" count="1" hours="168" />
+	</dress>
+	<dress id="192" name="Fallen Angel Suit" type="ROBE">
+		<set chest="52780" legs="-1" gloves="-1" feet="-1" />
+		<price id="571121" count="1" />
+		<limitedTimePrice id="831121" count="1" hours="72" />
+        <limitedTimePrice2 id="841121" count="1" hours="168" />
+	</dress>
+	
+	<dress id="193" name="Black Dragon's Slayer Suit" type="LIGHT">
+		<set chest="52650" legs="-1" gloves="-1" feet="-1" />
+		<price id="526500" count="1" />
+	</dress>
+	<dress id="194" name="Black Dragon's Slayer Suit" type="HEAVY">
+		<set chest="52650" legs="-1" gloves="-1" feet="-1" />
+		<price id="526500" count="1" />
+	</dress>
+	<dress id="195" name="Black Dragon's Slayer Suit" type="ROBE">
+		<set chest="52650" legs="-1" gloves="-1" feet="-1" />
+		<price id="526500" count="1" />
+	</dress>
+	
+	<dress id="196" name="Akamanah's Suit" type="LIGHT">
+		<set chest="52652" legs="-1" gloves="-1" feet="-1" />
+		<price id="526520" count="1" />
+	</dress>
+	<dress id="197" name="Akamanah's Suit" type="HEAVY">
+		<set chest="52652" legs="-1" gloves="-1" feet="-1" />
+		<price id="526520" count="1" />
+	</dress>
+	<dress id="198" name="Akamanah's Suit" type="ROBE">
+		<set chest="52652" legs="-1" gloves="-1" feet="-1" />
+		<price id="526520" count="1" />
+	</dress>
+	
+	<dress id="199" name="Black Akamanah's Suit" type="LIGHT">
+		<set chest="52654" legs="-1" gloves="-1" feet="-1" />
+		<price id="526540" count="1" />
+	</dress>
+	<dress id="200" name="Black Akamanah's Suit" type="HEAVY">
+		<set chest="52654" legs="-1" gloves="-1" feet="-1" />
+		<price id="526540" count="1" />
+	</dress>
+	<dress id="201" name="Black Akamanah's Suit" type="ROBE">
+		<set chest="52654" legs="-1" gloves="-1" feet="-1" />
+		<price id="526540" count="1" />
+	</dress>
+	
+	<dress id="202" name="Gold Dragon's Slayer Suit" type="LIGHT">
+		<set chest="52656" legs="-1" gloves="-1" feet="-1" />
+		<price id="526560" count="1" />
+	</dress>
+	<dress id="203" name="Gold Dragon's Slayer Suit" type="HEAVY">
+		<set chest="52656" legs="-1" gloves="-1" feet="-1" />
+		<price id="526560" count="1" />
+	</dress>
+	<dress id="204" name="Gold Dragon's Slayer Suit" type="ROBE">
+		<set chest="52656" legs="-1" gloves="-1" feet="-1" />
+		<price id="526560" count="1" />
+	</dress>
+	
+	<dress id="205" name="Silver Ranger's Suit" type="LIGHT">
+		<set chest="52658" legs="-1" gloves="-1" feet="-1" />
+		<price id="526580" count="1" />
+	</dress>
+	<dress id="206" name="Silver Ranger's Suit" type="HEAVY">
+		<set chest="52658" legs="-1" gloves="-1" feet="-1" />
+		<price id="526580" count="1" />
+	</dress>
+	<dress id="207" name="Silver Ranger's Suit" type="ROBE">
+		<set chest="52658" legs="-1" gloves="-1" feet="-1" />
+		<price id="526580" count="1" />
+	</dress>
+	
+	<dress id="208" name="Arctic Wolf" type="LIGHT">
+		<set chest="52660" legs="-1" gloves="-1" feet="-1" />
+		<price id="526600" count="1" />
+	</dress>
+	<dress id="209" name="Arctic Wolf" type="HEAVY">
+		<set chest="52660" legs="-1" gloves="-1" feet="-1" />
+		<price id="526600" count="1" />
+	</dress>
+	<dress id="210" name="Arctic Wolf" type="ROBE">
+		<set chest="52660" legs="-1" gloves="-1" feet="-1" />
+		<price id="526600" count="1" />
+	</dress>
+
+	
+	<dress id="211" name="Purple Dread Suit" type="LIGHT">
+		<set chest="771011" legs="771012" gloves="771013" feet="771014" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71011"/>
+	</dress>
+	<dress id="212" name="Purple Dread Suit" type="HEAVY">
+		<set chest="771001" legs="771002" gloves="771003" feet="771004" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71001"/>
+	</dress>
+	<dress id="213" name="Purple Dread Suit" type="ROBE">
+		<set chest="771021" legs="771022" gloves="771023" feet="771024" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71021"/>
+	</dress>
+	
+	<dress id="214" name="Red Dread Suit" type="LIGHT">
+		<set chest="781011" legs="781012" gloves="781013" feet="781014" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71011"/>
+	</dress>
+	<dress id="215" name="Red Dread Suit" type="HEAVY">
+		<set chest="781001" legs="781002" gloves="781003" feet="781004" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71001"/>
+	</dress>
+	<dress id="216" name="Red Dread Suit" type="ROBE">
+		<set chest="781021" legs="781022" gloves="781023" feet="781024" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71021"/>
+	</dress>
+	
+	<dress id="217" name="Blue Dread Suit" type="LIGHT">
+		<set chest="791011" legs="791012" gloves="791013" feet="791014" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71011"/>
+	</dress>
+	<dress id="218" name="Blue Dread Suit" type="HEAVY">
+		<set chest="791001" legs="791002" gloves="791003" feet="791004" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71001"/>
+	</dress>
+	<dress id="219" name="Blue Dread Suit" type="ROBE">
+		<set chest="791021" legs="791022" gloves="791023" feet="791024" />
+		<price id="999008" count="1" />
+		<requiredArmorSetId setId="71021"/>
+	</dress>
+</list>

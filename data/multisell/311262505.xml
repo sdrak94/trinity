@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Seven Signs - Blacksmith of Mammon - Unseal S-grade Accesories-->
+
+<list maintainEnchantment="true">
+  <item id="1">
+    <production id="858" count="1"/>
+    <ingredient id="6724" count="1"/>
+    <ingredient id="5575" count="731441"/>
+  </item>
+  <item id="2">
+    <production id="889" count="1"/>
+    <ingredient id="6725" count="1"/>
+    <ingredient id="5575" count="487627"/>
+  </item>
+  <item id="3">
+    <production id="920" count="1"/>
+    <ingredient id="6726" count="1"/>
+    <ingredient id="5575" count="975255"/>
+  </item>
+  <item id="4">
+    <production id="11598" count="1"/>
+    <ingredient id="11595" count="1"/>
+    <ingredient id="5575" count="731441"/>
+  </item>
+  <item id="5">
+    <production id="11597" count="1"/>
+    <ingredient id="11594" count="1"/>
+    <ingredient id="5575" count="487627"/>
+  </item>
+  <item id="6">
+    <production id="11596" count="1"/>
+    <ingredient id="11593" count="1"/>
+    <ingredient id="5575" count="975255"/>
+  </item>
+</list>

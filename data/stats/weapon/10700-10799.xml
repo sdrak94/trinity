@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10700" name="Eclair Bijou {PvP} - Haste">
+  <for>
+    <set val="228" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10701" name="Eclair Bijou - PvP - Health">
+  <for>
+    <set val="228" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10702" name="Eclair Bijou - PvP - Critical Poison">
+  <for>
+    <set val="228" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10703" name="Durendal {PvP} - Focus">
+  <for>
+    <set val="272" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10704" name="Durendal {PvP} - Haste">
+  <for>
+    <set val="272" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10705" name="Durendal {PvP}  - Health">
+  <for>
+    <set val="272" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10706" name="Screaming Vengeance {PvP} - Cheap Shot">
+  <for>
+    <set val="318" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10707" name="Screaming Vengeance {PvP} - Focus">
+  <for>
+    <set val="318" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10708" name="Screaming Vengeance {PvP} - Quick Recovery">
+  <for>
+    <set val="318" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10709" name="Tallum Blade*Damascus {PvP}">
+  <for>
+    <set val="305" order="0x08" stat="pAtk"/>
+    <set val="121" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10710" name="Forgotten Blade {PvP} - Haste">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10711" name="Forgotten Blade {PvP} - Health">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10712" name="Forgotten Blade {PvP} - Focus">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <!-- SA: Focus -->
+    <add val="84" order="0x40" stat="rCrit"/>
+    <!-- Enhances damage to target during PvP -->
+    <mul val="1.05" order="0x30" stat="pvpPhysDmg"/>
+    <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="10713" name="Heavens Divider {PvP} - Haste">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10714" name="Heavens Divider {PvP} - Health">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10715" name="Heavens Divider {PvP} - Focus">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10716" name="Basalt Battlehammer {PvP} - HP Drain">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10717" name="Basalt Battlehammer {PvP} - Health">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10718" name="Basalt Battlehammer {PvP} - HP Regeneration">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10719" name="Dragon Hunter Axe {PvP} - HP Regeneration">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10720" name="Dragon Hunter Axe {PvP} - Health">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10721" name="Dragon Hunter Axe {PvP} - HP Drain">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10722" name="Angel Slayer {PvP} - Critical Damage">
+  <for>
+    <set val="246" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <!-- SA: Critical Damage -->
+    <add val="265" order="0x40" stat="cAtkAdd"/>
+    <!-- Enhances damage to target during PvP -->
+    <mul val="1.05" order="0x30" stat="pvpPhysDmg"/>
+    <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="10723" name="Angel Slayer {PvP} - HP Drain">
+  <for>
+    <set val="246" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <!-- SA: HP Drain -->
+    <add val="3" order="0x40" stat="absorbDam"/>
+    <!-- Enhances damage to target during PvP -->
+    <mul val="1.05" order="0x30" stat="pvpPhysDmg"/>
+    <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="10724" name="Angel Slayer {PvP} - Haste">
+  <for>
+    <set val="246" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10725" name="Saint Spear {PvP} - Health">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10726" name="Saint Spear {PvP} - Guidance">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10727" name="Saint Spear {PvP} - Haste">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10728" name="Demon Splinter {PvP} - Focus">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10729" name="Demon Splinter {PvP} - Health">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10730" name="Demon Splinter {PvP} - Critical Stun">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10731" name="Arcana Mace {PvP} - Acumen">
+  <for>
+    <set val="225" order="0x08" stat="pAtk"/>
+    <set val="175" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10732" name="Arcana Mace {PvP} - MP Regeneration">
+  <for>
+    <set val="225" order="0x08" stat="pAtk"/>
+    <set val="175" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10733" name="Arcana Mace {PvP} - Mana Up">
+  <for>
+    <set val="225" order="0x08" stat="pAtk"/>
+    <set val="175" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10734" name="Imperial Staff {PvP} - Empower">
+  <for>
+    <set val="274" order="0x08" stat="pAtk"/>
+    <set val="193" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10735" name="Imperial Staff {PvP} - MP Regeneration">
+  <for>
+    <set val="274" order="0x08" stat="pAtk"/>
+    <set val="193" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10736" name="Imperial Staff {PvP} - Magic Hold">
+  <for>
+    <set val="274" order="0x08" stat="pAtk"/>
+    <set val="193" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10737" name="Draconic Bow {PvP} - Cheap Shot">
+  <for>
+    <set val="581" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10738" name="Draconic Bow {PvP} - Focus">
+  <for>
+    <set val="581" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10739" name="Draconic Bow {PvP} - Critical Slow">
+  <for>
+    <set val="581" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10740" name="Laevateinn {PvP} - Haste">
+  <for>
+    <set val="255" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10741" name="Laevateinn {PvP} - Health">
+  <for>
+    <set val="255" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10742" name="Laevateinn {PvP} - Focus">
+  <for>
+    <set val="255" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10743" name="Gram {PvP} - Haste">
+  <for>
+    <set val="304" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10744" name="Gram {PvP} - Health">
+  <for>
+    <set val="304" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10745" name="Gram {PvP} - Focus">
+  <for>
+    <set val="304" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10746" name="Sarunga {PvP} - Cheap Shot">
+  <for>
+    <set val="356" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10747" name="Sarunga - PvP - Focus">
+  <for>
+    <set val="356" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10748" name="Sarunga - PvP - Critical Slow">
+  <for>
+    <set val="356" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10749" name="Tallum Blade*Dark Legion {PvP}">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10750" name="Dynasty Sword {PvP} - Focus">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10751" name="Dynasty Sword - PvP - Health">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10752" name="Dynasty Sword - PvP - Light">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10753" name="Dynasty Blade {PvP} - Focus">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10754" name="Dynasty Blade - PvP - Health">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10755" name="Dynasty Blade - PvP - Light">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10756" name="Dynasty Cudgel {PvP} - Anger">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10757" name="Dynasty Cudgel {PvP} - Health">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10758" name="Dynasty Cudgel {PvP} - Rsk. Focus">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10759" name="Dynasty Crusher {PvP} - Anger">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10760" name="Dynasty Crusher {PvP} - Health">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10761" name="Dynasty Crusher {PvP} - Rsk. Focus">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10762" name="Dynasty Knife {PvP} - Focus">
+  <for>
+    <set val="291" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10763" name="Dynasty Knife {PvP} - Evasion">
+  <for>
+    <set val="291" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10764" name="Dynasty Knife {PvP} - Critical Damage">
+  <for>
+    <set val="291" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10765" name="Dynasty Halberd {PvP} - Anger">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10766" name="Dynasty Halberd {PvP} - Critical Stun">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10767" name="Dynasty Halberd {PvP} - Light">
+  <for>
+    <set val="333" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10768" name="Dynasty Bagh-Nakh {PvP} - Rsk. Evasion">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10769" name="Dynasty Bagh-Nakh {PvP} - Focus">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10770" name="Dynasty Bagh-Nakh {PvP} - Haste">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10771" name="Dynasty Phantom {PvP} - Acumen">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10772" name="Dynasty Phantom {PvP} - Mana Up">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10773" name="Dynasty Phantom {PvP} - Updown">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10774" name="Dynasty Mace {PvP} - Mana Up">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10775" name="Dynasty Mace {PvP} - Updown">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10776" name="Dynasty Mace {PvP} - Acumen">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10777" name="Dynasty Staff {PvP} - Mana Up">
+  <for>
+    <set val="325" order="0x08" stat="pAtk"/>
+    <set val="222" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10778" name="Dynasty Staff {PvP} - Updown">
+  <for>
+    <set val="325" order="0x08" stat="pAtk"/>
+    <set val="222" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10779" name="Dynasty Staff {PvP} - Acumen">
+  <for>
+    <set val="325" order="0x08" stat="pAtk"/>
+    <set val="222" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10780" name="Dynasty Bow {PvP} - Cheap Shot">
+  <for>
+    <set val="654" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10781" name="Dynasty Bow {PvP} - Guidance">
+  <for>
+    <set val="654" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10782" name="Dynasty Bow {PvP} - Focus">
+  <for>
+    <set val="654" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10783" name="Dynasty Rapier {PvP} - Focus">
+  <for>
+    <set val="302" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10784" name="Dynasty Rapier {PvP} - Health">
+  <for>
+    <set val="302" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10785" name="Dynasty Rapier {PvP} - Light">
+  <for>
+    <set val="302" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10786" name="Dynasty Ancient Sword {PvP} - Focus">
+  <for>
+    <set val="361" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10787" name="Dynasty Ancient Sword {PvP} - Health">
+  <for>
+    <set val="361" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10788" name="Dynasty Ancient Sword {PvP} - Light">
+  <for>
+    <set val="361" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10789" name="Dynasty Crossbow {PvP} - Cheap Shot">
+  <for>
+    <set val="401" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10790" name="Dynasty Crossbow - PvP - Guidance">
+  <for>
+    <set val="401" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10791" name="Dynasty Crossbow - PvP - Focus">
+  <for>
+    <set val="401" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10792" name="Dynasty Dual Sword {PvP}">
+  <for>
+    <set val="405" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

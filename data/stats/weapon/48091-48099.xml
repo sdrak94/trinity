@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="48091" name="Kibelium Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48092" name="Elyastes Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48093" name="Markutan Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48094" name="Usthiel Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48095" name="Lumiel Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48096" name="Kaithiel Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48097" name="Triniel Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48098" name="Baizel Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+<item id="48099" name="Nezakan Spear">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="4" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <!-- Enhances damage to target during PvP --> 
+   <mul val="1.05" order="0x30" stat="pvpPhysDmg"/> 
+   <mul val="1.05" order="0x30" stat="pvpMagicalDmg"/> 
+  </for> 
+</item> 
+</list>

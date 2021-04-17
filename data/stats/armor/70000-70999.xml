@@ -1,0 +1,254 @@
+<list>
+<item id="70000" name="Valakas' Fiery">
+  <for>
+    <add val="161" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70001" name="Antharas' Tremor">
+  <for>
+    <add val="122" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70002" name="Baium's Anger">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70003" name="Zaken's Dementia">
+  <for>
+    <add val="122" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70004" name="Queen's Grasp">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70005" name="Frintezza's Phylactery">
+  <for>
+    <add val="146" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70006" name="Talisman of Exile">
+  <for>
+    <add val="146" order="0x10" stat="mDef"/>
+    <add val="920" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add order="0x10" stat="INT" val="3"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<add order="0x10" stat="STR" val="1"/>
+  </for>
+</item>
+<item id="70007" name="Soul Scream Ring">
+  <for>
+    <add val="72" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70008" name="Fortified Bracelet">
+  <for>
+    <enchant val="0" order="0x50" stat="mDef"/>
+	<add order="0x10" stat="INT" val="1"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<add order="0x10" stat="STR" val="1"/>
+	<add order="0x10" stat="CON" val="2"/>
+  </for>
+</item>
+<item id="70100" name="Elyza's Hairpin">
+  <for>
+	<set order="0x90" stat="critDamEvas" val="100"/>
+	<set order="0x90" stat="mCritDamEvas" val="100"/>
+	<set order="0x90" stat="conc" val="100"/>
+	<set order="0x90" stat="paralyzeVuln" val="0"/>
+	<mul order="0x30" stat="MpConsume" val="0.7"/>
+	<add order="0x40" stat="giveHp" val="0.3"/>
+	<set order="0x50" stat="lethalImmunity" val="1"/>
+	<sub order="0x40" stat="cAtk" val="0.15"/>
+  </for>
+</item>
+<item id="10314" name="Beleth's Ring">
+  <for>
+    <add val="74" order="0x10" stat="mDef"/>
+    <add val="144" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10170" name="Baylor's Earring">
+  <for>
+    <add val="110" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70010" name="Stone of Jordan Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="100" order="0x40" stat="mAtkSpd"/>
+	<add val="2000" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="70011" name="Orfen's Wrath">
+  <for>
+    <add val="110" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70012" name="Blood Drinker Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="7" order="0x40" stat="absorbDam"/>
+	<add val="7" order="0x40" stat="absorbDamSkill"/>
+  </for>
+</item>
+<item id="70013" name="Core's Soul">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70014" name="Helbram's Ring">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="70015" name="Shonan Family Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="7" order="0x40" stat="absorbDam"/>
+	<add val="7" order="0x40" stat="absorbDamSkill"/>
+  </for>
+</item>
+<item id="70016" name="Circle of the Eight Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="7" order="0x40" stat="absorbDam"/>
+	<add val="7" order="0x40" stat="absorbDamSkill"/>
+  </for>
+</item>
+<item id="70017" name="Ring of the Lords">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="100" order="0x40" stat="lionheart"/>
+  </for>
+</item>
+<item id="70040" name="Bamboo Earring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<add val="7" order="0x40" stat="absorbDam"/>
+	<add val="7" order="0x40" stat="absorbDamSkill"/>
+  </for>
+</item>
+
+
+<!--Superior Jewells-->
+<item id="850000" name="Superior Valakas' Fiery">
+  <for>
+    <add val="161" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850001" name="Superior Antharas' Tremor">
+  <for>
+    <add val="122" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850002" name="Superior Baium's Anger">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850003" name="Superior Zaken's Dementia">
+  <for>
+    <add val="122" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850004" name="Superior Queen's Grasp">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850005" name="Superior Frintezza's Phylactery">
+  <for>
+    <add val="146" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+
+
+<item id="850006" name="Superior Beleth's Ring">
+  <for>
+    <add val="74" order="0x10" stat="mDef"/>
+    <add val="144" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850007" name="Superior Baylor's Earring">
+  <for>
+    <add val="110" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850008" name="Superior Orfen's Wrath">
+  <for>
+    <add val="110" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850009" name="Superior Core's Soul">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="850010" name="Superior Helbram's Ring">
+  <for>
+    <add val="81" order="0x10" stat="mDef"/>
+    <add val="90" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+</list>

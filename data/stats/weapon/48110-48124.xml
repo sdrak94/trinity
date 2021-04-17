@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="48110" name="Belusran Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48111" name="Teobomos Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48112" name="Azariel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48113" name="Nezakan Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48114" name="Shugos Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48115" name="Drakens Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48116" name="Asmodian Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48117" name="Triniel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48118" name="Jikel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48119" name="Baizel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48120" name="Kaithiel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48121" name="Usthiel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48122" name="Lumiel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48123" name="Markutan Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48124" name="Israphel Blunt">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

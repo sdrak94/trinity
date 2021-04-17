@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="26000" levels="1" name="Small fortuna box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26001" levels="1" name="Middle fortuna box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26002" levels="1" name="Large fortuna box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26003" levels="1" name="Small fortuna cube">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26004" levels="1" name="Middle fortuna cube">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26005" levels="1" name="Large fortuna cube">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26006" levels="1" name="Weapon Enchant Scroll - D Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26007" levels="1" name="Weapon Enchant Scroll - C Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26008" levels="1" name="Weapon Enchant Scroll - B Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26009" levels="1" name="Weapon Enchant Scroll - A Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26010" levels="1" name="Armor Enchant Scroll - D Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26011" levels="1" name="Armor Enchant Scroll - C Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26012" levels="1" name="Armor Enchant Scroll - B Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26013" levels="1" name="Armor Enchant Scroll - A Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26014" levels="1" name="Ancient Weapon Enchant Crystal - B grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26015" levels="1" name="Ancient Weapon Enchant Crystal - A grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26016" levels="1" name="Ancient Weapon Enchant Crystal - B grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26017" levels="1" name="Ancient Armor Enchant Crystal - B grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26018" levels="1" name="Divine Weapon Enchant Crystal - B grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26019" levels="1" name="Divine Weapon Enchant Crystal - A grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26020" levels="1" name="Divine Armor Enchant Crystal - B grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26021" levels="1" name="Divine Armor Enchant Crystal - A grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26022" levels="1" name="High grade potion which improves attack speed">
+  <set name="itemConsumeId" val="22022"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="1200000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="1.33" stackType="attack_time_down">
+      <mul order="0x30" stat="pAtkSpd" val="1.33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26023" levels="1" name="High grade potion which improves moving speed">
+  <set name="itemConsumeId" val="22023"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="1200000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="33" stackType="speed_up">
+      <add order="0x40" stat="runSpd" val="33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26024" levels="1" name="Temporary Healing Potion">
+  <set name="itemConsumeId" val="22024"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="power" val="435"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="26025" levels="1" name="Powerful Healing Potion">
+  <set name="itemConsumeId" val="22025"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HOT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="15000"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="staticReuse" val="true"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect count="5" name="HealOverTime" time="3" val="150" stackOrder="50" stackType="HpRecover"/>
+  </for>
+</skill>
+<skill id="26026" levels="1" name="High-grade Healing Potion">
+  <set name="itemConsumeId" val="22026"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HOT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="15000"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="staticReuse" val="true"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect count="5" name="HealOverTime" time="3" val="72" stackOrder="24" stackType="HpRecover"/>
+  </for>
+</skill>
+<skill id="26027" levels="6" name="Secret medicine of Will">
+  <table name="#power"> 200 800 1500 2000 2500 3000 </table>
+  <table name="#itemConsumeId"> 0 22027 22028 22029 22030 22031 </table>
+  <table name="#minLvl"> 0 20 40 52 61 76 </table>
+  <table name="#maxLvl"> 20 40 52 61 76 86 </table>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="COMBATPOINTHEAL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player flyMounted="False"/>
+      <player level="#minLvl"/>
+      <and>
+        <not>
+          <player level="#maxLvl"/>
+        </not>
+      </and>
+    </and>
+  </cond>
+</skill>
+<skill id="26028" levels="6" name="Secret medicine of Life">
+  <table name="#itemConsumeId"> 0 22032 22033 22034 22035 22036 </table>
+  <table name="#minLvl"> 0 20 40 52 61 76 </table>
+  <table name="#maxLvl"> 20 40 52 61 76 86 </table>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="power" val="50"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HEAL_PERCENT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player flyMounted="False"/>
+      <player level="#minLvl"/>
+      <and>
+        <not>
+          <player level="#maxLvl"/>
+        </not>
+      </and>
+    </and>
+  </cond>
+</skill>
+<skill id="26029" levels="1" name="Potion of Will">
+  <set name="itemConsumeId" val="22037"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="power" val="50"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="COMBATPOINTHEAL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="1000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="26030" levels="1" name="Healing medicine for Mana">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26031" levels="1" name="Wind Walk Scroll">
+  <set name="itemConsumeId" val="22039"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="40" stackType="speed_up">
+      <add order="0x40" stat="runSpd" val="33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26032" levels="1" name="Haste Scroll">
+  <set name="itemConsumeId" val="22040"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="attack_time_down">
+      <mul order="0x30" stat="pAtkSpd" val="1.33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26033" levels="1" name="Might Scroll">
+  <set name="itemConsumeId" val="22041"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.2" stackType="pa_up">
+      <mul order="0x30" stat="pAtk" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26034" levels="1" name="Shield Scroll">
+  <set name="itemConsumeId" val="22042"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.2" stackType="pd_up">
+      <mul order="0x30" stat="pDef" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26035" levels="1" name="Death Whisper Scroll">
+  <set name="itemConsumeId" val="22043"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="26036" levels="1" name="Guidance Scroll">
+  <set name="itemConsumeId" val="22044"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="5" stackType="hit_up">
+      <add order="0x40" stat="accCombat" val="4"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26037" levels="1" name="Empower Scroll">
+  <set name="itemConsumeId" val="22045"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.85" stackType="ma_up">
+      <mul order="0x30" stat="mAtk" val="1.75"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26038" levels="1" name="Greater Acumen Scroll">
+  <set name="itemConsumeId" val="22046"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="casting_time_down">
+      <mul order="0x30" stat="mAtkSpd" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26039" levels="1" name="Vampiric Rage Scroll">
+  <set name="itemConsumeId" val="22047"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="10" stackType="vampRage">
+      <add order="0x40" stat="absorbDam" val="6"/> <!-- absorb 9% HP from damage inflicted on enemies -->
+    </effect>
+  </for>
+</skill>
+<skill id="26040" levels="1" name="Bless the Body Scroll">
+  <set name="itemConsumeId" val="22048"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="max_hp_up">
+      <mul order="0x30" stat="maxHp" val="1.35"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26041" levels="1" name="Berserker Spirit Scroll">
+  <set name="itemConsumeId" val="22049"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="2" stackType="berserk">
+      <mul order="0x30" stat="pDef" val="0.92"/>
+      <mul order="0x30" stat="mDef" val="0.84"/>
+      <sub order="0x40" stat="rEvas" val="4"/>
+      <mul order="0x30" stat="pAtk" val="1.08"/>
+      <mul order="0x30" stat="mAtk" val="1.16"/>
+      <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+      <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+      <add order="0x40" stat="runSpd" val="8"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26042" levels="1" name="Magic Barrier Scroll">
+  <set name="itemConsumeId" val="22050"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="MagicDefUp">
+	  <basemul order="0x40" stat="mDef" val="0.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26043" levels="1" name="Bless the Soul Scroll">
+  <set name="itemConsumeId" val="22051"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="max_mp_up">
+      <mul order="0x30" stat="maxMp" val="1.35"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26044" levels="1" name="Clarity Scroll">
+  <set name="itemConsumeId" val="22052"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="4" stackType="MPrate">
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.8"/>
+      <mul order="0x30" stat="MagicalMpConsumeRate" val="0.9"/>
+      <mul order="0x30" stat="DanceMpConsumeRate" val="0.8"/>
+    </effect>
+  </for>
+</skill>
+<skill id="26045" levels="1" name="Wild Magic Scroll">
+  <set name="itemConsumeId" val="22053"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="26046" levels="5" name="Rune of Experience Points">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26047" levels="5" name="Rune of SP">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26048" levels="5" name="Rune of Crystal Form">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26049" levels="1" name="Rune of Feather">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="26050" levels="1" name="Blessed Spiritshot - D grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26051" levels="1" name="Blessed Spiritshot - C grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26052" levels="1" name="Blessed Spiritshot - B grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26053" levels="1" name="Blessed Spiritshot - A grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26054" levels="1" name="Blessed Spiritshot - S grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26055" levels="1" name="Spiritshot - D grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26056" levels="1" name="Spiritshot - C grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26057" levels="1" name="Spiritshot - B grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26058" levels="1" name="Spiritshot - A grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26059" levels="1" name="Spiritshot - S grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26060" levels="1" name="Soulshot - D grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26061" levels="1" name="Soulshot - C grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26062" levels="1" name="Soulshot - B grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26063" levels="1" name="Soulshot - A grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26064" levels="1" name="Soulshot - S grade">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="26065" levels="1" name="A Scroll Bundle of Fighter">
+  <set name="itemConsumeId" val="22087"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26066" levels="1" name="A Scroll Bundle of Mage">
+  <set name="itemConsumeId" val="22088"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26067" levels="5" name="Bone Quiver">
+  <table name="#itemConsumeId"> 22089 22090 22091 22092 22093 </table>
+  <table name="#create_item_id"> 22067 22068 22069 22070 22071 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="1000"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26068" levels="10" name="Blessed Spiritshot Pack">
+  <table name="#itemConsumeId"> 22094 22095 22096 22097 22098 22109 22110 22111 22112 22113 </table>
+  <table name="#create_item_id"> 22072 22073 22074 22075 22076 22072 22073 22074 22075 22076 </table>
+  <table name="#create_item_count"> 300 300 300 300 300 1000 1000 1000 1000 1000 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="#create_item_count"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26069" levels="10" name="Spiritshot Pack">
+  <table name="#itemConsumeId"> 22099 22100 22101 22102 22103 22114 22115 22116 22117 22118 </table>
+  <table name="#create_item_id"> 22077 22078 22079 22080 22081 22077 22078 22079 22080 22081 </table>
+  <table name="#create_item_count"> 300 300 300 300 300 1000 1000 1000 1000 1000 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="#create_item_count"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26070" levels="10" name="Soulshot Pack">
+  <table name="#itemConsumeId"> 22104 22105 22106 22107 22108 22119 22120 22121 22122 22123 </table>
+  <table name="#create_item_id"> 22082 22083 22084 22085 22086 22082 22083 22084 22085 22086 </table>
+  <table name="#create_item_count"> 300 300 300 300 300 1000 1000 1000 1000 1000 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="#create_item_count"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26071" levels="17" name="Wrapped daisy hairpin">
+  <table name="#itemConsumeId"> 22124 22125 22126 22127 22128 22129 22130 22131 22132 22133 22134 22135 22136 22137 22138 22139 22140 </table>
+  <table name="#create_item_id"> 22156 22157 22158 22159 22160 22161 22162 22163 22164 22165 22166 22167 22168 22169 22170 22171 22172 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="1"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26072" levels="3" name="Wrapped Pet Exchange Ticket">
+  <table name="#itemConsumeId"> 22141 22142 22143 </table>
+  <table name="#create_item_id"> 7583 7584 7585 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="1"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="26073" levels="5" name="Bone Bolt Container">
+  <table name="#itemConsumeId"> 22149 22150 22151 22152 22153 </table>
+  <table name="#create_item_id"> 22144 22145 22146 22147 22148 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="create_item_id" val="#create_item_id"/>
+  <set name="create_item_count" val="1000"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+ </skill>
+  <skill id="26074" levels="1" name="Vampiric Ability">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="itemConsumeId" val="60109"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="learnSkillId" val="26074"/>
+   <set name="olyDisabled" val="true"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player level="90"/>
+    </and>
+  </cond>
+  <for>
+  <add val="5" order="0x40" stat="absorbDam"/>
+  </for>
+</skill>
+<skill id="26075" levels="1" name="Accuracy Ability">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="itemConsumeId" val="60110"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="learnSkillId" val="26075"/>
+   <set name="olyDisabled" val="true"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player level="90"/>
+    </and>
+  </cond>
+  <for>
+  <add val="3" order="0x40" stat="accCombat"/>
+  </for>
+ </skill>
+</list>

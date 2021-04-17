@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11700" name="Common Item - Spinebone Sword*Artisan's Sword">
+  <for>
+    <set val="96" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11701" name="Common Item - Arm Breaker">
+  <for>
+    <set val="100" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11702" name="Common Item - Epee">
+  <for>
+    <set val="72" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11703" name="Common Item - Winged Spear">
+  <for>
+    <set val="79" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11704" name="Common Item - Artisan's Sword*Knight's Sword">
+  <for>
+    <set val="96" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11705" name="Common Item - Artisan's Sword*Artisan's Sword">
+  <for>
+    <set val="96" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11706" name="Common Item - Cursed Maingauche">
+  <for>
+    <set val="62" order="0x08" stat="pAtk"/>
+    <set val="42" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11707" name="Common Item - Katzbalger">
+  <for>
+    <set val="86" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11708" name="Common Item - Tarbar">
+  <for>
+    <set val="79" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11709" name="Common Item - Crucifix of Blood">
+  <for>
+    <set val="63" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11710" name="Common Item - Titan Sword">
+  <for>
+    <set val="96" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11711" name="Common Item - Titan Hammer">
+  <for>
+    <set val="96" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11712" name="Common Item - War Pick">
+  <for>
+    <set val="79" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11713" name="Common Item - Heavy Bone Club">
+  <for>
+    <set val="79" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11714" name="Common Item - Sword of Revolution">
+  <for>
+    <set val="79" order="0x08" stat="pAtk"/>
+    <set val="47" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11715" name="Common Item - Demon Fangs">
+  <for>
+    <set val="67" order="0x08" stat="pAtk"/>
+    <set val="66" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11716" name="Common Item - Knight's Sword*Elven Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11717" name="Common Item - Knight's Sword*Crimson Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11718" name="Common Item - Bastard Sword*Elven Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11719" name="Common Item - Bastard Sword*Crimson Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11720" name="Common Item - Spinebone Sword*Elven Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11721" name="Common Item - Spinebone Sword*Crimson Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11722" name="Common Item - Artisan's Sword*Elven Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11723" name="Common Item - Artisan's Sword*Crimson Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11724" name="Common Item - Grand Epee">
+  <for>
+    <set val="83" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11725" name="Common Item - Glaive">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11726" name="Common Item - Mithril Dagger">
+  <for>
+    <set val="80" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11727" name="Common Item - Bonebreaker">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11728" name="Common Item - Light Crossbow">
+  <for>
+    <set val="191" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11729" name="Common Item - Staff of Life">
+  <for>
+    <set val="74" order="0x08" stat="pAtk"/>
+    <set val="72" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11730" name="Common Item - Scallop Jamadhr">
+  <for>
+    <set val="112" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11731" name="Common Item - Atuba Mace">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11732" name="Common Item - Atuba Hammer">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11733" name="Common Item - Elven Long Sword">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11734" name="Common Item - General's Katzbalger">
+  <for>
+    <set val="100" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11735" name="Common Item - Cranequin">
+  <for>
+    <set val="117" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11736" name="Common Item - Claymore">
+  <for>
+    <set val="112" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11737" name="Common Item - Ghost Staff">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11738" name="Common Item - Saber*Sword of Revolution">
+  <for>
+    <set val="118" order="0x08" stat="pAtk"/>
+    <set val="56" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11739" name="Common Item - Elven Sword*Elven Sword">
+  <for>
+    <set val="118" order="0x08" stat="pAtk"/>
+    <set val="56" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11740" name="Common Item - Crimson Sword*Elven Sword">
+  <for>
+    <set val="118" order="0x08" stat="pAtk"/>
+    <set val="56" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11741" name="Common Item - Crimson Sword*Crimson Sword">
+  <for>
+    <set val="118" order="0x08" stat="pAtk"/>
+    <set val="56" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11742" name="Common Item - Knight's Sword*Sword of Revolution">
+  <for>
+    <set val="124" order="0x08" stat="pAtk"/>
+    <set val="58" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11743" name="Common Item - Bastard Sword*Sword of Revolution">
+  <for>
+    <set val="124" order="0x08" stat="pAtk"/>
+    <set val="58" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11744" name="Common Item - Spinebone Sword*Sword of Revolution">
+  <for>
+    <set val="124" order="0x08" stat="pAtk"/>
+    <set val="58" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11745" name="Common Item - Artisan's Sword*Sword of Revolution">
+  <for>
+    <set val="124" order="0x08" stat="pAtk"/>
+    <set val="58" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11746" name="Common Item - Wolverine Needle">
+  <for>
+    <set val="94" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11747" name="Common Item - Dark Elven Dagger">
+  <for>
+    <set val="94" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11748" name="Common Item - Mysterious Sword">
+  <for>
+    <set val="85" order="0x08" stat="pAtk"/>
+    <set val="81" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11749" name="Common Item - Body Slasher">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11750" name="Common Item - Battle Axe">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11751" name="Common Item - Scythe">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11752" name="Common Item - Saber*Elven Long Sword">
+  <for>
+    <set val="130" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11753" name="Common Item - Soldat Estoc">
+  <for>
+    <set val="97" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11754" name="Common Item - Schlager">
+  <for>
+    <set val="116" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11755" name="Common Item - Skull Graver">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11756" name="Common Item - Stormbringer">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11757" name="Common Item - Stick of Faith">
+  <for>
+    <set val="85" order="0x08" stat="pAtk"/>
+    <set val="81" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11758" name="Common Item - Arbalest">
+  <for>
+    <set val="135" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11759" name="Common Item - Crystallized Ice Bow">
+  <for>
+    <set val="220" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11760" name="Common Item - Orcish Glaive">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11761" name="Common Item - Silver Axe">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11762" name="Common Item - Cursed Dagger">
+  <for>
+    <set val="94" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11763" name="Common Item - Chakram">
+  <for>
+    <set val="130" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11764" name="Common Item - Crystal Staff">
+  <for>
+    <set val="103" order="0x08" stat="pAtk"/>
+    <set val="89" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11765" name="Common Item - Big Hammer">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11766" name="Common Item - Flamberge">
+  <for>
+    <set val="130" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11767" name="Common Item - Heavy Doom Axe">
+  <for>
+    <set val="103" order="0x08" stat="pAtk"/>
+    <set val="89" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11768" name="Common Item - Heavy Doom Hammer">
+  <for>
+    <set val="103" order="0x08" stat="pAtk"/>
+    <set val="89" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11769" name="Common Item - Knight's Sword*Elven Long Sword">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11770" name="Common Item - Bastard Sword*Elven Long Sword">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11771" name="Common Item - Spinebone Sword*Elven Long Sword">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11772" name="Common Item - Elven Sword*Sword of Revolution">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11773" name="Common Item - Artisan's Sword*Elven Long Sword">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11774" name="Common Item - Crimson Sword*Sword of Revolution">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="63" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11775" name="Common Item - Elven Bow of Nobility">
+  <for>
+    <set val="252" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11776" name="Common Item - Knuckle Duster">
+  <for>
+    <set val="148" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11777" name="Common Item - Dwarven War Hammer">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11778" name="Common Item - Raid Sword">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11779" name="Common Item - Soulfire Dirk">
+  <for>
+    <set val="86" order="0x08" stat="pAtk"/>
+    <set val="91" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11780" name="Common Item - Ballista">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11781" name="Common Item - Ballista">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11782" name="Common Item - Bec de Corbin">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11783" name="Common Item - Shamshir">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11784" name="Common Item - Chevalier Rapier">
+  <for>
+    <set val="111" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11785" name="Common Item - Chevalier Rapier">
+  <for>
+    <set val="111" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11786" name="Common Item - Chevalier Rapier">
+  <for>
+    <set val="111" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11787" name="Common Item - Chevalier Rapier">
+  <for>
+    <set val="111" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11788" name="Common Item - Stiletto">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11789" name="Common Item - Spirit Sword">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11790" name="Common Item - Elemental Bow">
+  <for>
+    <set val="252" order="0x08" stat="pAtk"/>
+    <set val="75" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="227" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11791" name="Common Item - Elven Sword*Elven Long Sword">
+  <for>
+    <set val="148" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11792" name="Common Item - Horn of Glory">
+  <for>
+    <set val="98" order="0x08" stat="pAtk"/>
+    <set val="91" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11793" name="Common Item - Cursed Staff">
+  <for>
+    <set val="119" order="0x08" stat="pAtk"/>
+    <set val="100" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11794" name="Common Item - Katana">
+  <for>
+    <set val="122" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11795" name="Common Item - Crimson Sword*Elven Long Sword">
+  <for>
+    <set val="148" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11796" name="Common Item - Sword of Revolution*Sword of Revolution">
+  <for>
+    <set val="148" order="0x08" stat="pAtk"/>
+    <set val="68" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11797" name="Common Item - Sword of Revolution*Elven Long Sword">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="70" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11798" name="Common Item - Elven Long Sword*Elven Long Sword">
+  <for>
+    <set val="162" order="0x08" stat="pAtk"/>
+    <set val="73" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11799" name="Common Item - Stick of Eternity">
+  <for>
+    <set val="111" order="0x08" stat="pAtk"/>
+    <set val="101" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

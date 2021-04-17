@@ -1,0 +1,41 @@
+<html><title>Items</title><body>
+<table width=260>
+<tr>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=180><center>Item Creation Menu</center></td>
+<td width=40><button value="Back" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table><br><br>
+<table width=270>
+<tr><td>Fill the ID number in item-id to create the item that</td></tr>
+<tr><td>you want, use amount if you need more than one.</td></tr>
+<tr><td><br></td></tr>
+<tr><td>Caution:</td></tr>
+<tr><td>Do not use amount with non-stackable items.</td></tr>
+<tr><td><br></td></tr>
+</table>
+<center>
+<table>
+<tr>
+<td>Item-ID: <edit var="itemid" width=50></td>
+<td>Amount: <edit var="itemnum" width=50></td>
+<td>&nbsp;<button value="Create Item" action="bypass -h admin_create_item $itemid $itemnum" width=95 height=25 fore="L2UI_CT1_CN.Control.LobbyTextInput_normal" back="L2UI_CT1_CN.Control.LobbyTextInput_focus"></td>
+</tr>
+</table>
+</center><br><br>
+<center>
+<table>
+<tr><td><center>Assets: <edit var="asset" width=70 height=11></center></td></tr>
+</table><br>
+<table>
+<tr>
+<td>
+<button value="Glit" width=95 height=25 action="bypass -h admin_create_item 6393 $asset" fore="L2UI_CT1_CN.Control.LobbyTextInput_normal" back="L2UI_CT1_CN.Control.LobbyTextInput_focus">
+<button value="Gold" width=95 height=25 action="bypass -h admin_create_item 4356 $asset" fore="L2UI_CT1_CN.Control.LobbyTextInput_normal" back="L2UI_CT1_CN.Control.LobbyTextInput_focus">
+<button value="Silver" width=95 height=25 action="bypass -h admin_create_item 4357 $asset" fore="L2UI_CT1_CN.Control.LobbyTextInput_normal" back="L2UI_CT1_CN.Control.LobbyTextInput_focus">
+<button value="Blue Eva" width=95 height=25 action="bypass -h admin_create_item 4355 $asset" fore="L2UI_CT1_CN.Control.LobbyTextInput_normal" back="L2UI_CT1_CN.Control.LobbyTextInput_focus">
+</td>
+</tr>
+</table>
+</center>
+</body></html>

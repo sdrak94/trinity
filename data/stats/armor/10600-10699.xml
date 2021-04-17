@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10606" name="Agathion Seal Bracelet - Rudolph">
+  <for/>
+</item>
+<item id="10613" name="Bird Nest (Event)">
+  <for/>
+</item>
+<item id="10614" name="White Wool Hat (Event)">
+  <for/>
+</item>
+<item id="10615" name="Black Wool Hat (Event)">
+  <for/>
+</item>
+<item id="10616" name="Straw Hat (Event)">
+  <for/>
+</item>
+<item id="10617" name="Ant Hat - Year 2008">
+  <for/>
+</item>
+<item id="10618" name="Ol Mahum Hat - Year 2008">
+  <for/>
+</item>
+<item id="10619" name="Wolf Hat - Year 2008">
+  <for/>
+</item>
+<item id="10620" name="Shadow Item - Ant Hat - Blessed Scroll of Escape">
+  <for/>
+</item>
+<item id="10621" name="Shadow Item - Ant Hat - Blessed Scroll of Resurrection">
+  <for/>
+</item>
+<item id="10622" name="Shadow Item - Ant Hat - Firecracker">
+  <for/>
+</item>
+<item id="10623" name="Shadow Item - Ant Hat - Big Head">
+  <for/>
+</item>
+<item id="10624" name="Shadow Item - Ol Mahum Hat - Blessed Scroll of Escape">
+  <for/>
+</item>
+<item id="10625" name="Shadow Item - Ol Mahum Hat - Blessed Scroll of Resurrection">
+  <for/>
+</item>
+<item id="10626" name="Shadow Item - Ol Mahum Hat - Firecracker">
+  <for/>
+</item>
+<item id="10627" name="Shadow Item - Ol Mahum Hat - Big Head">
+  <for/>
+</item>
+<item id="10628" name="Shadow Item - Wolf Hat - Blessed Scroll of Escape">
+  <for/>
+</item>
+<item id="10629" name="Shadow Item - Wolf Hat - Blessed Scroll of Resurrection">
+  <for/>
+</item>
+<item id="10630" name="Shadow Item - Wolf Hat - Firecracker">
+  <for/>
+</item>
+<item id="10631" name="Shadow Item - Wolf Hat - Big Head">
+  <for/>
+</item>
+<item id="10658" name="Pet Accessory (not used) ">
+  <for>
+    <add val="7" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="10659" name="Agathion Summon Bracelet - Monkey">
+  <for/>
+</item>
+<item id="10660" name="Agathion Summon Bracelet - Griffin">
+  <for/>
+</item>
+</list>

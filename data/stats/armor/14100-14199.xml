@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="14100" name="Teddy Girl Agathion Bracelet (event) - 7-day Limited Period">
+  <for>
+  </for>
+</item>
+<item id="14101" name="Sudden Agathion (Event) - 7-day Limited Period">
+  <for>
+  </for>
+</item>
+<item id="14102" name="Shiny Agathion (Event) - 7-day Limited Period">
+  <for>
+  </for>
+</item>
+<item id="14103" name="Sobbing Agathion (Event) - 7-day Limited Period">
+  <for>
+  </for>
+</item>
+<item id="14104" name="Shadow Item - Collection Agathion Summon Bracelet">
+  <for>
+  </for>
+</item>
+<item id="14105" name="Sealed Vesper Breastplate">
+  <for>
+    <add val="236" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14106" name="Sealed Vesper Leather Breastplate">
+  <for>
+    <add val="177" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14107" name="Sealed Vesper Tunic">
+  <for>
+    <add val="118" order="0x10" stat="pDef"/>
+    <add val="637" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14108" name="Sealed Vesper Gaiters">
+  <for>
+    <add val="148" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14109" name="Sealed Vesper Gauntlet">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14110" name="Sealed Vesper Boots">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14112" name="Sealed Vesper Leather Leggings">
+  <for>
+    <add val="111" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14113" name="Sealed Vesper Leather Gloves">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14114" name="Sealed Vesper Leather Boots">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14115" name="Sealed Vesper Stockings">
+  <for>
+    <add val="74" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14116" name="Sealed Vesper Gloves">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14117" name="Sealed Vesper Shoes">
+  <for>
+    <add val="68" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14160" name="Sealed Vesper Earring">
+  <for>
+    <add val="83" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14161" name="Sealed Vesper Necklace">
+  <for>
+    <add val="110" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14162" name="Sealed Vesper Ring">
+  <for>
+    <add val="55" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14163" name="Vesper Earring">
+  <for>
+    <add val="118" order="0x10" stat="mDef"/>
+    <add val="37" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<enchant val="0" order="0x50" stat="maxCp"/>
+  </for>
+</item>
+<item id="14164" name="Vesper Necklace">
+  <for>
+    <add val="156" order="0x10" stat="mDef"/>
+    <add val="50" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<enchant val="0" order="0x50" stat="maxHp"/>
+	<add val="0.1" order="0x40" stat="vengeancePdam">
+		<and>
+		   <using slotitem="14163;1"/>
+		   <using slotitem="14165;5"/>
+	   </and>
+	</add>
+	<add val="50" order="0x40" stat="delDmg">
+		<and>
+		   <using slotitem="14164;4;15"/>
+		   <using slotitem="14163;1;15"/>
+		   <using slotitem="14165;5;15"/>
+	   </and>
+	</add>
+  </for>
+</item>
+<item id="14165" name="Vesper Ring">
+  <for>
+    <add val="78" order="0x10" stat="mDef"/>
+    <add val="25" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<enchant val="0" order="0x50" stat="maxMp"/>
+  </for>
+</item>
+</list>

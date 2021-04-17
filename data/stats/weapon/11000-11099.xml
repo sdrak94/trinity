@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11000" name="Kaim Vanul's Bones - Earth - Updown">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11001" name="Colichemarde - Earth">
+  <for>
+    <set val="176" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11002" name="Colichemarde - Earth - Focus">
+  <for>
+    <set val="176" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11003" name="Colichemarde - Earth - Critical Damage">
+  <for>
+    <set val="176" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11004" name="Colichemarde - Earth - Haste">
+  <for>
+    <set val="176" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11005" name="Wizard's Tear - On Fire">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11006" name="Wizard's Tear - On Fire - Acumen">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11007" name="Wizard's Tear - On Fire - Magic Power">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11008" name="Wizard's Tear - On Fire - Updown">
+  <for>
+    <set val="155" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11009" name="Bow of Peril - Earth">
+  <for>
+    <set val="400" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11010" name="Bow of Peril - Earth - Guidance">
+  <for>
+    <set val="400" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11011" name="Bow of Peril - Earth - Quick Recovery">
+  <for>
+    <set val="400" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11012" name="Bow of Peril - Earth - Cheap Shot">
+  <for>
+    <set val="400" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11013" name="Hell Hound - Earth">
+  <for>
+    <set val="245" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11014" name="Hell Hound - Earth - Guidance">
+  <for>
+    <set val="245" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11015" name="Hell Hound - Earth - Quick Recovery">
+  <for>
+    <set val="245" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11016" name="Hell Hound - Earth - Cheap Shot">
+  <for>
+    <set val="245" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11017" name="Dasparion's Staff - Hail">
+  <for>
+    <set val="207" order="0x08" stat="pAtk"/>
+    <set val="157" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11018" name="Dasparion's Staff - Hail - Mana Up">
+  <for>
+    <set val="207" order="0x08" stat="pAtk"/>
+    <set val="157" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11019" name="Dasparion's Staff - Hail - Updown">
+  <for>
+    <set val="207" order="0x08" stat="pAtk"/>
+    <set val="157" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11020" name="Dasparion's Staff - Hail - Acumen">
+  <for>
+    <set val="207" order="0x08" stat="pAtk"/>
+    <set val="157" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11021" name="Doomchanter - Concentration">
+  <for>
+    <set val="270" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11022" name="Doomchanter - Concentration - Light">
+  <for>
+    <set val="270" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11023" name="Doomchanter - Concentration - Critical Bleed">
+  <for>
+    <set val="270" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11024" name="Doomchanter - Concentration - Mana Up">
+  <for>
+    <set val="270" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11025" name="White Lightning - Destruction">
+  <for>
+    <set val="193" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11026" name="White Lightning - Destruction - Critical Poison">
+  <for>
+    <set val="193" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11027" name="White Lightning - Destruction - Haste">
+  <for>
+    <set val="193" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11028" name="White Lightning - Destruction - Anger">
+  <for>
+    <set val="193" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11029" name="Meteor Shower - Earth">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11030" name="Meteor Shower - Earth - Focus">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11031" name="Meteor Shower - Earth - Critical Bleed">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11032" name="Meteor Shower - Earth - Rsk. Haste">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11033" name="Blood Tornado - Destruction">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11034" name="Blood Tornado - Destruction - Haste">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11035" name="Blood Tornado - Destruction - Focus">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11036" name="Blood Tornado - Destruction - Anger">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11037" name="Bloody Orchid - Confusion">
+  <for>
+    <set val="186" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11038" name="Bloody Orchid - Confusion - Focus">
+  <for>
+    <set val="186" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11039" name="Bloody Orchid - Confusion - Back Blow">
+  <for>
+    <set val="186" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11040" name="Bloody Orchid - Confusion - Critical Bleed">
+  <for>
+    <set val="186" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11041" name="Elemental Sword - Hail">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11042" name="Elemental Sword - Hail - Magic Power">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11043" name="Elemental Sword - Hail - Magic Paralyze">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11044" name="Elemental Sword - Hail - Empower">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11045" name="Spiritual Eye - Hail">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11046" name="Spiritual Eye - Hail - Mana Up">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11047" name="Spiritual Eye - Hail - Magic Poison">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11048" name="Spiritual Eye - Hail - Acumen">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11049" name="Infernal Master - Concentration">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11050" name="Infernal Master - Concentration - Haste">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11051" name="Infernal Master - Concentration - Critical Damage">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11052" name="Infernal Master - Concentration - Focus">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11053" name="Carnage Bow - Concentration">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11054" name="Carnage Bow - Concentration - Light">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11055" name="Carnage Bow - Concentration - Critical Bleed">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11056" name="Carnage Bow - Concentration - Mana Up">
+  <for>
+    <set val="440" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11057" name="Keshanberk*Keshanberk - Destruction">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11058" name="Tallum Blade - Destruction">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11059" name="Tallum Blade - Destruction - Critical Poison">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11060" name="Tallum Blade - Destruction - Haste">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11061" name="Tallum Blade - Destruction - Anger">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11062" name="Destroyer Hammer - Lightning">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11063" name="Destroyer Hammer - Lightning - Health">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11064" name="Destroyer Hammer - Lightning - Haste">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11065" name="Destroyer Hammer - Lightning - Critical Drain">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11066" name="Divine Pain - Concentration">
+  <for>
+    <set val="231" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11067" name="Divine Pain - Concentration - Haste">
+  <for>
+    <set val="231" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11068" name="Divine Pain - Concentration - Critical Damage">
+  <for>
+    <set val="231" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11069" name="Divine Pain - Concentration - Focus">
+  <for>
+    <set val="231" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11070" name="Halberd - Lightning">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11071" name="Halberd - Lightning - Haste">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11072" name="Halberd - Lightning - Critical Stun">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11073" name="Halberd - Lightning - Wide Blow">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="107" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11074" name="Keshanberk*Damascus - Destruction">
+  <for>
+    <set val="275" order="0x08" stat="pAtk"/>
+    <set val="112" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11075" name="Lacerator - Thunder">
+  <for>
+    <set val="210" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11076" name="Lacerator - Thunder - Critical Damage">
+  <for>
+    <set val="210" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11077" name="Lacerator - Thunder - Health">
+  <for>
+    <set val="210" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11078" name="Lacerator - Thunder - Rsk. Focus">
+  <for>
+    <set val="210" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11079" name="Damascus*Damascus - Lightning">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11080" name="Dark Legion - Thunder">
+  <for>
+    <set val="232" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11081" name="Dark Legion - Thunder - Critical Damage">
+  <for>
+    <set val="232" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11082" name="Dark Legion - Thunder - Health">
+  <for>
+    <set val="232" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11083" name="Dark Legion - Thunder - Rsk. Focus">
+  <for>
+    <set val="232" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11084" name="Undertaker - Evil Spirit">
+  <for>
+    <set val="251" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11085" name="Undertaker - Evil Spirit - Health">
+  <for>
+    <set val="251" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11086" name="Undertaker - Evil Spirit - Critical Bleed">
+  <for>
+    <set val="251" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11087" name="Undertaker - Evil Spirit - Critical Drain">
+  <for>
+    <set val="251" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="6" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11088" name="Doom Crusher - Thunder">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11089" name="Doom Crusher - Thunder - Health">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11090" name="Doom Crusher - Thunder - Anger">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11091" name="Doom Crusher - Thunder - Rsk. Haste">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11092" name="Dragon Grinder - Earth">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11093" name="Dragon Grinder - Earth - Rsk. Evasion">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11094" name="Dragon Grinder - Earth - Guidance">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11095" name="Dragon Grinder - Earth - Health">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11096" name="Dragon Slayer - Evil Spirit">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11097" name="Dragon Slayer - Evil Spirit - Health">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11098" name="Dragon Slayer - Evil Spirit - Critical Bleed">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="11099" name="Dragon Slayer - Evil Spirit - Critical Drain">
+  <for>
+    <set val="282" order="0x08" stat="pAtk"/>
+    <set val="114" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

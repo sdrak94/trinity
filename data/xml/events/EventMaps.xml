@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<eventMap id="1">
+		<blueLocation x="148381" y="46730" z="-3414" />
+		<redLocation x="150542" y="46722" z="-3414" />
+		<randomLocation x="150542" y="46722" z="-3414" />
+		<mapName value="Coliseum"/>
+	</eventMap>
+</list>

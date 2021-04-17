@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="4900" levels="1" name="Raid Boss - Level 78">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4901" levels="1" name="Raid Boss - Level 78">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4902" levels="1" name="Raid Boss - Level 74">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4903" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4904" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4905" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4906" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4907" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4908" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4909" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4910" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4911" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4912" levels="1" name="Raid Boss - Level 66">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4913" levels="1" name="Raid Boss - Level 70">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4914" levels="1" name="Raid Boss - Level 71">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4915" levels="1" name="Raid Boss - Level 28">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4916" levels="1" name="Raid Boss - Level 38">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4917" levels="1" name="Raid Boss - Level 48">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4918" levels="1" name="Raid Boss - Level 58">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4919" levels="1" name="Raid Boss - Level 68">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4920" levels="1" name="Raid Boss - Level 78">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4921" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4922" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4923" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4924" levels="1" name="Raid Boss - Level 80">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4925" levels="1" name="Raid Boss - Level 30">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4926" levels="1" name="Raid Boss - Level 35">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4927" levels="1" name="Raid Boss - Level 21">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4928" levels="1" name="Raid Boss - Level 26">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4929" levels="1" name="Raid Boss - Level 23">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4930" levels="1" name="Raid Boss - Level 26">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4931" levels="1" name="Raid Boss - Level 23">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4932" levels="1" name="Raid Boss - Level 25">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4933" levels="1" name="Raid Boss - Level 20">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4934" levels="1" name="Raid Boss - Level 21">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4935" levels="1" name="Raid Boss - Level 20">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4936" levels="1" name="Raid Boss - Level 21">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4937" levels="1" name="Raid Boss - Level 34">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4938" levels="1" name="Raid Boss - Level 36">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4939" levels="1" name="Raid Boss - Level 35">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4940" levels="1" name="Raid Boss - Level 33">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4941" levels="1" name="Raid Boss - Level 32">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4942" levels="1" name="Raid Boss - Level 38">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4943" levels="1" name="Raid Boss - Level 45">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4944" levels="1" name="Raid Boss - Level 35">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4945" levels="1" name="Raid Boss - Level 32">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4946" levels="1" name="Raid Boss - Level 33">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4947" levels="1" name="Raid Boss - Level 60">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4948" levels="1" name="Raid Boss - Level 40">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4949" levels="1" name="Raid Boss - Level 47">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4950" levels="1" name="Raid Boss - Level 40">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4951" levels="1" name="Raid Boss - Level 44">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4952" levels="1" name="Raid Boss - Level 48">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4953" levels="1" name="Raid Boss - Level 61">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4954" levels="1" name="Raid Boss - Level 25">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4955" levels="1" name="Raid Boss - Level 55">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4956" levels="1" name="Raid Boss - Level 45">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4957" levels="1" name="Raid Boss - Level 44">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4958" levels="1" name="Raid Boss - Level 45">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4959" levels="1" name="Raid Boss - Level 65">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4960" levels="1" name="Raid Boss - Level 71">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4961" levels="1" name="Raid Boss - Level 79">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4962" levels="1" name="Raid Boss - Level 70">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4963" levels="1" name="Raid Boss - Level 49">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4964" levels="1" name="Raid Boss - Level 51">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4965" levels="1" name="Raid Boss - Level 56">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4966" levels="1" name="Raid Boss - Level 64">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4967" levels="1" name="Raid Boss - Level 66">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4968" levels="1" name="Raid Boss - Level 52">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4969" levels="1" name="Raid Boss - Level 55">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4970" levels="1" name="Raid Boss - Level 65">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4971" levels="1" name="Raid Boss - Level 53">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4972" levels="1" name="Raid Boss - Level 50">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4973" levels="1" name="Raid Boss - Level 40">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4974" levels="1" name="Raid Boss - Level 40">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4975" levels="1" name="Raid Boss - Level 55">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4976" levels="1" name="Raid Boss - Level 52">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4977" levels="1" name="Raid Boss - Level 45">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4978" levels="1" name="Raid Boss - Level 81">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4979" levels="1" name="Raid Boss - Level 82">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4980" levels="1" name="Raid Boss - Level 83">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4981" levels="1" name="Raid Boss - Level 84">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4982" levels="1" name="Raid Boss - Level 85">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4983" levels="1" name="Raid Boss - Level 25">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4984" levels="1" name="Raid Boss - Level 44">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4985" levels="1" name="Raid Boss - Level 70">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4986" levels="1" name="Raid Boss - Level 72">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4987" levels="1" name="Raid Boss - Level 74">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4988" levels="1" name="Raid Boss - Level 76">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4989" levels="1" name="Npc - Hot Spring Nectar">
+  <!-- TODO -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4990" levels="1" name="Npc - Hot Spring Mineral">
+  <!-- TODO -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4991" levels="1" name="Hot Spring Sulfur">
+  <!-- TODO -->
+  <!-- Decreases Atk. Spd. and Casting Spd. Effect 5. -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4992" levels="1" name="Stun">
+  <!-- TODO -->
+  <!-- Shocks and instantly Immobilizes. -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4993" levels="1" name="Venom - Strike">
+  <!-- Benom Skills -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="hitTime" val="830"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="40"/>
+</skill>
+<skill id="4994" levels="1" name="Venom - Sonic Storm">
+  <set name="power" val="99"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="150"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="overHit" val="true"/>
+  <set name="hitTime" val="1900"/>
+  <set name="reuseDelay" val="18000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1000"/>
+</skill>
+<skill id="4995" levels="1" name="Venom - Teleport">
+  <!-- Benom Skills -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="hitTime" val="2900"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="800"/>
+</skill>
+<skill id="4996" levels="1" name="Venom - Range Teleport">
+  <!-- Benom Skills -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="hitTime" val="2900"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="800"/>
+</skill>
+<skill id="4997" levels="1" name="Lidia - Regen">
+  <!-- Needs to be done -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="4998" levels="1" name="Lidia - Twister">
+  <set name="power" val="210"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/> <!-- Wind -->
+  <set name="elementPower" val="30"/>
+  <set name="hitTime" val="2500"/>
+  <set name="reuseDelay" val="2500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="700"/>
+</skill>
+<skill id="4999" levels="1" name="Lidia - Range Life Drain">
+  <set name="power" val="180"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="element" val="5"/> <!-- Dark -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="4500"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="700"/>
+  <set name="effectRange" val="1250"/>
+  <set name="absorbPart" val="0.8"/> 
+  <set name="absorbAbs" val="2000"/> <!-- absorbs absolute value -->
+</skill>
+</list>

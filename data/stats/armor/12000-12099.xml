@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12006" name="Common Item - Leather Boots">
+  <for>
+    <add val="19" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12007" name="Common Item - Crafted Leather Gloves">
+  <for>
+    <add val="19" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12008" name="Common Item - Ring Mail Breastplate">
+  <for>
+    <add val="77" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12009" name="Common Item - Bone Helmet">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12010" name="Common Item - Cursed Tunic">
+  <for>
+    <add val="39" order="0x10" stat="pDef"/>
+    <add val="106" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12011" name="Common Item - Cursed Stockings">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+    <add val="66" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12012" name="Common Item - Iron Plate Gaiters">
+  <for>
+    <add val="48" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12014" name="Common Item - Puma Skin Gaiters">
+  <for>
+    <add val="36" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12015" name="Common Item - Puma Skin Shirt">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12016" name="Common Item - Leather Gauntlet">
+  <for>
+    <add val="22" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12017" name="Common Item - Dark Stockings">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+    <add val="79" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12018" name="Common Item - Mystic's Tunic">
+  <for>
+    <add val="43" order="0x10" stat="pDef"/>
+    <add val="126" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12019" name="Common Item - Mystic's Stockings">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+    <add val="79" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12020" name="Common Item - Lion Skin Gaiters">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12021" name="Common Item - Lion Skin Shirt">
+  <for>
+    <add val="65" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12022" name="Common Item - White Tunic">
+  <for>
+    <add val="43" order="0x10" stat="pDef"/>
+    <add val="126" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12023" name="Common Item - Scale Gaiters">
+  <for>
+    <add val="54" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12024" name="Common Item - Scale Mail">
+  <for>
+    <add val="87" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12026" name="Common Item - Elven Tunic">
+  <for>
+    <add val="43" order="0x10" stat="pDef"/>
+    <add val="126" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12027" name="Common Item - Elven Stockings">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+    <add val="79" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12028" name="Common Item - Bronze Helmet">
+  <for>
+    <add val="33" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12029" name="Common Item - Blue Buckskin Boots">
+  <for>
+    <add val="22" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12030" name="Common Item - Dwarven Scale Mail">
+  <for>
+    <add val="95" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12031" name="Common Item - Mithril Breastplate">
+  <for>
+    <add val="95" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12032" name="Common Item - Compound Scale Mail">
+  <for>
+    <add val="95" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12033" name="Common Item - Iron Boots">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12034" name="Common Item - Reinforced Leather Gaiters">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12035" name="Common Item - Reinforced Leather Boots">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12036" name="Common Item - Reinforced Leather Shirt">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12037" name="Common Item - Reinforced Leather Gloves">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12038" name="Common Item - Gauntlet">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12039" name="Common Item - Dwarven Scale Gaiters">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12040" name="Common Item - Linen Shirt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12041" name="Common Item - Mithril Gaiters">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12042" name="Common Item - Mithril Banded Gaiters">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12043" name="Common Item - Mithril Banded Mail">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12044" name="Common Item - Blast Plate">
+  <for>
+    <add val="97" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12045" name="Common Item - Boots of Knowledge">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12046" name="Common Item - Gloves of Knowledge">
+  <for>
+    <add val="24" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12047" name="Common Item - Tunic of Knowledge">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <add val="147" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12048" name="Common Item - Stockings of Knowledge">
+  <for>
+    <add val="30" order="0x10" stat="pDef"/>
+    <add val="92" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12049" name="Common Item - Compound Scale Gaiters">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12050" name="Common Item - Helmet">
+  <for>
+    <add val="37" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12052" name="Common Item - Manticore Skin Gaiters">
+  <for>
+    <add val="48" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12053" name="Common Item - Manticore Skin Boots">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12054" name="Common Item - Manticore Skin Shirt">
+  <for>
+    <add val="77" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12055" name="Common Item - Manticore Skin Gloves">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12056" name="Common Item - Mithril Scale Gaiters">
+  <for>
+    <add val="64" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12057" name="Common Item - Mithril Tunic">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <add val="169" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12058" name="Common Item - Mithril Stockings">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+    <add val="105" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12059" name="Common Item - Brigandine">
+  <for>
+    <add val="103" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12060" name="Common Item - Brigandine Gaiters">
+  <for>
+    <add val="64" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12061" name="Common Item - Brigandine Gauntlet">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12062" name="Common Item - Brigandine Boots">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12064" name="Common Item - Brigandine Helmet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12065" name="Common Item - Elven Mithril Gloves">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12066" name="Common Item - Elven Mithril Boots">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12067" name="Common Item - Striped Linen Shirt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12068" name="Common Item - Rip Gauntlet">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12070" name="Common Item - Boots of Power">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12071" name="Common Item - Assault Boots">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12072" name="Common Item - Mithril Gloves">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12074" name="Common Item - Salamander Skin Mail">
+  <for>
+    <add val="136" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12075" name="Common Item - Salamander Skin Boots">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12076" name="Common Item - Ogre Power Gauntlet">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12077" name="Common Item - Plate Boots">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12079" name="Common Item - Plate Helmet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12080" name="Common Item - Plate Gaiters">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12081" name="Common Item - Half Plate Armor">
+  <for>
+    <add val="111" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12082" name="Common Item - Sage's Worn Gloves">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12083" name="Common Item - Sage's Rag">
+  <for>
+    <add val="90" order="0x10" stat="pDef"/>
+    <add val="320" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12084" name="Common Item - Tempered Mithril Gaiters">
+  <for>
+    <add val="56" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12085" name="Common Item - Tempered Mithril Boots">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12086" name="Common Item - Tempered Mithril Shirt">
+  <for>
+    <add val="90" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12087" name="Common Item - Reinforced Mithril Gloves">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12088" name="Common Item - Dwarven Chain Boots">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12089" name="Common Item - Boots of Seal">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12090" name="Common Item - Chain Hood">
+  <for>
+    <add val="47" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12092" name="Common Item - Chain Gloves">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12093" name="Common Item - Chain Boots">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12094" name="Common Item - Chain Gaiters">
+  <for>
+    <add val="75" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12095" name="Common Item - Chain Mail Shirt">
+  <for>
+    <add val="120" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12097" name="Common Item - Karmian Gloves">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12098" name="Common Item - Karmian Boots">
+  <for>
+    <add val="32" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12099" name="Common Item - Karmian Tunic">
+  <for>
+    <add val="60" order="0x10" stat="pDef"/>
+    <add val="225" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+</list>

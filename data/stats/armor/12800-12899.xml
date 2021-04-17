@@ -1,0 +1,68 @@
+<list>
+<item id="12811" name="Arcana Sigil">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+	<enchant val="0" order="0x50" stat="mDef"/>
+    <basemul val="0.1" order="0x40" stat="mAtk"/>
+	<basemul val="0.05" order="0x40" stat="mDef"/>
+	<add val="15" order="0x40" stat="fireRes"/>
+	<add val="15" order="0x40" stat="waterRes"/>
+	<add val="15" order="0x40" stat="windRes"/>
+	<add val="15" order="0x40" stat="earthRes"/>
+	<add val="750" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12812" name="Dynasty Sigil">
+  <for>
+    <add val="8" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+	<enchant val="0" order="0x50" stat="mAtkSpd"/>
+    <basemul val="0.06" order="0x40" stat="mAtkSpd"/>
+	<add val="15" order="0x40" stat="holyRes"/>
+	<add val="15" order="0x40" stat="darkRes"/>
+	<add val="0.04" order="0x40" stat="giveHp"/>
+  </for>
+</item>
+<item id="12813" name="Vesper Sigil">
+  <for>
+    <add val="18" order="0x10" stat="pDef"/>
+	<enchant val="0" order="0x50" stat="pDef"/>
+	<enchant val="0" order="0x60" stat="pDef"/>
+	<enchant val="0" order="0x50" stat="mAtk"/>
+	<enchant val="0" order="0x51" stat="mAtk"/>
+	<enchant val="0" order="0x60" stat="mAtk"/>
+	<enchant val="0" order="0x61" stat="mAtk"/>
+	<basemul val="0.15" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.35" order="0x40" stat="mAtk"/>
+  </for>
+</item>
+<item id="12815" name="Red Talisman - Max CP">
+  <for/>
+</item>
+<item id="12816" name="Red Talisman - CP Regeneration">
+  <for/>
+</item>
+<item id="12817" name="Yellow Talisman - Increase Force">
+  <for>
+  </for>
+</item>
+<item id="12818" name="Yellow Talisman - Damage Transition">
+  <for/>
+</item>
+<item id="12835" name="Shadow Item - Teddy Bear Hat">
+  <for/>
+</item>
+<item id="12836" name="Shadow Item - Piggy Hat">
+  <for/>
+</item>
+<item id="12837" name="Shadow Item - Jester Hat">
+  <for/>
+</item>
+<item id="12838" name="Fish Hat (Event)">
+  <for/>
+</item>
+<item id="12839" name="Medieval Style Party Mask (Event)">
+  <for/>
+</item>
+</list>

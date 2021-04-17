@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/dressme/shield.xsd">
+	<shield number="1" id="90015" name="Dread Shield">
+		<price id="999008" count="1" />
+	</shield>
+	<shield number="10" id="12812" name="Dynasty Sigil">
+		<price id="57" count="5000000" />
+	</shield>
+</list>

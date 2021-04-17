@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="39000" levels="1" name="Enchant Heavy Armor (Royal Guard)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="400"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39001" levels="1" name="Enchant Heavy Armor (Champion)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="400"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39002" levels="1" name="Enchant Heavy Armor (Rival)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="400"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39003" levels="1" name="Enchant Heavy Armor (Kensei)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="400"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39004" levels="1" name="Enchant Light Armor (Assassin)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="300"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="25"/>
+	<add order="0x40" stat="pDef" val="25"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39005" levels="1" name="Enchant Light Armor (Sentinel)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="300"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="25"/>
+	<add order="0x40" stat="pDef" val="25"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39006" levels="1" name="Enchant Light Armor (Jedi)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="300"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="25"/>
+	<add order="0x40" stat="pDef" val="25"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39007" levels="1" name="Enchant Light Armor (Warmonger)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="300"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="25"/>
+	<add order="0x40" stat="pDef" val="25"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39008" levels="1" name="Enchant Robe (Celestial)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="400"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="30"/>
+    <add order="0x40" stat="mDef" val="30"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39009" levels="1" name="Enchant Robe (Soothsayer)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="400"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="30"/>
+    <add order="0x40" stat="mDef" val="30"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39010" levels="1" name="Enchant Robe (Arcane)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="400"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="30"/>
+    <add order="0x40" stat="mDef" val="30"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39011" levels="1" name="Enchant Robe (Hellfire)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="400"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="30"/>
+    <add order="0x40" stat="mDef" val="30"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39012" levels="1" name="Enchant Heavy Armor (Origin Heavy)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="550"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39013" levels="1" name="Enchant Light Armor (Origin Light)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="450"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="40"/>
+	<add order="0x40" stat="pDef" val="40"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39014" levels="1" name="Enchant Robe (Origin Robe)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="800"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="45"/>
+    <add order="0x40" stat="mDef" val="45"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39015" levels="1" name="Enchant Heavy Armor (Titanium Heavy)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="700"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="60"/>
+	<add order="0x40" stat="mDef" val="60"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39016" levels="1" name="Enchant Light Armor (Titanium Light)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="600"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="50"/>
+	<add order="0x40" stat="pDef" val="50"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39017" levels="1" name="Enchant Robe (Titanium Robe)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="1200"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="60"/>
+    <add order="0x40" stat="mDef" val="60"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="39018" levels="1" name="Enchant Heavy Armor (Dread Heavy)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="900"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="70"/>
+	<add order="0x40" stat="mDef" val="70"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39019" levels="1" name="Enchant Light Armor (Dread Light)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="800"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="80"/>
+	<add order="0x40" stat="pDef" val="80"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39020" levels="1" name="Enchant Robe (Dread Robe)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="1600"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="75"/>
+    <add order="0x40" stat="mDef" val="75"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+
+
+<skill id="39021" levels="1" name="Enchant Heavy Armor (Rykros Heavy)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="900"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="pDef" val="70"/>
+	<add order="0x40" stat="mDef" val="70"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val='0.05' order='0x40' stat='maxHp'/>
+  </for>
+</skill>
+<skill id="39022" levels="1" name="Enchant Light Armor (Rykros Light)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="800"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mDef" val="80"/>
+	<add order="0x40" stat="pDef" val="80"/>
+	<add order="0x40" stat="rEvas" val="1"/>
+	<add val="1" order="0x40" stat="accCombat"/>
+	<add val="3" order='0x40' stat='runSpd'/>
+  </for>
+</skill>
+<skill id="39023" levels="1" name="Enchant Robe (Rykros Robe)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="1600"/>
+    <add order="0x40" stat="mAtkSpd" val="40"/>
+    <add order="0x40" stat="pDef" val="75"/>
+    <add order="0x40" stat="mDef" val="75"/>
+    <add val="0.03" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+</list>

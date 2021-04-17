@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10800" name="Draconic Leather Armor {PvP}">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10801" name="Major Arcana Robe {PvP}">
+  <for>
+    <add val="166" order="0x10" stat="pDef"/>
+    <add val="866" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10802" name="Dynasty Breastplate {PvP}">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10803" name="Dynasty Breastplate {PvP} - Shield Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10804" name="Dynasty Breastplate {PvP} - Weapon Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10805" name="Dynasty Breastplate {PvP} - Force Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10806" name="Dynasty Breastplate {PvP} - Bard">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10807" name="Dynasty Leather Armor {PvP}">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10808" name="Dynasty Leather Armor {PvP} - Dagger Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10809" name="Dynasty Leather Armor {PvP} - Bow Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10810" name="Dynasty Tunic {PvP}">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10811" name="Dynasty Tunic {PvP} - Healer">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10812" name="Dynasty Tunic {PvP} - Enchanter">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10813" name="Dynasty Tunic {PvP} - Summoner">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10814" name="Dynasty Tunic {PvP} - Wizard">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10815" name="Dynasty Leather Armor {PvP} - Force Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10816" name="Dynasty Leather Armor {PvP} - Weapon Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10817" name="Dynasty Leather Armor {PvP} - Enchanter">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10818" name="Dynasty Leather Armor {PvP} - Summoner">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10819" name="Dynasty Platinum Breastplate {PvP}">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10820" name="Dynasty Platinum Breastplate {PvP} - Shield Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10821" name="Dynasty Platinum Breastplate {PvP} - Weapon Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10822" name="Dynasty Platinum Breastplate {PvP} - Force Master">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10823" name="Dynasty Platinum Breastplate {PvP} - Bard">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10824" name="Dynasty Jewel Leather Armor {PvP}">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10825" name="Dynasty Jewel Leather Armor {PvP} - Dagger Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10826" name="Dynasty Jewel Leather Armor {PvP} - Bow Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10827" name="Dynasty Silver Satin Tunic {PvP}">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10828" name="Dynasty Silver Satin Tunic {PvP} - Healer">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10829" name="Dynasty Silver Satin Tunic {PvP} - Enchanter">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10830" name="Dynasty Silver Satin Tunic {PvP} - Summoner">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10831" name="Dynasty Silver Satin Tunic {PvP} - Wizard">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10832" name="Dynasty Jewel Leather Armor {PvP} - Force Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10833" name="Dynasty Jewel Leather Armor {PvP} - Weapon Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10834" name="Dynasty Jewel Leather Armor {PvP} - Enchanter">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10835" name="Dynasty Jewel Leather Armor {PvP} - Summoner">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

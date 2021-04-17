@@ -1,0 +1,81 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="666666">
+<tr>
+<td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=92 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=92 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<br>
+
+<button value="Refresh" action="bypass admin_event_manage show_event %type%" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+<br><br>
+
+<table width=230>
+
+<tr>
+<td><font color=ac9775>Event Name</font></td>
+<td><font color=9f9f9f>%event_name%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>%active_next% Map</font></td>
+<td><font color=9f9f9f>%map%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>System State:</font></td>
+<td><font color=9f9f9f>%state%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Next Task:</font></td>
+<td><font color=9f9f9f>%future%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Teams Ammount</font></td>
+<td><font color=9f9f9f>%teamsAmmount%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Total Players</font></td>
+<td><font color=9f9f9f>%players%/%maxPlayers%</font></td>
+</tr>
+
+</table>
+
+<br>
+
+<table width=225>
+
+<tr>
+<td><button value="Skip Delay" action="bypass admin_event_manage skip_delay %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Abort" action="bypass admin_event_manage abort_active_event %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+<tr>
+<td><button value="Set Map" action="bypass admin_event_manage set_map_menu %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Set Event" action="bypass admin_event_manage set_next_event_menu %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+<tr>
+<td><button value="Pause / Run" action="bypass admin_event_manage pause_event %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Next Event" action="bypass admin_event_manage next_random_event %type%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<br>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br1>
+
+<button value="Back" action="bypass admin_event_manage" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

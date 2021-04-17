@@ -1,0 +1,4281 @@
+<list>
+<skill id="38000" levels="1" name="Duelist">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+<for>
+		<mul order="0x30" stat="magicDamVul" val="0.82">
+			  	  <player olympiad="false"/>
+		 </mul>
+
+		<mul val="1.03" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	  	<sub val="0.135" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+		 </sub>
+		 <add val="0.27" order="0x40" stat="skillDam">
+			<player olympiad="true"/>
+		 </add>
+		 <add val="40" order="0x40" stat="pAtkSpd">
+	  	  <player olympiad="false"/>
+		 </add>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.075" order="0x40" stat="pvmDam"/>
+	  <mul val="0.965" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	<mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+</for>
+</skill>
+
+
+
+
+<skill id="38001" levels="1" name="Pheonix Knight">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825">
+	 	  <player olympiad="false"/>
+	  </mul>
+   <mul val="0.92" order="0x30" stat="aggressionProf"/>
+  <mul val="1.12" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+   <mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	   <mul val="0.85" order="0x30" stat="skillPowerBoost">
+	   <using skillId="28"/>
+		</mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.93" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="5" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="300" order="0x30" stat="pAtk">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="pAtkSpd">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="rCrit">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="25" order="0x30" stat="pAtkSpd">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="25" order="0x30" stat="rCrit">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="accCombat">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="runSpd">
+			<player olympiad="true"/>
+	  </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38002" levels="1" name="Hell Knight">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825">
+	 	  <player olympiad="false"/>
+	  </mul>
+   <mul val="0.92" order="0x30" stat="aggressionProf"/>
+	   <mul val="0.85" order="0x30" stat="skillPowerBoost">
+	   <using skillId="28"/>
+		</mul>
+		<mul val="1.12" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.92" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="400" order="0x30" stat="pAtk">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="pAtkSpd">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="rCrit">
+	  <player olympiad="false"/>
+	  </add>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="450" order="0x40" stat="sDef">
+		<player olympiad="false"/>
+	  </sub>
+	  <mul val="0.93" order="0x30" stat="rShld">
+		<player olympiad="false"/>
+	  </mul>
+	  <add val="25" order="0x30" stat="pAtkSpd">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="25" order="0x30" stat="rCrit">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="accCombat">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="runSpd">
+			<player olympiad="true"/>
+	  </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38003" levels="1" name="Saggitarius">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	<mul order="0x30" stat="magicDamVul" val="0.825"/>
+	<sub val="0.085" order="0x40" stat="damHeavy"/>
+		  <mul val="0.97" order="0x30" stat="pvpPhysDmg">
+		<player active_effect_id="313"/>
+	  </mul>
+	<mul val="1.05" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.05" order="0x40" stat="pvmDam"/>
+		<mul val="0.95" order="0x50" stat="pAtk">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</mul>
+		<mul val="0.60" order="0x50" stat="pAtk">
+			<and>
+				<player olympiad="true"/>
+				<not>
+					<using kind="Bow"/>
+				</not>
+			</and>
+		</mul>
+		<sub val="0.05" order="0x50" stat="pvmDam">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</sub>
+	  <mul val="0.885" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.88" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="8" order="0x40" stat="rEvas">
+	  <player olympiad="false"/>
+	  </sub>
+	  	  <add val="3" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  	  <add val="0.10" order="0x40" stat="atkReuse"/>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38004" levels="1" name="Adventurer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+
+   <mul order="0x30" stat="magicDamVul" val="0.845">
+           <player olympiad="false"/>
+      </mul>
+	<mul val="0.85" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.00" order="0x40" stat="pvmDam"/>
+	  <sub val="0.01" order="0x40" stat="damRobe"/>
+	  <add val="0.00" order="0x40" stat="damHeavy">
+	  	  	   <player olympiad="false"/>
+	  </add>
+	  <add val="0.01" order="0x40" stat="damLight">
+	  	  	  <player olympiad="false"/>
+	  </add>
+	  <add order="0x40" stat="blowRate" val="12">
+	  	  <player olympiad="false"/>
+	  </add>
+	  <mul val="0.81" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="250" order="0x40" stat="pAtk">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="0.15" order="0x40" stat="cAtk">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="2000" order="0x40" stat="pAtk">
+	  <and>
+		<player olympiad="false"/>
+        <using kind="Bow"/>
+		</and>
+      </sub>
+	  	<sub val="0.05" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="0.07" order="0x40" stat="skillDam">
+	  <and>
+        <player olympiad="false"/>
+		<player behind="false"/>
+		</and>
+      </sub>
+	  <sub val="0.05" order="0x40" stat="skillDam">
+			<player olympiad="true"/>
+      </sub>
+	  	  <mul val="0.97" order="0x50" stat="pAtk">
+	          <player olympiad="false"/>
+      </mul>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+	  
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38005" levels="1" name="Archmage">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.899"/>
+	<add val="0.05" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </add>
+	  	<add val="0.045" order="0x40" stat="skillDam">
+        <player olympiad="true"/>
+      </add>
+	<add order="0x40" stat="critVuln" val="0.015">
+		<player olympiad="false"/>
+	  </add>
+  	<add val="0.0175" order="0x40" stat="pvpPhysVul">
+		<player olympiad="false"/>
+     </add>
+      <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+      <mul val="1.30" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul val="0.9" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="1.0265" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="5" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  <mul val="0.97" order="0x50" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  <add val="65" order="0x40" stat="pDef">
+	       <player olympiad="false"/>
+      </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38006" levels="1" name="Soultaker">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.899"/>
+	<mul order="0x30" stat="debuffProf" val="1.08">
+			<player olympiad="false"/>
+		</mul>
+	  	  <mul order="0x30" stat="debuffProf" val="1.15">
+        <player olympiad="true"/>
+		</mul>
+		<add val="0.035" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+		</add>
+		<add val="0.10" order="0x40" stat="skillDam">
+        <player olympiad="true"/>
+		</add>
+		<add order="0x40" stat="critVuln" val="0.015">
+		<player olympiad="false"/>
+		</add>
+		<add val="0.0175" order="0x40" stat="pvpPhysVul">
+		<player olympiad="false"/>
+		</add>
+		<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+		</mul>
+		<mul val="1.4" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+		</mul>
+		<add val="0.05" order="0x40" stat="pvmVuln"/>
+		<mul val="0.85" order="0x30" stat="pvpPhysDmg">
+		<player olympiad="false"/>
+		</mul>
+		<mul val="1.0065" order="0x30" stat="pvpMagicalDmg">
+		<player olympiad="false"/>
+		</mul>
+	  <!--<add val="15" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </add>-->
+	  <!--<add val="25" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </add>-->
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  <add val="30" order="0x40" stat="mAtkSpd">
+	  <player olympiad="false"/>
+	  </add>
+	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  <add val="65" order="0x40" stat="pDef">
+	       <player olympiad="false"/>
+      </add>
+	  <add val="65" order="0x40" stat="pDef">
+	       <player olympiad="true"/>
+      </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38007" levels="1" name="Arcana Lord">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.899"/>
+  <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <sub val="0.15" order="0x40" stat="pvmDam"/>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	    <sub order="0x40" stat="pAtk" val="800">
+         <player olympiad="false"/>
+         </sub>
+	  <mul val="0.95" order="0x30" stat="pvpPhysDmg">
+		<player olympiad="false"/>
+	  </mul>
+	 <add val="300" order="0x40" stat="mAtkSpd">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</add>
+	<add val="0.55" order="0x40" stat="giveHp">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</add>
+	 <sub val="0.40" order="0x40" stat="mReuse">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</sub>
+	<add val="850" order="0x40" stat="pAtk">
+	   <using kind="Light"/>
+	</add>
+		  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  <skill id="38008" levels="1" name="Cardinal">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+  <sub val="0.065" order="0x40" stat="gainHp"/>
+  <sub val="0.075" order="0x40" stat="giveHp"/>
+  	  <add val="80" order="0x40" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </add>
+      <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+      <mul val="1.2" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="10" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  <mul order="0x50" stat="regMp" val="0.6"/>
+	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  
+	  <mul val="0.05" order="0x50" stat="maxHp">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  <skill id="38009" levels="1" name="Hierophant">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825"/>
+  <mul val="1.2" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+      <mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <add val="27" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </add>
+	  <sub val="60" order="0x40" stat="accCombat"/>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38010" levels="1" name="Eva's Templar">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825">
+	 	  <player olympiad="false"/>
+	  </mul>
+	 <mul val="0.92" order="0x30" stat="aggressionProf"/>
+	   <mul val="0.85" order="0x30" stat="skillPowerBoost">
+	   <using skillId="28"/>
+		</mul>
+  <mul val="1.12" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul val="0.92" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.88" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="5" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="400" order="0x30" stat="pAtk">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="pAtkSpd">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="40" order="0x30" stat="rCrit">
+	  <player olympiad="false"/>
+	  </add>
+	  
+	  <add val="25" order="0x30" stat="rCrit">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="accCombat">
+			<player olympiad="true"/>
+	  </add>
+	  <add val="5" order="0x40" stat="runSpd">
+			<player olympiad="true"/>
+	  </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38011" levels="1" name="Sword Singer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825">
+	 	 <player olympiad="false"/>
+      </mul>
+	   <add order="0x40" stat="rCrit" val="50">
+	   <and>
+	   <player olympiad="false"/>
+      <using kind="Blunt,Big Blunt"/>
+	  </and>
+    </add>
+	   <mul order="0x40" stat="pvpPhysDmg" val="0.87">
+	  	   <and>
+	   <player olympiad="false"/>
+      <using kind="Blunt,Big Blunt"/>
+	  </and>
+    </mul>
+	 <add order="0x40" stat="maxCp" val="420">
+	         <player olympiad="false"/>
+      </add>
+	<mul val="0.74" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	<mul order="0x30" stat="rootProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.10" order="0x40" stat="pvmDam">
+	        <using kind="Blunt,Big Blunt"/>
+    </sub>
+	  <sub val="3000" order="0x40" stat="pAtk">
+	  <and>
+        <using kind="Bow"/>
+		<player olympiad="false"/>
+		</and>
+      </sub>
+	  <mul val="0.9750" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="40" order="0x40" stat="pAtkSpd">
+		<player olympiad="false"/>
+	  </add>
+	  <add val="20" order="0x40" stat="pAtkSpd">
+	  <and>
+			<using kind="heavy"/>
+		<player olympiad="false"/>
+		</and>
+	  </add>
+	 <add val="4" order="0x40" stat="runSpd">
+	  <and>
+			<using kind="heavy"/>
+		<player olympiad="false"/>
+		</and>
+	  </add>
+	  <add val="1" order="0x40" stat="accCombat">
+		<player olympiad="false"/>
+	  </add>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.85"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.85"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38012" levels="1" name="Wind Rider">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+     <mul order="0x30" stat="magicDamVul" val="0.825"/>
+	 <sub val="0.08" order="0x40" stat="damRobe"/>
+		<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <sub val="0.001" order="0x40" stat="damRobe"/>
+	  <add val="30" order="0x40" stat="pAtkSpd">
+        <player olympiad="false"/>
+      </add>
+	  	 <add val="30" order="0x40" stat="rCrit">
+			<player olympiad="false"/>
+      </add>
+	  <add val="0.03" order="0x40" stat="damHeavy">
+	  	  	   <player olympiad="false"/>
+	  </add>
+	  <add val="0.04" order="0x40" stat="damLight">
+	  	  	  <player olympiad="false"/>
+	  </add>
+	  <add order="0x40" stat="blowRate" val="12">
+	  	  <player olympiad="false"/>
+	  </add>
+			<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.04" order="0x40" stat="pvmDam"/>
+	  <mul val="0.82" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="0.12" order='0x40' stat="cAtk">
+	  <player olympiad="false"/>
+	  </sub>
+	  <sub val="250" order="0x40" stat="pAtk">
+        <player olympiad="false"/>
+      </sub>
+	  <add val="0.04" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </add>
+	  	  <add val="0.050" order="0x40" stat="skillDam">
+		  <and>
+        <player olympiad="false"/>
+		<player behind="true"/>
+		</and>
+      </add>
+	  	  <sub val="0.04" order="0x40" stat="skillDam">
+			<player olympiad="true"/>
+      </sub>
+	  <sub val="2000" order="0x40" stat="pAtk">
+	  <and>
+		<player olympiad="false"/>
+        <using kind="Bow"/>
+		</and>
+      </sub>
+	  <mul val="0.97" order="0x50" stat="pAtk">
+	          <player olympiad="false"/>
+      </mul>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  <add val="6" order='0x40' stat='pSkillEvas'/>
+	  <add order="0x40" stat="mSkillEvas" val="3"/>
+	  <add val="4" order="0x40" stat="rEvasAbs"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38013" levels="1" name="Moonlight Sentinel">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.829"/>
+	<sub val="0.09" order="0x40" stat="damHeavy"/>
+		<mul val="0.95" order="0x50" stat="pAtk">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</mul>
+		<mul val="0.60" order="0x50" stat="pAtk">
+			<and>
+				<player olympiad="true"/>
+				<not>
+					<using kind="Bow"/>
+				</not>
+			</and>
+		</mul>
+		<sub val="0.05" order="0x50" stat="pvmDam">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</sub>
+		<mul val="0.77" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.05" order="0x40" stat="pvmDam"/>
+	  <add val="750" order="0x40" stat="maxCp">
+	  	  <player olympiad="false"/>
+	  </add>
+	  <mul val="1.0" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="4" order="0x40" stat="rEvas">
+	  <player olympiad="false"/>
+	  </sub>
+	  <add val="2" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="0.10" order="0x40" stat="atkReuse"/>
+	   <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38014" levels="1" name="Mystic Muse">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.899"/>
+	<add val="0.035" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </add>
+	  <add val="0.06" order="0x40" stat="skillDam">
+        <player olympiad="true"/>
+      </add>
+	<add order="0x40" stat="critVuln" val="0.0125">
+		<player olympiad="false"/>
+	  </add>
+  	<add val="0.0125" order="0x40" stat="pvpPhysVul">
+		<player olympiad="false"/>
+     </add>
+	<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1.35" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul val="0.85" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="1.0255" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="5" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  <add val="50" order="0x40" stat="mAtkSpdMaxAdd">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="5" order="0x40" stat="mCritMax">
+	  <player olympiad="false"/>
+	  </add>
+	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  <add val="65" order="0x40" stat="pDef">
+	       <player olympiad="false"/>
+      </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38015" levels="1" name="Elemental Master">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+		<mul val="1.5" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1.5" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  	<mul val="1.20" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="false"/>
+      </mul>
+	  <mul val="0.85" order="0x50" stat="mAtkSpd">
+        <player olympiad="true"/>
+      </mul>
+	  <mul val="0.85" order="0x50" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.10" order="0x40" stat="pvmDam"/>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38016" levels="1" name="Eva's Saint">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+  <sub val="0.065" order="0x40" stat="gainHp"/>
+  <sub val="0.085" order="0x40" stat="giveHp"/>
+  <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1.15" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="10" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  <add val="80" order="0x40" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </add>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  <mul order="0x50" stat="regMp" val="0.6"/>
+	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38017" levels="1" name="Shilien Templar">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+       <mul order="0x30" stat="magicDamVul" val="0.825"/>
+	   <mul val="0.92" order="0x30" stat="aggressionProf"/>
+	   <mul val="0.85" order="0x30" stat="skillPowerBoost">
+	   <using skillId="28"/>
+		</mul>
+  <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+		<mul order="0x30" stat="rootProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul val="0.98" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="100" order="0x40" stat="pDef">
+		<player olympiad="false"/>
+	  </add>
+	  <add val="0.15" order="0x40" stat="cAtk">
+		<player olympiad="false"/>
+	  </add>
+	  <add val="25" order="0x40" stat="pAtkSpd">
+		<player olympiad="false"/>
+	  </add>
+	  <add val="20" order="0x40" stat="rCrit">
+		<player olympiad="false"/>
+	  </add>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="250" order="0x40" stat="sDef">
+		<player olympiad="false"/>
+	  </sub>
+	  <mul val="0.94" order="0x30" stat="rShld">
+		<player olympiad="false"/>
+	  </mul>
+	  <add val="6" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38018" levels="1" name="Spectral Dancer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	<mul order="0x30" stat="magicDamVul" val="0.885"/>
+	 <add val="0.0475" order="0x40" stat="pvpPhysVul">
+		<player olympiad="false"/>
+     </add>
+		<mul val="1.15" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul order="0x30" stat="rootProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="700" order="0x40" stat="maxHp">
+	  <player olympiad="true"/>
+	  </add>
+	  <add val="4" order="0x40" stat="accCombat">
+	  <player olympiad="true"/>
+	  </add>
+	  <add val="3" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="35" order="0x40" stat="rCrit">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="0.075" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <sub val="4000" order="0x40" stat="pAtk">
+        <using kind="Bow"/>
+      </sub>
+	  <mul val="0.885" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.95" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="2000" order="0x40" stat="pAtk">
+        <using kind="Dagger,Dual Dagger"/>
+      </sub>
+	 <add val="300" order="0x40" stat="pAtk">
+	   <player active_effect_id="94"/>
+	</add>
+	<mul val="0.9675" order="0x30" stat="pvpPhysDmg">
+	<and>
+	  <player olympiad="false"/>
+	  <player active_effect_id="94"/>
+	  </and>
+	  </mul>
+	<sub val="2" order="0x40" stat="rEvas">
+	  <player olympiad="false"/>
+	  </sub>
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38019" levels="1" name="Ghost Hunter">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+  <mul order="0x30" stat="magicDamVul" val="0.825"/>
+  <sub val="0.00" order="0x40" stat="damRobe"/>
+  	  <add val="0.00" order="0x40" stat="damHeavy">
+	  	  	   <player olympiad="false"/>
+	  </add>
+	  <add val="0.03" order="0x40" stat="damLight">
+	  	  	  <player olympiad="false"/>
+	  </add>
+  	  <add order="0x40" stat="blowRate" val="10">
+	  	  <player olympiad="false"/>
+	  </add>
+	  <add val="500" order="0x40" stat="maxHp">
+	  	  	   <player olympiad="false"/>
+	  </add>
+	  <add val="500" order="0x40" stat="maxCp">
+	  	  	   <player olympiad="false"/>
+	  </add>
+	<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.08" order="0x40" stat="pvmDam"/>
+	  <mul val="0.82" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.88" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="0.15" order="0x40" stat="cAtk">
+		<player olympiad="false"/>
+	  </sub>
+	  <sub val="350" order="0x40" stat="pAtk">
+		<player olympiad="false"/>
+	  </sub>
+	  <sub val="2000" order="0x40" stat="pAtk">
+	  <and>
+		<player olympiad="false"/>
+        <using kind="Bow"/>
+		</and>
+      </sub>
+	  	  <sub val="0.07" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="0.04" order="0x40" stat="skillDam">
+	  <and>
+        <player olympiad="false"/>
+		<player behind="true"/>
+		</and>
+      </sub>
+	  	  <sub val="0.04" order="0x40" stat="skillDam">
+			<player olympiad="true"/>
+      </sub>
+	  	  <mul val="0.975" order="0x50" stat="pAtk">
+	          <player olympiad="false"/>
+      </mul>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38020" levels="1" name="Ghost Sentinel">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.825"/>
+	<sub val="0.09" order="0x40" stat="damHeavy"/>
+		<mul val="0.92" order="0x50" stat="pAtk">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</mul>
+		<mul val="0.60" order="0x50" stat="pAtk">
+			<and>
+				<player olympiad="true"/>
+				<not>
+					<using kind="Bow"/>
+				</not>
+			</and>
+		</mul>
+		<sub val="0.05" order="0x50" stat="pvmDam">
+			<not>
+				<using kind="Bow"/>
+			</not>
+		</sub>
+    <mul val="0.95" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+      <mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="750" order="0x40" stat="maxCp"/>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.05" order="0x40" stat="pvmDam"/>
+	  <mul val="0.87" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.975" order="0x30" stat="pvpPhysDmg">
+		<player active_effect_id="414"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="0.10" order="0x40" stat="atkReuse"/>
+	  <add val="300" order="0x40" stat="pAtk">
+			<player olympiad="false"/>
+	  </add>
+	  <sub val="7" order="0x40" stat="rEvas"/>
+	  	<add val="2" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38021" levels="1" name="Storm Screamer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+  <mul order="0x30" stat="magicDamVul" val="0.899"/>
+  	<add val="0.055" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </add>
+	  <add val="0.04" order="0x40" stat="skillDam">
+        <player olympiad="true"/>
+      </add>
+  	<add order="0x40" stat="critVuln" val="0.035">
+		<player olympiad="false"/>
+	  </add>
+  	<add val="0.0375" order="0x40" stat="pvpPhysVul">
+		<player olympiad="false"/>
+     </add>
+  <mul val="0.8" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1.35" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="debuffProf" val="1.1">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul val="0.85" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="1.035" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="10" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	  	  <mul val="0.97" order="0x50" stat="mAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  <add val="65" order="0x40" stat="pDef">
+	       <player olympiad="false"/>
+      </add>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="mAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  <skill id="38022" levels="1" name="Spectral Master">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.909"/>
+  <mul val="0.95" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="0.95" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.15" order="0x40" stat="pvmDam"/>
+	  <sub order="0x40" stat="cAtk" val="1.1">
+		<player olympiad="true"/>
+	  </sub>
+	  <sub val="100" order='0x40' stat="rCrit">
+		<player olympiad="false"/>
+	  </sub>
+	  <sub val="0.15" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+	</sub>
+	  <mul val="1.00" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="false"/>
+      </mul>
+	    <sub val="0.15" order="0x30" stat="cAtk">
+        <player olympiad="false"/>
+      </sub>
+	  	   <sub val="60" order="0x30" stat="pAtkSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <mul val="0.88" order="0x50" stat="pAtk">
+        <player olympiad="false"/>
+      </mul>
+	 <add val="250" order="0x40" stat="mAtkSpd">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</add>
+	<add val="0.35" order="0x40" stat="giveHp">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</add>
+	 <sub val="0.35" order="0x40" stat="mReuse">
+	 <and>
+	   <using skillId="1127"/>
+	   <using kind="Light"/>
+	   </and>
+	</sub>
+		  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  
+  </skill>
+  
+  
+  
+  
+  <skill id="38023" levels="1" name="Shilen Saint">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+  <sub val="0.065" order="0x40" stat="giveHp"/>
+  <sub val="0.055" order="0x40" stat="gainHp"/>
+    <mul order="0x30" stat="magicDamVul" val="0.909"/>
+  <mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1.05" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  	  <mul order="0x50" stat="regMp" val="0.60"/>
+	  <sub val="800" order="0x40" stat="mAtkSpd">
+        <using kind="Heavy"/>
+      </sub>
+	 
+	  <mul order="0x50" stat="regMp" val="0.6"/>
+	  <mul val="1.08" order="0x30" stat="MpConsume"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+		  	   <player hasSkill="94"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38024" levels="1" name="Titan">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.825"/>
+  <mul val="0.9" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+   <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	 <sub order="0x40" stat="runSpd" val="6">
+  <player olympiad="true"/>
+  </sub>
+  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="8000" order="0x40" stat="pAtk">
+	  <and>
+        <using kind="Bow"/>
+		  <player olympiad="false"/>
+		  </and>
+      </sub>
+	  	  <mul val="0.97" order="0x50" stat="maxHp">
+        <player olympiad="false"/>
+      </mul>
+	  <sub val="0.04" order="0x40" stat="skillDam">
+        <player olympiad="false"/>
+      </sub>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="19"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38025" levels="1" name="Grand Khavantari">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.839"/>
+	<mul val="0.90" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.10" order="0x40" stat="skillDam">
+	  	  <player olympiad="true"/>
+	</add>
+     <mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <sub order="0x40" stat="maxHp" val="1000">
+	  <player olympiad="true"/>
+	  </sub>
+      <mul val="0.90" order="0x30" stat="pAtkSpd">
+	  <player olympiad="true"/>
+	  </mul>
+	  <mul val="0.95" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <!--<mul val="0.85" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>-->
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="1" order="0x10" stat="CON">
+	  <player olympiad="false"/>
+	  </sub>
+	  <sub order="0x40" stat="pAtk" val="800">
+        <player olympiad="false"/>
+      </sub>
+	  <!--extra-->
+	    <sub val="0.255" order="0x40" stat="skillDam">
+	  	  <player olympiad="false"/>
+		  </sub>
+		  <add val="0.15" order="0x40" stat="cAtk">
+	  	  <player olympiad="false"/>
+		  </add>
+		  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38026" levels="1" name="Dominator">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.899"/>
+	<mul val="1.00" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1.2" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul val="0.95" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="false"/>
+      </mul>
+	   <mul order="0x30" stat="debuffProf" val="1.25">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <mul order="0x30" stat="debuffProf" val="0.75">
+        <player olympiad="false"/>
+      </mul>
+	  <sub val="8000" order="0x40" stat="pAtk">
+        <using kind="Dagger,Dual Dagger"/>
+      </sub>
+	  	<add val="3" order="0x40" stat="accCombat">
+        <player olympiad="true"/>
+      </add>
+	  	<add val="25" order="0x40" stat="pAtkSpd">
+        <player olympiad="true"/>
+      </add>
+	  <add val="3" order="0x40" stat="runSpd">
+        <player olympiad="true"/>
+      </add>
+	  
+	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75">
+	          <player olympiad="true"/>
+      </mul>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75">
+	  	          <player olympiad="true"/>
+      </mul>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="maxHp">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38027" levels="1" name="Doomcryer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.889">
+	        <player olympiad="false"/>
+      </mul>
+	<mul val="0.75" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1.05" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	   <mul order="0x30" stat="debuffProf" val="0.9">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul order="0x30" stat="debuffProf" val="0.75">
+        <player olympiad="false"/>
+      </mul>
+	  <mul val="1.1" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="8" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </add>
+	  <add val="60" order='0x40' stat="rCrit">
+	  <player olympiad="false"/>
+	  </add>
+	  <sub val="8000" order="0x40" stat="pAtk">
+        <using kind="Dagger,Dual Dagger"/>
+      </sub>
+	  <add val="5" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  
+		
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38028" levels="1" name="Fortune Seeker">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+   <mul order="0x30" stat="magicDamVul" val="0.825"/>
+  <mul val="1" order="0x30" stat="pvpPhysDmg" >
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.3">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="200" order="0x40" stat="pDef">
+	  <player olympiad="false"/>
+	  </sub>
+	  <sub val="200" order="0x40" stat="mDef">
+	  <player olympiad="false"/>
+	  </sub>
+	  	  <mul val="0.975" order="0x50" stat="maxHp">
+        <player olympiad="false"/>
+      </mul>
+	  <mul val="0.96" order="0x50" stat="pAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38029" levels="1" name="Maestro">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+      <mul order="0x30" stat="magicDamVul" val="0.825"/>
+	<mul val="0.9" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="stunProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <mul order="0x30" stat="rootProf" val="0.5">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="200" order="0x40" stat="mDef">
+	  <player olympiad="false"/>
+	  </sub>
+	  <sub val="10" order="0x40" stat="runSpd">
+        <player olympiad="false"/>
+      </sub>
+	  <mul val="0.97" order="0x50" stat="maxHp">
+        <player olympiad="false"/>
+      </mul>
+	  <mul val="0.96" order="0x50" stat="pAtkSpd">
+        <player olympiad="false"/>
+      </mul>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38030" levels="1" name="Doombringer">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+      <mul order="0x30" stat="magicDamVul" val="0.87">
+	          <player olympiad="false"/>
+      </mul>
+		<mul val="1.075" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.15" order="0x40" stat="pvmDam"/>
+      <mul val="0.94" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.85" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="0.02" order="0x40" stat="skillDam">
+	  <player olympiad="false"/>
+	  </sub>
+	 <add val="0.05" order="0x40" stat="skillDam">
+      <using skillid="496"/>
+	</add>
+	<sub val="0.01" order="0x40" stat="skillDam">
+      <using skillid="526"/>
+	</sub>
+	<sub val="0.05" order="0x40" stat="skillDam">
+      <using skillid="939"/>
+	</sub>
+		<add val="1" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 	<add order="0x40" stat="rCrit" val="30">
+	  	  <player olympiad="false"/>
+	  </add>
+	  	<add order="0x40" stat="pAtkSpd" val="20">
+	  	  <player olympiad="false"/>
+	  </add>
+	 <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  	
+	<mul val="1.145" order="0x40" stat="swordWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="bluntWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="daggerWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="bowWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="crossbowWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="poleWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="fistWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="dualWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="dualFistWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="bigSwordWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="bigBluntWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="dualDaggerWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="rapierWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	<mul val="1.145" order="0x40" stat="ancientWpnVuln">
+		<using skillid="483"/>
+	</mul>
+	
+		  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38031" levels="1" name="Male Soulhound">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+        <mul order="0x30" stat="magicDamVul" val="0.87"/>
+		<add order="0x40" stat="blowRate" val="10">
+	  	  <player olympiad="false"/>
+	  </add>
+	  	  <add order="0x40" stat="blowRate" val="4">
+	  	  <player olympiad="true"/>
+	  </add>
+	  <add val="50" order="0x40" stat="pDef">
+		<player olympiad="false"/>
+	  </add>
+	  <add val="50" order="0x40" stat="mDef">
+		<player olympiad="false"/>
+	  </add>
+		<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.96" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="6" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <sub val="0.10" order="0x40" stat="cAtk"/>
+	  <sub val="0.09" order="0x40" stat="skillDam"/>
+	  <sub val="0.10" order="0x40" stat="skillDam">
+      <using skillid="506"/>
+	</sub>
+		  <sub val="0.10" order="0x40" stat="skillDam">
+      <using skillid="505"/>
+	</sub>
+		<add val="3" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	   <mul val="0.5" order="0x40" stat="mReuse">
+        <using kind="Light"/>
+      </mul>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38032" levels="1" name="Trickster">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+        <mul order="0x30" stat="magicDamVul" val="0.88">
+		        <player olympiad="false"/>
+      </mul>
+	    <sub val="0.12" order="0x40" stat="skillDam">
+			<player olympiad="true"/>
+      </sub>
+		<add val="0.05" order="0x40" stat="atkReuse"/>
+	  	<add val="0.05" order="0x40" stat="atkReuse">
+					  <player olympiad="false"/>
+	  </add>
+		<add val="450" order="0x40" stat="maxCp">
+			  <player olympiad="false"/>
+	  </add>
+		<add val="450" order="0x40" stat="maxHp">
+			  <player olympiad="false"/>
+	  </add>
+	<mul val="0.57" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+		</mul>
+    <mul val="1.07" order="0x50" stat="pAtk">
+        <player olympiad="false"/>
+	</mul>
+        <mul val="0.905" order="0x30" stat="pvpPhysDmg">
+		<player olympiad="false"/>
+	  </mul>
+		<sub order="0x40" stat="runSpd" val="15">
+		<player olympiad="true"/>
+		</sub>
+		<mul val="1.3" order="0x50" stat="MpConsume">
+		<player olympiad="true"/>
+		</mul>
+		<add val="0.05" order="0x40" stat="pvmVuln"/>
+		<add val="1" order="0x40" stat="rEvas"/>
+		<sub val="0.1" order="0x40" stat="pvmDam"/>
+  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  <skill id="38033" levels="1" name="Judicator">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+        <mul order="0x30" stat="magicDamVul" val="0.835"/>
+		<add order="0x40" stat="blowRate" val="15">
+	  	  <player olympiad="false"/>
+	  </add>
+	  	  <add order="0x40" stat="blowRate" val="8">
+	  	  <player olympiad="true"/>
+	  </add>
+		<mul val="1.0" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+	  	<add val="0.01" order="0x30" stat="skillDam">
+        <player olympiad="true"/>
+      </add>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  		<mul val="1.10" order="0x30" stat="pAtk">
+        <player olympiad="true"/>
+      </mul>
+	  		<mul val="1.15" order="0x30" stat="pAtkSpd">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.07" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.935" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="1.0" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="7" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="50" order="0x40" stat="pDef">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="50" order="0x40" stat="mDef">
+	  <player olympiad="false"/>
+	  </add>
+	  <add order="0x40" stat="rCrit" val="30">
+	  	  <player olympiad="false"/>
+	  </add>
+	  <add order="0x40" stat="pAtkSpd" val="10">
+	  	  <player olympiad="false"/>
+	  </add>
+	  <sub val="0.10" order="0x40" stat="cAtk"/>
+	  <sub val="0.065" order="0x40" stat="skillDam"/>
+	<sub val="0.04" order="0x40" stat="skillDam">
+      <using skillid="505"/>
+	</sub>
+		<add val="4" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 
+	 	  <mul val="0.95" order="0x50" stat="pAtk">
+		  <not>
+			<using kind="Rapier"/>
+			</not>
+		</mul>
+		<sub val="0.08" order="0x50" stat="pvmDam">
+			<not>
+				<using kind="Rapier"/>
+			</not>
+		</sub>
+		
+		
+	 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="38035"/>
+	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  	   <player hasSkill="94"/>
+		   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  
+  <skill id="38034" levels="1" name="Dreadnought">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+		<mul order="0x30" stat="magicDamVul" val="0.86"/>
+			<mul val="0.90" order="0x30" stat="pvpPhysDmg">
+					<player olympiad="true"/>
+			</mul>
+			<mul val="1" order="0x30" stat="pvpMagicalDmg">
+				<player olympiad="true"/>
+			</mul>
+			<add val="3" order="0x40" stat="accCombat">
+				<player olympiad="false"/>
+			</add>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.075" order="0x40" stat="pvmDam"/>
+	  <sub val="5" order="0x40" stat="aoePercent"/> 
+	  <mul val="1.00" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="1.04" order="0x30" stat="pAtk">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.9" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <sub val="8000" order="0x40" stat="pAtk">
+        <using kind="Dagger,Dual Dagger"/>
+      </sub>
+	     <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.10"/>
+	  	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38035"/>
+	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	  <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+   <skill id="38035" levels="1" name="Female Soulhound">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+        <mul order="0x30" stat="magicDamVul" val="0.869"/>
+	<add order="0x40" stat="blowRate" val="10">
+	  	  <player olympiad="false"/>
+	  </add>
+	  	  <add order="0x40" stat="blowRate" val="4">
+	  	  <player olympiad="true"/>
+	  </add>
+	  	  <add val="50" order="0x40" stat="pDef">
+	  <player olympiad="false"/>
+	  </add>
+	  <add val="50" order="0x40" stat="mDef">
+	  <player olympiad="false"/>
+	  </add>
+	<mul val="1" order="0x30" stat="pvpPhysDmg">
+        <player olympiad="true"/>
+      </mul>
+		<mul val="1" order="0x30" stat="pvpMagicalDmg">
+        <player olympiad="true"/>
+      </mul>
+	  <add val="0.05" order="0x40" stat="pvmVuln"/>
+	  <sub val="0.1" order="0x40" stat="pvmDam"/>
+	  <mul val="0.90" order="0x30" stat="pvpPhysDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <mul val="0.96" order="0x30" stat="pvpMagicalDmg">
+	  <player olympiad="false"/>
+	  </mul>
+	  <add val="6" order="0x40" stat="accCombat">
+	  <player olympiad="false"/>
+	  </add>
+	  <sub val="0.10" order="0x40" stat="cAtk"/>
+	  <sub val="0.10" order="0x40" stat="skillDam"/>
+	  <sub val="0.10" order="0x40" stat="skillDam">
+      <using skillid="506"/>
+	</sub>
+		  <sub val="0.10" order="0x40" stat="skillDam">
+      <using skillid="505"/>
+	</sub>
+		<add val="3" order="0x10" stat="CON">
+        <player olympiad="false"/>
+     </add>
+	 
+	 
+	 	 	  <mul val="0.65" order="0x50" stat="pAtk">
+				<not>
+			<using kind="Rapier"/>
+			</not>
+		</mul>
+		
+	<sub val="0.50" order="0x40" stat="mReuse">
+        <using kind="Light"/>
+      </sub>
+		
+		
+	 	  <mul order="0x30" stat="MagicalMpConsumeRate" val="0.75"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.75"/>
+	  
+	  	  	  <mul val="0.05" order="0x50" stat="pAtk">  
+	  	  <or>
+	  <player hasSkill="38000"/>
+	  <player hasSkill="38001"/>
+	  <player hasSkill="38002"/>
+	  <player hasSkill="38003"/>
+	  <player hasSkill="38004"/>
+	  <player hasSkill="38005"/>
+	  <player hasSkill="38006"/>
+	  <player hasSkill="38007"/>
+	  <player hasSkill="38008"/>
+	  <player hasSkill="38009"/>
+	  <player hasSkill="38010"/>
+	  <player hasSkill="38011"/>
+	  <player hasSkill="38012"/>
+	  <player hasSkill="38013"/>
+	  <player hasSkill="38014"/>
+	  <player hasSkill="38015"/>
+	  <player hasSkill="38016"/>
+	  <player hasSkill="38017"/>
+	  <player hasSkill="38018"/>
+	  <player hasSkill="38019"/>
+	  <player hasSkill="38020"/>
+	  <player hasSkill="38021"/>
+	  <player hasSkill="38022"/>
+	  <player hasSkill="38023"/>
+	  <player hasSkill="38024"/>
+	  <player hasSkill="38025"/>
+	  <player hasSkill="38026"/>
+	  <player hasSkill="38027"/>
+	  <player hasSkill="38028"/>
+	  <player hasSkill="38029"/>
+	  <player hasSkill="38030"/>
+	  <player hasSkill="38031"/>
+	  <player hasSkill="38032"/>
+	  <player hasSkill="38033"/>
+	  <player hasSkill="38034"/>
+	  <player hasSkill="1090"/>
+	  <player hasSkill="1268"/>
+	   <player hasSkill="94"/>
+	   <player hasSkill="1016"/>
+	  </or>
+	 </mul>
+  </for>
+  </skill>
+  
+  
+  
+  
+  
+   <skill id="38050" levels="1" name="Elemental Master-Transform">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="element" val="4"/>
+  <for>
+	  <set val="1000" order="0x50" stat="pAtkSpd"/>
+	  <set val="6500" order="0x50" stat="pAtk"/>
+	  <add val="10000" order="0x40" stat="mAtk"/>
+	  <add val="200" order="0x40" stat="mDef"/>
+	  <add val="200" order="0x40" stat="pDef"/>
+	  <set val="185" order="0x50" stat="accCombat"/>
+	  <set val="400" order="0x50" stat="rCrit"/>
+	  <set val="3.0" order="0x50" stat="cAtk"/>
+	  <add val="0.10" order="0x40" stat="skillDam"/>
+  </for>
+  </skill>
+  
+  
+  <skill id="38051" levels="1" name="Spectral Master-Transform">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	  <add val="100" order="0x40" stat="pAtkSpd"/>
+	  <set val="1200" order="0x50" stat="mAtkSpd"/>
+	  <add val="1500" order="0x40" stat="pAtk"/>
+	  <set val="6000" order="0x50" stat="mAtk"/>
+	   <add val="200" order="0x40" stat="mDef"/>
+	  <add val="200" order="0x40" stat="pDef"/>
+	  <add val="10" order="0x40" stat="accCombat"/>
+	  <add val="100" order="0x40" stat="rCrit"/>
+	  <add val="0.15" order="0x40" stat="cAtk"/>
+	  <add val="0.20" order="0x40" stat="skillDam"/>
+  </for>
+  </skill>
+  
+    <skill id="38052" levels="1" name="Arcana Lord-Transform">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	  <add val="100" order="0x40" stat="pAtkSpd"/>
+	  <set val="1000" order="0x50" stat="mAtkSpd"/>
+	  <add val="1000" order="0x40" stat="pAtk"/>
+	  <add val="250" order="0x40" stat="mDef"/>
+	  <add val="250" order="0x40" stat="pDef"/>
+	  <set val="7000" order="0x50" stat="mAtk"/>
+	  <add val="10" order="0x40" stat="accCombat"/>
+	  <add val="100" order="0x40" stat="rCrit"/>
+	  <add val="0.1" order="0x40" stat="cAtk"/>
+	  <add val="0.15" order="0x40" stat="skillDam"/>
+  </for>
+  </skill>
+	<skill id="38053" levels="1" name="Raid Boss - Level 20">
+  <!-- This Skill Is Only For Description In The Client -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PASSIVE"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <mul order="0x50" stat="maxHp" val="0.75"/>
+  <mul order="0x50" stat="pDef" val="0.75"/>
+  <mul order="0x50" stat="mDef" val="0.75"/>
+  </for>
+</skill>
+	<skill id="38054" levels="1" name="Raid Boss - Level 20">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			  <mul order="0x50" stat="maxHp" val="0.35"/>
+			  <mul order="0x50" stat="pDef" val="0.75"/>
+			  <mul order="0x50" stat="mDef" val="0.75"/>
+	  </for>
+	</skill>
+	<skill id="38055" levels="1" name="Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<mul order="0x50" stat="poleWpnVuln" val="0.86"/>
+	  </for>
+	</skill>
+	
+	
+	<skill id="38056" levels="1" name="Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.72"/>
+		<mul val="0.72" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.60" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.72" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="10" order="0x40" stat="accCombat"/>
+	  <add val="20" order="0x40" stat="rCrit"/>
+	  <add val="0.25" order="0x40" stat="cAtk"/>
+	  <add val="1500" order="0x40" stat="pAtk"/>
+	  <mul val="1.5" order="0x30" stat="regHp"/>
+	  </for>
+	</skill>
+	
+	<skill id="38057" levels="1" name="Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.78"/>
+		<mul val="0.78" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="10" order="0x40" stat="accCombat"/>
+	  <add val="20" order="0x40" stat="rCrit"/>
+	  <add val="0.25" order="0x40" stat="cAtk"/>
+	  <add val="500" order="0x40" stat="pAtk"/>
+	  <mul val="1.2" order="0x30" stat="regHp"/>
+	  </for>
+	</skill>
+	
+	<skill id="38058" levels="1" name="Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.90"/>
+	<mul val="0.90" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.90" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="0.20" order="0x40" stat="cAtk"/>
+	  <add val="1000" order="0x40" stat="pAtk"/>
+	  <mul val="1.3" order="0x30" stat="regHp"/>
+	  <add val="0.1" order="0x40" stat="damRobe"/>
+	  <add val="0.1" order="0x40" stat="damLight"/>
+	  </for>
+	</skill>
+	
+	<skill id="38060" levels="1" name="Transform Doll Blader">
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	<add val="0.045" order="0x40" stat="giveHp"/>
+	  <mul order="0x50" stat="regMp" val="1.08"/>
+	  <mul val="0.92" order="0x30" stat="MpConsume"/>
+  </for>
+  </skill>
+
+	<skill id="38061" levels="1" name="Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.926"/>
+	<mul val="0.926" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.926" order="0x40" stat="ancientWpnVuln"/>
+	  <mul val="3.5" order="0x30" stat="regHp"/>
+	  <add order="0x40" stat="absorbDam" val="15"/>
+	  <add val="0.30" order="0x40" stat="cAtk"/>
+	  <add val="3000" order="0x40" stat="pAtk"/>
+	  <add val="0.1" order="0x40" stat="damRobe"/>
+	  <add val="0.1" order="0x40" stat="damLight"/>
+	  <mul val="1.15" order="0x30" stat="maxHp"/>
+	  <mul val="1.10" order="0x30" stat="mDef"/>
+	  <mul val="1.05" order="0x30" stat="pDef"/>
+	  </for>
+	</skill>
+	
+	
+	<skill id="38065" levels="1" name=" Raid Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.74"/>
+		<mul val="0.74" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.74" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="0.20" order="0x40" stat="cAtk"/>
+	  <add val="10000" order="0x40" stat="pAtk"/>
+	  <mul val="2.0" order="0x30" stat="regHp"/>
+	  <mul val="1.0" order="0x30" stat="maxHp"/>
+	  <add val="0.2" order="0x40" stat="damRobe"/>
+	  <add val="0.2" order="0x40" stat="damLight"/>
+	  </for>
+	</skill>
+	
+	<skill id="38066" levels="1" name=" Raid Hp ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	<mul order="0x30" stat="magicDamVul" val="0.66"/>
+	<mul val="0.66" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.66" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="0.20" order="0x40" stat="cAtk"/>
+	  <add val="10000" order="0x40" stat="pAtk"/>
+	  <mul val="2.5" order="0x30" stat="regHp"/>
+	  <mul val="1.65" order="0x30" stat="maxHp"/>
+	  <add val="0.2" order="0x40" stat="damRobe"/>
+	  <add val="0.2" order="0x40" stat="damLight"/>
+	  </for>
+	</skill>
+	
+	<skill id="38070" levels="1" name=" Elmoradan ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	<mul order="0x30" stat="magicDamVul" val="0.70"/>
+	<mul val="0.70" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.70" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="0.20" order="0x40" stat="cAtk"/>
+	  <add val="20000" order="0x40" stat="pAtk"/>
+	  <add val="25000" order="0x40" stat="mAtk"/>
+	  <add val="250" order="0x40" stat="mAtkSpd"/>
+	  <mul val="2.5" order="0x30" stat="regHp"/>
+	  <mul val="2.15" order="0x30" stat="maxHp"/>
+	  <add val="0.35" order="0x40" stat="damRobe"/>
+	  <add val="0.35" order="0x40" stat="damLight"/>
+	  <add val="0.25" order="0x40" stat="damHeavy"/>
+	  </for>
+	</skill> 
+	<skill id="38071" levels="1" name=" Duo-Trio farm ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	<mul order="0x30" stat="magicDamVul" val="0.95"/>
+	<mul val="0.95" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.95" order="0x40" stat="ancientWpnVuln"/>
+	  <mul val="1.35" order="0x30" stat="regHp"/>
+	  <add val="0.10" order="0x40" stat="damRobe"/>
+	  <add val="0.10" order="0x40" stat="damLight"/>
+	  <add val="0.10" order="0x40" stat="damHeavy"/>
+	  </for>
+	</skill>
+	
+	<skill id="38072" levels="1" name=" Faris nerf ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	<mul order="0x30" stat="magicDamVul" val= "1.25"/>
+	<mul val= "1.25" order="0x40" stat="swordWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="bowWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="poleWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="fistWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="dualWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val= "1.25" order="0x40" stat="ancientWpnVuln"/>
+	  <mul val="0.55" order="0x30" stat="regHp"/>
+	  <sun val="0.30" order="0x40" stat="damRobe"/>
+	  <sub val="0.30" order="0x40" stat="damLight"/>
+	  <sub val="0.30" order="0x40" stat="damHeavy"/>
+	  </for>
+	</skill>
+	
+	<skill id="38073" levels="1" name=" Aoe Protection">
+	  <set name="desc" val="Resistant to Aoe Attacks/Spells."/>
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="evadeAOEHit" val= "100"/>
+			<add val= "100" order="0x40" stat="evadeAOESpell"/>
+			    <add order="0x40" stat="seeInvisible" val="1"/>
+		</for>
+	</skill>
+	
+	<skill id="38074" levels="1" name=" Karpenchaar nerf">
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			    <mul order="0x30" stat="mAtk" val="0.75"/>
+				<mul order="0x30" stat="mAtkSpd" val="0.85"/>
+		</for>
+	</skill>
+	
+	<skill id="38075" levels="1" name=" Verfa Nerf">
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			    <mul order="0x30" stat="mAtk" val="0.75"/>
+				<mul order="0x30" stat="mAtkSpd" val="0.85"/>
+		</for>
+	</skill>
+	
+	<skill id="38076" levels="1" name=" Aoe Protection">
+	  <set name="desc" val="Resistant to Aoe Attacks."/>
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="evadeAOEHit" val= "100"/>
+		</for>
+	</skill>
+	
+	 <skill id="38077" levels="1" name="Apc Mini nerf">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	  <mul order="0x30" stat="magicDamVul" val="1.25"/>
+	  <mul val="1.25" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="ancientWpnVuln"/>
+	  <sub val="0.35" order="0x40" stat="damRobe"/>
+	  <sub val="0.35" order="0x40" stat="damLight"/>
+	  <sub val="0.35" order="0x40" stat="damHeavy"/>
+	  <mul val="0.35" order="0x30" stat="pAtk"/>
+	  <mul val="0.45" order="0x30" stat="mAtk"/>
+	  <mul val="1.05" order="0x30" stat="maxHp"/>
+	  <sub val="0.45" order="0x40" stat="skillDam"/>
+	  </for>
+	</skill>
+	
+	
+	<skill id="38078" levels="1" name="Ressists non magic">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	<mul val="0.78" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.78" order="0x40" stat="ancientWpnVuln"/>
+	  <sub val="0.085" order="0x40" stat="pvpPhysVul"/>
+	  </for>
+	</skill>
+	
+	<skill id="38079" levels="1" name=" Rb Event Nerf ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val= "1.10"/>
+		<mul val= "1.15" order="0x40" stat="swordWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="bluntWpnVuln"/>
+		<mul val= "1.05" order="0x40" stat="daggerWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bowWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="crossbowWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="poleWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="fistWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="dualWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="dualFistWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bigSwordWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bigBluntWpnVuln"/>
+		<mul val= "1.05" order="0x40" stat="dualDaggerWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="rapierWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="ancientWpnVuln"/>
+		<mul val="0.60" order="0x50" stat="maxHp"/>
+		<sub val="0.10" order="0x40" stat="damRobe"/>
+		<sub val="0.10" order="0x40" stat="damLight"/>
+		<sub val="0.10" order="0x40" stat="damHeavy"/>
+	  </for>
+	</skill>
+	
+	<skill id="38080" levels="1" name=" Tiat Event Nerf ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val= "1.10"/>
+		<mul val= "1.15" order="0x40" stat="swordWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bluntWpnVuln"/>
+		<mul val= "1.05" order="0x40" stat="daggerWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bowWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="crossbowWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="poleWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="fistWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="dualWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="dualFistWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bigSwordWpnVuln"/>
+		<mul val= "1.15" order="0x40" stat="bigBluntWpnVuln"/>
+		<mul val= "1.05" order="0x40" stat="dualDaggerWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="rapierWpnVuln"/>
+		<mul val= "1.10" order="0x40" stat="ancientWpnVuln"/>
+		<mul val="0.55" order="0x50" stat="maxHp"/>
+		<mul val="0.60" order="0x50" stat="pAtk"/>
+		<sub val="0.10" order="0x40" stat="damRobe"/>
+		<sub val="0.10" order="0x40" stat="damLight"/>
+		<sub val="0.10" order="0x40" stat="damHeavy"/>
+	  </for>
+	</skill>
+	
+	<skill id="38081" levels="1" name="Apc Boss Nerf">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	  <mul order="0x30" stat="magicDamVul" val="1.25"/>
+	  <mul val="1.25" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="ancientWpnVuln"/>
+	  <sub val="0.2" order="0x40" stat="damRobe"/>
+	  <sub val="0.2" order="0x40" stat="damLight"/>
+	  <sub val="0.2" order="0x40" stat="damHeavy"/>
+	  <mul val="0.60" order="0x30" stat="pAtk"/>
+	  <mul val="3.15" order="0x30" stat="mAtk"/>
+	  <mul val="0.80" order="0x30" stat="pDef"/>
+	  <mul val="0.80" order="0x30" stat="mDef"/>
+	  <mul val="1.10" order="0x30" stat="maxHp"/>
+	  <sub val="0.20" order="0x40" stat="skillDam"/>
+	  </for>
+	</skill>
+	
+	<skill id="38082" levels="1" name="Apc extra nerf">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	  <mul order="0x30" stat="magicDamVul" val="1.25"/>
+	  <mul val="1.25" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="1.25" order="0x40" stat="ancientWpnVuln"/>
+	  <sub val="0.10" order="0x40" stat="damRobe"/>
+	  <sub val="0.10" order="0x40" stat="damLight"/>
+	  <sub val="0.10" order="0x40" stat="damHeavy"/>
+	  <mul val="1.00" order="0x30" stat="pAtk"/>
+	  <mul val="0.45" order="0x30" stat="pAtkSpd"/>
+	  <mul val="0.80" order="0x30" stat="maxHp"/>
+	  <add val="0.55" order="0x40" stat="skillDam"/>
+	  <sub val="0.15" order="0x40" stat="cAtk"/>
+	  <mul val="0.45" order="0x30" stat="rCrit"/>
+	  </for>
+	</skill>
+	
+	<skill id="38083" levels="1" name=" Easy Apc attack Speed nerf">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	  <sub val="0.10" order="0x40" stat="damRobe"/>
+	  <sub val="0.10" order="0x40" stat="damLight"/>
+	  <sub val="0.10" order="0x40" stat="damHeavy"/>
+	  <mul val="0.95" order="0x30" stat="pAtk"/>
+	  <mul val="0.45" order="0x30" stat="pAtkSpd"/>
+	  <mul val="0.90" order="0x30" stat="maxHp"/>
+	  <add val="0.15" order="0x40" stat="skillDam"/>
+	  <sub val="0.15" order="0x40" stat="cAtk"/>
+	  <mul val="0.65" order="0x30" stat="rCrit"/>
+	  </for>
+	</skill>
+	
+	<skill id="38084" levels="1" name="Epic Raid Ressists">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+		<mul order="0x30" stat="magicDamVul" val="0.80"/>
+		<mul val="0.80" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="0.80" order="0x40" stat="ancientWpnVuln"/>
+	  <add val="0.2" order="0x40" stat="damRobe"/>
+	  <add val="0.2" order="0x40" stat="damLight"/>
+	  </for>
+	</skill>
+	
+	<skill id="38100" levels="2" name="Cruel Muzzle">
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="BUFF"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+	  <table name="#moreDamHP"> 0.10 0.15 </table> 
+	  <table name="#cAtkSkill"> 0.075 0.10 </table>
+      <table name="#backAngle"> 40 50 </table>
+	  <table name="#cAtkBleed"> 50 75 </table>
+		<for>
+			<add order="0x40" stat="backAngle" val="#backAngle"/>
+			<add order="0x40" stat="cAtkSkill" val="#cAtkSkill"/>
+			<add order="0x40" stat="moreDamHP" val="#moreDamHP"/>
+			<add order="0x40" stat="moreDamHP" val="0.05">
+			<and>
+				<using kind="Dagger,Dual Dagger,Rapier"/>
+				<player behind="true"/>
+			</and>
+			</add>
+			<add order="0x40" stat="rCrit" val="10">
+				<and>
+					<using kind="Dagger,Dual Dagger,Rapier"/>
+					<player behind="true"/>
+				</and>
+			</add>
+			<add order="0x40" stat="cAtk" val="0.10">
+				<and>
+					<using kind="Dagger,Dual Dagger,Rapier"/>
+					<player behind="true"/>
+				</and>
+			</add>
+	 
+			<add order="0x40" stat="rCrit" val="40">
+				<player behind="true"/>
+			</add>
+			<add order="0x40" stat="cAtk" val="0.10">
+				<player behind="true"/>
+			</add>
+			<add order="0x40" stat="cAtkBleed" val="#cAtkBleed"/>
+			<add order="0x40" stat="cAtkBleed" val="#cAtkBleed">
+				<not>
+					<using kind="Dual Sword,Dual Fist,Dual Dagger"/>
+				</not>
+			</add>
+			<sub order="0x40" stat="gainHp" val="0.2"/>
+		</for>
+	</skill>
+	
+<!--<skill id="38101" levels="1" name="Time Stasis">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="800"/>
+  <set name="reuseDelay" val="550000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="displayId" val="439"/>
+  <for>
+    <effect name="Buff" time="8" val="0" special="stigmashilien">
+	<add val="50" order="0x40" stat="evadeAOESpell"/>
+	<set val="60" order="0x50" stat="rEvasAbs"/>
+	<set val='60' order='0x50' stat='mSkillEvas'/>
+	<set val='60' order='0x50' stat='pSkillEvas'/>
+	<add order="0x10" stat="pAtkSpdMax" val="200"/>
+	<add order="0x10" stat="mAtkSpdMax" val="200"/>
+	<mul order="0x50" stat="pAtkSpd" val="1.15"/>
+	<mul order="0x50" stat="mAtkSpd" val="1.15"/>
+	<add val="20" order="0x40" stat="runSpd"/>
+    </effect>
+	</for>
+</skill>-->
+	
+	
+		<skill id="38102" levels="1" name=" ">
+	  <!-- This Skill Is Only For Description In The Client -->
+	  <set name="target" val="TARGET_SELF"/>
+	  <set name="skillType" val="PASSIVE"/>
+	  <set name="magicLvl" val="1"/>
+	  <set name="operateType" val="OP_PASSIVE"/>
+		<for>
+	  <mul order="0x30" stat="magicDamVul" val="1.07"/>
+	  <mul val="1.07" order="0x40" stat="swordWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="bluntWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="daggerWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="bowWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="crossbowWpnVuln"/>
+	  <mul val="0.60" order="0x40" stat="poleWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="fistWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="dualWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="dualFistWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="bigSwordWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="bigBluntWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="dualDaggerWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="rapierWpnVuln"/>
+	  <mul val="1.07" order="0x40" stat="ancientWpnVuln"/>
+	  <mul val="0.90" order="0x30" stat="regHp"/>
+	  <sub val="0.035" order="0x40" stat="gainHp"/>
+	  <sub val="0.035" order="0x40" stat="giveHp"/>
+	  <sub val="0.04" order="0x40" stat="skillDam"/>
+	  </for>
+	</skill>
+	
+	
+	
+	
+ </list>

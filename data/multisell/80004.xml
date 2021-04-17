@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+    <ingredient id="99999" count="10"/> 
+    <production id="10434" count="1" enchant="11"/> 
+  </item>
+   <item id="2"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10437" count="1" enchant="11"/> 
+  </item>
+   <item id="3"> 
+    <ingredient id="99999" count="10"/> 
+    <production id="10440" count="1" enchant="11"/> 
+  </item>
+   <item id="4"> 
+    <ingredient id="99999" count="10"/> 
+    <production id="10443" count="1" enchant="11"/> 
+  </item>
+   <item id="5"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10446" count="1" enchant="11"/> 
+  </item>
+   <item id="6"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10449" count="1" enchant="11"/> 
+  </item>
+   <item id="7"> 
+    <ingredient id="99999" count="10"/> 
+    <production id="10452" count="1" enchant="11"/> 
+  </item>
+   <item id="8"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10455" count="1" enchant="11"/> 
+  </item>
+   <item id="9"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10458" count="1" enchant="11"/> 
+  </item>
+   <item id="10"> 
+    <ingredient id="99999" count="10"/> 
+    <production id="10461" count="1" enchant="11"/> 
+  </item>
+   <item id="11"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10464" count="1" enchant="11"/> 
+  </item>
+   <item id="12"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10467" count="1" enchant="11"/> 
+  </item>
+   <item id="13"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="10415" count="1" enchant="11"/> 
+  </item>
+   <item id="14"> 
+   <ingredient id="99999" count="10"/> 
+    <production id="13883" count="1" enchant="11"/> 
+  </item>
+</list>

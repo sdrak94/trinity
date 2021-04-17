@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+	<ingredient id="800100" count="1"/>
+    <production id="800003" count="1" enchant="0"/> 
+  </item>
+   <item id="2"> 
+	<ingredient id="800100" count="5"/>
+    <production id="800004" count="1" enchant="0"/> 
+  </item>
+   <item id="3"> 
+	<ingredient id="800100" count="20"/>
+    <production id="800005" count="1" enchant="0"/> 
+  </item>
+</list>

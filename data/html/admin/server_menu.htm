@@ -1,0 +1,100 @@
+<html><title>L2J Server Management Panel</title><body>
+<center>
+<table width=270 border=0 bgcolor="666666">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Game" action="bypass -h admin_admin2" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Effects" action="bypass -h admin_admin3" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Server" action="bypass -h admin_admin4" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Events" action="bypass -h admin_event_manage" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+
+<table width=240>
+<tr>
+<td>QuickBox:</td>
+<td><edit var="qbox" width=120 height=15></td>
+<td><button value="Help" action="bypass -h admin_help help/server_menu.htm" width=45 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+
+Development:
+<table width=240>
+<tr>
+<td><button value="Open All Doors" action="bypass -h admin_openall" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Close All Doors" action="bypass -h admin_closeall" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Fight Calc" action="bypass -h admin_fight_calculator_show" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Packet Forge" action="bypass -h admin_forge" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="System Message" action="bypass -h admin_msg $qbox" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<table width=240>
+<tr>
+<td><button value="Skill Test" action="bypass -h admin_skill_test $qbox" width=82 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Crest Fix" action="bypass -h admin_cache_crest_fix" width=82 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Zone Check" action="bypass -h admin_zone_check" width=82 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+File Reloading:<br1>
+(Not Recommended on <font color="LEVEL">Live Servers</font>!)<br1>
+<table width=240>
+<tr>
+<td><button value="NPC" action="bypass -h admin_reload npc" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="HTML" action="bypass -h admin_reload html" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Multisell" action="bypass -h admin_reload multisell" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Teleport" action="bypass -h admin_teleport_reload" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Skills" action="bypass -h admin_reload skills" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Item" action="bypass -h admin_reload item" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Quest" action="bypass -h admin_quest_reload $qbox" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="File" action="bypass -h admin_cache_reload_file $qbox" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Configs" action="bypass -h admin_reload config" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Handlers" action="bypass -h admin_script_load handlers/MasterHandler.java" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Zone" action="bypass -h admin_zone_reload" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Crest" action="bypass -h admin_cache_crest_rebuild" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<table width=240>
+<tr>
+<td><button value="Instance Manager" action="bypass -h admin_reload instancemanager" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Announcements" action="bypass -h admin_announce_announcements" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Cursed Weapons" action="bypass -h admin_cw_reload" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+Geodata:
+<table width=240><tr>
+<td><button value="Z" action="bypass -h admin_geo_z" width=48 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Type" action="bypass -h admin_geo_type" width=48 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="NSWE" action="bypass -h admin_geo_nswe" width=48 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="LoS" action="bypass -h admin_geo_los" width=48 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Pos" action="bypass -h admin_geo_position" width=48 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+Maintenance:
+<table width=240>
+<tr>
+<td><button value="Stats" action="bypass -h admin_stats" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Login" action="bypass -h admin_server_login" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Shutdown" action="bypass -h admin_server_shutdown" width=125 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+</center>
+<br>
+Server Software: Running L2J created by L2Chef and the L2J team. www.l2jserver.com for details.
+</body></html>

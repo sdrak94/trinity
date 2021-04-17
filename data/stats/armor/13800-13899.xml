@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13802" name="Native's Hood">
+  <for>
+    <add val="33" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13803" name="Native's Tunic">
+  <for>
+    <add val="53" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13804" name="Native's Trousers">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13805" name="Guards of the Dawn Helmet">
+  <for>
+    <add val="33" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13806" name="Guards of the Dawn Tunic">
+  <for>
+    <add val="53" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13807" name="Guards of the Dawn Trousers">
+  <for>
+    <add val="29" order="0x10" stat="pDef"/>@
+  </for>
+</item>
+<item id="13885" name="Sealed Arcana Sigil">
+  <cond msgId="1518">
+    <or>
+      <player active_skill_id="925"/>
+      <player active_skill_id="926"/>
+      <player active_skill_id="934"/>
+      <player active_skill_id="935"/>
+    </or>
+  </cond>
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13886" name="Sealed Dynasty Sigil">
+  <cond msgId="1518">
+    <or>
+      <player active_skill_id="925"/>
+      <player active_skill_id="926"/>
+      <player active_skill_id="934"/>
+      <player active_skill_id="935"/>
+    </or>
+  </cond>
+  <for>
+    <add val="15" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13887" name="Sealed Vesper Sickle">
+  <for>
+    <add val="17" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13888" name="Sealed Lord's Cloak">
+  <for>
+    <add val="2" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13889" name="Holy Spirit's Cloak - Kamael exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13890" name="Holy Spirit's Cloak">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13891" name="Holy Spirit's Cloak - Light Armor exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13892" name="Holy Spirit's Cloak - Robe exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13894" name="Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13895" name="Leather Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13896" name="Iron Belt">
+  <for>
+    <!--<add val="30" order="0x40" stat="pDef"/>
+	<add val="500" order="0x40" stat="maxHp"/>
+	<add val="500" order="0x40" stat="maxMp"/>
+	<add val="30" order="0x40" stat="mDef"/>
+   <enchant val="0" order="0x50" stat="pDef"/>-->
+    <add val="30" order="0x40" stat="pDef"/>
+	<add val="300" order="0x40" stat="maxHp"/>
+	<add val="300" order="0x40" stat="maxMp"/>
+	<add val="30" order="0x40" stat="mDef"/>
+   <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13897" name="Mithril Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="600" order="0x40" stat="maxHp"/>
+	<add val="600" order="0x40" stat="maxMp"/>
+	<add val="600" order="0x40" stat="maxCp"/>
+	<add val="0.05" order="0x40" stat="pvmDam"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83500" name="Valyrian Belt">
+  <for>
+    <add val="90" order="0x40" stat="pDef"/>
+	<add val="90" order="0x40" stat="mDef"/>
+	<add val="900" order="0x40" stat="maxHp"/>
+	<add val="900" order="0x40" stat="maxMp"/>
+	<add val="900" order="0x40" stat="maxCp"/>
+	<add val="1" order="0x10" stat="MEN"/>
+	<add val="1" order="0x10" stat="CON"/>
+	<add val="0.05" order="0x40" stat="pvmDam"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+</list>

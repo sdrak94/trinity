@@ -1,0 +1,35 @@
+<list>
+<item id="73000" name="Pride Necklace">
+  <for>
+    <add val="156" order="0x10" stat="mDef"/>
+    <add val="50" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<basemul val="0.1" order="0x40" stat="mDef"/>
+	<add val="2" order="0x10" stat="INT"/>
+	<add val="2" order="0x10" stat="STR"/>
+	<enchant val="0" order="0x50" stat="maxHp"/>
+  </for>
+</item>
+<item id="73001" name="Pride Earring">
+  <for>
+    <add val="118" order="0x10" stat="mDef"/>
+    <add val="37" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<basemul val="0.05" order="0x40" stat="mDef"/>
+	<add val="2" order="0x10" stat="MEN"/>
+	<add val="2" order="0x10" stat="CON"/>
+	<enchant val="0" order="0x50" stat="maxMp"/>
+  </for>
+</item>
+<item id="73002" name="Pride Ring">
+  <for>
+    <add val="78" order="0x10" stat="mDef"/>
+    <add val="25" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+	<basemul val="0.05" order="0x40" stat="mDef"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<enchant val="0" order="0x50" stat="maxCp"/>
+  </for>
+</item>
+</list>

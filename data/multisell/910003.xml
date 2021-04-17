@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="true">
+    <item id="1">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11486" count="1" />
+    </item>
+    <item id="2">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11485" count="1" />
+    </item>
+    <item id="3">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11483" count="1" />
+    </item>
+    <item id="4">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11484" count="1" />
+    </item>
+    <item id="100">
+        <ingredient id="98010" count="1" />
+        <production id="98010" count="1" />
+    </item>
+    <item id="100">
+        <ingredient id="98010" count="1" />
+        <production id="98010" count="1" />
+    </item>
+    <item id="8">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11490" count="1" />
+    </item>
+    <item id="6">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11488" count="1" />
+    </item>
+    <item id="5">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11487" count="1" />
+    </item>
+    <item id="7">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11489" count="1" />
+    </item>
+    <item id="100">
+        <ingredient id="98010" count="1" />
+        <production id="98010" count="1" />
+    </item>
+    <item id="100">
+        <ingredient id="98010" count="1" />
+        <production id="98010" count="1" />
+    </item>
+    <item id="13">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11509" count="1" />
+    </item>
+    <item id="10">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11510" count="1" />
+    </item>
+    <item id="9">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11505" count="1" />
+    </item>
+    <item id="11">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11506" count="1" />
+    </item>
+    <item id="12">
+        <ingredient id="6673" count="5" />
+        <ingredient id="3487" count="5" />
+        <production id="11507" count="1" />
+    </item>
+</list>

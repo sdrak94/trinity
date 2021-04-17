@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="true" allowGem="false">
+    <item id="5"> 
+	<ingredient id="97003" count="20000"/> 
+	<ingredient id="4355" count="15000"/> 
+	<ingredient id="6392" count="40"/> 
+    <production id="9591" count="1"/> 
+    </item>
+	<item id="6"> 
+	<ingredient id="97003" count="40000"/> 
+	<ingredient id="4355" count="30000"/>  
+	<ingredient id="6393" count="9"/>
+	<ingredient id="9591" count="1"/>
+    <production id="9592" count="1"/> 
+    </item>
+	<item id="7"> 
+	<ingredient id="97003" count="80000"/> 
+	<ingredient id="4355" count="50000"/>  
+	<ingredient id="6393" count="15"/>
+	<ingredient id="6673" count="1500"/>  
+	<ingredient id="9592" count="1"/> 
+    <production id="83509" count="1"/> 
+    </item>
+</list>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10003" name="Fleuret">
+  <for>
+   <set val="46" order="0x08" stat="pAtk"/>
+   <set val="32" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10004" name="Dynasty Dual Sword">
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.2" order="0x40" stat="maxHp"/>
+   <basemul val="0.4" order='0x40' stat='rCrit'/>
+   <sub val="0.1" order="0x40" stat="atkReuse"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.15" order="0x40" stat="pvmDam"/>
+   <mul val="0.8" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.8" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.2" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="10005" name="Dynasty Dual Sword - Health Reuse">
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+      <add val="0.2" order="0x40" stat="pAtk-undead"/>
+	  <add val="0.18" order="0x40" stat="pvmDam"/>
+	  <mul val="0.8" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.8" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.2" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="10006" name="Dynasty Dual Sword - Haste Reuse">
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+      <add val="0.2" order="0x40" stat="pAtk-undead"/>
+	  <add val="0.18" order="0x40" stat="pvmDam"/>
+	  <mul val="0.8" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.8" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.2" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="10007" name="Shadow Item: Hand Crossbow">
+  <for>
+   <set val="64" order="0x08" stat="pAtk"/>
+   <set val="32" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10008" name="Shadow Item: Blinzlasher">
+  <for>
+   <set val="126" order="0x08" stat="pAtk"/>
+   <set val="76" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10009" name="Shadow Item: Immortal Edge">
+  <for>
+   <set val="151" order="0x08" stat="pAtk"/>
+   <set val="76" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10010" name="Shadow Item: Tathlum">
+  <for>
+   <set val="176" order="0x08" stat="pAtk"/>
+   <set val="76" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10011" name="Shadow Item - War Axe">
+  <for>
+   <set val="139" order="0x08" stat="pAtk"/>
+   <set val="76" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+<!-- Jail -->
+	<zone id="11000" type="JailZone" shape="Cuboid" minZ="-3200" maxZ="-2800" >
+	  <stat name="isPeaceZone" val="true"/>
+	</zone>
+
+<!-- Monster Derby Track -->
+	<zone id="11001" type="DerbyTrackZone" shape="NPoly" minZ="-3600" maxZ="-2000" />
+
+<!-- NoStoreZone -->
+	<zone id="16000" type="NoStoreZone" shape="Cuboid" minZ="-3600" maxZ="-2000" />
+	<zone id="16001" type="NoStoreZone" shape="Cuboid" minZ="-3600" maxZ="-2000" />
+	<zone id="16002" type="NoStoreZone" shape="Cuboid" minZ="-3600" maxZ="-2000" />
+<!-- Arenas -->
+	<zone id="11010" type="Arena" shape="Cuboid" minZ="-3800" maxZ="-3600">
+		<stat name="name" val="Giran Arena"/>
+		<stat name="spawnX" val="73890"/>
+		<stat name="spawnY" val="142656"/>
+		<stat name="spawnZ" val="-3778"/>
+	</zone>
+	<zone id="11011" type="Arena" shape="Cuboid" minZ="-3700" maxZ="-3500">
+		<stat name="name" val="Gludin Arena"/>
+		<stat name="spawnX" val="-86979"/>
+		<stat name="spawnY" val="142402"/>
+		<stat name="spawnZ" val="-3643"/>
+	</zone>
+	<zone id="11012" type="Arena" shape="NPoly" minZ="-3500" maxZ="-3300">
+		<stat name="name" val="Coliseum"/>
+		<stat name="spawnX" val="147451"/>
+		<stat name="spawnY" val="46728"/>
+		<stat name="spawnZ" val="-3410"/>
+	</zone>
+	<zone id="11013" type="Arena" shape="Cuboid" minZ="-3600" maxZ="-3500">
+		<stat name="name" val="Monster Track"/>
+		<stat name="spawnX" val="12312"/>
+		<stat name="spawnY" val="182752"/>
+		<stat name="spawnZ" val="-3558"/>
+	</zone>
+
+<!-- Towns -->
+	<zone id="11020" type="Town" shape="NPoly" minZ="-3800" maxZ="-3300">
+		<stat name="name" val="Giran Castle Town"/>
+		<stat name="townId" val="9"/>
+		<stat name="redirectTownId" val="11"/>
+		<stat name="taxById" val="3"/>
+		<stat name="spawnX" val="81236"/>
+		<stat name="spawnY" val="148638"/>
+		<stat name="spawnZ" val="-3469"/>
+		<stat name="spawnX" val="81956"/>
+		<stat name="spawnY" val="149257"/>
+		<stat name="spawnZ" val="-3469"/>
+		<stat name="spawnX" val="83471"/>
+		<stat name="spawnY" val="149057"/>
+		<stat name="spawnZ" val="-3405"/>
+	</zone>
+	<zone id="11021" type="Town" shape="NPoly" minZ="-4700" maxZ="-3600">
+		<stat name="name" val="DE Village"/>
+		<stat name="townId" val="1"/>
+		<stat name="taxById" val="4"/>
+		<stat name="spawnX" val="12181"/>
+		<stat name="spawnY" val="16675"/>
+		<stat name="spawnZ" val="-4580"/>
+	</zone>
+	<zone id="11022" type="Town" shape="NPoly" minZ="-3800" maxZ="-3700">
+		<stat name="name" val="Talking Island"/>
+		<stat name="townId" val="2"/>
+		<stat name="taxById" val="1"/>
+		<stat name="spawnX" val="-84176"/>
+		<stat name="spawnY" val="243382"/>
+		<stat name="spawnZ" val="-3126"/>
+	</zone>
+	<zone id="11023" type="Town" shape="NPoly" minZ="-3600" maxZ="-2750">
+		<stat name="name" val="Elven Village"/>
+		<stat name="townId" val="3"/>
+		<stat name="taxById" val="4"/>
+		<stat name="spawnX" val="45525"/>
+		<stat name="spawnY" val="48376"/>
+		<stat name="spawnZ" val="-3059"/>
+	</zone>
+	<zone id="11024" type="Town" shape="Cuboid" minZ="-2500" maxZ="2500">
+		<stat name="name" val="Orc Village"/>
+		<stat name="isPeaceZone" val="false"/>
+		<stat name="townId" val="4"/>
+		<stat name="spawnX" val="-44903"/>
+		<stat name="spawnY" val="-111704"/>
+		<stat name="spawnZ" val="-240"/>
+		<stat name="spawnX" val="-44015"/>
+		<stat name="spawnY" val="-114908"/>
+		<stat name="spawnZ" val="-242"/>
+		<stat name="spawnX" val="-45667"/>
+		<stat name="spawnY" val="-113609"/>
+		<stat name="spawnZ" val="-240"/>
+		<stat name="spawnX" val="-48785"/>
+		<stat name="spawnY" val="-114483"/>
+		<stat name="spawnZ" val="-163"/>
+		<stat name="spawnX" val="-48993"/>
+		<stat name="spawnY" val="-112725"/>
+		<stat name="spawnZ" val="-240"/>
+		<stat name="spawnX" val="-42291"/>
+		<stat name="spawnY" val="-113608"/>
+		<stat name="spawnZ" val="-104"/>
+		<stat name="spawnX" val="-46285"/>
+		<stat name="spawnY" val="-116596"/>
+		<stat name="spawnZ" val="-240"/>
+		<stat name="spawnX" val="-46351"/>
+		<stat name="spawnY" val="-110383"/>
+		<stat name="spawnZ" val="-250"/>
+	</zone>
+	<zone id="11025" type="Town" shape="NPoly" minZ="-3500" maxZ="-2000">
+		<stat name="name" val="Gludin Village"/>
+		<stat name="allowShops" val="false"/>
+		<stat name="isPeaceZone" val="false"/>
+		<stat name="townId" val="5"/>
+		<stat name="spawnX" val="-82856"/>
+		<stat name="spawnY" val="150901"/>
+		<stat name="spawnZ" val="-3128"/>
+		<stat name="spawnX" val="-83174"/>
+		<stat name="spawnY" val="149031"/>
+		<stat name="spawnZ" val="-3121"/>
+		<stat name="spawnX" val="-80860"/>
+		<stat name="spawnY" val="150125"/>
+		<stat name="spawnZ" val="-3044"/>
+		<stat name="spawnX" val="-80863"/>
+		<stat name="spawnY" val="151523"/>
+		<stat name="spawnZ" val="-3044"/>
+		<stat name="spawnX" val="-84650"/>
+		<stat name="spawnY" val="150793"/>
+		<stat name="spawnZ" val="-3131"/>		
+		<stat name="spawnX" val="-83675"/>
+		<stat name="spawnY" val="152747"/>
+		<stat name="spawnZ" val="-3178"/>		
+		<stat name="spawnX" val="-81556"/>
+		<stat name="spawnY" val="152731"/>
+		<stat name="spawnZ" val="-3178"/>		
+		<stat name="spawnX" val="-82375"/>
+		<stat name="spawnY" val="153970"/>
+		<stat name="spawnZ" val="-3178"/>		
+		<stat name="spawnX" val="-81956"/>
+		<stat name="spawnY" val="150873"/>
+		<stat name="spawnZ" val="-3129"/>		
+		<stat name="spawnX" val="-82817"/>
+		<stat name="spawnY" val="151901"/>
+		<stat name="spawnZ" val="-3129"/>
+		<stat name="spawnX" val="-82041"/>
+		<stat name="spawnY" val="150226"/>
+		<stat name="spawnZ" val="-3129"/>		
+		<stat name="spawnX" val="-83805"/>
+		<stat name="spawnY" val="154265"/>
+		<stat name="spawnZ" val="-3178"/>		
+		<stat name="spawnX" val="-81423"/>
+		<stat name="spawnY" val="155261"/>
+		<stat name="spawnZ" val="-3178"/>
+		<stat name="spawnX" val="-80416"/>
+		<stat name="spawnY" val="153804"/>
+		<stat name="spawnZ" val="-3178"/>
+	</zone>
+	<zone id="11026" type="Town" shape="NPoly" minZ="-1600" maxZ="-800">
+		<stat name="name" val="Dwarven Village"/>
+		<stat name="townId" val="6"/>
+		<stat name="taxById" val="8"/>
+		<stat name="spawnX" val="115074"/>
+		<stat name="spawnY" val="-178115"/>
+		<stat name="spawnZ" val="-880"/>
+	</zone>
+	<zone id="11027" type="Town" shape="NPoly" minZ="-3200" maxZ="-2900">
+		<stat name="name" val="Gludio Castle Town"/>
+		<stat name="townId" val="7"/>
+		<stat name="redirectTownId" val="5"/>
+		<stat name="taxById" val="1"/>
+		<stat name="spawnX" val="-14138"/>
+		<stat name="spawnY" val="122042"/>
+		<stat name="spawnZ" val="-2988"/>
+	</zone>
+	<zone id="11028" type="Town" shape="NPoly" minZ="-3250" maxZ="-2600">
+		<stat name="name" val="Dion Castle Town"/>
+		<stat name="townId" val="8"/>
+		<stat name="redirectTownId" val="7"/>
+		<stat name="taxById" val="2"/>
+		<stat name="spawnX" val="18823"/>
+		<stat name="spawnY" val="145048"/>
+		<stat name="spawnZ" val="-3126"/>
+	</zone>
+	<zone id="11029" type="Town" shape="NPoly" minZ="-2250" maxZ="-1400">
+		<stat name="name" val="Town of Oren"/>
+		<stat name="townId" val="10"/>
+		<stat name="redirectTownId" val="11"/>
+		<stat name="taxById" val="4"/>
+		<stat name="spawnX" val="80853"/>
+		<stat name="spawnY" val="54653"/>
+		<stat name="spawnZ" val="-1524"/>
+	</zone>
+	<zone id="11030" type="Town" shape="NPoly" minZ="-2900" maxZ="265">
+		<stat name="name" val="Hunter Village"/>
+		<stat name="townId" val="11"/>
+		<stat name="taxById" val="5"/>
+		<stat name="isPeaceZone" val="false"/>
+		<stat name="spawnX" val="117163"/>
+		<stat name="spawnY" val="76511"/>
+		<stat name="spawnZ" val="-2712"/>
+		<stat name="spawnX" val="115706"/>
+		<stat name="spawnY" val="75086"/>
+		<stat name="spawnZ" val="-2600"/>		
+		<stat name="spawnX" val="116139"/>
+		<stat name="spawnY" val="76515"/>
+		<stat name="spawnZ" val="-2730"/>		
+		<stat name="spawnX" val="116724"/>
+		<stat name="spawnY" val="75557"/>
+		<stat name="spawnZ" val="-2727"/>		
+		<stat name="spawnX" val="116341"/>
+		<stat name="spawnY" val="77513"/>
+		<stat name="spawnZ" val="-2701"/>		
+		<stat name="spawnX" val="118117"/>
+		<stat name="spawnY" val="74752"/>
+		<stat name="spawnZ" val="-2538"/>		
+		<stat name="spawnX" val="114983"/>
+		<stat name="spawnY" val="77648"/>
+		<stat name="spawnZ" val="-2676"/>		
+		<stat name="spawnX" val="118400"/>
+		<stat name="spawnY" val="78341"/>
+		<stat name="spawnZ" val="-2177"/>
+	</zone>
+	<zone id="11031" type="Town" shape="NPoly" minZ="-2700" maxZ="-1900">
+		<stat name="name" val="Town of Aden"/>
+		<stat name="townId" val="12"/>
+		<stat name="redirectTownId" val="10"/>
+		<stat name="taxById" val="5"/>
+		<stat name="spawnX" val="147391"/>
+		<stat name="spawnY" val="25967"/>
+		<stat name="spawnZ" val="-2012"/>
+	</zone>
+	<zone id="11032" type="Town" shape="NPoly" minZ="-3550" maxZ="-2600">
+	<stat name="isPeaceZone" val="true"/>
+		<stat name="name" val="Goddard"/>
+		<stat name="townId" val="13"/>
+		<stat name="redirectTownId" val="14"/>
+		<stat name="taxById" val="7"/>
+		<stat name="spawnX" val="149072"/>
+		<stat name="spawnY" val="-55872"/>
+		<stat name="spawnZ" val="-2792"/>		
+		<stat name="spawnX" val="146395"/>
+		<stat name="spawnY" val="-55842"/>
+		<stat name="spawnZ" val="-2781"/>
+	</zone>
+	<zone id="11033" type="Town" shape="Cuboid" minZ="-1200" maxZ="3000">
+		<stat name="name" val="Rune Castle Town"/>
+		<stat name="townId" val="14"/>
+		<stat name="redirectTownId" val="13"/>
+		<stat name="taxById" val="8"/>
+		<stat name="spawnX" val="43894"/>
+		<stat name="spawnY" val="-48330"/>
+		<stat name="spawnZ" val="-797"/>
+	</zone>
+	<zone id="11034" type="Town" shape="NPoly" minZ="-3800" maxZ="-3400">
+		<stat name="name" val="Heine"/>
+		<stat name="townId" val="15"/>
+		<stat name="redirectTownId" val="16"/>
+		<stat name="taxById" val="6"/>
+		<stat name="spawnX" val="111381"/>
+		<stat name="spawnY" val="219064"/>
+		<stat name="spawnZ" val="-3543"/>
+	</zone>
+	<zone id="11035" type="Town" shape="NPoly" minZ="-2350" maxZ="-1200">
+		<stat name="name" val="Schuttgart"/>
+		<stat name="townId" val="17"/>
+		<stat name="redirectTownId" val="14"/>
+		<stat name="taxById" val="9"/>
+		<stat name="spawnX" val="87331"/>
+		<stat name="spawnY" val="-142842"/>
+		<stat name="spawnZ" val="-1317"/>
+	</zone>
+	<zone id="11036" type="Town" shape="NPoly" minZ="-3600" maxZ="-3400">
+		<stat name="name" val="Floran Village"/>
+		<stat name="townId" val="16"/>
+		<stat name="taxById" val="2"/>
+		<stat name="isPeaceZone" val="false"/>
+		<stat name="spawnX" val="18823"/>
+		<stat name="spawnY" val="145048"/>
+		<stat name="spawnZ" val="-3126"/>
+	</zone>
+	<zone id="11037" type="PrimevalZone" shape="NPoly" minZ="-5000" maxZ="1000">
+		<stat name="name" val="Primeval Isle"/>
+		<stat name="allowShops" val="false"/>
+		<stat name="isPeaceZone" val="false"/>
+		<!--<stat name="spawnX" val="10480"/>
+		<stat name="spawnY" val="-25364"/>
+		<stat name="spawnZ" val="-3701"/>
+		<stat name="spawnX" val="7971"/>
+		<stat name="spawnY" val="-20252"/>
+		<stat name="spawnZ" val="-3512"/>
+		<stat name="spawnX" val="6018"/>
+		<stat name="spawnY" val="-23672"/>
+		<stat name="spawnZ" val="-3725"/>
+		<stat name="spawnX" val="10465"/>
+		<stat name="spawnY" val="-26995"/>
+		<stat name="spawnZ" val="-3629"/> -->
+	</zone>
+
+
+	<zone id="11038" type="Town" shape="NPoly" minZ="250" maxZ="2250">
+		<stat name="name" val="Kamael Village" /> 
+		<stat name="townId" val="20" /> 
+		<stat name="taxById" val="5" /> 
+		<stat name="spawnX" val="-118092" /> 
+		<stat name="spawnY" val="46955" /> 
+		<stat name="spawnZ" val="360" /> 
+	</zone>
+	<zone id="11039" type="Town" shape="Cuboid" minZ="-4324" maxZ="3097">
+		<stat name="name" val="Fantasy Isle" /> 
+		<stat name="isPeaceZone" val="false"/>
+		<stat name="townId" val="22" /> 
+		<stat name="taxById" val="14" /> 
+		<stat name="spawnX" val="-58752" /> 
+		<stat name="spawnY" val="-56898" /> 
+		<stat name="spawnZ" val="-2032" /> 
+	</zone>
+	<zone id="11040" type="Town" shape="Cuboid" minZ="1080" maxZ="3210">
+		<stat name="name" val="Keucereus" /> 
+		<stat name="townId" val="33" /> 
+		<stat name="spawnX" val="-184284" /> 
+		<stat name="spawnY" val="242723" /> 
+		<stat name="spawnZ" val="1577" /> 
+	</zone>
+	<!--<zone id="11048" type="GeneralZone" shape="Cuboid" minZ="-6000" maxZ="3500">
+		<stat name="name" val="S80 Grade Zone"/>
+	</zone> -->
+	<zone id="11049" type="GeneralZone" shape="Cuboid" minZ="-6000" maxZ="3500">
+		<stat name="name" val="S - S80 Grade Zone"/>
+	</zone>
+	<zone id="11500" type="GeneralZone" shape="Cuboid" minZ="-6000" maxZ="3500">
+		<stat name="DVC" val="DVC"/>
+	</zone>
+	<zone id="11600" type="GeneralZone" shape="Cuboid" minZ="-6000" maxZ="3500">
+		<stat name="ROA" val="ROA"/>
+	</zone>
+<!-- Mother trees -->
+	<zone id="11050" type="MotherTree" shape="Cuboid" minZ="-3500" maxZ="-3400">
+		<stat name="affectedRace" val="1"/>
+	</zone>
+	<zone id="11051" type="MotherTree" shape="Cuboid" minZ="-3100" maxZ="-3000">
+		<stat name="affectedRace" val="1"/>
+	</zone>
+	<zone id="11052" type="MotherTree" shape="Cuboid" minZ="-3700" maxZ="-3600">
+		<stat name="affectedRace" val="1"/>
+	</zone>
+	<zone id="11053" type="MotherTree" shape="Cuboid" minZ="-3200" maxZ="-3100">
+		<stat name="affectedRace" val="1"/>
+	</zone>
+	<zone id="11054" type="MotherTree" shape="Cuboid" minZ="-3800" maxZ="-3600">
+		<stat name="affectedRace" val="1"/>
+	</zone>
+
+<!-- No landing -->
+	<zone id="11060" type="NoLandingZone" shape="Cuboid" minZ="-5150" maxZ="10100"/>
+
+<!-- Olympiad Stadia -->
+	<zone id="11070" type="OlympiadStadium" shape="Cuboid" minZ="-3100" maxZ="-3000">
+		<stat name="stadiumId" val="1"/>
+	</zone>
+	<zone id="11071" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="2"/>
+	</zone>
+	<zone id="11072" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="3"/>
+	</zone>
+	<zone id="11073" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="4"/>
+	</zone>
+	<zone id="11074" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="5"/>
+	</zone>
+	<zone id="11075" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="6"/>
+	</zone>
+	<zone id="11076" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="7"/>
+	</zone>
+	<zone id="11077" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="8"/>
+	</zone>
+	<zone id="11078" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="9"/>
+	</zone>
+	<zone id="11079" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="10"/>
+	</zone>
+	<zone id="11080" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="11"/>
+	</zone>
+	<zone id="11081" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="12"/>
+	</zone>
+	<zone id="11082" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="13"/>
+	</zone>
+	<zone id="11083" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="14"/>
+	</zone>
+	<zone id="11084" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="15"/>
+	</zone>
+	<zone id="11085" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="16"/>
+	</zone>
+	<zone id="11086" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="17"/>
+	</zone>
+	<zone id="11087" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="18"/>
+	</zone>
+	<zone id="11088" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="19"/>
+	</zone>
+	<zone id="11089" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="20"/>
+	</zone>
+	<zone id="11090" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="21"/>
+	</zone>
+	<zone id="11091" type="OlympiadStadium" shape="Cuboid" minZ="-3400" maxZ="-3200">
+		<stat name="stadiumId" val="22"/>
+	</zone>
+
+<!-- Clan hall zones -->
+	<zone id="11100" type="ClanHallZone" shape="Cuboid" minZ="-2000" maxZ="-1800">
+		<stat name="clanHallId" val="21"/>
+		<stat name="spawnX" val="43399"/>
+		<stat name="spawnY" val="108888"/>
+		<stat name="spawnZ" val="-1980"/>
+	</zone>
+	<zone id="11101" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="22"/>
+		<stat name="spawnX" val="-15975"/>
+		<stat name="spawnY" val="123562"/>
+		<stat name="spawnZ" val="-3101"/>
+	</zone>
+	<zone id="11102" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="23"/>
+		<stat name="spawnX" val="-14950"/>
+		<stat name="spawnY" val="125575"/>
+		<stat name="spawnZ" val="-3128"/>
+	</zone>
+	<zone id="11103" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="24"/>
+		<stat name="spawnX" val="-13875"/>
+		<stat name="spawnY" val="125375"/>
+		<stat name="spawnZ" val="-3128"/>
+	</zone>
+	<zone id="11104" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="25"/>
+		<stat name="spawnX" val="-12625"/>
+		<stat name="spawnY" val="124075"/>
+		<stat name="spawnZ" val="-3096"/>
+	</zone>
+	<zone id="11105" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="26"/>
+		<stat name="spawnX" val="-84475"/>
+		<stat name="spawnY" val="151950"/>
+		<stat name="spawnZ" val="-3123"/>
+	</zone>
+	<zone id="11106" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="27"/>
+		<stat name="spawnX" val="-83875"/>
+		<stat name="spawnY" val="153325"/>
+		<stat name="spawnZ" val="-3159"/>
+	</zone>
+	<zone id="11107" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="28"/>
+		<stat name="spawnX" val="-83800"/>
+		<stat name="spawnY" val="155500"/>
+		<stat name="spawnZ" val="-3160"/>
+	</zone>
+	<zone id="11108" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="29"/>
+		<stat name="spawnX" val="-79800"/>
+		<stat name="spawnY" val="149625"/>
+		<stat name="spawnZ" val="-3038"/>
+	</zone>
+	<zone id="11109" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="30"/>
+		<stat name="spawnX" val="-79500"/>
+		<stat name="spawnY" val="151800"/>
+		<stat name="spawnZ" val="-3041"/>
+	</zone>
+	<zone id="11110" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="31"/>
+		<stat name="spawnX" val="17700"/>
+		<stat name="spawnY" val="145075"/>
+		<stat name="spawnZ" val="-3036"/>
+	</zone>
+	<zone id="11111" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="32"/>
+		<stat name="spawnX" val="18725"/>
+		<stat name="spawnY" val="143350"/>
+		<stat name="spawnZ" val="-3010"/>
+	</zone>
+	<zone id="11112" type="ClanHallZone" shape="Cuboid" minZ="-3200" maxZ="-3000">
+		<stat name="clanHallId" val="33"/>
+		<stat name="spawnX" val="20175"/>
+		<stat name="spawnY" val="146150"/>
+		<stat name="spawnZ" val="-3111"/>
+	</zone>
+	<zone id="11113" type="ClanHallZone" shape="Cuboid" minZ="0" maxZ="0">
+		<stat name="clanHallId" val="34"/>
+		<stat name="spawnX" val="178256"/>
+		<stat name="spawnY" val="-15714"/>
+		<stat name="spawnZ" val="-2263"/>
+	</zone>
+	<zone id="11114" type="ClanHallZone" shape="Cuboid" minZ="-2000" maxZ="-1800">
+		<stat name="clanHallId" val="35"/>
+		<stat name="spawnX" val="80182"/>
+		<stat name="spawnY" val="-15484"/>
+		<stat name="spawnZ" val="-1804"/>
+	</zone>
+	<zone id="11115" type="ClanHallZone" shape="Cuboid" minZ="-2200" maxZ="-2000">
+		<stat name="clanHallId" val="36"/>
+		<stat name="spawnX" val="149134"/>
+		<stat name="spawnY" val="23139"/>
+		<stat name="spawnZ" val="-2160"/>
+	</zone>
+	<zone id="11116" type="ClanHallZone" shape="Cuboid" minZ="-2200" maxZ="-2000">
+		<stat name="clanHallId" val="37"/>
+		<stat name="spawnX" val="150643"/>
+		<stat name="spawnY" val="23653"/>
+		<stat name="spawnZ" val="-2150"/>
+	</zone>
+	<zone id="11117" type="ClanHallZone" shape="Cuboid" minZ="-2200" maxZ="-2000">
+		<stat name="clanHallId" val="38"/>
+		<stat name="spawnX" val="145667"/>
+		<stat name="spawnY" val="25355"/>
+		<stat name="spawnZ" val="-2150"/>
+	</zone>
+	<zone id="11118" type="ClanHallZone" shape="Cuboid" minZ="-2300" maxZ="-2000">
+		<stat name="clanHallId" val="39"/>
+		<stat name="spawnX" val="150748"/>
+		<stat name="spawnY" val="26540"/>
+		<stat name="spawnZ" val="-2280"/>
+	</zone>
+	<zone id="11119" type="ClanHallZone" shape="Cuboid" minZ="-2300" maxZ="-2000">
+		<stat name="clanHallId" val="40"/>
+		<stat name="spawnX" val="143991"/>
+		<stat name="spawnY" val="27091"/>
+		<stat name="spawnZ" val="-2290"/>
+	</zone>
+	<zone id="11120" type="ClanHallZone" shape="Cuboid" minZ="-2300" maxZ="-2000">
+		<stat name="clanHallId" val="41"/>
+		<stat name="spawnX" val="144014"/>
+		<stat name="spawnY" val="28202"/>
+		<stat name="spawnZ" val="-2280"/>
+	</zone>
+	<zone id="11121" type="ClanHallZone" shape="Cuboid" minZ="-3600" maxZ="-3400">
+		<stat name="clanHallId" val="42"/>
+		<stat name="spawnX" val="78590"/>
+		<stat name="spawnY" val="148101"/>
+		<stat name="spawnZ" val="-3581"/>
+	</zone>
+	<zone id="11122" type="ClanHallZone" shape="Cuboid" minZ="-3600" maxZ="-3400">
+		<stat name="clanHallId" val="43"/>
+		<stat name="spawnX" val="82056"/>
+		<stat name="spawnY" val="145336"/>
+		<stat name="spawnZ" val="-3520"/>
+	</zone>
+	<zone id="11123" type="ClanHallZone" shape="Cuboid" minZ="-3500" maxZ="-3400">
+		<stat name="clanHallId" val="44"/>
+		<stat name="spawnX" val="83393"/>
+		<stat name="spawnY" val="145313"/>
+		<stat name="spawnZ" val="-3389"/>
+	</zone>
+	<zone id="11124" type="ClanHallZone" shape="Cuboid" minZ="-3600" maxZ="-3400">
+		<stat name="clanHallId" val="45"/>
+		<stat name="spawnX" val="80971"/>
+		<stat name="spawnY" val="151587"/>
+		<stat name="spawnZ" val="-3517"/>
+	</zone>
+	<zone id="11125" type="ClanHallZone" shape="Cuboid" minZ="-3600" maxZ="-3400">
+		<stat name="clanHallId" val="46"/>
+		<stat name="spawnX" val="82101"/>
+		<stat name="spawnY" val="151911"/>
+		<stat name="spawnZ" val="-3520"/>
+	</zone>
+	<zone id="11126" type="ClanHallZone" shape="NPoly" minZ="-2800" maxZ="-2600">
+		<stat name="clanHallId" val="47"/>
+		<stat name="spawnX" val="146025"/>
+		<stat name="spawnY" val="-55534"/>
+		<stat name="spawnZ" val="-2765"/>
+	</zone>
+	<zone id="11127" type="ClanHallZone" shape="NPoly" minZ="-2800" maxZ="-2600">
+		<stat name="clanHallId" val="48"/>
+		<stat name="spawnX" val="146901"/>
+		<stat name="spawnY" val="-56857"/>
+		<stat name="spawnZ" val="-2765"/>
+	</zone>
+	<zone id="11128" type="ClanHallZone" shape="NPoly" minZ="-2800" maxZ="-2600">
+		<stat name="clanHallId" val="49"/>
+		<stat name="spawnX" val="148479"/>
+		<stat name="spawnY" val="-56874"/>
+		<stat name="spawnZ" val="-2765"/>
+	</zone>
+	<zone id="11129" type="ClanHallZone" shape="NPoly" minZ="-2800" maxZ="-2600">
+		<stat name="clanHallId" val="50"/>
+		<stat name="spawnX" val="149390"/>
+		<stat name="spawnY" val="-55587"/>
+		<stat name="spawnZ" val="-2765"/>
+	</zone>
+	<zone id="11130" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="51"/>
+		<stat name="spawnX" val="37733"/>
+		<stat name="spawnY" val="-50781"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11131" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="52"/>
+		<stat name="spawnX" val="38727"/>
+		<stat name="spawnY" val="-50460"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11132" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="53"/>
+		<stat name="spawnX" val="39473"/>
+		<stat name="spawnY" val="-49680"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11133" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="54"/>
+		<stat name="spawnX" val="39623"/>
+		<stat name="spawnY" val="-48245"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11134" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="55"/>
+		<stat name="spawnX" val="39598"/>
+		<stat name="spawnY" val="-46904"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11135" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="56"/>
+		<stat name="spawnX" val="38747"/>
+		<stat name="spawnY" val="-46026"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11136" type="ClanHallZone" shape="NPoly" minZ="850" maxZ="990">
+		<stat name="clanHallId" val="57"/>
+		<stat name="spawnX" val="37730"/>
+		<stat name="spawnY" val="-45666"/>
+		<stat name="spawnZ" val="896"/>
+	</zone>
+	<zone id="11137" type="ClanHallZone" shape="NPoly" minZ="-1400" maxZ="-1200">
+		<stat name="clanHallId" val="58"/>
+		<stat name="spawnX" val="85747"/>
+		<stat name="spawnY" val="-143108"/>
+		<stat name="spawnZ" val="-1328"/>
+	</zone>
+	<zone id="11138" type="ClanHallZone" shape="NPoly" minZ="-1400" maxZ="-1200">
+		<stat name="clanHallId" val="59"/>
+		<stat name="spawnX" val="86582"/>
+		<stat name="spawnY" val="-141910"/>
+		<stat name="spawnZ" val="-1328"/>
+	</zone>
+	<zone id="11139" type="ClanHallZone" shape="NPoly" minZ="-1400" maxZ="-1200">
+		<stat name="clanHallId" val="60"/>
+		<stat name="spawnX" val="88162"/>
+		<stat name="spawnY" val="-141930"/>
+		<stat name="spawnZ" val="-1328"/>
+	</zone>
+	<zone id="11140" type="ClanHallZone" shape="NPoly" minZ="-1400" maxZ="-1200">
+		<stat name="clanHallId" val="61"/>
+		<stat name="spawnX" val="89000"/>
+		<stat name="spawnY" val="-143190"/>
+		<stat name="spawnZ" val="-1328"/>
+	</zone>
+	<zone id="11141" type="ClanHallZone" shape="NPoly" minZ="-2100" maxZ="-1100">
+		<stat name="clanHallId" val="62"/>
+		<stat name="spawnX" val="141002"/>
+		<stat name="spawnY" val="-124607"/>
+		<stat name="spawnZ" val="-1896"/>
+	</zone>
+	<zone id="11142" type="ClanHallZone" shape="NPoly" minZ="-1500" maxZ="-500">
+		<stat name="clanHallId" val="63"/>
+		<stat name="spawnX" val="58020"/>
+		<stat name="spawnY" val="-92943"/>
+		<stat name="spawnZ" val="-1360"/>
+	</zone>
+	<zone id="11143" type="ClanHallZone" shape="NPoly" minZ="500" maxZ="1500">
+		<stat name="clanHallId" val="64"/>
+		<stat name="spawnX" val="57970"/>
+		<stat name="spawnY" val="-28572"/>
+		<stat name="spawnZ" val="569"/>
+	</zone>
+	<zone id="11145" type="ClanHallZone" shape="Cuboid" minZ="-2900" maxZ="-2700">
+		<stat name="clanHallId" val="65"/>
+		<stat name="spawnX" val="45718"/>
+		<stat name="spawnY" val="51473"/>
+		<stat name="spawnZ" val="-2837"/>
+	</zone>
+	<zone id="11147" type="ClanHallZone" shape="Cuboid" minZ="1700" maxZ="2200">
+		<stat name="clanHallId" val="67"/>
+		<stat name="spawnX" val="-213480"/>
+		<stat name="spawnY" val="244905"/>
+		<stat name="spawnZ" val="2018"/>
+	</zone>
+	<zone id="11146" type="ClanHallZone" shape="Cuboid" minZ="-10300" maxZ="-10000">
+		<stat name="clanHallId" val="66"/>
+		<stat name="spawnX" val="-238640"/>
+		<stat name="spawnY" val="219974"/>
+		<stat name="spawnZ" val="-10144"/>
+	</zone>
+	<zone id="11148" type="ClanHallZone" shape="Cuboid" minZ="3100" maxZ="3800">
+		<stat name="clanHallId" val="68"/>
+		<stat name="spawnX" val="-211884"/>
+		<stat name="spawnY" val="249641"/>
+		<stat name="spawnZ" val="3468"/>
+	</zone>
+	<zone id="11149" type="ClanHallZone" shape="Cuboid" minZ="-3700" maxZ="-3200">
+		<stat name="clanHallId" val="69"/>
+		<stat name="spawnX" val="-28708"/>
+		<stat name="spawnY" val="250827"/>
+		<stat name="spawnZ" val="-3523"/>
+	</zone>
+	<zone id="11150" type="ClanHallZone" shape="Cuboid" minZ="-3500" maxZ="-2400">
+		<stat name="clanHallId" val="70"/>
+		<stat name="spawnX" val="139899"/>
+		<stat name="spawnY" val="150412"/>
+		<stat name="spawnZ" val="-3106"/>
+	</zone>
+	<zone id="11151" type="ClanHallZone" shape="Cylinder" minZ="-5000" maxZ="1000" rad="3000"> 
+		<stat name="clanHallId" val="71"/>
+		<stat name="spawnX" val="113918"/>
+		<stat name="spawnY" val="-108775"/>
+		<stat name="spawnZ" val="-843"/>
+	</zone>
+	<zone id="11152" type="ClanHallZone" shape="Cylinder" minZ="-5000" maxZ="1000" rad="3000"> 
+		<stat name="clanHallId" val="72"/>
+		<stat name="spawnX" val="-75718"/>
+		<stat name="spawnY" val="-50973"/>
+		<stat name="spawnZ" val="-1721"/>
+	</zone>
+	<zone id="11158" type="ClanHallZone" shape="Cylinder" minZ="-5000" maxZ="1000" rad="3000"> 
+		<stat name="clanHallId" val="73"/>
+		<stat name="spawnX" val="-59720"/>
+		<stat name="spawnY" val="-69345"/>
+		<stat name="spawnZ" val="-2898"/>
+	</zone>
+		<zone id="11159" type="ClanHallZone" shape="Cylinder" minZ="-5000" maxZ="1000" rad="3000"> 
+		<stat name="clanHallId" val="74"/>
+		<stat name="spawnX" val="9221"/>
+		<stat name="spawnY" val="251939"/>
+		<stat name="spawnZ" val="-2029"/>
+	</zone>
+		<zone id="11160" type="ClanHallZone" shape="Cylinder" minZ="10000" maxZ="15000" rad="3000"> 
+		<stat name="clanHallId" val="75"/>
+		<stat name="spawnX" val="16410"/>
+		<stat name="spawnY" val="244428"/>
+		<stat name="spawnZ" val="11620"/>
+	</zone>
+	<zone id="11161" type="ClanHallZone" shape="Cylinder" minZ="10000" maxZ="15000" rad="3000"> 
+		<stat name="clanHallId" val="76"/>
+		<stat name="spawnX" val="48423"/>
+		<stat name="spawnY" val="-104479"/>
+		<stat name="spawnZ" val="-1705"/>
+	</zone>
+	<zone id="11162" type="ClanHallZone" shape="Cylinder" minZ="-5000" maxZ="3000" rad="3000"> 
+		<stat name="clanHallId" val="77"/>
+		<stat name="spawnX" val="-73725"/>
+		<stat name="spawnY" val="52404"/>
+		<stat name="spawnZ" val="-3714"/>
+	</zone>
+<!-- Fortress zones -->
+	<zone id="11501" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Shanty Fortress -->
+		<stat name="fortId" val="101"/>
+		<stat name="spawnX" val="-52667"/>
+		<stat name="spawnY" val="156933"/>
+		<stat name="spawnZ" val="-1727"/>
+	</zone>
+	<zone id="11502" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Southern Fortress -->
+		<stat name="fortId" val="102"/>
+		<stat name="spawnX" val="-22672"/>
+		<stat name="spawnY" val="219354"/>
+		<stat name="spawnZ" val="-2910"/>
+	</zone>
+	<zone id="11503" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Hive Fortress -->
+		<stat name="fortId" val="103"/>
+		<stat name="spawnX" val="16917"/>
+		<stat name="spawnY" val="187773"/>
+		<stat name="spawnZ" val="-2596"/>
+	</zone>
+	<zone id="11504" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Valley Fortress -->
+		<stat name="fortId" val="104"/>
+		<stat name="spawnX" val="126520"/>
+		<stat name="spawnY" val="123318"/>
+		<stat name="spawnZ" val="-2257"/>
+	</zone>
+	<zone id="11505" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Ivory Fortress -->
+		<stat name="fortId" val="105"/>
+		<stat name="spawnX" val="73206"/>
+		<stat name="spawnY" val="4544"/>
+		<stat name="spawnZ" val="-2717"/>
+	</zone>
+	<zone id="11506" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Narsell Fortress -->
+		<stat name="fortId" val="106"/>
+		<stat name="spawnX" val="155178"/>
+		<stat name="spawnY" val="55625"/>
+		<stat name="spawnZ" val="-2926"/>
+	</zone>
+	<zone id="11507" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Bayou Fortress -->
+		<stat name="fortId" val="107"/>
+		<stat name="spawnX" val="190365"/>
+		<stat name="spawnY" val="39690"/>
+		<stat name="spawnZ" val="-3082"/>
+	</zone>
+	<zone id="11508" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- White Sands Fortress -->
+		<stat name="fortId" val="108"/>
+		<stat name="spawnX" val="118653"/>
+		<stat name="spawnY" val="204543"/>
+		<stat name="spawnZ" val="-3006"/>
+	</zone>
+	<zone id="11509" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Borderland Fortress -->
+		<stat name="fortId" val="109"/>
+		<stat name="spawnX" val="159414"/>
+		<stat name="spawnY" val="-69964"/>
+		<stat name="spawnZ" val="-2536"/>
+	</zone>
+	<zone id="11510" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Swamp Fortress -->
+		<stat name="fortId" val="110"/>
+		<stat name="spawnX" val="70262"/>
+		<stat name="spawnY" val="-61571"/>
+		<stat name="spawnZ" val="-2460"/>
+	</zone>
+	<zone id="11511" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Archaic Fortress -->
+		<stat name="fortId" val="111"/>
+		<stat name="spawnX" val="109644"/>
+		<stat name="spawnY" val="-140807"/>
+		<stat name="spawnZ" val="-2629"/>
+	</zone>
+	<zone id="11512" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Floran Fortress - Border -->
+		<stat name="fortId" val="112"/>
+		<stat name="spawnX" val="5578"/>
+		<stat name="spawnY" val="150206"/>
+		<stat name="spawnZ" val="-2563"/>
+	</zone>
+	<zone id="11513" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Cloud Mountain Fortress - Border -->
+		<stat name="fortId" val="113"/>
+		<stat name="spawnX" val="-52803"/>
+		<stat name="spawnY" val="91164"/>
+		<stat name="spawnZ" val="-2493"/>
+	</zone>
+	<zone id="11514" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Tanor Fortress - Border -->
+		<stat name="fortId" val="114"/>
+		<stat name="spawnX" val="60692"/>
+		<stat name="spawnY" val="139337"/>
+		<stat name="spawnZ" val="-1426"/>
+	</zone>
+	<zone id="11515" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Dragonspine Fortress - Border -->
+		<stat name="fortId" val="115"/>
+		<stat name="spawnX" val="11983"/>
+		<stat name="spawnY" val="95021"/>
+		<stat name="spawnZ" val="-3100"/>
+	</zone>
+	<zone id="11516" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Antharas Fortress - Border -->
+		<stat name="fortId" val="116"/>
+		<stat name="spawnX" val="79479"/>
+		<stat name="spawnY" val="90670"/>
+		<stat name="spawnZ" val="-2558"/>
+	</zone>
+	<zone id="11517" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Western Fortress - Border -->
+		<stat name="fortId" val="117"/>
+		<stat name="spawnX" val="111820"/>
+		<stat name="spawnY" val="-15115"/>
+		<stat name="spawnZ" val="-669"/>
+	</zone>
+	<zone id="11518" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Hunters Fortress - Border -->
+		<stat name="fortId" val="118"/>
+		<stat name="spawnX" val="125685"/>
+		<stat name="spawnY" val="95145"/>
+		<stat name="spawnZ" val="-1812"/>
+	</zone>
+	<zone id="11519" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Aaru Fortress - Border -->
+		<stat name="fortId" val="119"/>
+		<stat name="spawnX" val="73459"/>
+		<stat name="spawnY" val="186257"/>
+		<stat name="spawnZ" val="-2255"/>
+	</zone>
+	<zone id="11520" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Demon Fortress - Border -->
+		<stat name="fortId" val="120"/>
+		<stat name="spawnX" val="100686"/>
+		<stat name="spawnY" val="-54872"/>
+		<stat name="spawnZ" val="-319"/>
+	</zone>	
+	<zone id="11521" type="FortZone" shape="Cuboid" minZ="-3800" maxZ="3200">
+		<!-- Monastic Fortress - Border -->
+		<stat name="fortId" val="121"/>
+		<stat name="spawnX" val="72598"/>
+		<stat name="spawnY" val="-94905"/>
+		<stat name="spawnZ" val="-1102"/>
+	</zone>
+<!-- Castle zones -->
+	<zone id="11800" type="CastleZone" shape="Cuboid" minZ="-4448" maxZ="3551">
+	</zone>
+	<zone id="11200" type="CastleZone" shape="NPoly" minZ="-4448" maxZ="3551">
+		<stat name="castleId" val="1"/>
+		<stat name="spawnX" val="-16770"/>
+		<stat name="spawnY" val="109356"/>
+		<stat name="spawnZ" val="-1798"/>
+	</zone>
+	<zone id="11201" type="CastleZone" shape="NPoly" minZ="-4642" maxZ="4000">
+		<stat name="castleId" val="2"/>
+		<stat name="spawnX" val="20515"/>
+		<stat name="spawnY" val="160384"/>
+		<stat name="spawnZ" val="-1992"/>
+	</zone>
+	<zone id="11202" type="CastleZone" shape="NPoly" minZ="-4515" maxZ="19935">
+		<stat name="gearLimit" val="0"/>
+		<stat name="castleId" val="3"/>
+		<stat name="spawnX" val="116553"/>
+		<stat name="spawnY" val="146396"/>
+		<stat name="spawnZ" val="-1868"/>
+	</zone>
+	<zone id="11203" type="CastleZone" shape="NPoly" minZ="-4242" maxZ="19935">
+		<stat name="castleId" val="4"/>
+		<stat name="spawnX" val="82644"/>
+		<stat name="spawnY" val="38542"/>
+		<stat name="spawnZ" val="-1592"/>
+	</zone>
+	<zone id="11204" type="CastleZone" shape="NPoly" minZ="-3184" maxZ="6816">
+		<stat name="gearLimit" val="0"/>
+		<stat name="castleId" val="5"/>
+		<stat name="spawnX" val="147726"/>
+		<stat name="spawnY" val="4611"/>
+		<stat name="spawnZ" val="-2788"/>
+	</zone>
+	<zone id="11205" type="CastleZone" shape="NPoly" minZ="-2738" maxZ="4000">
+		<stat name="castleId" val="6"/>
+		<stat name="spawnX" val="114796"/>
+		<stat name="spawnY" val="249159"/>
+		<stat name="spawnZ" val="-88"/>
+	</zone>
+	<zone id="11206" type="CastleZone" shape="NPoly" minZ="-3397" maxZ="2103">
+		<stat name="castleId" val="7"/>
+		<stat name="spawnX" val="147451"/>
+		<stat name="spawnY" val="-46878"/>
+		<stat name="spawnZ" val="-961"/>
+	</zone>
+	<zone id="11207" type="CastleZone" shape="Cuboid" minZ="-3000" maxZ="20000">
+		<stat name="castleId" val="8"/>
+		<stat name="spawnX" val="10558"/>
+		<stat name="spawnY" val="-49160"/>
+		<stat name="spawnZ" val="3856"/>
+	</zone>
+	<zone id="11208" type="CastleZone" shape="Cuboid" minZ="-3800" maxZ="20000">
+		<stat name="castleId" val="9"/>
+		<stat name="spawnX" val="77555"/>
+		<stat name="spawnY" val="-150903"/>
+		<stat name="spawnZ" val="769"/>
+	</zone>
+
+<!-- Castle teleport zones -->
+	<zone id="11209" type="CastleTeleportZone" shape="Cuboid" minZ="-1827" maxZ="-1682">
+		<stat name="castleId" val="1"/>
+		<stat name="spawnMinX" val="-17727"/>
+		<stat name="spawnMaxX" val="-18482"/>
+		<stat name="spawnMinY" val="109041"/>
+		<stat name="spawnMaxY" val="109383"/>
+		<stat name="spawnZ" val="-2496"/>
+	</zone>
+	<zone id="11210" type="CastleTeleportZone" shape="Cuboid" minZ="-2021" maxZ="-1877">
+		<stat name="castleId" val="2"/>
+		<stat name="spawnMinX" val="21709"/>
+		<stat name="spawnMaxX" val="22456"/>
+		<stat name="spawnMinY" val="160392"/>
+		<stat name="spawnMaxY" val="160706"/>
+		<stat name="spawnZ" val="-2690"/>
+	</zone>
+	<zone id="11211" type="CastleTeleportZone" shape="Cuboid" minZ="-1891" maxZ="-1750">
+		<stat name="castleId" val="3"/>
+		<stat name="spawnMinX" val="116555"/>
+		<stat name="spawnMaxX" val="116894"/>
+		<stat name="spawnMinY" val="144729"/>
+		<stat name="spawnMaxY" val="145470"/>
+		<stat name="spawnZ" val="-2566"/>
+	</zone>
+	<zone id="11212" type="CastleTeleportZone" shape="Cuboid" minZ="-1621" maxZ="-1477">
+		<stat name="castleId" val="4"/>
+		<stat name="spawnMinX" val="82633"/>
+		<stat name="spawnMaxX" val="82957"/>
+		<stat name="spawnMinY" val="36787"/>
+		<stat name="spawnMaxY" val="37599"/>
+		<stat name="spawnZ" val="-2288"/>
+	</zone>
+	<zone id="11213" type="CastleTeleportZone" shape="Cuboid" minZ="-2811" maxZ="-2641">
+		<stat name="castleId" val="5"/>
+		<stat name="spawnMinX" val="147208"/>
+		<stat name="spawnMaxX" val="147718"/>
+		<stat name="spawnMinY" val="4359"/>
+		<stat name="spawnMaxY" val="4806"/>
+		<stat name="spawnZ" val="-343"/>
+	</zone>
+	<zone id="11214" type="CastleTeleportZone" shape="Cuboid" minZ="-117" maxZ="26">
+		<stat name="castleId" val="6"/>
+		<stat name="spawnMinX" val="115666"/>
+		<stat name="spawnMaxX" val="116390"/>
+		<stat name="spawnMinY" val="249161"/>
+		<stat name="spawnMaxY" val="249488"/>
+		<stat name="spawnZ" val="-786"/>
+	</zone>
+	<zone id="11215" type="CastleTeleportZone" shape="Cuboid" minZ="-989" maxZ="-573">
+		<stat name="castleId" val="7"/>
+		<stat name="spawnMinX" val="147061"/>
+		<stat name="spawnMaxX" val="147809"/>
+		<stat name="spawnMinY" val="-48198"/>
+		<stat name="spawnMaxY" val="-48779"/>
+		<stat name="spawnZ" val="-2276"/>
+	</zone>
+	<zone id="11216" type="CastleTeleportZone" shape="NPoly" minZ="3800" maxZ="4250">
+		<stat name="castleId" val="8"/>
+		<stat name="spawnMinX" val="10985"/>
+		<stat name="spawnMaxX" val="11997"/>
+		<stat name="spawnMinY" val="-48780"/>
+		<stat name="spawnMaxY" val="-49498"/>
+		<stat name="spawnZ" val="-546"/>
+	</zone>
+	<zone id="11217" type="CastleTeleportZone" shape="Cuboid" minZ="746" maxZ="1136">
+		<stat name="castleId" val="9"/>
+		<stat name="spawnMinX" val="77144"/>
+		<stat name="spawnMaxX" val="77927"/>
+		<stat name="spawnMinY" val="-152272"/>
+		<stat name="spawnMaxY" val="-152843"/>
+		<stat name="spawnZ" val="-544"/>
+	</zone>
+
+<!-- Boss Zones -->
+	<zone id="12001" type="BossZone" shape="Cuboid" minZ="-7230" maxZ="-6621">
+		<stat name="name" val="Four Sepulcher"/>
+		<stat name="oustX" val="169589"/>
+		<stat name="oustY" val="-90493"/>
+		<stat name="oustZ" val="-2914"/>
+	</zone>
+	<zone id="12002" type="BossZone" shape="Cuboid" minZ="-7230" maxZ="-6621">
+		<stat name="name" val="Four Sepulcher"/>
+		<stat name="oustX" val="169589"/>
+		<stat name="oustY" val="-90493"/>
+		<stat name="oustZ" val="-2914"/>
+	</zone>
+	<zone id="12003" type="BossZone" shape="Cuboid" minZ="-7230" maxZ="-6621">
+		<stat name="name" val="Four Sepulcher"/>
+		<stat name="oustX" val="169589"/>
+		<stat name="oustY" val="-90493"/>
+		<stat name="oustZ" val="-2914"/>
+	</zone>
+	<zone id="12004" type="BossZone" shape="Cuboid" minZ="-7230" maxZ="-6621">
+		<stat name="name" val="Four Sepulcher"/>
+		<stat name="oustX" val="169589"/>
+		<stat name="oustY" val="-90493"/>
+		<stat name="oustZ" val="-2914"/>
+	</zone>
+
+	<zone id="12006" type="BossZone" shape="Cuboid" minZ="-8320" maxZ="-4870">
+		<stat name="name" val="Lair of Antharas"/>
+		<stat name="InvadeTime" val="1800000"/>
+	</zone>
+	<zone id="12007" type="BossZone" shape="NPoly" minZ="9967" maxZ="16301">
+		<stat name="name" val="Lair of Baium"/>
+		<stat name="InvadeTime" val="1800000"/>
+	</zone>
+	<zone id="12008" type="EventZone" shape="NPoly" minZ="-2572" maxZ="5428">
+		<stat name="name" val="Lair of Valakas"/>
+	</zone>
+	<zone id="12011" type="BossZone" shape="NPoly" minZ="-4815" maxZ="-315">
+		<stat name="name" val="Lair of Zaken"/>
+		<stat name="EnabledByDefault" val="false"/>
+	</zone>
+	<zone id="12012" type="BossZone" shape="NPoly" minZ="-5947" maxZ="-5547">
+		<stat name="name" val="Lair of Ant Queen"/>
+		<stat name="EnabledByDefault" val="false"/>
+	</zone>
+	<zone id="12013" type="BossZone" shape="NPoly" minZ="-5796" maxZ="-3796">
+		<stat name="name" val="Lair of Orfen"/>
+		<stat name="EnabledByDefault" val="false"/>
+	</zone>
+	<zone id="12015" type="BossZone" shape="NPoly" minZ="-4000" maxZ="-500">
+		<stat name="name" val="Ice Queens Castle"/>
+		<stat name="oustX" val="115844"/>
+		<stat name="oustY" val="-125602"/>
+		<stat name="oustZ" val="-3352"/>
+	</zone>
+<!--
+	<zone id="12009" type="BossZone" shape="Cuboid" minZ="-5600" maxZ="-3895">
+		<stat name="name" val="Lair of Lilith"/>
+		<stat name="InvadeTime" val="60000"/>
+	</zone>
+	<zone id="12010" type="BossZone" shape="Cuboid" minZ="-5600" maxZ="-3895">
+		<stat name="name" val="Lair of Anakim"/>
+		<stat name="InvadeTime" val="60000"/>
+	</zone>
+	<zone id="12014" type="BossZone" shape="Cuboid" minZ="-10730" maxZ="-10290">
+		<stat name="name" val="Altar of Sacrifice"/>
+		<stat name="InvadeTime" val="60000"/>
+	</zone>
+-->
+
+<!-- Peace Zones -->
+	<zone id="13001" type="PeaceZone" shape="NPoly" minZ="-3500" maxZ="-2000" /> <!-- Coliseum Entrance -->
+	<zone id="13002" type="PeaceZone" shape="NPoly" minZ="-3500" maxZ="-2000" /> <!-- Coliseum Entrance -->
+	<zone id="13003" type="PeaceZone" shape="Cuboid" minZ="-4350" maxZ="-3700" /> <!-- Ivory Tower Basement -->
+	<zone id="13004" type="PeaceZone" shape="Cuboid" minZ="-2850" maxZ="-1300" /> <!-- Ivory Tower Top Floors -->
+	<zone id="13006" type="PeaceZone" shape="NPoly" minZ="-3800" maxZ="-3600" /> <!-- Giran Arena Entrance -->
+	<zone id="13007" type="PeaceZone" shape="NPoly" minZ="-3200" maxZ="-2200" /> <!-- Cedric"s Training Hall -->
+	<zone id="13008" type="PeaceZone" shape="NPoly" minZ="-3650" maxZ="-2650" /> <!-- Einhovant"s School of Magic -->
+	<zone id="13009" type="PeaceZone" shape="NPoly" minZ="-4300" maxZ="-2300" /> <!-- The Shilen Temple -->
+	<zone id="13010" type="PeaceZone" shape="Cuboid" minZ="-1000" maxZ="500" /> <!-- The Pa"agrio Temple -->
+	<zone id="13011" type="PeaceZone" shape="Cuboid" minZ="-1000" maxZ="500" /> <!-- Cave of Souls -->
+	<zone id="13012" type="PeaceZone" shape="Cuboid" minZ="-6900" maxZ="-5500" /> <!-- Dimensional Rift -->
+	<zone id="13013" type="PeaceZone" shape="NPoly" minZ="-5000" maxZ="-4500" /> <!-- Oracle of Dawn -->
+	<zone id="13014" type="PeaceZone" shape="NPoly" minZ="-5300" maxZ="-4800" /> <!-- Oracle of Dusk -->
+
+<!-- Landing Zones -->
+	<zone id="14000" type="LandingZone" shape="NPoly" minZ="2668" maxZ="2750" />
+	<zone id="14001" type="LandingZone" shape="NPoly" minZ="2612" maxZ="2700" />
+	<zone id="14002" type="LandingZone" shape="NPoly" minZ="2548" maxZ="2650" />
+	<zone id="14003" type="LandingZone" shape="NPoly" minZ="2612" maxZ="2700" />
+	<zone id="14004" type="LandingZone" shape="NPoly" minZ="2818" maxZ="2900" />
+	<zone id="14005" type="LandingZone" shape="NPoly" minZ="1532" maxZ="1671" />
+	<zone id="14006" type="LandingZone" shape="NPoly" minZ="1676" maxZ="1771" />
+	<zone id="14007" type="LandingZone" shape="NPoly" minZ="1564" maxZ="1771" />
+	<zone id="14008" type="LandingZone" shape="NPoly" minZ="1532" maxZ="1671" />
+	<zone id="14009" type="LandingZone" shape="NPoly" minZ="1735" maxZ="1892" />
+
+<!-- Fishing zones -->
+	<zone id="11400" type="FishingZone" shape="NPoly" minZ="-3991" maxZ="-3759"/>
+	<zone id="11401" type="FishingZone" shape="NPoly" minZ="-3634" maxZ="-3586"/>
+	<zone id="11403" type="FishingZone" shape="NPoly" minZ="-3668" maxZ="-3620"/>
+	<zone id="11404" type="FishingZone" shape="NPoly" minZ="-3724" maxZ="-3677"/>
+	<zone id="11405" type="FishingZone" shape="NPoly" minZ="-2871" maxZ="-2806"/>
+	<zone id="11406" type="FishingZone" shape="NPoly" minZ="-2787" maxZ="-2749"/>
+	<zone id="11407" type="FishingZone" shape="NPoly" minZ="-2717" maxZ="-2663"/>
+	<zone id="11408" type="FishingZone" shape="NPoly" minZ="-1609" maxZ="-1569"/>
+	<zone id="11409" type="FishingZone" shape="NPoly" minZ="-1694" maxZ="-1651"/>
+	<zone id="11410" type="FishingZone" shape="NPoly" minZ="-1979" maxZ="-1906"/>
+	<zone id="11411" type="FishingZone" shape="NPoly" minZ="-2152" maxZ="-2113"/>
+	<zone id="11412" type="FishingZone" shape="NPoly" minZ="-4388" maxZ="-3763"/>
+	<zone id="11413" type="FishingZone" shape="NPoly" minZ="-4916" maxZ="-3793"/>
+	<zone id="11414" type="FishingZone" shape="NPoly" minZ="-4640" maxZ="-3759"/>
+	<zone id="11415" type="FishingZone" shape="NPoly" minZ="-4216" maxZ="-3767"/>
+	<zone id="11416" type="FishingZone" shape="NPoly" minZ="-2568" maxZ="-1432"/>
+	<zone id="11417" type="FishingZone" shape="NPoly" minZ="-7356" maxZ="-1356"/>
+	<zone id="11418" type="FishingZone" shape="NPoly" minZ="-3892" maxZ="-892"/>
+	<zone id="11419" type="FishingZone" shape="NPoly" minZ="-4684" maxZ="-1684"/>
+	<zone id="11420" type="FishingZone" shape="NPoly" minZ="-4874" maxZ="-1874"/>
+	<zone id="11421" type="FishingZone" shape="NPoly" minZ="-4372" maxZ="-1372"/>
+	<zone id="11422" type="FishingZone" shape="NPoly" minZ="-4328" maxZ="-1328"/>
+	<zone id="11423" type="FishingZone" shape="NPoly" minZ="-4096" maxZ="-1096"/>
+	<zone id="11424" type="FishingZone" shape="NPoly" minZ="-4724" maxZ="-1724"/>
+	<zone id="11425" type="FishingZone" shape="NPoly" minZ="-4764" maxZ="-1764"/>
+	<zone id="11426" type="FishingZone" shape="NPoly" minZ="-3900" maxZ="-900"/>
+	<zone id="11427" type="FishingZone" shape="NPoly" minZ="-4004" maxZ="-1004"/>
+	<zone id="11428" type="FishingZone" shape="NPoly" minZ="-3856" maxZ="-856"/>
+	<zone id="11429" type="FishingZone" shape="NPoly" minZ="-4848" maxZ="-1848"/>
+	<zone id="11430" type="FishingZone" shape="NPoly" minZ="-4044" maxZ="-1044"/>
+	<zone id="11431" type="FishingZone" shape="NPoly" minZ="-4084" maxZ="-1084"/>
+	<zone id="11432" type="FishingZone" shape="NPoly" minZ="-4880" maxZ="-1880"/>
+	<zone id="11433" type="FishingZone" shape="NPoly" minZ="-4828" maxZ="-1828"/>
+	<zone id="11434" type="FishingZone" shape="NPoly" minZ="-3772" maxZ="-772"/>
+	<zone id="11435" type="FishingZone" shape="NPoly" minZ="-4892" maxZ="-1892"/>
+	<zone id="11436" type="FishingZone" shape="NPoly" minZ="-3600" maxZ="-3346"/>
+
+<!-- Water zones -->
+	<zone id="15000" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [16_21_1] water zone-->
+	<zone id="15001" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [16_22_1] water zone-->
+	<zone id="15002" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [16_23_1] water zone-->
+	<zone id="15003" type="WaterZone" shape="NPoly" minZ="-7810" maxZ="-3810"/> <!-- [16_24_1] water zone-->
+	<zone id="15004" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [16_25_1] water zone-->
+	<zone id="15005" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_20_1] water zone-->
+	<zone id="15006" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_20_2] water zone-->
+	<zone id="15007" type="WaterZone" shape="NPoly" minZ="-5854" maxZ="-3534"/> <!-- [17_20_3] water zone-->
+	<zone id="15008" type="WaterZone" shape="NPoly" minZ="-5854" maxZ="-5278"/> <!-- [17_20_4] water zone-->
+	<zone id="15009" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_21_1] water zone-->
+	<zone id="15010" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_21_2] water zone-->
+	<zone id="15011" type="WaterZone" shape="NPoly" minZ="-4209" maxZ="-3209"/> <!-- [17_21_3] water zone-->
+	<zone id="15012" type="WaterZone" shape="NPoly" minZ="-5598" maxZ="-3278"/> <!-- [17_21_4] water zone-->
+	<zone id="15013" type="WaterZone" shape="NPoly" minZ="-5598" maxZ="-5022"/> <!-- [17_21_5] water zone-->
+	<zone id="15014" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_22_1] water zone-->
+	<zone id="15015" type="WaterZone" shape="NPoly" minZ="-4209" maxZ="-3209"/> <!-- [17_22_2] water zone-->
+	<zone id="15016" type="WaterZone" shape="NPoly" minZ="-7810" maxZ="-3810"/> <!-- [17_23_1] water zone-->
+	<zone id="15017" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_24_1] water zone-->
+	<zone id="15018" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [17_25_1] water zone-->
+	<zone id="15019" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_14_1] water zone-->
+	<zone id="15020" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_19_1] water zone-->
+	<zone id="15021" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_19_2] water zone-->
+	<zone id="15022" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_20_1] water zone-->
+	<zone id="15023" type="WaterZone" shape="Cuboid" minZ="-5438" maxZ="-4862"/> <!-- [18_20_2] Necropolis od Devotion - horizontal -->
+	<zone id="15024" type="WaterZone" shape="Cuboid" minZ="-5438" maxZ="-2960"/> <!-- [18_20_3] Necropolis od Devotion - vertical -->
+	<zone id="15025" type="WaterZone" shape="NPoly" minZ="-4209" maxZ="-3209"/> <!-- [18_21_1] water zone-->
+	<zone id="15026" type="WaterZone" shape="NPoly" minZ="-4689" maxZ="-3689"/> <!-- [18_21_1] water zone-->
+	<zone id="15027" type="WaterZone" shape="NPoly" minZ="-4209" maxZ="-3209"/> <!-- [18_22_1] water zone-->
+	<zone id="15028" type="WaterZone" shape="NPoly" minZ="-4209" maxZ="-3209"/> <!-- [18_22_2] water zone-->
+	<zone id="15029" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_23_1] water zone-->
+	<zone id="15030" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_23_2] water zone-->
+	<zone id="15031" type="WaterZone" shape="NPoly" minZ="-4990" maxZ="-4732"/> <!-- [18_23_3] water zone-->
+	<zone id="15032" type="WaterZone" shape="NPoly" minZ="-4990" maxZ="-4732"/> <!-- [18_23_4] water zone-->
+	<zone id="15033" type="WaterZone" shape="Cuboid" minZ="-5784" maxZ="-5207"/> <!-- [18_24_1] Necropolis of Sacrifice - horizontal -->
+	<zone id="15034" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_24_2] water zone-->
+	<zone id="15035" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_24_3] water zone-->
+	<zone id="15036" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_24_4] water zone-->
+	<zone id="15037" type="WaterZone" shape="NPoly" minZ="-4312" maxZ="-3810"/> <!-- [18_24_5] water zone-->
+	<zone id="15038" type="WaterZone" shape="NPoly" minZ="-4312" maxZ="-3810"/> <!-- [18_24_6] water zone-->
+	<zone id="15039" type="WaterZone" shape="NPoly" minZ="-4312" maxZ="-3810"/> <!-- [18_24_7] water zone-->
+	<zone id="15040" type="WaterZone" shape="Cuboid" minZ="-5660" maxZ="-3300"/> <!-- [18_24_8] Necropolis of Sacrifice - vertical -->
+	<zone id="15041" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [18_25_1] water zone-->
+	<zone id="15042" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [19_14_1] water zone-->
+	<zone id="15043" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [19_15_1] water zone-->
+	<zone id="15044" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [19_18_1] water zone-->
+	<zone id="15045" type="WaterZone" shape="Cuboid" minZ="-5550" maxZ="-3120"/> <!-- [19_18_2] Catacomb of Dark Omens - horizontal -->
+	<zone id="15046" type="WaterZone" shape="Cuboid" minZ="-5550" maxZ="-5005"/> <!-- [19_18_3] Catacomb of Dark Omens - vertical -->
+	<zone id="15047" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [19_18_4] water zone-->
+	<zone id="15048" type="WaterZone" shape="NPoly" minZ="-4814" maxZ="-3814"/> <!-- [19_19_1] water zone-->
+	<zone id="15049" type="WaterZone" shape="NPoly" minZ="-4818" maxZ="-3818"/> <!-- [19_19_2] water zone-->
+	<zone id="15050" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [19_20_1] water zone-->
+	<zone id="15051" type="WaterZone" shape="Cuboid" minZ="-5870" maxZ="-3390"/> <!-- [19_20_2] The Patriot"s Necropolis - horizontal -->
+	<zone id="15052" type="WaterZone" shape="Cuboid" minZ="-5870" maxZ="-5293"/> <!-- [19_20_3] The Patriot"s Necropolis - vertical -->
+	<zone id="15053" type="WaterZone" shape="NPoly" minZ="-10642" maxZ="-3810"/><!-- [19_21_1] water zone-->
+	<zone id="15054" type="WaterZone" shape="NPoly" minZ="-7810" maxZ="-3810"/> <!-- [19_24_1] water zone-->
+	<zone id="15055" type="WaterZone" shape="NPoly" minZ="-7810" maxZ="-3810"/> <!-- [19_24_2] water zone-->
+	<zone id="15056" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [19_25_1] water zone-->
+	<zone id="15057" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_15_1] water zone-->
+	<zone id="15058" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_18_1] water zone-->
+	<zone id="15059" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_19_1] water zone-->
+	<zone id="15060" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_20_1] water zone-->
+	<zone id="15061" type="WaterZone" shape="NPoly" minZ="-4824" maxZ="-3824"/> <!-- [20_20_2] water zone-->
+	<zone id="15062" type="WaterZone" shape="NPoly" minZ="-4824" maxZ="-3824"/> <!-- [20_20_3] water zone-->
+	<zone id="15063" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_21_1] water zone-->
+	<zone id="15064" type="WaterZone" shape="NPoly" minZ="-4818" maxZ="-3818"/> <!-- [20_22_1] water zone-->
+	<zone id="15065" type="WaterZone" shape="NPoly" minZ="-7810" maxZ="-3810"/> <!-- [20_23_1] water zone-->
+	<zone id="15066" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_24_1] water zone-->
+	<zone id="15067" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_18_1] water zone-->
+	<zone id="15068" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_19_1] water zone-->
+	<zone id="15069" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_20_1] water zone-->
+	<zone id="15070" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_20_2] water zone-->
+	<zone id="15071" type="WaterZone" shape="NPoly" minZ="-4010" maxZ="-3810"/> <!-- [21_21_1] water zone-->
+	<zone id="15072" type="WaterZone" shape="NPoly" minZ="-2407" maxZ="-2257"/> <!-- [21_21_2] water zone-->
+	<zone id="15073" type="WaterZone" shape="NPoly" minZ="-2439" maxZ="-2289"/> <!-- [21_21_3] water zone-->
+	<zone id="15074" type="WaterZone" shape="NPoly" minZ="-2439" maxZ="-2289"/> <!-- [21_21_4] water zone-->
+	<zone id="15075" type="WaterZone" shape="NPoly" minZ="-2439" maxZ="-2289"/> <!-- [21_21_5] water zone-->
+	<zone id="15076" type="WaterZone" shape="Cuboid" minZ="-6110" maxZ="-3630"/> <!-- [21_21_6] The Pilgrim"s Necropolis - horizontal -->
+	<zone id="15077" type="WaterZone" shape="Cuboid" minZ="-6110" maxZ="-5534"/> <!-- [21_21_7] The Pilgrim"s Necropolis - vertical -->
+	<zone id="15078" type="WaterZone" shape="NPoly" minZ="-3979" maxZ="-3779"/> <!-- [21_22_1] water zone-->
+	<zone id="15079" type="WaterZone" shape="Cuboid" minZ="-6078" maxZ="-3600"/> <!-- [21_22_2] Catacomb of the Heretic - vertical -->
+	<zone id="15080" type="WaterZone" shape="Cuboid" minZ="-6078" maxZ="-5501"/> <!-- [21_22_3] Catacomb of the Heretic - horizontal -->
+	<zone id="15081" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_23_1] water zone-->
+	<zone id="15082" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_23_2] water zone-->
+	<zone id="15083" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_23_3] water zone-->
+	<zone id="15084" type="WaterZone" shape="Cuboid" minZ="-5678" maxZ="-3200"/> <!-- [21_23_4] Catacomb of the Branded - vertical -->
+	<zone id="15085" type="WaterZone" shape="Cuboid" minZ="-5678" maxZ="-5101"/> <!-- [21_23_5] Catacomb of the Branded - horizontal -->
+	<zone id="15086" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_24_1] water zone-->
+	<zone id="15087" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_18_1] water zone-->
+	<zone id="15088" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_18_2] water zone-->
+	<zone id="15089" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_19_1] water zone-->
+	<zone id="15090" type="WaterZone" shape="NPoly" minZ="-4802" maxZ="-3802"/> <!-- [22_20_1] water zone-->
+	<zone id="15091" type="WaterZone" shape="NPoly" minZ="-4802" maxZ="-3802"/> <!-- [22_20_2] water zone-->
+	<zone id="15092" type="WaterZone" shape="Cuboid" minZ="-5822" maxZ="-3340"/> <!-- [22_20_3] Catacomb of the Apostate - vertical -->
+	<zone id="15093" type="WaterZone" shape="Cuboid" minZ="-5822" maxZ="-5245"/> <!-- [22_20_4] Catacomb of the Apostate - horizontal -->
+	<zone id="15094" type="WaterZone" shape="NPoly" minZ="-8808" maxZ="-3810"/> <!-- [22_22_1] water zone-->
+	<zone id="15095" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_1] water zone-->
+	<zone id="15096" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_2] water zone-->
+	<zone id="15097" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_3] water zone-->
+	<zone id="15098" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_4] water zone-->
+	<zone id="15099" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_5] water zone-->
+	<zone id="15100" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_6] water zone-->
+	<zone id="15101" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_7] water zone-->
+	<zone id="15102" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_23_8] water zone-->
+	<zone id="15103" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_24_1] water zone-->
+	<zone id="15104" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_24_2] water zone-->
+	<zone id="15105" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_24_3] water zone-->
+	<zone id="15106" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_24_4] water zone-->
+	<zone id="15107" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_24_5] water zone-->
+	<zone id="15108" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_6] water zone-->
+	<zone id="15109" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_7] water zone-->
+	<zone id="15110" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_8] water zone-->
+	<zone id="15111" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_9] water zone-->
+	<zone id="15112" type="WaterZone" shape="Cuboid" minZ="-6136" maxZ="-3630"/> <!-- [22_24_10] The Saint"s Necropolis - vertical -->
+	<zone id="15113" type="WaterZone" shape="Cuboid" minZ="-6136" maxZ="-5559"/> <!-- [22_24_11] The Saint"s Necropolis - horizontal -->
+	<zone id="15114" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_12] water zone-->
+	<zone id="15115" type="WaterZone" shape="NPoly" minZ="-4298" maxZ="-3810"/> <!-- [22_24_13] water zone-->
+	<zone id="15116" type="WaterZone" shape="NPoly" minZ="-10932" maxZ="-10916"/><!-- [22_25_1] water zone-->
+	<zone id="15117" type="WaterZone" shape="NPoly" minZ="-7249" maxZ="-4233"/> <!-- [22_25_2] water zone-->
+	<zone id="15118" type="WaterZone" shape="NPoly" minZ="-7249" maxZ="-6793"/> <!-- [22_25_3] water zone-->
+	<zone id="15119" type="WaterZone" shape="NPoly" minZ="-9384" maxZ="-8928"/> <!-- [22_25_4] water zone-->
+	<zone id="15120" type="WaterZone" shape="NPoly" minZ="-9384" maxZ="-8928"/> <!-- [22_25_5] water zone-->
+	<zone id="15121" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_25_6] water zone-->
+	<zone id="15122" type="WaterZone" shape="NPoly" minZ="-10932" maxZ="-10916"/><!-- [22_25_7] water zone-->
+	<zone id="15123" type="WaterZone" shape="NPoly" minZ="-10932" maxZ="-10916"/><!-- [22_25_8] water zone-->
+	<zone id="15124" type="WaterZone" shape="NPoly" minZ="-10932" maxZ="-10916"/><!-- [22_25_9] water zone-->
+	<zone id="15125" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_11_1] water zone-->
+	<zone id="15126" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_12_1] water zone-->
+	<zone id="15127" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_18_1] water zone-->
+	<zone id="15128" type="WaterZone" shape="NPoly" minZ="-5686" maxZ="-4686"/> <!-- [23_19_1] water zone-->
+	<zone id="15129" type="WaterZone" shape="Cuboid" minZ="-7214" maxZ="-4760"/> <!-- [23_20_1] Catacomb of the Forbidden Path - vertical -->
+	<zone id="15130" type="WaterZone" shape="Cuboid" minZ="-7238" maxZ="-6661"/> <!-- [23_20_2] Catacomb of the Forbidden Path - hoizontal -->
+	<zone id="15131" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_22_1] water zone-->
+	<zone id="15132" type="WaterZone" shape="NPoly" minZ="-3206" maxZ="-2922"/> <!-- [23_22_2] water zone-->
+	<zone id="15133" type="WaterZone" shape="NPoly" minZ="-4110" maxZ="-3810"/> <!-- [23_22_3] water zone-->
+	<zone id="15134" type="WaterZone" shape="NPoly" minZ="-4110" maxZ="-3810"/> <!-- [23_22_4] water zone-->
+	<zone id="15135" type="WaterZone" shape="NPoly" minZ="-4110" maxZ="-3810"/> <!-- [23_22_5] water zone-->
+	<zone id="15136" type="WaterZone" shape="Cuboid" minZ="-5534" maxZ="-3020"/> <!-- [23_22_6] Necropolis of Martyrdom - horizontal -->
+	<zone id="15137" type="WaterZone" shape="Cuboid" minZ="-5534" maxZ="-4900"/> <!-- [23_22_7] Necropolis of Martyrdom - vertical -->
+	<zone id="15138" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_1] water zone-->
+	<zone id="15139" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_2] water zone-->
+	<zone id="15140" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_3] water zone-->
+	<zone id="15141" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_4] water zone-->
+	<zone id="15142" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_5] water zone-->
+	<zone id="15143" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_6] water zone-->
+	<zone id="15144" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_23_7] water zone-->
+	<zone id="15145" type="WaterZone" shape="Cuboid" minZ="-6126" maxZ="-3660"/> <!-- [23_23_8] Necropolis of Worship - horizontal -->
+	<zone id="15146" type="WaterZone" shape="Cuboid" minZ="-6136" maxZ="-5520"/> <!-- [23_23_9] Necropolis of Worship - vertical -->
+	<zone id="15147" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_24_1] water zone-->
+	<zone id="15148" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [23_25_1] water zone-->
+	<zone id="15149" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [24_11_1] water zone-->
+	<zone id="15150" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [24_12_1] water zone-->
+	<zone id="15151" type="WaterZone" shape="NPoly" minZ="-2656" maxZ="-2558"/> <!-- [24_18_1] water zone-->
+	<zone id="15152" type="WaterZone" shape="NPoly" minZ="-4806" maxZ="-3806"/> <!-- [24_19_1] water zone-->
+	<zone id="15153" type="WaterZone" shape="Cuboid" minZ="-6126" maxZ="-3650"/> <!-- [24_20_1] Catacomb of the Witch - vertical -->
+	<zone id="15154" type="WaterZone" shape="Cuboid" minZ="-6126" maxZ="-5549"/> <!-- [24_20_2] Catacomb of the Witch - horizontal -->
+	<zone id="15155" type="WaterZone" shape="NPoly" minZ="-4510" maxZ="-3810"/> <!-- [24_20_3] water zone-->
+	<zone id="15156" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [24_21_1] water zone-->
+	<zone id="15157" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [25_11_1] water zone-->
+	<zone id="15158" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [25_12_1] water zone-->
+	<zone id="15159" type="WaterZone" shape="NPoly" minZ="-5495" maxZ="-4495"/> <!-- [25_12_2] water zone-->
+	<zone id="15160" type="WaterZone" shape="NPoly" minZ="-2352" maxZ="-2096"/> <!-- [25_12_3] water zone-->
+	<zone id="15161" type="WaterZone" shape="NPoly" minZ="-4673" maxZ="-4063"/> <!-- [25_14_1] water zone-->
+	<zone id="15162" type="WaterZone" shape="NPoly" minZ="-6160" maxZ="-5286"/> <!-- [25_14_2] water zone-->
+	<zone id="15163" type="WaterZone" shape="NPoly" minZ="-4310" maxZ="-3810"/> <!-- [25_20_1] water zone-->
+	<zone id="15164" type="WaterZone" shape="Cuboid" minZ="-5598" maxZ="-3120"/> <!-- [25_17_1] The Disciple"s Necropolis - vertical -->
+	<zone id="15165" type="WaterZone" shape="Cuboid" minZ="-5598" maxZ="-5021"/> <!-- [25_17_2] The Disciple"s Necropolis - horizontal -->
+	<zone id="15166" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_15_1] water zone-->
+	<zone id="15167" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [20_16_1] water zone-->
+	<zone id="15168" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_15_1] water zone-->
+	<zone id="15169" type="WaterZone" shape="NPoly" minZ="-4814" maxZ="-3814"/> <!-- [21_16_1] water zone-->
+	<zone id="15170" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [21_17_1] water zone-->
+	<zone id="15171" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_16_1] water zone-->
+	<zone id="15172" type="WaterZone" shape="NPoly" minZ="-2919" maxZ="-2663"/> <!-- [22_16_2] water zone-->
+	<zone id="15173" type="WaterZone" shape="NPoly" minZ="-2919" maxZ="-2663"/> <!-- [22_16_3] water zone-->
+	<zone id="15174" type="WaterZone" shape="NPoly" minZ="-3438" maxZ="-3182"/> <!-- [22_16_4] water zone-->
+	<zone id="15175" type="WaterZone" shape="NPoly" minZ="-3534" maxZ="-3278"/> <!-- [22_16_5] water zone-->
+	<zone id="15176" type="WaterZone" shape="NPoly" minZ="-3447" maxZ="-3191"/> <!-- [22_16_6] water zone-->
+	<zone id="15177" type="WaterZone" shape="NPoly" minZ="-3447" maxZ="-3191"/> <!-- [22_16_7] water zone-->
+	<zone id="15178" type="WaterZone" shape="NPoly" minZ="-3447" maxZ="-3191"/> <!-- [22_16_8] water zone-->
+	<zone id="15179" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_9] water zone-->
+	<zone id="15180" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_10] water zone-->
+	<zone id="15181" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_11] water zone-->
+	<zone id="15182" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_12] water zone-->
+	<zone id="15183" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_13] water zone-->
+	<zone id="15184" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_14] water zone-->
+	<zone id="15185" type="WaterZone" shape="NPoly" minZ="-3534" maxZ="-3278"/> <!-- [22_16_15] water zone-->
+	<zone id="15186" type="WaterZone" shape="NPoly" minZ="-2638" maxZ="-2382"/> <!-- [22_16_16] water zone-->
+	<zone id="15187" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_17_1] water zone-->
+	<zone id="15188" type="WaterZone" shape="NPoly" minZ="-4810" maxZ="-3810"/> <!-- [22_17_2] water zone-->
+
+<!-- Damage zones -->
+	<zone id="20000" type="DamageZone" shape="NPoly" minZ="-6519" maxZ="-6319"/>
+
+<!-- Poison zones -->
+	<zone id="20050" type="PoisonZone" shape="NPoly" minZ="-4468" maxZ="-4118"/>
+	<zone id="20051" type="PoisonZone" shape="NPoly" minZ="-7260" maxZ="-7010"> <!-- [25_15] conquerors_weakness-->
+		<stat name="skillId" val="4146"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20052" type="PoisonZone" shape="NPoly" minZ="-7260" maxZ="-7010"> <!-- [25_15] conquerors_pddown-->
+		<stat name="skillId" val="4145"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20053" type="PoisonZone" shape="NPoly" minZ="-7260" maxZ="-7010"> <!-- [25_15] conquerors_poison-->
+		<stat name="skillId" val="4148"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20054" type="PoisonZone" shape="NPoly" minZ="-7260" maxZ="-7010"> <!-- [25_15] conquerors_nonheal-->
+		<stat name="skillId" val="4624"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20055" type="PoisonZone" shape="NPoly" minZ="-7265" maxZ="-7015"> <!-- [25_15] lords_weakness-->
+		<stat name="skillId" val="4146"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20056" type="PoisonZone" shape="NPoly" minZ="-7265" maxZ="-7015"> <!-- [25_15] lords_pddown-->
+		<stat name="skillId" val="4145"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20057" type="PoisonZone" shape="NPoly" minZ="-7265" maxZ="-7015"> <!-- [25_15] lords_poison-->
+		<stat name="skillId" val="4148"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20058" type="PoisonZone" shape="NPoly" minZ="-7265" maxZ="-7015"> <!-- [25_15] lords_nonheal-->
+		<stat name="skillId" val="4624"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20059" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] savants_weakness-->
+		<stat name="skillId" val="4146"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20060" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] savants_pddown-->
+		<stat name="skillId" val="4145"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20061" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] savants_poison-->
+		<stat name="skillId" val="4148"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20062" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] savants_nonheal-->
+		<stat name="skillId" val="4624"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20063" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] magistrates_weakness-->
+		<stat name="skillId" val="4146"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20064" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] magistrates_pddown-->
+		<stat name="skillId" val="4145"/>
+		<stat name="skillLvl" val="3"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20065" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] magistrates_poison-->
+		<stat name="skillId" val="4148"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+              <stat name="reuse" val="6000"/>
+	</zone>
+	<zone id="20066" type="PoisonZone" shape="NPoly" minZ="-7262" maxZ="-7012"> <!-- [25_15] magistrates_nonheal-->
+		<stat name="skillId" val="4624"/>
+		<stat name="skillLvl" val="9"/>
+		<stat name="chance" val="70"/>
+        <stat name="reuse" val="6000"/>
+	</zone>
+<!-- Swamp zones -->
+	<zone id="20100" type="SwampZone" shape="NPoly" minZ="-4468" maxZ="-4118"/>
+	
+	<!-- CoT -->
+	<!--
+	9348, -133860, -1131, 49781
+	28282, -102843, 437, 11718
+	-->
+	<zone id="60000" type="FarmZone" shape="Cuboid" minZ="-5320" maxZ="5120"/> 
+	<!-- Ceme -->
+	<!--
+	155348, 34473, -3229, 26980
+	193832, -3531, 1116, 54238
+	-->
+	<zone id="60001" type="FarmZone" shape="Cuboid" minZ="-5320" maxZ="5120"/> 
+	<!-- FT -->
+	<zone id="60002" type="FarmZone" shape="Cuboid" minZ="-5320" maxZ="5120"/>
+	<!--ft-->
+	<zone id="50000" type="FarmZone" shape="Cuboid" minZ="-7000" maxZ="4200">
+		<stat name="name" val="Forgotten Temple"/>
+	</zone>
+	<!-- Frintezza -->
+	<zone id="12005" type="KoreanZone" shape="NPoly" minZ="-5120" maxZ="-2500"/>
+	<!-- Pagan's Temple -->
+	<zone id="60003" type="PaganZone" shape="Cylinder" minZ="-25320" maxZ="-5120" rad="210447"/> 
+	<!--Rod-->
+	<zone id="60004" type="FarmZone" shape="Cylinder" minZ="-5000" maxZ="1000" rad="10000"/> 
+	
+		<!--Rod-->
+	<zone id="60005" type="FarmZone" shape="Cylinder" minZ="-5000" maxZ="3000" rad="15000"/> 
+	<!--Elven Fortress-->
+	<zone id="21000" type="FarmZone" shape="Cuboid" minZ="-7000" maxZ="4200">
+		<stat name="name" val="Elven Fortress"/>
+	</zone>
+
+	<zone id="70000" type="KoreanZone" shape="Cuboid" minZ="-3600" maxZ="-2700">
+		<stat name="allowShops" val="false"/>
+		<stat name="isPeaceZone" val="false"/>
+	</zone>
+	<zone id="70001" type="KoreanZone" shape="Cuboid" minZ="-2400" maxZ="-2200"> 
+		<stat name="allowShops" val="false"/>
+		<stat name="isPeaceZone" val="false"/>
+	</zone>
+</list>

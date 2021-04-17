@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="48100" name="Shugos Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48101" name="Ether Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48102" name="Israphel Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48103" name="Ariel Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48104" name="Daevas Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48105" name="Asphel Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48106" name="Interdica Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48107" name="Teobomos Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48108" name="Empyrean Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="48109" name="Azariel Hammer">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="4" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13034" name="Sprite's Sword">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="72" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13035" name="Enhanced Sprite's Sword">
+  <for>
+    <set val="127" order="0x08" stat="pAtk"/>
+    <set val="82" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13036" name="Sword of Ice and Fire">
+  <for>
+    <set val="147" order="0x08" stat="pAtk"/>
+    <set val="92" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13042" name="Ancient Legacy Sword">
+  <for>
+    <set val="259" order="0x08" stat="pAtk"/>
+    <set val="143" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13043" name="Enhanced Ancient Legacy Sword">
+  <for>
+    <set val="279" order="0x08" stat="pAtk"/>
+    <set val="153" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13044" name="Complete Ancient Legacy Sword">
+  <for>
+    <set val="299" order="0x08" stat="pAtk"/>
+    <set val="163" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13052" name="Spear of Silenos">
+  <for>
+    <set val="251" order="0x08" stat="pAtk"/>
+    <set val="161" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13053" name="Enhanced Spear of Silenos">
+  <for>
+    <set val="271" order="0x08" stat="pAtk"/>
+    <set val="171" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13054" name="Complete Spear of Silenos">
+  <for>
+    <set val="291" order="0x08" stat="pAtk"/>
+    <set val="181" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13061" name="Exclusive to Monsters (Baroness' Employee)">
+  <for>
+    <set val="267" order="0x08" stat="pAtk"/>
+    <set val="202" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13062" name="Exclusive to Monsters (Employee's Friend)">
+  <for>
+    <set val="442" order="0x08" stat="pAtk"/>
+    <set val="163" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,34 @@
+<html><title>Account Details: %account%</title><body>
+<center>
+<table width=270 border=0 bgcolor="666666">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Game" action="bypass -h admin_admin2" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Effects" action="bypass -h admin_admin3" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Server" action="bypass -h admin_admin4" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Events" action="bypass -h admin_event_manage" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+<table width=270>
+<tr>
+<td>Parameters:</td>
+<td><edit var="qbox" width=100 height=15></td>
+<td><button value="Help" action="bypass -h admin_help help/accountinfo.htm" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Back" action="bypass -h admin_current_player" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+<table width=270>
+<tr>
+<td><button value="Ban Account" action="bypass -h admin_ban_acc %account%" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Reset Account" action="bypass -h admin_unban_acc %account%" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Custom Level" action="bypass -h admin_account_level %account% $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br><br>
+</center>
+Account: <font color="LEVEL">%account%</font><br>
+Another characters in the %player%'s account:<br>
+%characters%
+</body></html>

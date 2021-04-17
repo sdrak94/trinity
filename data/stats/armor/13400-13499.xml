@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13415" name="Frog Hat">
+  <for/>
+</item>
+<item id="13416" name="Chicken Hat">
+  <for/>
+</item>
+<item id="13429" name="Teddy Bear Hat (Event)">
+  <for/>
+</item>
+<item id="13430" name="Piggy Hat (Event)">
+  <for/>
+</item>
+<item id="13431" name="Jester Hat (Event)">
+   <for/>
+</item>
+<item id="13432" name="Vesper Breastplate">
+  <for>
+    <add val="270" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13433" name="Vesper Leather Breastplate">
+  <for>
+    <add val="202" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13434" name="Vesper Tunic">
+  <for>
+    <add val="135" order="0x10" stat="pDef"/>
+    <add val="637" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13435" name="Titanium Breastplate">
+  <for>
+    <add val="318" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13436" name="Titanium Leather Breastplate">
+  <for>
+    <add val="238" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13437" name="Titanium Tunic">
+  <for>
+    <add val="160" order="0x10" stat="pDef"/>
+    <add val="637" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13438" name="Vesper Gaiters">
+  <for>
+    <add val="168" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13439" name="Vesper Gauntlet">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13440" name="Vesper Boots">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13441" name="Vesper Leather Leggings">
+  <for>
+    <add val="126" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13442" name="Vesper Leather Gloves">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13443" name="Vesper Leather Boots">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13444" name="Vesper Stockings">
+  <for>
+    <add val="84" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13445" name="Vesper Gloves">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13446" name="Vesper Shoes">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13448" name="Titanium Gaiters">
+  <for>
+    <add val="188" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13449" name="Titanium Gauntlet">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13450" name="Titanium Boots">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13451" name="Titanium Leather Leggings">
+  <for>
+    <add val="140" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13452" name="Titanium Leather Gloves">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13453" name="Titanium Leather Boots">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13454" name="Titanium Stockings">
+  <for>
+    <add val="99" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13455" name="Titanium Gloves">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13456" name="Titanium Shoes">
+  <for>
+    <add val="82" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13472" name="Circlet of Negation">
+   <for>
+      <set val="1" order="0x40" stat="negateEle"/>
+	  <add val="100" order="0x40" stat="pDef"/>
+	  <add val="100" order="0x40" stat="mDef"/>
+   </for>
+</item>
+<item id="13473" name="Circlet of Counterpoise">
+   <for>
+      <mul val="3" order="0x30" stat="mAtk">
+	    <not>
+		 <player class_id_restriction="136, 135, 134, 133, 132, 131, 130, 129, 128"/>
+		</not>
+	  </mul>
+	  <mul val="2" order="0x30" stat="giveHp"/>
+	  <add val="100" order="0x40" stat="mDef"/>
+	  <mul val="0.1" order='0x40' stat='mAtkSpd'/>
+   </for>
+</item>
+<item id="13474" name="Circlet of Anger">
+   <for>
+       <add val="5" order="0x10" stat="STR"/>
+	   <sub val="2" order="0x10" stat="INT"/>
+	   <sub val="60" order="0x40" stat="accCombat"/>
+	   <basemul val="0.4" order="0x40" stat="pAtk"/>
+	   <mul val="1.25" order="0x50" stat="pReuse"/>
+	   <add val="80" order="0x80" stat="pDef"/>
+	   <add val="80" order="0x80" stat="mDef"/>
+  </for>
+</item>
+<item id="13475" name="Longshotter">
+  <for>
+    <add val="300" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	 </add>
+	 <add val="150" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	 </add>
+	 <basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+	   <add val="90" order="0x80" stat="pDef"/>
+	   <add val="90" order="0x80" stat="mDef"/>
+  </for>
+</item>
+<item id="13476" name="Farcaster">
+   <for>
+    <add val="150" order="0x80" stat="mAtkRange">
+        <not>
+          <using kind="Light,Heavy"/>
+        </not>
+		</add>
+	<sub val="150" order="0x80" stat="mAtkRange">
+	<and>
+		<using skillid="246"/>
+        <not>
+          <using kind="Light,Heavy"/>
+        </not>
+		</and>
+		</sub>
+	<sub val="100" order="0x80" stat="mAtkRange">
+		<using skillid="246"/>
+		</sub>
+	<add val="100" order="0x80" stat="mAtkRange"/>
+	<basemul val="0.05" order="0x40" stat="mAtkSpd"/>
+	 <add val="90" order="0x80" stat="pDef"/>
+	 <add val="90" order="0x80" stat="mDef"/>
+  </for>
+</item>
+<item id="13477" name="Hyper Flinger">
+  <for>
+      <mul val="0.4" order="0x90" stat="pAtkRange">
+	   <using kind="Bow,Crossbow"/>
+	 </mul>
+	 <add val="100" order="0x40" stat="pAtkSpd">
+	   <using kind="Bow,Crossbow"/>
+	 </add>
+	 <add val="10" order="0x40" stat="runSpd">
+	   <using kind="Bow,Crossbow"/>
+	 </add>
+	 <add val="5" order="0x40" stat="doubleShot">
+	   <using kind="Bow,Crossbow"/>
+	 </add>
+	 <mul val="0.85" order="0x50" stat="atkReuse">
+	   <using kind="Bow,Crossbow"/>
+	 </mul>
+	 <add val="90" order="0x80" stat="pDef"/>
+	 <add val="90" order="0x80" stat="mDef"/>
+   </for>
+</item>
+<item id="13478" name="Kindred Pledge">
+  <for>
+    <basemul val="0.15" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.20" order="0x40" stat="pAtk"/>
+    <add val="50" order='0x40' stat='rCrit'/>
+  </for>
+</item>
+<item id="13479" name="Harvest Wind Circlet">
+   <for>
+    <basemul val="0.17" order="0x40" stat="mAtkSpd"/>
+    <basemul val="0.35" order="0x40" stat="mAtk"/>
+    <add val='60' order='0x40' stat='mCritRate'/>
+  </for>
+</item>
+<item id="13480" name="Circlet of Distortion">
+   <for>
+    <add val="100" order="0x40" stat="bowAOERadius"/>
+    <mul val="0.85" order="0x40" stat="pAtkRange"/>
+    <sub val='50' order='0x40' stat='pAtkSpd'/>
+    <sub val='90' order='0x40' stat='pDef'/>
+    <sub val='90' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="13481" name="Crushing Circlet">
+    <for>
+     <add val="0.1" order="0x40" stat="damHeavy"/>
+	 <basemul val="0.25" order="0x40" stat="pAtk">
+	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
+	 </basemul>
+	 <sub val="0.15" order="0x40" stat="pReuse">
+	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
+	 </sub>
+      <mul order="0x30" stat="bluntWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="bigBluntWpnVuln" val="0.90"/>  
+      <mul order="0x30" stat="poleWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="fistWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualFistWpnVuln" val="0.90"/>
+  </for>
+</item>
+<item id="13482" name="Piercing Circlet">
+   <for>
+	 
+	 <add val="0.08" order="0x40" stat="damLight"/>
+	 <basemul val="0.25" order="0x40" stat="pAtk">
+	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
+	 </basemul>
+	 <sub val="0.15" order="0x40" stat="pReuse">
+	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
+	 </sub>
+      <mul order="0x30" stat="daggerWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualDaggerWpnVuln" val="0.90"/>
+	  <mul order="0x30" stat="bowWpnVuln" val="0.90"/>
+	  <mul order="0x30" stat="crossbowWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="rapierWpnVuln" val="0.90"/>
+  </for>
+</item>
+<item id="13483" name="Shredding Circlet">
+   <for>
+    <add val="0.08" order="0x40" stat="damRobe"/>
+	 <basemul val="0.25" order="0x40" stat="pAtk">
+	   <using kind="Sword,Big Sword,Dual Sword,Ancient"/>
+	 </basemul>
+	 <sub val="0.15" order="0x40" stat="pReuse">
+	   <using kind="Sword,Big Sword,Dual Sword,Ancient"/>
+	 </sub>
+	  <mul order="0x30" stat="swordWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="bigSwordWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="ancientWpnVuln" val="0.90"/>
+  </for>
+</item>
+
+
+<!--<item id="13484" name="Circlet of Splash Damage">
+   <for>
+   
+	<mul val="0.6" order="0x50" stat="pvpPhysDmg">
+			<not>
+		<player target_count="1"/>
+			</not>
+	</mul>
+	<mul val="0.6" order="0x50" stat="pvmDam">
+			<not>
+		<player target_count="1"/>
+			</not>
+	</mul>
+
+	
+	<add val="1" order="0x40" stat="atkCountMax"/>
+	 
+</for>	  
+</item>-->
+
+
+
+
+
+
+
+
+
+
+<item id="13484" name="Circlet of Splash Damage">
+   <for>
+   
+	<mul val="0.60" order="0x50" stat="pvmDam">
+			<and>
+			<not>
+		<player target_count="1"/>
+		           </not>
+			<not>
+		<player class_id_restriction="89,107,100"/>
+           </not>
+			</and>
+	</mul>
+	<mul val="0.60" order="0x50" stat="pvpPhysDmg">
+			<and>
+			<not>
+		<player target_count="1"/>
+		           </not>
+			<not>
+		<player class_id_restriction="89,107,100"/>
+           </not>
+			</and>
+	</mul>
+
+	<mul val="0.60" order="0x50" stat="pvpPhysDmg">
+	<and>
+	<not>
+		<player target_count="1"/>
+		</not>
+	<player class_id_restriction="100"/>
+	<using kind="Shield"/>
+	<using kind="Heavy"/>
+	</and>
+	</mul>
+	
+	<mul val="0.75" order="0x50" stat="pvpPhysDmg">
+	<and>
+	<not>
+		<player target_count="2"/>
+		</not>
+	<using kind="Heavy"/>
+	<player class_id_restriction="100"/>
+	   <not>
+			<using kind="Shield"/>
+			</not>
+	</and>
+	</mul>
+	
+		<mul val="0.75" order="0x50" stat="pvpPhysDmg">
+		<and>
+	<not>
+		<player target_count="2"/>
+		</not>
+			<player class_id_restriction="100"/>
+			<player hasSkill="10001"/>
+			<using kind="Light"/>
+			<using kind="Shield"/>
+		</and>
+	</mul>
+	
+	<mul val="0.85" order="0x50" stat="pvpPhysDmg">
+		<and>
+	    <not>
+		<player target_count="3"/>
+		</not>
+			<player class_id_restriction="100"/>
+			<player hasSkill="10001"/>
+			<using kind="Light"/>
+		<not>
+			<using kind="Shield"/>
+			</not>
+		</and>
+	</mul>
+	
+
+	
+	<mul val="0.60" order="0x50" stat="pvmDam">
+	<and>
+	<not>
+		<player target_count="1"/>
+		</not>
+	<player class_id_restriction="100"/>
+	<using kind="Shield"/>
+	<using kind="Heavy"/>
+	</and>
+	</mul>
+	
+	<mul val="0.75" order="0x50" stat="pvmDam">
+	<and>
+	<not>
+		<player target_count="2"/>
+		</not>
+	<using kind="Heavy"/>
+	<player class_id_restriction="100"/>
+	   <not>
+			<using kind="Shield"/>
+			</not>
+	</and>
+	</mul>
+	
+		<mul val="0.75" order="0x50" stat="pvmDam">
+		<and>
+	<not>
+		<player target_count="2"/>
+		</not>
+			<player class_id_restriction="100"/>
+			<player hasSkill="10001"/>
+			<using kind="Light"/>
+			<using kind="Shield"/>
+		</and>
+	</mul>
+	
+	<mul val="0.85" order="0x50" stat="pvmDam">
+		<and>
+	<not>
+		<player target_count="3"/>
+		</not>
+			<player class_id_restriction="100"/>
+			<player hasSkill="10001"/>
+			<using kind="Light"/>
+		<not>
+			<using kind="Shield"/>
+			</not>
+		</and>
+	</mul>
+	
+	<mul val="0.75" order="0x50" stat="pvpPhysDmg">
+	<and>
+	<player class_id_restriction="107"/>
+		<not>
+			<player target_count="2"/>
+			</not>
+			</and>
+	</mul>
+	
+	<mul val="0.75" order="0x50" stat="pvmDam">
+	<and>
+	<player class_id_restriction="107"/>
+		<not>
+			<player target_count="2"/>
+			</not>
+			</and>
+	</mul>-->	  
+     <add val="20" order="0x40" stat="pAtkRange">
+		 	<not>
+	       <player class_id_restriction="89,107,100"/>
+		   </not>
+	 </add>
+	<set val="2" order="0x40" stat="atkCountMax">
+	<and>
+	<not>
+	<player class_id_restriction="89,107,100"/>
+	</not>
+	<using kind="Pole"/>
+	</and>
+	</set>
+		<add val="1" order="0x40" stat="atkCountMax"/>
+	<add val="1" order="0x40" stat="atkCountMax">
+	   <game chance="10"/>
+	 </add>
+	 
+	  <add val="10" order="0x40" stat="aoePercent"/> 
+</for>	  
+</item>
+<item id="13485" name="Foreguard">
+   <for>
+    <add val="1" order="0x10" stat="STR"/>
+    <sub val="0.06" order="0x40" stat="critVuln"/>
+    <set val="100" order="0x40" stat="skillCritDamEvas"/>
+	<set val="100" order="0x40" stat="mCritDamEvas"/>
+	<add val="10" order="0x40" stat="overpower"/>
+	<add val="100" order="0x80" stat="pDef"/>
+	<add val="100" order="0x80" stat="mDef"/>
+  </for>
+</item>
+<item id="13486" name="Solace Crest">
+  <for>
+    <mul val="0.5" order="0x80" stat="stunVuln"/>
+	<mul val="0.5" order="0x80" stat="bleedVuln"/>
+	<mul val="0.5" order="0x80" stat="derangementVuln"/>
+	<mul val="0.5" order="0x80" stat="rootVuln"/>
+	<mul val="0.5" order="0x80" stat="sleepVuln"/>
+	<mul val="0.5" order="0x80" stat="poisonVuln"/>
+	<mul val="0.5" order="0x80" stat="debuffVuln"/>
+	<mul val="0.5" order="0x80" stat="paralyzeVuln"/>
+	<add val="100" order="0x80" stat="pDef"/>
+	<add val="100" order="0x80" stat="mDef"/>
+	<add val="100" order="0x80" stat="sDef"/>
+	<add val="1" order="0x40" stat="lessDebuff"/>
+	<add val="0.15" order="0x40" stat="gainHp"/>
+  </for>
+</item>
+<item id="13487" name="Circlet of Swiftness">
+  <for>
+  	<add val="4" order="0x40" stat="extraHit"/>
+	<basemul val="0.15" order="0x40" stat="pAtkSpd"/>
+	<mul val="1.25" order="0x30" stat="rCrit"/>
+	<add order="0x40" stat="critMax" val="50"/>
+  </for>
+</item>
+<item id="13488" name="Birthday Hat">
+  <for/>
+</item>
+<item id="13489" name="Halloween Hat">
+    <for>
+		<mul val="1.15" order="0x80" stat="rExp"/>
+		<add val="1" order="0x80" stat="lessDebuff"/>
+		<add val="45" order="0x80" stat="knockbackRes"/>
+		<mul val="0.7" order="0x80" stat="derangementVuln"/>
+  </for>
+</item>
+<item id="13490" name="Arrow-Pierced Apple">
+  <for/>
+</item>
+<item id="13491" name="Popped-Out Eye">
+  <for/>
+</item>
+<item id="13492" name="Graduation Cap">
+<for>
+   <mul val="0.80" order="0x30" stat="debuffVuln"/>
+   <add order="0x40" stat="mAtkSpd" val="50"/>
+   <mul val="0.85" order="0x30" stat="MpConsume"/>
+   <add val="0.10" order="0x40" stat="giveHp"/>
+	<sub val="0.15" order="0x40" stat="mReuse"/>
+	<basemul val="0.10" order="0x30" stat="maxHp"/>
+	<basemul val="0.15" order="0x30" stat="maxMp"/>
+  </for>
+</item>
+<item id="13493" name="Refined Carnival Circlet">
+  <for/>
+</item>
+<item id="13494" name="Refined Angel Ring">
+  <for/>
+</item>
+<item id="13495" name="Refined Devil Horn">
+  <for/>
+</item>
+<item id="13496" name="Refined Pirate Hat">
+  <for/>
+</item>
+<item id="13497" name="Event - Refined Chick Hat">
+  <for/>
+</item>
+<item id="13498" name="Refined Wizard Hat">
+  <for/>
+</item>
+<item id="13499" name="Refined Jester Hat">
+  <for>
+    <mul val="0.1" order="0x50" stat="derangementVuln"/>
+    <add val="120" order="0x40" stat="pAtkSpd"/>
+	<add val="150" order="0x40" stat="mAtkSpd"/>
+	<sub val="1" order="0x10" stat="INT"/>
+	<sub val="1" order="0x10" stat="STR"/>
+	<add val="3" order="0x40" stat="pSkillEvas"/>
+	<add val="3" order="0x40" stat="mSkillEvas"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<sub val="0.10" order="0x40" stat="pReuse"/>
+	<sub val="0.10" order="0x40" stat="mReuse"/>
+	<sub val="1200" order="0x40" stat="skillReuseChange"/>
+	<sub val="0.25" order="0x40" stat="giveHp"/>
+	<mul val="1.25" order="0x30" stat="MpConsume"/>
+  </for>
+</item>
+</list>

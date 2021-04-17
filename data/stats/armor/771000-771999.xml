@@ -1,0 +1,281 @@
+<list>
+	<!--dressme-->
+	<item id='771000' name="Purple Dread Helmet">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771001' name="Purple Dread Breastplate">
+		<for>
+			<add val='337' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771002' name="Purple Dread Gaiters">
+		<for>
+			<add val='185' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771003' name="Purple Dread Gauntlets">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771004' name="Purple Dread Greaves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+	<item id='771010' name="Purple Dread Chain Coif">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771011' name="Purple Dread Chain Cuirass">
+		<for>
+			<add val='252' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771012' name="Purple Dread Chain Pants">
+		<for>
+			<add val='139' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771013' name="Purple Dread Gloves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771014' name="Purple Dread Boots">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771020' name="Purple Dread Cap">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771021' name="Purple Dread Tunic">
+		<for>
+			<add val='168' order='0x10' stat='pDef' />
+			<add val="637" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771022' name="Purple Dread Stockings">
+		<for>
+			<add val='131' order='0x10' stat='pDef' />
+			<add val="256" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771023' name="Purple Dread Mittens">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='771024' name="Purple Dread Shoes">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+	
+	<item id='781000' name="Red Dread Helmet">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781001' name="Red Dread Breastplate">
+		<for>
+			<add val='337' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781002' name="Red Dread Gaiters">
+		<for>
+			<add val='185' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781003' name="Red Dread Gauntlets">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781004' name="Red Dread Greaves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+	<item id='781010' name="Red Dread Chain Coif">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781011' name="Red Dread Chain Cuirass">
+		<for>
+			<add val='252' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781012' name="Red Dread Chain Pants">
+		<for>
+			<add val='139' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781013' name="Red Dread Gloves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781014' name="Red Dread Boots">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781020' name="Red Dread Cap">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781021' name="Red Dread Tunic">
+		<for>
+			<add val='168' order='0x10' stat='pDef' />
+			<add val="637" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781022' name="Red Dread Stockings">
+		<for>
+			<add val='131' order='0x10' stat='pDef' />
+			<add val="256" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781023' name="Red Dread Mittens">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='781024' name="Red Dread Shoes">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+	
+	<item id='791000' name="Blue Dread Helmet">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791001' name="Blue Dread Breastplate">
+		<for>
+			<add val='337' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791002' name="Blue Dread Gaiters">
+		<for>
+			<add val='185' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791003' name="Blue Dread Gauntlets">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791004' name="Blue Dread Greaves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+	<item id='791010' name="Blue Dread Chain Coif">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791011' name="Blue Dread Chain Cuirass">
+		<for>
+			<add val='252' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791012' name="Blue Dread Chain Pants">
+		<for>
+			<add val='139' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791013' name="Blue Dread Gloves">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791014' name="Blue Dread Boots">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791020' name="Blue Dread Cap">
+		<for>
+			<add val='133' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791021' name="Blue Dread Tunic">
+		<for>
+			<add val='168' order='0x10' stat='pDef' />
+			<add val="637" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791022' name="Blue Dread Stockings">
+		<for>
+			<add val='131' order='0x10' stat='pDef' />
+			<add val="256" order="0x40" stat="maxMp"/>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791023' name="Blue Dread Mittens">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='791024' name="Blue Dread Shoes">
+		<for>
+			<add val='90' order='0x10' stat='pDef' />
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>	
+</list>

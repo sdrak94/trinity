@@ -1,0 +1,62 @@
+<html><title>Token Machine - Enter Transaction #</title>
+<body>
+<center>
+<table>
+<tr>
+<td><font color="0099FF">Enter the email you had use in the previous season to claim your refunds "[40%]".</font></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td>Please enter your Email:</td>
+</tr>
+<tr>
+<td><multiedit var="email" width=232 height=15></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td align=center><button action="bypass -h npc_%objectId%_donation_refund_email $email" value="Confirm" width=160 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td><font color="0099FF">If you already received the email then apply the code bellow.</font></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td>Please enter your Code:</td>
+</tr>
+<tr>
+<td><multiedit var="code" width=232 height=15></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td align=center><button action="bypass -h npc_%objectId%_donation_refund $code" value="Confirm" width=160 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+
+
+
+
+<table>
+<tr><td></td></tr>
+<tr>
+<td align=center><button action="bypass -h npc_%objectId%_Link merchant/99999.htm" value="Cancel" width=120 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+

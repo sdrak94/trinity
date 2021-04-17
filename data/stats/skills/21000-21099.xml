@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="21000" levels="1" name="Release Seal on Agathion - Majo">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1501"/>
+</skill>
+<skill id="21001" levels="1" name="Release Seal on Agathion - Gold Majo">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1502"/>
+</skill>
+<skill id="21002" levels="1" name="Release Seal on Agathion - Black Majo">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1503"/>
+</skill>
+<skill id="21003" levels="1" name="Release Seal on Agathion - Plaipitak">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1504"/>
+</skill>
+<skill id="21004" levels="1" name="Wind Walk">
+  <!-- Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="21005" levels="3" name="Agility">
+  <!-- Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="21006" levels="1" name="Large Firework Effect">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21007" levels="1" name="Ability of Doubt">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21008" levels="1" name="Release Seal on Agathion - Baby Panda">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1505"/>
+</skill>
+<skill id="21009" levels="1" name="Release Seal on Agathion - Bamboo Panda">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1506"/>
+</skill>
+<skill id="21010" levels="1" name="Release Seal on Agathion - Sexy Panda">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="npcId" val="1507"/>
+</skill>
+<skill id="21011" levels="1" name="Energy Recovery">
+  <!-- Recovers energy when acquiring Exp. for 20 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="21012" levels="1" name="Energy Recovery">
+  <!-- Recovers energy when acquiring Exp. for 20 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="21013" levels="1" name="Energy Recovery">
+  <!-- Recovers energy when acquiring Exp. for 20 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="21014" levels="1" name="Scissors">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="21015" levels="1" name="Rock">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="21016" levels="1" name="Paper">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="21017" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21018" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21019" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21020" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21021" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21022" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21023" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21024" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21025" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21026" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21027" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21028" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21029" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21030" levels="1" name="Holiday Dream Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21031" levels="1" name="Agathion Seal Release - Charming Cupid">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1508"/>
+</skill>
+<skill id="21032" levels="1" name="Agathion Seal Release - Naughty Cupid">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1509"/>
+</skill>
+  <skill id="21033" levels="1" name="Release Seal on Agathion - White Maneki Neko">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1510"/>
+</skill>
+  <skill id="21034" levels="1" name="Release Seal on Agathion - Black Maneki Neko">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1511"/>
+</skill>
+  <skill id="21035" levels="1" name="Release Seal on Agathion - Brown Maneki Neko">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1512"/>
+</skill>
+  <skill id="21036" levels="1" name="Release Seal on Agathion - One-eyed Bat Drove">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1513"/>
+</skill>
+  <skill id="21037" levels="1" name="Release Seal on Agathion - Pegasus">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1514"/>
+</skill>
+  <skill id="21038" levels="1" name="Release Seal on Agathion - Yellow-robed Tojigong">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1515"/>
+</skill>
+  <skill id="21039" levels="1" name="Release Seal on Agathion - Blue-robed Tojigong">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1516"/>
+</skill>
+  <skill id="21040" levels="1" name="Release Seal on Agathion - Yellow-robed Tojigong">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+   <set name="npcId" val="1517"/>
+</skill>
+  <skill id="21041" levels="1" name="Release Seal on Agathion - Bugbear">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1518"/>
+</skill>
+<skill id="21042" levels="1" name="Baguette's Blessing">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21043" levels="1" name="Agathion Seal Cancel - Red Sumo Wrestler">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1519"/>
+</skill>
+<skill id="21044" levels="1" name="Agathion Seal Cancel - Blue Sumo Wrestler Agathion">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1520"/>
+</skill>
+<skill id="21045" levels="1" name="Agathion Seal Cancel - Great Sumo Match">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1521"/>
+</skill>
+<skill id="21046" levels="1" name="Agathion Seal Cancel - Button-Eyed Bear Doll">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1522"/>
+</skill>
+<skill id="21047" levels="1" name="Agathion Seal Cancel - God of Fortune">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1523"/>
+</skill>
+<skill id="21048" levels="1" name="Agathion Seal Cancel - Dryad">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1524"/>
+</skill>
+<skill id="21049" levels="1" name="Agathion Seal Cancel - Wonboso">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1525"/>
+</skill>
+<skill id="21050" levels="1" name="Agathion Seal Cancel - Daewoonso">
+  <!-- Update by rocknow -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="1526"/>
+</skill>
+<skill id="21051" levels="1" name="Steam Beatle Mount">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21052" levels="1" name="Bless the Body">
+  <!-- Increases Max HP by 25% for 30 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21053" levels="1" name="Bless the Soul">
+  <!-- Increases Max MP by 25% for 30 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21054" levels="1" name="Blessed Resurrection Ability">
+  <!-- Can use the ability of Blessed Resurrection. Reuse Delay 12 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21055" levels="1" name="Wind Walk">
+  <!-- Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21056" levels="1" name="Agility">
+  <!-- Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21057" levels="1" name="Reflect">
+  <!-- For 5 minutes, returns 20% of the damage back to the enemy. Excludes skill and long-range attacks. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21058" levels="1" name="Mana Regeneration">
+  <!-- Increases MP Regeneration by 3% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21059" levels="1" name="Greater Heal">
+  <!-- Recovers HP by 444 and increases HP Recovery by 30 for 15 seconds. Reuse Delay 4 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21060" levels="1" name="Death Whisper">
+  <!-- Increases Critical attack power by 35% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21061" levels="1" name="Agility">
+  <!-- Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21062" levels="1" name="Wild Magic">
+  <!-- For 5 minutes, increases by 2% the occurrence rate of damage that is caused by damage magic. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21063" levels="1" name="Wind Walk">
+  <!-- Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21064" levels="1" name="Mana Regeneration">
+  <!-- Increases MP Regeneration by 3% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21065" levels="1" name="Reflect">
+  <!-- For 5 minutes, returns 20% of the damage back to the enemy. Excludes skill and long-range attacks. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21066" levels="1" name="Energy Recovery">
+  <!-- Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21067" levels="1" name="Blessed Escape Ability">
+  <!-- Can use the ability of Blessed Return. Reuse Delay 12 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21068" levels="1" name="Resist Unholy">
+  <!-- Increases resistance to darkness type attacks by 30 for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21069" levels="1" name="Wind Walk">
+  <!-- Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21070" levels="1" name="Death Whisper">
+  <!-- Increases Critical attack power by 35% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21071" levels="1" name="Agility">
+  <!-- Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21072" levels="1" name="Wild Magic">
+  <!-- For 5 minutes, increases by 2% the occurrence rate of damage that is caused by damage magic. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21073" levels="1" name="Mana Regeneration">
+  <!-- Increases MP Regeneration by 3% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21074" levels="1" name="Reflect">
+  <!-- For 5 minutes, returns 20% of the damage back to the enemy. Excludes skill and long-range attacks. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21075" levels="1" name="Greater Heal">
+  <!-- Recovers HP by 444 and increases HP Recovery by 30 for 15 seconds. Reuse Delay 4 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21076" levels="1" name="Resist Unholy">
+  <!-- Increases resistance to darkness type attacks by 30 for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21077" levels="1" name="Wind Walk">
+  <!-- Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21078" levels="1" name="Death Whisper">
+  <!-- Increases Critical attack power by 35% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21079" levels="1" name="Agility">
+  <!-- Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21080" levels="1" name="Wild Magic">
+  <!-- For 5 minutes, increases by 2% the occurrence rate of damage that is caused by damage magic. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21081" levels="1" name="Mana Regeneration">
+  <!-- Increases MP Regeneration by 3% for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21082" levels="1" name="Reflect">
+  <!-- For 5 minutes, returns 20% of the damage back to the enemy. Excludes skill and long-range attacks. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21083" levels="1" name="Greater Heal">
+  <!-- Recovers HP by 444 and increases HP Recovery by 30 for 15 seconds. Reuse Delay 4 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21084" levels="1" name="Energy Recovery">
+  <!-- Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21085" levels="1" name="Agathion Seal Cancel - Pomona">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="21086" levels="1" name="Blessing of Love">
+  <!-- Can feel the warm love of family. Protects the target with sacred power. Makes the target invincible for 10 seconds. Reuse Delay 4 hours -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+</list>

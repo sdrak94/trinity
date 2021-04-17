@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13153" name="Limited time - Great Spear - 60 minutes limited period">
+  <for>
+    <set val="31" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13154" name="Limited time - Falchion - 60 minutes limited period">
+  <for>
+    <set val="31" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13155" name="Limited time - Iron Hammer - 60 minutes limited period">
+  <for>
+    <set val="31" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13156" name="Limited time - Voodoo Doll - 60 minutes limited period">
+  <for>
+    <set val="25" order="0x08" stat="pAtk"/>
+    <set val="28" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13157" name="Limited time - Flanged Mace - 60 minutes limited period">
+  <for>
+    <set val="31" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13158" name="Limited time - Mage Staff - 60 minutes limited period">
+  <for>
+    <set val="30" order="0x08" stat="pAtk"/>
+    <set val="28" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13159" name="Limited time - Sword Breaker - 60 minutes limited period">
+  <for>
+    <set val="27" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13160" name="Limited time - Viper Fang - 60 minutes limited period">
+  <for>
+    <set val="38" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13161" name="Limited time - Composite Bow - 60 minutes limited period">
+  <for>
+    <set val="64" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13162" name="Limited time - Crucifix of Blessing - 60 minutes limited period">
+  <for>
+    <set val="25" order="0x08" stat="pAtk"/>
+    <set val="28" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13163" name="Limited time - Bastard Sword*Crimson Sword - 60 minutes limited period">
+  <for>
+    <set val="107" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13164" name="Limited time - Claymore - 60 minutes limited period">
+  <for>
+    <set val="112" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13165" name="Limited time - Bonebreaker - 60 minutes limited period">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13166" name="Limited time - Atuba Hammer - 60 minutes limited period">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13167" name="Limited time - Ghost Staff - 60 minutes limited period">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13168" name="Limited time - Staff of Life - 60 minutes limited period">
+  <for>
+    <set val="74" order="0x08" stat="pAtk"/>
+    <set val="72" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13169" name="Limited time - Atuba Mace - 60 minutes limited period">
+  <for>
+    <set val="90" order="0x08" stat="pAtk"/>
+    <set val="79" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13170" name="Limited time - Mithril Dagger - 60 minutes limited period">
+  <for>
+    <set val="80" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13171" name="Limited time - Scallop Jamadhr - 60 minutes limited period">
+  <for>
+    <set val="112" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13172" name="Limited time - Light Crossbow - 60 minutes limited period">
+  <for>
+    <set val="191" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13173" name="Limited time - Glaive - 60 minutes limited period">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13174" name="Limited time - Elven Long Sword - 60 minutes limited period">
+  <for>
+    <set val="92" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13175" name="Limited time - Grand Epee - 60 minutes limited period">
+  <for>
+    <set val="83" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13176" name="Limited time - General's Katzbalger - 60 minutes limited period">
+  <for>
+    <set val="100" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13177" name="Limited time - Cranequin - 60 minutes limited period">
+  <for>
+    <set val="117" order="0x08" stat="pAtk"/>
+    <set val="54" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13178" name="Limited time - Samurai Longsword - 60 minutes limited period">
+  <for>
+    <set val="156" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13179" name="Limited time - Deadman's Staff - 60 minutes limited period">
+  <for>
+    <set val="152" order="0x08" stat="pAtk"/>
+    <set val="122" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13180" name="Limited time - Ghoul's Staff - 60 minutes limited period">
+  <for>
+    <set val="152" order="0x08" stat="pAtk"/>
+    <set val="122" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13181" name="Limited time - Demon's Staff - 60 minutes limited period">
+  <for>
+    <set val="152" order="0x08" stat="pAtk"/>
+    <set val="122" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13182" name="Limited time - Crystal Dagger - 60 minutes limited period">
+  <for>
+    <set val="136" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13183" name="Limited time - Great Pata - 60 minutes limited period">
+  <for>
+    <set val="190" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13184" name="Limited time - Eminence Bow - 60 minutes limited period">
+  <for>
+    <set val="323" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13185" name="Limited time - Orcish Poleaxe - 60 minutes limited period">
+  <for>
+    <set val="156" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13186" name="Limited time - Yaksa Mace - 60 minutes limited period">
+  <for>
+    <set val="156" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13187" name="Limited time - Shamshir*Shamshir - 60 minutes limited period">
+  <for>
+    <set val="190" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13188" name="Limited time - Admiral's Estoc - 60 minutes limited period">
+  <for>
+    <set val="141" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13189" name="Limited time - Saber Tooth - 60 minutes limited period">
+  <for>
+    <set val="169" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13190" name="Limited time - Sharpshooter - 60 minutes limited period">
+  <for>
+    <set val="198" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13191" name="Limited time - Ecliptic Sword - 60 minutes limited period">
+  <for>
+    <set val="125" order="0x08" stat="pAtk"/>
+    <set val="111" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13192" name="Limited time - Ecliptic Axe - 60 minutes limited period">
+  <for>
+    <set val="125" order="0x08" stat="pAtk"/>
+    <set val="111" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13193" name="Limited time - Dwarven Hammer - 60 minutes limited period">
+  <for>
+    <set val="190" order="0x08" stat="pAtk"/>
+    <set val="83" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13194" name="Limited time - Sword of Damascus - 60 minutes limited period">
+  <for>
+    <set val="194" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13195" name="Limited time - Lance - 60 minutes limited period">
+  <for>
+    <set val="194" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13196" name="Limited time - Deadman's Glory - 60 minutes limited period">
+  <for>
+    <set val="194" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13197" name="Limited time - Art of Battle Axe - 60 minutes limited period">
+  <for>
+    <set val="194" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13198" name="Limited time - Staff of Evil Spirits - 60 minutes limited period">
+  <for>
+    <set val="189" order="0x08" stat="pAtk"/>
+    <set val="145" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13199" name="Limited time - Demon Dagger - 60 minutes limited period">
+  <for>
+    <set val="170" order="0x08" stat="pAtk"/>
+    <set val="99" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,6 @@
+Error on: C:\L2j-Gracia-Final\GAMESERVER\data\scripts\ai\individual\baylor.py.error.log
+Line: -1 - Column: -1
+
+Traceback (innermost last):
+  File "baylor.py", line 6, in ?
+ImportError: no module named grandbosses

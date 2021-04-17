@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13740" name="Gludio Water Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13741" name="Dion Divinity Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13742" name="Giran Wind Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13743" name="Oren Protection Necklace of Darkness">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13744" name="Aden Earth Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13745" name="Innadril Water Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13746" name="Goddard Fire Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13747" name="Rune Fire Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13748" name="Schuttgart Wind Protection Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13751" name="Warrior's T-shirt">
+  <for>
+    <add val="28" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13752" name="Olympiad Warrior's Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13753" name="Olympiad Warrior's Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13754" name="Olympiad Warrior's Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="13756" name="Agathion Summon Bracelet - Knight">
+  <for/>
+</item>
+</list>

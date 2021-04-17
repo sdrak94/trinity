@@ -1,0 +1,250 @@
+<list>
+<item id="83035" name="Valyrian Sigil">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+	<enchant val="0" order="0x50" stat="mDef"/>
+    <basemul val="0.2" order="0x40" stat="mAtk"/>
+	<basemul val="0.15" order="0x40" stat="mDef"/>
+	<basemul val="0.05" order="0x40" stat="pDef"/>
+	<sub val="0.10" order="0x40" stat="pvmVuln"/>
+	<add val="20" order="0x40" stat="fireRes"/>
+	<add val="20" order="0x40" stat="waterRes"/>
+	<add val="20" order="0x40" stat="windRes"/>
+	<add val="20" order="0x40" stat="earthRes"/>
+	<add val="1500" order="0x40" stat="maxMp"/>
+	<add val="1500" order="0x40" stat="maxHp"/>
+	<mul val="0.80" order="0x30" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<!--<item id="83501" name="Terror Steel Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<add val="0.12" order='0x40' stat='cAtk'/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83502" name="Protector's Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<mul val="0.8" order="0x30" stat="debuffVuln"/>
+	<add val="25" order='0x40' stat='mAtkSpd'/>
+	<mul val="0.95" order="0x30" stat="MpConsume"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83503" name="Fierce Scaled Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<basemul val="0.25" order="0x40" stat="mAtk"/>
+	<sub val="0.05" order="0x40" stat="mReuse"/>
+	<add val="25" order="0x60" stat="mAtkRange"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83504" name="Prime Silk Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<add val="0.027" order="0x40" stat="pAtk_charge"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83505" name="Fallen Fortune Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<basemul val="0.25" order="0x40" stat="pAtk"/>
+	<add val='30' order='0x40' stat='pAtkAngle'/>
+	<add val='25' order='0x40' stat='pAtkRange'/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83506" name="Infused Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<add val="5" order='0x40' stat='runSpd'/>
+	<sub val="0.08" order="0x40" stat="pReuse"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83507" name="Loyal Embroidered Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<add val='750' order='0x40' stat='sDef'/>
+	<mul val="1.1" order="0x30" stat="aggressionProf"/>
+	<add val='50' order='0x40' stat='shieldDefAngle'/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="83508" name="Thunder Sash Belt">
+  <for>
+    <add val="60" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="1000" order="0x40" stat="maxHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="1000" order="0x40" stat="maxCp"/>
+	<add val="0.06" order="0x40" stat="pvmDam"/>
+	<sub val="0.05" order="0x40" stat="critVuln"/>
+	<mul val="0.95" order="0x30" stat="pDefBehindVuln"/>
+	<mul val="0.95" order="0x30" stat="mDefBehindVuln"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>-->
+
+
+<item id="83509" name="Demon's Bracelet">
+  <for>
+    <!--<set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+	<add val="50" order="0x40" stat="earthPower"/>-->
+	<set val="6" order="0x50" stat="talisman"/>
+	<add val="800" order="0x40" stat="maxHp"/>
+	<add val="800" order="0x40" stat="maxMp"/>
+	<add val="800" order="0x40" stat="maxCp"/>
+	<sub val="0.06" order="0x40" stat="pvmVuln"/>
+	<add val="1" order="0x10" stat="STR"/>
+	<add val="1" order="0x10" stat="INT"/>
+	<add val="1" order="0x10" stat="CON"/>
+	<add val="1" order="0x10" stat="MEN"/>
+  </for>
+</item>
+<!--<item id="83510" name="Fiend Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+	<add val="25" order="0x40" stat="holyPower"/>
+	<add val="10" order="0x40" stat="fireRes"/>
+	<add val="10" order="0x40" stat="windRes"/>
+	<add val="10" order="0x40" stat="waterRes"/>
+	<add val="10" order="0x40" stat="earthRes"/>
+	<add val="10" order="0x40" stat="holyRes"/>
+	<add val="10" order="0x40" stat="darkRes"/>
+  </for>
+</item>
+<item id="83511" name="Innovator Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+	<add val="30" order="0x40" stat="fireRes"/>
+	<add val="30" order="0x40" stat="windRes"/>
+	<add val="30" order="0x40" stat="waterRes"/>
+	<add val="30" order="0x40" stat="earthRes"/>
+	<add val="30" order="0x40" stat="holyRes"/>
+	<add val="30" order="0x40" stat="darkRes"/>
+  </for>
+</item>
+<item id="83512" name="Fierce Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+	<add val="35" order="0x40" stat="firePower"/>
+	<add val="5" order="0x40" stat="fireRes"/>
+	<add val="5" order="0x40" stat="windRes"/>
+	<add val="5" order="0x40" stat="waterRes"/>
+	<add val="5" order="0x40" stat="earthRes"/>
+	<add val="5" order="0x40" stat="holyRes"/>
+	<add val="5" order="0x40" stat="darkRes"/>
+  </for>
+</item>
+<item id="83513" name="Void Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+	<add val="20" order="0x40" stat="darkPower"/>
+	<add val="15" order="0x40" stat="fireRes"/>
+	<add val="15" order="0x40" stat="windRes"/>
+	<add val="15" order="0x40" stat="waterRes"/>
+	<add val="15" order="0x40" stat="earthRes"/>
+	<add val="15" order="0x40" stat="holyRes"/>
+	<add val="15" order="0x40" stat="darkRes"/>
+  </for>
+</item>
+<item id="83514" name="Nature Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="75" order="0x40" stat="windPower"/>
+  </for>
+</item>
+<item id="83515" name="Sea Bracelet">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="1200" order="0x40" stat="maxHp"/>
+	<add val="1200" order="0x40" stat="maxMp"/>
+	<add val="1200" order="0x40" stat="maxCp"/>
+	<add val="0.09" order="0x40" stat="pvmVuln"/>
+	<add val="3" order="0x10" stat="DEX"/>
+	<add val="3" order="0x10" stat="WIT"/>
+	<add val="7" order="0x40" stat="runSpd"/>
+	<add val="10" order="0x40" stat="waterPower"/>
+  </for>
+</item>-->
+</list>

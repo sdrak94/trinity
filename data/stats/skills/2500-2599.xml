@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="2500" levels="1" name="Beast Soulshot Compressed Pack">
+  <set name="itemConsumeId" val="10515"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="create_item_id" val="6645"/>
+  <set name="create_item_count" val="500"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2501" levels="1" name="Beast Spiritshot Compressed Pack">
+  <set name="itemConsumeId" val="10516"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="isPotion" val="true"/>
+  <set name="create_item_id" val="6646"/>
+  <set name="create_item_count" val="500"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2502" levels="1" name="Blessed Beast Spiritshot Compressed Pack">
+  <set name="itemConsumeId" val="10517"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="CREATE_ITEM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="create_item_id" val="6647"/>
+  <set name="create_item_count" val="500"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2504" levels="1" name="Old Agathion">
+  <set name="itemConsumeId" val="10408"/>
+  <set name="itemConsumeCount" val="1"/>
+    <set name="isPotion" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2505" levels="1" name="Chant of Combat">
+  <set name="itemConsumeId" val="10608"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1517"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="52, 116"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2506" levels="1" name="Chant of Critical">
+  <set name="itemConsumeId" val="10609"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1518"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="52, 116"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2507" levels="1" name="Chant of Blood Awakening">
+  <set name="itemConsumeId" val="10610"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1519"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="52, 116"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2508" levels="1" name="Squash Seed">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1500"/>
+</skill>
+<skill id="2509" levels="1" name="Large Squash Seed">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1500"/>
+</skill>
+<skill id="2510" levels="1" name="Mysterious Cube">
+  <set name="referenceId" val="10632"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="reuseDelay" val="86400000"/>
+  <set name="staticReuse" val="true"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2511" levels="1" name="Scroll of Transformation - Gatekeeper">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="107"/>
+  <for>
+    <effect name="Transformation" time="1800" val="0"/> <!-- duration Guess -->
+  </for>
+</skill>
+<skill id="2512" levels="1" name="Herb of Vampiric Rage">
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="300000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="300" val="0" >
+      <add order="0x40" stat="absorbDam" val="5"/> <!-- absorb 9% HP from damage inflicted on enemies -->
+    </effect>
+  </for>
+</skill>
+<skill id="2513" levels="1" name="Herb of Doubt">
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="180000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="BigHead" time="180" val="0" abnormal="bighead" stackOrder="300" stackType="big_head"/>
+  </for>
+</skill>
+<skill id="2514" levels="1" name="Herb of Critical Attack - Power">
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="300000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="300" val="0">
+      <mul order="0x30" stat="cAtk" val="1.05"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2515" levels="1" name="Lucky Clover - D-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2516" levels="1" name="Lucky Clover - C-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2517" levels="1" name="Lucky Clover - B-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2518" levels="1" name="Lucky Clover - A-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2519" levels="1" name="Lucky Clover - S-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2520" levels="1" name="Lucky Clover - D-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2521" levels="1" name="Lucky Clover - C-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2522" levels="1" name="Lucky Clover - B-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2523" levels="1" name="Lucky Clover - A-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2524" levels="1" name="Lucky Clover - S-Grade">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2525" levels="1" name="Scroll to move to Kamael Village">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="10000"/>
+</skill>
+<skill id="2526" levels="1" name="Evasion Counter">
+  <set name="itemConsumeId" val="12768"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="818"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="36, 108"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2527" levels="1" name="Evasion Chance">
+  <set name="itemConsumeId" val="12769"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="819"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="23, 101"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2528" levels="1" name="Evasion Haste">
+  <set name="itemConsumeId" val="12770"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="820"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="8, 93"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2529" levels="1" name="Shadow Step">
+  <set name="itemConsumeId" val="12771"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="821"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="8, 93, 23, 101, 36, 108"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2530" levels="1" name="Recovery Item for Battlefield Use">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2531" levels="1" name="Adventurer's Scroll of Escape">
+  <set name="itemConsumeId" val="10650"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="20000"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2532" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2533" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2534" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2535" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2536" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2537" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2538" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2539" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2540" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2541" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2542" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2543" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2544" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2545" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2546" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2547" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2548" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2549" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2550" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2551" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2552" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2553" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2554" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2555" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2556" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2557" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2558" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2559" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2560" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2561" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2562" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2563" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2564" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2565" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2566" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2567" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2568" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2569" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2570" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2571" levels="1" name="Pathfinder Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2572" levels="1" name="Pathfinder's Reward">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2573" levels="1" name="Pathfinder's Reward">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2574" levels="1" name="Pathfinder's Reward">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2575" levels="1" name="Pathfinder's Reward">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2576" levels="1" name="Pathfinder's Reward">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2577" levels="1" name="Instant Defense">
+  <set name="itemConsumeId" val="13032"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isMagic" val="true"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="buffDuration" val="5000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Invincible" time="5" val="0" stackOrder="1" stackType="Instant_Shield"/>
+  </for>
+</skill>
+<skill id="2578" levels="1" name="Cure Poison Paralyze">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2579" levels="1" name="Cure Death Clock">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2580" levels="1" name="Vitality Replenishing Herb">
+  <set name="hitTime" val="100"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="300000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="300" val="0" abnormal="vitality"/>
+  </for>
+</skill>
+<skill id="2581" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2582" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2583" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2584" levels="1" name="Item - Special Sound Crystal">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DUMMY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2585" levels="1" name="Item - Special Sound Crystal">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DUMMY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2586" levels="2" name="Energy Replenishing Potion">
+  <!-- lvl1 your vitality points x2 -->
+  <!-- lvl2 full recover of your vitality points -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2587" levels="1" name="Increase number of teleport slots.">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2588" levels="1" name="My Teleport">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="20000"/>
+</skill>
+<skill id="2589" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2590" levels="1" name="Extra Entrance Pass - Near Kamaloka">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2591" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2592" levels="1" name="Quick Healing Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2593" levels="1" name="Bow/Crossbow Attack Resistance Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2594" levels="1" name="Pailaka Scroll of Escape">
+  <set name="itemConsumeId" val="13129"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="20000"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2595" levels="1" name="Gran Kain's Blessed Scroll of Escape">
+  <set name="itemConsumeId" val="13258"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="2000000"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2596" levels="1" name="Gran Kain's Blessed Scroll of Resurrection">
+  <set name="power" val="100"/>
+  <set name="target" val="TARGET_CORPSE_PLAYER"/>
+  <set name="hitTime" val="30000000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RESURRECT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="600"/>
+</skill>
+<skill id="2597" levels="1" name="Gran Kain's Echo Crystal - Theme of Journey">
+  <set name="itemConsumeId" val="13261"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="isPotion" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DUMMY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2598" levels="1" name="Gran Kain's Echo Crystal - Theme of Battle">
+  <set name="itemConsumeId" val="13262"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="isPotion" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DUMMY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2599" levels="1" name="Gran Kain's Echo Crystal - Theme of Love">
+  <set name="itemConsumeId" val="13263"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="isPotion" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DUMMY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+</list>

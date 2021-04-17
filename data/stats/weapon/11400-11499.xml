@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11416" name="Dark Crystal Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="243" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11425" name="Sealed Dark Crystal Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="243" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11469" name="Sealed Shield of Nightmare">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="256" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11480" name="Shield of Nightmare">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="256" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

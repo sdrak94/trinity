@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="20255" name="Baguette Sword - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20256" name="Baguette Dagger - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20257" name="Baguette Dual Sword - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20258" name="Baguette Mace - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20259" name="Baguette Heavy Hammer - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20260" name="Baguette Spear - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20261" name="Baguette Bow - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="3" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="227" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20262" name="Baguette Fist - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20263" name="Baguette Magic Sword - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20264" name="Baguette Staff - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20265" name="Baguette Great Staff - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20267" name="Baguette Rapier - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="3" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20268" name="Baguette Ancient Sword - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="3" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20269" name="Baguette Crossbow - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="3" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="20270" name="Baguette's Dualsword - 7 Day Expiration Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="2" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

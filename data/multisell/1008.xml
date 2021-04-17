@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Blacksmith Exchange Life Stones-->
+<list>
+	<item id="1">
+		<ingredient id="8723" count="5" />
+		<production id="12754" count="1" />
+	</item>
+	<item id="2">
+		<ingredient id="8724" count="5" />
+		<production id="12755" count="1" />
+	</item>
+	<item id="3">
+		<ingredient id="8725" count="5" />
+		<production id="12756" count="1" />
+	</item>
+	<item id="4">
+		<ingredient id="8726" count="5" />
+		<production id="12757" count="1" />
+	</item>
+	<item id="5">
+		<ingredient id="8727" count="5" />
+		<production id="12758" count="1" />
+	</item>
+	<item id="6">
+		<ingredient id="8728" count="5" />
+		<production id="12759" count="1" />
+	</item>
+	<item id="7">
+		<ingredient id="8729" count="5" />
+		<production id="12760" count="1" />
+	</item>
+	<item id="8">
+		<ingredient id="8730" count="5" />
+		<production id="12761" count="1" />
+	</item>
+	<item id="9">
+		<ingredient id="8732" count="5" />
+		<production id="12763" count="1" />
+	</item>
+	<item id="10">
+		<ingredient id="9573" count="5" />
+		<production id="12821" count="1" />
+	</item>
+	<item id="11">
+		<ingredient id="14166" count="5" />
+		<production id="14008" count="1" />
+	</item>
+</list>

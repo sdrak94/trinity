@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="8541" name="Little Harness">
+  <for>
+    <add val="10" order="0x10" stat="mDef"/>
+    <add val="25" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="8552" name="Mask of Spirits">
+  <for>
+    <add val="40" order="0x40" stat="pDef"/>
+	<add val="60" order="0x40" stat="mDef"/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<mul val="0.92" order="0x30" stat="atkReuse"/>
+	<add val="6" order="0x40" stat="runSpd"/>
+  </for>
+</item>
+<item id="8557" name="Blue Party Hat">
+  <for>
+      <sub val="0.16" order="0x40" stat="mReuse"/>
+      <basemul val="0.1" order="0x40" stat="pDef"/>
+	  <add val="50" order="0x40" stat="bonusHp"/>
+   </for>
+</item>
+<item id="8558" name="Eva's Mark">
+  <for>
+	<add val="3" order="0x10" stat="DEX"/>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="15" order="0x40" stat="holyPower"/>
+  </for>
+</item>
+<item id="8559" name="Diadem">
+  <for>
+<mul val="0.95" order="0x30" stat="MpConsume"/>
+<add val='50' order='0x40' stat='mAtkRange'/>
+<add val="20" order='0x40' stat='mAtkSpd'/>
+  <cond msgId="1518">
+    <player sex="1"/>
+  </cond>
+  </for>
+</item>
+<item id="8560" name="Teddy Bear Hat">
+  <for>
+    <basemul val="0.12" order="0x40" stat="mDef"/>
+	<basemul val="0.45" order="0x40" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxMp"/>
+	<add val="0.05" order='0x40' stat='cAtkMagic'/>
+  </for>
+</item>
+<item id="8561" name="Piggy Hat">
+  <for>
+    <basemul val="0.12" order="0x40" stat="pDef"/>
+	<basemul val="0.3" order="0x40" stat="pAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxMp"/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+  </for>
+</item>
+<item id="8562" name="Jester Hat">
+  <for>
+    <mul val="0.1" order="0x50" stat="derangementVuln"/>
+    <add val="100" order="0x40" stat="pAtkSpd"/>
+	<add val="130" order="0x40" stat="mAtkSpd"/>
+	<sub val="1" order="0x10" stat="INT"/>
+	<sub val="1" order="0x10" stat="STR"/>
+	<add val="2" order="0x40" stat="pSkillEvas"/>
+	<add val="2" order="0x40" stat="mSkillEvas"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<sub val="1200" order="0x40" stat="skillReuseChange"/>
+	<sub val="0.25" order="0x40" stat="giveHp"/>
+	<mul val="1.25" order="0x30" stat="MpConsume"/>
+  </for>
+</item>
+<item id="8563" name="Wizard Hat">
+  <for>
+	<add val="3" order="0x10" stat="INT"/>
+	<add val="1" order="0x10" stat="WIT"/>
+	<add val="2" order="0x10" stat="MEN"/>
+	<add val="50" order='0x40' stat='mCritRate'/>
+	<add val="0.15" order='0x40' stat='cAtkMagic'/>
+	<sub val="0.03" order="0x40" stat="critVuln"/>
+	<add val="4" order='0x40' stat='runSpd'/>
+  </for>
+</item>
+<item id="8564" name="Dapper Cap">
+  <for>
+    <add val="7" order="0x40" stat="accCombat"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+	<add val="10" order="0x40" stat="runSpd"/>
+	<add val="1" order="0x40" stat="improvedEvasion"/>
+	<add val="50" order="0x40" stat="rCrit"/>
+	<add val="10" order="0x40" stat="evadeAOESpell"/>
+	<add val="4" order="0x40" stat="rEvasAbs"/>
+  </for>
+</item>
+<item id="8565" name="Romantic Chapeau">
+  <for>
+    <basemul val="0.08" order="0x40" stat="pDef"/>
+	<basemul val="0.08" order="0x40" stat="mDef"/>
+	<add val="40" order="0x40" stat="pDef"/>
+	<add val="40" order="0x40" stat="mDef"/>
+	<sub val="0.15" order="0x40" stat="pReuse"/>
+	<sub val="0.15" order="0x40" stat="mReuse"/>
+	<add val="15" order="0x40" stat="transDam"/>
+	<add val="15" order="0x40" stat="lionheart"/>
+  </for>
+</item>
+<item id="8566" name="Iron Circlet">
+  <for>
+    <add val="2" order="0x10" stat="CON"/>
+	<add val="2" order="0x10" stat="STR"/>
+	<sub val="1" order="0x10" stat="DEX"/>
+	<add val="150" order="0x40" stat="pDef"/>
+	<mul val="1.2" order="0x30" stat="sDef"/>
+	<add val="1" order="0x40" stat="rShldPerfAdd"/>
+	<mul val="0.6" order="0x30" stat="stunVuln"/>
+	<mul val="1.04" order="0x60" stat="pAtk"/>
+	<sub val="2" order="0x40" stat="rEvas"/>
+	<sub val="3" order="0x40" stat="runSpd"/>
+	<sub val="2" order="0x40" stat="rEvasAbs"/>
+  </for>
+</item>
+<item id="8567" name="Valakas Slayer Circlet">
+  <for>
+    <basemul val="0.5" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order="0x40" stat="mDef"/>
+	<add val="30" order="0x40" stat="firePower"/>
+	<add val="20" order="0x40" stat="fireRes"/>
+	<add val="20" order="0x40" stat="holyRes"/>
+	<add val="20" order="0x40" stat="windRes"/>
+	<add val="3" order="0x10" stat="INT"/>
+	<add val="3" order="0x10" stat="STR"/>
+	<add val="100" order="0x40" stat="addDmg"/>
+  </for>
+</item>
+<item id="8568" name="Antharas Slayer Circlet">
+  <for>
+    <basemul val="0.5" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order="0x40" stat="pDef"/>
+	<add val="100" order="0x40" stat="delDmg"/>
+	<add val="30" order="0x40" stat="earthPower"/>
+	<add val="20" order="0x40" stat="earthRes"/>
+	<add val="20" order="0x40" stat="darkRes"/>
+	<add val="20" order="0x40" stat="waterRes"/>
+	<add val="2" order="0x10" stat="STR"/>
+	<add val="2" order="0x10" stat="INT"/>
+	<add val="2" order="0x10" stat="CON"/>
+
+	
+  </for>
+</item>
+<item id="8569" name="Half Face Mask">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+</list>

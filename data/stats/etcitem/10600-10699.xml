@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10611" name="Snow Fenrir Necklace">
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for/>
+</item>
+
+
+<item id="327210" name="Red Archer Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327220" name="King Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327230" name="Cowboy Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327240" name="Shaolin Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327250" name="Samurai Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327260" name="Desert Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327270" name="Guardian Suit Token">
+  <for>
+  </for>
+</item>
+<item id="327280" name="Legionary Suit Token">
+  <for>
+  </for>
+</item>
+
+</list>

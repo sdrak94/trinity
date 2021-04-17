@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="31855" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="57012" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32063" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32600" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32602" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32604" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32606" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32608" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32610" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32612" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32721" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32722" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32723" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32724" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32725" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32726" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32727" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32728" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32909" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32910" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="32994" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+
+<!--new Dress-->
+<item id="42610" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42611" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42608" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42609" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42612" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+
+<item id="42619" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42620" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42621" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42625" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42626" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42627" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42650" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42651" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42652" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42653" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42660" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42660" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42661" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42662" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42663" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42664" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42721" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42722" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42780" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42781" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42790" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="42791" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+
+<item id="52610" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52611" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52608" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52609" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52612" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+
+<item id="52650" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52651" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52652" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52653" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52654" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52655" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item><item id="52654" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52656" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52657" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52658" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52659" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52660" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52661" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52780" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="52781" name="Formal Wear">
+  <for>
+    <add stat="pDef" order="0x10" val="400"/>
+    <add stat="maxHp" order="0x10" val="2000">
+      <and>
+        <using slotitem="2414;6"/>
+      </and>
+    </add>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+
+
+
+</list>

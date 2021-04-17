@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Elemental potions multisell -->
+
+<list>
+
+  <!-- Fire potion -->
+  <item id="1">
+    <ingredient id="9546" count="10"/>
+    <production id="9997" count="1"/>
+  </item>
+
+  <!-- Water potion -->
+  <item id="2">
+    <ingredient id="9547" count="10"/>
+    <production id="9998" count="1"/>
+  </item>
+
+  <!-- Earth potion -->
+  <item id="3">
+    <ingredient id="9548" count="10"/>
+    <production id="9999" count="1"/>
+  </item>
+
+  <!-- Wind potion -->
+  <item id="4">
+    <ingredient id="9549" count="10"/>
+    <production id="10000" count="1"/>
+  </item>
+
+  <!-- Dark potion -->
+  <item id="5">
+    <ingredient id="9550" count="10"/>
+    <production id="10001" count="1"/>
+  </item>
+
+  <!-- Divine potion -->
+  <item id="6">
+    <ingredient id="9551" count="10"/>
+    <production id="10002" count="1"/>
+  </item>
+
+  <!-- Fire potion -->
+  <item id="7">
+    <ingredient id="9997" count="1"/>
+    <production id="9546" count="3"/>
+  </item>
+
+  <!-- Water potion -->
+  <item id="8">
+    <ingredient id="9998" count="1"/>
+    <production id="9547" count="3"/>
+  </item>
+
+  <!-- Earth potion -->
+  <item id="9">
+    <ingredient id="9999" count="1"/>
+    <production id="9548" count="3"/>
+  </item>
+
+  <!-- Wind potion -->
+  <item id="10">
+    <ingredient id="10000" count="1"/>
+    <production id="9549" count="3"/>
+  </item>
+
+  <!-- Dark potion -->
+  <item id="11">
+    <ingredient id="10001" count="1"/>
+    <production id="9550" count="3"/>
+  </item>
+
+  <!-- Divine potion -->
+  <item id="12">
+    <ingredient id="10002" count="1"/>
+    <production id="9551" count="3"/>
+  </item>
+
+</list>

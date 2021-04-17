@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12793" name="O Stick - 30 day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12794" name="X Stick - 30 day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12795" name="Scissors Stick - 30 day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12796" name="Rock Stick - 30 day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12797" name="Paper Stick - 30 day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12798" name="Snowman Transformation Stick">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12799" name="Scarecrow Transformation Stick">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

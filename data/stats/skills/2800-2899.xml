@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="2800" levels="1" name="Stone of Ease">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2801" levels="1" name="Stone of Abundance">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2802" levels="1" name="Recovery Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2803" levels="1" name="Seed of Revenge">
+  <set name="itemConsumeId" val="14170"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="761"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="91"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2804" levels="1" name="Hell Scream">
+  <set name="itemConsumeId" val="14171"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="763"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="91"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2805" levels="1" name="Spirit of the Phoenix">
+  <set name="itemConsumeId" val="14172"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="784"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="90"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2806" levels="1" name="Eva's Will">
+  <set name="itemConsumeId" val="14173"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="786"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="99"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2807" levels="1" name="Pain of Shilen">
+  <set name="itemConsumeId" val="14174"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="788"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="106"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2808" levels="1" name="Exciting Adventure">
+  <set name="itemConsumeId" val="14175"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="768"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="93"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2809" levels="1" name="Wind Riding">
+  <set name="itemConsumeId" val="14176"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="769"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="101"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2810" levels="1" name="Ghost Walking">
+  <set name="itemConsumeId" val="14177"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="770"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="108"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2811" levels="1" name="Flame Hawk">
+  <set name="itemConsumeId" val="14178"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="771"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="92"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2812" levels="1" name="Rain of Arrows">
+  <set name="itemConsumeId" val="14179"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="772"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="102"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2813" levels="1" name="Ghost Piercing">
+  <set name="itemConsumeId" val="14180"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="773"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="109"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2814" levels="1" name="Dread Pool">
+  <set name="itemConsumeId" val="14181"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="774"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="89"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2815" levels="1" name="Force of Destruction">
+  <set name="itemConsumeId" val="14182"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="776"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="114"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2816" levels="1" name="Demolition Impact">
+  <set name="itemConsumeId" val="14183"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="777"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="113"/>
+      <player level="83"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2817" levels="1" name="Golem Armor">
+  <set name="itemConsumeId" val="14184"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="778"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="118"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2818" levels="1" name="Wild Shot">
+  <set name="itemConsumeId" val="14185"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="790"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="134"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2819" levels="1" name="Lightning Shock">
+  <set name="itemConsumeId" val="14186"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="791"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="132, 133"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2820" levels="1" name="Flame Armor">
+  <set name="itemConsumeId" val="14187"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1492"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="94"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2821" levels="1" name="Frost Armor">
+  <set name="itemConsumeId" val="14188"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1493"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="103"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2822" levels="1" name="Hurricane Armor">
+  <set name="itemConsumeId" val="14189"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1494"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="110"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2823" levels="1" name="Vampiric Mist">
+  <set name="itemConsumeId" val="14190"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1495"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="95"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2824" levels="1" name="Meteor">
+  <set name="itemConsumeId" val="14191"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1467"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="94, 95"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2825" levels="1" name="Starfall">
+  <set name="itemConsumeId" val="14192"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1468"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="103, 110"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2826" levels="1" name="Sublime Self-Sacrifice">
+  <set name="itemConsumeId" val="14193"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1505"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="97"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2827" levels="1" name="Blessing of Eva">
+  <set name="itemConsumeId" val="14194"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1506"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="105"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2828" levels="1" name="Lord of Vampires">
+  <set name="itemConsumeId" val="14195"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1507"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="112"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2829" levels="1" name="Throne Root">
+  <set name="itemConsumeId" val="14196"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1508"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="112"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2830" levels="1" name="Seal of Limit">
+  <set name="itemConsumeId" val="14197"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="1509"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="115"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2831" levels="1" name="Weapon Blockade">
+  <set name="itemConsumeId" val="14203"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="775"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="88"/>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2832" levels="1" name="S80 Weapon Chest">
+  <set name="itemConsumeId" val="13988"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2833" levels="1" name="S80 Armor Chest">
+  <set name="itemConsumeId" val="13989"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2834" levels="1" name="S Weapon Chest">
+  <set name="itemConsumeId" val="13990"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2835" levels="1" name="S Armor Chest">
+  <set name="itemConsumeId" val="13991"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2836" levels="1" name="S Accessory Chest">
+  <set name="itemConsumeId" val="13992"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="EXTRACTABLE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="129">
+    <and>
+       <player invSize="10"/>
+       <player weight="80"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2837" levels="1" name="Gracia Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2838" levels="1" name="Treasure Sack of the Ancient Giants">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2839" levels="1" name="Sacred Light Fragment">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2840" levels="1" name="Star Stone Gathering">
+  <set name="itemConsumeId" val="13728"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="learnSkillId" val="932"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <player level="75"/>
+  </cond>
+</skill>
+<skill id="2841" levels="1" name="PC Cafe Points">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2842" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2843" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2844" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2845" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2846" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2847" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2848" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2849" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2850" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2851" levels="1" name="Duel Supplies">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2852" levels="1" name="Duel Reward Box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2853" levels="1" name="Duel Reward Box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2854" levels="1" name="Duel Reward Box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2855" levels="1" name="Duel Reward Box">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2856" levels="1" name="Santa's Buff Gift Set">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2857" levels="1" name="Christmas Event - Magic Use Enhancement Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2858" levels="1" name="Christmas Red Sock">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2859" levels="1" name="Christmas Gift">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2860" levels="6" name="Highest Power Secret Medicine of Life">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2861" levels="6" name="Highest Power Secret Medicine of Mind">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2862" levels="6" name="Highest Power Secret Medicine of Will">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2863" levels="1" name="Highest Power Healing Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2864" levels="1" name="Highest Power Quick Healing Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2865" levels="1" name="Agathion's New Year's Gift 1">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2866" levels="1" name="Agathion's New Year's Gift 2">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2867" levels="1" name="Cupid's Cure">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2868" levels="1" name="Cupid's Enhanced Cure">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2869" levels="1" name="Event - Milk Cow Summon Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2870" levels="1" name="Event - Head Milk Cow Summon Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2871" levels="1" name="Summon Gloomy Milk Cow">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2872" levels="1" name="Summon Head Gloomy Milk Cow">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2873" levels="1" name="Might">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2874" levels="1" name="Wind Walk">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2875" levels="1" name="Haste">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2876" levels="1" name="Vampiric Rage">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2877" levels="1" name="Berserker Spirit">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2878" levels="1" name="Empower">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2879" levels="1" name="Acumen">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2880" levels="1" name="Event - Gloomy Milk Cow Summon Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2881" levels="1" name="Event - Gloomy Head Milk Cow Summon Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2882" levels="1" name="Crystal Cube">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2883" levels="1" name="Energy Replenishing Herb Tea">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2884" levels="1" name="Energy Replenishing Herb Tea">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2885" levels="1" name="Shield">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2886" levels="1" name="Focus">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2887" levels="1" name="Death Whisper">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2888" levels="1" name="Guidance">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2889" levels="1" name="Clarity">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2890" levels="1" name="Wild Magic">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2891" levels="1" name="Concentration">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2892" levels="1" name="Event - Extra Entrance Pass">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2893" levels="1" name="Solo Escape Petition">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2894" levels="1" name="White Day Candy">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2895" levels="1" name="Special White Day Candy Basket">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2896" levels="1" name="White Day Candy Basket">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2897" levels="1" name="Baguette's Herb">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2898" levels="1" name="Fresh Cream Herb">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2899" levels="1" name="Cheesecake Herb">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+</list>

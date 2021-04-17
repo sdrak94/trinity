@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+   <item id="1">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9933" count="1"/> 
+   </item>
+   <item id="2">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9934" count="1"/> 
+   </item>
+   <item id="3">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9935" count="1"/> 
+   </item>
+   <item id="4">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9936" count="1"/> 
+   </item>
+   <item id="5">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9937" count="1"/> 
+   </item>
+   <item id="6">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9938" count="1"/> 
+   </item>
+   <item id="7">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9939" count="1"/> 
+   </item>
+   <item id="8">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9940" count="1"/> 
+   </item>
+   <item id="9">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9941" count="1"/> 
+   </item>
+   <item id="10">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9942" count="1"/> 
+   </item>
+   <item id="11">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9943" count="1"/> 
+   </item>
+   <item id="12">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9944" count="1"/> 
+   </item>
+   <item id="13">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9945" count="1"/> 
+   </item>
+   <item id="14">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9946" count="1"/> 
+   </item>
+   <item id="15">
+   	<ingredient id="97003" count="10000"/>
+    <ingredient id="4355" count="10000"/>
+    <ingredient id="99004" count="50"/>
+	<ingredient id="97002" count="5"/>
+	<ingredient id="4356" count="2"/>
+    <production id="9947" count="1"/> 
+   </item>
+</list>

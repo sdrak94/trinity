@@ -1,0 +1,37 @@
+<html><title>Change Your Name</title>
+<body>
+<center>
+<table>
+<tr>
+<td><font color="2222FF">%dtn%</font></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><font color="FF99FF">Enter your desired character name below. Remember that names are 23 characters (default at character creation is 16) max and no symbols or spaces are allowed. Numbers (0-9) are allowed to be used in your name with this method.</font></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td>Please enter your new name</td>
+</tr>
+<tr>
+<td><multiedit var="name" width=220 height=15></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td align=center><button action="bypass -h pot_name_change $name" value="Confirm" width=160 height=30 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr><td></td></tr>
+<tr>
+<td align=center><button action="bypass -h npc_%objectId%_Link merchant/99999999.htm" value="Cancel" width=120 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<img src="L2UI.SquareBlank" width=1 height=5>
+
+<table width=280 border=0 bgcolor="363636">
+<tr>
+<td width=112 align=center><button value="Back" action="bypass admin_event_manage mini_edit_event %eventId%" width=70 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=119 align=center>%enableDisable%</td>
+<td width=100 align=right><combobox width=84 height=17 var=ebox list=%event_pages%></td>
+<td width=110 align=left><button value="Go" action="bypass admin_event_manage mini_edit_event %eventId% $ebox" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<img src="L2UI.SquareBlank" width=280 height=5>
+%header%
+
+%configs%
+
+%pages%
+
+<button value="Back" action="bypass admin_event_manage %editEvent% %eventId%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+<br>
+<button value="Reload" action="bypass admin_event_manage reload_configs" width=65 height=16 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

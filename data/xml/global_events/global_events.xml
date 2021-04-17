@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<list>
+		<schedule>
+			<!-- Sunday = 1, Saturday = 7 -->
+			<day day="1"> <!-- Sunday -->
+				<event eventType="night_start" time="10:00" />
+				<event eventType="night_end" time="12:00" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="21:00" />
+				<event eventType="night_end" time="23:00" />
+			</day>
+			<day day="2"> <!-- Monday -->
+				<event eventType="night_start" time="13:53" />
+				<event eventType="night_end" time="12:00" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+			<day day="3"> <!-- Tuesday -->
+				<event eventType="night_start" time="13:53" />
+				<event eventType="night_end" time="12:00" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+			<day day="4"> <!-- Wednesday -->
+				<event eventType="night_start" time="09:44" />
+				<event eventType="night_end" time="09:46" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+			<day day="5"> <!-- Wednesday -->
+				<event eventType="night_start" time="09:44" />
+				<event eventType="night_end" time="09:46" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+			<day day="6"> <!-- Wednesday -->
+				<event eventType="night_start" time="09:44" />
+				<event eventType="night_end" time="09:46" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+			<day day="7"> <!-- Wednesday -->
+				<event eventType="night_start" time="09:44" />
+				<event eventType="night_end" time="09:46" />
+				<event eventType="night_start" time="17:00" />
+				<event eventType="night_end" time="19:00" />
+				<event eventType="night_start" time="22:51" />
+				<event eventType="night_end" time="22:53" />
+			</day>
+		</schedule>
+	</list>

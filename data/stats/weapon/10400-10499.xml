@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10415" name="Icarus Chaos - Health Haste Cruelty">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/>
+   <set val="163" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>   
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item>
+<item id="10434" name="Icarus Edge - Focus Health Cruelty">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>   
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10435" name="Icarus Sawsword - Health">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item> 
+<item id="10436" name="Icarus Sawsword - Light">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10437" name="Icarus Flamberge - Focus Health Cruelty">
+  <for> 
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>    
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10438" name="Icarus Heavy Arms - Health">
+  <for> 
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item> 
+<item id="10439" name="Icarus Heavy Arms - Light">
+  <for> 
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10440" name="Icarus Spirit - Acumen Zeal Reuse">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.47" order="0x40" stat="mCritRate"/>
+   <sub val="0.15" order="0x40" stat="mReuse"/>
+    <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item>
+<item id="10455" name="Icarus Wand - Acumen Madness Empower">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.23" order="0x40" stat="mAtkSpd"/>
+   <add val="0.19" order="0x40" stat="cAtkMagic"/>
+   <basemul val="0.35" order="0x40" stat="mAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item> 
+<item id="10441" name="Icarus Spirit - Mana Up">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item> 
+<item id="10442" name="Icarus Spirit - Conversion">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10443" name="Icarus Spitter - Focus Haste Recovery">
+  <for> 
+   <set val="689" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>   
+   <set val="293" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/> 
+   <sub val="0.16" order="0x40" stat="atkReuse"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10444" name="Icarus Spitter - Guidance"> 
+  <for> 
+  <set val="689" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="293" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10445" name="Icarus Spitter - Focus">
+  <for> 
+   <set val="689" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="293" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10446" name="Icarus Disperser - Haste Cruelty Reuse">
+  <for> 
+   <set val="318" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+    <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10447" name="Icarus Disperser - Evasion">
+  <for> 
+   <set val="318" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10448" name="Icarus Disperser - Critical Damage">
+  <for> 
+   <set val="318" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>   
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10449" name="Icarus Trident - Focus Health Cruelty"> 
+  <for> 
+    <set val="363" order="0x08" stat="pAtk"/>
+    <set val="163" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+	<add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item> 
+<item id="10450" name="Icarus Trident - Critical Stun">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+    <set val="8" order="0x08" stat="rCrit"/>
+	<add val="-3" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10451" name="Icarus Trident - Light"> 
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+    <set val="8" order="0x08" stat="rCrit"/>
+	<add val="-3" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10452" name="Icarus Hammer - Health Haste Cruelty">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>   
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item> 
+<item id="10453" name="Icarus Hammer - Health">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item> 
+<item id="10454" name="Icarus Hammer - Rsk. Focus">
+  <for> 
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10456" name="Icarus Hall - Conversion">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10457" name="Icarus Hall - Acumen">
+  <for> 
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10458" name="Icarus Katars - Focus Haste Cruelty">
+  <for> 
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+      <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10459" name="Icarus Hand - Focus">
+  <for> 
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10460" name="Icarus Hand - Haste"> 
+  <for> 
+    <set val="442" order="0x08" stat="pAtk"/>
+    <set val="163" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item> 
+<item id="10461" name="Icarus Stinger - Reuse Reuse Cruelty"> 
+  <for> 
+   <set val="329" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <sub val="0.15" order="0x40" stat="mReuse"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10462" name="Icarus Stinger - Focus">
+  <for> 
+   <set val="329" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+    <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>   
+  </for>
+</item> 
+<item id="10463" name="Icarus Stinger - Light">
+  <for> 
+   <set val="329" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="406" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10464" name="Icarus Wingblade - Focus Health Reuse"> 
+  <for> 
+   <set val="393" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="6" order="0x08" stat="rCrit"/> 
+   <add val="2" order="0x10" stat="accCombat"/> 
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10465" name="Icarus Wingblade - Health"> 
+  <for> 
+   <set val="393" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="6" order="0x08" stat="rCrit"/> 
+   <add val="2" order="0x10" stat="accCombat"/> 
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item> 
+<item id="10466" name="Icarus Wingblade - Light"> 
+  <for> 
+   <set val="393" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="6" order="0x08" stat="rCrit"/> 
+   <add val="2" order="0x10" stat="accCombat"/> 
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for> 
+</item> 
+<item id="10467" name="Icarus Shooter - Reuse Speed Recovery">
+  <for>
+   <set val="422" order="0x08" stat="pAtk"/>
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <basemul val="0.08" order="0x40" stat="runSpd"/>
+   <sub val="0.18" order="0x40" stat="atkReuse"/>  
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for> 
+</item> 
+<item id="10468" name="Icarus Shooter - Guidance"> 
+  <for> 
+   <set val="400" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="303" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+       <!-- SA: Guidance --> 
+    <add val="5.32" order="0x40" stat="accCombat"/>
+  </for> 
+</item> 
+<item id="10469" name="Icarus Shooter - Focus">
+  <for> 
+   <set val="400" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="303" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <add val="116" order="0x40" stat="rCrit"/>
+  </for> 
+</item>
+<item id="10474" name="Shadow Item - Apprentice's Staff">
+  <for>
+   <set val="23" order="0x08" stat="pAtk"/>
+   <set val="22" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="10475" name="Shadow Item - Bone Club">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="10476" name="Shadow Item - Shining Knife">
+  <for>
+    <set val="21" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="10477" name="Shadow Item - Cestus">
+  <for>
+    <set val="29" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="10478" name="Shadow Item - Forest Bow">
+  <for>
+    <set val="49" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="10479" name="Shadow Item - Long Sword">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

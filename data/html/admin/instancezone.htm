@@ -1,0 +1,42 @@
+<html><title>Instance Creation Menu</title><body>
+<center>
+<table width=260><tr>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=180><center>Instance Creation Menu</center></td>
+<td width=40><button value="Back" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr></table><br>
+Create Example:<br1>
+Instance: [ 1 ]  -  Template: [ demo.xml ]<br>
+<table width=260>
+<tr>
+<td></td>
+<td>Instance</td>
+<td>Template</td>
+</tr>
+<tr>
+<td><button value="Create" action="bypass -h admin_createinstance $instanceid_create $templateid" width=80 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><edit var="instanceid_create" width=50></td>
+<td><edit var="templateid" width=80></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><button value="Destroy" action="bypass -h admin_destroyinstance $instanceid_destroy $templateid" width=80 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><edit var="instanceid_destroy" width=50></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><button value="Set" action="bypass -h admin_setinstance $instanceid_set $templateid" width=80 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><edit var="instanceid_set" width=50></td>
+</tr>
+</table>
+<br><br>
+<button value="List Instances" action="bypass -h admin_listinstances" width=110 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"><br>
+</center>
+<br><br>
+Note:<br1>
+IDs => 300000 are reserved for dynamic instances!
+</body></html>

@@ -1,0 +1,38 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<img src="L2UI.SquareBlank" width=1 height=5>
+
+<table width=280 border=0 bgcolor="363636">
+<tr>
+<td width=112 align=center><button value="Back" action="bypass admin_event_manage show_add_position_window" width=70 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=119 align=center>%enableDisable%</td>
+<td width=100 align=right><combobox width=84 height=17 var=page list=%event_pages%></td>
+<td width=110 align=left><button value="Go" action="bypass admin_event_manage mini_edit_event %eventId% $page" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<br>
+
+</center>
+
+<font color=9f9f9f>All positions are sorted by their priority.</font>
+<br>
+
+<font color=ac9887>1. Numbered:</font><br1>
+<font color=9f9f9f>Rewards that apply for one certain position - For example '5.' will reward the fifth best player/team (based on score) in the event; '2.' will reward the second best player/team. Players that have been rewarded by any of these Numbered positions will not get rewards from any of <font color=LEVEL>General</font> (Winner, Looser,..) or <font color=LEVEL>Range</font> (2. - 5.) positions.</font>
+<br>
+<font color=ac9887>2. Range:</font><br1>
+<font color=9f9f9f>Rewards that apply for some range of positions - such as 2.-5. will reward 2nd, 3rd, 4th and 5th best players (based on score) in the event. Players that have been rewarded by any of <font color=LEVEL>Ranged</font> or <font color=LEVEL>General</font> positions will not receive any Ranged rewards.</font>
+<br>
+<font color=ac9887>3. General:</font><br1>
+<font color=9f9f9f>Rewards that apply for a certain group. For example 'Looser' are all players/teams that didn't win the match (2., 3., 4.,...) and weren't been rewarded by any of <font color=LEVEL>Numbered</font> or <font color=LEVEL>Range</font> positions.</font>
+
+<br>
+
+<font color=9f9f9f>Important: If you have, for example, specified position 'Looser' of type General and position '4.' of type Numbered, the 4th best player in the event will receive only the reward of type Numbered, because Numbered rewards have the biggest priority.
+<br1>Basically, every player will always receive rewards only from one Position (Winner, Looser, 2., 8., 4-8.,...).
+</font>
+
+</body></html>

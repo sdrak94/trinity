@@ -1,0 +1,250 @@
+		<event id="20" Type="TeamVsTeam" Name="Ruins of Agony" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="5" eventTime="10" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-43885, 116453, -3592" />
+				<spawn teamId="Blue" spawn="-54053, 108169, -3746" />
+			</teamSpawns>
+			
+			<npcSpawns>
+			
+				<spawn npcId="90001" spawnloc="-43350, 116351, -3555" />
+				<spawn npcId="90001" spawnloc="-54243, 108618, -3724" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="4" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="18" Type="HuntingGrounds" Name="Ruins of Agony" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="5" eventTime="10" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Green" nameColor="0x65C956" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="-5991, 244225, -1709" range="10000"/>
+			
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-12230, 140781, -3698" />
+				<spawn teamId="Green" spawn="-20848, 145590, -3748" />
+			</teamSpawns>
+			
+			<npcSpawns>
+				<spawn npcId="90001" spawnloc="-12473, 141069, -3698" />
+				<spawn npcId="90001" spawnloc="-20889, 146205, -3756" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="4" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</tie>
+			</rewards>
+		</event>			
+		<event id="10" Type="HuntingGrounds" Name="Nornils Cave" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="5" eventTime="10" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Green" nameColor="0x65C956" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="-5991, 244225, -1709" range="10000"/>
+			
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-88510, 50775, -4480" />
+				<spawn teamId="Red" spawn="-87742, 51214, -4480" />
+				<spawn teamId="Red" spawn="-88537, 51203, -4480" />
+				<spawn teamId="Red" spawn="-87776, 50800, -4480" />
+				<spawn teamId="Red" spawn="-87789, 49817, -4352" />
+				<spawn teamId="Red" spawn="-88142, 49845, -4352" />
+				<spawn teamId="Green" spawn="-78951, 55411, -4960" />
+				<spawn teamId="Green" spawn="-78905, 55017, -4960" />
+				<spawn teamId="Green" spawn="-79689, 54996, -4960" />
+				<spawn teamId="Green" spawn="-79699, 55424, -4960" />
+				<spawn teamId="Green" spawn="-79666, 54066, -4832" />
+				<spawn teamId="Green" spawn="-79310, 54093, -4832" />
+			</teamSpawns>
+			
+			<!--<npcSpawns>
+				<spawn npcId="90001" spawnloc="-7495, 246742, -1842" />
+				<spawn npcId="90001" spawnloc="-6337, 240927, -1841" />
+			</npcSpawns>-->
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="4" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="8" Type="TeamVsTeam" Name="Ruins of Despair" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="5" eventTime="10" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="146093,1857,-460" range="10000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-17192, 147386, -3683" />
+				<spawn teamId="Blue" spawn="-20259, 136989, -3895" />
+			</teamSpawns>
+			
+			<npcSpawns>
+			
+				<spawn npcId="90001" spawnloc="-17507, 147305, -3679" />
+				<spawn npcId="90001" spawnloc="-19946, 136691, -3832" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="4" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="11" Type="TeamVsTeam" Name="Sky Wagon Relic" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="146093,1857,-460" range="10000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="109742, -153281, -1687" />
+				<spawn teamId="Blue" spawn="117557, -155465, -1930" />
+			</teamSpawns>
+			
+			<npcSpawns>
+			
+				<spawn npcId="90001" spawnloc="109355, -152998, -1751" />
+				<spawn npcId="90001" spawnloc="117969, -155402, -1930" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="17" Type="HuntingGrounds" Name="Sky Wagon Relic" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Green" nameColor="0x65C956" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="-5991, 244225, -1709" range="10000"/>
+			
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="109742, -153281, -1687" />
+				<spawn teamId="Green" spawn="117557, -155465, -1930" />
+			</teamSpawns>
+			
+			<npcSpawns>
+			
+				<spawn npcId="90001" spawnloc="109355, -152998, -1751" />
+				<spawn npcId="90001" spawnloc="117969, -155402, -1930" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>	

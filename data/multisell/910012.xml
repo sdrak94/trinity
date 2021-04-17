@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+    <ingredient id="6673" count="200"/> 
+    <ingredient id="50100" count="20"/> 
+    <ingredient id="50103" count="20"/> 
+    <ingredient id="50104" count="20"/>
+    <ingredient id="13796" count="200"/>  
+    <ingredient id="99000" count="100"/> 
+    <ingredient id="99002" count="100"/> 
+    <ingredient id="99004" count="100"/> 
+    <ingredient id="-300" count="2000"/> 
+    <ingredient id="4676" count="7"/> 
+    <production id="70006" count="1" enchant="0"/> 
+  </item>
+   <item id="2"> 
+    <ingredient id="6673" count="200"/> 
+    <ingredient id="50100" count="20"/> 
+    <ingredient id="50103" count="20"/> 
+    <ingredient id="50104" count="20"/>
+    <ingredient id="13796" count="200"/>  
+    <ingredient id="99000" count="150"/> 
+    <ingredient id="99002" count="150"/> 
+    <ingredient id="99004" count="150"/> 
+    <ingredient id="-300" count="2000"/> 
+    <ingredient id="4676" count="7"/> 
+    <production id="70007" count="1" enchant="0"/> 
+  </item>
+   <item id="3"> 
+    <ingredient id="4357" count="450000"/> 
+    <ingredient id="4356" count="100"/> 
+    <ingredient id="6673" count="600"/> 
+    <ingredient id="50100" count="50"/> 
+    <ingredient id="50103" count="50"/> 
+    <ingredient id="50104" count="50"/>
+    <ingredient id="50023" count="4"/>
+    <ingredient id="50209" count="3"/>
+    <ingredient id="50205" count="2"/>
+    <ingredient id="50200" count="1"/>
+    <ingredient id="99000" count="500"/> 
+    <ingredient id="99002" count="500"/> 
+    <ingredient id="99004" count="500"/> 
+    <ingredient id="-300" count="4000"/> 
+    <ingredient id="4676" count="50"/> 
+    <production id="70008" count="1" enchant="0"/> 
+  </item>
+</list>

@@ -1,0 +1,133 @@
+<list>
+<item id="73050" name="Starmetal Bracelet Rare">
+  <for>
+  <!--<sub val="0.04" order="0x40" stat="mReuse"/>
+  <add val="0.08" order="0x40" stat="gainHp"/>
+  <mul val="0.96" order="0x30" stat="MpConsume"/>
+  <enchant val="0" order="0x50" stat="pDef"/>
+  <add val="0.08" order="0x40" stat="giveHp"/>-->
+  <sub val="0.03" order="0x40" stat="mReuse"/>
+  <sub val="0.03" order="0x40" stat="pReuse"/>
+  <add val="0.03" order="0x40" stat="gainHp"/>
+  <add val="1" order="0x10" stat="MEN"/>
+  </for>
+</item>
+<item id="73051" name="Seraph Bracelet Rare">
+  <for>
+  <!--<sub val="0.03" order="0x40" stat="critVuln"/>
+  <basemul val="0.1" order="0x40" stat="mAtk"/>
+  <add val="300" order="0x40" stat="maxHp"/>
+  <add val="50" order="0x40" stat="pDef"/>-->
+   <sub val="0.02" order="0x40" stat="critVuln"/>
+   <add val='3' order='0x40' stat='rEvasAbs'/>
+   <add val="1" order="0x10" stat="INT"/>
+  </for>
+</item>
+<item id="73052" name="Meteroic Bracelet Rare">
+  <for>
+   <add val="1" order="0x40" stat="rEvas"/>
+   <add val="1" order="0x40" stat="accCombat"/>
+   <add val="1" order="0x10" stat="STR"/>
+  </for>
+</item>
+<item id="73053" name="Adamantium Bracelet Rare">
+  <for>
+  <sub val="0.05" order="0x40" stat="mReuse"/>
+  <sub val="0.05" order="0x40" stat="pReuse"/>
+  <add val="0.05" order="0x40" stat="gainHp"/>
+  <add val="1" order="0x10" stat="MEN"/>
+  <add val="1" order="0x10" stat="CON"/>
+  <!--<sub val="0.08" order="0x40" stat="mReuse"/>
+  <add val="0.16" order="0x40" stat="gainHp"/>
+  <mul val="0.92" order="0x30" stat="MpConsume"/>
+  <add val="0.16" order="0x40" stat="giveHp"/>
+  <add val="1" order="0x10" stat="WIT"/>-->
+  </for>
+</item>
+<item id="73054" name="Bloodstone Bangle Rare">
+  <for>
+   <sub val="0.035" order="0x40" stat="critVuln"/>
+   <add val="4" order='0x40' stat="rEvasAbs"/>
+   <add val="1" order="0x10" stat="INT"/>
+   <add val="1" order="0x10" stat="CON"/>
+  <!--<sub val="0.06" order="0x40" stat="critVuln"/>
+  <basemul val="0.2" order="0x40" stat="mAtk"/>
+  <add val="600" order="0x40" stat="maxHp"/>
+  <add val="100" order="0x40" stat="pDef"/>
+  <add val="1" order="0x10" stat="INT"/>-->
+  </for>
+</item>
+<item id="73055" name="Bangle of Tauti Rare">
+  <for>
+   <add val="2" order="0x40" stat="rEvas"/>
+   <add val="2" order="0x40" stat="accCombat"/>
+   <add val="1" order="0x10" stat="STR"/>
+   <add val="1" order="0x10" stat="CON"/>
+  <!--<basemul val="0.2" order="0x40" stat="pAtk"/>
+  <add val="0.12" order='0x40' stat='cAtk'/>
+  <add val="4" order="0x40" stat="accCombat"/>
+  <add val="4" order="0x40" stat="rEvas"/>
+  <add val="1" order="0x10" stat="STR"/>-->
+  </for>
+</item>
+<item id="73056" name="Utility Bracelet">
+  <for>
+  <sub val="0.07" order="0x40" stat="mReuse"/>
+  <sub val="0.07" order="0x40" stat="pReuse"/>
+  <add val="0.07" order="0x40" stat="gainHp"/>
+  <add val="1" order="0x10" stat="MEN"/>
+  <add val="1" order="0x10" stat="CON"/>
+  <add val="1" order="0x10" stat="WIT"/>
+  <add val="1" order="0x10" stat="DEX"/>
+  <!--<sub val="0.08" order="0x40" stat="mReuse"/>
+  <add val="0.16" order="0x40" stat="gainHp"/>
+  <mul val="0.92" order="0x30" stat="MpConsume"/>
+  <add val="0.16" order="0x40" stat="giveHp"/>
+  <add val="2" order="0x10" stat="WIT"/>
+  <add val="1" order="0x10" stat="CON"/>-->
+  </for>
+</item>
+<item id="73057" name="Sorcery Bracelet">
+  <for>
+   <sub val="0.07" order="0x40" stat="critVuln"/>
+   <add val='5' order='0x40' stat='rEvasAbs'/>
+   <add val="1" order="0x10" stat="INT"/>
+   <add val="1" order="0x10" stat="CON"/>
+   <add val="1" order="0x10" stat="WIT"/>
+  <!--<sub val="0.06" order="0x40" stat="critVuln"/>
+  <basemul val="0.2" order="0x40" stat="mAtk"/>
+  <add val="600" order="0x40" stat="maxHp"/>
+  <add val="100" order="0x40" stat="pDef"/>
+  <add val="2" order="0x10" stat="INT"/>
+  <add val="1" order="0x10" stat="CON"/>-->
+  </for>
+</item>
+<item id="73058" name="Brutal Bracelet">
+  <for>
+   <add val="3" order="0x40" stat="rEvas"/>
+   <add val="3" order="0x40" stat="accCombat"/>
+   <add val="1" order="0x10" stat="STR"/>
+   <add val="1" order="0x10" stat="CON"/>
+   <add val="1" order="0x10" stat="DEX"/>
+  <!--<basemul val="0.2" order="0x40" stat="pAtk"/>
+  <add val="0.12" order='0x40' stat='cAtk'/>
+  <add val="4" order="0x40" stat="accCombat"/>
+  <add val="4" order="0x40" stat="rEvas"/>
+  <add val="2" order="0x10" stat="STR"/>
+  <add val="1" order="0x10" stat="DEX"/>-->
+  </for>
+</item>
+<item id="73060" name="Satan's Wristguard">
+  <for>
+    <set val="6" order="0x50" stat="talisman"/>
+	<add val="0.12" order="0x40" stat="pvmVuln"/>
+	<add val="3" order="0x10" stat="DEX"/>
+	<add val="3" order="0x10" stat="STR"/>
+	<add val="3" order="0x10" stat="INT"/>
+	<add val="3" order="0x10" stat="CON"/>
+	<add val="3" order="0x10" stat="MEN"/>
+	<add val="3" order="0x10" stat="WIT"/>
+  </for>
+</item>
+
+</list>

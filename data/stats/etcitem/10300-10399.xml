@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10307" name="Great Snow Wolf Necklace">
+  <cond>
+    <player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57"/>
+  </cond>
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for/>
+</item>
+<item id="10308" name="Red Dragon Bugle of Wind">
+  <cond>
+    <player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57"/>
+  </cond>
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for/>
+</item>
+<item id="10309" name="Red Dragon Bugle of Star">
+  <cond>
+    <player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57"/>
+  </cond>
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for/>
+</item>
+<item id="10310" name="Red Dragon Bugle of Dusk">
+  <cond>
+    <player clanHall="36, 37, 38, 39, 40, 41, 51, 52, 53, 54, 55, 56, 57"/>
+  </cond>
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for/>
+</item>
+</list>

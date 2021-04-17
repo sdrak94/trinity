@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="5808" name="Party Mask">
+  <for>
+    <add val="100" order="0x40" stat="pDef"/>
+	<add val="45" order="0x40" stat="rCrit"/>
+  </for>
+</item>
+</list>

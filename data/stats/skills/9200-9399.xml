@@ -1,0 +1,1431 @@
+<list>
+<skill id="9200" levels="3" name="Deadly Blow">
+   <table name="#power"> 10000 18000 26000 </table>
+  <set name="magicLvl" val="92"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="hitTime" val="1000"/>
+  <set name="coolTime" val="220"/>
+  <set name="reuseDelay" val="1500"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="lethal1" val="4"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="45"/>
+  <set name="effectRange" val="500"/>
+  <set name="displayId" val="263"/>
+</skill>
+<skill id="9201" levels="3" name="Lethal Blow">
+  <table name="#power"> 15000 25000 35000 </table>
+  <set name="magicLvl" val="92"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="reuseDelay" val="2500"/>
+  <set name="hitTime" val="1700"/>
+  <set name="coolTime" val="220"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="lethal1" val="5"/>
+  <set name="lethal2" val="3"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="45"/>
+  <set name="effectRange" val="500"/>
+  <set name="displayId" val="344"/>
+  <set name="baseCritRate" val="15"/>
+</skill>
+<skill id="9202" levels="3" name="Mob Bluff">
+  <table name="#power"> 80 120 160 </table>
+  <table name="#time"> 2 4 6 </table>
+  <set name="magicLvl" val="93"/>
+  <set name="power" val="#power"/>
+  <set name="minLand" val="33"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="AGGREDUCE_CHAR"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <set name="isDebuff" val="true"/>
+  <set name="effectRange" val="400"/>
+  <set name="reuseDelay" val="9000"/>
+  <set name="hitTime" val="1000"/>
+  <set name="displayId" val="358"/>
+  <for>
+    <effect name="Bluff" time="#time" val="0" abnormal="stun" stackOrder="4" stackType="bluff"/>
+  </for>
+</skill>
+<skill id="9203" levels="3" name="Ultimate Evasion">
+   <table name="#pSkillEvas"> 23 28 33</table>
+  <table name="#rEvas"> 20 30 40 </table>
+  <set name="hitTime" val="1000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="150000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="displayId" val="111"/>
+  <for>
+    <effect name="Buff" time="30" val="0">
+      <add order="0x40" stat="pSkillEvas" val="#pSkillEvas"/>
+      <add order="0x40" stat="rEvas" val="#rEvas"/>
+      <mul order="0x30" stat="cancelVuln" val="0.2"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9204" levels="3" name="Switch">
+  <table name="#nextDanceCost"> 6 12 18 </table>
+  <set name="power" val="80"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="16000"/>
+  <set name="isDebuff" val="true"/>
+  <set name="nextDanceCost" val="#nextDanceCost"/>
+  <set name="hitTime" val="1000"/>
+  <set name="skillType" val="SWITCH"/> <!-- Only for Temp Fix: Needs Core Support for Randomize Aggro/Target Effect -->
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="1100"/>
+  <set name="displayId" val="12"/>
+</skill>
+<skill id="9205" levels="3" name="Mortal Blow">
+   <table name="#power"> 7000 14000 21000 </table>
+  <set name="magicLvl" val="92"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="condition" val="16"/>
+  <set name="hitTime" val="900"/>
+  <set name="reuseDelay" val="1000"/>
+  <set name="coolTime" val="220"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="lethal1" val="4"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="45"/>
+  <set name="effectRange" val="500"/>
+  <set name="displayId" val="16"/>
+</skill>
+<skill id="9206" levels="3" name="Shield Stun">
+  <table name="#power"> 7000 14000 21000 </table>
+  <set name="magicLvl" val="92"/>
+  <set name="power" val="#power"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="minLand" val="22"/>
+  <set name="reuseDelay" val="3000"/>
+  <set name="reuseMulti" val="2"/>
+  <set name="hitTime" val="1200"/>
+  <set name="coolTime" val="300"/>
+  <set name="skillType" val="STUN"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="isDebuff" val="true"/>
+  <set name="displayId" val="92"/>
+  <for>
+    <effect name="Stun" time="8" val="0" stackOrder="1" stackType="Stun"/>
+  </for>
+</skill>
+<skill id="9207" levels="1" name="DO NOT AGGRO" >
+    <set name="operateType" val="OP_PASSIVE"/>
+    <set name="target" val="TARGET_SELF"/>
+    <set name="skillType" val="BUFF"/>
+	<set name="desc" val="DO NOT AGGRO"/>
+</skill>
+<skill id="9208" levels="1" name="Ultra Enuma Elish" >
+    <set name="power" val="80000"/>
+    <set name="hitTime" val="1800"/>
+	<set name="ignoreShld" val="true"/>
+	<set name="coolTime" val="650"/>
+    <set name="SSBoost" val="3.38"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_FRONT_AREA"/>
+    <set name="skillRadius" val="400"/>
+    <set name="skillType" val="PDAM"/>
+	<set name="areaAngle" val="110"/>
+	<set name="castRange" val="400"/>
+    <set name="effectRange" val="900"/>
+	<set name="desc" val="Ultra Enuma Elish"/>
+    <set name="reuseDelay" val="4000"/>
+	<set name="baseCritRate" val="20"/>
+	<set name="displayId" val="526"/>
+</skill>
+<skill id="9209" levels="1" name="Blade Impulse">  
+  <set name="castRange" val="750"/>
+  <set name="coolTime" val="710"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="effectRange" val="1600"/>
+  <set name="flyType" val="CHARGE"/>
+  <set name="hitTime" val="700"/>
+  <set name="areaLimit" val="true"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="areaAngle" val="20"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="45"/>
+  <set name="magicLvl" val="89"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="desc" val="Blade Impulse"/>
+  <set name="power" val="27680"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillRadius" val="750"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="1.6"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="displayId" val="793"/>
+  <cond msg="You need to be farther away from your target to use this skill">
+     <target mindistance="100"/>
+  </cond>
+  <for>
+    <effect name="Stun" time="9" val="0" effectPower="900" effectType="STUN" stackOrder="10" stackType="Stun"/>
+  </for>
+</skill>
+<skill id="9210" levels="1" name="Automatic Whirling Attack Mode">  
+    <set name="operateType" val="OP_PASSIVE"/>
+    <set name="target" val="TARGET_SELF"/>
+    <set name="skillType" val="BUFF"/>
+	<set name="desc" val="Automatic Whirling Attack Mode"/>
+  <for>
+    <add order="0x40" stat="atkCountMax" val="6"/>
+	<set order="0x40" stat="pAtkAngle" val="380"/>
+  </for>
+</skill>
+<skill id="9211" levels="1" name="Devastating Critical">  
+    <set name="operateType" val="OP_PASSIVE"/>
+    <set name="target" val="TARGET_SELF"/>
+    <set name="skillType" val="BUFF"/>
+	<set name="desc" val="Devastating Critical"/>
+  <for>
+    <add order="0x40" stat="cAtk" val="4"/>
+	<add order="0x40" stat="rCrit" val="60"/>
+	<add order="0x40" stat="rEvas" val="38"/>
+	<add order="0x40" stat="pSkillEvas" val="66"/>
+	<add order="0x40" stat="mSkillEvas" val="66"/>
+  </for>
+</skill>
+<skill id="9212" levels="1" name="Weapon Disarm">  
+  <set name="castRange" val="50"/>
+  <set name="effectRange" val="400"/>
+  <set name="hitTime" val="1500"/>
+  <set name="isDebuff" val="true"/>
+  <set name="magicLvl" val="94"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="999"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillType" val="DISARM"/>
+  <set name="desc" val="Weapon Disarm"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="displayId" val="485"/>
+  <for>
+    <effect name="Disarm" time="5" val="0" stackOrder="1" stackType="disarm"/>
+  </for>
+</skill>
+<skill id="9213" levels="1" name="Improved Evasion II">  
+    <set name="operateType" val="OP_PASSIVE"/>
+    <set name="target" val="TARGET_SELF"/>
+    <set name="skillType" val="BUFF"/>
+	<set name="desc" val="Improved Evasion II"/>
+  <for>
+     <add order="0x40" stat="rEvas" val="11"/>
+  </for>
+</skill>
+<skill id="9214" levels="1" name="Behind damage reduction">  
+    <set name="operateType" val="OP_PASSIVE"/>
+    <set name="target" val="TARGET_SELF"/>
+    <set name="skillType" val="BUFF"/>
+	<set name="desc" val="Damages from behind reduced by 80%"/>
+  <for>
+     <mul order="0x50" stat="pDefBehindVuln" val="0.2"/>
+	 <mul order="0x50" stat="mDefBehindVuln" val="0.2"/>
+  </for>
+</skill>
+<skill id="9215" levels="1" name="Curse of Abyss">
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="300"/>
+  <set name="lvlDepend" val="2"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="hitTime" val="2000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="effectRange" val="1100"/>
+  <for>
+    <effect name="Debuff" time="60" val="0">
+      <mul order="0x50" stat="runSpd" val="0.9"/>
+      <sub order="0x40" stat="rEvas" val="6"/>
+      <mul order="0x50" stat="pDef" val="0.7"/>
+	  <mul order="0x50" stat="rShld" val="0"/>
+      <mul order="0x50" stat="mAtk" val="0.7"/>
+      <mul order="0x50" stat="mAtkSpd" val="0.8"/>
+      <mul order="0x50" stat="mCritRate" val="0.7"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9216" levels="1" name="Fire attacks heal it">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="triggeredId" val="9217"/>
+  <set name="triggeredLevel" val="1"/>
+  <set name="desc" val="Fire attacks have a chance to heal Ember"/>
+  <set name="activationChance" val="20"/>
+  <set name="activationElements" val="0"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+</skill>
+<skill id="9217" levels="1" name="Fire attacks heal">
+  <set name="power" val="9999"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="45"/>
+</skill>
+<skill id="9218" levels="1" name="Arlefane Arrow Rain">
+  <set name="castRange" val="1100"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="effectRange" val="1800"/>
+  <set name="hitTime" val="3500"/>
+  <set name="coolTime" val="600"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="desc" val="Arrow Rain"/>
+  <set name="overHit" val="true"/>
+  <set name="power" val="67912"/> 
+  <set name="reuseDelay" val="13000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="skillRadius" val="250"/> <!-- Guess -->
+  <set name="SSBoost" val="3.0"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="baseCritRate" val="20"/>
+  <set name="displayId" val="772"/>
+</skill>
+<skill id="9219" levels="1" name="Arlefane Elemental Heal">
+  <set name="power" val="6666"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="1100"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="desc" val="Elemental Heal"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="displayId" val="1218"/>
+</skill>
+<skill id="9220" levels="1" name="Arlefane Entangle">
+  <set name="magicLvl" val="99"/>
+  <set name="lvlDepend" val="2"/>
+  <set name="power" val="500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="minLand" val="30"/>
+  <set name="powerMulti" val="1.2"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="hitTime" val="2000"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="desc" val="Entangle"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="effectRange" val="1300"/>
+  <set name="displayId" val="102"/>
+  <for>
+    <effect name="Debuff" time="25" val="0" stackOrder="6" stackType="RunSpeedDown">
+      <mul order="0x50" stat="runSpd" val="0.33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9221" levels="1" name="Brakki's Howl">
+  <set name="magicLvl" val="99"/>
+  <set name="lvlDepend" val="2"/>
+  <set name="power" val="800"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="300"/>
+  <set name="effectRange" val="800"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="minland" val="45"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="hitTime" val="1300"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="desc" val="Brakki Howl"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="displayId" val="116"/>
+  <for>
+    <effect name="Debuff" time="25" val="0">
+      <mul order="0x50" stat="pAtk" val="0.3"/>
+	  <mul order="0x30" stat="rEvas" val="0.92"/>
+	  <mul order="0x50" stat="pSkillEvas" val="0.5"/>
+	  <mul order="0x50" stat="sDef" val="0.2"/>
+	  <mul order="0x30" stat="stunVuln" val="3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9222" levels="1" name="Brakki War Cry">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="35000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="desc" val="Brakki War Cry"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="78"/>
+  <for>
+    <effect name="Buff" time="30" val="0">
+      <mul order="0x50" stat="pAtk" val="1.5"/>
+	  <add order="0x50" stat="accCombat" val="30"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9223" levels="1" name="Brakki Frenzy (20% HP)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="150000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="desc" val="Frenzy (20% HP)"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="176"/>
+  <cond>
+    <player hp="20"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="40" val="0" abnormal="vitality">
+      <mul order="0x50" stat="pAtk" val="3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9224" levels="1" name="Brakki Guts (60% HP)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="150000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="desc" val="Guts (60% HP)"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="139"/>
+  <cond>
+    <player hp="60"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="40" val="0" abnormal="vitality">
+      <mul order="0x50" stat="pDef" val="3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9225" levels="1" name="Brakki Demolition Impact">
+  <set name="castRange" val="250"/>
+  <set name="skillRadius" val="250"/>
+  <set name="effectRange" val="450"/>
+  <set name="baseCritRate" val="15"/>
+  <set name="hitTime" val="1900"/>
+  <set name="magiclvl" val="99"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="desc" val="Demolition Impact"/>
+  <set name="overHit" val="true"/>
+  <set name="areaAngle" val="60"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="power" val="99750"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="flyRadius" val="200"/>
+  <set name="displayId" val="777"/>
+  <for>
+     <effect name="Knockback" val="0" effectPower="190" effectType="STUN"/>
+	 <effect name="Stun" val="0" time="7" effectPower="190" effectType="STUN"/>
+  </for>
+</skill>
+<skill id="9226" levels="1" name="Brakki Punch of Doom">
+  <set name="power" val="180000"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="lethal1" val="75"/>
+  <set name="lethal2" val="33"/>
+  <set name="desc" val="Punch of Doom (high lethal rate)"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="4.3"/>
+  <set name="reuseDelay" val="29000"/>
+  <set name="hitTime" val="2400"/>
+  <set name="coolTime" val="640"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="50"/>
+  <set name="effectRange" val="400"/>
+  <set name="displayId" val="81"/>
+  <for>
+    <effect name="StunSelf" time="7" val="0" stackOrder="1" stackType="Stun" effectPower="500" effectType="STUN"/>
+  </for>
+</skill>
+<skill id="9227" levels="1" name="Brakki Shock Stomp">
+  <set name="magicLvl" val="99"/>
+  <set name="power" val="70000"/> <!-- Guess -->
+  <set name="target" val="TARGET_AURA"/>
+  <set name="reuseDelay" val="20000"/> <!-- Guess -->
+  <set name="skillRadius" val="890"/>
+  <set name="effectRange" val="1100"/>
+  <set name="hitTime" val="3500"/>
+  <set name="desc" val="Shock Stomp"/>
+  <set name="flyRadius" val="500"/>
+  <set name="coolTime" val="450"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="4129"/>
+  <for>
+    <effect name="Stun" time="7" val="0" effectPower="300" effectType="STUN">
+	  <mul order="0x50" stat="pDef" val="0.75"/>
+	  </effect>
+	  <effect name="Knockback" val="0"/>
+  </for>
+</skill>
+<skill id="9228" levels="3" name="Davros Fatal Strike">
+  <set name="power" val="65432"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.75"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="hitTime" val="1400"/>
+  <set name="coolTime" val="550"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="desc" val="Almost +16 God's Blade, hell yeah"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="baseCritRate" val="27"/>
+  <set name="displayId" val="190"/>
+</skill>
+<skill id="9229" levels="3" name="Davros Block">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Increased shield defense (cuz of the Dusk Shield, duh)"/>
+  <for>
+    <add order="0x40" stat="rShld" val="40"/>
+    <add order="0x40" stat="sDef" val="1200"/>
+	<add order="0x40" stat="overpower" val="40"/>
+  </for>
+</skill>
+<skill id="9230" levels="3" name="Anakim Increased Critical Rate">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Increased Critical Rate"/>
+  <for>
+    <add order="0x40" stat="rCrit" val="280"/>
+  </for>
+</skill>
+<skill id="9231" levels="3" name="Anakim Dmg to robe">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Does 500% more damage to robe users (cuz her arms are basically 2 daggers/rapiers)"/>
+  <for>
+    <add order="0x40" stat="damRobe" val="4"/>
+  </for>
+</skill>
+<skill id="9232" levels="3" name="Anakim Magic Barrier">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Highly resistant to magic (67%)"/>
+  <for>
+    <mul order="0x30" stat="magicDamVul" val="0.33"/>
+  </for>
+</skill>
+<skill id="9233" levels="1" name="Marilith">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High evasion, avoids 50% of normal hits, extra vulnerable to Dynasty weapons"/>
+  <for>
+    <add order="0x40" stat="rEvasAbs" val="50"/>
+	<add order="0x40" stat="rEvas" val="20"/>
+	<add order="0x40" stat="darkPower" val="110"/>
+	<add order="0x40" stat="darkRes" val="70"/>
+	<sub order="0x40" stat="resistDynastyWeapons" val="25"/>
+  </for>
+</skill>
+<skill id="9234" levels="1" name="Terminator">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Resistant to piercing weapons"/>
+  <for>
+    <mul order="0x30" stat="bowWpnVuln" val="0.5"/>
+	<mul order="0x30" stat="crossbowWpnVuln" val="0.5"/>
+	<mul order="0x30" stat="daggerWpnVuln" val="0.5"/>
+	<mul order="0x30" stat="rapierWpnVuln" val="0.5"/>
+	<add order="0x40" stat="darkPower" val="50"/>
+	<add order="0x40" stat="darkRes" val="80"/>
+	<sub order="0x40" stat="holyRes" val="50"/>
+	<sub order="0x40" stat="rEvas" val="60"/>
+	<add order="0x40" stat="resistDreadWeapons" val="30"/>
+  </for>
+</skill>
+<skill id="9235" levels="1" name="Witch Girl">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Reflects magic 50%, high evasion, really high critical damage"/>
+  <for>
+	<add order="0x40" stat="reflectSkillMagic" val="60"/>
+	<add order="0x40" stat="vengeanceMdam" val="40"/>
+	<add order="0x40" stat="rEvas" val="35"/>
+	<add order="0x40" stat="cAtk" val="800"/>
+  </for>
+</skill>
+<skill id="9236" levels="1" name="Poisonous Burp">
+  <set name="abnormalLvl" val="8"/>
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="200"/>
+  <set name="killByDot" val="true"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="160"/>
+  <set name="effectRange" val="400"/>
+  <set name="reuseDelay" val="7000"/>
+  <set name="hitTime" val="2500"/>
+  <set name="skillType" val="POISON"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="103"/>
+  <for>
+    <effect count="15" name="DamOverTime" time="3" val="600" abnormal="poison" stackType="poison" stackOrder="50"/>
+  </for>
+</skill>
+<skill id="9237" levels="1" name="Xanofalgue">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="super high regen, absorbs damage"/>
+  <for>
+	<mul order="0x30" stat="regHp" val="12"/>
+	<mul order="0x50" stat="maxHp" val="3.0"/>
+	<add val="15000" order="0x50" stat="maxHp"/>
+	<add order="0x40" stat="rEvas" val="10"/>
+	<add order="0x40" stat="windPower" val="90"/>
+	<sub order="0x40" stat="earthRes" val="70"/>
+	<add order="0x40" stat="reflectDam" val="18"/>
+	<add order="0x40" stat="absorbDam" val="60"/>
+	<add order="0x40" stat="rCrit" val="250"/>
+	<add val="0.90" order="0x40" stat="cAtk"/>
+	<add val="9500" order="0x40" stat="pAtk"/>
+	<add val="150" order="0x40" stat="pAtkSpd"/>
+	<add val="1000" order="0x40" stat="mDef"/>
+  </for>
+</skill>
+<skill id="9238" levels="1" name="Unpleasant Humming">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High melee damage reflect"/>
+  <for>
+	<add order="0x40" stat="reflectDam" val="40"/>
+  </for>
+</skill>
+<skill id="9239" levels="1" name="Death Lord Shax">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Cleaves in front of 240 degrees. Ignores player pDef over 5000. Extra vulnerable to Dynasty weapons. 50% immune to magic criticals."/>
+  <for>
+	<add order="0x10" stat="atkCountMax" val="3"/>
+	<add order="0x10" stat="pAtkAngle" val="120"/>
+	<add order="0x10" stat="pDefIgnore" val="5000"/>
+	<sub order="0x40" stat="resistDynastyWeapons" val="50"/>
+	<add order="0x10" stat="mCritDamEvas" val="50"/>
+  </for>
+</skill>
+<skill id="9240" levels="1" name="Verfa">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Cleaves in a large area, extremely resistant to ranged weapon attacks"/>
+  <for>
+	<add order="0x10" stat="atkCountMax" val="7"/>
+	<add order="0x10" stat="pAtkAngle" val="220"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0.2"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="0.2"/>
+	<add order="0x40" stat="mDef" val="2500"/>
+  </for>
+</skill>
+<skill id="9241" levels="1" name="Judgment Hound">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High evasion"/>
+  <for>
+	<add order="0x40" stat="rEvas" val="29"/>
+	<add order="0x40" stat="negateShld" val="40"/>
+  </for>
+</skill>
+<skill id="9242" levels="1" name="Torment Beast">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="reduces incoming damage by 200"/>
+  <for>
+	<add order="0x40" stat="delDmg" val="200"/>
+	<add order="0x40" stat="reflectDam" val="15"/>
+  </for>
+</skill>
+<skill id="9243" levels="1" name="Mantalisk">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High critical damage, more vulnerable from the back, can reflect spells"/>
+  <for>
+	<add order="0x40" stat="cAtk" val="6"/>
+	<add order="0x40" stat="pDefBehindVuln" val="0.2"/>
+	<add order="0x40" stat="reflectSkillMagic" val="9"/>
+  </for>
+</skill>
+<skill id="9244" levels="1" name="Sewer Princess Faris">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Cleaves, high skill evasion."/>
+  <for>
+	<add order="0x10" stat="atkCountMax" val="2"/>
+	<add order="0x10" stat="pAtkAngle" val="90"/>
+	<add order="0x40" stat="rEvas" val="12"/>
+	<add order="0x40" stat="rCrit" val="100"/>
+	<add order="0x40" stat="pSkillEvas" val="25"/>
+	<add order="0x40" stat="mSkillEvas" val="25"/>
+  </for>
+</skill>
+<skill id="9245" levels="1" name="Prophallus">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Nuker. Takes more magical damage from behind than usual. Takes more damage from Dynasty weapons. Increased magic critical damage."/>
+  <for>
+	<add order="0x40" stat="cAtkMagic" val="2"/>
+	<sub order="0x40" stat="resistDynastyWeapons" val="45"/>
+	<add order="0x40" stat="mDefBehindVuln" val="0.8"/>
+  </for>
+</skill>
+<skill id="9246" levels="1" name="Rakshasu">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Takes more damage from Icarus weapons. Reflects physical skills' damage 15%. Absorbs mana. Takes extra damage from blunt weapons. Deals much more damage to robe-users. Deals much more critical damage to bleeding players."/>
+  <for>
+	<add order="0x40" stat="cAtkBleed" val="600"/>
+	<add order="0x40" stat="rCrit" val="90"/>
+	<sub order="0x40" stat="resistIcarusWeapons" val="45"/>
+	<add order="0x40" stat="reflectSkillPhysic" val="15"/>
+	<add order="0x40" stat="absorbDamMana" val="7"/>
+	<add order="0x40" stat="damRobe" val="1"/>
+  </for>
+</skill>
+<skill id="9247" levels="1" name="Kamaloka Vulnerable to Dynasty">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Takes more damage from Dynasty weapons."/>
+  <for>
+	<sub order="0x40" stat="resistDynastyWeapons" val="40"/>
+  </for>
+</skill>
+<skill id="9248" levels="1" name="Kamaloka Vulnerable to Icarus">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Takes more damage from Icarus weapons."/>
+  <for>
+	<sub order="0x40" stat="resistIcarusWeapons" val="40"/>
+  </for>
+</skill>
+<skill id="9249" levels="1" name="Cemetery High physical resistance">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant against all-physical damage (33%)"/>
+  <for>
+	<mul order="0x50" stat="swordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="daggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="poleWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualFistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigSwordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigBluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualDaggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="ancientWpnVuln" val="0.33"/>
+	<add order="0x50" stat="delDmg" val="90"/>
+	<add order="0x50" stat="accCombat" val="20"/>
+	<add order="0x50" stat="runSpd" val="10"/>
+  </for>
+</skill>
+<skill id="9250" levels="1" name="Cemetery Only vulnerable to crushing wpns">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant against non-crushing damages (33%), including magic (45%)"/>
+  <for>
+	<mul order="0x50" stat="magicDamVul" val="0.45"/>
+	<mul order="0x50" stat="swordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="daggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigSwordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualDaggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="ancientWpnVuln" val="0.33"/>
+	<add order="0x50" stat="delDmg" val="90"/>
+	<add order="0x50" stat="accCombat" val="20"/>
+	<add order="0x50" stat="runSpd" val="10"/>
+  </for>
+</skill>
+<skill id="9251" levels="1" name="Cemetery Only vulnerable to cutting wpns">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant against non-cutting damages (33%), including magic (45%)"/>
+  <for>
+	<mul order="0x50" stat="magicDamVul" val="0.45"/>
+	<mul order="0x50" stat="bluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="daggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="poleWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualFistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigBluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualDaggerWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="0.33"/>
+	<add order="0x50" stat="delDmg" val="90"/>
+	<add order="0x50" stat="accCombat" val="20"/>
+	<add order="0x50" stat="runSpd" val="10"/>
+  </for>
+</skill>
+<skill id="9252" levels="1" name="Cemetery Only vulnerable to piercing wpns">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant against non-piercing damages (33%), including magic (45%)"/>
+  <for>
+	<mul order="0x50" stat="magicDamVul" val="0.45"/>
+	<mul order="0x50" stat="swordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="poleWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="dualFistWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigSwordWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="bigBluntWpnVuln" val="0.33"/>
+	<mul order="0x50" stat="ancientWpnVuln" val="0.33"/>
+	<add order="0x50" stat="delDmg" val="90"/>
+	<add order="0x50" stat="accCombat" val="20"/>
+	<add order="0x50" stat="runSpd" val="10"/>
+  </for>
+</skill>
+<skill id="9253" levels="1" name="Lilith Demon Wind" >
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="250"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="2"/> <!-- Wind -->
+  <set name="elementPower" val="40"/>
+  <set name="hitTime" val="4500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="maxLand" val="80"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="1000"/>
+  <set name="flyRadius" val="450"/>
+  <set name="effectRange" val="1400"/>
+  <set name="displayId" val="1291"/>
+  <for>
+    <effect name="Knockback" val="0" effectPower="90" effectType="STUN"/>
+    <effect name="Debuff" time="25" val="0" effectPower="100" effectType="DEBUFF">
+      <mul order="0x50" stat="gainHp" val="0.5"/>
+	  <mul order="0x50" stat="pAtkSpd" val="0.7"/>
+	  <mul order="0x50" stat="mAtkSpd" val="0.7"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9254" levels="1" name="Horus">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Deflects arrows (40%). Evades spells (20%). High critical rate. Increased evasion."/>
+  <for>
+	<add order="0x40" stat="rCrit" val="300"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0">
+	  <game chance="40"/>
+	 </mul>
+	 <mul order="0x50" stat="crossbowWpnVuln" val="0">
+	  <game chance="40"/>
+	 </mul>
+	 <add order="0x40" stat="mSkillEvas" val="20"/>
+	 <add order="0x40" stat="rEvas" val="22"/>
+  </for>
+</skill>
+<skill id="9255" levels="1" name="Brakki">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Doesn't afraid of shields. Adds 600 pure damage. Does more damage as target HP decreases."/>
+  <for>
+	<add order="0x40" stat="negateShld" val="100"/>
+	<add order="0x40" stat="addDmg" val="600"/>
+	<add order="0x40" stat="moreDamHP" val="2"/>
+  </for>
+</skill>
+<skill id="9256" levels="1" name="Sailren">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extra vulnerable to piercing weapons and polearms. Ignores shields 50%. Reduces received damage by 80. Chance to ignore AOE spells."/>
+  <for>
+	<mul order="0x50" stat="daggerWpnVuln" val="1.5"/>
+	<mul order="0x50" stat="bowWpnVuln" val="1.5"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="1.5"/>
+	<mul order="0x50" stat="poleWpnVuln" val="1.5"/>
+	<mul order="0x50" stat="dualDaggerWpnVuln" val="1.5"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="1.5"/>
+	<add order="0x40" stat="negateShld" val="50"/>
+	<add order="0x40" stat="knockback" val="4"/>
+	<add order="0x40" stat="knockbackDistAdd" val="20"/>
+	<add order="0x40" stat="delDmg" val="80"/>
+	<add order="0x40" stat="evadeAOESpell" val="50"/>
+  </for>
+</skill>
+<skill id="9257" levels="1" name="Shadow of Halisha">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High damage to robe users. Physical skill evasion. Arrow pierces. Damage increases as distance to target increases."/>
+  <for>
+	<add order="0x40" stat="rEvas" val="8"/>
+	<add order="0x40" stat="pSkillEvas" val="30"/>
+	<add order="0x40" stat="damRobe" val="4"/>
+	<add order="0x40" stat="rangedPiercing" val="100"/>
+	<add order="0x40" stat="distDmgBoost" val="0.01"/>
+	<add order="0x40" stat="distDmgBoostSkill" val="0.01"/>
+	<mul order="0x30" stat="pReuse" val="0.5"/>
+  </for>
+</skill>
+<skill id="9258" levels="1" name="Mirror of Oblivion">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant to non-crushing/blunt damages (60%). High reflect skills chance. Chance to reflect skills damage. Ignores shields."/>
+  <for>
+	<add order="0x40" stat="reflectSkillMagic" val="14"/>
+	<add order="0x40" stat="vengeanceMdam" val="100">
+	  <game chance="25"/>
+	</add>
+	<add order="0x40" stat="reflectSkillPhysic" val="7"/>
+	<add order="0x40" stat="vengeancePdam" val="50">
+	  <game chance="20"/>
+	</add>
+	<sub order="0x40" stat="rEvas" val="50"/>
+	<add order="0x40" stat="negateShld" val="100"/>
+	<mul order="0x50" stat="swordWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="daggerWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="bowWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="crossbowWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="dualWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="bigSwordWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="dualDaggerWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="0.6"/>
+	<mul order="0x50" stat="ancientWpnVuln" val="0.6"/>
+  </for>
+</skill>
+<skill id="9259" levels="1" name="Divine Acquiescence">
+  <set name="magicLvl" val="91"/>
+  <set name="power" val="100"/>
+  <set name="lvlDepend" val="2"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="hitTime" val="3000"/>
+  <set name="skillType" val="WEAKNESS"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="200"/>
+  <set name="effectRange" val="1250"/>
+  <set name="isDebuff" val="true"/>
+  <set name="displayId" val="1524"/>
+  <for>
+    <effect name="Debuff" time="25" val="0" stackOrder="1" stackType="surrender">
+      <sub order="0x40" stat="holyRes" val="120"/>
+      <add order="0x40" stat="darkRes" val="60"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9260" levels="1" name="Insolence Seal">
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1250"/>
+  <set name="element" val="4"/> <!-- Holy -->
+  <set name="elementPower" val="40"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="lvlDepend" val="1"/>
+  <set name="magicLvl" val="85"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="90"/> <!-- Base Land Rate --> <!-- Guess -->
+  <set name="reuseDelay" val="20000"/>
+  <set name="skillType" val="DOT"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="displayId" val="1525"/>
+  <for>
+    <effect count="30" name="DamOverTime" time="2" val="250">
+      <mul order="0x50" stat="gainHp" val="0.5"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9261" levels="1" name="Light Raze">
+  <set name="power" val="260"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="element" val="4"/> <!-- Holy -->
+  <set name="elementPower" val="40"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="reuseDelay" val="1500"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="750"/>
+  <set name="effectRange" val="1250"/>
+  <set name="displayId" val="1523"/>
+</skill>
+<skill id="9262" levels="1" name="Holy Wrath">
+  <set name="magicLvl" val="80"/>
+  <set name="power" val="300"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="250"/>
+  <set name="element" val="4"/> <!-- Holy -->
+  <set name="elementPower" val="40"/>
+  <set name="reuseDelay" val="11000"/>
+  <set name="hitTime" val="4500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1000"/>
+  <set name="displayId" val="1528"/>
+    <for>
+    <effect name="Bluff" time="3" val="0" effectPower="80" effectType="FEAR" noicon="1"/>
+  </for>
+</skill>
+<skill id="9263" levels="1" name="Lidia">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant to crushing/blunt damages (25%). Becomes stronger at night. High vampiric absorption."/>
+  <for>
+	<add order="0x40" stat="absorbDam" val="25"/>
+	<mul order="0x50" stat="bluntWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="poleWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="dualFistWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="bigBluntWpnVuln" val="0.25"/>
+	<add order="0x40" stat="pAtkSpd" val="150">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="runSpd" val="55">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="rCrit" val="200">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="mCritRate" val="280">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="rEvas" val="12">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="mSkillEvas" val="33">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="negateShld" val="33">
+	  <game night="true"/>
+	</add>
+  </for>
+</skill>
+<skill id="9264" levels="1" name="Alfred">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Extremely resistant to one-handed weapons (25%). Becomes stronger at night. High vampiric absorption."/>
+  <for>
+	<add order="0x40" stat="absorbDam" val="25"/>
+	<mul order="0x50" stat="bluntWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="swordWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="daggerWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="etcWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="fistWpnVuln" val="0.25"/>
+	<mul order="0x50" stat="rapierWpnVuln" val="0.25"/>
+	<add order="0x40" stat="pAtkSpd" val="60">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="runSpd" val="15">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="cAtk" val="3">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="pAtk" val="13333">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="pDef" val="1455">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="mDef" val="1455">
+	  <game night="true"/>
+	</add>
+  </for>
+</skill>
+<skill id="9265" levels="1" name="Vampire Titan">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Becomes stronger at night. High vampiric absorption."/>
+  <for>
+	<add order="0x40" stat="absorbDam" val="25"/>
+	<add order="0x40" stat="pAtkSpd" val="150">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="runSpd" val="55">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="rCrit" val="200">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="mCritRate" val="280">
+	  <game night="true"/>
+	</add>
+	<add order="0x40" stat="rEvas" val="12">
+	  <game night="true"/>
+	</add>
+  </for>
+</skill>
+<skill id="9266" levels="1" name="Shyeed Acid">
+  <set name="abnormalLvl" val="8"/>
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="200"/>
+  <set name="killByDot" val="true"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="effectRange" val="400"/>
+  <set name="castRange" val="500"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="hitTime" val="3000"/>
+  <set name="skillType" val="POISON"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="1244"/>
+  <for>
+    <effect count="15" name="DamOverTime" time="1" val="500" abnormal="poison">
+	  <mul order="0x50" stat="pDef" val="0.4"/>
+	  <mul order="0x50" stat="sDef" val="0.3"/>
+	  </effect>
+  </for>
+</skill>
+<skill id="9267" levels="1" name="Demonic Demon">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="This demon is extremely demonic."/>
+  <for>
+	<add order="0x40" stat="absorbDam" val="25"/>
+	<add order="0x10" stat="atkCountMax" val="5"/>
+	<add order="0x10" stat="pAtkAngle" val="160"/>
+  </for>
+</skill>
+<skill id="9268" levels="1" name="Rotten Grasp">
+  <set name="magicLvl" val="99"/>
+  <set name="power" val="999"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="750"/>
+  <set name="minLand" val="99"/>
+  <set name="hitTime" val="700"/>
+  <set name="reuseDelay" val="50000"/>
+  <set name="desc" val="Can root area"/>
+  <set name="skillType" val="ROOT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <set name="effectRange" val="2500"/>
+  <set name="displayId" val="4197"/>
+  <for>
+    <effect name="Root" time="35" val="0" abnormal="root" stackOrder="55" stackType="Root"/>
+	<effect count="17" name="DamOverTime" time="2" val="500" abnormal="poison">
+	  <mul order="0x50" stat="rEvas" val="0.4"/>
+	  <mul order="0x50" stat="sDef" val="0.2"/>
+	</effect>
+  </for>
+</skill>
+<skill id="9269" levels="1" name="Willow Maker">
+  <set name="power" val="1000001"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="19000"/>
+  <set name="lethal1" val="40"/>
+  <set name="lethal2" val="7"/>
+  <set name="hitTime" val="1600"/>
+  <set name="desc" val="Ult's power is OVER WAN MILLION"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="magicLvl" val="89"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="displayId" val="81"/>
+  <for>
+    <effect name="Debuff" time="25" val="0" effectPower="95" effectType="DEBUFF">
+      <mul order="0x20" stat="STR" val="0.7"/>
+	  <mul order="0x50" stat="maxHp" val="0.5"/>
+    </effect>
+  </for>
+</skill>
+<skill id="9270" levels="1" name="Curse Death Venom">
+  <set name="abnormalLvl" val="10"/>
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="100"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="15000"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isDebuff" val="true"/>
+  <set name="skillType" val="POISON"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1100"/>
+  <set name="displayId" val="1095"/>
+  <for>
+    <effect count="120" name="DamOverTime" time="4" val="400" abnormal="poison"/>
+  </for>
+</skill>
+<skill id="9271" levels="1" name="Emmisary of Death">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="die! you fool!"/>
+  <for>
+	<add order="0x40" stat="delDmg" val="100"/>
+  </for>
+</skill>
+<skill id="9272" levels="1" name="Greater Lich">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Increased spell critical damage"/>
+  <for>
+	<add order="0x40" stat="cAtkMagic" val="6"/>
+	<sub order="0x40" stat="mReuse" val="0.6"/>
+  </for>
+</skill>
+<skill id="9273" levels="1" name="Pus Boomer">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Shove first"/>
+  <for>
+	<add order="0x40" stat="cAtk" val="3"/>
+  </for>
+</skill>
+<skill id="9274" levels="1" name="Kiliaro Heal">
+  <set name="power" val="8000"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="6000"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="isMagic" val="true"/>
+  <set name="desc" val="Heals others"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="650"/>
+  <set name="effectRange" val="1200"/>
+  <set name="displayId" val="1401"/>
+</skill>
+<skill id="9275" levels="1" name="Unheard Prayers">
+  <set name="magicLvl" val="99"/>
+  <set name="power" val="150"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="35000"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="MUTE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="800"/>
+  <set name="effectRange" val="1300"/>
+  <set name="displayId" val="5679"/>
+  <for>
+    <effect name="Mute" time="25" val="0" stackOrder="10" stackType="silence"/>
+  </for>
+</skill>
+<skill id="9276" levels="1" name="Stunning Shot">
+  <set name="power" val="2500"/>
+  <set name="magicLvl" val="99"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="5500"/>
+  <set name="hitTime" val="2800"/>
+  <set name="coolTime" val="800"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="1100"/>
+  <set name="isDebuff" val="true"/>
+  <set name="effectRange" val="1600"/>
+  <set name="displayId" val="101"/>
+  <for>
+    <effect name="Stun" time="5" val="0" effectPower="100" effectType="STUN" stackOrder="3" stackType="Stun"/>
+    <effect name="RemoveTarget" noicon="1" val="0" effectPower="50" effectType="DEBUFF"/>
+  </for>
+</skill>
+<skill id="9277" levels="1" name="Grave Keeper">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Keeps the Cemetery tidy"/>
+  <for>
+	<add order="0x10" stat="rShld" val="20"/>
+	<add order="0x10" stat="sDef" val="2000"/>
+	<add order="0x10" stat="rShldPerfAdd" val="5"/>
+	<add order="0x10" stat="rCrit" val="100"/>
+	<add order="0x10" stat="accCombat" val="31"/>
+  </for>
+</skill>
+<skill id="9278" levels="1" name="Xe-La-Thoul">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Evasive. High critical damage."/>
+  <for>
+	<add order="0x10" stat="cAtk" val="25"/>
+	<add order="0x10" stat="cAtkMagic" val="5"/>
+	<add order="0x10" stat="pSkillEvas" val="45"/>
+	<add order="0x10" stat="mSkillEvas" val="45"/>
+	<add order="0x10" stat="rEvas" val="70"/>
+  </for>
+</skill>
+<skill id="9279" levels="1" name="GET OUT OF HERE STALKER" >
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="50"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="areaAngle" val="40"/>
+  <set name="skillRadius" val="600"/>
+  <set name="hitTime" val="4500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="maxLand" val="100"/>
+  <set name="minLand" val="100"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="600"/>
+  <set name="flyRadius" val="1200"/>
+  <set name="effectRange" val="1400"/>
+  <set name="displayId" val="5796"/>
+  <for>
+    <effect name="Knockback" val="0"/>
+  </for>
+</skill>
+<skill id="9280" levels="1" name="Ghosts">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Unable to be critically hit. Evades skills. Takes more damage from Dynasty. Ignores pDef over 2500."/>
+  <for>
+	<add order="0x10" stat="critDamEvas" val="100"/>
+	<add order="0x10" stat="skillCritDamEvas" val="100"/>
+	<add order="0x10" stat="mCritDamEvas" val="100"/>
+	<add order="0x10" stat="rEvas" val="35"/>
+	<add order="0x10" stat="mSkillEvas" val="20"/>
+	<add order="0x10" stat="pSkillEvas" val="20"/>
+	<add order="0x10" stat="pDefIgnore" val="2500"/>
+  </for>
+</skill>
+<skill id="9281" levels="1" name="REFAZE Rainy Day">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Arrow Pierces and AOEs. Can't touch this."/>
+  <for>
+	<add val="200" order="0x40" stat="bowAOERadius"/>
+	<add val="100" order="0x40" stat="rangedPiercing"/>
+	<add val="200" order="0x40" stat="rEvas"/>
+	<add order="0x40" stat="improvedEvasion" val="1"/>
+	<add order="0x40" stat="pSkillEvas" val="150"/>
+	<add order="0x40" stat="mSkillEvas" val="150"/>
+  </for>
+</skill>
+<skill id="9282" levels="1" name="Mob accuracy">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+	<add order="0x10" stat="accCombat" val="31"/>
+  </for>
+</skill>
+<skill id="9283" levels="1" name="Reanimated Man">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Increased evasion. High resistance to piercing weapons."/>
+  <for>
+	<add order="0x10" stat="rEvas" val="31"/>
+	<mul order="0x30" stat="daggerWpnVuln" val="0.4"/>
+    <mul order="0x30" stat="dualDaggerWpnVuln" val="0.4"/>
+	<mul order="0x30" stat="bowWpnVuln" val="0.4"/>
+	<mul order="0x30" stat="crossbowWpnVuln" val="0.4"/>
+    <mul order="0x30" stat="rapierWpnVuln" val="0.4"/>
+  </for>
+</skill>
+<skill id="9284" levels="1" name="Corrupted Man">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Increased HP. High resistance to crushing weapons."/>
+  <for>
+      <mul order="0x30" stat="bluntWpnVuln" val="0.5"/>
+      <mul order="0x30" stat="bigBluntWpnVuln" val="0.5"/>  
+      <mul order="0x30" stat="poleWpnVuln" val="0.5"/>
+      <mul order="0x30" stat="fistWpnVuln" val="0.5"/>
+      <mul order="0x30" stat="dualFistWpnVuln" val="0.5"/>
+  </for>
+</skill>
+<skill id="9285" levels="1" name="Cursed Man">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High magic resistance. Magic reflect."/>
+  <for>
+  	<add order="0x40" stat="vengeanceMdam" val="25"/>
+  </for>
+</skill>
+<skill id="9286" levels="1" name="Dark Panther">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High evasion. High physical dodge"/>
+  <for>
+    <add order="0x40" stat="rEvas" val="33"/>
+  	<add order="0x40" stat="pSkillEvas" val="25"/>
+  </for>
+</skill>
+<skill id="9287" levels="1" name="Fang of Eva">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="High magic resistance. High magic dodge."/>
+  <for>
+  	<add order="0x40" stat="rEvas" val="10"/>
+	<add order="0x40" stat="mSkillEvas" val="25"/>
+	<add order="0x40" stat="pSkillEvas" val="10"/>
+  </for>
+</skill>
+<skill id="9288" levels="1" name="Mechanic Golem">
+ <set name="operateType" val="OP_PASSIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="desc" val="Immune to debuffs"/>
+  <for>
+  	<div order="0x40" stat="maxLandRate" val="4"/>
+  </for>
+</skill>
+</list>

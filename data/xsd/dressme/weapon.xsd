@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="weapon" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="price">
+								<xs:complexType>
+									<xs:attribute name="id" type="xs:int"></xs:attribute>
+									<xs:attribute name="count" type="xs:int"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:int"></xs:attribute>
+						<xs:attribute name="name" type="xs:string"></xs:attribute>
+						<xs:attribute name="type" type="xs:string"></xs:attribute>
+						<xs:attribute name="isBig" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

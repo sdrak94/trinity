@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="7059" name="Golden Festival Mask">
+  <for>
+    <add val="50" order="0x40" stat="pDef"/>
+    <basemul val='0.4' order='0x40' stat='maxHp'/>
+  </for>
+</item>
+<item id="7060" name="Tateossian Hairband">
+  <for>
+    <add val="40" order="0x40" stat="pDef"/>
+    <add val="0.33" order="0x40" stat="cAtk"/>
+	<sub val="0.035" order="0x40" stat="skillDam"/>
+  </for>
+</item>
+</list>

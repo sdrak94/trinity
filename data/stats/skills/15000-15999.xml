@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="15000" levels="1" name="PvP Resurrection">
+  <set name="magicLvl" val="90"/>
+  <set name="power" val="80"/>
+  <set name="target" val="TARGET_CORPSE_PLAYER"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="hitTime" val="3000"/>
+  <set name="skillType" val="RESURRECT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="aggroPoints" val="6000"/>
+  <set name="displayId" val="1016"/>
+</skill>
+<skill id="15001" levels="1" name="Frintezza's Psycho Symphony">
+  <set name="magicLvl" val="90"/>
+  <set name="target" val="TARGET_ALLY"/> 
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="skillRadius" val="1100"/> 
+  <set name="hitTime" val="2000"/> 
+  <set name="reuseDelay" val="3000000"/> 
+  <set name="skillType" val="BUFF"/> 
+  <set name="isMagic" val="true"/> 
+  <set name="operateType" val="OP_ACTIVE"/> 
+  <set name="displayId" val="5007"/>
+- <for>
+	- <effect count="1" name="Buff" time="45" val="0">
+	  <basemul order="0x40" stat="pAtkSpd" val="0.15"/> 
+	  <basemul order="0x40" stat="mAtkSpd" val="0.16"/> 
+	  <add order="0x40" stat="runSpd" val="10"/>
+	  </effect> 
+  </for>
+</skill>
+<skill id="15002" levels="1" name="PvP Medusa">
+  <set name="magicLvl" val="90"/>
+  <set name="power" val="120"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="hitTime" val="500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="PARALYZE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="isDebuff" val="true"/>
+  <set name="displayId" val="367"/>
+  <for>
+    <effect name="Petrification" time="12" val="0" stackOrder="30" stackType="turn_stone"/>
+  </for>
+</skill>
+<skill id="15003" levels="1" name="PvP Return">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="4200000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="hitTime" val="500"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="1050"/>
+</skill>
+<skill id="15004" levels="1" name="PvP Rush">
+    <set name="castRange" val="600"/>
+    <set name="neutral" val="true"/>
+    <set name="flyType" val="CHARGE"/>
+	<set name="areaLimit" val="true"/>
+	<set name="areaAngle" val="15"/>
+    <set name="hitTime" val="600"/>
+    <set name="coolTime" val="190"/>
+    <set name="staticHitTime" val="true"/>
+	<set name="staticReuse" val="true"/>
+    <set name="olyDisabled" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="reuseDelay" val="70000"/>
+    <set name="skillType" val="BUFF"/>
+    <set name="target" val="TARGET_ONE"/>
+	<set name="displayId" val="484"/>
+    <cond msgId="113" addName="1">
+       <target mindistance="100"/>
+    </cond>
+</skill>
+<skill id="15005" levels="1" name="PvP Blink">
+  <set name="coolTime" val="30"/>
+  <set name="flyCourse" val="0"/> <!-- Teleport to back -->
+  <set name="flyRadius" val="550"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="displayId" val="628"/>
+  <for>
+    <effect self="1" name="Warp" val="0" noicon="1" nomsg="1"/>
+  </for>
+</skill>
+<skill id="15006" levels="1" name="PvP Firecracker">
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="600"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="hitTime" val="1000"/>
+  <set name="skillType" val="NEGATE"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="negateStats" val="PARALYZE MUTE SLEEP STUN DISARM"/>
+  <set name="negateLvl" val="99"/>
+  <set name="aggroPoints" val="3000"/>
+</skill>
+<skill id="15007" levels="1" name="PvP Music">
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="600"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="hitTime" val="3000"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="aggroPoints" val="3000"/>
+  <for>
+    <effect count="1" name="Buff" time="20" val="0">
+      <mul order="0x50" stat="regHp" val="1.80"/>
+	  <mul order="0x50" stat="regMp" val="1.80"/>
+    </effect>
+	</for>
+</skill>
+<skill id="15700" levels="6" name="Vilmark">
+  <set name="magicLvl" val="90"/>
+  <set name="target" val="TARGET_ALLY"/> 
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="skillRadius" val="1700"/> 
+  <set name="hitTime" val="1000"/> 
+  <set name="reuseDelay" val="3000"/> 
+  <set name="power" val="100"/>
+  <set name="skillType" val="HEAL_PERCENT"/> 
+  <set name="isMagic" val="true"/> 
+  <set name="operateType" val="OP_ACTIVE"/> 
+- <for>
+	- <effect count="1" name="Buff" time="45" val="0">
+	  <basemul order="0x40" stat="pAtkSpd" val="0.15"/> 
+	  <basemul order="0x40" stat="mAtkSpd" val="0.16"/> 
+	  <add order="0x40" stat="runSpd" val="10"/>
+	  </effect> 
+  </for>
+</skill>
+</list>

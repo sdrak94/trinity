@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13500" name="Event - Refined Black Feather Mask">
+  <for/>
+</item>
+<item id="13501" name="Refined Romantic Chapeau">
+<for>
+    <basemul val="0.10" order="0x40" stat="pDef"/>
+	<basemul val="0.10" order="0x40" stat="mDef"/>
+	<add val="50" order="0x40" stat="pDef"/>
+	<add val="50" order="0x40" stat="mDef"/>
+	<sub val="0.20" order="0x40" stat="pReuse"/>
+	<sub val="0.20" order="0x40" stat="mReuse"/>
+	<add val="20" order="0x40" stat="transDam"/>
+	<add val="20" order="0x40" stat="lionheart"/>
+  </for>
+</item>
+<item id="13502" name="Event - Refined Carnival Circlet">
+  <for/>
+</item>
+<item id="13503" name="Refined Medieval Style Party Mask">
+  <for/>
+</item>
+<item id="13504" name="Refined Dapper Cap">
+  <for/>
+</item>
+<item id="13505" name="Clownfish Hat">
+  <for/>
+</item>
+<item id="13506" name="Improved Lord's Crown">
+  <for>
+    <add val='400' order='0x40' stat='pDef'/>
+	<add val='400' order='0x40' stat='mDef'/>
+	<add val='7' order='0x40' stat='accCombat'/>
+	<add val='2200' order='0x40' stat='mAtk'/>
+	<add val='3000' order='0x40' stat='maxHp'/>
+	<add val='3500' order='0x50' stat='maxCp'/>
+	<mul val='2.0' order='0x30' stat='regCp'/>
+	<mul val='1.15' order='0x30' stat='gainHp'/>
+  </for>
+</item>
+<item id="13507" name="Circlet of Fire">
+   <for>
+    <add val='100' order='0x40' stat='fireRes'/>
+    <add val='100' order='0x40' stat='firePower'/>
+	<add val='3' order='0x30' stat='STR'/>
+  </for>
+</item>
+<item id="13508" name="Circlet of Ice">
+  <for>
+    <add val='100' order='0x40' stat='waterRes'/>
+    <add val='100' order='0x40' stat='waterPower'/>
+	<add val='3' order='0x30' stat='INT'/>
+  </for>
+</item>
+<item id="13509" name="Circlet of Gale">
+   <for>
+    <add val='100' order='0x40' stat='windRes'/>
+    <add val='100' order='0x40' stat='windPower'/>
+	<add val='3' order='0x30' stat='MEN'/>
+	  </for>
+</item>
+<item id="13510" name="Sword Master's Circlet">
+   <for>
+    <add val="0.10" order="0x40" stat="damRobe"/>
+	 <basemul val="0.30" order="0x40" stat="pAtk">
+	   <using kind="Sword,Big Sword,Dual Sword,Ancient"/>
+	 </basemul>
+	 <sub val="0.20" order="0x40" stat="pReuse">
+	   <using kind="Sword,Big Sword,Dual Sword,Ancient"/>
+	 </sub>
+	  <mul order="0x30" stat="swordWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="bigSwordWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="ancientWpnVuln" val="0.90"/>
+	  <add val="100" order="0x40" stat="extraHit">
+		<and>
+			<game chance="10"/>
+			<using kind="Sword,Big Sword,Dual Sword,Ancient"/>
+	    </and>
+	 </add>
+  </for>
+</item>
+<item id="13511" name="Assassin's Circlet">
+   <for>
+	 
+	 <add val="0.08" order="0x40" stat="damLight"/>
+	 <basemul val="0.25" order="0x40" stat="pAtk">
+	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
+	 </basemul>
+	 <sub val="0.15" order="0x40" stat="pReuse">
+	   <using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
+	 </sub>
+      <mul order="0x30" stat="daggerWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualDaggerWpnVuln" val="0.90"/>
+	  <mul order="0x30" stat="bowWpnVuln" val="0.90"/>
+	  <mul order="0x30" stat="crossbowWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="rapierWpnVuln" val="0.90"/>
+	  <add order="0x40" stat="cAtk" val="0.30">
+		<and>
+			<game chance="10"/>
+			<using kind="Bow,Crossbow,Dagger,Dual Dagger,Rapier"/>
+	    </and>
+	 </add>
+  </for>
+</item>
+<item id="13512" name="Warmonger's Circlet">
+    <for>
+     <add val="0.1" order="0x40" stat="damHeavy"/>
+	 <basemul val="0.25" order="0x40" stat="pAtk">
+	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
+	 </basemul>
+	 <sub val="0.15" order="0x40" stat="pReuse">
+	   <using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
+	 </sub>
+      <mul order="0x30" stat="bluntWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="bigBluntWpnVuln" val="0.90"/>  
+      <mul order="0x30" stat="poleWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="fistWpnVuln" val="0.90"/>
+      <mul order="0x30" stat="dualFistWpnVuln" val="0.90"/>
+	  <mul val="0.90" order="0x50" stat="reducePdef">
+		<and>
+			<game chance="10"/>
+			<using kind="Blunt,Big Blunt,Pole,Dual Fist"/>
+	    </and>
+	 </mul>
+  </for>
+</item>
+<item id="13513" name="Mining Hat">
+  <for/>
+</item>
+<item id="13514" name="Improved Mining Hat">
+  <for/>
+</item>
+<item id="13515" name="Magic Lens">
+  <for>
+    <add order="0x40" stat="seeInvisible" val="1"/>
+	<sub order="0x40" stat="conc" val="30"/>
+	<add order="0x40" stat="addDmg" val="200">
+	  <and>
+	    <player class_id_restriction="94,103,110"/>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add order="0x40" stat="addDmg" val="200">
+	  <and>
+	    <player class_id_restriction="95"/>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add order="0x40" stat="addDmg" val="150">
+	  <and>
+	    <not>
+	       <player class_id_restriction="94,95,103,110"/>
+		</not>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add val="100" order="0x40" stat="mAtkSpdMaxAdd"/>
+	<add order="0x10" stat="negateAutoTarget" val="100"/>
+	<add order="0x40" stat="mSkillEvasReduce" val="20"/>
+	<set order="0x40" stat="mSkillEvasReduce" val="100">
+		<not>
+			<target mindistance="400"/>
+		</not>
+	</set>
+	<add order="0x40" stat="mAtkRange" val="100"/>
+	<sub val="10000" order="0x40" stat="skillReuseChange">
+	   <using skillid="1056"/> <!-- cancel -->
+	 </sub>
+  </for>
+</item>
+<item id="13516" name="Ranger's Monocle">
+  <for>
+    <add val="400" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	 </add>
+	 <add val="200" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	 </add>
+	 <basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+	   <add val="90" order="0x80" stat="pDef"/>
+	   <add val="90" order="0x80" stat="mDef"/>
+	   <add order="0x40" stat="accCombat" val="7"/>
+       <add order="0x40" stat="pSkillEvasReduce" val="20"/>
+  </for>
+</item>
+<item id="13517" name="Event - Raccoon Hat ">
+  <for/>
+</item>
+<item id="13518" name="Event - Sorcerer Hat">
+  <for/>
+</item>
+<item id="13519" name="Secret Slayer Veil">
+  <for>
+    <add val="5" order="0x40" stat="accCombat"/>
+	<add val="10" order="0x40" stat="rEvas"/>
+	<add val="10" order="0x40" stat="runSpd"/>
+    <add val="0.5" order="0x40" stat="skillDam">
+	   <target combat="false"/>
+	</add>
+	<add order="0x40" stat="evadeAOEHit" val="60"/>
+	<add order="0x40" stat="evadeAOESpell" val="50"/>
+	<add order="0x40" stat="evadeAOESpell" val="50">
+	   <player invisible="true"/>
+	 </add>
+	 <add order="0x40" stat="runSpd" val="45">
+	    <player invisible="true"/>
+	</add>
+  </for>
+</item>
+<item id="13520" name="Event - Jindo Dog Hat">
+  <for/>
+</item>
+<item id="13521" name="Event - Shaggy Dog Hat">
+  <for/>
+</item>
+<item id="13522" name="Safety Googles">
+   <for>
+      <add order="0x40" stat="accCombat" val="30"/>
+      <add order="0x40" stat="mSkillEvasReduce" val="15"/>
+      <add order="0x40" stat="pSkillEvasReduce" val="20"/>
+	  <add order="0x40" stat="reflectRes" val="20"/>
+	  <sub order="0x40" stat="pReuse" val="0.15"/>
+  </for>
+</item>
+<item id="13523" name="Wings of Harlessa">
+  <for/>
+</item>
+<item id="13526" name="Test Belt">
+  <for>
+    <add val="36" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13527" name="Test Cloak">
+  <for>
+    <add val="2" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="13529" name="Test Sickle">
+  <for/>
+</item>
+<item id="13543" name="Agathion Summon Bracelet - Collection">
+  <for/>
+</item>
+<item id="13544" name="Agathion Summon Bracelet - Boy Teddy Bear">
+  <for/>
+</item>
+<item id="13545" name="Agathion Summon Bracelet - Girl Teddy Bear">
+  <for/>
+</item>
+<item id="13546" name="Steam Sledge Mounting Bracelet">
+  <for/>
+</item>
+<item id="13547" name="Tawny-Maned Lion Mounting Bracelet">
+  <for/>
+</item>
+<item id="600000" name="Griffin Mounting Bracelet">
+  <for/>
+</item>
+<item id="600001" name="Salamander Mounting Bracelet">
+  <for/>
+</item>
+<item id="600002" name="Hell's Dog Mounting Bracelet">
+  <for/>
+</item>
+<item id="600003" name="Saber Tooth Cougar Mounting Bracelet">
+  <for/>
+</item>
+<item id="600004" name="Lindvior Drake Mounting Bracelet">
+  <for/>
+</item>
+<item id="600005" name="Dragon Horse Mounting Bracelet">
+  <for/>
+</item>
+<item id="600006" name="Griffin Mounting Bracelet">
+  <for/>
+</item>
+<item id="600007" name="Salamander Mounting Bracelet">
+  <for/>
+</item>
+<item id="600008" name="Hell's Dog Mounting Bracelet">
+  <for/>
+</item>
+<item id="600009" name="Saber Tooth Cougar Mounting Bracelet">
+  <for/>
+</item>
+<item id="600010" name="Lindvior Drake Mounting Bracelet">
+  <for/>
+</item>
+<item id="600011" name="Dragon Horse Mounting Bracelet">
+  <for/>
+</item>
+</list>

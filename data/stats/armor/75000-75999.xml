@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+<item id='75000' name="Cloak of Aden">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+	<add val='8' order='0x40' stat='runSpd'/>
+  </for>
+</item>
+<item id='75001' name="Cloak of Dion">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+  </for>
+</item>
+<item id='75002' name="Cloak of Giran">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+	<basemul val='0.3' order='0x40' stat='maxHp'/>
+  </for>
+</item>
+<item id='75003' name="Cloak of Gludio">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+  </for>
+</item>
+<item id='75004' name="Cloak of Goddard">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+	<basemul val='0.05' order='0x40' stat='pDef'/>
+	<basemul val='0.05' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id='75005' name="Cloak of Innadril">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+  </for>
+</item>
+<item id='75006' name="Cloak of Oren">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+  </for>
+</item>
+<item id='75007' name="Cloak of Rune">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+	<basemul val='0.05' order='0x40' stat='pAtkSpd'/>
+	<basemul val='0.06' order='0x40' stat='mAtkSpd'/>
+  </for>
+</item>
+<item id='75008' name="Cloak of Schuttgart">
+  <for>
+    <add val='10' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x40' stat='pDef'/>
+  </for>
+</item>
+<item id='75009' name="Lighting Cloak">
+  <for>
+     <add order="0x10" stat="INT" val="1"/>
+      <add order="0x10" stat="WIT" val="1"/>
+  </for>
+</item>
+<item id="75010" name="Red Cloak of 300">
+  <for>
+    <add val='10' order='0x10' stat='runSpd'/>
+  </for>
+</item>
+<item id='75011' name="Super-Man Cape">
+  <for>
+    <add val='50' order='0x10' stat='runSpd'/>
+  </for>
+</item>
+<item id='75012' name="BatMan Cape">
+   <for>
+    <add val='100' order='0x10' stat='pDef'/>
+    <add order="0x10" stat="INT" val="1"/>
+   </for>
+</item>
+<item id='75013' name="Green Lantern Cape">
+   <for>
+    <add order="0x10" stat="DEX" val="1"/>
+    <add order="0x10" stat="CON" val="1"/>
+   </for>
+</item>
+<item id='75014' name="Sacrifice Cape">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="75015" name="Magic Cap">
+  <for>
+  </for>
+</item>
+<item id="75300" name="Legendary Dynasty Karm">
+  <for>
+    <add val="116" order="0x10" stat="pDef"/>
+	<add val="43" order="0x10" stat="mDef"/>
+	<enchant val='0' order='0x0C' stat='pDef' />
+  </for>
+</item>
+</list>

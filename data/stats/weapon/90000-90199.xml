@@ -1,0 +1,810 @@
+<list>
+<item id='90000' name="Dread Slayer"><!--fixed-->
+  <for>
+    <set val="580" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="1.0" order="0x40" stat="rCrit"/>
+	<add val="7" order="0x40" stat="accCombat"/>
+	<basemul val="0.2" order="0x40" stat="pAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<!--<mul val="0.94" order="0x40" stat="reducePdef"/>-->
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.18" order="0x40" stat="pReuse"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<mul val="1.1" order="0x30" stat="rShld"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+		<!--extra-->
+	<basemul val="0.02" order="0x40" stat="pAtk"/>
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<!--extra-->
+		<!--extra-->
+	<mul val="0.99" order="0x40" stat="reducePdef"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.050" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90001' name="Dread Talon"><!--fixed-->
+  <for>
+    <set val="557" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x40" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.40" order="0x40" stat="cAtk"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="12" order='0x40' stat='blowRate'/>
+	<add val="5" order="0x40" stat="mSkillEvas"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.10" order="0x40" stat="pAtkSpd"/>
+	<add val="0.15" order="0x40" stat="cAtk">
+	   <player behind="true"/>
+	 </add>
+	 <add val="1" order="0x40" stat="skillRetryChange">
+	  <using skillid="30"/>
+	</add>
+	<add val="0.10" order="0x40" stat="pvpPhysSkillsDmg">
+	  <player behind="true"/>
+	</add>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<!--extra-->
+	<basemul val="0.25" order="0x40" stat="pAtk"/>
+	<basemul val="0.06" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<add val="32" order="0x40" stat="rCrit"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.0415" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90002' name="Dread Banshee"><!--fixed-->
+  <for>
+    <set val="433" order="0x08" stat="pAtk"/>
+    <set val="368" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.8" order="0x40" stat="mCritRate"/>
+	<basemul val="0.15" order="0x40" stat="mAtkSpd"/>
+	<mul val="0.88" order="0x50" stat="reduceMdef"/>
+	<add val="0.25" order="0x40" stat="cAtkMagic"/>
+	<basemul val="0.35" order="0x40" stat="mAtk"/>
+    <sub val="0.15" order="0x40" stat="mReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+	<basemul val="0.26" order="0x40" stat="mAtk"/>
+	<basemul val="0.10" order="0x40" stat="mAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90003' name="Dread Zanbato"><!--fixed-->
+  <for>
+    <set val="705" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+	<add val="8" order="0x40" stat="accCombat"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.25" order="0x40" stat="maxHp"/>
+	<basemul val="0.35" order="0x60" stat="pAtk"/>
+	<basemul val="1.0" order="0x50" stat="rCrit"/>
+	<add val="0.4" order="0x60" stat="cAtk"/>
+	<add val='15' order='0x40' stat='absorbCP'/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+		<sub val="0.05" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.050" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90004' name="Dread Lance"><!--fixed-->
+  <for>
+    <set val="563" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="5" order="0x40" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.3" order="0x40" stat="pAtk"/>
+	<add val="80" order="0x40" stat="pAtkAngle"/>
+	<add val='60' order='0x40' stat='pAtkRange'/>
+	<add val='50' order='0x40' stat='skillRadiusBoost'/>
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+	<basemul val="0.07" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.0675" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90005' name="Dread Crusher"><!--fixed-->
+  <for>
+    <set val="692" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="7" order="0x40" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<mul val="1.2" order="0x30" stat="rShld"/>
+	<mul val="1.2" order="0x30" stat="sDef"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<mul val="1.08" order="0x30" stat="skillDam"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<basemul val="0.20" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.050" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90006' name="Dread Claws"><!--fixed-->
+  <for>
+    <set val="735" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="6" order="0x40" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="maxHp"/>
+	<basemul val="0.8" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="1" order="0x40" stat="chargeMax"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="pAtk"/>
+	<!--<add val="1" order="0x40" stat="atkCountMax"/>-->
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+	<sub val="0.20" order="0x40" stat="cAtk"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<sub val="0.05" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<basemul val="0.03" order="0x40" stat="pAtkSpd"/>
+	<!--<sub val="40" order="0x40" stat="aoePercent"/> -->
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.0275" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90007' name="Dread Scepter">
+  <for>
+    <set val="425" order="0x08" stat="pAtk"/>
+    <set val="321" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="1.0" order="0x40" stat="mCritRate"/>
+	<add val="0.15" order="0x40" stat="gainHp"/>
+    <add val="0.15" order="0x40" stat="giveHp"/>
+	<add val='200' order='0x40' stat='mAtkRange'/>
+	<basemul val="0.45" order="0x40" stat="mAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="0.3" order="0x40" stat="cAtkMagic"/>
+	<basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+    <sub val="0.25" order="0x40" stat="mReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<mul order="0x30" val="0.7" stat="MpConsume"/>
+		<!--extra-->
+	<basemul val="0.13" order="0x40" stat="mAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90008' name="Dread Shot"><!--fixed-->
+  <for>
+    <set val="1077" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+	<enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="0.35" order="0x40" stat="cAtk"/>
+	<basemul val="0.195" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<add val="5" order="0x40" stat="knockback"/>
+    <add val="60" order="0x40" stat="knockbackDistAdd"/>
+	<add val="100" order="0x40" stat="pAtkRange"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+
+<item id='90009' name="Dread Warmace"><!--fixed-->
+  <for>
+    <set val="709" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="6" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.4" order="0x40" stat="maxHp"/>
+	<basemul val="0.9" order="0x40" stat="rCrit"/>
+	<add val="0.8" order="0x40" stat="cAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="35" order="0x40" stat="negateShld"/>
+	<basemul val="0.20" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+		<add val="100" order="0x40" stat="addDmg"/>
+		<!--extra-->
+	<basemul val="0.22" order="0x40" stat="pAtk"/>
+	<sub val="0.35" order="0x40" stat="cAtk"/>
+	<!--extra-->
+		<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.0345" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90010' name="Dread Staff">
+  <for>
+    <set val="518" order="0x08" stat="pAtk"/>
+    <set val="431" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="maxHp"/>
+	<add val="0.5" order="0x40" stat="cAtkMagic"/>
+	<add val="80" order="0x40" stat="addDmg"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<add val='35' order='0x40' stat='mCritRate'/>
+	<mul val="1.05" order="0x30" stat="pvpMagicalDmg"/>
+	<basemul val="0.5" order="0x40" stat="mAtk"/>
+	<add val="200" order="0x40" stat="mAtkRange"/>
+	<add val="150" order="0x40" stat="pDef"/>
+	<add val="30" order="0x40" stat="waterPower"/>
+	<add val="30" order="0x40" stat="firePower"/>
+	<add val="30" order="0x40" stat="windPower"/>
+	<add val="30" order="0x40" stat="darkPower"/>
+		<!--extra-->
+	<basemul val="0.8" order="0x40" stat="mAtk"/>
+	<basemul val="0.08" order="0x40" stat="mAtkSpd"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90011' name="Dread Rapier"><!--fixed-->
+  <for>
+    <set val="585" order="0x08" stat="pAtk"/>
+    <set val="242" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.35" order="0x40" stat="cAtk"/>
+	<add val="0.3" order='0x40' stat='cAtkMagic'/>
+	<add val='35' order='0x40' stat='mCritRate'/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<add val="6" order="0x40" stat="accCombat"/>
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.14" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.5" order="0x40" stat="mAtk"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<sub val="0.15" order="0x40" stat="mReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<add val="0.007" order="0x40" stat="pAtk_soul"/>
+	<add val="5" order="0x10" stat="soulMax"/>
+	<add val="0.1" order="0x40" stat="pvpMagicalDmg"/>
+		<!--extra-->
+	<basemul val="0.00" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<add val="1" order="0x40" stat="skillRetryChange">
+	<and>
+	  <game chance="50"/>
+	  <using skillid="505"/>
+	  </and>
+	</add>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90012' name="Dread Nagan"><!--fixed-->
+  <for>
+    <set val="666" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<add val="7" order="0x40" stat="absorbDam"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.2" order="0x40" stat="pAtk"/>
+    <add val="200" order="0x40" stat="cAtkBleed"/>
+	<add val='100' order='0x40' stat='rushDistAdd'/>
+	<!--extra-->
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<basemul val="0.035" order="0x40" stat="pAtk"/>
+	<basemul val="0.045" order="0x40" stat="pAtkSpd"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<basemul val="0.07" order="0x40" stat="rCrit"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.0585" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90013' name="Dread Bowgun"><!--fixed-->
+  <for>
+    <set val="673" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.25" order="0x40" stat="pAtk"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<add val="150" order="0x40" stat="pAtkRange"/>
+	<basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+	<add order="0x40" stat="negateAutoTarget" val="15"/>
+	<add val='5' order='0x40' stat='evadeAOEHit'/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+		<!--extra-->
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<add val="2" order="0x40" stat="accCombat"/>
+	<basemul val="0.09" order="0x40" stat="rCrit"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+		<basemul val="0.0375" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90014' name="Dread Sins"><!--fixed-->
+  <for>
+    <set val="735" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.7" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+	<add val="100" order='0x40' stat='mAtkSpd'/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+    <sub val="0.2" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="15" order="0x40" stat="negateShld"/>
+	<add val="50" order="0x40" stat="cAtkBleed"/>
+	<add val="7" order="0x40" stat="rEvas"/>
+		<!--extra-->
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<basemul val="0.275" order="0x40" stat="pAtk"/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.045" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90015' name="Dread Shield">
+  <for>
+	<add val="5000" order="0x40" stat="maxPdam"/>
+	<add val="5000" order="0x40" stat="maxMdam"/>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="506" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+	<add val="5" order="0x40" stat="reflectSkillPhysic"/>
+	<mul val="0.9" order="0x30" stat="bowWpnVuln"/>
+	<mul val="0.9" order="0x30" stat="crossbowWpnVuln"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="rShldPerfAdd"/>
+	<basemul val="0.08" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.08" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<item id='90017' name="Dread Twisters"><!--fixed-->
+  <for>
+    <set val="557" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.035" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="1.035" order="0x40" stat="pvpMagicalDmg"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+		<!--extra-->
+	<basemul val="0.445" order="0x40" stat="pAtk"/>
+	<basemul val="0.04" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.05" order="0x40" stat="cAtk"/>
+	<!--extra-->
+	<add val="1" order="0x40" stat="skillRetryChange">
+	  <using skillid="928"/>
+	</add>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+		<basemul val="0.0415" order="0x40" stat="pAtk">
+	  <or>
+	  <player hasSkill="8284"/>
+	  <player hasSkill="8286"/>
+	  <player hasSkill="8288"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+</list>

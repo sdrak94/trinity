@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+	<!--<item id="13"> 
+	<ingredient id="200000" count="80"/> 
+		<production id="74001" count="1" enchant="11"/> 
+	<production id="74002" count="1" enchant="11"/> 
+	<production id="74003" count="1" enchant="11"/> 
+	<production id="74004" count="1" enchant="11"/>
+	    <production id="74000" count="1" enchant="11"/> 
+    </item>
+
+    <item id="14"> 
+	<ingredient id="200000" count="80"/> 
+	    <production id="74011" count="1" enchant="11"/> 
+    <production id="74012" count="1" enchant="11"/> 	
+	 <production id="74013" count="1" enchant="11"/> 
+	 <production id="74014" count="1" enchant="11"/> 
+	     <production id="74010" count="1" enchant="11"/>
+    </item>
+
+    <item id="15"> 
+	<ingredient id="200000" count="80"/> 
+	    <production id="74021" count="1" enchant="11"/> 
+    <production id="74022" count="1" enchant="11"/> 	
+	 <production id="74023" count="1" enchant="11"/> 
+	<production id="74024" count="1" enchant="11"/> 
+		 <production id="74020" count="1" enchant="11"/>
+    </item>-->
+	
+<!--	<item id="16"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+      <item id="17"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+      <item id="18"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+  
+      <item id="19"> 
+	<ingredient id="200000" count="90"/> 
+		<production id="74001" count="1" enchant="12"/>
+	<production id="74002" count="1" enchant="12"/> 
+	<production id="74003" count="1" enchant="12"/> 
+	<production id="74004" count="1" enchant="12"/>
+	    <production id="74000" count="1" enchant="12"/> 
+    </item>
+
+    <item id="20"> 
+	<ingredient id="200000" count="90"/> 
+	    <production id="74011" count="1" enchant="12"/> 
+    <production id="74012" count="1" enchant="12"/> 	
+	 <production id="74013" count="1" enchant="12"/> 
+	 <production id="74014" count="1" enchant="12"/> 
+	     <production id="74010" count="1" enchant="12"/>
+    </item>
+
+    <item id="21"> 
+
+	<ingredient id="200000" count="90"/>
+    <production id="74021" count="1" enchant="12"/> 	
+    <production id="74022" count="1" enchant="12"/> 	
+	 <production id="74023" count="1" enchant="12"/> 
+	<production id="74024" count="1" enchant="12"/> 
+		 <production id="74020" count="1" enchant="12"/>
+    </item> -->
+
+</list>

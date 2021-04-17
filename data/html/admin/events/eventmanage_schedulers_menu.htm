@@ -1,0 +1,45 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+<br>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+<font color=ac9775>Automatic schedulers delay:<br1></font>
+<font color=9f9f9f>Min %eventsDelayMin% minutes, Max %eventsDelayMax% minutes.</font>
+<edit var="delay" width=130 height=15>
+
+<table width=145>
+<tr>
+<td><button value="Min mins:" action="bypass admin_event_manage set_events_delay_min $delay" width=70 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Max mins:" action="bypass admin_event_manage set_events_delay_max $delay" width=70 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<br><br>
+
+<font color=ac9775>Ammount of scheduled events:</font><br1>
+<font color=9f9f9f>Current value: %maxRunningEvents%</font>
+
+<table width=100>
+
+<tr>
+<td width=50><combobox width=72 height=17 var=ebox list=%runningEvents_enum%></td>
+<td width=40><button value="Set" action="bypass admin_event_manage set_max_running_events $ebox" width=50 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table> 
+
+<br>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+<button value="Update in DB" action="bypass admin_event_manage save_schedulers" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+<button value="Back" action="bypass admin_event_manage" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

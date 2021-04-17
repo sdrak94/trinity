@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="14600" name="Schuttgart Dark Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14601" name="Ancient Cloak - Kamael exclusive - Kamael Use">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="14602" name="Dynasty Cloak">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="14604" name="Red Talisman - Territory Guardian">
+  <for>
+  </for>
+</item>
+<item id="14605" name="Red Talisman - Territory Guard">
+  <for>
+  </for>
+</item>
+<item id="14608" name="Ancient Cloak - Light Armor exclusive">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="14609" name="Ancient Cloak">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="14610" name="Ancient Cloak - Robe exclusive">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="14611" name="Rudolph's Nose">
+  <for>
+  </for>
+</item>
+<item id="14613" name="Rock-Paper-Scissors Santa Hat">
+  <for>
+  </for>
+</item>
+<item id="14617" name="Agathion Seal Bracelet - Rudolph">
+  <for>
+  </for>
+</item>
+<item id="14664" name="Gludio Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14665" name="Dion Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14666" name="Giran Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14667" name="Oren Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14668" name="Aden Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14669" name="Innadril Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14670" name="Goddard Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14671" name="Rune Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14672" name="Schuttgart Protection Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14675" name="Agathion Seal Bracelet - Saerom">
+  <for>
+  </for>
+</item>
+</list>

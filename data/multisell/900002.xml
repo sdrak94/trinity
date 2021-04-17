@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowsell="false">
+    <item id="1"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80000" count="1" enchant="11"/>
+    </item>
+    <item id="2"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80001" count="1" enchant="11"/>
+    </item>
+    <item id="3"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80002" count="1" enchant="11"/>
+    </item>
+    <item id="4"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80003" count="1" enchant="11"/>
+    </item>
+    <item id="5"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80004" count="1" enchant="11"/>
+    </item>
+    <item id="6"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80005" count="1" enchant="11"/> 
+    </item>
+    <item id="7"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80006" count="1" enchant="11"/> 
+    </item>
+    <item id="8"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80007" count="1" enchant="11"/>
+    </item>
+    <item id="9"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80008" count="1" enchant="11"/>
+    </item>
+    <item id="10"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80009" count="1" enchant="11"/> 
+    </item>
+    <item id="11"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80010" count="1" enchant="11"/> 
+    </item>
+    <item id="12"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80011" count="1" enchant="11"/>
+    </item>
+    <item id="13"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80012" count="1" enchant="11"/>
+    </item>
+    <item id="14"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80013" count="1" enchant="11"/>
+    </item>
+    <item id="15"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80014" count="1" enchant="11"/> 
+    </item>
+    <item id="16"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80017" count="1" enchant="11"/> 
+    </item>
+    <item id="17"> 
+    <ingredient id="99004" count="150"/> 
+    <production id="80016" count="1" enchant="11"/>
+    </item>
+    <item id="18"> 
+    <ingredient id="99004" count="150"/>  
+    <production id="80015" count="1" enchant="11"/>
+    </item>
+</list>

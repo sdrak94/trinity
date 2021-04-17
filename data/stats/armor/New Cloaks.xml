@@ -1,0 +1,729 @@
+<list>
+<item id="77005" name="Knight's Cloak">
+   <for>
+    <!--<add val="800" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<add val="50" order="0x40" stat="pDef"/>
+	<add val="50" order="0x40" stat="mDef"/>
+	<add val="0.05" order="0x40" stat="gainHp"/>
+	<add val="500" order="0x40" stat="sDef"/>
+	<add val="5" order="0x40" stat="rShld"/>
+	<mul val="1.1" order="0x30" stat="aggressionProf"/>-->
+	<add val='500' order='0x40' stat='maxHp'/>
+	<add val='300' order='0x40' stat='maxMp'/>
+	<add val="0.05" order="0x40" stat="gainHp"/>
+	<sub val="0.02" order="0x40" stat="mReuse"/>
+	<add val="350" order="0x40" stat="sDef">
+		<using kind="shield"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+	<using kind="shield"/>
+	</add>
+	<add val="350" order="0x40" stat="sDef">
+		<using kind="sigil"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+	<using kind="sigil"/>
+	</add>
+	<mul val="1.1" order="0x30" stat="aggressionProf"/>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77006" name="Archer's Cloak">
+   <for>
+    <!--<add val="3" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="4" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="100" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="70" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+    <add val='800' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub order="0x40" stat="atkReuse" val="0.05"/>-->
+	<add val='500' order='0x40' stat='maxHp'/>
+	 <add val="3" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="3" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="50" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="35" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+	<basemul val="0.14" order="0x30" stat="pAtk">
+	  <using kind="Bow,Crossbow"/>
+    </basemul>
+	<add val="15" order="0x40" stat="pAtkSpd">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77007" name="Enchanters Cloak">
+   <for>
+    <!--<add val='1000' order='0x10' stat='maxCp'/>
+    <add val="5" order='0x40' stat='runSpd'/>
+	<add val='3' order='0x40' stat='mSkillEvas'/>
+	<add val='3' order='0x40' stat='pSkillEvas'/>
+	<add val="0.06" order='0x40' stat='cAtkMagic'/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+	<add val='500' order='0x10' stat='maxHp'/>
+	<add val='300' order='0x10' stat='maxCp'/>
+	<add val='4' order='0x40' stat='mSkillEvas'/>
+	<add val='4' order='0x40' stat='pSkillEvas'/>
+	<sub val="0.05" order="0x40" stat="mReuse"/>
+    <add val="20" order="0x40" stat="mAtkSpd"/>
+    <add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77008" name="Healer's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/-->
+	<add val='500' order='0x40' stat='maxHp'/>
+    <add val='500' order='0x40' stat='maxMp'/>
+    <add val="0.06" order="0x40" stat="gainHp"/>
+	<add val="0.06" order="0x40" stat="giveHp"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77009" name="Rogue's Cloak">
+   <for>
+   <!-- <add val='500' order='0x40' stat='maxCp'/>
+    <add val='800' order='0x40' stat='maxHp'/>
+	<add val="10" order='0x40' stat='blowRate'/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+    <add val='500' order='0x40' stat='maxHp'/>
+	<add val="10" order='0x40' stat='blowRate'/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<basemul val="0.08" order="0x40" stat="pAtk"/>
+	<add val='15' order='0x40' stat='pAtkSpd'/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77010" name="Warrior's Cloak">
+   <for>
+    <!--<add val='1000' order='0x40' stat='maxCp'/>
+    <add val='700' order='0x40' stat='maxHp'/>
+	<basemul val="0.15" order="0x40" stat="pAtk"/>
+	<add val="30" order='0x40' stat='pAtkSpd'/>
+	<add val="4" order='0x40' stat='runSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>-->
+    <add val='500' order='0x40' stat='maxHp'/>
+	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<add val="25" order='0x40' stat='pAtkSpd'/>
+	<add val="0.03" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77011" name="Summoner's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxMp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>-->
+    <add val='500' order='0x40' stat='maxHp'/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val="15" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.05" order="0x40" stat="critVuln"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="50" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77012" name="Wizard's Cloak">
+   <for>
+    <!--<add val='600' order='0x40' stat='maxHp'/>
+	<mul val="0.94" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.25" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="10" order="0x40" stat="waterPower"/>
+	<add val="10" order="0x40" stat="firePower"/>
+	<add val="10" order="0x40" stat="windPower"/>
+	<add val="10" order="0x40" stat="darkPower"/>-->
+	<add val='500' order='0x40' stat='maxHp'/>
+	<mul val="0.965" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.10" order="0x40" stat="mAtk"/>
+	<add val="50" order="0x60" stat="mAtkRange"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77013" name="Cloak of Valakas">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="77014" name="Vesper Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id='77015' name="Archlock Cloak ">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="77016" name="Arcanister Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="77017" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<!--<item id="77500" name="Dread Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>-->
+
+<item id="77500" name="Dread Knight's Cloak">
+   <for>
+    <!--<add val="800" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<add val="50" order="0x40" stat="pDef"/>
+	<add val="50" order="0x40" stat="mDef"/>
+	<add val="0.05" order="0x40" stat="gainHp"/>
+	<add val="500" order="0x40" stat="sDef"/>
+	<add val="5" order="0x40" stat="rShld"/>
+	<mul val="1.1" order="0x30" stat="aggressionProf"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val='300' order='0x40' stat='maxMp'/>
+	<add val="0.08" order="0x40" stat="gainHp"/>
+	<sub val="0.04" order="0x40" stat="mReuse"/>
+	<add val="450" order="0x40" stat="sDef">
+		<using kind="shield"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+		<using kind="shield"/>
+	</add>
+	<add val="450" order="0x40" stat="sDef">
+		<using kind="sigil"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+	<using kind="sigil"/>
+	</add>
+	<mul val="1.15" order="0x30" stat="aggressionProf"/>
+	<add val="3" order="0x40" stat="rShldPerfAdd">
+		<using kind="shield"/>
+	</add>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77501" name="Dread Archer's Cloak">
+   <for>
+    <!--<add val="3" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="4" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="100" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="70" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+    <add val='800' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub order="0x40" stat="atkReuse" val="0.05"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	 <add val="4" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="4" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="70" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="45" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+	<basemul val="0.165" order="0x30" stat="pAtk">
+	  <using kind="Bow,Crossbow"/>
+    </basemul>
+	<add val="15" order="0x40" stat="pAtkSpd">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="3" order="0x40" stat="doubleShot">
+	   <using kind="Bow,Crossbow"/>
+	 </add>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77502" name="Dread Enchanters Cloak">
+   <for>
+    <!--<add val='1000' order='0x10' stat='maxCp'/>
+    <add val="5" order='0x40' stat='runSpd'/>
+	<add val='3' order='0x40' stat='mSkillEvas'/>
+	<add val='3' order='0x40' stat='pSkillEvas'/>
+	<add val="0.06" order='0x40' stat='cAtkMagic'/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val='400' order='0x10' stat='maxCp'/>
+	<add val='5' order='0x40' stat='mSkillEvas'/>
+	<add val='5' order='0x40' stat='pSkillEvas'/>
+	<sub val="0.07" order="0x40" stat="mReuse"/>
+    <add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+    <add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77503" name="Dread Healer's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/-->
+    <add val='650' order='0x40' stat='maxHp'/>
+    <add val='750' order='0x40' stat='maxMp'/>
+    <add val="0.14" order="0x40" stat="gainHp"/>
+	<add val="0.14" order="0x40" stat="giveHp"/>
+	<sub val="0.12" order="0x40" stat="mReuse"/>
+	<mul order="0x30" stat="regMp" val="1.06"/>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77504" name="Dread Rogue's Cloak">
+   <for>
+   <!-- <add val='500' order='0x40' stat='maxCp'/>
+    <add val='800' order='0x40' stat='maxHp'/>
+	<add val="10" order='0x40' stat='blowRate'/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val="12" order='0x40' stat='blowRate'/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<add val='15' order='0x40' stat='pAtkSpd'/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77505" name="Dread Warrior's Cloak">
+   <for>
+    <!--<add val='1000' order='0x40' stat='maxCp'/>
+    <add val='700' order='0x40' stat='maxHp'/>
+	<basemul val="0.15" order="0x40" stat="pAtk"/>
+	<add val="30" order='0x40' stat='pAtkSpd'/>
+	<add val="4" order='0x40' stat='runSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<basemul val="0.16" order="0x40" stat="pAtk"/>
+	<add val="25" order='0x40' stat='pAtkSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<mul val="0.98" order="0x40" stat="reducePdef"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77506" name="Dread Summoner's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxMp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val="15" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='4' order='0x40' stat='rEvasAbs'/>
+	<add val="65" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>
+	<add val="4" order="0x40" stat="transDam"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77507" name="Dread Wizard's Cloak">
+   <for>
+    <!--<add val='600' order='0x40' stat='maxHp'/>
+	<mul val="0.94" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.25" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="10" order="0x40" stat="waterPower"/>
+	<add val="10" order="0x40" stat="firePower"/>
+	<add val="10" order="0x40" stat="windPower"/>
+	<add val="10" order="0x40" stat="darkPower"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<mul val="0.945" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.15" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add order="0x40" stat="transDamMana" val="4"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77508" name="Blue Dread Cloak">
+   <for>
+    <!--<add val='1000' order='0x40' stat='maxCp'/>
+    <add val='700' order='0x40' stat='maxHp'/>
+	<basemul val="0.15" order="0x40" stat="pAtk"/>
+	<add val="30" order='0x40' stat='pAtkSpd'/>
+	<add val="4" order='0x40' stat='runSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<basemul val="0.16" order="0x40" stat="pAtk"/>
+	<add val="25" order='0x40' stat='pAtkSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<mul val="0.98" order="0x40" stat="reducePdef"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77509" name="Blue Dread Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxMp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val="15" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='4' order='0x40' stat='rEvasAbs'/>
+	<add val="65" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>
+	<add val="4" order="0x40" stat="transDam"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77510" name="Purple Dread Cloak">
+   <for>
+    <!--<add val='600' order='0x40' stat='maxHp'/>
+	<mul val="0.94" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.25" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="10" order="0x40" stat="waterPower"/>
+	<add val="10" order="0x40" stat="firePower"/>
+	<add val="10" order="0x40" stat="windPower"/>
+	<add val="10" order="0x40" stat="darkPower"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<mul val="0.945" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.15" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add order="0x40" stat="transDamMana" val="4"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+
+<!--Rykros Cloak-->
+<item id="77511" name="Rykros Knight's Cloak">
+   <for>
+    <!--<add val="800" order="0x40" stat="maxHp"/>
+	<add val="5" order="0x40" stat="runSpd"/>
+	<add val="50" order="0x40" stat="pDef"/>
+	<add val="50" order="0x40" stat="mDef"/>
+	<add val="0.05" order="0x40" stat="gainHp"/>
+	<add val="500" order="0x40" stat="sDef"/>
+	<add val="5" order="0x40" stat="rShld"/>
+	<mul val="1.1" order="0x30" stat="aggressionProf"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val='300' order='0x40' stat='maxMp'/>
+	<add val="0.08" order="0x40" stat="gainHp"/>
+	<sub val="0.04" order="0x40" stat="mReuse"/>
+	<add val="450" order="0x40" stat="sDef">
+		<using kind="shield"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+		<using kind="shield"/>
+	</add>
+	<add val="450" order="0x40" stat="sDef">
+		<using kind="sigil"/>
+	</add>
+	<add val="5" order="0x40" stat="rShld">
+	<using kind="sigil"/>
+	</add>
+	<mul val="1.15" order="0x30" stat="aggressionProf"/>
+	<add val="3" order="0x40" stat="rShldPerfAdd">
+		<using kind="shield"/>
+	</add>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77512" name="Rykros Archer's Cloak">
+   <for>
+    <!--<add val="3" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="4" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="100" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="70" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+    <add val='800' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub order="0x40" stat="atkReuse" val="0.05"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	 <add val="4" order="0x40" stat="accCombat">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="4" order="0x40" stat="rEvas">
+	  <using kind="Bow,Crossbow"/>
+	</add>
+	 <add val="70" order="0x80" stat="pAtkRange">
+	   <using kind="Bow"/>
+	</add>
+	<add val="45" order="0x80" stat="pAtkRange">
+	   <using kind="Crossbow"/>
+	</add>
+	<basemul val="0.165" order="0x30" stat="pAtk">
+	  <using kind="Bow,Crossbow"/>
+    </basemul>
+	<add val="15" order="0x40" stat="pAtkSpd">
+	  <using kind="Bow,Crossbow"/>
+    </add>
+	<add val="3" order="0x40" stat="doubleShot">
+	   <using kind="Bow,Crossbow"/>
+	 </add>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77513" name="Rykros Enchanters Cloak">
+   <for>
+    <!--<add val='1000' order='0x10' stat='maxCp'/>
+    <add val="5" order='0x40' stat='runSpd'/>
+	<add val='3' order='0x40' stat='mSkillEvas'/>
+	<add val='3' order='0x40' stat='pSkillEvas'/>
+	<add val="0.06" order='0x40' stat='cAtkMagic'/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val='400' order='0x10' stat='maxCp'/>
+	<add val='5' order='0x40' stat='mSkillEvas'/>
+	<add val='5' order='0x40' stat='pSkillEvas'/>
+	<sub val="0.07" order="0x40" stat="mReuse"/>
+    <add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+    <add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77514" name="Rykros Healer's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/-->
+    <add val='650' order='0x40' stat='maxHp'/>
+    <add val='750' order='0x40' stat='maxMp'/>
+    <add val="0.14" order="0x40" stat="gainHp"/>
+	<add val="0.14" order="0x40" stat="giveHp"/>
+	<sub val="0.12" order="0x40" stat="mReuse"/>
+	<mul order="0x30" stat="regMp" val="1.06"/>
+	<add val="3" order="0x40" stat="runSpd"/>
+   </for>
+</item>
+<item id="77515" name="Rykros Rogue's Cloak">
+   <for>
+   <!-- <add val='500' order='0x40' stat='maxCp'/>
+    <add val='800' order='0x40' stat='maxHp'/>
+	<add val="10" order='0x40' stat='blowRate'/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<add val="0.06" order='0x40' stat='cAtk'/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val="12" order='0x40' stat='blowRate'/>
+	<add val="4" order="0x40" stat="rEvas"/>
+	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<add val='15' order='0x40' stat='pAtkSpd'/>
+	<add val="3" order="0x40" stat="skillCritAdd"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77516" name="Rykros Warrior's Cloak">
+   <for>
+    <!--<add val='1000' order='0x40' stat='maxCp'/>
+    <add val='700' order='0x40' stat='maxHp'/>
+	<basemul val="0.15" order="0x40" stat="pAtk"/>
+	<add val="30" order='0x40' stat='pAtkSpd'/>
+	<add val="4" order='0x40' stat='runSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="3" order="0x40" stat="accCombat"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<basemul val="0.16" order="0x40" stat="pAtk"/>
+	<add val="25" order='0x40' stat='pAtkSpd'/>
+	<add val="0.05" order="0x40" stat="skillDam"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<mul val="0.98" order="0x40" stat="reducePdef"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77517" name="Rykros Summoner's Cloak">
+   <for>
+    <!--<add val='500' order='0x40' stat='maxCp'/>
+    <add val='500' order='0x40' stat='maxMp'/>
+    <add val='500' order='0x40' stat='maxHp'/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='3' order='0x40' stat='rEvasAbs'/>
+	<add val="100" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add val="15" order="0x40" stat="pAtkSpd"/>
+	<sub val="0.06" order="0x40" stat="critVuln"/>
+	<add val='4' order='0x40' stat='rEvasAbs'/>
+	<add val="65" order="0x40" stat="addDmg"/>
+	<set val="1" order="0x40" stat="summonslive"/>
+	<add val="4" order="0x40" stat="transDam"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77518" name="Rykros Wizard's Cloak">
+   <for>
+    <!--<add val='600' order='0x40' stat='maxHp'/>
+	<mul val="0.94" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.25" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="10" order="0x40" stat="waterPower"/>
+	<add val="10" order="0x40" stat="firePower"/>
+	<add val="10" order="0x40" stat="windPower"/>
+	<add val="10" order="0x40" stat="darkPower"/>-->
+    <add val='650' order='0x40' stat='maxHp'/>
+	<mul val="0.945" order="0x40" stat="reduceMdef"/>
+	<basemul val="0.15" order="0x40" stat="mAtk"/>
+	<add val="60" order="0x60" stat="mAtkRange"/>
+	<add val="20" order="0x40" stat="mAtkSpd"/>
+	<add order="0x40" stat="transDamMana" val="4"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+
+<!--Rykros Cloaks-->
+<item id="38031" name="Winged Cape White">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="38032" name="Winged Cape Black">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32743" name="Winged Cape Red">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32744" name="Beleth's Cape">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32901" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32902" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32903" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32904" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32905" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32906" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32907" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="32908" name="Aurakyrian Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="43126" name="Winged Tabard of Celerity">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+<item id="43127" name="Surcoat of Elder Magic">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+</list>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Seven Signs - Blacksmith of Mammon - Unseal S80-Grade Armor. --> 
+<list maintainEnchantment="true">
+	<!-- Dynasty Breast Plate  -->
+	<item id="1">
+		<production id="9416" count="1"/>
+		<ingredient id="9514" count="1"/>
+		<ingredient id="5575" count="6932650"/>
+	</item>
+	<!-- Dynasty Gaiter  -->
+	<item id="2">
+		<production id="9421" count="1"/>
+		<ingredient id="9515" count="1"/>
+		<ingredient id="5575" count="4364175"/>
+	</item>
+	<!-- Dynasty Helmet  -->
+	<item id="3">
+		<production id="9422" count="1"/>
+		<ingredient id="9516" count="1"/>
+		<ingredient id="5575" count="2618475"/>
+	</item>
+	<!-- Dynasty Gauntlet  -->
+	<item id="4">
+		<production id="9423" count="1"/>
+		<ingredient id="9517" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Boots  -->
+	<item id="5">
+		<production id="9424" count="1"/>
+		<ingredient id="9518" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Leather Armor  -->
+	<item id="6">
+		<production id="9425" count="1"/>
+		<ingredient id="9519" count="1"/>
+		<ingredient id="5575" count="5237025"/>
+	</item>
+	<!-- Dynasty Leather Leggings  -->
+	<item id="7">
+		<production id="9428" count="1"/>
+		<ingredient id="9520" count="1"/>
+		<ingredient id="5575" count="3273075"/>
+	</item>
+	<!-- Dynasty Leather Helmet  -->
+	<item id="8">
+		<production id="9429" count="1"/>
+		<ingredient id="9521" count="1"/>
+		<ingredient id="5575" count="2618475"/>
+	</item>
+	<!-- Dynasty Leather Gloves  -->
+	<item id="9">
+		<production id="9430" count="1"/>
+		<ingredient id="9522" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Leather Boots  -->
+	<item id="10">
+		<production id="9431" count="1"/>
+		<ingredient id="9523" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Tunic  -->
+	<item id="11">
+		<production id="9432" count="1"/>
+		<ingredient id="9524" count="1"/>
+		<ingredient id="5575" count="5237025"/>
+	</item>
+	<!-- Dynasty Stockings  -->
+	<item id="12">
+		<production id="9437" count="1"/>
+		<ingredient id="9525" count="1"/>
+		<ingredient id="5575" count="3273075"/>
+	</item>
+	<!-- Dynasty Circlet  -->
+	<item id="13">
+		<production id="9438" count="1"/>
+		<ingredient id="9526" count="1"/>
+		<ingredient id="5575" count="2618475"/>
+	</item>
+	<!-- Dynasty Gloves  -->
+	<item id="14">
+		<production id="9439" count="1"/>
+		<ingredient id="9527" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Shoes  -->
+	<item id="15">
+		<production id="9440" count="1"/>
+		<ingredient id="9528" count="1"/>
+		<ingredient id="5575" count="1745625"/>
+	</item>
+	<!-- Dynasty Shield  -->
+	<item id="16">
+		<production id="9441" count="1"/>
+		<ingredient id="9529" count="1"/>
+		<ingredient id="5575" count="1832925"/>
+	</item>
+</list>

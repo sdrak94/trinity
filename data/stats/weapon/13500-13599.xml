@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13524" name="Gracia Soldier One-handed Sword">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13525" name="Gracia Soldier Shield">
+  <for>
+    <sub val="0" order="0x10" stat="rEvas"/>
+    <set val="101" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="13528" name="Test Dual Daggers">
+  <cond msgId="1518">
+    <player active_skill_id="923"/>
+  </cond>
+  <for>
+    <set val="200" order="0x08" stat="pAtk"/>
+    <set val="6" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13530" name="Flag of Gludio">
+  <for>
+  </for>
+</item>
+<item id="13531" name="Flag of Dion">
+  <for>
+  </for>
+</item>
+<item id="13532" name="Flag of Giran">
+  <for>
+  </for>
+</item>
+<item id="13533" name="Flag of Oren">
+  <for>
+  </for>
+</item>
+<item id="13534" name="Flag of Aden">
+  <for>
+  </for>
+</item>
+<item id="13535" name="Flag of Innadril">
+  <for>
+  </for>
+</item>
+<item id="13536" name="Flag of Goddard">
+  <for>
+  </for>
+</item>
+<item id="13537" name="Flag of Rune">
+  <for>
+  </for>
+</item>
+<item id="13538" name="Flag of Schuttgart">
+  <for>
+  </for>
+</item>
+<item id="13539" name="Staff of Master Yogi ">
+  <for>
+    <set val="11" order="0x08" stat="pAtk"/>
+    <set val="12" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13556" name="Airship Control Key">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13557" name="Airship Cannon">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13558" name="Airship Cannon Briquet">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13560" name="Gludio Ward">
+  <for>
+  </for>
+</item>
+<item id="13561" name="Dion Ward">
+  <for>
+  </for>
+</item>
+<item id="13562" name="Giran Ward">
+  <for>
+  </for>
+</item>
+<item id="13563" name="Oren Ward">
+  <for>
+  </for>
+</item>
+<item id="13564" name="Aden Ward">
+  <for>
+  </for>
+</item>
+<item id="13565" name="Innadril Ward">
+  <for>
+  </for>
+</item>
+<item id="13566" name="Goddard Ward">
+  <for>
+  </for>
+</item>
+<item id="13567" name="Rune Ward">
+  <for>
+  </for>
+</item>
+<item id="13568" name="Schuttgart Ward">
+  <for>
+  </for>
+</item>
+</list>

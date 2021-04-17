@@ -1,0 +1,3 @@
+#itemId;Production1,Quantity1,Chance1[;Production2,Quantity2,Chance2... ;ProductionN,QuantityN,ChanceN]
+#itemId;[Production1,Quantity1,Production2,Quantity2,....],Chance1 - for 2 or more rewards (use witout [ ] )
+99902;6688,1,9;6689,1,9;6690,1,9;6691,1,9;6693,1,9;6694,1,9;6695,1,9;6696,1,9;6697,1,9;7579,1,9;57,330000,10

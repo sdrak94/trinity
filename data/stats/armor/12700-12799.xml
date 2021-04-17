@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12740" name="Baby Pet Scale Armor">
+  <for>
+    <add val="112" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12741" name="Baby Pet Bronze Armor">
+  <for>
+    <add val="124" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12742" name="Baby Pet Plate Armor">
+  <for>
+    <add val="136" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12743" name="Baby Pet Mithril Armor">
+  <for>
+    <add val="148" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12744" name="Baby Pet Oriharukon Armor">
+  <for>
+    <add val="160" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12745" name="Baby Pet Orichalcum Armor">
+  <for>
+    <add val="171" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12746" name="Crystal Pendant">
+  <for>
+    <add val="22" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12747" name="Ruby Pendant">
+  <for>
+    <add val="30" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12748" name="Sapphire Pendant">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12749" name="Diamond Pendant">
+  <for>
+    <add val="52" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12750" name="Enria Pendant">
+  <for>
+    <add val="66" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12751" name="Thons Pendant">
+  <for>
+    <add val="80" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12752" name="Asofe Pendant">
+  <for>
+    <add val="94" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12766" name="Gold Circlet">
+  <for/>
+</item>
+<item id="12767" name="Silver Circlet">
+  <for/>
+</item>
+<item id="12779" name="Agathion Seal Bracelet - Little Angel">
+  <for/>
+</item>
+<item id="12780" name="Agathion Seal Bracelet - Little Devil">
+  <for/>
+</item>
+<item id="12781" name="Ol Mahum Hat">
+  <for/>
+</item>
+<item id="12782" name="Kat the Cat Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12783" name="Feline Queen Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12784" name="Ant Hat">
+  <for/>
+</item>
+<item id="12785" name="Wolf Hat">
+  <for>
+     <add val="4" order="0x40" stat="runSpd"/>
+     <add val="15" order="0x40" stat="blowRate"/>
+	 <add val="20" order="0x40" stat="absorbDamStatic"/>
+     <add val="25" order="0x40" stat="addDmg"/>
+     <add val="20" order="0x40" stat="absorbDamStatic">
+	 	<not>
+		  <using kind="Dual Sword,Dual Fist,Dual Dagger"/>
+	    </not>
+	 </add>
+     <add val="0.04" order="0x40" stat="absorbDam"/>
+	 <add order="0x40" stat="absorbDamSkill" val="4"/>
+     <add order="0x40" stat="drainBoost" val="0.04"/>
+     <add val="3" order="0x40" stat="skillCritAdd"/>
+     <mul val="1.5" order="0x30" stat="regHp"/>
+     <add val="20" order='0x40' stat='pAtkSpd'/>
+     <add val="25" order='0x40' stat='mAtkSpd'/>
+  </for>
+</item>
+<item id="12786" name="Monster Eye Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12787" name="Brown Bear Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12788" name="Fungus Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12789" name="Skull Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12790" name="Ornithomimus Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12791" name="Feline King Hat - 30 day limited period">
+  <for/>
+</item>
+<item id="12792" name="Kai the Cat Hat - 30 day limited period">
+  <for/>
+</item>
+</list>

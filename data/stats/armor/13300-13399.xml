@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13308" name="Light Purple-Maned Horse Mounting Bracelet (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13309" name="Agathion of Love (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13310" name="Kat the Cat Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13311" name="Feline Queen Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13312" name="Monster Eye Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13313" name="Brown Bear Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13314" name="Fungus Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13315" name="Skull Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13316" name="Ornithomimus Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13317" name="Feline King Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13318" name="Kai the Cat Hat (Event) - 30-day limited period">
+  <for/>
+</item>
+<item id="13325" name="Kat the Cat Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13326" name="Feline Queen Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13327" name="Monster Eye Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13328" name="Brown Bear Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13329" name="Fungus Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13330" name="Skull Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13331" name="Ornithomimus Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13332" name="Feline King Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13333" name="Kai the Cat Hat (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13340" name="Agathion of Love (Event) - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13389" name="Kratei Barbed Shirt - CP">
+  <for>
+    <add val="23" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13390" name="Kratei Mithril Shirt - CP">
+  <for>
+    <add val="28" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13391" name="Kratei Striped Barbed Shirt - CP">
+  <for>
+    <add val="26" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13392" name="Kratei Striped Mithril Shirt - CP">
+  <for>
+    <add val="30" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13393" name="Shadow Item - Monkey Hat">
+  <for/>
+</item>
+<item id="13394" name="Shadow Item - Pig Hat">
+  <for/>
+</item>
+</list>

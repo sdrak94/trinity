@@ -1,0 +1,35 @@
+<list>
+<item id="77002" name="Cloak of Heroes">
+   <for>
+    <!--<basemul val="0.05" order="0x40" stat="pAtk"/>
+	<add order="0x40" stat="runSpd" val="3"/>
+	<add val='10' order='0x40' stat='pAtkSpd'/>
+	<sub val="0.03" order="0x40" stat="pReuse"/>-->
+	<basemul val="0.05" order="0x40" stat="pAtk"/>
+	<add val='15' order='0x40' stat='pAtkSpd'/>
+	<add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77003" name="Cloak of Heroes">
+   <for>
+    <!--<basemul val="0.1" order="0x40" stat="mAtk"/>
+    <add val="20" order="0x40" stat="mAtkSpd"/>
+    <add val='300' order='0x40' stat='maxHp'/>-->
+    <add val='300' order='0x40' stat='maxHp'/>
+    <add val="20" order="0x40" stat="mAtkSpd"/>
+    <add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+<item id="77004" name="Cloak of Heroes">
+   <for>
+    <!--<add val="0.05" order="0x40" stat="giveHp"/>
+    <add val='500' order='0x40' stat='maxMp'/>
+     <sub val="0.02" order="0x40" stat="mReuse"/>-->
+     <add val='300' order='0x40' stat='maxHp'/>
+	 <add val='300' order='0x40' stat='maxMp'/>
+     <sub val="0.02" order="0x40" stat="mReuse"/>
+	 <add val="0.05" order="0x40" stat="gainHp"/>
+	 <add order="0x40" stat="runSpd" val="3"/>
+   </for>
+</item>
+</list>

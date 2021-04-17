@@ -1,0 +1,9 @@
+<list>
+<item id="34588" name="Deadpool Cape">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+</list>

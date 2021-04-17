@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+	<item id="1"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+				<ingredient id="13140" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13435" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13448" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13449" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13450" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<production id="74001" count="1" enchant="11" staticEnch="true"/> 	
+				<production id="74000" count="1" enchant="11" staticEnch="true"/> 
+				<production id="74002" count="1" enchant="11" staticEnch="true"/> 
+				<production id="74003" count="1" enchant="11" staticEnch="true"/> 
+				<production id="74004" count="1" enchant="11" staticEnch="true"/> 
+		</item>
+	
+		<!--spacer-->
+	<item id="2"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	<item id="3"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+	
+	
+		
+	<ingredient id="13141" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13436" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13451" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13452" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13453" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+    <production id="74011" count="1" enchant="11" staticEnch="true"/> 	
+    <production id="74010" count="1" enchant="11" staticEnch="true"/> 
+    <production id="74012" count="1" enchant="11" staticEnch="true"/> 
+    <production id="74013" count="1" enchant="11" staticEnch="true"/> 
+    <production id="74014" count="1" enchant="11" staticEnch="true"/> 
+    </item>
+	
+		<!--spacer-->
+	<item id="4"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	 <item id="5"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+				
+				
+					
+				<ingredient id="13142" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13437" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13454" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13455" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13456" count="1" enchant="11" keepElements="true" staticEnch="true"/> 
+				<production id="74021" count="1" enchant="11" staticEnch="true"/> 
+				<production id="74020" count="1" enchant="11" staticEnch="true"/> 
+				<production id="74022" count="1" enchant="11" staticEnch="true"/> 	
+				<production id="74023" count="1" enchant="11" staticEnch="true"/> 	
+				<production id="74024" count="1" enchant="11" staticEnch="true"/> 
+		</item>
+	<item id="6"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<item id="7"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<item id="8"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+    <item id="9"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+			
+			
+				
+			<ingredient id="13140" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13435" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13448" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13449" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13450" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+			<production id="74001" count="1" enchant="12" staticEnch="true"/> 	
+			<production id="74000" count="1" enchant="12" staticEnch="true"/> 
+			<production id="74002" count="1" enchant="12" staticEnch="true"/> 
+			<production id="74003" count="1" enchant="12" staticEnch="true"/> 
+			<production id="74004" count="1" enchant="12" staticEnch="true"/> 
+    </item>
+	
+		<!--spacer-->
+	<item id="10"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	<item id="11"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+	
+	
+		
+	<ingredient id="13141" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13436" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13451" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13452" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13453" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+    <production id="74011" count="1" enchant="12" staticEnch="true"/> 	
+    <production id="74010" count="1" enchant="12" staticEnch="true"/> 
+    <production id="74012" count="1" enchant="12" staticEnch="true"/> 
+    <production id="74013" count="1" enchant="12" staticEnch="true"/> 
+    <production id="74014" count="1" enchant="12" staticEnch="true"/> 
+    </item>
+	
+		<!--spacer-->
+	<item id="12"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	    <item id="13"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+				
+				
+					
+				<ingredient id="13142" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13437" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13454" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13455" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13456" count="1" enchant="12" keepElements="true" staticEnch="true"/> 
+				<production id="74021" count="1" enchant="12" staticEnch="true"/> 
+				<production id="74020" count="1" enchant="12" staticEnch="true"/> 
+				<production id="74022" count="1" enchant="12" staticEnch="true"/> 	
+				<production id="74023" count="1" enchant="12" staticEnch="true"/> 	
+				<production id="74024" count="1" enchant="12" staticEnch="true"/> 
+		</item>
+	
+		<!--spacer-->
+	<item id="14"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+		<item id="15"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+		<item id="16"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	 <item id="17"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+			
+			
+				
+			<ingredient id="13140" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13435" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13448" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13449" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+			<ingredient id="13450" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+			<production id="74001" count="1" enchant="14" staticEnch="true"/> 	
+			<production id="74000" count="1" enchant="14" staticEnch="true"/> 
+			<production id="74002" count="1" enchant="14" staticEnch="true"/> 
+			<production id="74003" count="1" enchant="14" staticEnch="true"/> 
+			<production id="74004" count="1" enchant="14" staticEnch="true"/> 
+    </item>
+	
+		<!--spacer-->
+	<item id="18"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	<item id="19"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+	
+	
+		
+	<ingredient id="13141" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13436" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13451" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13452" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+	<ingredient id="13453" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+    <production id="74011" count="1" enchant="14" staticEnch="true"/> 	
+    <production id="74010" count="1" enchant="14" staticEnch="true"/> 
+    <production id="74012" count="1" enchant="14" staticEnch="true"/> 
+    <production id="74013" count="1" enchant="14" staticEnch="true"/> 
+    <production id="74014" count="1" enchant="14" staticEnch="true"/> 
+    </item>
+	
+		<!--spacer-->
+	<item id="20"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	
+	 <item id="21"> 
+				<ingredient id="800102" count="5"/>
+				<ingredient id="97006" count="3"/>
+				<ingredient id="6393" count="10"/>
+				<ingredient id="6673" count="1000"/>
+				<ingredient id="99004" count="500"/>				
+				
+				
+					
+				<ingredient id="13142" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13437" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13454" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13455" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+				<ingredient id="13456" count="1" enchant="14" keepElements="true" staticEnch="true"/> 
+				<production id="74021" count="1" enchant="14" staticEnch="true"/> 
+				<production id="74020" count="1" enchant="14" staticEnch="true"/> 
+				<production id="74022" count="1" enchant="14" staticEnch="true"/> 	
+				<production id="74023" count="1" enchant="14" staticEnch="true"/> 	
+				<production id="74024" count="1" enchant="14" staticEnch="true"/> 
+		</item>
+	
+		<!--spacer-->
+	<item id="22"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+		<item id="23"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+		<item id="24"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+
+
+</list>

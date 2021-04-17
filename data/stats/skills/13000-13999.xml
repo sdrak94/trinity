@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="13000" levels="1" name="Dread Heavy Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="3"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<add order="0x10" stat="CON" val="2"/>
+	<add order="0x40" stat="runSpd" val="12"/>
+	<add order="0x40" stat="accCombat" val="5"/>
+    <basemul order="0x40" stat="pAtk" val="0.44"/>
+	<basemul order="0x40" stat="pDef" val="0.22"/>
+	<basemul order="0x40" stat="mDef" val="0.09"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.15"/>
+	<basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="rCrit" val="0.25"/>
+    <add order="0x40" stat="cAtk" val="0.25"/>
+	<add order="0x40" stat="pSkillEvas" val="3"/>
+	<add order="0x40" stat="mSkillEvas" val="3"/>
+	<sub order="0x40" stat="gainHp" val="0.15"/>
+  </for>
+</skill>
+<skill id="13001" levels="1" name="Dread Light Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="2"/>
+	<add order="0x10" stat="DEX" val="2"/>
+	<add order="0x10" stat="CON" val="1"/>
+	<add order="0x40" stat="runSpd" val="15"/>
+	<add order="0x40" stat="rEvas" val="8"/>
+	<add val="200" order="0x40" stat="pDef"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="pAtk" val="0.30"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.25"/>
+	<basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="mDef" val="0.095"/>
+	<basemul order="0x40" stat="rCrit" val="0.25"/>
+	<add order="0x40" stat="cAtk" val="0.40"/>
+	<sub order="0x40" stat="atkReuse" val="0.12"/>
+	<add order="0x40" stat="pSkillEvas" val="6"/>
+	<add order="0x40" stat="mSkillEvas" val="4"/>
+	<sub order="0x40" stat="gainHp" val="0.15"/>
+  </for>
+</skill>
+<skill id="13002" levels="1" name="Dread Robe Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="INT" val="2"/> 
+	<add order="0x10" stat="WIT" val="2"/>
+	<add order="0x10" stat="MEN" val="1"/>
+    <add order="0x40" stat="runSpd" val="16"/>
+	<basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="pDef" val="0.09"/>
+	<basemul order="0x40" stat="mDef" val="0.135"/>
+	<add order="0x40" stat="mAtk" val="1000"/>
+	<basemul order="0x40" stat="mAtk" val="0.8"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.465"/>
+	<basemul order="0x40" stat="mCritRate" val="0.3"/>
+	<sub order="0x40" stat="mReuse" val="0.30"/>
+	<add order="0x40" stat="cAtkMagic" val="0.25"/>
+	<add order="0x40" stat="pSkillEvas" val="5"/>
+	<add order="0x40" stat="mSkillEvas" val="5"/>
+	<mul order="0x30" stat="derangementVuln" val="0.85"/>
+	<mul order="0x30" stat="stunVuln" val="0.85"/>
+	<sub order="0x40" stat="gainHp" val="0.15">
+		<not>
+			<player class_id_restriction="97,105,112,115"/>
+		</not>
+	</sub>
+	<add val="750" order="0x40" stat="maxMp">
+		<player class_id_restriction="97,105,112,115"/>
+	</add>
+	<add order="0x40" stat="giveHp" val="0.10">
+		<player class_id_restriction="97,105,112,115"/>
+	</add>
+	<add order="0x40" stat="gainHp" val="0.10">
+		<player class_id_restriction="97,105,112"/>
+	</add>
+	<mul order="0x30" stat="regMp" val="1.25">
+	<player class_id_restriction="97,105,112,115"/>
+	</mul>
+	
+
+	
+	
+	
+	
+  </for>
+</skill>
+<skill id="13007" levels="1" name="Rykros Heavy Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="4"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<add order="0x10" stat="CON" val="2"/>
+	<add order="0x40" stat="runSpd" val="14"/>
+	<add order="0x40" stat="accCombat" val="6"/>
+    <basemul order="0x40" stat="pAtk" val="0.48"/>
+	<basemul order="0x40" stat="pDef" val="0.235"/>
+	<basemul order="0x40" stat="mDef" val="0.09"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.175"/>
+	<basemul order="0x40" stat="maxHp" val="0.15"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="rCrit" val="0.25"/>
+    <add order="0x40" stat="cAtk" val="0.25"/>
+	<add order="0x40" stat="pSkillEvas" val="3"/>
+	<add order="0x40" stat="mSkillEvas" val="3"/>
+	<sub order="0x40" stat="gainHp" val="0.15"/>
+    <mul order="0x30" stat="sleepVuln" val="0.75"/> 
+    <mul order="0x30" stat="rootVuln" val="0.75"/> 
+  </for>
+</skill>
+<skill id="13008" levels="1" name="Rykros Light Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	 <add order="0x10" stat="STR" val="3"/>
+	<add order="0x10" stat="DEX" val="3"/>
+	<add order="0x10" stat="CON" val="1"/>
+	<add order="0x40" stat="runSpd" val="16"/>
+	<add order="0x40" stat="rEvas" val="10"/>
+	<add val="200" order="0x40" stat="pDef"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<basemul order="0x40" stat="maxHp" val="0.15"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="pAtk" val="0.30"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.25"/>
+	<basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="mDef" val="0.095"/>
+	<basemul order="0x40" stat="rCrit" val="0.25"/>
+	<add order="0x40" stat="cAtk" val="0.45"/>
+	<sub order="0x40" stat="atkReuse" val="0.12"/>
+	<add order="0x40" stat="pSkillEvas" val="6"/>
+	<add order="0x40" stat="mSkillEvas" val="4"/>
+	<sub order="0x40" stat="gainHp" val="0.15"/>
+	<mul order="0x30" stat="sleepVuln" val="0.75"/> 
+    <mul order="0x30" stat="rootVuln" val="0.75"/> 
+  </for>
+</skill>
+<skill id="13009" levels="1" name="Rykros Robe Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="INT" val="3"/> 
+	<add order="0x10" stat="WIT" val="2"/>
+	<add order="0x10" stat="MEN" val="2"/>
+    <add order="0x40" stat="runSpd" val="18"/>
+	<basemul order="0x40" stat="maxHp" val="0.15"/>
+	<basemul order="0x40" stat="maxCp" val="0.15"/>
+	<basemul order="0x40" stat="pDef" val="0.10"/>
+	<basemul order="0x40" stat="mDef" val="0.15"/>
+	<add order="0x40" stat="mAtk" val="1200"/>
+	<basemul order="0x40" stat="mAtk" val="0.9"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.485"/>
+	<basemul order="0x40" stat="mCritRate" val="0.3"/>
+	<sub order="0x40" stat="mReuse" val="0.30"/>
+	<add order="0x40" stat="cAtkMagic" val="0.30"/>
+	<add order="0x40" stat="pSkillEvas" val="5"/>
+	<add order="0x40" stat="mSkillEvas" val="5"/>
+	<mul order="0x30" stat="derangementVuln" val="0.85"/>
+	<mul order="0x30" stat="stunVuln" val="0.85"/>
+	<sub order="0x40" stat="gainHp" val="0.15">
+		<not>
+			<player class_id_restriction="97,105,112,115"/>
+		</not>
+	</sub>
+	<add val="1000" order="0x40" stat="maxMp">
+		<player class_id_restriction="97,105,112,115"/>
+	</add>
+	<add order="0x40" stat="giveHp" val="0.12">
+		<player class_id_restriction="97,105,112,115"/>
+	</add>
+	<add order="0x40" stat="gainHp" val="0.10">
+		<player class_id_restriction="97,105,112"/>
+	</add>
+	<mul order="0x30" stat="regMp" val="1.28">
+	<player class_id_restriction="97,105,112,115"/>
+	</mul>
+    <mul order="0x30" stat="sleepVuln" val="0.75"/> 
+    <mul order="0x30" stat="rootVuln" val="0.75"/>
+  </for>
+</skill>
+
+<!--<skill id="13007" levels="1" name="Rykros Heavy Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="5"/>
+	<add order="0x40" stat="runSpd" val="10"/>
+	<add order="0x40" stat="accCombat" val="4"/>
+    <basemul order="0x40" stat="pAtk" val="0.18"/>
+	<basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.1"/>
+    <basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.12"/>
+    <mul order="0x30" stat="sleepVuln" val="0.6"/> 
+    <mul order="0x30" stat="rootVuln" val="0.6"/> 
+  </for>
+</skill>
+<skill id="13008" levels="1" name="Rykros Light Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="DEX" val="5"/>
+	<add order="0x40" stat="runSpd" val="10"/>
+	<add order="0x40" stat="accCombat" val="4"/>
+    <basemul order="0x40" stat="pAtk" val="0.18"/>
+	<basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.1"/>
+    <basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.12"/>
+    <mul order="0x30" stat="sleepVuln" val="0.6"/> 
+    <mul order="0x30" stat="rootVuln" val="0.6"/> 
+  </for>
+</skill>
+<skill id="13009" levels="1" name="Rykros Robe Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="INT" val="5"/>
+	<add order="0x40" stat="runSpd" val="10"/>
+	<add order="0x40" stat="accCombat" val="4"/>
+    <basemul order="0x40" stat="pAtk" val="0.18"/>
+	<basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.1"/>
+    <basemul order="0x40" stat="maxHp" val="0.12"/>
+	<basemul order="0x40" stat="maxCp" val="0.12"/>
+    <mul order="0x30" stat="sleepVuln" val="0.6"/> 
+    <mul order="0x30" stat="rootVuln" val="0.6"/>
+  </for>
+</skill>-->
+<skill id="13010" levels="1" name="Concentration Set">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<mul order="0x50" stat="runSpd" val="1.1"/>
+	<mul order="0x50" stat="accCombat" val="1.1"/>
+	<mul order="0x50" stat="rEvas" val="1.1"/>
+	<mul order="0x50" stat="pAtkSpd" val="1.1"/>
+	<mul order="0x50" stat="mAtkSpd" val="1.12"/>
+    <add order="0x40" stat="pSkillEvas" val="30"/>
+	<add order="0x40" stat="rEvasAbs" val="12"/>
+    <add order="0x40" stat="pAtkSpdMax" val="100"/> 
+    <add order="0x40" stat="lionheart" val="100">
+	    <player active_effect_id="1078"/>
+	</add>
+	<add order="0x40" stat="extraHit" val="5">
+	  <and>
+	      <not>
+		     <using kind="Bow,Crossbow"/>
+		  </not>
+	    <player active_effect_id="1078"/>
+		</and>
+	</add>
+	<add order="0x10" stat="critMax" val="50">
+	    <player active_effect_id="1078"/>
+	</add>
+  </for>
+</skill>
+<skill id="13100" levels="1" name="Sudden Flash">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="670"/>
+  <set name="reuseDelay" val="450000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="displayId" val="453"/>
+  <for>
+    <effect name="Buff" time="5" val="0" special="s_invulnerable">
+	  <set order="0x90" stat="critMax" val="1000"/>
+      <set order="0x90" stat="rCrit" val="1000"/>
+      <set order="0x90" stat="mCritMax" val="1000"/>
+      <set order="0x90" stat="mCritRate" val="1000">
+	  	  <and>
+	  	<not>
+	      <using skillid="12503"/>
+		</not>
+		<not>
+		  <using skillid="12505"/>
+		  	</not>
+		<not>
+		  <using skillid="12506"/>
+		  	</not>
+		<not>
+		  <using skillid="12507"/>
+		  		</not>
+		<not>
+		  <using skillid="12509"/>
+		  </not>
+		<not>
+		  <using skillid="12510"/>
+		  	</not>
+		</and>
+		</set>
+	  <set order="0x90" stat="skillCritAdd" val="100">
+	  <and>
+	  	<not>
+	      <using skillid="12500"/>
+		</not>
+		<not>
+		  <using skillid="12501"/>
+		  		</not>
+		<not>
+		  <using skillid="12502"/>
+		  	</not>
+		<not>
+		  <using skillid="12504"/>
+		  		</not>
+		<not>
+		  <using skillid="12508"/>
+		  </not>
+		<not>
+		  <using skillid="12511"/>
+		  	</not>
+		</and>
+	   </set>
+	  <add order="0x40" stat="pAtkSpd" val="100"/>
+	  <add order="0x40" stat="mAtkSpd" val="100"/>
+    </effect>
+  </for>
+</skill>
+<skill id="13101" levels="1" name="Inner Fire">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="CANCEL_DEBUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="800"/>
+  <set name="reuseDelay" val="450000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="displayId" val="1356"/>
+</skill>
+<skill id="13102" levels="1" name="Lex Talionis">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="800"/>
+  <set name="reuseDelay" val="550000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="displayId" val="439"/>
+  <for>
+      <effect name="Buff" time="4" val="0" special="stigmashilien">
+		  <add order="0x40" stat="reflectDam" val="250"/>
+		  <add order="0x40" stat="vengeanceMdam" val="300"/>
+		  <add order="0x40" stat="vengeancePdam" val="300"/>
+		  <add order="0x40" stat="reflectArrows" val="200"/>
+		  <add order="0x40" stat="vengeanceRangedDam" val="300"/>
+    </effect>
+	</for>
+</skill>
+<skill id="13103" levels="1" name="Half Step">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="mpConsume" val="200"/>
+  <set name="retries" val="1"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="INSTANT_JUMP"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="150"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="mustNegateId" val="50441"/>
+  <set name="displayId" val="821"/>
+</skill>
+<skill id="13104" levels="1" name="Vesper Necklace">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="2" order="0x10" stat="INT"/>
+	<add val="2" order="0x10" stat="STR"/>
+	<basemul val="0.07" order="0x40" stat="mDef"/>
+  </for>
+</skill>
+<skill id="13105" levels="1" name="Vesper Earring">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="2" order="0x10" stat="MEN"/>
+	<add val="2" order="0x10" stat="CON"/>
+	<basemul val="0.05" order="0x40" stat="mDef"/>
+  </for>
+</skill>
+<skill id="13106" levels="1" name="Vesper Ring">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="2" order="0x10" stat="WIT"/>
+	<add val="2" order="0x10" stat="DEX"/>
+	<basemul val="0.05" order="0x40" stat="mDef"/>
+  </for>
+</skill>
+<skill id="13109" levels="1" name="Downfall" enchantLevels1="15">
+  <set name="power" val="5600"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="30"/>
+  <set name="reuseDelay" val="90000"/>
+  <set name="skillRadius" val="250"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="hitTime" val="2100"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="3.1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="800"/>
+  <set name="baseCritRate" val="-105"/>
+  <set name="effectRange" val="1400"/>
+  <set name="displayId" val="11027"/>
+      <cond msg="" >
+	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Stun" time="3" val="0" ignoreP="1" effectPower="60" effectType="STUN" stackOrder="2" stackType="Stun">
+	</effect>
+  </for>
+  </skill>
+</list>

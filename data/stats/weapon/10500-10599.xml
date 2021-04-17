@@ -1,0 +1,114 @@
+<list> 
+<item id="10527" name="Dynasty Staff"> 
+  <for> 
+   <set val="267" order="0x08" stat="pAtk"/> 
+   <set val="222" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.35" order="0x40" stat="mAtk"/>
+   <add val="0.1" order="0x40" stat="cAtkMagic"/>
+   <basemul val="0.2" order="0x40" stat="maxHp"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.15" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+<item id="10528" name="Dynasty Staff - Acumen Madness">
+  <for> 
+   <set val="267" order="0x08" stat="pAtk"/> 
+   <set val="222" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   <add val="0.19" order="0x40" stat="cAtkMagic"/>
+   <add val="0.2" order="0x40" stat="pAtk-undead"/>
+   <add val="0.18" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+<item id="10529" name="Dynasty Staff - Empower Madness"> 
+  <for> 
+   <set val="267" order="0x08" stat="pAtk"/> 
+   <set val="222" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="0.19" order="0x40" stat="cAtkMagic"/>
+   <basemul val="0.50" order="0x40" stat="mAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-undead"/>
+   <add val="0.18" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+<item id="10530" name="Dynasty Crusher">
+  <for> 
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.25" order="0x40" stat="maxHp"/>
+   <basemul val="0.25" order="0x40" stat="pAtk"/>
+   <add val="0.1" order="0x40" stat="cAtk"/>
+   <basemul val="0.2" order='0x40' stat='rCrit'/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.15" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+<item id="10531" name="Dynasty Crusher - Health Cruelty">
+  <for> 
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>   
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>  
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-undead"/>
+   <add val="0.18" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+<item id="10532" name="Dynasty Crusher - Anger Cruelty">
+  <for> 
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>   
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.35" order="0x40" stat="pAtk"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-undead"/>
+   <add val="0.18" order="0x40" stat="pvmDam"/>
+   <mul val="0.9" order="0x30" stat="pvpPhysDmg"/>
+	<mul val="0.9" order="0x30" stat="pvpMagicalDmg"/>
+	<sub val="0.1" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for> 
+</item> 
+</list>

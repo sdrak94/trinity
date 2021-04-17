@@ -1,0 +1,180 @@
+<html noscrollbar>
+<head>
+	<title>Recruitment menu for %clanName% Clan</title>
+</head>
+<body>
+<table width=770 height=480 background="L2UI_CT1.Windows_DF_TooltipBG">
+	<tr>
+		<td>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td>
+						<br>
+						<center><font name="hs12" color="99BBFF">Recruitment management for</font> <font name="hs12" color="0099FF">%clanName%</font></center>
+						<br>
+					</td>
+				</tr>
+			</table>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td width=300>
+						<table border=0 width=300>
+							<tr>
+								<td align=center width=300>
+									<br>
+									<font name="hs12" color="99BBFF">What classes do you want to recruit?</font>
+								</td>
+							</tr>
+							<tr>
+								<td height=194>
+									<table border=0>
+										<tr>
+											<td width=100>
+												<table>
+													<tr>
+														<td width=20>
+															<button action="bypass _bbsclanmanage_1" value="" width=16 height=16 back="L2UI.CheckBox%checked1%" fore="L2UI.CheckBox%checked1%">
+														</td>
+														<td width=80>
+															<font color="99BBFF">Any Class</font>
+															<br>
+															<br>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width=200>
+												<table>
+													<tr>
+														<td width=20>
+															<button action="bypass _bbsclanmanage_2" value="" width=16 height=16 back="L2UI.CheckBox%checked2%" fore="L2UI.CheckBox%checked2%">
+														</td>
+														<td width=180>
+															<font color="99BBFF">Specific Classes</font>
+															<br>
+															<br>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td width=150>
+												<font color="99BBFF">First group:</font>
+											</td>
+											<td width=150>
+												<font color="99BBFF">Second group:</font>
+											</td>
+										</tr>
+										<tr>
+											<td width=150>
+												<combobox width=130 var=classes1 list="%firstClassGroup%">
+											</td>
+											<td width=150>
+												<combobox width=130 var=classes2 list="%secondClassGroup%">
+											</td>
+										</tr>
+										<tr>
+											<td width=150>
+												<button action="bypass _bbsclanmanage_3 $classes1" value="Add" width=100 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+											</td>
+											<td width=150>
+												<button action="bypass _bbsclanmanage_3 $classes2" value="Add" width=100 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width=400>
+						<table border=0>
+							<tr>
+								<td width=450>
+									<table width=420>
+										<tr>
+											<td align=center width=400>
+												<br>
+												<font name="hs12" color="99BBFF">Classes you have choosen:</font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table>
+										%choosenClasses%
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td align=center width=700>
+						<table width=700>
+							<tr>
+								<td align=center width=700>
+									<br>
+									<br>
+									<font name="hs12" color="99BBFF">Questions you want to ask:</font>
+									<br>
+								</td>
+							</tr>
+						</table>
+						<table width=700>
+							<tr>
+								<td align=center>
+									<font color="99BBFF">%question1%</font>
+									<edit var="question1" width=300 height=15>
+									<br>
+								</td>
+								<td align=center>
+									<font color="99BBFF">%question2%</font>
+									<edit var="question2" width=300 height=15>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>
+									<font color="99BBFF">%question3%</font>
+									<edit var="question3" width=300 height=15>
+									<br>
+								</td>
+								<td align=center>
+									<font color="99BBFF">%question4%</font>
+									<edit var="question4" width=300 height=15>
+									<br>
+								</td>
+							</tr>
+						</table>
+						<table width=750>
+							<tr>
+								<td align=center>
+									<button action="bypass _bbsclanmanage_6 | $question1 | $question2 | $question3 | $question4 | $question5 | $question6 | $question7 | $question8 |" value="Save Questions" width=370 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+									<br>
+								</td>
+								<td align=center>
+									<button action="bypass _bbsclanmanage_7" value="%recrutation% Recrutation" width=370 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=center>
+						<br>
+							<button action="bypass _bbsclan" value="Back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+						<br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

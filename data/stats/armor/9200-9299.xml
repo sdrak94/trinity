@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="9200" name="Shadow Item - Jester Hat - Firework">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="9201" name="Shadow Item - Wizard Hat - Firework">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="9202" name="Shadow Item - Dapper Cap - Firework">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="9203" name="Shadow Item - Romantic Chapeau - Firework">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="9204" name="Shadow Item - Iron Circlet - Firework">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="9208" name="Phantom Mask">
+  <for>
+    <add val="250" order="0x40" stat="rushDistAdd"/>
+	<add val="5" order="0x40" stat="rEvasAbs"/>
+	<add val="6" order="0x40" stat="runSpd"/>
+	<add val="4" order="0x40" stat="pSkillEvas"/>
+	<add val="4" order="0x40" stat="mSkillEvas"/>
+	<add val="0.25" order="0x40" stat="cAtk"/>
+	<add val="20" order="0x40" stat="evadeAOESpell"/>
+	<add val="5" order="0x40" stat="rEvas">
+	   <player running="true"/>
+	</add>
+  </for>
+</item>
+</list>

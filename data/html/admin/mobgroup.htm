@@ -1,0 +1,45 @@
+<html><title>Mob Groups</title><body>
+<center>
+<table width=260>
+<tr>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=45 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=180>Mob Group Control Menu</td>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=45 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table><br>
+<center>
+<table width=240><tr>
+<td>Parameters:</td><td><edit var="qbox" width=120 height=15></td>
+<td><button value="Help" action="bypass -h admin_help help/mobgroup.htm" width=45 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr></table><br>
+<table width=260><tr>
+<td><button value="Create" action="bypass -h admin_mobgroup_create $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Spawn" action="bypass -h admin_mobgroup_spawn $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Unspawn" action="bypass -h admin_mobgroup_unspawn $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Rem/Del" action="bypass -h admin_mobgroup_remove $qbox"  width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr><tr>
+<td><button value="List" action="bypass -h admin_mobgroup_list $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="AtkTrgt" action="bypass -h admin_mobgroup_attack $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="AtkGrp" action="bypass -h admin_mobgroup_attackgrp $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="AtkRnd" action="bypass -h admin_mobgroup_rnd $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr></table>
+<br>
+<table width=240>
+<tr>
+<td><button value="Return" action="bypass -h admin_mobgroup_return $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Follow" action="bypass -h admin_mobgroup_follow $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Teleport" action="bypass -h admin_mobgroup_teleport $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Kill" action="bypass -h admin_mobgroup_kill $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr><tr>
+<td><button value="Invul" action="bypass -h admin_mobgroup_invul $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Idle" action="bypass -h admin_mobgroup_idle $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="No/Move" action="bypass -h admin_mobgroup_nomove $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="CastOnly" action="bypass -h admin_mobgroup_casting $qbox" width=55 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr></table>
+<br>
+<table width=240>
+<tr>
+<td><button value="Classic Menu" action="bypass -h admin_help mobgroup_classic.htm" width=90 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Alternate Menu" action="bypass -h admin_help mobgroup_alternate.htm" width=90 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr></table>
+</center></body></html>

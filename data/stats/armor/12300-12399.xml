@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12300" name="Common Item - Sealed Imperial Crusader Gauntlet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12301" name="Common Item - Sealed Imperial Crusader Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12303" name="Common Item - Sealed Imperial Crusader Helmet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12304" name="Common Item - Sealed Imperial Crusader Breastplate">
+  <for>
+    <add val="193" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12305" name="Common Item - Imperial Crusader Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12306" name="Common Item - Imperial Crusader Gauntlet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12307" name="Common Item - Imperial Crusader Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12309" name="Common Item - Imperial Crusader Helmet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12310" name="Common Item - Imperial Crusader Breastplate">
+  <for>
+    <add val="205" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="12311" name="Common Item - Red Crescent">
+  <for>
+    <add val="24" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12312" name="Common Item - Necklace of Devotion">
+  <for>
+    <add val="32" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12313" name="Common Item - Ring of Devotion">
+  <for>
+    <add val="16" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12314" name="Common Item - Enchanted Earring">
+  <for>
+    <add val="27" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12315" name="Common Item - Enchanted Necklace">
+  <for>
+    <add val="36" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12316" name="Common Item - Enchanted Ring">
+  <for>
+    <add val="18" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12317" name="Common Item - Near Forest Necklace">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12318" name="Common Item - Tiger's Eye">
+  <for>
+    <add val="30" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12319" name="Common Item - Black Pearl Ring">
+  <for>
+    <add val="20" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12320" name="Common Item - Elven Necklace">
+  <for>
+    <add val="45" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12321" name="Common Item - Elven Ring">
+  <for>
+    <add val="22" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12322" name="Common Item - Elven Earring">
+  <for>
+    <add val="34" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12323" name="Common Item - Mithril Ring">
+  <for>
+    <add val="24" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12324" name="Common Item - Necklace of Darkness">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12325" name="Common Item - Omen Beast's Eye">
+  <for>
+    <add val="36" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12326" name="Common Item - Moonstone Earring">
+  <for>
+    <add val="39" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12327" name="Common Item - Aquastone Necklace">
+  <for>
+    <add val="52" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12328" name="Common Item - Aquastone Ring">
+  <for>
+    <add val="26" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12329" name="Common Item - Earring of Protection">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12330" name="Common Item - Necklace of Protection">
+  <for>
+    <add val="56" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12331" name="Common Item - Ring of Protection">
+  <for>
+    <add val="28" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12332" name="Common Item - Earring of Binding">
+  <for>
+    <add val="45" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12333" name="Common Item - Ring of Ages">
+  <for>
+    <add val="30" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12334" name="Common Item - Necklace of Mermaid">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12335" name="Common Item - Nassen's Earring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12336" name="Common Item - Necklace of Binding">
+  <for>
+    <add val="64" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12337" name="Common Item - Ring of Binding">
+  <for>
+    <add val="32" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12338" name="Common Item - Adamantite Earring">
+  <for>
+    <add val="51" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12339" name="Common Item - Adamantite Necklace">
+  <for>
+    <add val="68" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12340" name="Common Item - Adamantite Ring">
+  <for>
+    <add val="34" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12341" name="Common Item - Earring of Black Ore">
+  <for>
+    <add val="54" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12342" name="Common Item - Necklace of Black Ore">
+  <for>
+    <add val="72" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12343" name="Common Item - Ring of Black Ore">
+  <for>
+    <add val="36" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12344" name="Common Item - Sealed Phoenix Necklace">
+  <for>
+    <add val="76" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12345" name="Common Item - Sealed Phoenix Earring">
+  <for>
+    <add val="57" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12346" name="Common Item - Sealed Phoenix Ring">
+  <for>
+    <add val="38" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12347" name="Common Item - Phoenix Necklace">
+  <for>
+    <add val="80" order="0x10" stat="mDef"/>
+    <add val="26" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12348" name="Common Item - Phoenix Ring">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+    <add val="13" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12349" name="Common Item - Phoenix Earring">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+    <add val="20" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12350" name="Common Item - Sealed Majestic Necklace">
+  <for>
+    <add val="80" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12351" name="Common Item - Sealed Majestic Ring">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12352" name="Common Item - Sealed Majestic Earring">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12353" name="Common Item - Majestic Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <add val="33" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12354" name="Common Item - Majestic Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <add val="17" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12355" name="Common Item - Majestic Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <add val="25" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12356" name="Common Item - Sealed Tateossian Necklace">
+  <for>
+    <add val="91" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12357" name="Common Item - Sealed Tateossian Ring">
+  <for>
+    <add val="46" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12358" name="Common Item - Sealed Tateossian Earring">
+  <for>
+    <add val="68" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="12359" name="Common Item - Tateossian Necklace">
+  <for>
+    <add val="95" order="0x10" stat="mDef"/>
+    <add val="42" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12360" name="Common Item - Tateossian Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12361" name="Common Item - Tateossian Earring">
+  <for>
+    <add val="71" order="0x10" stat="mDef"/>
+    <add val="31" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="12372" name="Monkey Hat">
+  <for/>
+</item>
+<item id="12373" name="Pig Hat">
+  <for/>
+</item>
+</list>

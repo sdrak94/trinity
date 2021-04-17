@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Trader Alexandria (Luxury Shop) Armor -->
+<list>
+	<item id="1">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="138" enchant="0"/>
+		<ingredient id="1459" count="415" enchant="0"/>
+
+		<!-- Products -->
+		<production id="357" count="1" enchant="0"/>
+	</item>
+	<item id="2">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="86" enchant="0"/>
+		<ingredient id="1459" count="259" enchant="0"/>
+
+		<!-- Products -->
+		<production id="383" count="1" enchant="0"/>
+	</item>
+	<item id="3">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="52" enchant="0"/>
+		<ingredient id="1459" count="156" enchant="0"/>
+
+		<!-- Products -->
+		<production id="503" count="1" enchant="0"/>
+	</item>
+	<item id="4">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="35" enchant="0"/>
+		<ingredient id="1459" count="104" enchant="0"/>
+
+		<!-- Products -->
+		<production id="554" count="1" enchant="0"/>
+	</item>
+	<item id="5">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="35" enchant="0"/>
+		<ingredient id="1459" count="104" enchant="0"/>
+
+		<!-- Products -->
+		<production id="600" count="1" enchant="0"/>
+	</item>
+	<item id="6">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="35" enchant="0"/>
+		<ingredient id="1459" count="104" enchant="0"/>
+
+		<!-- Products -->
+		<production id="612" count="1" enchant="0"/>
+	</item>
+	<item id="7">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="36" enchant="0"/>
+		<ingredient id="1459" count="109" enchant="0"/>
+
+		<!-- Products -->
+		<production id="633" count="1" enchant="0"/>
+	</item>
+	<item id="8">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="36" enchant="0"/>
+		<ingredient id="1459" count="109" enchant="0"/>
+
+		<!-- Products -->
+		<production id="673" count="1" enchant="0"/>
+	</item>
+	<item id="9">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="138" enchant="0"/>
+		<ingredient id="1459" count="415" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2376" count="1" enchant="0"/>
+	</item>
+	<item id="10">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="86" enchant="0"/>
+		<ingredient id="1459" count="259" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2379" count="1" enchant="0"/>
+	</item>
+	<item id="11">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="104" enchant="0"/>
+		<ingredient id="1459" count="311" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2384" count="1" enchant="0"/>
+	</item>
+	<item id="12">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="65" enchant="0"/>
+		<ingredient id="1459" count="195" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2388" count="1" enchant="0"/>
+	</item>
+	<item id="13">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="169" enchant="0"/>
+		<ingredient id="1459" count="506" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2390" count="1" enchant="0"/>
+	</item>
+	<item id="14">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="104" enchant="0"/>
+		<ingredient id="1459" count="311" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2397" count="1" enchant="0"/>
+	</item>
+	<item id="15">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="65" enchant="0"/>
+		<ingredient id="1459" count="195" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2402" count="1" enchant="0"/>
+	</item>
+	<item id="16">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="169" enchant="0"/>
+		<ingredient id="1459" count="506" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2406" count="1" enchant="0"/>
+	</item>
+	<item id="17">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="52" enchant="0"/>
+		<ingredient id="1459" count="156" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2415" count="1" enchant="0"/>
+	</item>
+	<item id="18">
+		<!-- Ingredients -->
+		<ingredient id="1460" count="35" enchant="0"/>
+		<ingredient id="1459" count="104" enchant="0"/>
+
+		<!-- Products -->
+		<production id="2464" count="1" enchant="0"/>
+	</item>
+</list>

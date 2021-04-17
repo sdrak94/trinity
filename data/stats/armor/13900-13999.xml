@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13938" name="Low-Grade Magic Pouch Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13939" name="Regular Magic Pouch Cloth Belt">
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13940" name="High-Grade Magic Pouch Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13941" name="Top-Grade Magic Pouch Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13942" name="Low-Grade Magic Pouch Leather Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13943" name="Regular Magic Pouch Leather Belt">
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13944" name="High-Grade Magic Pouch Leather Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13945" name="Top-Grade Magic Pouch Leather Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13946" name="Low-Grade Magic Pouch Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13947" name="Regular Magic Pouch Iron Belt">
+  <for>
+    <add val="15" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13948" name="High-Grade Magic Pouch Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13949" name="Top-Grade Magic Pouch Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13950" name="Low-Grade Magic Pouch Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13951" name="Regular Magic Pouch Mithril Belt">
+  <for>
+    <add val="16" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13952" name="High-Grade Magic Pouch Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13953" name="Top-Grade Magic Pouch Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13954" name="Low-Grade Magic Pin Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13955" name="Regular Magic Pin Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13956" name="High-Grade Magic Pin Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13957" name="Top-Grade Magic Pin Cloth Belt">
+  <for>
+    <add val="10" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13958" name="Low-Grade Magic Pin Leather Belt">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13959" name="Regular Magic Pin Leather Belt">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13960" name="High-Grade Magic Pin Leather Belt">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13961" name="Top-Grade Magic Pin Leather Belt">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13962" name="Low-Grade Magic Pin Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13963" name="Regular Magic Pin Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13964" name="High-Grade Magic Pin Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13965" name="Top-Grade Magic Pin Iron Belt">
+  <for>
+    <add val="12" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13966" name="Low-Grade Magic Pin Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13967" name="Regular Magic Pin Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13968" name="High-Grade Magic Pin Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13969" name="Top-Grade Magic Pin Mithril Belt">
+  <for>
+    <add val="14" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13975" name="Poison Bottle 1">
+  <for>
+    <add val="36" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13976" name="Poison Bottle 2">
+  <for>
+    <add val="36" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="13977" name="Poison Bottle 3">
+  <for>
+    <add val="36" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+</list>

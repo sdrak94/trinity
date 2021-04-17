@@ -1,0 +1,33 @@
+<html><head><title>Register Your Email</title></head><body>
+
+<center>
+<font name="hs12" color="c88f05">L2Trinity</font>
+
+<img src="L2UI.squaregray" width="320" height="1">
+<table width=320 bgcolor=222120>
+	<tr>
+		<td>
+			<center>
+			<font color = 3f6293>%name%</font><br>
+			<font color = 3f6293>Email Registration Pending</font><br>
+			</center>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="320" height="1">
+<br><br>
+<center>
+<font color=686764>
+To continue, enter the verification code you received on your email:<br>
+</font>
+<table width=320>
+<tr><td><font color=686764>Email:</font></td><td><font color = 3f6293>%mail%</font></td></tr>
+</table>
+<table width=320>
+<tr><td><font color=686764>Code:</font></td><td><multiedit var="code" width=240 height=20 /></td></tr>
+</table>
+
+<br><br>
+<button value="Save Email and HWID" action="bypass -h email_code_register $code" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="1 session" action="bypass -h email_keep_only_once_ok $code" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+</body></html>

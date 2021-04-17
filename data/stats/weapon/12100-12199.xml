@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12102" name="Common Item - Dwarven Chain Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="174" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12107" name="Common Item - Knight's Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="178" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12126" name="Common Item - Composite Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="190" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12129" name="Common Item - Tower Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="190" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12143" name="Common Item - Full Plate Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="203" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12159" name="Common Item - Zubei's Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="216" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12171" name="Common Item - Avadon Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="216" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12183" name="Common Item - Doom Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="230" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12215" name="Standard Item - Dark Crystal Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="243" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12225" name="Standard Item - Sealed Dark Crystal Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="243" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12268" name="Standard Item - Sealed Shield of Nightmare">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="256" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12279" name="Standard Item - Shield of Nightmare">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="256" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+</list>

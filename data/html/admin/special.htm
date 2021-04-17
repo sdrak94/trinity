@@ -1,0 +1,38 @@
+<html><title>Special Effects Menu</title><body>
+<center>
+<table width=270 border=0 bgcolor="666666">
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Game" action="bypass -h admin_admin2" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Effects" action="bypass -h admin_admin3" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Server" action="bypass -h admin_admin4" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Events" action="bypass -h admin_event_manage" width=50 height=25 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+<table width=240>
+<tr>
+<td>Values:</td>
+<td><edit var="qbox" width=100 height=15></td>
+<td><button value="Send" action="bypass -h admin_special_menu $qbox" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+<table width=260>
+<tr>
+<td><button value="Invulnerable" action="bypass -h admin_special_menu 1 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Air Stun" action="bypass -h admin_special_menu 2 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Air Root" action="bypass -h admin_special_menu 4 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Baguette" action="bypass -h admin_special_menu 8 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Yellow Afro" action="bypass -h admin_special_menu 10 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Pink Afro" action="bypass -h admin_special_menu 20 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr>
+<td><button value="Black Afro" action="bypass -h admin_special_menu 40 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Unk 8" action="bypass -h admin_special_menu 80 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Unk 9" action="bypass -h admin_special_menu 100 $qbox" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+</body></html>

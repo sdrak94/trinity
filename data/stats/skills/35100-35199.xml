@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+        <skill id="35100" levels="1" name="Hunting Grounds - Default stats">
+                <set name="magicLvl" val="20" />
+                <set name="target" val="TARGET_SELF" />
+                <set name="skillType" val="BUFF" />
+                <set name="operateType" val="OP_PASSIVE" />
+                <for>
+                        <set order="0x99" stat="maxHp" val="1000" />
+                        <set order="0x99" stat="maxMp" val="1000" />
+                        <set order="0x99" stat="maxCp" val="100" />
+                        <set order="0x99" stat="regHp" val="1.5" />
+                        <set order="0x99" stat="regCp" val="1.5" />
+                        <set order="0x99" stat="regMp" val="0" />
+                        <set order="0x99" stat="pAtk" val="1100" />
+                        <set order="0x99" stat="mAtk" val="1800" />
+                        <set order="0x99" stat="pDef" val="300" />
+                        <set order="0x99" stat="mDef" val="300" />
+                        <set order="0x99" stat="pAtkSpd" val="600" />
+                        <set order="0x99" stat="mAtkSpd" val="500" />
+                        <set order="0x99" stat="cAtk" val="1.25" />
+                        <set order="0x99" stat="cAtkAdd" val="0" />
+                       
+                        <set order="0x99" stat="pAtkRange" val="1000" />
+                        <set order="0x99" stat="atkReuse" val="1" />
+                       
+                        <set order="0x99" stat="rEvas" val="140" />
+                        <set order="0x99" stat="rCrit" val="150" />
+                        <set order="0x99" stat="blowRate" val="1" />
+                        <set order="0x99" stat="lethalRate" val="1" />
+                        <set order="0x99" stat="accCombat" val="145" />
+                        <set order="0x99" stat="runSpd" val="170" />
+                        <set order="0x99" stat="walkSpd" val="80" />
+                       
+                        <set order="0x99" stat="STR" val="40" />
+                        <set order="0x99" stat="CON" val="43" />
+                        <set order="0x99" stat="DEX" val="30" />
+                        <set order="0x99" stat="INT" val="21" />
+                        <set order="0x99" stat="WIT" val="11" />
+                        <set order="0x99" stat="MEN" val="25" />
+                       
+                        <set order="0x99" stat="BowMpConsumeRate" val="0" />
+                       
+                        <set order="0x99" stat="rShldPerfAdd" val="0" />
+                        <set order="0x99" stat="rShld" val="0" />
+                        <set order="0x99" stat="rShldMax" val="0" />
+                        <set order="0x99" stat="negateShld" val="1" />
+                        <set order="0x99" stat="atkCountMax" val="1" />
+                        <set order="0x99" stat="reflectDam" val="0" />
+                        <set order="0x99" stat="reflectSkillMagic" val="0" />
+                        <set order="0x99" stat="reflectSkillPhysic" val="0" />
+                        <set order="0x99" stat="vengeanceMdam" val="0" />
+                        <set order="0x99" stat="vengeancePdam" val="0" />
+                        <set order="0x99" stat="absorbDam" val="0" />
+                        <set order="0x99" stat="transDam" val="0" />
+                </for>
+        </skill>
+        <skill id="35101" levels="1" name="Zombies event - Survivor stats">
+                <set name="magicLvl" val="20" />
+                <set name="target" val="TARGET_SELF" />
+                <set name="skillType" val="BUFF" />
+                <set name="operateType" val="OP_PASSIVE" />
+                <for>
+                        <set order="0x99" stat="maxHp" val="1000" />
+                        <set order="0x99" stat="maxMp" val="1000" />
+                        <set order="0x99" stat="maxCp" val="100" />
+                        <set order="0x99" stat="regHp" val="1.5" />
+                        <set order="0x99" stat="regCp" val="1.5" />
+                        <set order="0x99" stat="regMp" val="0" />
+                        <set order="0x99" stat="pAtk" val="1100" />
+                        <set order="0x99" stat="mAtk" val="1800" />
+                        <set order="0x99" stat="pDef" val="300" />
+                        <set order="0x99" stat="mDef" val="300" />
+                        <set order="0x99" stat="pAtkSpd" val="550" />
+                        <set order="0x99" stat="mAtkSpd" val="500" />
+                        <set order="0x99" stat="cAtk" val="1.25" />
+                        <set order="0x99" stat="cAtkAdd" val="0" />
+                       
+                        <set order="0x99" stat="pAtkRange" val="1000" />
+                        <set order="0x99" stat="atkReuse" val="1" />
+                       
+                        <set order="0x99" stat="rEvas" val="140" />
+                        <set order="0x99" stat="rCrit" val="150" />
+                        <set order="0x99" stat="blowRate" val="1" />
+                        <set order="0x99" stat="lethalRate" val="1" />
+                        <set order="0x99" stat="accCombat" val="200" />
+                        <set order="0x99" stat="runSpd" val="155" />
+                        <set order="0x99" stat="walkSpd" val="80" />
+                       
+                        <set order="0x99" stat="STR" val="40" />
+                        <set order="0x99" stat="CON" val="43" />
+                        <set order="0x99" stat="DEX" val="30" />
+                        <set order="0x99" stat="INT" val="21" />
+                        <set order="0x99" stat="WIT" val="11" />
+                        <set order="0x99" stat="MEN" val="25" />
+                       
+                        <set order="0x99" stat="BowMpConsumeRate" val="0" />
+                       
+                        <set order="0x99" stat="reflectDam" val="0" />
+                        <set order="0x99" stat="reflectSkillMagic" val="0" />
+                        <set order="0x99" stat="reflectSkillPhysic" val="0" />
+                        <set order="0x99" stat="vengeanceMdam" val="0" />
+                        <set order="0x99" stat="vengeancePdam" val="0" />
+                        <set order="0x99" stat="absorbDam" val="0" />
+                        <set order="0x99" stat="transDam" val="0" />
+                </for>
+        </skill>
+        <skill id="35102" levels="1" name="Zombies event - Zombie stats">
+                <set name="magicLvl" val="20" />
+                <set name="target" val="TARGET_SELF" />
+                <set name="skillType" val="BUFF" />
+                <set name="operateType" val="OP_PASSIVE" />
+                <for>
+                        <set order="0x99" stat="maxHp" val="1000" />
+                        <set order="0x99" stat="maxMp" val="1000" />
+                        <set order="0x99" stat="maxCp" val="100" />
+                        <set order="0x99" stat="regHp" val="1.5" />
+                        <set order="0x99" stat="regCp" val="1.5" />
+                        <set order="0x99" stat="regMp" val="0" />
+                        <set order="0x99" stat="pAtk" val="1100" />
+                        <set order="0x99" stat="mAtk" val="1800" />
+                        <set order="0x99" stat="pDef" val="300" />
+                        <set order="0x99" stat="mDef" val="300" />
+                        <set order="0x99" stat="pAtkSpd" val="600" />
+                        <set order="0x99" stat="mAtkSpd" val="500" />
+                        <set order="0x99" stat="cAtk" val="1.25" />
+                        <set order="0x99" stat="cAtkAdd" val="0" />
+                       
+                        <set order="0x99" stat="rEvas" val="140" />
+                        <set order="0x99" stat="rCrit" val="150" />
+                        <set order="0x99" stat="blowRate" val="1" />
+                        <set order="0x99" stat="lethalRate" val="1" />
+                        <set order="0x99" stat="accCombat" val="200" />
+                        <set order="0x99" stat="runSpd" val="250" />
+                        <set order="0x99" stat="walkSpd" val="80" />
+                       
+                        <set order="0x99" stat="STR" val="40" />
+                        <set order="0x99" stat="CON" val="43" />
+                        <set order="0x99" stat="DEX" val="30" />
+                        <set order="0x99" stat="INT" val="21" />
+                        <set order="0x99" stat="WIT" val="11" />
+                        <set order="0x99" stat="MEN" val="25" />
+                       
+                        <set order="0x99" stat="BowMpConsumeRate" val="0" />
+                       
+                        <set order="0x99" stat="reflectDam" val="0" />
+                        <set order="0x99" stat="reflectSkillMagic" val="0" />
+                        <set order="0x99" stat="reflectSkillPhysic" val="0" />
+                        <set order="0x99" stat="vengeanceMdam" val="0" />
+                        <set order="0x99" stat="vengeancePdam" val="0" />
+                        <set order="0x99" stat="absorbDam" val="0" />
+                        <set order="0x99" stat="transDam" val="0" />
+                </for>
+        </skill>
+        <skill id="35103" levels="1" name="Mutants event - Mutant stats">
+                <set name="magicLvl" val="20" />
+                <set name="target" val="TARGET_SELF" />
+                <set name="skillType" val="BUFF" />
+                <set name="operateType" val="OP_PASSIVE" />
+                <for>
+                        <set order="0x99" stat="maxHp" val="300000" />
+                        <set order="0x99" stat="maxMp" val="10000" />
+                        <set order="0x99" stat="maxCp" val="1000" />
+                        <set order="0x99" stat="regHp" val="1" />
+                        <set order="0x99" stat="regCp" val="1" />
+                        <set order="0x99" stat="regMp" val="1" />
+                        <set order="0x99" stat="pAtk" val="50000" />
+                        <set order="0x99" stat="mAtk" val="60000" />
+                        <set order="0x99" stat="pDef" val="5000" />
+                        <set order="0x99" stat="mDef" val="6000" />
+                        <set order="0x99" stat="pAtkSpd" val="400" />
+                        <set order="0x99" stat="mAtkSpd" val="500" />
+                        <set order="0x99" stat="cAtk" val="1.25" />
+                        <set order="0x99" stat="cAtkAdd" val="0" />
+                       
+                        <set order="0x99" stat="rEvas" val="130" />
+                        <set order="0x99" stat="rCrit" val="200" />
+                        <set order="0x99" stat="blowRate" val="1" />
+                        <set order="0x99" stat="lethalRate" val="1" />
+                        <set order="0x99" stat="accCombat" val="160" />
+                        <set order="0x99" stat="runSpd" val="250" />
+                        <set order="0x99" stat="walkSpd" val="80" />
+                       
+                        <set order="0x99" stat="STR" val="40" />
+                        <set order="0x99" stat="CON" val="43" />
+                        <set order="0x99" stat="DEX" val="30" />
+                        <set order="0x99" stat="INT" val="21" />
+                        <set order="0x99" stat="WIT" val="11" />
+                        <set order="0x99" stat="MEN" val="25" />
+                       
+                        <set order="0x99" stat="BowMpConsumeRate" val="0" />
+                       
+                        <set order="0x99" stat="reflectDam" val="0" />
+                        <set order="0x99" stat="reflectSkillMagic" val="0" />
+                        <set order="0x99" stat="reflectSkillPhysic" val="0" />
+                        <set order="0x99" stat="vengeanceMdam" val="0" />
+                        <set order="0x99" stat="vengeancePdam" val="0" />
+                        <set order="0x99" stat="absorbDam" val="10" />
+                        <set order="0x99" stat="transDam" val="0" />
+                </for>
+        </skill>
+</list>

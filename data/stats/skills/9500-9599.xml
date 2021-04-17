@@ -1,0 +1,122 @@
+<list>
+<skill id="9500" levels="1" name="Right Left two">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub val="0.01" order="0x40" stat="critVuln"/>
+  </for>
+</skill>
+<skill id="9501" levels="1" name="Right Left three">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+   <sub val="0.02" order="0x40" stat="critVuln"/>
+  </for>
+</skill>
+
+<skill id="95010" levels="8" name="Right Left Ulti1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="olyDisabled" val="true"/>
+    <for>
+			<add order="0x40" stat="transDamMana" val="20">
+				<using skillid="1401"/>
+			</add>
+			<add order="0x40" stat="transDamMana" val="20">
+				<using skillid="1402"/>
+			</add>
+			<add order="0x40" stat="transDamMana" val="20">
+					<using skillid="1217"/>
+			</add>
+			<add order="0x40" stat="transDamMana" val="20">
+					<using skillid="1218"/>
+			</add>
+			<add order="0x40" stat="transDamMana" val="20">
+					<using skillid="1219"/>
+			</add>
+	</for>
+</skill>
+
+
+
+
+
+<skill id="95012" levels="1" name="Right Left Ulti2">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="olyDisabled" val="true"/>
+    <for>
+		<add val="15" order="0x40" stat="lionheart">
+				<using skillid="1401"/>
+		</add>
+		<add val="15" order="0x40" stat="lionheart">
+				<using skillid="1402"/>
+		</add>
+			<add val="15" order="0x40" stat="lionheart">
+					<using skillid="1217"/>
+			</add>
+			<add val="15" order="0x40" stat="lionheart">
+					<using skillid="1218"/>
+			</add>
+			<add val="15" order="0x40" stat="lionheart">
+					<using skillid="1219"/>
+			</add>
+	</for>
+</skill>
+
+
+
+<skill id="9502" levels="1" name="Right Right one">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul val="0.98" order="0x30" stat="pDefBehindVuln"/>
+	<mul val="0.98" order="0x30" stat="mDefBehindVuln"/>
+  </for>
+</skill>
+<skill id="9503" levels="1" name="Right Right two">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul val="0.97" order="0x30" stat="pDefBehindVuln"/>
+	<mul val="0.97" order="0x30" stat="mDefBehindVuln"/>
+  </for>
+</skill>
+<skill id="9504" levels="1" name="Right Right three">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul val="0.95" order="0x30" stat="pDefBehindVuln"/>
+	<mul val="0.95" order="0x30" stat="mDefBehindVuln"/>
+  </for>
+</skill>
+
+<skill id="95040" levels="8" name="Right Right Ulti1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="olyDisabled" val="true"/>
+    <for>
+	<add order="0x40" stat="pSkillEvas" val="5"/>
+	<add order="0x40" stat="mSkillEvas" val="5"/>
+	</for>
+</skill>
+
+
+<skill id="95041" levels="8" name="Right Right Ulti2">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="olyDisabled" val="true"/>
+    <for>
+	<add order="0x40" stat="rEvasAbs" val="5"/>
+	</for>
+</skill>
+</list>

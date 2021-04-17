@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="14520" name="Vesper Breastplate {PvP}">
+  <for>
+    <add val="250" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14521" name="Vesper Leather Breastplate {PvP}">
+  <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14522" name="Vesper Tunic {PvP}">
+  <for>
+    <add val="125" order="0x10" stat="pDef"/>
+    <add val="637" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14523" name="Vesper Noble Breastplate {PvP}">
+  <for>
+    <add val="250" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14524" name="Vesper Noble Leather Breastplate {PvP}">
+  <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14525" name="Vesper Noble Tunic {PvP}">
+  <for>
+    <add val="125" order="0x10" stat="pDef"/>
+    <add val="637" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14582" name="Apella Combat Helmet">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14583" name="Apella Combat Armor">
+  <for>
+    <add val="293" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14584" name="Apella Combat Gauntlet - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14585" name="Apella Combat Boots - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14586" name="Apella Combat Clothes">
+  <for>
+    <add val="220" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14587" name="Apella Combat Leather Gloves - Tans Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14588" name="Apella Combat Shoes - Tans Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14589" name="Apella Combat Overcoat">
+  <for>
+    <add val="147" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14590" name="Apella Combat Silk Gloves - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14591" name="Apella Combat Sandals - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="14592" name="Gludio Earth Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14593" name="Dion Water Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14594" name="Giran Fire Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14595" name="Oren Earth Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14596" name="Aden Divinity Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14597" name="Innadril Divinity Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14598" name="Goddard Dark Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="14599" name="Rune Wind Protection Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+</list>

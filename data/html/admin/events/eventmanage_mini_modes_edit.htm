@@ -1,0 +1,92 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<br1>
+<table width=150><tr><td><font color=868477><br>%modeName% - </font>%enableDisable%</td></tr></table>
+<font color=606060>(%future%)</font>
+
+<br>
+
+<table width=280>
+
+<tr>
+<td width=100><font color=ac9775>Mode ID:</font></td>
+<td width=190><font color=9f9f9f>%modeId%</font></td>
+</tr>
+
+<tr>
+<td width=100><font color=ac9775>Visible name:</font></td>
+<td width=190><font color=9f9f9f>%visibleName%</font></td>
+</tr>
+
+<tr>
+<td width=100><font color=ac9775>HTML path:</font></td>
+<td width=190><font color=9f9f9f>%htmlPath%</font></td>
+</tr>
+
+<tr>
+<td width=100><font color=ac9775>NPC ID:</font></td>
+<td width=190><font color=9f9f9f>%npcId%</font></td>
+</tr>
+
+</table>
+
+<br>
+
+<table width=220>
+
+<tr>
+<td><button value="Allowed Maps" action="bypass admin_event_manage mini_edit_modes_maps_menu" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Scheduler" action="bypass admin_event_manage mini_edit_modes_scheduler_menu" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table> 
+
+<br1>
+
+<table width=200>
+
+<tr>
+<td width=60><edit var="value" width=255 height=15></td>
+</tr>
+
+</table> 
+
+<br>
+
+<table width=255>
+
+<tr>
+<td width=80><button value="Set Name" action="bypass admin_event_manage mini_edit_modes_set_name $value" width=85 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=80>%generateButton%</td>
+<td width=80><button value="Visible name" action="bypass admin_event_manage mini_edit_modes_vis_name $value" width=85 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+
+<tr>
+<td width=80><button value="Set NPC ID" action="bypass -h admin_event_manage mini_edit_modes_set_npcid $value" width=85 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=80><button value="Remove NPC" action="bypass -h admin_event_manage mini_edit_modes_set_npcid 0" width=85 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table> 
+
+<br1>
+
+<br>
+
+<button value="Back" action="bypass admin_event_manage mini_modes_menu" width=75 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+<br1>
+
+<table width=190>
+
+<tr>
+<td width=95><button value="Clean mode" action="bypass admin_event_manage mini_edit_modes_clear" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+%deleteButton%
+</tr>
+
+</table>
+
+</center>
+</body></html>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list applyTaxes="false">
+  <!-- Scroll: Enchant Weapon (D) -->
+  <item id="1">
+    <ingredient id="57" count="150000"/>
+    <ingredient id="10642" count="1"/>
+    <production id="955" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Armor (D) -->
+  <item id="2">
+    <ingredient id="57" count="18000"/>
+    <ingredient id="10633" count="1"/>
+    <production id="956" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Weapon (C) -->
+  <item id="3">
+    <ingredient id="57" count="330000"/>
+    <ingredient id="10643" count="1"/>
+    <production id="951" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Armor (C) -->
+  <item id="4">
+    <ingredient id="57" count="45000"/>
+    <ingredient id="10634" count="1"/>
+    <production id="952" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Weapon (B) -->
+  <item id="5">
+    <ingredient id="57" count="1500000"/>
+    <ingredient id="10644" count="1"/>
+    <production id="947" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Armor (B) -->
+  <item id="6">
+    <ingredient id="57" count="80000"/>
+    <ingredient id="10635" count="1"/>
+    <production id="948" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Weapon (A) -->
+  <item id="7">
+    <ingredient id="57" count="5400000"/>
+    <ingredient id="10645" count="1"/>
+    <production id="729" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Armor (A) -->
+  <item id="8">
+    <ingredient id="57" count="720000"/>
+    <ingredient id="10636" count="1"/>
+    <production id="730" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Weapon (S) -->
+  <item id="9">
+    <ingredient id="57" count="15000000"/>
+    <ingredient id="10646" count="1"/>
+    <production id="959" count="1"/>
+  </item>
+  <!-- Scroll: Enchant Armor (S) -->
+  <item id="10">
+    <ingredient id="57" count="1500000"/>
+    <ingredient id="10637" count="1"/>
+    <production id="960" count="1"/>
+  </item>
+  <!-- Red Soul Crystal - Stage 11 -->
+  <item id="11">
+    <ingredient id="57" count="25000000"/>
+    <ingredient id="14736" count="1"/>
+    <production id="5577" count="1"/>
+  </item>
+  <!-- Blue Soul Crystal - Stage 11 -->
+  <item id="12">
+    <ingredient id="57" count="25000000"/>
+    <ingredient id="14736" count="1"/>
+    <production id="5579" count="1"/>
+  </item>
+  <!-- Green Soul Crystal - Stage 11 -->
+  <item id="13">
+    <ingredient id="57" count="25000000"/>
+    <ingredient id="14736" count="1"/>
+    <production id="5578" count="1"/>
+  </item>
+  <!-- Red Soul Crystal - Stage 12 -->
+  <item id="14">
+    <ingredient id="57" count="50000000"/>
+    <ingredient id="14735" count="1"/>
+    <production id="5580" count="1"/>
+  </item>
+  <!-- Blue Soul Crystal - Stage 12 -->
+  <item id="15">
+    <ingredient id="57" count="50000000"/>
+    <ingredient id="14735" count="1"/>
+    <production id="5582" count="1"/>
+  </item>
+  <!-- Green Soul Crystal - Stage 12 -->
+  <item id="16">
+    <ingredient id="57" count="50000000"/>
+    <ingredient id="14735" count="1"/>
+    <production id="5581" count="1"/>
+  </item>
+  <!-- Red Soul Crystal: Grade 13 -->
+  <item id="17">
+    <ingredient id="57" count="100000000"/>
+    <ingredient id="14734" count="1"/>
+    <production id="5908" count="1"/>
+  </item>
+  <!-- Blue Soul Crystal: Grade 13 -->
+  <item id="18">
+    <ingredient id="57" count="100000000"/>
+    <ingredient id="14734" count="1"/>
+    <production id="5914" count="1"/>
+  </item>
+  <!-- Green Soul Crystal: Grade 13 -->
+  <item id="19">
+    <ingredient id="57" count="100000000"/>
+    <ingredient id="14734" count="1"/>
+    <production id="5911" count="1"/>
+  </item>
+  <!-- Red Soul Crystal - Stage 14 -->
+  <item id="20">
+    <ingredient id="57" count="200000000"/>
+    <ingredient id="14731" count="1"/>
+    <production id="9570" count="1"/>
+  </item>
+  <!-- Blue Soul Crystal - Stage 14 -->
+  <item id="21">
+    <ingredient id="57" count="200000000"/>
+    <ingredient id="14731" count="1"/>
+    <production id="9571" count="1"/>
+  </item>
+  <!-- Green Soul Crystal - Stage 14 -->
+  <item id="22">
+    <ingredient id="57" count="200000000"/>
+    <ingredient id="14731" count="1"/>
+    <production id="9572" count="1"/>
+  </item>
+  <!-- Red Soul Crystal - Stage 15 -->
+  <item id="23">
+    <ingredient id="57" count="400000000"/>
+    <ingredient id="14730" count="1"/>
+    <production id="10480" count="1"/>
+  </item>
+  <!-- Blue Soul Crystal - Stage 15 -->
+  <item id="24">
+    <ingredient id="57" count="400000000"/>
+    <ingredient id="14730" count="1"/>
+    <production id="10481" count="1"/>
+  </item>
+  <!-- Green Soul Crystal - Stage 15 -->
+  <item id="25">
+    <ingredient id="57" count="400000000"/>
+    <ingredient id="14730" count="1"/>
+    <production id="10482" count="1"/>
+  </item>
+  <!-- High-Grade Life Stone: level 52 -->
+  <item id="26">
+    <ingredient id="57" count="518400"/>
+    <ingredient id="14738" count="1"/>
+    <production id="8745" count="1"/>
+  </item>
+  <!-- High-Grade Life Stone: level 61 -->
+  <item id="27">
+    <ingredient id="57" count="864000"/>
+    <ingredient id="14738" count="1"/>
+    <production id="8748" count="1"/>
+  </item>
+  <!-- High-Grade Life Stone: level 70 -->
+  <item id="28">
+    <ingredient id="57" count="1555200"/>
+    <ingredient id="14738" count="1"/>
+    <production id="8751" count="1"/>
+  </item>
+  <!-- High-Grade Life Stone: level 76 -->
+  <item id="29">
+    <ingredient id="57" count="1728000"/>
+    <ingredient id="14738" count="1"/>
+    <production id="8752" count="1"/>
+  </item>
+  <!-- High-Grade Life Stone: level 80 -->
+  <item id="30">
+    <ingredient id="57" count="2073600"/>
+    <ingredient id="14738" count="1"/>
+    <production id="9575" count="1"/>
+  </item>
+  <!-- Top-Grade Life Stone: level 52 -->
+  <item id="31">
+    <ingredient id="57" count="2592000"/>
+    <ingredient id="14737" count="1"/>
+    <production id="8755" count="1"/>
+  </item>
+  <!-- Top-Grade Life Stone: level 61 -->
+  <item id="32">
+    <ingredient id="57" count="4320000"/>
+    <ingredient id="14737" count="1"/>
+    <production id="8758" count="1"/>
+  </item>
+  <!-- Top-Grade Life Stone: level 70 -->
+  <item id="33">
+    <ingredient id="57" count="7776000"/>
+    <ingredient id="14737" count="1"/>
+    <production id="8761" count="1"/>
+  </item>
+  <!-- Top-Grade Life Stone: level 76 -->
+  <item id="34">
+    <ingredient id="57" count="8640000"/>
+    <ingredient id="14737" count="1"/>
+    <production id="8762" count="1"/>
+  </item>
+  <!-- Top-Grade Life Stone: level 80 -->
+  <item id="35">
+    <ingredient id="57" count="10368000"/>
+    <ingredient id="14737" count="1"/>
+    <production id="9576" count="1"/>
+  </item>
+</list>

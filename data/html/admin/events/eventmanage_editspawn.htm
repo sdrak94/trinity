@@ -1,0 +1,89 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<table width=225>
+
+<tr>
+<td><font color=ac9775>Map Name:</font></td>
+<td><font color=9f9f9f>%mapName%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Spawn ID</font></td>
+<td><font color=9f9f9f>%id%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775><a action="bypass admin_event_manage edit_spawn_set_team 0">Team ID</a></font></td>
+<td><font color=9f9f9f>%team%</font></td>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+<td><font color=ac9775><a action="bypass admin_event_manage edit_spawn_default_loc">Location X:</a></font></td>
+<td><font color=9f9f9f>%x%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775><a action="bypass admin_event_manage edit_spawn_default_loc">Location Y</a></font></td>
+<td><font color=9f9f9f>%y%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775><a action="bypass admin_event_manage edit_spawn_default_loc">Location Z:</a></font></td>
+<td><font color=9f9f9f>%z%</font></td>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+<td><font color=ac9775><a action="bypass admin_event_manage edit_spawn_set_note %note_default%">Radius:</a></font></td>
+<td><font color=9f9f9f>%note%</font></td>
+</tr>
+
+</table>
+<table width=220>
+
+<tr>
+<td width=85><font color=ac9775><a action="bypass admin_event_manage edit_spawn_set_type RegularSpawn">Type:</a></font></td>
+<td width=50><combobox width=72 height=17 var=type list=%types%></td>
+<td width=40><button value="Set" action="bypass admin_event_manage edit_spawn_set_type $type" width=50 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>      
+
+<br>
+
+<edit var="var" width=190 height=13>
+
+<br1>
+
+<table width=190>
+
+<tr>
+<td><button value="Set Radius" action="bypass admin_event_manage edit_spawn_set_note $var" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Set Team" action="bypass admin_event_manage edit_spawn_set_team $var" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<button value="Refresh Loc" action="bypass admin_event_manage edit_spawn_default_loc" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+<br1>
+
+<button value="%save_close%" action="bypass admin_event_manage edit_spawn_save_spawn" width=90 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+<br1>
+
+<button value="Remove" action="bypass admin_event_manage remove_spawn %id%" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+<button value="Info" action="bypass admin_event_manage spawn_type_info_menu" width=60 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

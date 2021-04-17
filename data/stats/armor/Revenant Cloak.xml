@@ -1,0 +1,9 @@
+<list>
+<item id="43119" name="Revenant Cloak">
+   <for>
+    <add val='100' order='0x10' stat='maxCp'/>
+    <add val='100' order='0x10' stat='maxMp'/>
+    <add val='100' order='0x10' stat='maxHp'/>
+   </for>
+</item>
+</list>

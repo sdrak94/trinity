@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13447" name="(not used) Vesper Shield">
+  <for>
+    <sub val="0" order="0x10" stat="rEvas"/>
+    <set val="230" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13457" name="Vesper Cutter">
+  <for>
+    <set val="475" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13458" name="Vesper Slasher">
+  <for>
+    <set val="578" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13459" name="Vesper Buster">
+  <for>
+    <set val="380" order="0x08" stat="pAtk"/>
+    <set val="281" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13460" name="Vesper Shaper">
+  <for>
+    <set val="415" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="20" order="0x40" stat="effectDurationChange">
+	  <using skillid="4"/>
+	</add>
+  </for>
+</item>
+<item id="13461" name="Vesper Fighter">
+  <for>
+    <set val="578" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13462" name="Vesper Stormer">
+  <for>
+    <set val="475" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13463" name="Vesper Avenger">
+  <for>
+    <set val="475" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13464" name="Vesper Retributer">
+  <for>
+    <set val="578" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13465" name="Vesper Caster">
+  <for>
+    <set val="380" order="0x08" stat="pAtk"/>
+    <set val="281" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13466" name="Vesper Singer">
+  <for>
+    <set val="475" order="0x08" stat="pAtk"/>
+    <set val="308" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13467" name="Vesper Thrower">
+  <for>
+    <set val="869" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13468" name="Vesper Pincer">
+  <for>
+    <set val="431" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13469" name="Vesper Sheutjeh">
+  <for>
+    <set val="533" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13470" name="Vesper Nagan">
+  <for>
+    <set val="515" order="0x08" stat="pAtk"/>
+    <set val="211" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13471" name="Vesper Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="405" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+	<add val="3" order="0x40" stat="reflectSkillPhysic"/>
+	<mul val="0.9" order="0x30" stat="bowWpnVuln"/>
+	<mul val="0.9" order="0x30" stat="crossbowWpnVuln"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<add val="2" order="0x40" stat="rShldPerfAdd"/>
+  </for>
+</item>
+</list>

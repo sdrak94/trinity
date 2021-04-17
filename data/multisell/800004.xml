@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+  <item id="1">
+    <production id="870000" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+  <item id="2">
+    <production id="870001" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+  <item id="3">
+    <production id="870002" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+  <item id="4">
+    <production id="870003" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+  <item id="5">
+    <production id="870004" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+  <item id="6">
+    <production id="870005" count="1"/>
+	<ingredient id="200000" count="5"/> 
+  </item>
+    	<item id="7"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+      <item id="8"> 
+	<ingredient id="570140" count="1" /> 
+    <production id="570140" count="1" /> 
+  </item>
+  
+    <item id="9">
+    <production id="870000" count="1"/>
+    <production id="870001" count="1"/>
+    <production id="870002" count="1"/>
+    <production id="870003" count="1"/>
+    <production id="870004" count="1"/>
+    <production id="870005" count="1"/>
+	<ingredient id="200000" count="20"/> 
+  </item>
+
+  
+  
+ 
+
+</list>

@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="3200" levels="3" name="Item Skill: Spell Refresh">
+  <table name="#mpInitialConsume"> 11 13 14 </table>
+  <table name="#mpConsume"> 43 49 55 </table>
+  <table name="#mReuse"> 0.95 0.93 0.9 </table>
+  <set name="mpInitialConsume" val="#mpInitialConsume"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="statichitTime" val="true"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="staticReuse" val="true"/>
+  <for>
+    <effect name="Buff" time="120" val="0">
+      <mul order="0x30" stat="mReuse" val="#mReuse"/>
+    </effect>
+  </for>
+</skill>
+<skill id="3201" levels="3" name="Item Skill: Music Refresh">
+  <table name="#mpInitialConsume"> 11 13 14 </table>
+  <table name="#mpConsume"> 43 49 55 </table>
+  <table name="#pReuse"> 0.95 0.93 0.9 </table> <!-- Needs check -->
+  <set name="mpInitialConsume" val="#mpInitialConsume"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="statichitTime" val="true"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="staticReuse" val="true"/>
+  <for>
+    <effect name="Buff" time="120" val="0">
+      <mul order="0x30" stat="pReuse" val="#pReuse"/>
+    </effect>
+  </for>
+</skill>
+<skill id="3202" levels="3" name="Item Skill: Refresh">
+  <table name="#mpInitialConsume"> 11 13 14 </table>
+  <table name="#mpConsume"> 43 49 55 </table>
+  <table name="#reuseRate"> 0.95 0.93 0.9 </table> <!-- Needs check -->
+  <set name="mpInitialConsume" val="#mpInitialConsume"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="statichitTime" val="true"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="staticReuse" val="true"/>
+  <for>
+    <effect name="Buff" time="120" val="0">
+      <mul order="0x30" stat="mReuse" val="#reuseRate"/>
+      <mul order="0x30" stat="pReuse" val="#reuseRate"/>
+    </effect>
+  </for>
+</skill>
+<skill id="3203" levels="1" name="Item Skill: Mystery Skill">
+  <set name="mpInitialConsume" val="2"/>
+  <set name="mpConsume" val="8"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <effect name="BigHead" time="120" val="0" abnormal="bighead" stackOrder="300" stackType="big_head"/>
+  </for>
+</skill>
+<skill id="3204" levels="3" name="Item Skill: Reflect Damage">
+  <table name="#mpInitialConsume"> 5 6 7 </table>
+  <table name="#mpConsume"> 20 24 28 </table>
+  <table name="#reflectDam"> 5 6 7 </table>
+  <set name="mpInitialConsume" val="#mpInitialConsume"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="REFLECT"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="staticReuse" val="true"/>
+  <for>
+    <effect name="Buff" time="120" val="0">
+      <add order="0x40" stat="reflectDam" val="#reflectDam"/>
+    </effect>
+  </for>
+</skill>
+<skill id="3205" levels="2" name="Item Skill: Party Recall">
+  <table name="#mpInitialConsume"> 45 64 </table>
+  <table name="#mpConsume"> 169 241 </table>
+  <table name="#hitTime"> 20000 3500 </table>
+  <set name="mpInitialConsume" val="#mpInitialConsume"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="1000"/>
+  <set name="reuseDelay" val="800000"/>
+  <set name="hitTime" val="#hitTime"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="3206" levels="10" name="Item Skill: Music">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3207" levels="10" name="Item Skill: Heal">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_HIT"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5146"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3208" levels="10" name="Item Skill: Blessed Body">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_HIT"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5147"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3209" levels="10" name="Item Skill: Prayer">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_HIT"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5148"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3210" levels="10" name="Item Skill: Recharge">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_HIT"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5149"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3211" levels="10" name="Item Skill: Blessed Soul">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5150"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3212" levels="10" name="Item Skill: Mana Gain">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5151"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3213" levels="10" name="Item Skill: Ritual">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5152"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3214" levels="10" name="Item Skill: Cheer">
+  <table name="#chance"> 1 1 2 2 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5153"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3215" levels="10" name="Item Skill: Might">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5154"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3216" levels="10" name="Item Skill: Empower">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="triggeredId" val="5156"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3217" levels="10" name="Item Skill: Duel Might">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5157"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3218" levels="10" name="Item Skill: Shield">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5158"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3219" levels="10" name="Item Skill: Magic Barrier">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5159"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3220" levels="10" name="Item Skill: Duel Weakness">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="power" val="40"/> <!-- Guess -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="isDebuff" val="true"/>
+  <set name="triggeredId" val="5160"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3221" levels="10" name="Item Skill: Agility">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5161"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3222" levels="10" name="Item Skill: Guidance">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5162"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3223" levels="10" name="Item Skill: Focus">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5163"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3224" levels="10" name="Item Skill: Wild Magic">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5164"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3225" levels="10" name="Item Skill: Charm">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5165"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3226" levels="10" name="Item Skill: Slow">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5166"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3227" levels="10" name="Item Skill: Winter">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5167"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3228" levels="10" name="Item Skill: Stun">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="2"/>
+  <set name="triggeredId" val="5168"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3229" levels="10" name="Item Skill: Hold">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5169"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3230" levels="10" name="Item Skill: Sleep">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5170"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3231" levels="10" name="Item Skill: Paralyze">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5171"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3232" levels="10" name="Item Skill: Medusa">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5172"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3233" levels="10" name="Item Skill: Fear">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5173"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3234" levels="10" name="Item Skill: Poison">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5174"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3235" levels="10" name="Item Skill: Bleed">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5175"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3236" levels="10" name="Item Skill: Silence">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5176"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3237" levels="10" name="Item Skill: Doom">
+  <table name="#chance"> 2 2 2 3 3 3 4 4 5 5 </table>
+  <table name="#triggeredLevel"> 1 2 3 4 5 6 7 8 9 10 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="chanceType" val="ON_ATTACKED"/>
+  <set name="activationChance" val="#chance"/>
+  <set name="triggeredId" val="5177"/>
+  <set name="triggeredLevel" val="#triggeredLevel"/>
+</skill>
+<skill id="3238" levels="10" name="Item Skill: Prayer">
+  <table name="#gainHp"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="gainHp" val="#gainHp"/>
+  </for>
+</skill>
+<skill id="3239" levels="10" name="Item Skill: Mana Gain">
+  <table name="#gainMp"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="gainMp" val="#gainMp"/>
+  </for>
+</skill>
+<skill id="3240" levels="10" name="Item Skill: Might">
+  <table name="#pAtk"> 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1 1.11 1.12 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="pAtk" val="#pAtk"/>
+  </for>
+</skill>
+<skill id="3241" levels="10" name="Item Skill: Empower">
+  <table name="#mAtk"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="mAtk" val="#mAtk"/>
+  </for>
+</skill>
+<skill id="3243" levels="10" name="Item Skill: Duel Might">
+  <table name="#pvpPhysDmg"> 1.06 1.07 1.08 1.09 1.1 1.11 1.12 1.13 1.14 1.15 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="pvpPhysDmg" val="#pvpPhysDmg"/>
+  </for>
+</skill>
+<skill id="3244" levels="10" name="Item Skill: Shield">
+  <table name="#pDef"> 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1 1.11 1.12 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="pDef" val="#pDef"/>
+  </for>
+</skill>
+<skill id="3245" levels="10" name="Item Skill: Magic Barrier">
+  <table name="#mDef"> 1.03 1.04 1.05 1.06 1.07 1.08 1.09 1.1 1.11 1.12 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="mDef" val="#mDef"/>
+  </for>
+</skill>
+<skill id="3246" levels="10" name="Item Skill: Heal Empower">
+  <table name="#giveHp"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="giveHp" val="#giveHp"/>
+  </for>
+</skill>
+<skill id="3247" levels="10" name="Item Skill: Agility">
+  <table name="#rEvas"> 1 1 1 2 2 2 3 3 4 4 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="rEvas" val="#rEvas"/>
+  </for>
+</skill>
+<skill id="3248" levels="10" name="Item Skill: Guidance">
+  <table name="#accCombat"> 1 1 1 2 2 2 3 3 4 4 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="accCombat" val="#accCombat"/>
+  </for>
+</skill>
+<skill id="3249" levels="10" name="Item Skill: Focus">
+  <table name="#rCrit"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="rCrit" val="#rCrit"/>
+  </for>
+</skill>
+<skill id="3250" levels="10" name="Item Skill: Wild Magic">
+  <table name="#mCritRate"> 1.1 1.11 1.12 1.13 1.14 1.15 1.16 1.17 1.18 1.19 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <basemul order="0x40" stat="mCritRate" val="0.11"/>
+  </for>
+</skill>
+<skill id="3251" levels="10" name="Item Skill: Weight Limit">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3252" levels="10" name="Item Skill: Kiss of Eva">
+  <table name="#breath"> 2.2 2.4 2.6 2.8 3 3.2 3.4 3.6 3.8 4 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3253" levels="10" name="Item Skill: Acrobatics">
+  <!-- Lvl 1-10 - Passive: Increases the height from which you can jump without sustaining damage when equipped. -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3254" levels="10" name="Item Skill: Iron Body">
+  <!-- Lvl 1-10 - Passive: Raises resistance to damage from falling when equipped. -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3255" levels="3" name="Item Skill: Skill Clarity">
+  <table name="#PhysicalMpConsumeRate"> 0.95 0.92 0.9 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="PhysicalMpConsumeRate" val="#PhysicalMpConsumeRate"/>
+  </for>
+</skill>
+<skill id="3256" levels="3" name="Item Skill: Spell Clarity">
+  <table name="#MagicalMpConsumeRate"> 0.95 0.92 0.9 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="MagicalMpConsumeRate" val="#MagicalMpConsumeRate"/>
+  </for>
+</skill>
+<skill id="3257" levels="3" name="Item Skill: Music Clarity">
+  <table name="#DanceMpConsumeRate"> 0.95 0.92 0.9 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="DanceMpConsumeRate" val="#DanceMpConsumeRate"/>
+  </for>
+</skill>
+<skill id="3258" levels="3" name="Item Skill: Clarity">
+  <table name="#MpConsumeRate"> 0.95 0.92 0.9 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="MagicalMpConsumeRate" val="#MpConsumeRate"/>
+    <mul order="0x30" stat="PhysicalMpConsumeRate" val="#MpConsumeRate"/>
+    <mul order="0x30" stat="DanceMpConsumeRate" val="#MpConsumeRate"/>
+  </for>
+</skill>
+<skill id="3259" levels="3" name="Item Skill: Reflect Damage">
+  <table name="#reflectDam"> 5 6 7 </table>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="reflectDam" val="#reflectDam"/>
+  </for>
+</skill>
+<skill id="3260" levels="1" name="Forgiveness">
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="magicLvl" val="1"/> <!-- Guess -->
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="reuseDelay" val="8000"/> <!-- Guess -->
+  <set name="skillType" val="HEAL"/>
+  <set name="target" val="TARGET_COUPLE"/>
+  <set name="weaponsAllowed" val="65568"/> <!-- Bow -->
+  <set name="aggroPoints" val="500"/>
+</skill>
+<skill id="3261" levels="1" name="Forgiveness">
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="magicLvl" val="1"/> <!-- Guess -->
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="150"/>
+  <set name="reuseDelay" val="10000"/> <!-- Guess -->
+  <set name="skillType" val="MANARECHARGE"/>
+  <set name="target" val="TARGET_COUPLE"/>
+  <set name="weaponsAllowed" val="65568"/> <!-- Bow -->
+    <set name="aggroPoints" val="1500"/>
+</skill>
+<skill id="3262" levels="1" name="Pardon">
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1000"/>
+  <set name="hitTime" val="2600"/>
+  <set name="magicLvl" val="1"/> <!-- Guess -->
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="1100"/>
+  <set name="reuseDelay" val="27000"/> <!-- Guess -->
+  <set name="skillType" val="HEAL"/>
+  <set name="target" val="TARGET_COUPLE"/>
+  <set name="weaponsAllowed" val="65568"/> <!-- Bow -->
+    <set name="aggroPoints" val="4000"/>
+  <for>
+      <effect count="15" name="HealOverTime" time="2" val="250" stackOrder="250" stackType="LifeForce">
+	      <mul order="0x30" stat="pvmDam" val="1.1"/>
+		  <mul val="0.95" order="0x30" stat="pvmVuln"/>
+	  </effect>
+  </for>
+</skill>
+<skill id="3263" levels="1" name="Blessed Resurrection">
+  <!-- Allows the use of Blessed Resurrection. -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3264" levels="1" name="Blessed Escape">
+  <!-- Allows the use of Blessed Escape. -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="200"/>
+</skill>
+<skill id="3265" levels="1" name="Mysterious Ability">
+  <!-- Done by lastsin -->
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <for>
+    <effect name="BigHead" time="300" val="0" abnormal="bighead" stackOrder="300" stackType="big_head"/>
+  </for>
+</skill>
+<skill id="3266" levels="1" name="Large Fireworks Ability">
+  <!-- Allows the use of Large Fireworks. -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3267" levels="1" name="Dismiss Agathion">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="0"/>
+</skill>
+<skill id="3268" levels="1" name="Summon Agathion - Castle">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="16028"/>
+</skill>
+<skill id="3269" levels="1" name="Summon Agathion - Rainbow Clan Hall">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="16027"/>
+</skill>
+<skill id="3270" levels="1" name="Summon Agathion - Beast Farm">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="16026"/>
+</skill>
+<skill id="3271" levels="1" name="Blue Talisman of Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="10"/> <!-- increase P. Atk. +10 -->
+  </for>
+</skill>
+<skill id="3272" levels="1" name="Blue Talisman of Defense">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+  <for>
+    <add order="0x30" stat="pDef" val="15"/> <!-- increase P. Def. +18 -->
+  </for>
+</skill>
+<skill id="3273" levels="1" name="Red Talisman of Recovery">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3274" levels="1" name="Blue Talisman of Protection">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3275" levels="1" name="Blue Talisman of Protection">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+  <set name="reuseDelay" val="360000"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="3276" levels="1" name="Blue Talisman - Magic Resistance">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3277" levels="1" name="Blue Talisman of Wild Magic">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3278" levels="1" name="Red Talisman of Mental Regeneration">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3279" levels="1" name="Red Talisman of Meditation">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3280" levels="1" name="Blue Talisman of Invisibility">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3281" levels="1" name="Red Talisman of Minimum Clarity">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3282" levels="1" name="Red Talisman of Maximum Clarity">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3283" levels="1" name="Blue Talisman of Healing">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3284" levels="1" name="Blue Talisman - Divine Protection">
+  <set name="mpConsume" val="50"/>
+  <set name="hitTime" val="5000"/>
+  <set name="reuseDelay" val="900000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+    <effect name="Invincible" time="8" val="0" stackOrder="1" special="invulnerable" stackType="Instant_Shield"/>
+  </for>
+</skill>
+<skill id="3285" levels="1" name="Blue Talisman of Defense">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3286" levels="1" name="Black Talisman - Mending">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3287" levels="1" name="Black Talisman of Physical Freedom">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3288" levels="1" name="Black Talisman of Arcane Freedom">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3289" levels="1" name="Black Talisman - Escape">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3290" levels="1" name="Black Talisman of Rescue">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3291" levels="1" name="Black Talisman of Vocalization">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3292" levels="1" name="Black Talisman of Free Speech">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="3000"/>
+</skill>
+<skill id="3293" levels="1" name="Talisman of Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pAtk" val="250"/>
+  </for>
+</skill>
+<skill id="3294" levels="1" name="Talisman of Magic Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="mAtk" val="700"/>
+  </for>
+</skill>
+<skill id="3295" levels="1" name="Talisman of Defense">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="pDef" val="50"/>
+  </for>
+</skill>
+<skill id="3296" levels="1" name="Talisman of Magic Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="mDef" val="50"/>
+  </for>
+</skill>
+<skill id="3297" levels="1" name="Talisman of Accuracy">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="accCombat" val="3"/>
+  </for>
+</skill>
+<skill id="3298" levels="1" name="Talisman of Evasion">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="rEvas" val="3"/> <!-- increase Evasion +4 -->
+  </for>
+</skill>
+<skill id="3299" levels="1" name="Talisman of Critical Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="cAtk" val="0.06"/>
+  </for>
+</skill>
+</list>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="8300" levels="1" name="Dynasty Sigil">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8301" levels="1" name="Vesper Heavy Armor Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="2"/> <!-- Str +2 -->
+    <sub order="0x10" stat="DEX" val="2"/> <!-- Dex -2 -->
+    <mul order="0x30" stat="pAtk" val="1.0557"/> <!-- P. Atk. +5.57% -->
+    <mul order="0x30" stat="pDef" val="1.0557"/> <!-- P. Def. +5.57% -->
+    <add order="0x40" stat="maxHp" val="531"/> <!-- Max HP +531 -->
+    <mul order="0x30" stat="sleepVuln" val="0.3"/> <!-- resistance to sleep by 70% -->
+    <mul order="0x30" stat="rootVuln" val="0.3"/> <!-- resistance to hold by 70% -->
+    <!-- Missing: Decreases damage received during PvP and decreases all the attacker's speeds with a fixed rate. -->
+  </for>
+</skill>
+<skill id="8302" levels="1" name="Vesper Noble Heavy Armor Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="2"/> <!-- Str +2 -->
+    <sub order="0x10" stat="DEX" val="2"/> <!-- Dex -2 -->
+    <mul order="0x30" stat="pAtk" val="1.0557"/> <!-- P. Atk. +5.57% -->
+    <mul order="0x30" stat="pDef" val="1.0557"/> <!-- P. Def. +5.57% -->
+    <add order="0x40" stat="maxHp" val="540"/> <!-- Max HP +540 -->
+    <mul order="0x30" stat="sleepVuln" val="0.3"/> <!-- resistance to sleep by 70% -->
+    <mul order="0x30" stat="rootVuln" val="0.3"/> <!-- resistance to hold by 70% -->
+    <!-- Missing: Decreases damage received during PvP and decreases all the attacker's speeds with a fixed rate. -->
+  </for>
+</skill>
+<skill id="8303" levels="1" name="Vesper Light Armor Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="1"/> <!-- Str +1 -->
+    <sub order="0x10" stat="CON" val="2"/> <!-- Con -2 -->
+    <add order="0x10" stat="DEX" val="1"/> <!-- Dex +1 -->
+    <mul order="0x30" stat="pAtk" val="1.0557"/> <!-- P. Atk. +5.57% -->
+    <mul order="0x30" stat="pAtkSpd" val="1.0557"/> <!-- Atk. Spd. +5.57% -->
+    <mul order="0x30" stat="regMp" val="1.0557"/> <!-- MP Recovery Rate by 5.57% -->
+    <add order="0x40" stat="maxMp" val="347.4"/> <!-- Max MP by 347.4 -->
+    <!-- Missing: Decreases damage received during PvP, and blows away the opponent's target with a fixed rate when being attacked. -->
+  </for>
+</skill>
+<skill id="8304" levels="1" name="Vesper Noble Light Armor Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="STR" val="1"/> <!-- Str +1 -->
+    <sub order="0x10" stat="CON" val="2"/> <!-- Con -2 -->
+    <add order="0x10" stat="DEX" val="1"/> <!-- Dex +1 -->
+    <mul order="0x30" stat="pAtk" val="1.0557"/> <!-- P. Atk. +5.57% -->
+    <mul order="0x30" stat="pAtkSpd" val="1.0557"/> <!-- Atk. Spd. +5.57% -->
+    <mul order="0x30" stat="regMp" val="1.0557"/> <!-- MP Recovery Rate by 5.57% -->
+    <add order="0x40" stat="maxMp" val="354"/> <!-- Max MP by 354 -->
+    <!-- Missing: Decreases damage received during PvP, and blows away the opponent's target with a fixed rate when being attacked. -->
+  </for>
+</skill>
+<skill id="8305" levels="1" name="Vesper Robe Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="INT" val="1"/> <!-- Int +1 -->
+    <sub order="0x10" stat="MEN" val="2"/> <!-- Men -2 -->
+    <add order="0x10" stat="WIT" val="1"/> <!-- Wit +1 -->
+    <mul order="0x30" stat="mAtk" val="1.0847"/> <!-- M. Atk. 8.47% -->
+    <mul order="0x30" stat="mAtkSpd" val="1.15"/> <!-- Casting Speed 15% -->
+    <mul order="0x30" stat="regMp" val="1.0557"/> <!-- MP Recovery Rate by 5.57% -->
+    <mul order="0x30" stat="stunVuln" val="0.5"/> <!-- resistance to Stun Attacks by 50% -->
+   <!-- Missing: Decreases damage received during PvP, and decreases critical rate and critical damage with a fixed rate when being attacked. -->
+  </for>
+</skill>
+<skill id="8306" levels="1" name="Vesper Noble Robe Set for Adults">
+  <!-- Done by DJ MELERIX -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x10" stat="INT" val="1"/> <!-- Int +1 -->
+    <sub order="0x10" stat="MEN" val="2"/> <!-- Men -2 -->
+    <add order="0x10" stat="WIT" val="1"/> <!-- Wit +1 -->
+    <mul order="0x30" stat="mAtk" val="1.0847"/> <!-- M. Atk. 8.47% -->
+    <mul order="0x30" stat="mAtkSpd" val="1.15"/> <!-- Casting Speed 15% -->
+    <mul order="0x30" stat="regMp" val="1.0557"/> <!-- MP Recovery Rate by 5.57% -->
+    <mul order="0x30" stat="stunVuln" val="0.5"/> <!-- resistance to Stun Attacks by 50% -->
+    <!-- Missing: Decreases damage received during PvP, and decreases critical rate and critical damage with a fixed rate when being attacked. -->
+  </for>
+</skill>
+<skill id="8307" levels="1" name="Boing Hammer's Effect of Doubt">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8308" levels="1" name="Red Talisman - Guardian of the Territory">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8309" levels="1" name="Red Talisman - Territory Convoy">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8310" levels="1" name="Arcana Sigil">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8311" levels="1" name="Dynasty Sigil">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8312" levels="2" name="Special Ability Cheap Shot">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8313" levels="9" name="Earring of Protection">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8314" levels="1" name="Release Seal on Agathion - Saerom">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8315" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8316" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8317" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8318" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8319" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8320" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8321" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8322" levels="1" name="Santa Claus' Blessed Weapon">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8323" levels="1" name="Notifier">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8324" levels="1" name="Warrior's Shirt">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8325" levels="1" name="Wild Rose Pig Candy">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8326" levels="1" name="Wild Rose Pig Candy">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="8327" levels="1" name="Release Seal on Agathion - Juju">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+</list>

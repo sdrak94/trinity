@@ -1,0 +1,12 @@
+<ranks>
+	<rank name="Challenger"	pool="1" color="EAD054" icon="L2VeronicaIcons.Challenger_Emblem"/>
+	<rank name="Grand Master" pool="1" color="F8161F" icon="L2VeronicaIcons.Grandmaster_Emblem"/>
+	<rank name="Master" pool="2" color="984CC5" icon="L2VeronicaIcons.Master_Emblem"/>
+	<rank name="Diamond" pool="3" color="7270DA" icon="L2VeronicaIcons.Diamond_Emblem"/>
+	<rank name="Platinum" pool="4" color="3F8188" icon="L2VeronicaIcons.Platinum_Emblem"/>
+	<rank name="Gold" pool="5" color="DC904E" icon="L2VeronicaIcons.Gold_Emblem"/>
+	<rank name="Silver" pool="10" color="A6B9C0" icon="L2VeronicaIcons.Silver_Emblem"/>
+	<rank name="Bronze" pool="20" color="944B2E" icon="L2VeronicaIcons.Bronze_Emblem"/>
+	<rank name="Iron" pool="40" color="695F5A" icon="L2VeronicaIcons.Iron_Emblem"/>
+	<rank name="Unranked" pool="-1" color="427879" icon="L2VeronicaIcons.Unranked_Emblem"/>
+</ranks>

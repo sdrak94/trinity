@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11349" name="Sealed Zubei's Gauntlet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11350" name="Sealed Zubei's Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11351" name="Sealed Avadon Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11352" name="Sealed Avadon Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11353" name="Zubei's Leather Gaiters">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+	<add val="0.5" order="0x40" stat="rEvas"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11354" name="Zubei's Leather Shirt">
+  <for>
+    <add val="117" order="0x10" stat="pDef"/>
+	<add val="0.5" order="0x40" stat="rEvas"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11355" name="Zubei's Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11356" name="Zubei's Gauntlet - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11357" name="Zubei's Gauntlet - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+	<add val="0.5" order="0x40" stat="rEvas"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11358" name="Zubei's Gauntlet - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11359" name="Zubei's Boots - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11360" name="Zubei's Boots - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+	<add val="0.5" order="0x40" stat="rEvas"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11361" name="Zubei's Boots - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11363" name="Zubei's Helmet - Heavy Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11364" name="Zubei's Breastplate">
+  <for>
+    <add val="205" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11365" name="Avadon Gloves - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11366" name="Avadon Gloves - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11367" name="Avadon Gloves - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11368" name="Avadon Leather Armor">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11369" name="Avadon Robe">
+  <for>
+    <add val="166" order="0x10" stat="pDef"/>
+    <add val="561" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11370" name="Avadon Boots - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11371" name="Avadon Boots - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11372" name="Avadon Boots - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11373" name="Avadon Circlet - Heavy Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11375" name="Avadon Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11376" name="Avadon Breastplate">
+  <for>
+    <add val="205" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11377" name="Tunic of Zubei">
+  <for>
+    <add val="91" order="0x10" stat="pDef"/>
+    <add val="345" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11378" name="Stockings of Zubei">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11379" name="Doom Gloves - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11380" name="Doom Gloves - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11381" name="Doom Gloves - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11382" name="Doom Boots - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11383" name="Doom Boots - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11384" name="Doom Boots - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11386" name="Doom Plate Armor">
+  <for>
+    <add val="353" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11387" name="Doom Helmet - Heavy Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11388" name="Leather Armor of Doom">
+  <for>
+    <add val="202" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11389" name="Sealed Doom Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11390" name="Sealed Boots of Doom">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11391" name="Sealed Blue Wolf Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11392" name="Sealed Blue Wolf Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11393" name="Tunic of Doom">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <add val="377" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11394" name="Blue Wolf Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11395" name="Blue Wolf Leather Armor">
+  <for>
+    <add val="202" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11396" name="Blue Wolf Boots - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11397" name="Blue Wolf Boots - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11398" name="Blue Wolf Boots - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11399" name="Blue Wolf Gloves - Heavy Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

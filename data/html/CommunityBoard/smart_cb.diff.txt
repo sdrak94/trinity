@@ -1,0 +1,1421 @@
+Index: dist/game/config/SmartCB.properties
+===================================================================
+--- dist/game/config/SmartCB.properties	(revision 0)
++++ dist/game/config/SmartCB.properties	(working copy)
+@@ -0,0 +1,33 @@
++# ---------------------------------------------------------------------------
++# Smart CommunityBoard Settings
++# ---------------------------------------------------------------------------
++# This properties file is solely for the Smart CB modifications.
++# The Smart CB has been created by Darule.
++
++# ---------------------------------------------------------------------------
++# Top Players Options
++# ---------------------------------------------------------------------------
++# Explanation 1
++# Default value 19
++TopPlayerRowHeight = 19
++
++# Here you can specify the amount of the results that will be displayed.
++# Default value 20
++TopPlayerResults = 20
++
++# Explanation 1
++# Default value 17
++RaidListRowHeight = 17
++
++# Here you can specify the amount of the results that will be displayed.
++# Default value 20 , max is 26. If you change this you have to check the Raids Pagination because some pages might be empty.
++RaidListResults = 20
++
++# If you enable this option Raid List results will be sorted using asceding level (Smaller level raids will appear 1st)
++# Default = True
++RaidListSortAsc = True
++
++# If you enable this option on the stat page 2 rows will appear under Players Online on stats page.
++# Real active players and detached players.
++# Default = True
++AllowRealOnlineStats = True
+\ No newline at end of file
+Index: java/com/l2jserver/Config.java
+===================================================================
+--- java/com/l2jserver/Config.java	(revision 5370)
++++ java/com/l2jserver/Config.java	(working copy)
+@@ -90,8 +90,19 @@
+ 	public static final String SECURITY_CONFIG_FILE = "./config/security.properties";
+ 	public static final String EMAIL_CONFIG_FILE = "./config/email.properties";
+ 	public static final String CH_SIEGE_FILE = "./config/ConquerableHallSiege.properties";
++	public static final String SMART_CB = "./config/SmartCB.properties";
+ 	
+ 	// --------------------------------------------------
++	// Smart Community Board Definitions
++	// --------------------------------------------------
++	public static int TOP_PLAYER_ROW_HEIGHT;
++	public static int TOP_PLAYER_RESULTS;
++	public static int RAID_LIST_ROW_HEIGHT;
++	public static int RAID_LIST_RESULTS;
++	public static boolean RAID_LIST_SORT_ASC;
++	public static boolean ALLOW_REAL_ONLINE_STATS;
++	
++	// --------------------------------------------------
+ 	// L2J Variable Definitions
+ 	// --------------------------------------------------
+ 	public static boolean ALT_GAME_DELEVEL;
+@@ -1260,6 +1271,25 @@
+ 				throw new Error("Failed to Load " + COMMUNITY_CONFIGURATION_FILE + " File.");
+ 			}
+ 			
++			// Load Smart CB Properties file (if exists)
++			final File smartcb = new File(SMART_CB);
++			try (InputStream is = new FileInputStream(smartcb))
++			{
++				L2Properties smartCB = new L2Properties();
++				smartCB.load(is);
++				TOP_PLAYER_ROW_HEIGHT = Integer.parseInt(smartCB.getProperty("TopPlayerRowHeight", "19"));				
++				TOP_PLAYER_RESULTS = Integer.parseInt(smartCB.getProperty("TopPlayerResults", "20"));
++				RAID_LIST_ROW_HEIGHT = Integer.parseInt(smartCB.getProperty("RaidListRowHeight", "18"));
++				RAID_LIST_RESULTS = Integer.parseInt(smartCB.getProperty("RaidListResults", "20"));
++				RAID_LIST_SORT_ASC = Boolean.parseBoolean(smartCB.getProperty("RaidListSortAsc", "True"));
++				ALLOW_REAL_ONLINE_STATS = Boolean.parseBoolean(smartCB.getProperty("AllowRealOnlineStats", "True"));
++			}
++			catch (Exception e)
++			{
++				_log.warning("Config: " + e.getMessage());
++				throw new Error("Failed to Load " + SMART_CB + " File.");
++			}
++			
+ 			// Load Feature L2Properties file (if exists)
+ 			final File feature = new File(FEATURE_CONFIG_FILE);
+ 			try (InputStream is = new FileInputStream(feature))
+Index: java/com/l2jserver/gameserver/communitybbs/BB/Forum.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/BB/Forum.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/BB/Forum.java	(working copy)
+@@ -292,7 +292,7 @@
+ 	 */
+ 	public void vload()
+ 	{
+-		if (!_loaded)
++		if (_loaded == false)
+ 		{
+ 			load();
+ 			getChildren();
+Index: java/com/l2jserver/gameserver/communitybbs/CastleStatus.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/CastleStatus.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/CastleStatus.java	(working copy)
+@@ -0,0 +1,102 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.text.SimpleDateFormat;
++import java.util.Date;
++
++import com.l2jserver.L2DatabaseFactory;
++
++import javolution.text.TextBuilder;
++
++public class CastleStatus
++{
++	private TextBuilder _playerList = new TextBuilder();
++	
++	public CastleStatus()
++	{
++		loadFromDB();
++	}
++	
++	@SuppressWarnings("null")
++	private void loadFromDB()
++	{
++		Connection con = null;
++		
++		try
++		{
++			con = L2DatabaseFactory.getInstance().getConnection();
++			
++			for (int i = 1; i < 9; i++)
++			{
++				PreparedStatement statement = con.prepareStatement("SELECT clan_name, clan_level FROM clan_data WHERE hasCastle=" + i + ";");
++				ResultSet result = statement.executeQuery();
++				
++				PreparedStatement statement2 = con.prepareStatement("SELECT name, siegeDate, taxPercent FROM castle WHERE id=" + i + ";");
++				ResultSet result2 = statement2.executeQuery();
++				
++				while (result.next())
++				{
++					String owner = result.getString("clan_name");
++					int level = result.getInt("clan_level");
++					
++					while (result2.next())
++					{
++						String name = result2.getString("name");
++						long someLong = result2.getLong("siegeDate");
++						int tax = result2.getInt("taxPercent");
++						Date anotherDate = new Date(someLong);
++						String DATE_FORMAT = "dd-MMM-yyyy HH:mm";
++						SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
++						
++						addCastleToList(name, owner, level, tax, sdf.format(anotherDate));
++					}
++					
++					result2.close();
++					statement2.close();
++				}
++				
++				result.close();
++				statement.close();
++			}
++		}
++		
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		
++		finally
++		{
++			try
++			{
++				con.close();
++			}
++			catch (Exception e)
++			{
++			}
++		}
++	}
++	
++	private void addCastleToList(String name, String owner, int level, int tax, String siegeDate)
++	{
++		_playerList.append("<table border=0 cellspacing=0 cellpadding=2 width=750>");
++		_playerList.append("<tr>");
++		_playerList.append("<td FIXWIDTH=10></td>");
++		_playerList.append("<td FIXWIDTH=100>" + name + "</td>");
++		_playerList.append("<td FIXWIDTH=100>" + owner + "</td>");
++		_playerList.append("<td FIXWIDTH=80>" + level + "</td>");
++		_playerList.append("<td FIXWIDTH=40>" + tax + "</td>");
++		_playerList.append("<td FIXWIDTH=180>" + siegeDate + "</td>");
++		_playerList.append("<td FIXWIDTH=5></td>");
++		_playerList.append("</tr>");
++		_playerList.append("</table>");
++		_playerList.append("<img src=\"L2UI.Squaregray\" width=\"740\" height=\"1\">");
++	}
++	
++	public String loadCastleList()
++	{
++		return _playerList.toString();
++	}
++}
+Index: java/com/l2jserver/gameserver/communitybbs/ClanList.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/ClanList.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/ClanList.java	(working copy)
+@@ -0,0 +1,116 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import com.l2jserver.L2DatabaseFactory;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import javolution.text.TextBuilder;
++
++public class ClanList
++{
++	private TextBuilder _clanList = new TextBuilder();
++	
++	public ClanList(int type)
++	{
++		loadFromDB(type);
++	}
++	
++	private void loadFromDB(int type)
++	{
++		Connection con = null;
++		int stpoint = 0;
++		int results = 20;
++		String castlename = "";
++		String allystatus = "";
++		String leadername = "";
++		for (int count = 1; count != type; count++)
++		{
++			stpoint += 20;
++		}
++		
++		try
++		{
++			con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement statement = con.prepareStatement("SELECT clan_id, clan_name, ally_name, leader_id, clan_level, reputation_score, hasCastle, ally_id FROM clan_data ORDER BY `clan_level` desc Limit " + stpoint + ", " + results);
++			ResultSet result = statement.executeQuery();
++			int pos = 0;
++			
++			while (result.next())
++			{
++				int clanid = result.getInt("leader_id");
++				String clan = result.getString("clan_name");
++				String ally = result.getString("ally_name");
++				int clanleader = result.getInt("leader_id");
++				int clanlevel = result.getInt("clan_level");
++				int reputation = result.getInt("reputation_score");
++				int hascastle = result.getInt("hasCastle");
++				int allyid = result.getInt("ally_id");
++				if (allyid != 0)
++				{
++					if (allyid == clanid)
++						allystatus = "Alliance Leader";
++					allystatus = "Affiliated Clan";
++				}
++				else
++				{
++					allystatus = "-";
++					ally = "[no-ally]";
++				}
++				if (hascastle != 0)
++				{
++					PreparedStatement statement2 = con.prepareStatement("SELECT name FROM castle WHERE id=" + hascastle);
++					ResultSet result2 = statement2.executeQuery();
++					if (result2.next())
++						castlename = result2.getString("name");
++					result2.close();
++					statement2.close();
++				}
++				else
++					castlename = "[none]";
++				PreparedStatement statement3 = con.prepareStatement("SELECT char_name FROM characters WHERE charId=" + clanleader);
++				ResultSet result3 = statement3.executeQuery();
++				
++				if (result3.next())
++					leadername = result3.getString("char_name");
++				result3.close();
++				statement3.close();
++				pos++;
++				addClanToList(pos, clan, ally, leadername, clanlevel, reputation, castlename, allystatus);
++			}
++			result.close();
++			statement.close();
++		}
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		finally
++		{
++			L2DatabaseFactory.close(con);
++		}
++	}
++	
++	private void addClanToList(int pos, String clan, String ally, String leadername, int clanlevel, int reputation, String castlename, String allystatus)
++	{
++		_clanList.append("<table border=0 cellspacing=0 cellpadding=2 width=760>");
++		_clanList.append("<tr>");
++		_clanList.append("<td FIXWIDTH=5></td>");
++		_clanList.append("<td FIXWIDTH=20>" + pos + "</td>");
++		_clanList.append("<td FIXWIDTH=90>" + clan + "</td>");
++		_clanList.append("<td FIXWIDTH=90>" + ally + "</td>");
++		_clanList.append("<td FIXWIDTH=85>" + leadername + "</td>");
++		_clanList.append("<td FIXWIDTH=45 align=center>" + clanlevel + "</td>");
++		_clanList.append("<td FIXWIDTH=70 align=center>" + reputation + "</td>");
++		_clanList.append("<td FIXWIDTH=50 align=center>" + castlename + "</td>");
++		_clanList.append("<td FIXWIDTH=70 align=center>" + allystatus + "</td>");
++		_clanList.append("<td FIXWIDTH=5></td>");
++		_clanList.append("</tr>");
++		_clanList.append("</table>");
++		_clanList.append("<img src=\"L2UI.Squaregray\" width=\"740\" height=\"1\">");
++	}
++	
++	public String loadClanList()
++	{
++		return _clanList.toString();
++	}
++}
+Index: java/com/l2jserver/gameserver/communitybbs/CommunityBoard.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/CommunityBoard.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/CommunityBoard.java	(working copy)
+@@ -27,6 +27,10 @@
+ 
+ public class CommunityBoard
+ {
++	private CommunityBoard()
++	{
++	}
++	
+ 	public static CommunityBoard getInstance()
+ 	{
+ 		return SingletonHolder._instance;
+@@ -144,6 +148,7 @@
+ 		}
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final CommunityBoard _instance = new CommunityBoard();
+Index: java/com/l2jserver/gameserver/communitybbs/GrandBossList.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/GrandBossList.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/GrandBossList.java	(working copy)
+@@ -0,0 +1,84 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import com.l2jserver.L2DatabaseFactory;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import javolution.text.TextBuilder;
++
++public class GrandBossList
++{
++	private TextBuilder _GrandBossList = new TextBuilder();
++	
++	public GrandBossList()
++	{
++		loadFromDB();
++	}
++	
++	private void loadFromDB()
++	{
++		Connection con = null;
++		int pos = 0;
++		
++		try
++		{
++			con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement statement = con.prepareStatement("SELECT boss_id, status FROM grandboss_data");
++			ResultSet result = statement.executeQuery();
++			
++			nextnpc:
++			while (result.next())
++			{
++				int npcid = result.getInt("boss_id");
++				int status = result.getInt("status");
++				if (npcid == 29066 || npcid == 29067 || npcid == 29068 || npcid == 29118)
++					continue nextnpc;
++				
++				PreparedStatement statement2 = con.prepareStatement("SELECT name FROM npc WHERE id=" + npcid);
++				ResultSet result2 = statement2.executeQuery();
++				
++				while (result2.next())
++				{
++					pos++;
++					boolean rstatus = false;
++					if (status == 0)
++						rstatus = true;
++					String npcname = result2.getString("name");
++					addGrandBossToList(pos, npcname, rstatus);
++				}
++				result2.close();
++				statement2.close();
++			}
++			
++			result.close();
++			statement.close();
++		}
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		finally
++		{
++			L2DatabaseFactory.close(con);
++		}
++	}
++	
++	private void addGrandBossToList(int pos, String npcname, boolean rstatus)
++	{
++		_GrandBossList.append("<table border=0 cellspacing=0 cellpadding=2>");
++		_GrandBossList.append("<tr>");
++		_GrandBossList.append("<td FIXWIDTH=5></td>");
++		_GrandBossList.append("<td FIXWIDTH=50>" + pos + "</td>");
++		_GrandBossList.append("<td FIXWIDTH=130>" + npcname + "</td>");
++		_GrandBossList.append("<td FIXWIDTH=60 align=center>" + ((rstatus) ? "<font color=99FF00>Alive</font>" : "<font color=CC0000>Dead</font>") + "</td>");
++		_GrandBossList.append("<td FIXWIDTH=5></td>");
++		_GrandBossList.append("</tr>");
++		_GrandBossList.append("</table>");
++		_GrandBossList.append("<img src=\"L2UI.Squaregray\" width=\"250\" height=\"1\">");
++	}
++	
++	public String loadGrandBossList()
++	{
++		return _GrandBossList.toString();
++	}
++}
+Index: java/com/l2jserver/gameserver/communitybbs/HeroeList.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/HeroeList.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/HeroeList.java	(working copy)
+@@ -0,0 +1,197 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.util.Map;
++
++import com.l2jserver.L2DatabaseFactory;
++
++import javolution.text.TextBuilder;
++import javolution.util.FastMap;
++
++public class HeroeList
++{
++	private int _posId;
++	private TextBuilder _heroeList = new TextBuilder();
++	
++	public HeroeList()
++	{
++		loadFromDB();
++	}
++	
++	@SuppressWarnings("null")
++	private void loadFromDB()
++	{
++		java.sql.Connection con = null;
++		try
++		{
++			_posId = 0;
++			con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement statement = con.prepareStatement("SELECT h.count, h.played, ch.char_name, ch.base_class, ch.online, cl.clan_name, cl.ally_name FROM heroes h LEFT JOIN characters ch ON ch.charId=h.charId LEFT OUTER JOIN clan_data cl ON cl.clan_id=ch.clanid ORDER BY h.count DESC, ch.char_name ASC LIMIT 20");
++			
++			ResultSet result = statement.executeQuery();
++			
++			while (result.next())
++			{
++				boolean status = false;
++				_posId = _posId + 1;
++				
++				if (result.getInt("online") == 1)
++					status = true;
++				
++				addPlayerToList(_posId, result.getInt("count"), result.getInt("played"), result.getString("char_name"), result.getInt("base_class"), result.getString("clan_name"), result.getString("ally_name"), status);
++			}
++			result.close();
++			statement.close();
++		}
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		finally
++		{
++			try
++			{
++				con.close();
++			}
++			catch (Exception e)
++			{
++			}
++		}
++	}
++	
++	public String loadHeroeList()
++	{
++		return _heroeList.toString();
++	}
++	
++	private void addPlayerToList(int objId, int count, int played, String name, int ChrClass, String clan, String ally, boolean isOnline)
++	{
++		_heroeList.append("<table border=0 cellspacing=0 cellpadding=2 width=750>");
++		_heroeList.append("<tr>");
++		_heroeList.append("<td FIXWIDTH=10></td>");
++		_heroeList.append("<td FIXWIDTH=40>" + objId + ".</td>");
++		_heroeList.append("<td FIXWIDTH=150>" + name + "</td>");
++		_heroeList.append("<td FIXWIDTH=160>" + className(ChrClass) + "</td>");
++		_heroeList.append("<td FIXWIDTH=80>" + count + "</td>");
++		_heroeList.append("<td FIXWIDTH=80>" + played + "</td>");
++		_heroeList.append("<td FIXWIDTH=160>" + clan + "</td>");
++		_heroeList.append("<td FIXWIDTH=160>" + ally + "</td>");
++		_heroeList.append("<td FIXWIDTH=70>" + ((isOnline) ? "<font color=99FF00>Online</font>" : "<font color=CC0000>Offline</font>") + "</td>");
++		_heroeList.append("<td FIXWIDTH=5></td>");
++		_heroeList.append("</tr>");
++		_heroeList.append("</table>");
++		_heroeList.append("<img src=\"L2UI.Squaregray\" width=\"740\" height=\"1\">");
++	}
++	
++	public final static String className(int classId)
++	{
++		Map<Integer, String> classList;
++		classList = new FastMap<Integer, String>();
++		classList.put(0, "Fighter");
++		classList.put(1, "Warrior");
++		classList.put(2, "Gladiator");
++		classList.put(3, "Warlord");
++		classList.put(4, "Knight");
++		classList.put(5, "Paladin");
++		classList.put(6, "Dark Avenger");
++		classList.put(7, "Rogue");
++		classList.put(8, "Treasure Hunter");
++		classList.put(9, "Hawkeye");
++		classList.put(10, "Mage");
++		classList.put(11, "Wizard");
++		classList.put(12, "Sorcerer");
++		classList.put(13, "Necromancer");
++		classList.put(14, "Warlock");
++		classList.put(15, "Cleric");
++		classList.put(16, "Bishop");
++		classList.put(17, "Prophet");
++		classList.put(18, "Elven Fighter");
++		classList.put(19, "Elven Knight");
++		classList.put(20, "Temple Knight");
++		classList.put(21, "Swordsinger");
++		classList.put(22, "Elven Scout");
++		classList.put(23, "Plains Walker");
++		classList.put(24, "Silver Ranger");
++		classList.put(25, "Elven Mage");
++		classList.put(26, "Elven Wizard");
++		classList.put(27, "Spellsinger");
++		classList.put(28, "Elemental Summoner");
++		classList.put(29, "Oracle");
++		classList.put(30, "Elder");
++		classList.put(31, "Dark Fighter");
++		classList.put(32, "Palus Knightr");
++		classList.put(33, "Shillien Knight");
++		classList.put(34, "Bladedancer");
++		classList.put(35, "Assasin");
++		classList.put(36, "Abyss Walker");
++		classList.put(37, "Phantom Ranger");
++		classList.put(38, "Dark Mage");
++		classList.put(39, "Dark Wizard");
++		classList.put(40, "Spellhowler");
++		classList.put(41, "Phantom Summoner");
++		classList.put(42, "Shillien Oracle");
++		classList.put(43, "Shilien Elder");
++		classList.put(44, "Orc Fighter");
++		classList.put(45, "Orc Raider");
++		classList.put(46, "Destroyer");
++		classList.put(47, "Orc Monk");
++		classList.put(48, "Tyrant");
++		classList.put(49, "Orc Mage");
++		classList.put(50, "Orc Shaman");
++		classList.put(51, "Overlord");
++		classList.put(52, "Warcryer");
++		classList.put(53, "Dwarven Fighter");
++		classList.put(54, "Scavenger");
++		classList.put(55, "Bounty Hunter");
++		classList.put(56, "Artisan");
++		classList.put(57, "Warsmith");
++		classList.put(88, "Duelist");
++		classList.put(89, "Dreadnought");
++		classList.put(90, "Phoenix Knight");
++		classList.put(91, "Hell Knight");
++		classList.put(92, "Sagittarius");
++		classList.put(93, "Adventurer");
++		classList.put(94, "Archmage");
++		classList.put(95, "Soultaker");
++		classList.put(96, "Arcana Lord");
++		classList.put(97, "Cardinal");
++		classList.put(98, "Hierophant");
++		classList.put(99, "Evas Templar");
++		classList.put(100, "Sword Muse");
++		classList.put(101, "Wind Rider");
++		classList.put(102, "Moonlight Sentinel");
++		classList.put(103, "Mystic Muse");
++		classList.put(104, "Elemental Master");
++		classList.put(105, "Evas Saint");
++		classList.put(106, "Shillien Templar");
++		classList.put(107, "Spectral Dancer");
++		classList.put(108, "Ghost Hunter");
++		classList.put(109, "Ghost Sentinel");
++		classList.put(110, "Storm Screamer");
++		classList.put(111, "Spectral Master");
++		classList.put(112, "Shillien Saint");
++		classList.put(113, "Titan");
++		classList.put(114, "Grand Khavatari");
++		classList.put(115, "Dominator");
++		classList.put(116, "Doomcryer");
++		classList.put(117, "Fortune Seeker");
++		classList.put(118, "Maestro");
++		classList.put(123, "Male Soldier");
++		classList.put(124, "Female Soldier");
++		classList.put(125, "Trooper");
++		classList.put(126, "Warder");
++		classList.put(127, "Berserker");
++		classList.put(128, "Male Soulbreaker");
++		classList.put(129, "Female Soulbreaker");
++		classList.put(130, "Arbalester");
++		classList.put(131, "Doombringer");
++		classList.put(132, "Male Soulhound");
++		classList.put(133, "Female Soulhound");
++		classList.put(134, "Trickster");
++		classList.put(135, "Inspector");
++		classList.put(136, "Judicator");
++		
++		return classList.get(classId);
++	}
++}
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/AdminBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/AdminBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/AdminBBSManager.java	(working copy)
+@@ -27,6 +27,14 @@
+ 		return SingletonHolder._instance;
+ 	}
+ 	
++	private AdminBBSManager()
++	{
++	}
++	
++	/**
++	 * 
++	 * @see com.l2jserver.gameserver.communitybbs.Manager.BaseBBSManager#parsecmd(java.lang.String, com.l2jserver.gameserver.model.actor.instance.L2PcInstance)
++	 */
+ 	@Override
+ 	public void parsecmd(String command, L2PcInstance activeChar)
+ 	{
+@@ -65,6 +73,7 @@
+ 		
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final AdminBBSManager _instance = new AdminBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/ClanBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/ClanBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/ClanBBSManager.java	(working copy)
+@@ -24,6 +24,10 @@
+ 
+ public class ClanBBSManager extends BaseBBSManager
+ {
++	private ClanBBSManager()
++	{
++	}
++	
+ 	public static ClanBBSManager getInstance()
+ 	{
+ 		return SingletonHolder._instance;
+@@ -274,6 +278,7 @@
+ 		clanhome(activeChar, activeChar.getClan().getClanId());
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final ClanBBSManager _instance = new ClanBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/ForumsBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/ForumsBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/ForumsBBSManager.java	(working copy)
+@@ -41,7 +41,7 @@
+ 		return SingletonHolder._instance;
+ 	}
+ 	
+-	protected ForumsBBSManager()
++	private ForumsBBSManager()
+ 	{
+ 		_table = new FastList<Forum>();
+ 		
+@@ -157,6 +157,7 @@
+ 	{
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final ForumsBBSManager _instance = new ForumsBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/PostBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/PostBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/PostBBSManager.java	(working copy)
+@@ -32,10 +32,16 @@
+ 
+ public class PostBBSManager extends BaseBBSManager
+ {
++	
+ 	private Map<Topic, Post> _postByTopic;
+ 	
+-	protected PostBBSManager()
++	public static PostBBSManager getInstance()
+ 	{
++		return SingletonHolder._instance;
++	}
++	
++	private PostBBSManager()
++	{
+ 		_postByTopic = new FastMap<Topic, Post>();
+ 	}
+ 	
+@@ -45,7 +51,7 @@
+ 		post = _postByTopic.get(t);
+ 		if (post == null)
+ 		{
+-			post = new Post(t);
++			post = load(t);
+ 			_postByTopic.put(t, post);
+ 		}
+ 		return post;
+@@ -67,6 +73,17 @@
+ 		}
+ 	}
+ 	
++	/**
++	 * @param t
++	 * @return
++	 */
++	private Post load(Topic t)
++	{
++		Post p;
++		p = new Post(t);
++		return p;
++	}
++	
+ 	@Override
+ 	public void parsecmd(String command, L2PcInstance activeChar)
+ 	{
+@@ -288,34 +305,31 @@
+ 			}
+ 			else
+ 			{
+-				final Post p = getGPosttByTopic(t);
++				CPost cp = null;
++				Post p = getGPosttByTopic(t);
+ 				if (p != null)
+ 				{
+-					final CPost cp = p.getCPost(idp);
+-					if (cp == null)
+-					{
+-						ShowBoard sb = new ShowBoard("<html><body><br><br><center>the post: " + idp
+-								+ " does not exist !</center><br><br></body></html>", "101");
+-						activeChar.sendPacket(sb);
+-						activeChar.sendPacket(new ShowBoard(null, "102"));
+-						activeChar.sendPacket(new ShowBoard(null, "103"));
+-					}
+-					else
+-					{
+-						p.getCPost(idp).postTxt = ar4;
+-						p.updatetxt(idp);
+-						parsecmd("_bbsposts;read;" + f.getID() + ";" + t.getID(), activeChar);
+-					}
++					cp = p.getCPost(idp);
+ 				}
++				if (cp == null)
++				{
++					ShowBoard sb = new ShowBoard("<html><body><br><br><center>the post: " + idp
++							+ " does not exist !</center><br><br></body></html>", "101");
++					activeChar.sendPacket(sb);
++					activeChar.sendPacket(new ShowBoard(null, "102"));
++					activeChar.sendPacket(new ShowBoard(null, "103"));
++				}
++				else
++				{
++					p.getCPost(idp).postTxt = ar4;
++					p.updatetxt(idp);
++					parsecmd("_bbsposts;read;" + f.getID() + ";" + t.getID(), activeChar);
++				}
+ 			}
+ 		}
+ 	}
+ 	
+-	public static PostBBSManager getInstance()
+-	{
+-		return SingletonHolder._instance;
+-	}
+-	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final PostBBSManager _instance = new PostBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/RegionBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/RegionBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/RegionBBSManager.java	(working copy)
+@@ -54,6 +54,10 @@
+ 		}
+ 	};
+ 	
++	private RegionBBSManager()
++	{
++	}
++	
+ 	@Override
+ 	public void parsecmd(String command, L2PcInstance activeChar)
+ 	{
+@@ -564,6 +568,7 @@
+ 		return null;
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final RegionBBSManager _instance = new RegionBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/TopBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/TopBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/TopBBSManager.java	(working copy)
+@@ -1,66 +1,128 @@
+-/*
+- * This program is free software: you can redistribute it and/or modify it under
+- * the terms of the GNU General Public License as published by the Free Software
+- * Foundation, either version 3 of the License, or (at your option) any later
+- * version.
+- * 
+- * This program is distributed in the hope that it will be useful, but WITHOUT
+- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+- * details.
+- * 
+- * You should have received a copy of the GNU General Public License along with
+- * this program. If not, see <http://www.gnu.org/licenses/>.
+- */
+ package com.l2jserver.gameserver.communitybbs.Manager;
+ 
++import java.io.File;
+ import java.util.StringTokenizer;
+ 
++import com.l2jserver.Config;
++import com.l2jserver.gameserver.GameTimeController;
+ import com.l2jserver.gameserver.cache.HtmCache;
++import com.l2jserver.gameserver.communitybbs.CastleStatus;
++import com.l2jserver.gameserver.communitybbs.ClanList;
++import com.l2jserver.gameserver.communitybbs.GrandBossList;
++import com.l2jserver.gameserver.communitybbs.HeroeList;
++import com.l2jserver.gameserver.communitybbs.RaidList;
++import com.l2jserver.gameserver.communitybbs.TopPlayers;
++import com.l2jserver.gameserver.model.L2World;
+ import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
+ import com.l2jserver.gameserver.network.serverpackets.ShowBoard;
+ 
+-
+ public class TopBBSManager extends BaseBBSManager
+ {
++	
++	private TopBBSManager()
++	{
++	}
++	
+ 	@Override
+ 	public void parsecmd(String command, L2PcInstance activeChar)
+ 	{
+-		if (command.equals("_bbstop"))
++		String path = "data/html/CommunityBoard/";
++		String filepath = "";
++		String content = "";
++		
++		if (command.equals("_bbstop") | command.equals("_bbshome"))
+ 		{
+-			String content = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), "data/html/CommunityBoard/index.htm");
+-			if (content == null)
+-			{
+-				content = "<html><body><br><br><center>404 :File not found: 'data/html/CommunityBoard/index.htm' </center></body></html>";
+-			}
++			filepath = path + "index.htm";
++			content = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), filepath);
+ 			separateAndSend(content, activeChar);
+ 		}
+-		else if (command.equals("_bbshome"))
+-		{
+-			String content = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), "data/html/CommunityBoard/index.htm");
+-			if (content == null)
+-			{
+-				content = "<html><body><br><br><center>404 :File not found: 'data/html/CommunityBoard/index.htm' </center></body></html>";
+-			}
+-			separateAndSend(content, activeChar);
+-		}
+ 		else if (command.startsWith("_bbstop;"))
+ 		{
+ 			StringTokenizer st = new StringTokenizer(command, ";");
+ 			st.nextToken();
+-			int idp = Integer.parseInt(st.nextToken());
+-			String content = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), "data/html/CommunityBoard/" + idp + ".htm");
+-			if (content == null)
++			String file = st.nextToken();
++			filepath = path + file + ".htm";
++			File filecom = new File(filepath);
++			
++			if (!(filecom.exists()))
+ 			{
+-				content = "<html><body><br><br><center>404 :File not found: 'data/html/CommunityBoard/" + idp
+-				+ ".htm' </center></body></html>";
++				content = "<html><body><br><br><center>The command " + command + " points to file(" + filepath + ") that NOT exists.</center></body></html>";
++				separateAndSend(content, activeChar);
++				return;
+ 			}
++			content = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), filepath);
++			
++			if (content.isEmpty())
++				content = "<html><body><br><br><center>Content Empty: The command " + command + " points to an invalid or empty html file(" + filepath + ").</center></body></html>";
++			
++			switch (file)
++			{
++				case "toppvp":
++					TopPlayers pvp = new TopPlayers(file);
++					content = content.replaceAll("%toppvp%", pvp.loadTopList());
++					break;
++				case "toppk":
++					TopPlayers pk = new TopPlayers(file);
++					content = content.replaceAll("%toppk%", pk.loadTopList());
++					break;
++				case "toprbrank":
++					TopPlayers raid = new TopPlayers(file);
++					content = content.replaceAll("%toprbrank%", raid.loadTopList());
++					break;
++				case "topadena":
++					TopPlayers adena = new TopPlayers(file);
++					content = content.replaceAll("%topadena%", adena.loadTopList());
++					break;
++				case "toponline":
++					TopPlayers online = new TopPlayers(file);
++					content = content.replaceAll("%toponline%", online.loadTopList());
++					break;
++				case "heroes":
++					HeroeList hr = new HeroeList();
++					content = content.replaceAll("%heroelist%", hr.loadHeroeList());
++					break;
++				case "castle":
++					CastleStatus status = new CastleStatus();
++					content = content.replaceAll("%castle%", status.loadCastleList());
++					break;
++				case "boss":
++					GrandBossList gb = new GrandBossList();
++					content = content.replaceAll("%gboss%", gb.loadGrandBossList());
++					break;
++				case "stats":
++					content = content.replace("%online%", Integer.toString(L2World.getInstance().getAllPlayersCount()));
++					content = content.replace("%servercapacity%", Integer.toString(Config.MAXIMUM_ONLINE_USERS));
++					content = content.replace("%serverruntime%", getServerRunTime());
++					if (Config.ALLOW_REAL_ONLINE_STATS)
++						content = content.replace("%serveronline%", getRealOnline());
++					else
++						content = content.replace("%serveronline%", "");
++					break;
++				default:
++					break;
++			
++			}
++			if (file.startsWith("clan"))
++			{
++				int cid = Integer.parseInt(file.substring(4));
++				ClanList cl = new ClanList(cid);
++				content = content.replaceAll("%clanlist%", cl.loadClanList());
++			}
++			if (file.startsWith("raid"))
++			{
++				String rfid = file.substring(4);
++				RaidList rd = new RaidList(rfid);
++				content = content.replaceAll("%raidlist%", rd.loadRaidList());
++			}
++			if (content.isEmpty())
++			{
++				content = "<html><body><br><br><center>404 :File not found or empty: " + filepath + " your command is " + command + "</center></body></html>";
++			}
+ 			separateAndSend(content, activeChar);
+ 		}
+ 		else
+ 		{
+-			ShowBoard sb = new ShowBoard("<html><body><br><br><center>the command: " + command
+-					+ " is not implemented yet</center><br><br></body></html>", "101");
++			ShowBoard sb = new ShowBoard("<html><body><br><br><center>the command: " + command + " is not implemented yet</center><br><br></body></html>", "101");
+ 			activeChar.sendPacket(sb);
+ 			activeChar.sendPacket(new ShowBoard(null, "102"));
+ 			activeChar.sendPacket(new ShowBoard(null, "103"));
+@@ -77,8 +139,34 @@
+ 		return SingletonHolder._instance;
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final TopBBSManager _instance = new TopBBSManager();
+ 	}
++	
++	public String getServerRunTime()
++	{
++		int timeSeconds = (GameTimeController.getGameTicks() - 36000) / 10;
++		String timeResult = "";
++		if (timeSeconds >= 86400)
++			timeResult = Integer.toString(timeSeconds / 86400) + " Days " + Integer.toString((timeSeconds % 86400) / 3600) + " hours";
++		else
++			timeResult = Integer.toString(timeSeconds / 3600) + " Hours " + Integer.toString((timeSeconds % 3600) / 60) + " mins";
++		return timeResult;
++	}
++	
++	public String getRealOnline()
++	{
++		int counter = 0;
++		for (L2PcInstance onlinePlayer : L2World.getInstance().getAllPlayersArray())
++		{
++			if (onlinePlayer.isOnline() && (onlinePlayer.getClient() != null && !onlinePlayer.getClient().isDetached()))
++			{
++				counter++;
++			}
++		}
++		String realOnline = "<tr><td fixwidth=11></td><td FIXWIDTH=280>Players Active</td><td FIXWIDTH=470><font color=26e600>" + counter + "</font></td></tr>" + "<tr><td fixwidth=11></td><td FIXWIDTH=280>Players Shops</td><td FIXWIDTH=470><font color=26e600>" + (L2World.getInstance().getAllPlayersCount() - counter) + "</font></td></tr>";
++		return realOnline;
++	}
+ }
+\ No newline at end of file
+Index: java/com/l2jserver/gameserver/communitybbs/Manager/TopicBBSManager.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/Manager/TopicBBSManager.java	(revision 5370)
++++ java/com/l2jserver/gameserver/communitybbs/Manager/TopicBBSManager.java	(working copy)
+@@ -42,7 +42,7 @@
+ 		return SingletonHolder._instance;
+ 	}
+ 	
+-	protected TopicBBSManager()
++	private TopicBBSManager()
+ 	{
+ 		_table = new FastList<Topic>();
+ 		_maxId = new FastMap<Forum, Integer>().shared();
+@@ -442,6 +442,7 @@
+ 		separateAndSend(html.toString(), activeChar);
+ 	}
+ 	
++	@SuppressWarnings("synthetic-access")
+ 	private static class SingletonHolder
+ 	{
+ 		protected static final TopicBBSManager _instance = new TopicBBSManager();
+Index: java/com/l2jserver/gameserver/communitybbs/RaidList.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/RaidList.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/RaidList.java	(working copy)
+@@ -0,0 +1,101 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import com.l2jserver.Config;
++import com.l2jserver.L2DatabaseFactory;
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import javolution.text.TextBuilder;
++
++public class RaidList
++{
++	private TextBuilder _raidList = new TextBuilder();
++	
++	public RaidList(String rfid)
++	{
++		loadFromDB(rfid);
++	}
++	
++	private void loadFromDB(String rfid)
++	{
++		int type = Integer.parseInt(rfid);
++		Connection con = null;
++		int stpoint = 0;
++		int pos = 0;
++		String sort = "";
++		if (Config.RAID_LIST_SORT_ASC)
++			sort = "ASC";
++		else
++			sort = "DESC";
++		for (int count = 1; count != type; count++)
++		{
++			stpoint += Config.RAID_LIST_RESULTS;
++		}
++		
++		
++		try
++		{
++			con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement statement = con.prepareStatement("SELECT id, name, level FROM npc WHERE type='L2RaidBoss' AND EXISTS (SELECT * FROM raidboss_spawnlist WHERE raidboss_spawnlist.boss_id = npc.id) ORDER BY `level` " + sort + " Limit " + stpoint + ", " + Config.RAID_LIST_RESULTS);
++			ResultSet result = statement.executeQuery();
++			pos = stpoint;
++			
++			while (result.next())
++			{
++				int npcid = result.getInt("id");
++				String npcname = result.getString("name");
++				int rlevel = result.getInt("level");
++				PreparedStatement statement2 = con.prepareStatement("SELECT respawn_time, respawn_min_delay, respawn_max_delay FROM raidboss_spawnlist WHERE boss_id=" + npcid);
++				ResultSet result2 = statement2.executeQuery();
++				
++				while (result2.next())
++				{
++					pos++;
++					boolean rstatus = false;
++					long respawn = result2.getLong("respawn_time");
++					if (respawn == 0)
++						rstatus = true;
++					int mindelay = result2.getInt("respawn_min_delay");
++					int maxdelay = result2.getInt("respawn_max_delay");
++					mindelay = mindelay / 60 / 60;
++					maxdelay = maxdelay / 60 / 60;
++					addRaidToList(pos, npcname, rlevel, mindelay, maxdelay, rstatus);
++				}
++				result2.close();
++				statement2.close();
++			}
++			
++			result.close();
++			statement.close();
++		}
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		finally
++		{
++			L2DatabaseFactory.close(con);
++		}
++	}
++	
++	private void addRaidToList(int pos, String npcname, int rlevel, int mindelay, int maxdelay, boolean rstatus)
++	{
++		_raidList.append("<table border=0 cellspacing=0 cellpadding=2 width=750 height="+Config.RAID_LIST_ROW_HEIGHT+">");
++		_raidList.append("<tr>");
++		_raidList.append("<td FIXWIDTH=5></td>");
++		_raidList.append("<td FIXWIDTH=20>" + pos + "</td>");
++		_raidList.append("<td FIXWIDTH=270>" + npcname + "</td>");
++		_raidList.append("<td FIXWIDTH=50>" + rlevel + "</td>");
++		_raidList.append("<td FIXWIDTH=120 align=center>" + mindelay + " - " + maxdelay + "</td>");
++		_raidList.append("<td FIXWIDTH=50 align=center>" + ((rstatus) ? "<font color=99FF00>Alive</font>" : "<font color=CC0000>Dead</font>") + "</td>");
++		_raidList.append("<td FIXWIDTH=5></td>");
++		_raidList.append("</tr>");
++		_raidList.append("</table>");
++		_raidList.append("<img src=\"L2UI.Squaregray\" width=\"740\" height=\"1\">");
++	}
++	
++	public String loadRaidList()
++	{
++		return _raidList.toString();
++	}
++}
+Index: java/com/l2jserver/gameserver/communitybbs/TopPlayers.java
+===================================================================
+--- java/com/l2jserver/gameserver/communitybbs/TopPlayers.java	(revision 0)
++++ java/com/l2jserver/gameserver/communitybbs/TopPlayers.java	(working copy)
+@@ -0,0 +1,243 @@
++package com.l2jserver.gameserver.communitybbs;
++
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.util.Map;
++
++import javolution.text.TextBuilder;
++import javolution.util.FastMap;
++
++import com.l2jserver.Config;
++import com.l2jserver.L2DatabaseFactory;
++
++public class TopPlayers
++{
++	private int pos;
++	private TextBuilder _topList = new TextBuilder();
++	String sort = "";
++	
++	public TopPlayers(String file)
++	{
++		loadDB(file);
++	}
++	
++	@SuppressWarnings("null")
++	private void loadDB(String file)
++	{
++		Connection con = null;
++		
++		switch (file)
++		{
++			case "toppvp":
++				sort = "pvpkills";
++				break;
++			case "toppk":
++				sort = "pkkills";
++				break;
++			case "topadena":
++				sort = "SUM(it.count)";
++				break;
++			case "toprbrank":
++				sort = "SUM(chr.points)";
++				break;
++			case "toponline":
++				sort = "onlinetime";
++				break;
++			default:
++				break;
++		
++		}
++		
++		try
++		{
++			pos = 0;
++			con = L2DatabaseFactory.getInstance().getConnection();
++			PreparedStatement statement = con.prepareStatement("SELECT SUM(chr.points), SUM(it.count), ch.char_name, ch.pkkills, ch.pvpkills, ch.onlinetime, ch.base_class, ch.online FROM characters ch LEFT JOIN character_raid_points chr ON ch.charId=chr.charId LEFT OUTER JOIN items it ON ch.charId=it.owner_id WHERE item_id=57 GROUP BY ch.charId ORDER BY " + sort + " DESC LIMIT " + Config.TOP_PLAYER_RESULTS);
++			
++			ResultSet result = statement.executeQuery();
++			
++			while (result.next())
++			{
++				boolean status = false;
++				pos++;
++				
++				if (result.getInt("online") == 1)
++					status = true;
++				String timeon = getPlayerRunTime(result.getInt("ch.onlinetime"));
++				String adenas = getAdenas(result.getInt("SUM(it.count)"));
++				
++				addChar(pos, result.getString("ch.char_name"), result.getInt("base_class"), result.getInt("ch.pvpkills"), result.getInt("ch.pkkills"), result.getInt("SUM(chr.points)"), adenas, timeon, status);
++			}
++			
++			result.close();
++			statement.close();
++		}
++		catch (Exception e)
++		{
++			e.printStackTrace();
++		}
++		finally
++		{
++			try
++			{
++				con.close();
++			}
++			catch (Exception e)
++			{
++				
++			}
++		}
++	}
++	
++	public String loadTopList()
++	{
++		return _topList.toString();
++	}
++	
++	private void addChar(int position, String name, int classid, int pvp, int pk, int raid, String adenas, String online, boolean isOnline)
++	{
++		_topList.append("<table border=0 cellspacing=0 cellpadding=2 bgcolor=050505 height=" + Config.TOP_PLAYER_ROW_HEIGHT + "><tr><td FIXWIDTH=5></td>");
++		_topList.append("<td FIXWIDTH=20>" + position + ".</td>");
++		_topList.append("<td FIXWIDTH=180>" + name + "</td>");
++		_topList.append("<td FIXWIDTH=175>" + className(classid) + "</td>");
++		_topList.append("<td FIXWIDTH=60>" + pvp + "</td>");
++		_topList.append("<td FIXWIDTH=60>" + pk + "</td>");
++		_topList.append("<td FIXWIDTH=65>" + raid + "</td>");
++		_topList.append("<td FIXWIDTH=150>" + adenas + "</td>");
++		_topList.append("<td FIXWIDTH=148>" + online + "</td>");
++		_topList.append("<td FIXWIDTH=65>" + ((isOnline) ? "<font color=99FF00>Online</font>" : "<font color=CC0000>Offline</font>") + "</td>");
++		_topList.append("</tr></table><img src=\"L2UI.Squaregray\" width=\"758\" height=\"1\">");
++		
++	}
++	
++	public final static String className(int classid)
++	{
++		Map<Integer, String> classList;
++		classList = new FastMap<Integer, String>();
++		classList.put(0, "Fighter");
++		classList.put(1, "Warrior");
++		classList.put(2, "Gladiator");
++		classList.put(3, "Warlord");
++		classList.put(4, "Knight");
++		classList.put(5, "Paladin");
++		classList.put(6, "Dark Avenger");
++		classList.put(7, "Rogue");
++		classList.put(8, "Treasure Hunter");
++		classList.put(9, "Hawkeye");
++		classList.put(10, "Mage");
++		classList.put(11, "Wizard");
++		classList.put(12, "Sorcerer");
++		classList.put(13, "Necromancer");
++		classList.put(14, "Warlock");
++		classList.put(15, "Cleric");
++		classList.put(16, "Bishop");
++		classList.put(17, "Prophet");
++		classList.put(18, "Elven Fighter");
++		classList.put(19, "Elven Knight");
++		classList.put(20, "Temple Knight");
++		classList.put(21, "Swordsinger");
++		classList.put(22, "Elven Scout");
++		classList.put(23, "Plains Walker");
++		classList.put(24, "Silver Ranger");
++		classList.put(25, "Elven Mage");
++		classList.put(26, "Elven Wizard");
++		classList.put(27, "Spellsinger");
++		classList.put(28, "Elemental Summoner");
++		classList.put(29, "Oracle");
++		classList.put(30, "Elder");
++		classList.put(31, "Dark Fighter");
++		classList.put(32, "Palus Knightr");
++		classList.put(33, "Shillien Knight");
++		classList.put(34, "Bladedancer");
++		classList.put(35, "Assasin");
++		classList.put(36, "Abyss Walker");
++		classList.put(37, "Phantom Ranger");
++		classList.put(38, "Dark Mage");
++		classList.put(39, "Dark Wizard");
++		classList.put(40, "Spellhowler");
++		classList.put(41, "Phantom Summoner");
++		classList.put(42, "Shillien Oracle");
++		classList.put(43, "Shilien Elder");
++		classList.put(44, "Orc Fighter");
++		classList.put(45, "Orc Raider");
++		classList.put(46, "Destroyer");
++		classList.put(47, "Orc Monk");
++		classList.put(48, "Tyrant");
++		classList.put(49, "Orc Mage");
++		classList.put(50, "Orc Shaman");
++		classList.put(51, "Overlord");
++		classList.put(52, "Warcryer");
++		classList.put(53, "Dwarven Fighter");
++		classList.put(54, "Scavenger");
++		classList.put(55, "Bounty Hunter");
++		classList.put(56, "Artisan");
++		classList.put(57, "Warsmith");
++		classList.put(88, "Duelist");
++		classList.put(89, "Dreadnought");
++		classList.put(90, "Phoenix Knight");
++		classList.put(91, "Hell Knight");
++		classList.put(92, "Sagittarius");
++		classList.put(93, "Adventurer");
++		classList.put(94, "Archmage");
++		classList.put(95, "Soultaker");
++		classList.put(96, "Arcana Lord");
++		classList.put(97, "Cardinal");
++		classList.put(98, "Hierophant");
++		classList.put(99, "Evas Templar");
++		classList.put(100, "Sword Muse");
++		classList.put(101, "Wind Rider");
++		classList.put(102, "Moonlight Sentinel");
++		classList.put(103, "Mystic Muse");
++		classList.put(104, "Elemental Master");
++		classList.put(105, "Evas Saint");
++		classList.put(106, "Shillien Templar");
++		classList.put(107, "Spectral Dancer");
++		classList.put(108, "Ghost Hunter");
++		classList.put(109, "Ghost Sentinel");
++		classList.put(110, "Storm Screamer");
++		classList.put(111, "Spectral Master");
++		classList.put(112, "Shillien Saint");
++		classList.put(113, "Titan");
++		classList.put(114, "Grand Khavatari");
++		classList.put(115, "Dominator");
++		classList.put(116, "Doomcryer");
++		classList.put(117, "Fortune Seeker");
++		classList.put(118, "Maestro");
++		classList.put(123, "Male Soldier");
++		classList.put(124, "Female Soldier");
++		classList.put(125, "Trooper");
++		classList.put(126, "Warder");
++		classList.put(127, "Berserker");
++		classList.put(128, "Male Soulbreaker");
++		classList.put(129, "Female Soulbreaker");
++		classList.put(130, "Arbalester");
++		classList.put(131, "Doombringer");
++		classList.put(132, "Male Soulhound");
++		classList.put(133, "Female Soulhound");
++		classList.put(134, "Trickster");
++		classList.put(135, "Inspector");
++		classList.put(136, "Judicator");
++		
++		return classList.get(classid);
++	}
++	
++	public String getPlayerRunTime(int secs)
++	{
++		String timeResult = "";
++		if (secs >= 86400)
++			timeResult = Integer.toString(secs / 86400) + " Days " + Integer.toString((secs % 86400) / 3600) + " hours";
++		else
++			timeResult = Integer.toString(secs / 3600) + " Hours " + Integer.toString((secs % 3600) / 60) + " mins";
++		return timeResult;
++	}
++	public String getAdenas(int adena)
++	{
++		String adenas = "";
++		if (adena >= 1000000000)
++			adenas = Integer.toString(adena / 1000000000) + " Billion " + Integer.toString((adena % 1000000000) / 1000000) + " million";
++		else
++			adenas = Integer.toString(adena / 1000000) + " Million " + Integer.toString((adena % 1000000) / 1000) + " k";
++		return adenas;
++	}
++}

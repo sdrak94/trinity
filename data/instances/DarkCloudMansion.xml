@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Dark Cloud Mansion">
+  <activityTime val="30" />
+  <timeDelay val="24" />
+  <doorlist>
+    <door doorId="24230001" />
+    <door doorId="24230002" />
+    <door doorId="24230005" />
+    <door doorId="24230003" />
+    <door doorId="24230004" />
+    <door doorId="24230006" />
+    <door doorId="24230007" />
+    <door doorId="24230008" />
+    <door doorId="24230009" />
+    <door doorId="24230010" />
+    <door doorId="24230011" />
+    <door doorId="24230012" />
+    <door doorId="24230013" />
+  </doorlist>
+</instance>

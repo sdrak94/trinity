@@ -1,0 +1,740 @@
+<list> <!-- S80 grade Rare & Epic weapons -->
+<item id="81000" name="Iron Stone"> <!-- blunt -->
+  <for>
+   <set val="333" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <add val="600" order="0x40" stat="sDef"/>
+   <basemul val="0.1" order="0x40" stat="mDef"/>
+   	<add val="2" order="0x40" stat="effectDurationChange">
+	   <using skillid="362"/>
+	</add>
+	<mul val="1.7" order="0x30" stat="skillPowerBoost">
+	   <using skillid="401"/>
+	</mul>
+	<add val="10" order="0x40" stat="effectDurationChange">
+	   <using skillid="110"/>
+	</add>
+  </for>
+</item>
+<item id="81001" name="Cutting Darkness"><!-- sword -->
+  <for>
+   <set val="333" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="60" order="0x40" stat="holyPower"/>
+   <add val="20" order="0x40" stat="darkRes"/>
+   <basemul val="0.25" order="0x40" stat="pAtk">
+       <game night="true"/>
+   </basemul>
+   <add val="7" order="0x40" stat="accCombat"/>
+   	<mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="400"/>
+	</mul>
+	<mul val="1.7" order="0x30" stat="skillPowerBoost">
+	   <using skillid="49"/>
+	</mul>
+	  <add val="2" order="0x40" stat="effectDurationChange">
+	   <using skillid="9012"/>
+	</add>
+  </for>
+</item>
+<item id="81002" name="Edge of Sanity"><!-- bigsword -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.45" order="0x40" stat="rCrit"/>
+   <add val="25" order="0x40" stat="pAtkRange"/>
+   <add val="0.6" order="0x40" stat="cAtk">
+       <player hp="50"/>
+	</add>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+    <add val="15" order="0x40" stat="effectDurationChange">
+	   <using skillid="176"/>
+	</add>
+	<mul val="1.5" order="0x30" stat="skillPowerBoost">
+	   <using skillid="190"/>
+	</mul>
+	<mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="816"/>
+	</mul>
+  </for>
+</item>
+<item id="81003" name="Cranium Basher"><!-- bigblunt -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="7" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <basemul val="0.5" order="0x40" stat="pAtk"/>
+   <add val="0.3" order="0x40" stat="cAtk"/>
+    <add val="3" order="0x40" stat="effectDurationChange">
+	   <using skillid="260"/>
+	</add>
+	<add val="150" order="0x40" stat="rCrit">
+	   <player behind="true"/>
+	 </add>
+  </for>
+</item>
+<item id="81004" name="Frost Raven"><!-- bow -->
+  <for>
+   <set val="654" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="293" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="60" order="0x40" stat="waterPower"/>
+   <add val="200" order="0x40" stat="mDef"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <add val="0.3" order="0x40" stat="cAtk"/>
+   <mul val="0.8" order="0x50" stat="pAtkRange"/>
+   <add val="12" order="0x40" stat="reflectDam"/>
+   <add val="2000" order="0x40" stat="maxMp"/>
+   <add val="5" order="0x40" stat="transDamMana"/>
+   <add val="12" order="0x40" stat="vengeancePdam"/>
+   <add val="12" order="0x40" stat="reflectSkillMagic"/>
+   <add val="600" order="0x40" stat="mAtkRange">
+	   <using skillid="105"/>
+   </add>
+   <mul val="0.8" order="0x30" stat="skillPowerBoost">
+	  <using skillid="771"/>
+   </mul>
+  </for>
+</item>
+<item id="81005" name="Blood Hunter"><!-- dagger -->
+  <for>
+   <set val="291" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="0.5" order="0x40" stat="cAtk"/>
+   <add val="12" order="0x40" stat="absorbDamSkill"/>
+   <add val="100" order="0x40" stat="cAtkBleed"/>
+   <mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="96"/>
+   </mul>
+   <sub val="0.35" order="0x40" stat="pReuse">
+	   <target abnormal="1"/>
+   </sub>
+  </for>
+  </item>
+<item id="81006" name="Aurakyria Lance"><!-- pole -->
+  <for>
+   <set val="333" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.7" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="cAtk"/>
+   <add val="250" order="0x40" stat="mDef"/>
+   <add val="50" order="0x40" stat="pAtkAngle"/>
+   <add val="10" order="0x40" stat="pAtkRange"/>
+   <add val="15" order="0x40" stat="aoePercent"/>
+   <add val="1" order="0x40" stat="atkCountMax"/>
+   <add val="12" order="0x40" stat="runSpd"/>
+   <basemul val="0.1" order="0x40" stat="pAtkSpd"/>
+   	<mul val="1.8" order="0x30" stat="skillPowerBoost">
+	   <using skillid="245"/>
+	</mul>
+	 <mul val="1.8" order="0x30" stat="skillPowerBoost">
+	   <using skillid="920"/>
+	  </mul>
+  </for>
+</item>
+<item id="81007" name="Head Juggler"><!-- fists -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.16" order="0x40" stat="pAtkSpd"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <add val="7" order="0x40" stat="absorbDam"/>
+    <add val="0.9" order="0x40" stat="cAtk">
+      <target hp="40"/>
+	</add>
+	<add val="8" order="0x40" stat="pSkillEvasReduce"/>
+   <mul val="1.7" order="0x30" stat="skillPowerBoost">
+	   <using skillid="54"/>
+	 </mul>
+  </for>
+</item>
+<item id="81008" name="Cardinal Sins"><!-- duals -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <basemul val="0.35" order="0x40" stat="pAtk"/>
+   <add val="30" order="0x40" stat="holyRes"/>
+   <add val="20" order="0x40" stat="pSkillEvasReduce"/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <add val="70" order="0x40" stat="pAtkSpd"/>
+    <add val="5" order="0x40" stat="effectDurationChange">
+	   <using skillid="451"/>
+	</add>
+	 <mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="9"/>
+	 </mul>
+	 <mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="817"/>
+	 </mul>
+  </for>
+</item>
+<item id="81009" name="Hyper Fangs"><!-- dual daggers -->
+  <for>
+    <set val="304" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="412" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="12" order="0x40" stat="runSpd"/>
+	<add val="100" order="0x40" stat="pAtkSpdMax"/>
+	<add val="10" order="0x40" stat="blowRate"/>
+	<sub order="0x40" stat="skillReuseChange" val="700"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<sub val="0.2" order="0x40" stat="pReuse"/>
+	<mul val="1.15" order="0x30" stat="mpConsume"/>
+    <add val="50" order="0x40" stat="cAtkBleed"/>
+	<add val="3" order="0x40" stat="mSkillEvas"/>
+	<mul val="1.055" order="0x30" stat="skillPowerBoost"/>
+	<add val="0.0345" order="0x40" stat="pvpPhysSkillsDmg"/>
+	<sub val="1200" order="0x40" stat="skillReuseChange">
+   	   <using skillid="11"/>
+	</sub>
+    <mul val="1.44" order="0x30" stat="skillPowerBoost">
+	   <using skillid="412"/>
+	 </mul>
+  </for>
+</item>
+<item id="81010" name="Demon Queller"><!-- ancient sword -->
+  <for>
+   <set val="361" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="7" order="0x08" stat="rCrit"/>
+   <add val="2" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="0.3" order="0x40" stat="cAtk"/>
+   <add val="0.35" order="0x40" stat="pvmDam"/>
+   <add val="60" order="0x40" stat="delDmg"/>
+   <add val="3" order="0x40" stat="skillMastery"/>
+     <mul val="1.5" order="0x30" stat="skillPowerBoost">
+	   <using skillid="485"/>
+	 </mul>
+	   <mul val="1.5" order="0x30" stat="skillPowerBoost">
+	   <using skillid="477"/>
+	 </mul>
+	 <add val="300" order="0x40" stat="rushDistAdd">
+	   <using skillid="494"/>
+	 </add>
+  </for>
+</item>
+<item id="81011" name="Silver Tusk"><!-- rapier -->
+  <for>
+   <set val="302" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.25" order="0x40" stat="maxHp"/>
+   <basemul val="0.5" order="0x40" stat="rCrit"/>
+   <add val="0.3" order="0x40" stat="cAtk"/>
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   	 <mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="504"/>
+	 </mul>
+	 <add val="300" order="0x40" stat="mAtkRange">
+	   <using skillid="1469"/>
+	 </add>
+	 <sub val="3000" order="0x40" stat="skillReuseChange">
+   	   <using skillid="1487"/>
+	</sub>
+	<add val="10" order="0x40" stat="effectDurationChange">
+	   <using skillid="1482"/>
+	</add>
+  </for>
+</item>
+<item id="81012" name="Face Disruptor"><!-- crossbow -->
+  <for>
+   <set val="401" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.9" order="0x40" stat="rCrit"/>
+   <add val="15" order="0x40" stat="accCombat">
+       <player front="true"/>
+   </add>
+   <add val="100" order="0x40" stat="rCrit">
+      <player front="true"/>
+   </add>
+   <add val="2000" order="0x40" stat="cAtkAdd">
+      <player front="true"/>
+   </add>
+   <add val="3" order="0x40" stat="skillCritAdd"/>
+   <mul val="1.40" order="0x30" stat="skillPowerBoost">
+	  <using skillid="507"/>
+   </mul>
+   	 <sub val="5000" order="0x40" stat="skillReuseChange">
+   	   <using skillid="517"/>
+	</sub>
+   <add val="150" order="0x40" stat="pAtkRange"/>
+  </for>
+</item>
+<item id="81013" name="Witch Blade"><!-- mage sword -->
+  <for>
+   <set val="267" order="0x08" stat="pAtk"/>
+   <set val="202" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.2" order="0x40" stat="mAtkSpd"/>
+   	<add val="0.25" order="0x40" stat="skillDam">
+	   <player behind="true"/>
+	 </add>
+	<add val="10" order="0x40" stat="transDam"/>
+	<add val="33" order="0x40" stat="negateAutoTarget"/>
+	<basemul val="0.50" order="0x40" stat="mCritRate"/>
+	<add val="600" order="0x40" stat="mAtkSpd">
+	   <using skillid="1159"/>
+	</add>
+	<add val="300" order="0x40" stat="mAtkSpdMaxAdd">
+	   <using skillid="1159"/>
+	</add>
+	<mul val="1.5" order="0x30" stat="skillPowerBoost">
+	   <using skillid="1160"/>
+	</mul>
+	<add val="10" order="0x40" stat="effectDurationChange">
+	   <using skillid="1164"/>
+	</add>
+	<add val="10" order="0x40" stat="effectDurationChange">
+	   <using skillid="1099"/>
+	</add>
+	<add val="5" order="0x40" stat="effectDurationChange">
+	   <using skillid="1064"/>
+	</add>
+	<mul val="1.4" order="0x30" stat="skillPowerBoost">
+	   <using skillid="1343"/>
+	</mul>
+	<mul val="1.4" order="0x30" stat="skillPowerBoost">
+	   <using skillid="1351"/>
+	</mul>
+	<mul val="1.3" order="0x30" stat="skillPowerBoost">
+	   <using skillid="1266"/>
+	</mul>
+  </for>
+</item>
+<item id="81014" name="Crystal Magnolia"><!-- mage blunt -->
+  <for>
+   <set val="267" order="0x08" stat="pAtk"/>
+   <set val="202" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.3" order="0x40" stat="mAtkSpd"/>
+   <basemul val="1" order="0x40" stat="maxMp"/>
+   <add val="7" order="0x40" stat="runSpd"/>
+   <add val="4" order="0x40" stat="pSkillEvas"/>
+   <add val="50" order="0x40" stat="mAtkRange"/>
+   <add val="3" order="0x10" stat="INT"/>
+   <mul val="0" order="0x30" stat="MpConsume">
+	  <using skillid="1020"/>
+   </mul>
+    <mul val="0.9" order="0x30" stat="skillReuseChange">
+	  <using skillid="1273"/>
+   </mul>
+    <add val="10" order="0x40" stat="effectDurationChange">
+	  <using skillid="1411"/>
+   </add>
+    <add val="10" order="0x40" stat="effectDurationChange">
+	  <using skillid="1299"/>
+   </add>
+    <add val="20" order="0x40" stat="skillPowerBoost">
+	  <using skillid="1237"/>
+   </add>
+   <mul val="1.3" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1219"/>
+   </mul>
+   <add val="500" order="0x40" stat="mAtkRange">
+	  <using skillid="1265"/>
+   </add>
+    <set val="1" order="0x60" stat="skillTargetTypeChange">
+	  <using skillid="1265"/>
+   </set>
+   <add val="300" order="0x40" stat="mAtkRange">
+	  <using skillid="1231"/>
+   </add>
+   <add val="100" order="0x40" stat="skillRadiusBoost">
+	  <using skillid="1171"/>
+   </add>
+   <mul val="1.5" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1201"/>
+   </mul>
+    <add val="2" order="0x40" stat="effectDurationChange">
+	  <using skillid="1201"/>
+   </add>
+    <mul val="5" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1223"/>
+   </mul>
+   <add val="10" order="0x40" stat="effectDurationChange">
+	  <using skillid="1223"/>
+   </add>
+  </for>
+</item>
+<item id="81015" name="Soul Returner"><!-- mage bigblunt -->
+  <for>
+   <set val="267" order="0x08" stat="pAtk"/>
+   <set val="222" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.45" order="0x40" stat="maxHp"/>
+   <basemul val="0.6" order="0x40" stat="maxMp"/>
+   <sub val="0.2" order="0x40" stat="critVuln"/>
+    <mul val="0.2" order="0x30" stat="MpConsume">
+	  <using skillid="1016"/>
+   </mul>
+    <mul val="0.5" order="0x30" stat="skillReuseChange">
+	  <using skillid="1016"/>
+   </mul>
+    <mul val="0.7" order="0x30" stat="skillReuseChange">
+	  <using skillid="1050"/>
+   </mul>
+    <mul val="0.6" order="0x30" stat="MpConsume">
+	  <using skillid="1254"/>
+   </mul>
+    <add val="300" order="0x40" stat="skillRadiusBoost">
+	  <using skillid="1254"/>
+   </add>
+   <mul val="1.5" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1034"/>
+   </mul>
+   	<mul val="0" order="0x30" stat="pvpPhysSkillsVul">
+	   <using skillid="281"/>
+	</mul>
+	<mul val="0" order="0x30" stat="pvpPhysSkillsVul">
+	   <using skillid="627"/>
+	</mul>
+	<mul val="0" order="0x30" stat="pvpPhysSkillsVul">
+	   <using skillid="939"/>
+	</mul>
+	<mul val="0.75" order="0x30" stat="skillReuseChange">
+	  <using skillid="1010"/>
+   </mul>
+   	<set val="8" order="0x40" stat="skillTargetTypeChange">
+	  <using skillid="1010"/>
+   </set>
+    <add val="1" order="0x40" stat="lessDebuff"/>
+	<add val="1" order="0x40" stat="undisableRes"/>
+	<mul val="0.5" order="0x30" stat="paralyzeVuln"/>
+  </for>
+</item>
+<item id="81016" name="Eclipse Breaker"><!-- shield -->
+  <for>
+   <sub val="4" order="0x10" stat="rEvas"/>
+   <set val="331" order="0x08" stat="sDef"/>
+   <set val="20" order="0x08" stat="rShld"/>
+   <enchant val="0" order="0x0C" stat="sDef"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.33" order="0x40" stat="rCrit"/>
+   <add val="5" order="0x40" stat="runSpd"/>
+   <add val="50" order="0x40" stat="evadeAOEHit"/>
+  </for>
+</item>
+<item id="81017" name="Osafune"><!-- sword -->
+  <for>
+   <set val="333" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.75" order="0x40" stat="rCrit"/>
+   <basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+   <add val="6" order="0x40" stat="rEvas"/>
+   <add val="0.12" order="0x40" stat="damRobe"/>
+   <add val="10" order="0x40" stat="skillCritAdd">
+	   <using skillid="190"/>
+   </add>
+  </for>
+</item>
+<item id="81018" name="Bizen Osafune"><!-- duals -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.75" order="0x40" stat="rCrit"/>
+   <basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+   <add val="6" order="0x40" stat="rEvas"/>
+   <add val="0.12" order="0x40" stat="damRobe"/>
+    <add val="3" order="0x40" stat="effectDurationChange">
+	   <using skillid="402"/>
+   </add>
+     <mul val="1.5" order="0x30" stat="skillPowerBoost">
+	   <using skillid="495"/>
+	 </mul>
+	<add val="9" order="0x40" stat="skillCritAdd">
+	   <using skillid="36"/>
+   </add>
+  </for>
+</item>
+<item id="81019" name="Eagle Mourn"><!-- bow -->
+  <for>
+   <set val="654" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="293" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.6" order="0x40" stat="rCrit"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <add val="0.000065" order="0x40" stat="distDmgBoost"/>
+   <add val="0.00009" order="0x40" stat="distDmgBoostSkill"/>
+	<mul val="2.2" order="0x30" stat="skillPowerBoost">
+	   <using skillid="56"/>
+	</mul>
+	<add val="150" order="0x40" stat="pAtkRange">
+	   <using skillid="414"/>
+	</add>
+  </for>
+</item>
+<item id="81020" name="Back Scratcher"><!-- dagger -->
+  <for>
+   <set val="291" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="50" order="0x40" stat="backAngle"/>
+   <add val="100" order="0x40" stat="negateAutoTarget">
+   	   <player behind="true"/>
+	</add>
+	<add val="15" order="0x40" stat="accCombat">
+   	   <player behind="true"/>
+	</add>
+   <sub val="1000" order="0x40" stat="skillReuseChange">
+   	   <using skillid="30"/>
+	</sub>
+	<add val="150" order="0x40" stat="addDmg">
+   	   <player behind="true"/>
+	</add>
+	<add val="0.4" order="0x40" stat="cAtk">
+   	   <player behind="true"/>
+	</add>
+  </for>
+  </item>
+<!-- ############################################################################ -->
+                         <!-- epic weapons -->
+<!-- ############################################################################ -->
+<item id="81101" name="Muramasa"><!-- sword -->
+  <for>
+   <set val="333" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+  </item>
+<item id="81102" name="Matched Muramasa's"><!-- 2h sword -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+  </item>
+<item id="81103" name="Spezion's Wristblades"><!-- fists -->
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/> 
+   <set val="151" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <set val="2800" order="0x10" stat="pDefIgnore"/>
+   <add val="200" order="0x40" stat="pAtkSpd"/>
+   <add val="200" order="0x40" stat="mDef"/>
+   <add val="10" order="0x40" stat="runSpd"/>
+   <add val="3" order="0x10" stat="STR"/>
+    <add val="3" order="0x10" stat="INT"/>
+	 <add val="3" order="0x10" stat="DEX"/>
+	  <add val="3" order="0x10" stat="WIT"/>
+	   <add val="3" order="0x10" stat="CON"/>
+	    <add val="3" order="0x10" stat="MEN"/>
+  </for>
+  </item>
+<item id="81104" name="Apostle Grail Spear"><!-- pole -->
+  <for>
+   <set val="654" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="293" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>   
+   <add val="50" order="0x40" stat="rCrit"/>
+   <add val="100" order="0x40" stat="pAtkSpd"/>   
+   <add val="60" order="0x40" stat="bowAOERadius"/>
+   <add val="100" order="0x40" stat="negateAtkTarget"/>
+   <add val="15" order="0x40" stat="rEvas">
+     <player running="true"/>
+	</add>
+	<add val="5" order="0x40" stat="pSkillEvas"/>
+	<add val="10" order="0x40" stat="runSpd"/>
+	<add val="700" order="0x40" stat="mAtkRange">
+	   <using skillid="772"/>
+   </add>
+    <sub val="10000" order="0x40" stat="skillReuseChange">
+   	   <using skillid="772"/>
+	</sub>
+	<add val="100" order="0x40" stat="negateAutoTarget">
+	   <using skillid="772"/>
+   </add>
+  </for>
+  </item>
+<item id="81105" name="Titanica: Giant's Axe"><!-- 2h Sword -->
+  <for>
+   <set val="291" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <enchant val="0" order="0x50" stat="cAtk"/>
+   <set val="100" order="0x60" stat="deleteLife"/>
+   <add val="0.75" order="0x40" stat="cAtk">
+     <player invisible="true"/>
+	 </add>
+   <mul val="1.5" order="0x30" stat="lethalRate"/>
+   <mul val="0.25" order="0x50" stat="gainHp"/>
+   <mul val="0.9" order="0x50" stat="reducePdef"/>
+   <add val="100" order="0x40" stat="addDmg"/>
+   <add val="100" order="0x40" stat="cAtkBleed"/>
+   <add val="400" order="0x40" stat="rCrit">
+	  <player behind="true"/>
+   </add>
+  </for>
+  </item>
+ <item id="81106" name="Demon Slave"><!-- bigsword -->
+  <for>
+   <set val="291" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <enchant val="0" order="0x50" stat="cAtk"/>
+   <set val="100" order="0x60" stat="deleteLife"/>
+   <add val="0.75" order="0x40" stat="cAtk">
+     <player invisible="true"/>
+	 </add>
+   <mul val="1.5" order="0x30" stat="lethalRate"/>
+   <mul val="0.25" order="0x50" stat="gainHp"/>
+   <mul val="0.9" order="0x50" stat="reducePdef"/>
+   <add val="100" order="0x40" stat="addDmg"/>
+   <add val="100" order="0x40" stat="cAtkBleed"/>
+   <add val="400" order="0x40" stat="rCrit">
+	  <player behind="true"/>
+   </add>
+  </for>
+  </item>
+<item id="81108" name="The Necrominicon"><!-- Books -->
+  <for>
+    <set val="433" order="0x08" stat="pAtk"/>
+    <set val="321" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<basemul val="0.7" order="0x40" stat="mCritRate"/>
+	<basemul val="0.15" order="0x40" stat="mAtkSpd"/>
+	<mul val="0.88" order="0x40" stat="reduceMdef"/>
+	<add val="0.25" order="0x40" stat="cAtkMagic"/>
+	<basemul val="0.3" order="0x40" stat="mAtk"/>
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<add val="0.15" order="0x40" stat="pvpMagicalDmg">
+	  <player behind="true"/>
+	</add>
+	<add val="0.1" order="0x40" stat="pvpPhysDmg">
+	  <player behind="true"/>
+	</add>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+</list>

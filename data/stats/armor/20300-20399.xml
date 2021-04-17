@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="20300" name="Agathion Seal Bracelet - Blue Sumo Wrestler - Wild Magic - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20301" name="Agathion Seal Bracelet - Great Sumo Match">
+  <for>
+  </for>
+</item>
+<item id="20302" name="Agathion Seal Bracelet - Great Sumo Match - Big Head / Firework - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20303" name="Agathion Seal Bracelet - Button-Eyed Bear Doll">
+  <for>
+  </for>
+</item>
+<item id="20304" name="Agathion Seal Bracelet - Button-Eyed Bear Doll - Escape - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20305" name="Agathion Seal Bracelet - Button-Eyed Bear Doll - Resurrection - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20306" name="Agathion Seal Bracelet - Button-Eyed Bear Doll - Energy - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20307" name="Agathion Seal Bracelet - God of Fortune">
+  <for>
+  </for>
+</item>
+<item id="20308" name="Agathion Seal Bracelet - God of Fortune - Energy - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20309" name="Agathion Seal Bracelet - Dryad">
+  <for>
+  </for>
+</item>
+<item id="20310" name="Agathion Seal Bracelet - Wonboso">
+  <for>
+  </for>
+</item>
+<item id="20311" name="Agathion Seal Bracelet - Wonboso - Wind Walk - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20312" name="Agathion Seal Bracelet - Daewoonso">
+  <for>
+  </for>
+</item>
+<item id="20313" name="Agathion Seal Bracelet - Daewoonso - New Year's Gift - 7 Day Expiration Period">
+  <for>
+  </for>
+</item>
+<item id="20321" name="Eye Protector">
+   <for>
+   <add order="0x40" stat="accCombat" val="20"/>
+   <add order="0x40" stat="mSkillEvasReduce" val="10"/>
+   <add order="0x40" stat="pSkillEvasReduce" val="15"/>
+   <add order="0x40" stat="pAtkRange" val="50">
+      <using kind="Bow,Crossbow"/>
+	</add>
+	<add order="0x40" stat="reflectRes" val="15"/>
+  </for>
+</item>
+<item id="20322" name="Napoleon Hat">
+  <for>
+  </for>
+</item>
+<item id="20323" name="Horn Hairband">
+  <for>
+  </for>
+</item>
+<item id="20324" name="Warlord's pride">
+    <for>
+   <add order="0x40" stat="accCombat" val="5"/>
+   <add order="0x40" stat="critDamEvas" val="15"/>
+   <add order="0x40" stat="addDmg" val="200"/>
+   <add order="0x10" stat="pAtkRange" val="20"/>
+   <set order="0x10" stat="pAtkAngle" val="360"/>
+   <add order="0x10" stat="atkCountMax" val="1"/>
+   <basemul order="0x40" stat="pAtk" val="0.2"/>
+   <basemul order="0x40" stat="maxHp" val="0.2"/>
+  </for>
+</item>
+<item id="20325" name="Plastic Hair">
+  <for>
+   <mul val="0.85" order="0x30" stat="debuffVuln"/>
+   <add order="0x40" stat="mAtkSpd" val="50"/>
+   <mul val="0.9" order="0x30" stat="MpConsume"/>
+   <add val="0.05" order="0x40" stat="giveHp"/>
+  </for>
+</item>
+<item id="20396" name="Steam Beatle Mounting Bracelet">
+  <for>
+  </for>
+</item>
+</list>

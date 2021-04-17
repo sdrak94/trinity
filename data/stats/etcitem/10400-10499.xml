@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10411" name="Full Bottle of Souls - 5 Souls (For Combat)">
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for/>
+</item>
+</list>

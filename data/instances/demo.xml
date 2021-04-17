@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="Giran Marketplace">
+  <activityTime val="5" />
+  <timeDelay val="24" />
+  <spawnlist>
+    <spawn npcId="20556" x="82352" y="148608" z="-3468" heading="0" respawn="0" />
+    <spawn npcId="20557" x="82355" y="148788" z="-3468" heading="0" respawn="0" />
+    <spawn npcId="20558" x="82357" y="148428" z="-3468" heading="0" respawn="0" />
+  </spawnlist>
+</instance>

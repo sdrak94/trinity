@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11600" name="Dynasty Ring">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+    <add val="23" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11601" name="Dynasty Earring">
+  <for>
+    <add val="90" order="0x10" stat="mDef"/>
+    <add val="35" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11602" name="Sealed Dynasty Necklace">
+  <for>
+    <add val="106" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11603" name="Sealed Dynasty Ring">
+  <for>
+    <add val="53" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11604" name="Sealed Dynasty Earring">
+  <for>
+    <add val="79" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+</list>

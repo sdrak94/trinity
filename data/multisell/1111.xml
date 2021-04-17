@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<item id="1">
+		<ingredient id="201000" count="600" />
+		<production id="99993" count="1" />
+	</item>
+	<item id="5">
+		<ingredient id="201000" count="60" />
+		<production id="9814" count="1" />
+	</item>
+	<item id="6">
+		<ingredient id="201000" count="60" />
+		<production id="9815" count="1" />
+	</item>
+	<item id="7">
+		<ingredient id="201000" count="60" />
+		<production id="9816" count="1" />
+	</item>
+	<item id="8">
+		<ingredient id="201000" count="60" />
+		<production id="9817" count="1" />
+	</item>
+	<item id="9">
+		<ingredient id="201000" count="60" />
+		<production id="9818" count="1" />
+	</item>
+	<item id="10">
+		<ingredient id="201000" count="600" />
+		<production id="8175" count="1" />
+	</item>
+	<item id="11">
+		<ingredient id="201000" count="600" />
+		<production id="8176" count="1" />
+	</item>
+
+</list>

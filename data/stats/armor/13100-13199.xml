@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13137" name="Vesper Helmet">
+  <for>
+    <add val="106" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13138" name="Vesper Leather Helmet">
+  <for>
+    <add val="106" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13139" name="Vesper Circlet">
+  <for>
+    <add val="106" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13140" name="Titanium Helmet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13141" name="Titanium Leather Helmet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13142" name="Titanium Circlet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13143" name="Sealed Vesper Helmet">
+  <for>
+    <add val="110" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13144" name="Sealed Vesper Leather Helmet">
+  <for>
+    <add val="110" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13145" name="Sealed Vesper Circlet">
+  <for>
+    <add val="110" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13146" name="Sealed Vesper Noble Helmet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13147" name="Sealed Vesper Noble Leather Helmet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="13148" name="Sealed Vesper Noble Circlet">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

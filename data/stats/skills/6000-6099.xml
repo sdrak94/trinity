@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="6000" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6001" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6002" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6003" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6004" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6005" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6006" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6007" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6008" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6009" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6010" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6011" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6012" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6013" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6014" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6015" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6016" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6017" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6018" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6019" levels="1" name="Searching Master">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6020" levels="1" name="Soul Retain">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6021" levels="1" name="Soul Retain">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6022" levels="1" name="Soul Retain">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6023" levels="1" name="Soul Retain">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6024" levels="1" name="Weight Aerial Cleft">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6025" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6026" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6027" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6028" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6029" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6030" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6031" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6032" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6033" levels="1" name="Treasure Seeker's Betrayal">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6034" levels="1" name="Freeze">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6035" levels="1" name="Transform Red Team">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6036" levels="1" name="Transform Blue Team">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6037" levels="1" name="Soul Unleash">
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+</skill>
+<skill id="6038" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6039" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6040" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6041" levels="1" name="Phoenix Rush">
+    <set name="castRange" val="700"/>
+    <set name="effectRange" val="1200"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="600"/>
+	<set name="areaLimit" val="true"/>
+	<set name="areaAngle" val="20"/>
+	<set name="coolTime" val="310"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="magicLvl" val="76"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="overHit" val="true"/>
+    <set name="power" val="7467"/>
+    <set name="reuseDelay" val="6000"/>
+    <set name="skillRadius" val="700"/>
+    <set name="skillType" val="PDAM"/>
+    <set name="SSBoost" val="2.0"/>
+    <set name="target" val="TARGET_FRONT_AREA"/>
+</skill>
+<skill id="6042" levels="1" name="Phoenix Cleanse">
+  <set name="castRange" val="600"/>
+  <set name="effectRange" val="1100"/>
+  <set name="hitTime" val="2500"/>
+  <set name="isMagic" val="true"/>
+  <set name="magicLvl" val="83"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="15000"/>
+  <set name="skillType" val="CANCEL_DEBUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="6043" levels="1" name="Phoenix Flame Feather">
+  <set name="element" val="0"/> <!-- Fire -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="2500"/>
+  <set name="isMagic" val="true"/>  
+  <set name="magicLvl" val="83"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="370"/>
+  <set name="reuseDelay" val="15000"/> <!-- Guess -->
+  <set name="skillRadius" val="200"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="target" val="TARGET_AURA"/>
+</skill>
+<skill id="6044" levels="1" name="Phoenix Flame Beak">
+  <set name="castRange" val="60"/>
+  <set name="effectRange" val="400"/>
+  <set name="element" val="0"/> <!-- Fire -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="1200"/>
+  <set name="magicLvl" val="83"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="12156"/>
+  <set name="reuseDelay" val="3000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="6045" levels="1" name="Presentation - Fortune Bug">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6046" levels="14" name="Piercing Attack">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6047" levels="14" name="Whirlwind">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6048" levels="14" name="Lance Smash">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6049" levels="14" name="Battle Cry">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6050" levels="14" name="Power Smash">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6051" levels="14" name="Energy Burst">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6052" levels="14" name="Shockwave LOL">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6053" levels="4" name="Howl">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6054" levels="1" name="Switch State">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6055" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6056" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6057" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6058" levels="1" name="Report Status">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6059" levels="1" name="Counter Critical">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="reuseDelay" val="16000"/>
+   <set name="staticReuse" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <for>
+    <effect name="Buff" time="12" val="0">
+      <mul order="0x50" stat="cAtk" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="6060" levels="1" name="Great Fury">
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="reuseDelay" val="30000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="staticReuse" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillRadius" val="1000"/>
+  <for>
+    <effect name="Buff" time="8" val="0" >
+      <mul order="0x50" stat="pAtkSpd" val="1.25"/>
+    </effect>
+  </for>
+</skill>
+<skill id="6061" levels="1" name="Decrease Weight">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6062" levels="1" name="Raid Boss - Level 82">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6063" levels="1" name="Raid Boss - Level 84">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6064" levels="1" name="Raid Boss - Level 84">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6065" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6066" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6067" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6068" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6069" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6070" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6071" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6072" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6073" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6074" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6075" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6076" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6077" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6078" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6079" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6080" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6081" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6082" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6083" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6084" levels="1" name="Raid Boss - Level 80">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6085" levels="1" name="Raid Boss - Level 83">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6086" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6087" levels="1" name="Raid Boss - Level 85">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6088" levels="1" name="Block Buff">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6089" levels="1" name="Attack Motion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6090" levels="1" name="Lightning Strike">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6091" levels="1" name="Anger">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6092" levels="1" name="Lightning Shock">
+  <set name="hitTime" val="1500"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6093" levels="1" name="Panther Hide">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="6094" levels="11" name="Panther Cancel">
+  <!-- Done by DJ MELERIX -->
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="hitTime" val="1500"/>
+  <set name="maxNegated" val="3"/> <!-- TODO: maxNegated amount needs to be verified, because in PTS maxNegated is upto 3, but in Live appears to be upto 2 -->
+  <set name="mpConsume" val="42"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="80"/> <!-- Base Land Rate -->
+  <set name="reuseDelay" val="75000"/>
+  <set name="skillType" val="CANCEL"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+  <sub order="0x40" stat="rEvas" val="25"/>
+  </for>
+</skill>
+<skill id="6095" levels="15" name="Panther Dark Claw">
+  <!-- Done by DJ MELERIX -->
+  <table name="#power"> 469 758 1136 1327 1525 1727 1925 2020 2067 2112 2156 2200 2241 2282 2320 </table>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="hitTime" val="1500"/>
+  <set name="lvlDepend" val="2"/>
+  <set name="mpConsume" val="42"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="#power"/>
+  <set name="reuseDelay" val="12000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="30" val="0" effectPower="80" effectType="WEAKNESS">
+      <sub order="0x40" stat="darkRes" val="25"/>
+    </effect>
+  </for>
+</skill>
+<skill id="6096" levels="13" name="Panther Fatal Claw">
+  <!-- Done by DJ MELERIX -->
+  <table name="#power"> 3408 3980 4575 5180 5773 6060 6199 6335 6468 6598 6723 6844 6960 </table>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="hitTime" val="1080"/>
+  <set name="mpConsume" val="42"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="#power"/>
+  <set name="reuseDelay" val="8000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="6097" levels="1" name="Scissors">
+  <set name="hitTime" val="15"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="6098" levels="1" name="Rock">
+  <set name="hitTime" val="15"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+  </skill>
+<skill id="6099" levels="1" name="Paper">
+  <set name="hitTime" val="15"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+</skill>
+<skill id="23019" levels="3" name="Scissors">
+  <set name="hitTime" val="15"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="23021" levels="3" name="Scissors">
+  <set name="hitTime" val="15"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+
+</list>

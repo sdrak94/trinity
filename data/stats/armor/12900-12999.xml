@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12978" name="Zubei's Helmet - Light Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+	<add val="0.5" order="0x40" stat="rEvas"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12979" name="Zubei's Helmet - Robe Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12980" name="Avadon Circlet - Light Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12981" name="Avadon Circlet - Robe Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12982" name="Doom Helmet - Light Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12983" name="Doom Helmet - Robe Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12984" name="Blue Wolf Helmet - Light Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12985" name="Blue Wolf Helmet - Robe Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12986" name="Dark Crystal Helmet - Light Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12987" name="Dark Crystal Helmet - Robe Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12988" name="Tallum Helmet - Light Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12989" name="Tallum Helmet - Robe Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12990" name="Majestic Circlet - Light Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12991" name="Majestic Circlet - Robe Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12992" name="Helm of Nightmare - Light Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12993" name="Helm of Nightmare - Robe Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12994" name="Sealed Dark Crystal Helmet - Light Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12995" name="Sealed Dark Crystal Helmet - Robe Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12996" name="Sealed Tallum Helmet - Light Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12997" name="Sealed Tallum Helmet - Robe Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12998" name="Sealed Majestic Circlet - Light Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="12999" name="Sealed Majestic Circlet - Robe Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

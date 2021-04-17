@@ -1,0 +1,60 @@
+<html><head><title>Register Your Email</title></head><body>
+
+<center>
+<font name="hs12" color="c88f05">L2Trinity</font>
+
+<img src="L2UI.squaregray" width="320" height="1">
+<table width=320 height=80 bgcolor=222120>
+	<tr>
+		<td>
+			<center>
+				<font color = 3f6293>%name%</font><br1>
+				<font color = 3f6293>You have logged in from a new PC, in order to secure</font><br1>
+				<font color = 3f6293>your account we need verify your identity so you can use </font><br1>
+				<font color = 3f6293>all server's functions (enchants,augmentation,trades).</font><br1>
+			</center>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="320" height="1">
+<br><br>
+<center>
+<font color=686764>
+To continue, enter the verification code you received on your email:<br>
+</font>
+<table width=320>
+	<tr>
+		<td width=100 align=left>
+			<font color=686764>New HWID:</font>
+		</td>
+		<td width=100 align=left>
+			<font color = 3f6293>%hwid%</font>
+		</td>
+	</tr>
+</table>
+<table width=320>
+	<tr>
+		<td width=100 align=left>
+			<font color=686764>Email:</font>
+		</td>
+		<td width=100 align=left>
+			<font color = 3f6293>%mail%</font>
+		</td>
+	</tr>
+</table>
+<table width=320>
+	<tr>
+		<td width=100 align=left>
+			<font color=686764>CODE:</font>
+		</td>
+		<td width=100 align=left>
+			<multiedit var="code" width=100 height=20 />
+		</td>
+	</tr>
+</table>
+
+<br><br>
+<button value="Unlock and Save this HWID" action="bypass -h email_save_new_hwid $code" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Unlock for 1 Session" action="bypass -h email_keep_only_once_ok $code" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Keep Me Locked" action="bypass -h email_keep_me_locked" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+</body></html>

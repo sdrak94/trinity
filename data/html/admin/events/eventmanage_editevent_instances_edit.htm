@@ -1,0 +1,50 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<img src="L2UI.SquareBlank" width=1 height=5>
+
+<br>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Instance ID</font></td>
+<td><font color=9f9f9f>%instance_id%</font></td>
+</tr>
+
+<tr>
+<td align=left><font color=ac9887>Instance name</font></td>
+<td align=left><font color=9f9f9f>%instance_name%</font></td>
+</tr>
+
+</table>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br1>
+
+<font color=9f9f9f>Instance parameters:</font> <br>
+
+%configs%
+
+<br>
+
+<edit var="var" width=201 height=13>
+
+<br1>
+
+<table>
+
+<tr>
+<td align=right><button value="Set name" action="bypass admin_event_manage edit_main_instance_type_set_name $var" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Delete instance" action="bypass admin_event_manage delete_main_instance_type" width=100 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+
+<button value="Back" action="bypass admin_event_manage edit_event %event% Instances" width=70 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

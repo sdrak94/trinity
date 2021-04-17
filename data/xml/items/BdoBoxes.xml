@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<box id="800006" name="Lucky Box" >
+		<reward itemId="91000" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91001" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91002" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91003" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91004" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91005" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91006" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91007" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91009" ammount="1" enchant="8-13" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91010" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91011" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91012" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91013" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91014" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91015" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91016" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91017" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91018" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91019" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91023" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91024" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91027" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91028" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91029" ammount="1" enchant="8-13" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="8206" ammount="1" enchant="8-13" chance="15"  proEnchRate="10"  proEnchant="true" rndAug="true"/>
+	</box>
+	<box id="800007" name="Lucky Box" >
+		<reward itemId="91000" ammount="1" enchant="12-15" chance="10" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91001" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91002" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91003" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91004" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91005" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91006" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91007" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91009" ammount="1" enchant="11-14" chance="15" proEnchRate="45" proEnchant="true" rndAug="true"/>
+		<reward itemId="91010" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91011" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91012" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91013" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91014" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91015" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91016" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91017" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91018" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91019" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91023" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91024" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91027" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91028" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91029" ammount="1" enchant="11-14" chance="15" proEnchRate="45"  proEnchant="true" rndAug="true"/>
+		<reward itemId="8206" ammount="1" enchant="11-14" chance="15"  proEnchRate="45"  proEnchant="true" rndAug="true"/>
+	</box>                                                                                  
+	<box id="800008" name="Lucky Box" >                                                      
+		<reward itemId="91000" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91001" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91002" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91003" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91004" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91005" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91006" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91007" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91009" ammount="1" enchant="12-15" chance="15" proEnchRate="10" proEnchant="true" rndAug="true"/>
+		<reward itemId="91010" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91011" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91012" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91013" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91014" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91015" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91016" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91017" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91018" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91019" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91023" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91024" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91027" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91028" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="91029" ammount="1" enchant="12-15" chance="15" proEnchRate="10"  proEnchant="true" rndAug="true"/>
+		<reward itemId="8206" ammount="1" enchant="12-15" chance="15"  proEnchRate="10"  proEnchant="true" rndAug="true"/>
+	</box>
+</list>

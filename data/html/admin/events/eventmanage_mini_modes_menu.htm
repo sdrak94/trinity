@@ -1,0 +1,53 @@
+<html><title>%title% - %name%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<img src="L2UI.SquareBlank" width=1 height=5>
+
+<table width=280 border=0 bgcolor="363636">
+<tr>
+<td width=112 align=center><button value="Back" action="bypass admin_event_manage mini_menu" width=70 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=119 align=center>%enableDisable%</td>
+<td width=100 align=right><combobox width=84 height=17 var=page list=%event_pages%></td>
+<td width=110 align=left><button value="Go" action="bypass admin_event_manage mini_edit_event %eventId% $page" width=40 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<br>
+
+<table width=260>
+
+<tr>
+<td width=50><font color=ac9775><a action="bypass admin_event_manage mini_modes_menu_compact">Modes:</a></font></td>
+<td width=80><combobox width=88 height=17 var=ebox list=%modes%></td>
+<td width=40><button value="Set" action="bypass admin_event_manage mini_set_active_mode menu $ebox" width=45 height=19 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=40><button value="New" action="bypass admin_event_manage mini_edit_modes_new" width=45 height=19 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table> 
+
+<br1>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+%features%
+
+<br>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br1>
+
+<table>
+<tr>
+<td><button value="Add Feature" action="bypass admin_event_manage mini_edit_feature_add" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Edit Mode" action="bypass admin_event_manage mini_edit_modes_menu" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<button value="Back" action="bypass admin_event_manage mini_edit_event %eventId%" width=75 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

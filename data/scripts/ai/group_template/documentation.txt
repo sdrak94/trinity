@@ -1,0 +1,12 @@
+Group Template AI:
+This folder contains AI scripts for group templates.  That is, if many different mobs share the same behaviour, 
+a group AI script can be created for all of them.  Such group templates ought to be here.
+
+Group templates can be subclassed.  In other words, a group may inherit from another group.  For example,
+one group template might define mobs that cast spells.  Another template may then define the AI for mobs
+that cast spells AND use shots.  In that case, instead of rewriting all the attack and spell-use AI, we can
+inherit from the first group template, then add the new behaviours, and split up the NPC registrations appropriately.
+
+"NPC registrations" refers to the addition of NPCs in the various events of the scripts, such as onAttack, onKill, etc
+Those are done by using keywords such as "addKillId" etc.  For more details on registrations, see 
+"scripts/quests/documentation.txt"

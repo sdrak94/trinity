@@ -1,0 +1,190 @@
+<list>
+<skill id="17000" levels="1" name="resist s">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="S grade (regular) weapons damage reduced by 50%"/>
+  <for>
+      <add order="0x40" stat="resistSGradeWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17001" levels="1" name="resist s80">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="resist s grade weapons"/>
+  <for>
+      <add order="0x40" stat="resistS80GradeWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17002" levels="1" name="resist s84">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="resist s80 grade weapons"/>
+  <for>
+      <add order="0x40" stat="resistS84GradeWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17003" levels="1" name="resist vesper 1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Vesper weapons damage reduced by 50%"/>
+  <for>
+      <add order="0x40" stat="resistVesperWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17004" levels="1" name="resist titanium 1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Titanium weapons damage reduced by 50%"/>
+  <for>
+      <add order="0x40" stat="resistTitaniumWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17005" levels="1" name="Extreme Weapon S S80 Resistance">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Resists 75% of player S and S80 weapons damage"/>
+  <for>
+      <add order="0x40" stat="resistSGradeWeapons" val="75"/>
+	  <add order="0x40" stat="resistS80GradeWeapons" val="75"/>
+  </for>
+</skill>
+<skill id="17006" levels="1" name="Extreme Standard Weapon Resistance">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Resists 75% of player S (excluding rare, unique and epic), Dynasty, Icarus, Vesper, and Titanium weapons damage"/>
+  <for>
+      <add order="0x40" stat="resistNormalWeapons" val="75"/>
+	  <add order="0x40" stat="resistDynastyWeapons" val="75"/>
+	  <add order="0x40" stat="resistIcarusWeapons" val="75"/>
+	  <add order="0x40" stat="resistVesperWeapons" val="75"/>
+	  <add order="0x40" stat="resistTitaniumWeapons" val="75"/>
+  </for>
+</skill>
+<skill id="17007" levels="1" name="Extreme resist dread weapons">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Resists 80% of Dread weapons' damage :("/>
+  <for>
+      <add order="0x40" stat="resistDreadWeapons" val="80"/>
+  </for>
+</skill>
+<skill id="17008" levels="1" name="Extreme resist titanium weapons">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Resists 80% of Titanium weapons' damage :("/>
+  <for>
+      <add order="0x40" stat="resistTitaniumWeapons" val="80"/>
+  </for>
+</skill>
+<skill id="17009" levels="1" name="Vulnerable to Vesper">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Takes 33% more damage from Vesper weapons"/>
+  <for>
+      <sub order="0x40" stat="resistVesperWeapons" val="33"/>
+  </for>
+</skill>
+<skill id="17200" levels="1" name="does less damage to Vesper">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Does less damage to Vesper armors"/>
+  <for>
+      <mul order="0x70" stat="pAtk" val="0.25">
+	    <or>
+	     <target hasSkill="8283"/>
+		 <target hasSkill="8285"/>
+		 <target hasSkill="8287"/>
+		 </or>
+		 </mul>
+	  <mul order="0x70" stat="mAtk" val="0.25">
+	    <or>
+		<target hasSkill="8283"/>
+		 <target hasSkill="8285"/>
+		 <target hasSkill="8287"/>
+		 </or>
+	  </mul>
+  </for>
+</skill>
+<skill id="17500" levels="1" name="vulnerable to fist weapons">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Very vulnerable to fist-type weapons"/>
+  <for>
+      <add order="0x40" stat="resistVesperWeapons" val="50"/>
+  </for>
+</skill>
+<skill id="17501" levels="1" name="resist sharp weapons 1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Cutting and piercing weapons' damage reduced by 30%"/>
+  <for>
+      <mul order="0x30" stat="swordWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="daggerWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="bowWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="crossbowWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="dualWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="bigSwordWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="dualDaggerWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="rapierWpnVuln" val="0.7"/>
+	  <mul order="0x30" stat="ancientWpnVuln" val="0.7"/>
+  </for>
+</skill>
+<skill id="17600" levels="1" name="Fast Regen I">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Fast HP Regen I"/>
+  <for>
+      <mul order="0x30" stat="regHp" val="2"/>
+  </for>
+</skill>
+<skill id="17601" levels="1" name="Fast Regen II">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Fast HP Regen II"/>
+  <for>
+      <mul order="0x30" stat="regHp" val="3"/>
+  </for>
+</skill>
+<skill id="17602" levels="1" name="Ultra Fast Regen">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Ultra Fast Regen"/>
+  <for>
+      <mul order="0x30" stat="regHp" val="4"/>
+  </for>
+</skill>
+<skill id="17603" levels="1" name="Insanely Fast Regen">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="Insanely Fast Regen"/>
+  <for>
+      <mul order="0x30" stat="regHp" val="5"/>
+  </for>
+</skill>
+<skill id="17700" levels="1" name="Reflect physical skills I">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="desc" val="20% chance to reflect physical skills"/>
+  <for>
+      <add order="0x40" stat="reflectSkillPhysic" val="20"/>
+  </for>
+</skill>
+</list>

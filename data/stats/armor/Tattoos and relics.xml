@@ -1,0 +1,149 @@
+<list>
+<!--<item id="99816" name="Greater Tattoo of Power">
+ <for>  
+  <basemul val='0.50' order='0x40' stat='pAtk'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id="99817" name="Greater Tattoo of Fire">
+ <for>   
+   <add val='0.46' order='0x40' stat='cAtk'/>
+   <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id="99818" name="Greater Tattoo of Resolve">
+ <for>  
+  <add val='17' order='0x40' stat='runSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id="99819" name="Greater Tattoo of Flame">
+ <for>  
+  <basemul val='0.28' order='0x40' stat='mAtkSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id="99823" name="Greater Tattoo of Bravery">
+ <for>  
+  <add val='80' order='0x40' stat='rCrit'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id="99824" name="Greater Tattoo of Blood">
+ <for>  
+  <add val='10.1' order='0x40' stat='rEvas'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id='99825' name="Greater Tattoo of Absolute">
+ <for>  
+  <add val='10.1' order='0x40' stat='accCombat'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+</for>
+</item>
+<item id='99826' name="Greater Tattoo of Soul">
+ <for>  
+  <basemul val='0.2' order='0x40' stat='pAtkSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id='99827' name="Greater Tattoo of Avadon">
+ <for>  
+  <sub val='0.29' order='0x40' stat='pReuse'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id='99828' name="Greater Tattoo of Doom">
+ <for>  
+  <basemul val='0.85' order='0x40' stat='mCritRate'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id='99829' name="Greater Tattoo of Pledge">
+ <for>  
+  <basemul val='1.0' order='0x40' stat='mAtk'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+<item id='99830' name="Greater Tattoo of Divine">
+ <for>  
+  <sub val='0.29' order='0x40' stat='mReuse'/>  
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+ </item>-->
+ <item id="99816" name="Greater Tattoo of Power">
+ <for>  
+  <add val='700' order='0x40' stat='pAtk'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id="99817" name="Greater Tattoo of Fire">
+ <for>   
+   <add val='0.35' order='0x40' stat='cAtk'/>
+   <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id="99818" name="Greater Tattoo of Resolve">
+ <for>  
+  <add val='15' order='0x40' stat='runSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id="99819" name="Greater Tattoo of Flame">
+ <for>  
+  <add val='80' order='0x50' stat='mAtkSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id="99823" name="Greater Tattoo of Bravery">
+ <for>  
+  <add val='70' order='0x40' stat='rCrit'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id="99824" name="Greater Tattoo of Blood">
+ <for>  
+  <add val='7' order='0x40' stat='rEvas'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id='99825' name="Greater Tattoo of Absolute">
+ <for>  
+  <add val='7' order='0x40' stat='accCombat'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+</for>
+</item>
+ <item id='99826' name="Greater Tattoo of Soul">
+ <for>  
+  <add val='70' order='0x40' stat='pAtkSpd'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id='99827' name="Greater Tattoo of Avadon">
+ <for>  
+  <sub val='0.15' order='0x40' stat='pReuse'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id='99828' name="Greater Tattoo of Doom">
+ <for>  
+  <basemul val='0.95' order='0x30' stat='mCritRate'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id='99829' name="Greater Tattoo of Pledge">
+ <for>  
+  <add val='2200' order='0x40' stat='mAtk'/>
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+</item>
+ <item id='99830' name="Greater Tattoo of Divine">
+ <for>  
+  <sub val='0.15' order='0x40' stat='mReuse'/>  
+  <enchant val='3' order='0x40' stat='pDef'/>
+ </for>
+ </item>
+
+ </list>
+ 
+ 

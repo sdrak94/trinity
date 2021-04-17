@@ -1,0 +1,41 @@
+<list>
+<item id='50514' name="Ixion Spear">
+  <for>
+    <set val="543" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.15" order="0x40" stat="maxHp"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<add val="120" order="0x40" stat="pAtkAngle"/>
+	<basemul val="0.14" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<add val="0.1" order="0x40" stat="pvpPhysDmg">
+	  <player behind="true"/>
+	</add>
+	<add val="0.1" order="0x40" stat="pvpPhysSkillsDmg">
+	  <player behind="true"/>
+	</add>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+</list>

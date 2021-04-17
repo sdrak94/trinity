@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<portal id="30080">
+		<announce onSpawn="Portal for Lilith Raid Event is now open."/>
+		<spawnLoc x="82629" y="149006" z="-3468" />
+		<despawn after="2"/> <!-- minutes -->
+		<spawnOn monthDay="1" h="00" m="05" />
+	</portal>
+	
+	<portal id="30081">
+		<announce onSpawn="Portal for Lilith Raid Event is now open."/>
+		<spawnLoc x="82629" y="149006" z="-3468" />
+		<despawn after="5"/> <!-- minutes -->
+		<spawnOn weekDay="1" h="23" m="17" />
+	</portal>
+</list>

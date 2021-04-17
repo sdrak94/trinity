@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+
+<item id="99831" name="Tattoo of Concentration">
+  <for>
+    <sub val='0.15' order='0x40' stat='pReuse'/>
+	  <add val='35' order='0x40' stat='pAtkSpd'/>
+		<enchant val='6' order='0x40' stat='pDef'/>
+		<add val='15' order='0x40' stat='pDef'/>
+		<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99832" name="Tattoo of Supporter">
+  <for>
+    <sub val='0.15' order='0x40' stat='mReuse'/> 
+    <add val='40' order='0x50' stat='mAtkSpd'/>	
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99833" name="Tattoo of Untouchable">
+  <for>
+    <add val='15' order='0x40' stat='runSpd'/>
+	<add val='4' order='0x40' stat='rEvas'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99834" name="Tattoo of Agility">
+  <for>
+    <add val='7' order='0x40' stat='runSpd'/>
+	<add val='7' order='0x40' stat='rEvas'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99835" name="Tattoo of Enchanter">
+  <for>
+    <sub val='0.075' order='0x40' stat='mReuse'/> 
+    <add val='80' order='0x50' stat='mAtkSpd'/>	
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99836" name="Tattoo of Haste">
+  <for>
+      <sub val='0.075' order='0x40' stat='pReuse'/>
+	  <add val='70' order='0x40' stat='pAtkSpd'/>
+		<enchant val='6' order='0x40' stat='pDef'/>
+		<add val='15' order='0x40' stat='pDef'/>
+		<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99837" name="Tattoo of Stability">
+  <for>
+	<add val='700' order='0x40' stat='pAtk'/>
+	<add val='4' order='0x40' stat='accCombat'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99838" name="Tattoo of Precision">
+  <for>
+	<add val='350' order='0x40' stat='pAtk'/>
+	<add val='7' order='0x40' stat='accCombat'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99839" name="Tattoo of Assassin">
+  <for>
+   <add val='0.35' order='0x40' stat='cAtk'/>
+  <add val='35' order='0x40' stat='rCrit'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99840" name="Tattoo of Severity">
+  <for>
+   <add val='0.175' order='0x40' stat='cAtk'/>
+	<add val='70' order='0x40' stat='rCrit'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99841" name="Tattoo of Nuker">
+  <for>
+	<basemul val='0.95' order='0x30' stat='mCritRate'/>
+	<add val='1100' order='0x40' stat='mAtk'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99842" name="Tattoo of Empower">
+  <for>
+	<basemul val='0.45' order='0x30' stat='mCritRate'/>
+	<add val='2200' order='0x40' stat='mAtk'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+
+<item id="99843" name="Tattoo of Berserker">
+  <for>
+	<add val='700' order='0x40' stat='pAtk'/>
+	<add val='35' order='0x40' stat='pAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99844" name="Tattoo of Zealot">
+  <for>
+	<add val='350' order='0x40' stat='pAtk'/>
+	<add val='70' order='0x40' stat='pAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99845" name="Tattoo of Balance">
+  <for>
+	<add val='7' order='0x40' stat='accCombat'/>
+	<add val='4' order='0x40' stat='rEvas'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99846" name="Tattoo of Dexterity">
+  <for>
+	<add val='4' order='0x40' stat='accCombat'/>
+	<add val='7' order='0x40' stat='rEvas'/>
+		<enchant val='6' order='0x40' stat='pDef'/>
+		<add val='15' order='0x40' stat='pDef'/>
+		<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99847" name="Tattoo of Tattoo of Caster">
+  <for>
+	<basemul val='0.45' order='0x30' stat='mCritRate'/>
+	<add val='80' order='0x50' stat='mAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99848" name="Tattoo of Tattoo of Sorcery">
+  <for>
+	<basemul val='0.95' order='0x30' stat='mCritRate'/>
+	<add val='40' order='0x50' stat='mAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99849" name="Tattoo of Overpower">
+  <for>
+      <sub val='0.075' order='0x40' stat='pReuse'/>
+	  <add val='700' order='0x40' stat='pAtk'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99850" name="Tattoo of Readiness">
+  <for>
+      <sub val='0.15' order='0x40' stat='pReuse'/>
+	  <add val='350' order='0x40' stat='pAtk'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99851" name="Tattoo of Lethality">
+  <for>
+   <add val='0.35' order='0x40' stat='cAtk'/>
+  <add val='35' order='0x40' stat='pAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+<item id="99852" name="Tattoo of Swiftness">
+  <for>
+   <add val='0.175' order='0x40' stat='cAtk'/>
+  <add val='70' order='0x40' stat='pAtkSpd'/>
+	<enchant val='6' order='0x40' stat='pDef'/>
+	<add val='15' order='0x40' stat='pDef'/>
+	<enchant val='2' order='0x40' stat='mDef'/>
+  </for>
+</item>
+</list>
+

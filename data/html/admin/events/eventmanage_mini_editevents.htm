@@ -1,0 +1,35 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<font color=LEVEL><br>Edit events:<br></font>
+
+<font color=ac9775>Automatic event schedulers:<br1></font>
+<font color=9f9f9f>Min %eventsDelayMin% minutes, Max %eventsDelayMax% minutes.</font>
+<edit var="delay" width=130 height=15>
+
+<table width=145>
+<tr>
+<td><button value="Min mins:" action="bypass admin_event_manage set_events_delay_min $delay" width=70 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Max mins:" action="bypass admin_event_manage set_events_delay_max $delay" width=70 height=22 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+<br>
+
+<font color=LEVEL>Edit events:</font>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+<br>
+
+%events%
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+<button value="New Map" action="bypass admin_event_manage create_event_map" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+<button value="Back" action="bypass admin_event_manage" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

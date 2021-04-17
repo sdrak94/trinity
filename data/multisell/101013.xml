@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+    <ingredient id="200000" count="150"/>
+    <production id="90000" count="1" enchant="3"/> 
+  </item>
+   <item id="2"> 
+    <ingredient id="200000" count="150"/>
+    <production id="90001" count="1" enchant="3"/> 
+  </item>
+   <item id="3"> 
+      <ingredient id="200000" count="150"/>
+    <production id="90002" count="1" enchant="3"/> 
+  </item>
+   <item id="4"> 
+    <ingredient id="200000" count="150"/>
+    <production id="90003" count="1" enchant="3"/> 
+  </item>
+   <item id="5"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90004" count="1" enchant="3"/> 
+  </item>
+   <item id="6"> 
+    <ingredient id="200000" count="150"/>
+    <production id="90005" count="1" enchant="3"/> 
+  </item>
+   <item id="7"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90006" count="1" enchant="3"/> 
+  </item>
+   <item id="8"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90007" count="1" enchant="3"/> 
+  </item>
+   <item id="9"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90008" count="1" enchant="3"/> 
+  </item>
+   <item id="10"> 
+      <ingredient id="200000" count="150"/>
+    <production id="90009" count="1" enchant="3"/> 
+  </item>
+   <item id="11"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90010" count="1" enchant="3"/> 
+  </item>
+   <item id="12"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90011" count="1" enchant="3"/> 
+  </item>
+   <item id="13"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90012" count="1" enchant="3"/> 
+  </item>
+   <item id="14"> 
+     <ingredient id="200000" count="150"/>
+    <production id="90013" count="1" enchant="3"/> 
+  </item>
+   <item id="15"> 
+    <ingredient id="200000" count="150"/>
+    <production id="90014" count="1" enchant="3"/> 
+  </item>
+   <item id="16"> 
+   <ingredient id="200000" count="150"/>
+    <production id="90017" count="1" enchant="3"/> 
+  </item>
+   <item id="17"> 
+      <ingredient id="200000" count="150"/>
+    <production id="90015" count="1" enchant="2"/> 
+  </item>
+   <item id="18"> 
+   <ingredient id="200000" count="150"/>
+    <production id="90016" count="1" enchant="2"/> 
+  </item>
+</list>

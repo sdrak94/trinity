@@ -1,0 +1,681 @@
+/**
+ * 
+ */
+package cz.nxs.events.engine.stats;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.StringTokenizer;
+import java.util.concurrent.ScheduledFuture;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastMap;
+import cz.nxs.events.NexusLoader;
+import cz.nxs.events.engine.base.EventType;
+import cz.nxs.interf.PlayerEventInfo;
+import cz.nxs.l2j.CallBack;
+
+/**
+ * @author hNoke
+ *
+ */
+public class GlobalStats extends EventStats
+{
+	private static final int RELOAD_DELAY_GLOBALSTATS = 1800000;
+	
+	private Map<PlayerEventInfo, Map<EventType, GlobalStatsModel>> _playerGlobalStats;
+	private Map<PlayerEventInfo, String> _playerGlobalStatsHtml;
+	
+	private Map<SortType, Map<Integer, String>> _globalStatsHtml;
+	
+	@SuppressWarnings("unused")
+	private ScheduledFuture<?> _globalStatsReload;
+	private long _lastLoad;
+	
+	public enum GlobalStatType
+	{
+		COUNT_PLAYED("count played"),
+		WINS("wins"),
+		LOSES("loses"),
+		KILLS("kills"),
+		DEATHS("deaths"),
+		SCORE("score");
+		
+		String name;
+		GlobalStatType(String name)
+		{
+			this.name= name;
+		}
+	}
+	
+	private enum SortType
+	{
+		NAME("characters.char_name"),
+		COUNTPLAYED("nexus_stats_global.count_played DESC"),
+		WINS("nexus_stats_global.wins DESC"),
+		LOSES("nexus_stats_global.loses DESC"),
+		SCORE("nexus_stats_global.score DESC"),
+		DEATHS("nexus_stats_global.deaths DESC"),
+		LEVEL("characters.level DESC");
+		
+		String dbName;
+		SortType(String dbName)
+		{
+			this.dbName = dbName;
+		}
+	}
+	
+	public GlobalStats()
+	{
+		
+	}
+	
+	public GlobalStatsModel getPlayerGlobalStatsCopy(PlayerEventInfo player, EventType type)
+	{
+		GlobalStatsModel oldModel = _playerGlobalStats.get(player).get(type);
+		
+		FastMap<GlobalStatType, Integer> stats = new FastMap<GlobalStatType, Integer>();
+		stats.putAll(oldModel.stats);
+		
+		GlobalStatsModel newModel = new GlobalStatsModel(type, stats);
+		return newModel;
+	}
+	
+	public GlobalStatsModel getPlayerGlobalStats(PlayerEventInfo player, EventType type)
+	{
+		return _playerGlobalStats.get(player).get(type);
+	}
+	
+	public void setPlayerGlobalStats(PlayerEventInfo player, EventType type, GlobalStatsModel stats)
+	{
+		_playerGlobalStats.get(player).put(type, stats);
+	}
+
+	@Override
+	public void load()
+	{
+		_playerGlobalStats = new FastMap<PlayerEventInfo, Map<EventType, GlobalStatsModel>>();
+		_playerGlobalStatsHtml = new FastMap<PlayerEventInfo, String>();
+		
+		loadGlobalStats();
+		
+		NexusLoader.debug("Global statistics engine loaded.");
+	}
+	
+	@Override
+	public void onLogin(PlayerEventInfo player)
+	{
+		loadPlayer(player);
+	}
+
+	@Override
+	public void onDisconnect(PlayerEventInfo player)
+	{
+		forgetPlayerGlobalStats(player);
+	}
+	
+	@Override
+	public void statsChanged(PlayerEventInfo player)
+	{
+		_playerGlobalStatsHtml.remove(player);
+	}
+	
+	@Override
+	public void onCommand(PlayerEventInfo player, String command)
+	{
+		if(command.startsWith("oneplayer"))
+		{
+			PlayerEventInfo target = null;
+			String name = null;
+			String sortType = null;
+			String page = null;
+			
+			StringTokenizer st = new StringTokenizer(command);
+			st.nextToken();
+			
+			if(st.hasMoreTokens())
+				name = st.nextToken();
+			
+			if(st.hasMoreTokens())
+				sortType = st.nextToken();
+			
+			if(st.hasMoreTokens())
+				page = st.nextToken();
+			
+			if(name == null)
+				target = player;
+			else
+				target = CallBack.getInstance().getOut().getPlayer(name);
+			
+			if(target != null)
+				showPlayersGlobalStats(player, target, sortType, page);
+			else
+			{
+				player.screenMessage("This player is either offline or doesn't exist.", "Statistics", false);
+				player.sendMessage("This player is either offline or doesn't exist.");
+			}
+		}
+		else if(command.startsWith("topplayers"))
+		{
+			String params = command.substring(11);
+			showGlobalStats(player, params);
+		}
+	}
+	
+	private void showGlobalStats(PlayerEventInfo player, String params)
+	{
+		StringTokenizer st = new StringTokenizer(params);
+		
+		int page = Integer.parseInt(st.nextToken());
+		if(page == 0)
+			page = 1;
+		SortType sort = st.hasMoreTokens() ? SortType.valueOf(st.nextToken()) : null;
+		
+		if(sort != null)
+		{
+			String text = null;
+			text = _globalStatsHtml.get(sort).get(page);
+			
+			if(text != null)
+			{
+				text = updateStatuses(text, sort.toString(), page);
+				showHtmlText(player, text);
+			}
+		}
+	}
+	
+	private void showPlayersGlobalStats(PlayerEventInfo player, PlayerEventInfo target, String sortType, String page)
+	{
+		statsChanged(target);
+		
+		String text = null;
+		if(!_playerGlobalStatsHtml.containsKey(target))
+			text = generatePlayersGlobalStatsHtml(target);
+		else
+			text = _playerGlobalStatsHtml.get(target);
+		
+		text = addExtraData(text, sortType, page);
+			
+		if(text != null)
+		{
+			showHtmlText(player, text);
+			player.sendStaticPacket();
+		}
+	}
+	
+	private String addExtraData(String text, String sortType, String page)
+	{
+		if(sortType != null && page != null)
+		{
+			int pageNumber = Integer.parseInt(page);
+			
+			text = text.replaceAll("%data%", "<button value=\"Back\" width=60 action=\"bypass nxs_showstats_global_topplayers " + pageNumber + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">");
+		}
+		else
+		{
+			text = text.replaceAll("%data%", "");
+		}
+		
+		return text;
+	}
+	
+	private String generatePlayersGlobalStatsHtml(PlayerEventInfo player)
+	{
+		TextBuilder tb = new TextBuilder();
+		
+		/*tb.append("<table width=150><tr><td width=50><center>" + ((count - 1) / 10 != 0 ? "<a action=\"bypass -h eventstats " + ((count - 1) / 10) + "\">Prev</a>" : "Prev") + "</td><td width=50><center>" + (((count - 1) / 10) + 1) + "</td><td width=50><center>" + ((count - 1) / 10 != size / 10 ? "<a action=\"bypass -h eventstats " + (((count - 1) / 10) + 2) + "\">Next</a>" : "Next") + "</td></tr></table>
+				<br><br><center><table width=700 bgcolor=5A5A5A><tr><td width=30><center>Rank</td><td width=100><center>Name</td><td width=65><center>Events</td><td width=65><center>Win%</td><td width=65><center>K:D</td><td width=65><center>Wins</td><td width=65><center>Losses</td><td width=65><center>Kills</td><td width=65><center>Deaths</td><td width=100><center>Favourite Event</td></tr></table><br>" + "<center><table width=720>");
+		tb.append("<tr><td width=30><center>" + count + ".</td><td width=100><a action=\"bypass -h eventstats_show " + rset.getInt("player") + "\">" + rset.getString("char_name") + "</a></td><td width=65><center>" + rset.getInt("num") + "</td><td width=65><center>" + rset.getDouble("winpercent") + "%</td><td width=65><center>" + rset.getDouble("kdratio") + "</td><td width=65><center>" + rset.getInt("wins") + "</td><td width=65><center>" + rset.getInt("losses") + "</td><td width=65><center>" + rset.getInt("kills") + "</td>" + "<td width=65><center>" + rset.getInt("deaths") + "</td><td width=120><center>" + EventType.getEventByMainId(rset.getInt("favevent")).getHtmlTitle() + "</td></tr>");
+		tb.append("</table>");*/
+
+		tb.append("<html><body><br><center><font color=ac9887>" + player.getPlayersName() + "'s event statistics</font><br>");
+		
+		String success, kdRatio;
+		
+		tb.append("<table width=740 bgcolor=4E4E4E><tr> "
+				+ "<td width=100><font color=B09D8E>Event</font></td><td width=90 align=center><font color=A9A8A7>Times played</font></td><td width=65 align=center><font color=A9A8A7>Win %</font></td><td width=65 align=center><font color=A9A8A7>K:D ratio</font></td><td width=65 align=center><font color=A9A8A7>Wins</font></td><td width=65 align=center><font color=A9A8A7>Loses</font></td><td width=65 align=center><font color=A9A8A7>Kills</font></td><td width=65 align=center><font color=A9A8A7>Deaths</font></td><td width=65 align=center><font color=A9A8A7>Score</font></td></tr></table>");
+		
+		tb.append("<img src=\"L2UI.SquareBlank\" width=740 height=6>");
+		
+		boolean bg = false;
+		
+		GlobalStatsModel stats;
+		for(EventType event : EventType.values())
+		{
+			stats = _playerGlobalStats.get(player).get(event);
+			if(stats == null)
+				continue;
+			
+			int kills = stats.get(GlobalStatType.KILLS);
+			int deaths = stats.get(GlobalStatType.DEATHS);
+			int timesPlayed = stats.get(GlobalStatType.COUNT_PLAYED);
+			int wins = stats.get(GlobalStatType.WINS);
+			
+			kdRatio = String.valueOf((deaths == 0 ? (double) kills : ((double) kills / (double) deaths)));
+			success = String.valueOf((int) ((double)wins / timesPlayed * 100));
+			kdRatio = kdRatio.substring(0, Math.min(3, kdRatio.length()));
+			success = success.substring(0, Math.min(5, success.length())) + "%";
+			
+			tb.append("<table width=740 bgcolor=" + (bg ? "3E3E3E" : "2E2E2E") + "><tr><td width=100><font color=B09D8E>" + event.getHtmlTitle() + "</font> </td><td width=90 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.COUNT_PLAYED) + "</font></td><td width=65 align=center><font color=B3AA9D>" + success + "</font></td><td width=65 align=center><font color=B3AA9D>" + kdRatio + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.WINS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.LOSES) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.KILLS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.DEATHS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.SCORE) + "</font></td></tr>");
+			tb.append("</table><img src=\"L2UI.SquareBlank\" width=740 height=3>");
+			
+			bg = !bg;
+		}
+		
+		tb.append("<br>%data%");
+		tb.append("</center></body></html>");
+		
+		_playerGlobalStatsHtml.put(player, tb.toString());
+		return tb.toString();
+	}
+	
+	private void loadPlayer(PlayerEventInfo player)
+	{
+		if(!_playerGlobalStats.containsKey(player))
+			_playerGlobalStats.put(player, new FastMap<EventType, GlobalStatsModel>());
+		
+		GlobalStatsModel stats;
+		Connection con = null;
+
+		EventType type;
+		
+		try
+		{
+			con = CallBack.getInstance().getOut().getConnection();
+			PreparedStatement statement = con.prepareStatement("SELECT event, count_played, wins, loses, kills, deaths, score FROM nexus_stats_global WHERE player = " + player.getPlayersId());
+			ResultSet rset = statement.executeQuery();
+			while (rset.next())
+			{
+				type = EventType.getType(rset.getString("event"));
+				
+				if(type != null)
+				{
+					Map<GlobalStatType, Integer> map = new FastMap<GlobalStatType, Integer>();
+					
+					map.put(GlobalStatType.COUNT_PLAYED, rset.getInt("count_played"));
+					map.put(GlobalStatType.WINS, rset.getInt("wins"));
+					map.put(GlobalStatType.LOSES, rset.getInt("loses"));
+					map.put(GlobalStatType.KILLS, rset.getInt("kills"));
+					map.put(GlobalStatType.DEATHS, rset.getInt("deaths"));
+					map.put(GlobalStatType.SCORE, rset.getInt("score"));
+					
+					stats = new GlobalStatsModel(type, map);
+					
+					synchronized(_playerGlobalStats)
+					{
+						_playerGlobalStats.get(player).put(type, stats);
+					}
+				}
+			}
+			rset.close();
+			statement.close();
+		}
+
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+
+			catch (Exception e)
+			{
+			}
+		}
+	}
+	
+	public void updateGlobalStats(Map<PlayerEventInfo, GlobalStatsModel> data)
+	{
+		Connection con = null;
+		
+		GlobalStatsModel stats;
+		
+		try
+		{
+			con = CallBack.getInstance().getOut().getConnection();
+			PreparedStatement statement;
+			
+			for(Entry<PlayerEventInfo, GlobalStatsModel> e : data.entrySet())
+			{
+				statsChanged(e.getKey());
+				
+				stats = getPlayerGlobalStats(e.getKey(), e.getValue().getEvent());
+				
+				if(stats == null)
+				{
+					stats = e.getValue();
+					setPlayerGlobalStats(e.getKey(), stats.getEvent(), stats);
+				}
+				
+				stats.add(e.getValue());
+				
+				statement = con.prepareStatement("REPLACE INTO nexus_stats_global VALUES (?,?,?,?,?,?,?,?,?)");
+				statement.setInt(1, e.getKey().getPlayersId());
+				statement.setString(2, stats.getEvent().getAltTitle());
+				statement.setInt(3, stats.get(GlobalStatType.COUNT_PLAYED));
+				statement.setInt(4, stats.get(GlobalStatType.WINS));
+				statement.setInt(5, stats.get(GlobalStatType.LOSES));
+				statement.setInt(6, stats.get(GlobalStatType.KILLS));
+				statement.setInt(7, stats.get(GlobalStatType.DEATHS));
+				statement.setInt(8, stats.get(GlobalStatType.SCORE));
+				statement.setString(9, stats.getFavoriteEvent());
+				
+				statement.executeUpdate();
+				statement.close();
+			}
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+
+			catch (Exception e)
+			{
+			}
+		}
+	}
+	
+	private void forgetPlayerGlobalStats(PlayerEventInfo player)
+	{
+		synchronized(_playerGlobalStats)
+		{
+			_playerGlobalStats.remove(player);
+		}
+	}
+	
+	private class GlobalStatsSum
+	{
+		protected Map<GlobalStatType, Integer> stats;
+		
+		protected String name;
+		protected int level, pvp, pk, clan, classId;
+		protected EventType mostPlayedEvent;
+		protected int mostPlayedCount = 0;
+		
+		public GlobalStatsSum(String name, int level, int pvp, int pk, int clan, int classId)
+		{
+			this.name = name;
+			this.level = level;
+			this.pvp = pvp;
+			this.pk = pk;
+			this.clan = clan;
+			this.classId = classId;
+			this.stats = new FastMap<GlobalStatType, Integer>();
+			
+			for(GlobalStatType t : GlobalStatType.values())
+			{
+				stats.put(t, 0);
+			}
+		}
+		
+		public int get(GlobalStatType type)
+		{
+			return stats.get(type);
+		}
+		
+		public void set(GlobalStatType type, int value)
+		{
+			stats.put(type, value);
+		}
+		
+		public void raise(GlobalStatType type, int value)
+		{
+			set(type, get(type) + value);
+		}
+	}
+	
+	protected String updateStatuses(String text, String sortType, int page)
+	{
+		String updated = text;
+		int start = 0, end = 0;
+		String name;
+		PlayerEventInfo player;
+		
+		while(true)
+		{
+			start = updated.indexOf("<i>");
+			if(start == -1)
+				break;
+			
+			start += 3;
+			end = updated.indexOf("</i>");
+			
+			name = updated.substring(start, end);
+			player = CallBack.getInstance().getOut().getPlayer(name);
+			
+			if(player != null)
+			{
+				updated = updated.replaceFirst("<i>", "<font color=9EB39D><a action=\"bypass -h nxs_showstats_global_oneplayer " + name + " " + sortType + " " + page + "\">");
+				updated = updated.replaceFirst("</i>", "</a></font>");
+			}
+			else
+			{
+				updated = updated.replaceFirst("<i>", "<font color=A9A8A7>");
+				updated = updated.replaceFirst("</i>", "</font>");
+			}
+		}
+		
+		updated = updated.replaceAll("%reloaded%", calcLastLoadedTime());
+		
+		return updated;
+	}
+	
+	protected void loadGlobalStats()
+	{
+		_globalStatsHtml = new FastMap<SortType, Map<Integer, String>>();
+		
+		Map<Integer, GlobalStatsSum> data;
+		
+		TextBuilder tb = new TextBuilder();
+		
+		Connection con = null;
+		PreparedStatement statement = null;
+		
+		int timesPlayed, wins, loses, kills, deaths, score, level, pvpkills, pkkills, clanid, classid, charId;
+		String charName = null;
+		String kdRatio, success, clan;
+		
+		final int playersPerPage = 12;
+		
+		try
+		{
+			con = CallBack.getInstance().getOut().getConnection();
+			for(SortType sortType : SortType.values())
+			{
+				data = new FastMap<Integer, GlobalStats.GlobalStatsSum>();
+				statement = con.prepareStatement("SELECT characters.char_name, characters.charId, characters.online, characters.level, characters.pvpkills, characters.pkkills, characters.clanid, characters.classid, nexus_stats_global.* FROM nexus_stats_global INNER JOIN characters ON characters.charId = nexus_stats_global.player ORDER BY " + sortType.dbName);
+				
+				ResultSet rset = statement.executeQuery();
+				
+				while(rset.next())
+				{
+					charId = rset.getInt("charId");
+					
+					if(!data.containsKey(charId))
+					{
+						charName = rset.getString("char_name");
+						level = rset.getInt("level");
+						pvpkills = rset.getInt("pvpkills");
+						pkkills = rset.getInt("pkkills");
+						clanid = rset.getInt("clanid");
+						classid = rset.getInt("classid");
+						
+						data.put(charId, new GlobalStatsSum(charName, level, pvpkills, pkkills, clanid, classid));
+					}
+					
+					timesPlayed = rset.getInt("count_played");
+					
+					if(timesPlayed > data.get(charId).mostPlayedCount)
+					{
+						data.get(charId).mostPlayedCount = timesPlayed;
+						data.get(charId).mostPlayedEvent = EventType.getType(rset.getString("event"));
+					}
+					
+					wins = rset.getInt("wins");
+					loses = rset.getInt("loses");
+					kills = rset.getInt("kills");
+					deaths = rset.getInt("deaths");
+					score = rset.getInt("score");
+					
+					data.get(charId).raise(GlobalStatType.COUNT_PLAYED, timesPlayed);
+					data.get(charId).raise(GlobalStatType.WINS, wins);
+					data.get(charId).raise(GlobalStatType.LOSES, loses);
+					data.get(charId).raise(GlobalStatType.KILLS, kills);
+					data.get(charId).raise(GlobalStatType.DEATHS, deaths);
+					data.get(charId).raise(GlobalStatType.SCORE, score);
+				}
+				
+				rset.close();
+				statement.close();
+				
+				
+				GlobalStatsSum stats;
+				
+				int size = data.size();
+				int count = 0;
+				boolean bg = false;
+				
+				for(Entry<Integer, GlobalStatsSum> e : data.entrySet())
+				{
+					stats = e.getValue();
+					
+					count++;
+					
+					if (count % playersPerPage == 1)
+					{
+						tb.append("<html><body><br><center><font color=ac9887>Server event statistics</font><br1><font color=7f7f7f>(reloaded: %reloaded%)</font><br><br>");
+						tb.append("<table width=725><tr><td width=615></td><td width=60><font color=ac9887>Name:</font></td><td width=100 align=left><edit var=\"name\" width=100 height=14></td><td width=65 align=right><button value=\"Find\" width=60 action=\"bypass nxs_showstats_global_oneplayer $name " + sortType.toString() + " " + (((count - 1) / playersPerPage) + 1) + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table>");
+						
+						tb.append("<br><center><table width=747 bgcolor=5A5A5A><tr><td width=25 ><font color=B09D8E>&nbsp;#</font></td><td width=125><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.NAME.toString() + "\">Name</a>&nbsp;(<a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.LEVEL.toString() + "\">lvl</a>)</font></td><td width=55><font color=A9A8A7>Clan</font></td><td width=55><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.COUNTPLAYED.toString() + "\">Played ev.</a></font></td><td width=50><center><font color=A9A8A7>&nbsp;Win%</font></td><td width=50><center><font color=A9A8A7>K:D</font></td><td width=50><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.WINS.toString() + "\">Wins</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.LOSES.toString() + "\">Loses</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.SCORE.toString() + "\">Score</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.DEATHS.toString() + "\">Deaths</a></font></td><td width=95><center><font color=A9A8A7>Favorite Event</font></td></tr></table><br>" + "<center>");
+					}
+					
+					tb.append("<center><table width=740 " + (bg ? "bgcolor=3E3E3E" : "bgcolor=2E2E2E") + "><tr><td width=30 align=left><font color=B09D8E>&nbsp;" + count + ".</font></td>");
+					bg = !bg;
+					
+					clan = CallBack.getInstance().getOut().getClanName(e.getValue().clan);
+					if(clan == null)
+						clan = "";
+					else if(clan.length() > 15)
+						clan = clan.substring(0, 12) + "..";
+					
+					tb.append("<td width=115><i>" + e.getValue().name + "</i> <font color=A9A8A7>(" + e.getValue().level + ")</font></td>");
+					
+					tb.append("<td width=108 align=left><font color=B09D8E>" + clan + "</font></td>");
+					
+					timesPlayed = stats.get(GlobalStatType.COUNT_PLAYED);
+					
+					wins = stats.get(GlobalStatType.WINS);
+					loses = stats.get(GlobalStatType.LOSES);
+					kills = stats.get(GlobalStatType.KILLS);
+					deaths = stats.get(GlobalStatType.DEATHS);
+					score = stats.get(GlobalStatType.SCORE);
+					kdRatio = String.valueOf((deaths == 0 ? (double) kills : ((double) kills / (double) deaths)));
+					success = String.valueOf((int) ((double)wins / timesPlayed * 100));
+					
+					
+					kdRatio = kdRatio.substring(0, Math.min(3, kdRatio.length()));
+					success = success.substring(0, Math.min(5, success.length()));
+					
+					tb.append("<td width=53 align=left><font color=B3AA9D>" + timesPlayed + "</font></td><td width=53><font color=B3AA9D>" + success + "%</font></td><td width=45><font color=B3AA9D>&nbsp;" + kdRatio + "</font></td><td width=57><center><font color=B3AA9D>" + wins + "</font></td><td width=55><center><font color=B3AA9D>" + loses + "</font></td><td width=55><center>&nbsp;&nbsp;<font color=B3AA9D>" + score + "</font></td>" + "<td width=55><center>&nbsp;&nbsp;&nbsp;<font color=B3AA9D>" + deaths + "</font></td><td width=120><center><font color=B3AA9D>" + (stats.mostPlayedEvent != null ? stats.mostPlayedEvent.getAltTitle() : "N/A") + "</font></td></tr>");
+					
+					tb.append("</table><img src=\"L2UI.SquareBlank\" width=740 height=3>");
+
+					if (count % playersPerPage == 0)
+					{
+						tb.append("<center><br><br><table width=140><tr><td width=70 align=left>" + ((count - 1) / playersPerPage != 0 ? "<button value=\"Page " + ((count - 1) / playersPerPage) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + ((count - 1) / playersPerPage) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td>"
+								+ "<td width=70 align=right>" + ((count - 1) / playersPerPage != size / playersPerPage ? "<button value=\"Page " + (((count - 1) / playersPerPage) + 2) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + (((count - 1) / playersPerPage) + 2) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+2) + "</font>") + "</td></tr></table>");
+						
+						tb.append("</body></html>");
+						
+						if(!_globalStatsHtml.containsKey(sortType))
+							_globalStatsHtml.put(sortType, new FastMap<Integer, String>());
+						
+						_globalStatsHtml.get(sortType).put(count / playersPerPage, tb.toString());
+						tb.clear();
+					}
+				}
+				
+				if (count % playersPerPage != 0)
+				{
+					tb.append("<center><br><br><table width=140><tr><td width=70 align=left>" + ((count - 1) / playersPerPage != 0 ? "<button value=\"Page " + ((count - 1) / playersPerPage) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + ((count - 1) / playersPerPage) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td>"
+							+ "<td width=70 align=right>" + ((count - 1) / playersPerPage != size / playersPerPage ? "<button value=\"Page " + (((count - 1) / playersPerPage) + 2) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + (((count - 1) / playersPerPage) + 2) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td></tr></table>");
+					
+					tb.append("</body></html>");
+					
+					if(!_globalStatsHtml.containsKey(sortType))
+						_globalStatsHtml.put(sortType, new FastMap<Integer, String>());
+					
+					if(!_globalStatsHtml.get(sortType).containsKey(count / playersPerPage + 1))
+					{
+						_globalStatsHtml.get(sortType).put((count / playersPerPage + 1), tb.toString());
+						tb.clear();
+					}
+				}
+			}
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			} catch (SQLException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		
+		_lastLoad = System.currentTimeMillis();
+		scheduleReloadGlobalStats();
+	}
+	
+	private String calcLastLoadedTime()
+	{
+		long time = System.currentTimeMillis();
+		long diff = (time - _lastLoad) / 1000;
+		
+		if(diff > 3600)
+			return (diff / 3600 + " hours ago");
+		else if(diff > 60)
+			return (diff / 60 + " minutes ago");
+		else
+			return (diff + " seconds ago");
+	}
+	
+	private synchronized void scheduleReloadGlobalStats()
+	{
+		if(_globalStatsReload != null)
+		{
+			_globalStatsReload.cancel(false);
+			_globalStatsReload = null;
+		}
+		
+		_globalStatsReload = CallBack.getInstance().getOut().scheduleGeneral(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				loadGlobalStats();
+			}
+		}, RELOAD_DELAY_GLOBALSTATS);
+	}
+}

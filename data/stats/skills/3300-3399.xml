@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="3300" levels="1" name="Talisman of Speed">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="runSpd" val="5"/> <!-- increase Run Speed +2 -->
+  </for>
+</skill>
+<skill id="3301" levels="1" name="Talisman of Haste">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add val="15" order="0x40" stat="pAtkSpd"/>
+  </for>
+</skill>
+<skill id="3302" levels="1" name="Talisman of Casting Speed">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add val="25" order="0x40" stat="mAtkSpd"/>
+  </for>
+</skill>
+<skill id="3303" levels="1" name="White Talisman of Bandages">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3304" levels="1" name="White Talisman of Attention">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3305" levels="1" name="White Talisman of Grounding">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3306" levels="1" name="White Talisman of Bravery">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3307" levels="1" name="White Talisman of Motion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3308" levels="1" name="White Talisman of Freedom">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3309" levels="1" name="White Talisman of Protection">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3310" levels="1" name="Talisman of PVE Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub order="0x40" stat="pvmVuln" val="0.05"/>
+	<add val="0.05" order="0x40" stat="pvmDam"/>
+  </for>
+</skill>
+<skill id="3311" levels="1" name="Talisman of Mental Defence">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul val="0.95" order="0x30" stat="debuffVuln"/> <!-- 5% debuff resist -->
+  </for>
+</skill>
+
+<skill id="3312" levels="1" name="Talisman of Healing">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add val="0.085" order="0x40" stat="gainHp"/>
+  </for>
+</skill>
+<skill id="3313" levels="1" name="Talisman of Alacrity">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add val="10" order='0x40' stat="pAtkSpd"/>
+	<add val="10" order='0x40' stat="mAtkSpd"/>
+	<add val="2" order='0x40' stat="runSpd"/>
+  </for>
+</skill>
+<skill id="3314" levels="1" name="Grey Talisman of Weight Training">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3315" levels="1" name="Grey Talisman of Fishing">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3316" levels="1" name="Talisman of Reuse">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<sub val="0.05" order="0x40" stat="pReuse"/>
+	<sub val="0.05" order="0x40" stat="mReuse"/>
+  </for>
+</skill>
+<skill id="3317" levels="1" name="Talisman of Critical Reduction">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+   <for>
+	<sub val="0.035" order="0x40" stat="critVuln"/>
+  </for>
+</skill>
+<skill id="3318" levels="1" name="Flag Display">
+  <set name="target" val="TARGET_FLAGPOLE"/>
+  <set name="hitTime" val="140000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="castRange" val="50"/>
+  <set name="skillType" val="TAKEFORT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msg="Cannot use Seal while invisible">
+    <player invisible="false"/>
+  </cond>
+  <for>
+	  <add order="0x40" stat="lionheart" val="30">
+	  	   <using skill="246"/>
+	</add>
+	  <add order="0x40" stat="spellCancelRes" val="1">
+	  	   <using skill="246"/>
+	</add>
+    <add order="0x40" stat="conc" val="50">
+	   <using skill="246"/>
+	</add>
+	 <set order="0x80" stat="derangementVuln" val="0">
+	   <using skill="246"/>
+	</set>
+	 <set order="0x80" stat="sleepVuln" val="0">
+	   <using skill="246"/>
+	</set>
+	<set order="0x40" stat="stunVuln" val="0">
+	   <using skill="246"/>
+	</set>
+  </for>
+</skill>
+<skill id="3319" levels="1" name="Divine Protection of Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3320" levels="1" name="Yellow Talisman of Mental Regeneration">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3321" levels="1" name="Blue Talisman of Evasion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="3322" levels="1" name="Brass Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3323" levels="1" name="Bronze Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3324" levels="1" name="Steel Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3325" levels="1" name="Mithril Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3326" levels="1" name="Jewerly Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3327" levels="1" name="Oriharukon Bracelet">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3328" levels="1" name="Double Stab">
+  <set name="power" val="15000"/>
+  <set name="magicLvl" val="75"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="reuseDelay" val="4000"/>
+  <set name="coolTime" val="400"/>
+  <set name="hitTime" val="1000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="60"/>
+  <set name="effectRange" val="400"/>
+</skill>
+<skill id="3329" levels="1" name="Power Slash">
+  <set name="power" val="15000"/>
+  <set name="magicLvl" val="75"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="staticReuse" val="true"/>
+  <set name="reuseDelay" val="4000"/>
+  <set name="coolTime" val="400"/>
+  <set name="hitTime" val="1000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="60"/>
+  <set name="effectRange" val="400"/>
+</skill>
+<skill id="3330" levels="1" name="Air Blade">
+    <set name="power" val="10000"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="staticReuse" val="true"/>
+    <set name="hitTime" val="1300"/>
+	<set name="coolTime" val="600"/>
+	<set name="flyRadius" val="30"/>
+	<set name="ignoreShld" val="true"/>
+	<set name="maxLand" val="70"/>
+	<set name="areaAngle" val="110"/>
+    <set name="SSBoost" val="2.0"/><!-- Guessing -->
+    <set name="overHit" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_FRONT_AREA"/>
+    <set name="skillRadius" val="400"/>
+    <set name="skillType" val="PDAM"/>
+    <set name="castRange" val="400"/>
+    <set name="effectRange" val="700"/>
+    <set name="reuseDelay" val="6000"/>
+	<for>
+	  <effect name="Knockback" val="0"/>
+	</for>
+</skill>
+<skill id="3331" levels="1" name="Enslave">
+    <set name="magicLvl" val="75"/>
+    <set name="power" val="80"/>
+    <set name="target" val="TARGET_AURA"/>
+    <set name="skillRadius" val="1000"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="staticReuse" val="true"/>
+    <set name="reuseDelay" val="70000"/>
+	<set name="nextDanceCost" val="30"/>
+	<set name="minLand" val="100"/>
+    <set name="hitTime" val="1100"/>
+    <set name="isDebuff" val="true"/>
+    <set name="skillType" val="SWITCH"/>
+    <set name="isMagic" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>  
+	<for>
+	<effect name="Debuff" time="15" val="0" effectType="DEBUFF" effectPower="90">
+      <mul order="0x30" stat="runSpd" val="0.7"/>
+    </effect>
+	</for>
+</skill>
+<skill id="3332" levels="1" name="Orange Talisman - Hot Springs Recovery">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="20000"/>
+</skill>
+<skill id="3333" levels="1" name="Orange Talisman - A Grade Elixir of Life">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="20000"/>
+</skill>
+<skill id="3334" levels="1" name="Orange Talisman - A Grade Elixir of Mental Strength">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="20000"/>
+</skill>
+<skill id="3335" levels="1" name="Transform Yeti">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="102"/>
+  <for>
+   <effect name="Transformation" time="1800" val="0"/>
+  </for>
+</skill>
+<skill id="3336" levels="1" name="Transform Buffalo">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="103"/>
+  <for>
+   <effect name="Transformation" time="1800" val="0"/>
+  </for>
+</skill>
+<skill id="3337" levels="1" name="Transform Cutie Pig">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="104"/>
+  <for>
+   <effect name="Transformation" time="1800" val="0">
+     <mul order="0x30" stat="pAtkSpd" val="0.95"/>
+	  <mul order="0x30" stat="mAtkSpd" val="0.95"/>
+	  <mul order="0x30" stat="runSpd" val="0.5"/>
+	</effect>
+  </for>
+</skill>
+<skill id="3338" levels="1" name="Shield Master">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3339" levels="1" name="Bard">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3340" levels="1" name="Weapon Master">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3341" levels="1" name="Force Master">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3342" levels="1" name="Bow Master">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3343" levels="1" name="Dagger Master">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3344" levels="1" name="Wizard">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3345" levels="1" name="Summoner">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3346" levels="1" name="Healer">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3347" levels="1" name="Enchanter">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3348" levels="1" name="Dynasty Breast Plate - Knight Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="rShld" val="4"/>
+    <mul order="0x30" stat="sleepVuln" val="0.35"/> <!-- Sleep Probability -70% -->
+    <mul order="0x30" stat="rootVuln" val="0.35"/> <!-- Hold Probability -70% -->
+	<mul order="0x30" stat="pvmVuln" val="0.9"/>
+	<basemul order="0x40" stat="pDef" val="0.14"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+    <add order="0x10" stat="CON" val="2"/> <!-- CON +2 -->
+	<sub order="0x10" stat="STR" val="2"/> <!-- STR -2 -->
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3349" levels="1" name="Dynasty Breast Plate - Weapon Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="accCombat" val="5"/>
+	<add order="0x40" stat="absorbCP" val="5"/>
+	<basemul order="0x40" stat="pAtk" val="0.14"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+    <add order="0x10" stat="STR" val="2"/> <!-- STR +2 -->
+	<sub order="0x10" stat="CON" val="2"/> <!-- CON -2 -->
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3350" levels="1" name="Dynasty Breast Plate - Force Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub order="0x40" stat="pReuse" val="0.12"/>
+	<add order="0x40" stat="pSkillEvasReduce" val="5"/>
+	<basemul order="0x40" stat="pDef" val="0.04"/>
+	<basemul order="0x40" stat="pAtk" val="0.1"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+    <add order="0x10" stat="STR" val="2"/>
+	<sub order="0x10" stat="CON" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3351" levels="1" name="Dynasty Breast Plate - Finesse Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="rCrit" val="30"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.05"/>
+	<basemul order="0x40" stat="pDef" val="0.07"/>
+	<basemul order="0x40" stat="pAtk" val="0.07"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+    <add order="0x10" stat="STR" val="1"/> <!-- CON +1 -->
+	<add order="0x10" stat="DEX" val="1"/> <!-- CON +1 -->
+	<sub order="0x10" stat="CON" val="2"/> <!-- STR -2 -->
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3352" levels="1" name="Dynasty Leather Armor - Dagger Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="cAtk" val="0.15"/>
+	<add order="0x40" stat="blowRate" val="5"/>
+    <basemul order="0x40" stat="pAtkSpd" val="0.11">
+	  <using kind="Dagger,Dual Dagger,Rapier"/>
+	</basemul>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="DEX" val="2"/>
+	<sub order="0x10" stat="STR" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3353" levels="1" name="Dynasty Leather Armor - Bow Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub order="0x40" stat="atkReuse" val="0.12"/>
+	<add order="0x40" stat="runSpd" val="2"/>
+    <basemul order="0x40" stat="pAtk" val="0.096">
+	   <using kind="Bow,Crossbow"/>
+	</basemul>
+	<basemul order="0x40" stat="pAtkSpd" val="0.05"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="STR" val="1"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<sub order="0x10" stat="CON" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3414" levels="1" name="Dynasty Leather Armor - Force Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub order="0x40" stat="pReuse" val="0.12"/>
+	<add order="0x40" stat="pSkillEvasReduce" val="5"/>
+    <basemul order="0x40" stat="pAtk" val="0.08"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.06"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="STR" val="1"/>
+	<add order="0x10" stat="DEX" val="1"/>
+	<sub order="0x10" stat="CON" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3415" levels="1" name="Dynasty Leather Armor - Weapon Master">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="accCombat" val="3"/>
+	<add order="0x40" stat="rEvas" val="3"/>
+    <basemul order="0x40" stat="pAtk" val="0.07"/>
+	<basemul order="0x40" stat="pAtkSpd" val="0.07"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="STR" val="2"/>
+	<sub order="0x10" stat="CON" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3354" levels="1" name="Dynasty Tunic - Divine">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <add order="0x40" stat="giveHp" val="0.1"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.1"/>
+	<basemul order="0x40" stat="mAtk" val="0.15"/>
+	<basemul order="0x40" stat="maxMp" val="0.15"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="WIT" val="2"/>
+	<sub order="0x10" stat="INT" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3355" levels="1" name="Dynasty Tunic - Enchanter">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <basemul order="0x40" stat="pDef" val="0.1"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.25"/>
+	<basemul order="0x40" stat="mAtk" val="0.15"/>
+	<basemul order="0x40" stat="maxMp" val="0.1"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.1"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="MEN" val="2"/>
+	<sub order="0x10" stat="WIT" val="1"/>
+	<sub order="0x10" stat="INT" val="1"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3356" levels="1" name="Dynasty Tunic - Mysticism">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <sub order="0x40" stat="mReuse" val="0.15"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.15"/>
+	<basemul order="0x40" stat="mAtk" val="0.15"/>
+	<basemul order="0x40" stat="maxMp" val="0.1"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="WIT" val="2"/>
+	<sub order="0x10" stat="MEN" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3357" levels="1" name="Dynasty Tunic - Destruction">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x30" stat="stunVuln" val="0.8"/>
+	<add order="0x40" stat="mSkillEvasReduce" val="5"/>
+    <basemul order="0x40" stat="mAtk" val="0.50"/>
+	<basemul order="0x40" stat="mAtkSpd" val="0.25"/>
+	<basemul order="0x40" stat="maxCp" val="0.1"/>
+	<basemul order="0x40" stat="maxHp" val="0.05"/>
+	<basemul order="0x40" stat="maxMp" val="0.1"/>
+	<add order="0x40" stat="gainHp" val="0.1"/>
+	<add order="0x10" stat="INT" val="2"/>
+	<sub order="0x10" stat="MEN" val="2"/>
+	<sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</skill>
+<skill id="3358" levels="1" name="Flag Equip">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+    <mul order="0x50" stat="runSpd" val="0.5"/>
+  </for>
+</skill>
+<skill id="3359" levels="1" name="Transform Native">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="3360" levels="1" name="Cheap Shot">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3361" levels="1" name="Summon Agathion - Fortress">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="AGATHION"/>
+  <set name="hitTime" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="16029"/>
+</skill>
+<skill id="3362" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3363" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3364" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3365" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3366" levels="1" name="Dynasty Band">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+     <add order="0x10" stat="DEX" val="2"/>
+  </for>
+</skill>
+<skill id="3367" levels="1" name="Dynasty Pendant">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+     <add order="0x10" stat="CON" val="2"/>
+  </for>
+</skill>
+<skill id="3822" levels="1" name="Dynasty Amulet">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+     <add order="0x10" stat="INT" val="2"/>
+	 <add order="0x10" stat="STR" val="2"/>
+  </for>
+</skill>
+<skill id="3823" levels="1" name="Dynasty Ring">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+     <add order="0x10" stat="WIT" val="2"/>
+  </for>
+</skill>
+<skill id="3824" levels="1" name="Dynasty Earring">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+     <add order="0x10" stat="MEN" val="2"/>
+  </for>
+</skill>
+<skill id="3368" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3369" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3370" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3371" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3372" levels="1" name="Dynasty Resistance Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3373" levels="1" name="Dynasty Resistance Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3374" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3375" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3376" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3377" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3378" levels="1" name="Dynasty Resistance Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3379" levels="1" name="Dynasty Resistance Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3380" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3381" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3382" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3383" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3384" levels="1" name="Dynasty Resistance Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3385" levels="1" name="Dynasty Resistance Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3386" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3387" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3388" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3389" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3390" levels="1" name="Dynasty Resistance Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3391" levels="1" name="Dynasty Resistance Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3392" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3393" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3394" levels="1" name="Traits Strengthen Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3395" levels="1" name="Dynasty Resistance Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3396" levels="1" name="Dynasty Resistance Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3397" levels="1" name="Dynasty Resistance Earring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3398" levels="1" name="Traits Strengthen Necklace">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="3399" levels="1" name="Traits Strengthen Ring">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+</list>

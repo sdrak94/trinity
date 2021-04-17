@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="48125" name="Pandemonium Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48126" name="Teobomos Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48127" name="Morheim Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48128" name="Nezakan Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48129" name="Sanctum Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48130" name="Berteron Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48131" name="Ether Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48132" name="Balaur Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48133" name="Seraphim Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48134" name="Markutan Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48135" name="Usthiel Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48136" name="Lumiel Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48137" name="Baizel Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48138" name="Triniel Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48139" name="Ciel Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="48140" name="Poeta Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+</list>

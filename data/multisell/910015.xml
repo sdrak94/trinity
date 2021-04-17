@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="False">
+    <item id="1"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60082" count="1"/> 
+    </item>
+	<item id="2"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60083" count="1"/> 
+    </item>
+	<item id="3"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60084" count="1"/> 
+    </item>
+	<item id="4"><!--Haste-->
+	<ingredient id="51004" count="3"/> 
+    <production id="60090" count="1"/> 
+    </item>
+	<item id="5"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60086" count="1"/> 
+    </item>
+	<item id="6"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60087" count="1"/> 
+    </item>
+	<item id="7"> 
+	<ingredient id="51004" count="3"/> 
+    <production id="60092" count="1"/> 
+    </item>
+	<item id="8"> 
+	<ingredient id="51004" count="3"/>  
+    <production id="60105" count="1"/> 
+    </item>
+	<item id="9"> <!--Focus-->
+	<ingredient id="51004" count="3"/> 
+    <production id="60085" count="1"/> 
+    </item>
+    <item id="10"> <!--Resist Trait-->
+	<ingredient id="51004" count="3"/>
+    <production id="60089" count="1"/> 
+    </item>
+	<item id="11"> <!--Mana Gain-->
+	<ingredient id="51004" count="3"/> 
+    <production id="60101" count="1"/> 
+    </item>
+</list>

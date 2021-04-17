@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="5600" levels="1" name="Betrayal Mark">
+  <set name="power" val="15100"/>
+  <set name="staticPower" val="true"/>
+  <set name="baseCritRate" val="0"/>
+  <set name="SSBoost" val="2"/>
+  <set name="olyNerf" val="9000"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="dmgDirectlyToHp" val="true"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="effectRange" val="1500"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="5601" levels="12" name="Short-Range Physical Attack Resistance">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5602" levels="1" name="Transform Sacrifice">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5603" levels="1" name="Dagger Mastery">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="weaponsAllowed" val="262160"/> <!-- Dagger/Dual Daggers -->
+  <for>
+    <effect name="Buff" time="12" val="0">
+      <mul order="0x50" stat="blowRate" val="1.1"/>
+	  <mul order="0x50" stat="pReuse" val="0.8"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5604" levels="1" name="Blunt Mastery">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="weaponsAllowed" val="16392"/> <!-- Blunt/Big Blunt -->
+  <for>
+    <effect name="Buff" time="12" val="0">
+      <mul order="0x50" stat="pAtkSpd" val="1.16">
+        <using kind="Blunt,Big Blunt"/>
+      </mul>
+	   <add order="0x40" stat="runSpd" val="7">
+        <using kind="Blunt,Big Blunt"/>
+      </add>
+    </effect>
+  </for>
+</skill>
+<skill id="5605" levels="2" name="Power of Apella">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5607" levels="2" name="Power of Apella">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5608" levels="2" name="Power of Apella">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5609" levels="1" name="Sound 1">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5610" levels="1" name="Sound 2">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5611" levels="1" name="Sound 3">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5612" levels="1" name="Sound 4">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5613" levels="4" name="Vampiric Rage">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5614" levels="1" name="Raid Boss - Level 87">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5615" levels="1" name="Raid Boss - Level 87">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5616" levels="1" name="Raid Boss - Level 87">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5617" levels="1" name="Raid Boss - Level 87">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5618" levels="1" name="Raid Boss - Level 87">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5619" levels="1" name="Presentation - Super Giant Mutated Animal Union">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="5800"/>
+</skill>
+<skill id="5620" levels="12" name="Short-Range Physical Attack Weakness">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5621" levels="12" name="Aerial Recharge">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5622" levels="7" name="Double Skill Attack">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5623" levels="1" name="Weakened Magic Force">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1200"/>
+</skill>
+<skill id="5624" levels="1" name="Soul Confinement">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="2000"/>
+</skill>
+<skill id="5625" levels="1" name="Soul Confinement">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="2000"/>
+</skill>
+<skill id="5626" levels="1" name="Raid Boss">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5627" levels="1" name="Adventurer's Wind Walk">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5628" levels="1" name="Adventurer's Shield">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5629" levels="1" name="Adventurer's Bless the Body">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5630" levels="1" name="Adventurer's Vampiric Rage">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="isMagic" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5631" levels="1" name="Adventurer's Regeneration">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5632" levels="1" name="Adventurer's Haste">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5633" levels="1" name="Adventurer's Bless the Soul">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5634" levels="1" name="Adventurer's Acumen">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5635" levels="1" name="Adventurer's Concentration">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5636" levels="1" name="Adventurer's Empower">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5637" levels="1" name="Adventurer's Magic Barrier">
+  <set name="magicLvl" val="60"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+</skill>
+<skill id="5638" levels="4" name="Feline Queen - Bless the Body">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 495 532 597 646 </table>
+  <table name="#maxHp"> 1.2 1.25 1.3 1.35 </table>
+  <table name="#mpConsume"> 48 52 60 67 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="#maxHp" stackType="max_hp_up">
+      <mul order="0x30" stat="maxHp" val="#maxHp"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5639" levels="4" name="Feline Queen - Bless the Soul">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 495 532 582 635 </table>
+  <table name="#maxMp"> 1.2 1.25 1.3 1.35 </table>
+  <table name="#mpConsume"> 48 52 58 65 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="#maxMp" stackType="max_mp_up">
+      <mul order="0x30" stat="maxMp" val="#maxMp"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5640" levels="2" name="Feline Queen - Haste">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 418 495 </table>
+  <table name="#mpConsume"> 39 48 </table>
+  <table name="#pAtkSpd"> 1.15 1.33 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="#pAtkSpd" stackType="attack_time_down">
+      <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5641" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5642" levels="4" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5643" levels="1" name="Unicorn Seraphim - Acumen">
+  <set name="aggroPoints" val="457"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="44"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5644" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5645" levels="3" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5646" levels="2" name="Unicorn Seraphim - Wild Magic">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 582 635 </table>
+  <table name="#mCrit"> 1.3 1.4 </table>
+  <table name="#mpConsume"> 58 65 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5647" levels="3" name="Unicorn Seraphim - Clarity">
+  <!-- Done by DJ MELERIX -->
+  <table name="#MpConsumeRate"> 0.96 0.92 0.9 </table>
+  <table name="#mpConsume"> 54 62 69 </table>
+  <table name="#SpiritOre"> 1 2 3 </table>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="itemConsumeCount" val="#SpiritOre"/>
+  <set name="itemConsumeId" val="3031"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5648" levels="2" name="Unicorn Seraphim - Empower">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 418 495 </table>
+  <table name="#mAtk"> 1.65 1.75 </table>
+  <table name="#mpConsume"> 39 48 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5649" levels="2" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5650" levels="3" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5651" levels="1" name="not_used">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="4000"/>
+</skill>
+<skill id="5652" levels="3" name="Nightshade - Death Whisper">
+  <!-- Done by DJ MELERIX -->
+  <table name="#aggro"> 379 457 532 </table>
+  <table name="#cAtk"> 1.25 1.3 1.35 </table>
+  <table name="#mpConsume"> 35 44 52 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5653" levels="2" name="Nightshade - Focus">
+  <table name="#aggro"> 418 495 </table>
+  <table name="#mpConsume"> 39 48 </table>
+  <table name="#rCrit"> 0.25 0.3 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5654" levels="3" name="Nightshade - Guidance">
+  <table name="#accCombat"> 2 3 4 </table>
+  <table name="#aggro"> 379 457 532 </table>
+  <table name="#mpConsume"> 35 44 52 </table>
+  <set name="aggroPoints" val="#aggro"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="hitTime" val="4000"/>
+  <set name="isMagic" val="true"/>
+  <set name="mpConsume" val="#mpConsume"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_ONE"/>
+</skill>
+<skill id="5655" levels="1" name="Transform Gatekeeper">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="2500"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="transformId" val="319"/>
+  <for>
+    <effect name="Transformation" time="3600" val="0"/>
+  </for>
+</skill>
+<skill id="5656" levels="85" name="Gatekeeper Aura Flare">
+  <set name="mpInitialConsume" val="15"/>
+  <set name="mpConsume" val="70"/>
+  <set name="magicLvl" val="950"/>
+  <set name="power" val="1200"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="2500"/>
+  <set name="hitTime" val="1000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="150"/>
+  <set name="effectRange" val="650"/>
+  <for>
+    <effect self="1" name="Debuff" time="3" val="0">
+      <mul order="0x30" stat="pvpMagicalDmg" val="0.5"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5657" levels="85" name="Gatekeeper Prominence">
+  <set name="magicLvl" val="1000"/>
+  <set name="mpInitialConsume" val="20"/>
+  <set name="mpConsume" val="80"/>
+  <set name="power" val="1550"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="hitTime" val="1500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="900"/>
+  <set name="effectRange" val="1400"/>
+</skill>
+<skill id="5658" levels="85" name="Gatekeeper Flame Strike">
+  <set name="mpInitialConsume" val="22"/>
+  <set name="mpConsume" val="85"/>
+  <set name="magicLvl" val="1200"/>
+  <set name="power" val="1700"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="200"/>
+  <set name="reuseDelay" val="15000"/>
+  <set name="hitTime" val="2500"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="500"/>
+  <set name="effectRange" val="1600"/>
+</skill>
+<skill id="5659" levels="2" name="Gatekeeper Berserker Spirit">
+  <set name="mpInitialConsume" val="10"/>
+  <set name="mpConsume" val="38"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="6000"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="900"/>
+  <set name="aggroPoints" val="495"/>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="1" stackType="berserk">
+      <mul order="0x30" stat="mAtk" val="1.16"/>
+      <mul order="0x30" stat="pAtk" val="1.08"/>
+      <mul order="0x30" stat="mDef" val="0.84"/>
+      <mul order="0x30" stat="pDef" val="0.92"/>
+      <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+      <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+      <add order="0x40" stat="runSpd" val="8"/>
+      <sub order="0x40" stat="rEvas" val="4"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5660" levels="5" name="Battlefield Death Syndrome">
+  <table name="#power"> 1 2 3 4 5 </table>
+  <table name="#pAtk"> 0.958 0.907 0.856 0.805 0.754 </table>
+  <table name="#mAtk"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#pDef"> 0.969 0.942 0.915 0.888 0.861 </table>
+  <table name="#mDef"> 0.965 0.929 0.893 0.857 0.821 </table>
+  <table name="#pAtkSpd"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#mAtkSpd"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#runSpd"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#rEvas"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#cAtk"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <table name="#accCombat"> 0.949 0.898 0.847 0.796 0.745 </table>
+  <set name="power" val="#power"/>
+  <set name="abnormalLvl" val="150"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="stayAfterDeath" val="true"/>
+  <for>
+    <effect name="NeutralBuff" time="90" val="0" stackOrder="#power" stackType="DeathPenalty">
+      <mul order="0x50" stat="pAtk" val="#pAtk"/>
+      <mul order="0x50" stat="mAtk" val="#mAtk"/>
+      <mul order="0x50" stat="pDef" val="#pDef"/>
+      <mul order="0x50" stat="mDef" val="#mDef"/>
+      <mul order="0x50" stat="pAtkSpd" val="#pAtkSpd"/>
+      <mul order="0x50" stat="mAtkSpd" val="#mAtkSpd"/>
+      <mul order="0x50" stat="runSpd" val="#runSpd"/>
+      <mul order="0x50" stat="rEvas" val="#rEvas"/>
+      <mul order="0x50" stat="cAtk" val="#cAtk"/>
+      <mul order="0x50" stat="accCombat" val="#accCombat"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5661" levels="1" name="Match Participation">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5662" levels="1" name="Presentation - Resurrection Possible">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1000"/>
+</skill>
+<skill id="5663" levels="5" name="Resistance to Ancient Sword">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5664" levels="5" name="Weakness to Ancient Sword">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5665" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5666" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5667" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5668" levels="1" name="Poison">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5669" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5670" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5671" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5672" levels="1" name="Stun">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5673" levels="1" name="Evasion Counter">
+  <set name="magicLvl" val="74"/>
+  <set name="power" val="70"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="lvlDepend" val="1"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="STUN"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <for>
+    <effect name="Stun" time="4" val="0" stackOrder="1" stackType="Stun"/>
+  </for>
+</skill>
+<skill id="5674" levels="1" name="Evasion Chance">
+  <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+    <effect name="Buff" time="20" val="0">
+      <mul order="0x30" stat="lethalRate" val="1.18"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5675" levels="1" name="Evasion Haste">
+  <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+    <effect name="Buff" time="12" val="0">
+      <mul order="0x50" stat="pAtkSpd" val="1.13"/>
+    </effect>
+  </for>
+</skill>
+<skill id="5676" levels="1" name="Steal Mana">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillType" val="MANARECHARGE"/>
+  <set name="power" val="41"/>
+  <set name="target" val="TARGET_SELF"/>
+</skill>
+<skill id="5677" levels="1" name="Steal Mana">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillType" val="MANARECHARGE"/>
+  <set name="power" val="51"/>
+  <set name="target" val="TARGET_SELF"/>
+</skill>
+<skill id="5678" levels="1" name="Steal Mana">
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="skillType" val="MANARECHARGE"/>
+  <set name="power" val="659"/>
+  <set name="target" val="TARGET_SELF"/>
+</skill>
+<skill id="5679" levels="3" name="Oblivion Trap Explosion">
+  <set name="isMagic" val="true"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="isSuicideAttack" val="true"/>
+  <set name="displayId" val="5268"/>
+  <set name="minLand" val="80"/>
+  <set name="canBeReflected" val="false"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="160"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="260"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+    <effect name="ChanceSkillTrigger" time="40" val="0" triggeredId="5680" chanceType="ON_ATTACKED" activationChance="25" effectType="DEBUFF" effectPower="140"/>
+  </for>
+</skill>
+<skill id="5680" levels="1" name="Oblivion Trap">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="canBeReflected" val="false"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="minLand" val="75"/>
+  <set name="skillType" val="AGGREDUCE_CHAR"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="1000"/>
+  <for>
+    <effect name="RemoveTarget" val="0" ignoreP="1" noicon="1"/>
+  </for>
+</skill>
+<skill id="5681" levels="1" name="PvP Weapon - CP Drain">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5682" levels="1" name="PvP Weapon - Cancel">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5683" levels="1" name="PvP Weapon - Ignore Shield Defense">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5684" levels="1" name="PvP Weapon - Attack Chance">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5685" levels="1" name="PvP Weapon - Casting">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5686" levels="1" name="PvP Weapon - Rapid Fire">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5687" levels="1" name="PvP Weapon - Decrease Range">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5688" levels="1" name="PvP Weapon - Decrease Resist">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5689" levels="1" name="PvP Shield - Reflect Damage">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5690" levels="1" name="PvP Armor - Damage Down">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5691" levels="1" name="PvP Armor - Critical Down">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5692" levels="1" name="PvP Armor - Heal">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5693" levels="1" name="PvP Armor - Speed Down">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5694" levels="1" name="PvP Armor - Mirage">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5695" levels="1" name="Talisman - Increase Force">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="5696" levels="1" name="Dizziness (Painkiller)">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="DEBUFF"/>
+  <set name="minLand" val="80"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="95"/>
+  <set name="isDebuff" val="true"/>
+  <for>
+    <effect name="NeutralBuff" time="10" val="0">
+	   <mul order="0x60" stat="runSpd" val="0.67"/>
+	   <mul order="0x60" stat="pAtkSpd" val="0.84"/>
+	   <mul order="0x60" stat="mAtkSpd" val="0.84"/>
+	</effect>
+  </for>
+</skill>
+<skill id="5697" levels="4" name="Seed of Destruction Seal">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="element" val="5"/>
+  <set name="magicLvl" val="95"/>
+  <set name="skillType" val="MUTE"/>
+  <set name="minLand" val="99"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="99999"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="1000"/>
+  <set name="effectRange" val="1000"/>
+  <set name="displayId" val="835"/>
+  <for>
+    <effect name="SilenceMagicPhysical" ignoreP="1" time="13" val="0"/>
+    <effect count="7" name="ManaDamOverTime" time="2" val="50" noicon="1"/>
+  </for>
+</skill>
+<skill id="5698" levels="7" name="Bless the Blood">
+  <table name="#power"> 236 245 254 262 271 281 310 </table> <!-- guessed -->
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="powerMulti" val="1.17"/>
+  <set name="power" val="#power"/>
+</skill>
+<skill id="5699" levels="7" name="Decrease P. Def">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+</list>

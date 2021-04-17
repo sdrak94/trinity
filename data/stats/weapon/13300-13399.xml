@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13319" name="O-type Stick (Event) - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13320" name="X-type Stick (Event) - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13321" name="Scissors-type Stick (Event) - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13322" name="Rock-type Stick (Event) - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13323" name="Paper-type Stick (Event) - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13324" name="Pumpkin Transformation Stick - 30-day limited period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13334" name="O-type Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13335" name="X-type Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13336" name="Scissors-type Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13337" name="Rock-type Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13338" name="Paper-type Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13339" name="Pumpkin Transformation Stick (Event) - 7-day Limited Period">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="1" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

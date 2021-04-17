@@ -1,0 +1,50 @@
+private String generatePlayersGlobalStatsHtml(PlayerEventInfo player)
+	{
+		TextBuilder tb = new TextBuilder();
+		
+		/*tb.append("<table width=150><tr><td width=50><center>" + ((count - 1) / 10 != 0 ? "<a action=\"bypass -h eventstats " + ((count - 1) / 10) + "\">Prev</a>" : "Prev") + "</td><td width=50><center>" + (((count - 1) / 10) + 1) + "</td><td width=50><center>" + ((count - 1) / 10 != size / 10 ? "<a action=\"bypass -h eventstats " + (((count - 1) / 10) + 2) + "\">Next</a>" : "Next") + "</td></tr></table>
+				<br><br><center><table width=700 bgcolor=5A5A5A><tr><td width=30><center>Rank</td><td width=100><center>Name</td><td width=65><center>Events</td><td width=65><center>Win%</td><td width=65><center>K:D</td><td width=65><center>Wins</td><td width=65><center>Losses</td><td width=65><center>Kills</td><td width=65><center>Deaths</td><td width=100><center>Favourite Event</td></tr></table><br>" + "<center><table width=720>");
+		tb.append("<tr><td width=30><center>" + count + ".</td><td width=100><a action=\"bypass -h eventstats_show " + rset.getInt("player") + "\">" + rset.getString("char_name") + "</a></td><td width=65><center>" + rset.getInt("num") + "</td><td width=65><center>" + rset.getDouble("winpercent") + "%</td><td width=65><center>" + rset.getDouble("kdratio") + "</td><td width=65><center>" + rset.getInt("wins") + "</td><td width=65><center>" + rset.getInt("losses") + "</td><td width=65><center>" + rset.getInt("kills") + "</td>" + "<td width=65><center>" + rset.getInt("deaths") + "</td><td width=120><center>" + EventType.getEventByMainId(rset.getInt("favevent")).getHtmlTitle() + "</td></tr>");
+		tb.append("</table>");*/
+
+		tb.append("<html><body><br><center><font color=ac9887>" + player.getPlayersName() + "'s event statistics</font><br>");
+		
+		tb.append("%data%");
+		
+		String success, kdRatio;
+		
+		tb.append("<table width=740 bgcolor=4E4E4E><tr> "
+				+ "<td width=100><font color=B09D8E>Event</font></td><td width=90 align=center><font color=A9A8A7>Times played</font></td><td width=65 align=center><font color=A9A8A7>Win %</font></td><td width=65 align=center><font color=A9A8A7>K:D ratio</font></td><td width=65 align=center><font color=A9A8A7>Wins</font></td><td width=65 align=center><font color=A9A8A7>Loses</font></td><td width=65 align=center><font color=A9A8A7>Kills</font></td><td width=65 align=center><font color=A9A8A7>Deaths</font></td><td width=65 align=center><font color=A9A8A7>Score</font></td></tr></table>");
+		
+		tb.append("<img src=\"L2UI.SquareBlank\" width=740 height=6>");
+		
+		boolean bg = false;
+		
+		GlobalStatsModel stats;
+		for(EventType event : EventType.values())
+		{
+			stats = _playerGlobalStats.get(player).get(event);
+			if(stats == null)
+				continue;
+			
+			int kills = stats.get(GlobalStatType.KILLS);
+			int deaths = stats.get(GlobalStatType.DEATHS);
+			int timesPlayed = stats.get(GlobalStatType.COUNT_PLAYED);
+			int wins = stats.get(GlobalStatType.WINS);
+			
+			kdRatio = String.valueOf((deaths == 0 ? (double) kills : ((double) kills / (double) deaths)));
+			success = String.valueOf((int) ((double)wins / timesPlayed * 100));
+			kdRatio = kdRatio.substring(0, Math.min(3, kdRatio.length()));
+			success = success.substring(0, Math.min(5, success.length())) + "%";
+			
+			tb.append("<table width=740 bgcolor=" + (bg ? "3E3E3E" : "2E2E2E") + "><tr><td width=100><font color=B09D8E>" + event.getHtmlTitle() + "</font> </td><td width=90 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.COUNT_PLAYED) + "</font></td><td width=65 align=center><font color=B3AA9D>" + success + "</font></td><td width=65 align=center><font color=B3AA9D>" + kdRatio + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.WINS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.LOSES) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.KILLS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.DEATHS) + "</font></td><td width=65 align=center><font color=B3AA9D>" + stats.get(GlobalStatType.SCORE) + "</font></td></tr>");
+			tb.append("</table><img src=\"L2UI.SquareBlank\" width=740 height=3>");
+			
+			bg = !bg;
+		}
+		
+		tb.append("</center></body></html>");
+		
+		_playerGlobalStatsHtml.put(player, tb.toString());
+		return tb.toString();
+	}

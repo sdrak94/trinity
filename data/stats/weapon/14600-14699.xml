@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="14606" name="Gracia Soldier Two-Handed Sword">
+  <for>
+    <set val="78" order="0x08" stat="pAtk"/>
+    <set val="39" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14621" name="Santa Claus' Sirra Blade">
+  <for>
+    <set val="51" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14622" name="Santa Claus' Sword of Ipos">
+  <for>
+    <set val="62" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14623" name="Santa Claus' Barakiel Axe">
+  <for>
+    <set val="51" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14624" name="Santa Claus' Behemoth Tuning Fork">
+  <for>
+    <set val="62" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14625" name="Santa Claus' Naga Storm">
+  <for>
+    <set val="45" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14626" name="Santa Claus' Tiphon Spear">
+  <for>
+    <set val="51" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14627" name="Santa Claus' Shyeed Bow">
+  <for>
+    <set val="116" order="0x08" stat="pAtk"/>
+    <set val="42" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="227" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14628" name="Santa Claus' Sobekk Hurricane">
+  <for>
+    <set val="41" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14629" name="Santa Claus' Themis Tongue">
+  <for>
+    <set val="41" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14630" name="Santa Claus' Hand of Cabrio">
+  <for>
+    <set val="50" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14631" name="Santa Claus' Daimon Crystal">
+  <for>
+    <set val="62" order="0x08" stat="pAtk"/>
+    <set val="56" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14632" name="Santa Claus' Eclair Bijou">
+  <for>
+    <set val="46" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14633" name="Santa Claus' Screaming Vengeance">
+  <for>
+    <set val="56" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14634" name="Santa Claus' Durendal">
+  <for>
+    <set val="65" order="0x08" stat="pAtk"/>
+    <set val="38" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="14674" name="Santa Claus' Tallum Blade*Damascus">
+  <for>
+    <set val="61" order="0x08" stat="pAtk"/>
+    <set val="51" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+</list>

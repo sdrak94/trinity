@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Apella Trader -->
+<!-- by Demolidor -->
+<list applyTaxes="true">
+
+<!-- Apella Helm -->
+<item id="1">
+<ingredient id="-200" count="1740"/>
+<ingredient id="57" count="451110"/>
+<production id="7860" count="1"/>
+<ingredient id="57" count="4511100" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Plate Armor -->
+<item id="2">
+<ingredient id="-200" count="6770"/>
+<ingredient id="57" count="1755185"/>
+<production id="7861" count="1"/>
+<ingredient id="57" count="17551850" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Gauntlet - Heavy Armor -->
+<item id="3">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7862" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Solleret - Heavy Armor -->
+<item id="4">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7863" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Brigandine -->
+<item id="5">
+<ingredient id="-200" count="5080"/>
+<ingredient id="57" count="1317037"/>
+<production id="7864" count="1"/>
+<ingredient id="57" count="13170370" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Leather Gloves - Light Armor -->
+<item id="6">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7865" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Boots - Light Armor -->
+<item id="7">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7866" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Doublet -->
+<item id="8">
+<ingredient id="-200" count="5080"/>
+<ingredient id="57" count="1317037"/>
+<production id="7867" count="1"/>
+<ingredient id="57" count="13170370" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Silk Gloves - Robe -->
+<item id="9">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7868" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+<!-- Apella Sandals - Robe -->
+<item id="10">
+<ingredient id="-200" count="1160"/>
+<ingredient id="57" count="300740"/>
+<production id="7869" count="1"/>
+<ingredient id="57" count="3007400" isTaxIngredient="true"/>
+</item>
+
+</list>

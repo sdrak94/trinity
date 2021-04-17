@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<list>
+	<!-- Colors
+		0xCF8350; // blue
+		0x4F4FD0; // red
+		0x65C956; // green
+		0xCD529F; // purple
+		0x3DC7DA; // yellow
+		0x4D93D2; // orange
+		0xC1C13E; // teal
+		0xD196D6; // pink
+		0x57799B; // brown
+		0x949494; // grey
+	-->
+		<schedule>
+			<eventsPool>
+				<pool bucoPool="Domination,CTF,TeamVsTeam,DM,HuntingGrounds" />
+			</eventsPool>
+			<!-- Sunday = 1, Saturday = 7 -->
+			<day day="1"> <!-- Sunday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="2"> <!-- Monday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="3"> <!-- Tuesday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="4"> <!-- Wednesday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="5"> <!-- Thirsday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="6"> <!-- Friday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+			<day day="7"> <!-- Saturday -->
+				<event eventId="random" time="00:00" />
+				<event eventId="random" time="01:30" />
+				<event eventId="random" time="03:00" />
+				<event eventId="random" time="04:30" />
+				<event eventId="random" time="06:00" />
+				<event eventId="random" time="07:30" />
+				<event eventId="random" time="09:00" />
+				<event eventId="random" time="10:30" />
+				<event eventId="random" time="12:00" />
+				<event eventId="random" time="13:30" />
+				<event eventId="random" time="15:00" />
+				<event eventId="random" time="16:30" />
+				<event eventId="SiegeEvent" time="18:00" />
+				<event eventId="random" time="19:30" />
+				<event eventId="SiegeEvent" time="21:00" />
+				<event eventId="random" time="22:30" />
+			</day>
+		</schedule>
+		<event id="0" Type="Domination" Name="Keucereus Base" Description="Event Description" regAll="true" JoinLocName="Gludin Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="-81958" spawnY="150844" spawnZ="-3130" />
+			<doublePvPs doublePvPs="true"/>
+			<timers joinTime="1" eventTime="15" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="-185811" spawnY="242567" spawnZ="1679" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-187053, 246016, 1284" />
+				<spawn teamId="Red" spawn="-185791, 246401, 1287" />
+				<spawn teamId="Red" spawn="-186620, 246859, 1436" />
+				<spawn teamId="Blue" spawn="-184141, 238708, 1436" />
+				<spawn teamId="Blue" spawn="-183706, 239432, 1284" />
+				<spawn teamId="Blue" spawn="-184930, 239056, 1287" />
+			</teamSpawns>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="-185715" spawnY="246431" spawnZ="1286" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="-187128" spawnY="245997" spawnZ="1287" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="-186725" spawnY="247204" spawnZ="1436" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="-185015" spawnY="239028" spawnZ="1287" title="Blue Buffer" />
+				<spawn npcId="90001" spawnX="-184005" spawnY="238243" spawnZ="1436" title="Blue Buffer" />
+				<spawn npcId="90001" spawnX="-183602" spawnY="239458" spawnZ="1289" title="Blue Buffer" />
+			</npcSpawns>
+			<fences>
+				<fence fenceId="268448430" />
+				<fence fenceId="268448432" />
+				<fence fenceId="268448439" />
+			</fences>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="1" Type="SiegeEvent" Name="Aden Siege" Description="Event Description" regAll="false" JoinLocName="Primeval Island" instanceId="1" respawnDelay="10" respawnDelayMul="2" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="10449" spawnY="-24878" spawnZ="-3661" />
+			<timers joinTime="15" eventTime="20" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Green" nameColor="0x62FF76" titleColor="0x949494"/>
+				<team id="1" name="Orange" nameColor="0x1d7ce7" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="10449" spawnY="-24878" spawnZ="-3661" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			<sealers sealers="3" />
+			
+			<centerLoc spawn="146093,1857,-460"  range="20000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Green" spawn="147460,18944,-1895" />
+				<spawn teamId="Orange" spawn="147457,992,223" />
+			</teamSpawns>
+			<doors>
+				<door doorId="24180021" />
+				<door doorId="24180020" />
+				<door doorId="24180019" />
+				<door doorId="24180018" />
+				<door doorId="24180015" />
+				<door doorId="24180014" />
+				<door doorId="24180003" />
+				<door doorId="24180004" />
+				<door doorId="24180005" />
+				<door doorId="24180012" />
+				<door doorId="24180013" />
+				<door doorId="24180006" />
+				<door doorId="24180001" />
+				<door doorId="24180002" />
+				<door doorId="24180011" />
+				<door doorId="24180016" />
+				<door doorId="24180008" />
+			</doors>
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="147734" spawnY="18599" spawnZ="-1814" />
+				<spawn npcId="90001" spawnX="147167" spawnY="18633" spawnZ="-1819" />
+				<spawn npcId="90001" spawnX="147860" spawnY="1500" spawnZ="218" />
+				<spawn npcId="90001" spawnX="147170" spawnY="1490" spawnZ="218" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="15" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="2" Type="CTF" Name="Mithril Mines" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			
+			<centerLoc spawn="146093,1857,-460"  range="12000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="175376, -185246, -3722" />
+				<spawn teamId="Blue" spawn="187085, -184835, -3311" />
+			</teamSpawns>
+			
+			<flagSpawns>
+				<flag teamId="Red" spawn="176590, -185212, -3723" />
+				<flag teamId="Blue" spawn="185905, -184494, -3312" />
+			</flagSpawns>
+			
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="187384" spawnY="-185110" spawnZ="-3312" />
+				<spawn npcId="90001" spawnX="175121" spawnY="-185473" spawnZ="-3723" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="3" Type="TeamVsTeam" Name="Hellbound Quary" Description="Event Description" regAll="true" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="1" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="146093,1857,-460" range="10000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-7375, 246323, -1867" />
+				<spawn teamId="Blue" spawn="-6228, 241123, -1840" />
+			</teamSpawns>
+			
+			<npcSpawns>
+				<spawn npcId="90001" spawnloc="-7495, 246742, -1842" title="Red Buffer"/>
+				<spawn npcId="90001" spawnloc="-6337, 240927, -1841" title="Blue Buffer"/>
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="4" Type="DM" Name="Hellbound Quary" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			
+			<playerInfo>
+				<player nameColor="0xCF8350" titleColor="0x949494"/>
+				<topPlayer nameColor="0xCD529F" titleColor="0x57799B"/>
+				<firstPlayer nameColor="0x4F4FD0" titleColor="0x4D93D2"/>
+			</playerInfo>
+			
+			<centerLoc spawn="9329, 236810, -1928" range="2000"/>
+			
+			<!--<areaSpawns>
+				<spawn centerLoc="-7375, 246323, -1867" centerRange="650"/>
+			</areaSpawns>-->
+			
+			
+			<playerSpawns>
+				<spawn spawnLoc="10135, 234844, -1982" range="50"/>
+				<spawn spawnLoc="9762, 237360, -1969" range="50"/>
+				<spawn spawnLoc="8941, 235755, -1946" range="50"/>
+				<spawn spawnLoc="7869, 236429, -1994" range="50"/>
+				<spawn spawnLoc="8080, 237861, -1983" range="50"/>
+				<spawn spawnLoc="10993, 237334, -1963" range="50"/>
+				<spawn spawnLoc="10552, 238293, -1940" range="50"/>
+				<spawn spawnLoc="9088, 238938, -1999" range="50"/>
+				<spawn spawnLoc="8436, 238018, -1963" range="50"/>
+			</playerSpawns>
+			
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<topPlayers>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</topPlayers>
+				<loser>
+					<reward itemId="6392" ammount="3" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+			</rewards>
+		</event>
+		<event id="5" Type="HuntingGrounds" Name="Imperial Tomb" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Green" nameColor="0x65C956" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="178272, -88870, -1709" range="10000"/>
+			
+			<flagLoc flagId="35233" spawn="147465,1531,-7220" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="178272, -88870, -7220" />
+				<spawn teamId="Red" spawn="180735, -85596, -7220" />
+				<spawn teamId="Green" spawn="178293, -83414, -7220" />
+				<spawn teamId="Green" spawn="175572, -85581, -7220" />
+			</teamSpawns>
+			
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="178266" spawnY="-89198" spawnZ="-7213" />
+				<spawn npcId="90001" spawnX="181023" spawnY="-85589" spawnZ="-7220" />
+				<spawn npcId="90001" spawnX="178280" spawnY="-83247" spawnZ="-7220" />
+				<spawn npcId="90001" spawnX="175335" spawnY="-85594" spawnZ="-7220" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="6" Type="SiegeEvent" Name="Giran Siege" Description="Event Description" regAll="false" JoinLocName="Primeval Island" instanceId="1" respawnDelay="10" respawnDelayMul="2" minLvL="85" maxLvL="95">
+		<spawnRegNpc npcId="865000" spawnX="10449" spawnY="-24878" spawnZ="-3661" />
+			<doublePvPs doublePvPs="true"/>
+			<timers joinTime="15" eventTime="20" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Green" nameColor="0x62FF76" titleColor="0x949494"/>
+				<team id="1" name="Orange" nameColor="0x1d7ce7" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			<sealers sealers="3" />
+			
+			<centerLoc spawn="116552,146780,-2349"  range="20000"/>
+			<flagLoc flagId="35233" spawn="117942,145088,-2551" />
+			<teamSpawns>
+				<spawn teamId="Green" spawn="106688,144432,-3456" />
+				<spawn teamId="Orange" spawn="116552,146780,-2349" />
+			</teamSpawns>
+			<doors>
+				<door doorId="23220005" />
+				<door doorId="23220006" />
+				<door doorId="23220002" />
+				<door doorId="23220001" />
+				<door doorId="23220004" />
+				<door doorId="23220003" />
+			</doors>
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="105497" spawnY="143785" spawnZ="-3456" />
+				<spawn npcId="90001" spawnX="116430" spawnY="146382" spawnZ="-2349" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="15" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="7" Type="CTF" Name="Dion" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			
+			<centerLoc spawn="146093,1857,-460"  range="12000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="16795, 146249, -3114" />
+				<spawn teamId="Blue" spawn="20019, 143472, -3048" />
+			</teamSpawns>
+			
+			<flagSpawns>
+				<flag teamId="Red" spawn="16288, 146287, -3101" />
+				<flag teamId="Blue" spawn="20661, 143443, -3086" />
+			</flagSpawns>
+			
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="16585" spawnY="146674" spawnZ="-3112" />
+				<spawn npcId="90001" spawnX="20290" spawnY="142973" spawnZ="-3078" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="8" Type="DM" Name="Coliseum" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<players minPlayers="2" maxPlayers="500" />
+			<doublePvPs doublePvPs="true"/>
+			<playerInfo>
+				<player nameColor="0xCF8350" titleColor="0x949494"/>
+				<topPlayer nameColor="0xCD529F" titleColor="0x57799B"/>
+				<firstPlayer nameColor="0x4F4FD0" titleColor="0x4D93D2"/>
+			</playerInfo>
+			
+			<centerLoc spawn="149555, 46736, -3413" range="2000"/>
+			
+			<areaSpawns>
+				<spawn centerLoc="149555, 46736, -3413" centerRange="650"/>
+			</areaSpawns>
+			
+			
+			<!--<playerSpawns>
+				<spawn spawnLoc="10135, 234844, -1982" range="50"/>
+				<spawn spawnLoc="9762, 237360, -1969" range="50"/>
+				<spawn spawnLoc="8941, 235755, -1946" range="50"/>
+				<spawn spawnLoc="7869, 236429, -1994" range="50"/>
+				<spawn spawnLoc="8080, 237861, -1983" range="50"/>
+				<spawn spawnLoc="10993, 237334, -1963" range="50"/>
+				<spawn spawnLoc="10552, 238293, -1940" range="50"/>
+				<spawn spawnLoc="9088, 238938, -1999" range="50"/>
+				<spawn spawnLoc="8436, 238018, -1963" range="50"/>
+			</playerSpawns>-->
+			
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<topPlayers>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</topPlayers>
+				<loser>
+					<reward itemId="6392" ammount="3" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+			</rewards>
+		</event>
+		<event id="9" Type="Domination" Name="Imperial Tomb" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="178288" spawnY="-85585" spawnZ="-7217" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="178272, -88870, -7220" />
+				<spawn teamId="Red" spawn="180735, -85596, -7220" />
+				<spawn teamId="Blue" spawn="178293, -83414, -7220" />
+				<spawn teamId="Blue" spawn="175572, -85581, -7220" />
+			</teamSpawns>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="178266" spawnY="-89198" spawnZ="-7213" />
+				<spawn npcId="90001" spawnX="181023" spawnY="-85589" spawnZ="-7220" />
+				<spawn npcId="90001" spawnX="178280" spawnY="-83247" spawnZ="-7220" />
+				<spawn npcId="90001" spawnX="175335" spawnY="-85594" spawnZ="-7220" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="10" Type="SiegeEvent" Name="Floran Fortress" Description="Event Description" regAll="false" JoinLocName="Primeval Island" instanceId="1" respawnDelay="10" respawnDelayMul="2" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="10449" spawnY="-24878" spawnZ="-3661" />>
+			<timers joinTime="15" eventTime="20" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Green" nameColor="0x62FF76" titleColor="0x949494"/>
+				<team id="1" name="Orange" nameColor="0x1d7ce7" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			<sealers sealers="3" />
+			
+			<centerLoc spawn="5252,149756,-2730"  range="20000"/>
+			<flagLoc flagId="35233" spawn="5606,149756,-1967" />
+			<teamSpawns>
+				<spawn teamId="Green" spawn="11476,150766,-3310" />
+				<spawn teamId="Orange" spawn="5252,149756,-2730" />
+			</teamSpawns>
+			<doors>
+				<door doorId="20220021" />
+				<door doorId="20220026" />
+				<door doorId="20220022" />
+				<door doorId="20220023" />
+				<door doorId="20220024" />
+				<door doorId="20220025" />
+			</doors>
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="10973" spawnY="150822" spawnZ="-3294" />
+				<spawn npcId="90001" spawnX="5051" spawnY="149764" spawnZ="-2730" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="15" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="11" Type="DM" Name="Hunter's Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			
+			<playerInfo>
+				<player nameColor="0xCF8350" titleColor="0x949494"/>
+				<topPlayer nameColor="0xCD529F" titleColor="0x57799B"/>
+				<firstPlayer nameColor="0x4F4FD0" titleColor="0x4D93D2"/>
+			</playerInfo>
+			
+			<centerLoc spawn="116545, 76127, -2730" range="3000"/>
+			
+			<!--<areaSpawns>
+				<spawn centerLoc="-7375, 246323, -1867" centerRange="650"/>
+			</areaSpawns>-->
+			
+			
+			<playerSpawns>
+				<spawn spawnLoc="116545, 76127, -2730" range="50"/>
+				<spawn spawnLoc="115670, 75026, -2600" range="50"/>
+				<spawn spawnLoc="115924, 77633, -2694" range="50"/>
+				<spawn spawnLoc="114797, 77717, -2635" range="50"/>
+				<spawn spawnLoc="117738, 76242, -2695" range="50"/>
+				<spawn spawnLoc="118313, 74251, -2422" range="50"/>
+				<spawn spawnLoc="119740, 76623, -2275" range="50"/>
+				<spawn spawnLoc="118463, 78240, -2177" range="50"/>
+				<spawn spawnLoc="117057, 79016, -2264" range="50"/>
+			</playerSpawns>
+			
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<topPlayers>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</topPlayers>
+				<loser>
+					<reward itemId="6392" ammount="3" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+			</rewards>
+		</event>
+		<event id="12" Type="HuntingGrounds" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Green" nameColor="0x65C956" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="-5991, 244225, -1709" range="10000"/>
+			
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-87098, 242575, -3730" />
+				<spawn teamId="Red" spawn="-84639, 240174, -3730" />
+				<spawn teamId="Green" spawn="-81413, 243057, -3730" />
+				<spawn teamId="Green" spawn="-84120, 245917, -3728" />
+			</teamSpawns>
+			
+			<npcSpawns>
+				<spawn npcId="90001" spawnloc="-87399, 242451, -3730" />
+				<spawn npcId="90001" spawnloc="-85030, 240380, -3730" />
+				<spawn npcId="90001" spawnloc="-81541, 242671, -3730" />
+				<spawn npcId="90001" spawnloc="-83800, 245724, -3731" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>	
+		<event id="13" Type="CTF" Name="MoS" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			
+			<centerLoc spawn="146093,1857,-460"  range="12000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="115940, -79827, -3398" />
+				<spawn teamId="Blue" spawn="115925, -86527, -3398" />
+			</teamSpawns>
+			
+			<flagSpawns>
+				<flag teamId="Red" spawn="115939, -80046, -3398" />
+				<flag teamId="Blue" spawn="115928, -86355, -3398" />
+			</flagSpawns>
+			
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="116260" spawnY="-80086" spawnZ="-3397" />
+				<spawn npcId="90001" spawnX="115605" spawnY="-86266" spawnZ="-3397" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="14" Type="TeamVsTeam" Name="Talking Island" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<centerLoc spawn="146093,1857,-460" range="10000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="-87098, 242575, -3730" />
+				<spawn teamId="Red" spawn="-84639, 240174, -3730" />
+				<spawn teamId="Blue" spawn="-81413, 243057, -3730" />
+				<spawn teamId="Blue" spawn="-84120, 245917, -3728" />
+			</teamSpawns>
+			
+			<npcSpawns>
+			
+				<spawn npcId="90001" spawnloc="-87399, 242451, -3730" />
+				<spawn npcId="90001" spawnloc="-85030, 240380, -3730" />
+				<spawn npcId="90001" spawnloc="-81541, 242671, -3730" />
+				<spawn npcId="90001" spawnloc="-83800, 245724, -3731" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="15" Type="CTF" Name="Dwarven Village" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			
+			<startType type="assault" />
+			<sortType type="pvp" />
+			
+			<centerLoc spawn="146093,1857,-460"  range="12000"/>
+			<flagLoc flagId="35233" spawn="147465,1531,-365" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="115090, -176796, -803" />
+				<spawn teamId="Blue" spawn="116485, -184160, -1568" />
+			</teamSpawns>
+			
+			<flagSpawns>
+				<flag teamId="Red" spawn="115291, -177498, -916" />
+				<flag teamId="Blue" spawn="116554, -183021, -1568" />
+			</flagSpawns>
+			
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="115427" spawnY="-177302" spawnZ="-900" />
+				<spawn npcId="90001" spawnX="116241" spawnY="-183829" spawnZ="-1496" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="16" Type="CTF" Name="Cruma Tower" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<timers joinTime="15" eventTime="15" />
+			<doublePvPs doublePvPs="true"/>
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			
+			<centerLoc spawn="146093,1857,-460"  range="12000"/>
+			<teamSpawns>
+				<spawn teamId="Red" spawn="18501, 115772, -11845" />
+				<spawn teamId="Red" spawn="16845, 115772, -11845" />
+				<spawn teamId="Blue" spawn="17066, 112520, -11972" />
+				<spawn teamId="Blue" spawn="18493, 112529, -11972" />
+			</teamSpawns>
+			
+			<flagSpawns>
+				<flag teamId="Red" spawn="17714, 117302, -12076" />
+				<flag teamId="Blue" spawn="17732, 110944, -12164" />
+			</flagSpawns>
+			
+			<fences>
+				<fence fenceId="24180021" />
+				<fence fenceId="24180020" />
+			</fences>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="18494" spawnY="115844" spawnZ="-11848" />
+				<spawn npcId="90001" spawnX="16848" spawnY="115834" spawnZ="-11845" />
+				<spawn npcId="90001" spawnX="16865" spawnY="112595" spawnZ="-11981" />
+				<spawn npcId="90001" spawnX="18501" spawnY="112441" spawnZ="-11981" />
+			</npcSpawns>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="17" Type="Domination" Name="Anomic Foundry" Description="Event Description" regAll="true" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<doublePvPs doublePvPs="true"/>
+			<timers joinTime="1" eventTime="15" />
+			<players minPlayers="1" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="28510" spawnY="245062" spawnZ="-3697" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="28720, 247229, -3685" />
+				<spawn teamId="Red" spawn="28111, 246912, -3691" />
+				<spawn teamId="Red" spawn="28382, 246729, -3695" />
+				<spawn teamId="Blue" spawn="28757, 242423, -3483" />
+				<spawn teamId="Blue" spawn="29505, 243072, -3624" />
+				<spawn teamId="Blue" spawn="29267, 242600, -3502" />
+			</teamSpawns>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="28667" spawnY="247255" spawnZ="-3694" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
+			</npcSpawns>
+			<fences>
+				<fence fenceId="268449135" />
+				<fence fenceId="268449169" />
+				<fence fenceId="268449170" />
+				<fence fenceId="268449171" />
+				<fence fenceId="268449172" />
+				<fence fenceId="268449173" />
+				<fence fenceId="268449174" />
+				<fence fenceId="268482201" />
+				<fence fenceId="268482203" />
+				<fence fenceId="268482304" />
+			</fences>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="18" Type="TeamVsTeam" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<doublePvPs doublePvPs="true"/>
+			<timers joinTime="15" eventTime="15" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="28510" spawnY="245062" spawnZ="-3697" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="28720, 247229, -3685" />
+				<spawn teamId="Red" spawn="28111, 246912, -3691" />
+				<spawn teamId="Red" spawn="28382, 246729, -3695" />
+				<spawn teamId="Blue" spawn="28757, 242423, -3483" />
+				<spawn teamId="Blue" spawn="29505, 243072, -3624" />
+				<spawn teamId="Blue" spawn="29267, 242600, -3502" />
+			</teamSpawns>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="28667" spawnY="247255" spawnZ="-3694" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
+			</npcSpawns>
+			<fences>
+				<fence fenceId="268545746" />
+				<fence fenceId="268545771" />
+				<fence fenceId="268545777" />
+				<fence fenceId="268545780" />
+				<fence fenceId="268545788" />
+				<fence fenceId="268545792" />
+				<fence fenceId="268545808" />
+				<fence fenceId="268545868" />
+				<fence fenceId="268545874" />
+				<fence fenceId="268545890" />
+			</fences>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+		<event id="19" Type="HuntingGrounds" Name="Anomic Foundry" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
+			<doublePvPs doublePvPs="true"/>
+			<timers joinTime="15" eventTime="15" />
+			<players minPlayers="2" maxPlayers="500" />
+			<teams>
+				<team id="0" name="Red" nameColor="0x4F4FD0" titleColor="0x949494"/>
+				<team id="1" name="Blue" nameColor="0xCF8350" titleColor="0x949494"/>
+			</teams>
+			<spawnBaseNpc npcId="865001" spawnX="28510" spawnY="245062" spawnZ="-3697" />
+			<teamSpawns>
+				<spawn teamId="Red" spawn="28720, 247229, -3685" />
+				<spawn teamId="Red" spawn="28111, 246912, -3691" />
+				<spawn teamId="Red" spawn="28382, 246729, -3695" />
+				<spawn teamId="Blue" spawn="28757, 242423, -3483" />
+				<spawn teamId="Blue" spawn="29505, 243072, -3624" />
+				<spawn teamId="Blue" spawn="29267, 242600, -3502" />
+			</teamSpawns>
+			<npcSpawns>
+				<spawn npcId="90001" spawnX="28667" spawnY="247255" spawnZ="-3694" title="Red Buffer" />
+				<spawn npcId="90001" spawnX="29110" spawnY="242367" spawnZ="-3454" title="Blue Buffer" />
+			</npcSpawns>
+			<fences>
+				<fence fenceId="268545746" />
+				<fence fenceId="268545771" />
+				<fence fenceId="268545777" />
+				<fence fenceId="268545780" />
+				<fence fenceId="268545788" />
+				<fence fenceId="268545792" />
+				<fence fenceId="268545808" />
+				<fence fenceId="268545868" />
+				<fence fenceId="268545874" />
+				<fence fenceId="268545890" />
+			</fences>
+			<rewards>
+				<winner>
+					<reward itemId="6392" ammount="10" chance="100" static="false"/>
+					<reward itemId="97002" ammount="1" chance="100" static="true"/> <!-- Rare Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="20" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="20" static="true"/> <!-- Exp Boost Lv1 -->
+				</winner>
+				<loser>
+					<reward itemId="6392" ammount="6" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="10" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="10" static="true"/> <!-- Exp Boost Lv1 -->
+				</loser>
+				<tie>
+					<reward itemId="6392" ammount="8" chance="100" static="false"/>
+					<reward itemId="97000" ammount="1" chance="100" static="true"/> <!-- Event Token -->
+					<reward itemId="4676" ammount="1" chance="100" static="true"/> <!-- Medal of Victory -->
+					<reward itemId="62021" ammount="1" chance="15" static="true"/> <!-- Drop Boost Lv1 -->
+					<reward itemId="62002" ammount="1" chance="15" static="true"/> <!-- Exp Boost Lv1 -->
+				</tie>
+			</rewards>
+		</event>
+	</list>

@@ -1,0 +1,704 @@
+<list>
+<item id="83020" name="Valyrian Warhammer"><!--fixed-->
+  <for>
+   <!--<set val="444" order="0x08" stat="pAtk"/>-->
+   <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="514" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.20" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83021" name="Valyrian Sword"><!--fixed-->
+  <for>
+   <!--<set val="444" order="0x08" stat="pAtk"/>-->
+   <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="514" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.20" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.00" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.20" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83022" name="Valyrian Warmace"><!--fixed-->
+  <for> 
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="620" order="0x08" stat="pAtk"/> 
+   <set val="251" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <basemul val="0.25" order="0x40" stat="pAtk"/>
+   <add val="0.20" order="0x40" stat="cAtk"/>
+   <basemul val="0.50" order='0x40' stat='rCrit'/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item> 
+<item id="83023" name="Valyrian Claymore"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="620" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.20" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83024" name="Valyrian Twisters"><!--fixed-->
+  <for>
+    <!--<set val="404" order="0x08" stat="pAtk"/>-->
+	<sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+	 <set val="501" order="0x08" stat="pAtk"/>
+    <set val="251" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.65" order="0x40" stat="rCrit"/>
+	<basemul val="0.0" order="0x40" stat="pAtk"/>
+	<basemul val="0.18" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.2" order="0x40" stat="pReuse"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order='0x40' stat='blowRate'/>
+	<add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83025" name="Valyrian Thrower"><!--fixed-->
+  <for>
+   <!--<set val="854" order="0x08" stat="pAtk"/>-->
+   <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="954" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="293" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val="0.16" order="0x40" stat="pAtkSpd"/>
+   <sub val="0.15" order="0x40" stat="atkReuse"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.00" order="0x40" stat="pAtk"/>
+   <add val="30" order="0x60" stat="pAtkRange"/>
+   <add val="0.17" order="0x40" stat="pAtk-undead"/>
+	<add val="0.23" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83026" name="Valyrian Claws"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="605" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <add val="0.15" order="0x40" stat="cAtk"/>
+   <basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83027" name="Valyrian Warspear"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+    <set val="517" order="0x08" stat="pAtk"/>
+    <set val="251" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.65" order="0x40" stat="rCrit"/>
+    <basemul val="0.5" order="0x40" stat="maxHp"/>
+	<add val="6" order="0x40" stat="accCombat"/>
+	<basemul val="0.21" order="0x40" stat="pAtkSpd"/>
+	<add val="40" order="0x40" stat="pAtkRange"/>
+	<add val="80" order="0x40" stat="pAtkAngle"/>
+	<basemul val="0.00" order="0x40" stat="pAtk"/>
+	<add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83028" name="Valyrian Dual Swords"><!--fixed-->
+  <for>
+   <!--<set val="545" order="0x08" stat="pAtk"/>-->
+   <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="605" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.20" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.20" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.4" order="0x40" stat="maxHp"/>
+   <basemul val="0.65" order='0x40' stat='rCrit'/>
+   <sub val="0.15" order="0x40" stat="pReuse"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83029" name="Valyrian Mace"><!--fixed-->
+  <for>
+	<sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="367" order="0x08" stat="pAtk"/>
+   <set val="380" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.20" order="0x40" stat="mAtkSpd"/>
+   <sub val="0.18" order="0x40" stat="mReuse"/>
+   <basemul val="0.13" order="0x40" stat="mAtk"/> 
+   <basemul val="0.3" order="0x40" stat="mCritRate"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83030" name="Valyrian Staff"> <!--fixed-->
+  <for> 
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="367" order="0x08" stat="pAtk"/> 
+   <set val="434" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.18" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.35" order="0x40" stat="mAtk"/>
+   <add val="0.2" order="0x40" stat="cAtkMagic"/>
+   <basemul val="0.3" order="0x40" stat="maxHp"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item> 
+<item id="83031" name="Valyrian Ancient Sword"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="560" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="7" order="0x08" stat="rCrit"/>
+   <add val="2" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val="0.22" order='0x40' stat='pAtkSpd'/>
+   <basemul val="0.05" order="0x40" stat="pAtk"/>
+   <basemul val="0.4" order="0x40" stat="maxHp"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83032" name="Valyrian Needle"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="482" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <sub val="0.2" order="0x40" stat="mReuse"/>
+   <basemul val='0.16' order='0x40' stat='pAtkSpd'/>
+   <basemul val='0.16' order='0x40' stat='mAtkSpd'/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val='0.3' order='0x40' stat='mCritRate'/>
+   <basemul val="0.1" order="0x40" stat="mAtk"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <basemul val="0.175" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83033" name="Valyrian Crossbow"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="668" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.65" order="0x40" stat="rCrit"/>
+   <basemul val="0.2" order='0x40' stat='pAtkSpd'/>
+   <add val="6" order="0x40" stat="rEvas"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.05" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83034" name="Valyrian Shield"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <sub val="8" order="0x10" stat="rEvas"/>
+   <set val="331" order="0x08" stat="sDef"/>
+   <set val="20" order="0x08" stat="rShld"/>
+   <enchant val="0" order="0x0C" stat="sDef"/>
+   <basemul val="0.15" order="0x40" stat="maxHp"/>
+   <mul val="1.2" order="0x30" stat="aggressionProf"/>
+   <add val="5" order="0x40" stat="reflectSkillMagic"/>
+   <sub order="0x40" stat="pvmVuln" val="0.10"/>
+  </for>
+</item>
+<item id="83036" name="Valyrian Dagger"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="473" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+   <add val="9" order="0x40" stat="rEvas"/>
+   <add val="0.20" order="0x40" stat="cAtk"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="0.10" order="0x40" stat="cAtkSkill"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83037" name="Valyrian Phantom"><!--fixed-->
+  <for>
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="367" order="0x08" stat="pAtk"/>
+   <set val="359" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.30" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.2" order="0x40" stat="maxHp"/>
+   <basemul val="0.2" order="0x40" stat="maxMp"/>
+   <add val="7" order="0x40" stat="runSpd"/>
+   <sub val="0.25" order="0x40" stat="mReuse"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83052" name="Valyrian Warmace"><!--fixed-->
+  <for> 
+  <sub order="0x40" stat="pvpPhysSkillsDmg" val="0.20"/>
+   <set val="620" order="0x08" stat="pAtk"/> 
+   <set val="251" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <basemul val="0.25" order="0x40" stat="pAtk"/>
+   <add val="0.20" order="0x40" stat="cAtk"/>
+   <basemul val="0.50" order='0x40' stat='rCrit'/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.20" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item> 
+<!--<item id="83020" name="Valyrian Warhammer">
+  <for>
+   <set val="444" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <basemul val="0.3" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.3" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83021" name="Valyrian Sword">
+  <for>
+   <set val="444" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.3" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83023" name="Valyrian Claymore">
+  <for>
+   <set val="545" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+   <add val="0.3" order="0x40" stat="pvmDam"/>
+   <mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83024" name="Valyrian Twisters">
+  <for>
+    <set val="404" order="0x08" stat="pAtk"/>
+    <set val="251" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.8" order="0x40" stat="rCrit"/>
+	<basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.2" order="0x40" stat="pReuse"/>
+	<add val="6" order="0x40" stat="rEvas"/>
+	<basemul val="0.2" order="0x40" stat="maxHp"/>
+	<basemul val="0.1" order='0x40' stat='blowRate'/>
+	<add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83025" name="Valyrian Thrower">
+  <for>
+   <set val="854" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="293" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+   <sub val="0.2" order="0x40" stat="atkReuse"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.1" order="0x40" stat="pAtk"/>
+   <add val="30" order="0x60" stat="pAtkRange"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83026" name="Valyrian Claws">
+  <for>
+   <set val="555" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <add val="0.2" order="0x40" stat="cAtk"/>
+   <basemul val="0.3" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.1" order="0x40" stat="pAtk"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83027" name="Valyrian Warspear">
+  <for>
+    <set val="453" order="0x08" stat="pAtk"/>
+    <set val="251" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.8" order="0x40" stat="rCrit"/>
+    <basemul val="0.5" order="0x40" stat="maxHp"/>
+	<add val="6" order="0x40" stat="accCombat"/>
+	<basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+	<add val="40" order="0x40" stat="pAtkRange"/>
+	<add val="80" order="0x40" stat="pAtkAngle"/>
+	<basemul val="0.15" order="0x40" stat="pAtk"/>
+	<add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83028" name="Valyrian Dual Swords">
+  <for>
+   <set val="545" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.25" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.4" order="0x40" stat="maxHp"/>
+   <basemul val="0.8" order='0x40' stat='rCrit'/>
+   <sub val="0.2" order="0x40" stat="atkReuse"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83029" name="Valyrian Mace">
+  <for>
+   <set val="367" order="0x08" stat="pAtk"/>
+   <set val="362" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+   <sub val="0.18" order="0x40" stat="mReuse"/>
+   <basemul val="0.3" order="0x40" stat="mAtk"/> 
+   <basemul val="0.4" order="0x40" stat="mCritRate"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83030" name="Valyrian Staff"> 
+  <for> 
+   <set val="367" order="0x08" stat="pAtk"/> 
+   <set val="392" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.2" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.5" order="0x40" stat="mAtk"/>
+   <add val="0.2" order="0x40" stat="cAtkMagic"/>
+   <basemul val="0.4" order="0x40" stat="maxHp"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item> 
+<item id="83031" name="Valyrian Ancient Sword">
+  <for>
+   <set val="491" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="7" order="0x08" stat="rCrit"/>
+   <add val="2" order="0x10" stat="accCombat"/>
+   <set val="350" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.8" order="0x40" stat="rCrit"/>
+   <basemul val="0.25" order='0x40' stat='pAtkSpd'/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <basemul val="0.4" order="0x40" stat="maxHp"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83032" name="Valyrian Needle">
+  <for>
+   <set val="402" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="406" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <sub val="0.2" order="0x40" stat="mReuse"/>
+   <basemul val='0.2' order='0x40' stat='pAtkSpd'/>
+   <basemul val='0.2' order='0x40' stat='mAtkSpd'/>
+   <basemul val="0.5" order="0x40" stat="rCrit"/>
+   <basemul val='0.3' order='0x40' stat='mCritRate'/>
+   <basemul val="0.2" order="0x40" stat="mAtk"/>
+   <add val="5" order="0x40" stat="accCombat"/>
+   <basemul val="0.2" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83033" name="Valyrian Crossbow">
+  <for>
+   <set val="541" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <add val="-1" order="0x10" stat="accCombat"/>
+   <set val="303" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.7" order="0x40" stat="rCrit"/>
+   <basemul val="0.2" order='0x40' stat='pAtkSpd'/>
+   <add val="6" order="0x40" stat="rEvas"/>
+   <add val="6" order="0x40" stat="accCombat"/>
+   <basemul val="0.15" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83034" name="Valyrian Shield">
+  <for>
+   <sub val="8" order="0x10" stat="rEvas"/>
+   <set val="331" order="0x08" stat="sDef"/>
+   <set val="20" order="0x08" stat="rShld"/>
+   <enchant val="0" order="0x0C" stat="sDef"/>
+   <basemul val="0.15" order="0x40" stat="maxHp"/>
+   <mul val="1.2" order="0x30" stat="aggressionProf"/>
+   <add val="5" order="0x40" stat="reflectSkillMagic"/>
+   <sub order="0x40" stat="pvmVuln" val="0.15"/>
+  </for>
+</item>
+<item id="83036" name="Valyrian Dagger">
+  <for>
+   <set val="391" order="0x08" stat="pAtk"/>
+   <set val="251" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.2" order="0x40" stat="pAtkSpd"/>
+   <add val="9" order="0x40" stat="rEvas"/>
+   <add val="0.3" order="0x40" stat="cAtk"/>
+   <basemul val="0.25" order="0x40" stat="pAtk"/>
+   <add val="0.15" order="0x40" stat="cAtkSkill"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83037" name="Valyrian Phantom">
+  <for>
+   <set val="367" order="0x08" stat="pAtk"/>
+   <set val="202" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.35" order="0x40" stat="mAtkSpd"/>
+   <basemul val="0.2" order="0x40" stat="maxHp"/>
+   <basemul val="0.2" order="0x40" stat="maxMp"/>
+   <add val="7" order="0x40" stat="runSpd"/>
+   <sub val="0.3" order="0x40" stat="mReuse"/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item>
+<item id="83052" name="Valyrian Warmace">
+  <for> 
+   <set val="545" order="0x08" stat="pAtk"/> 
+   <set val="251" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+   <basemul val="0.5" order="0x40" stat="maxHp"/>
+   <basemul val="0.4" order="0x40" stat="pAtk"/>
+   <add val="0.2" order="0x40" stat="cAtk"/>
+   <basemul val="0.4" order='0x40' stat='rCrit'/>
+   <add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.3" order="0x40" stat="pvmDam"/>
+	<mul val="0.6" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.6" order="0x40" stat="pvpMagicalDmg"/>
+  </for>
+</item> -->
+</list>

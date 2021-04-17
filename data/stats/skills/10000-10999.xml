@@ -1,0 +1,1948 @@
+<list>
+<skill id="10000" levels="1" name="Improved Two-Weapon Fighting">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtkAngle" val="70">
+      <using kind="Dual Sword,Dual Dagger"/>
+    </add>
+	<add order="0x40" stat="pAtkRange" val="10">
+      <using kind="Dual Sword"/>
+    </add>
+	<add order="0x40" stat="rCrit" val="10">
+      <using kind="Dual Sword"/>
+    </add>
+	<sub val="0.05" order="0x40" stat="pReuse">
+	<player class_id_restriction="88"/>
+	</sub>
+  </for>
+</skill>
+<skill id="10001" levels="1" name="Aurakyrian Grip">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtkRange" val="25">
+	<and>
+      <using kind="Sword,Ancient,Big Sword"/>
+	  <not>
+	      <using kind="Shield"/>
+	  </not>
+	  </and>
+    </add>
+	 <add order="0x40" stat="atkCountMax" val="1">
+	 <and>
+       <using kind="Light,Heavy"/>
+	   <not>
+	      <using kind="Magic"/>
+	   </not>
+	  </and>
+    </add>
+	<add order="0x40" stat="pAtkAngle" val="50">
+      <and>
+      <using kind="Sword,Big Sword,Ancient"/>
+	  <not>
+	      <using kind="Shield"/>
+	  </not>
+	  </and>
+    </add>
+	<add order="0x40" stat="atkCountMax" val="1">
+	 <and>
+       <using kind="Magic"/>
+	   <not>
+	      <using kind="Heavy,Light"/>
+	   </not>
+	  </and>
+    </add>
+	<add order="0x40" stat="pAtkAngle" val="60">
+	 <and>
+       <using kind="Magic"/>
+	   <not>
+	      <using kind="Heavy,Light"/>
+	   </not>
+	  </and>
+    </add>
+	<mul order="0x30" stat="disarmVuln" val="0.6"/>
+	<add order="0x40" stat="extraHit" val="2">
+	  <using kind="Sword"/>
+	</add>
+  </for>
+</skill>
+<skill id="10002" levels="1" name="Wan Jian Jue">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="hitTime" val="1200"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="5841"/>
+  <for>
+  <effect name="Buff" time="20" val="0" abnormal="vitality">
+    <mul order="0x80" stat="pAtk" val="0.60"/>
+	<set order="0x80" stat="pAtkAngle" val="360">
+	<and>
+      <using kind="Sword"/>
+	  <not>
+	  <using kind="Shield"/>
+	  </not>
+	  </and>
+    </set>
+	<add order="0x40" stat="pAtkRange" val="600">
+     	<and>
+      <using kind="Sword"/>
+	  <not>
+	  <using kind="Shield"/>
+	  </not>
+	  </and>
+    </add>
+	<add order="0x40" stat="atkCountMax" val="50">
+      <and>
+      <using kind="Sword"/>
+	  <not>
+	  <using kind="Shield"/>
+	  </not>
+	  </and>
+    </add>
+	<add order="0x40" stat="mAtkRange" val="600">
+      <and>
+		  <or>
+			<using skillid="6"/>
+			<using skillid="7"/>
+			<using skillid="9012"/>
+		  </or>
+      <using kind="Sword"/>
+	  <not>
+	    <using kind="Shield"/>
+	  </not>
+	  </and>
+    </add>
+	</effect>
+  </for>
+</skill>
+<skill id="10003" levels="1" name="Overpower">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="overpower" val="20">
+      <using kind="Big Sword,Big Blunt,Ancient"/>
+    </add>
+	<add order="0x40" stat="sDef" val="170">
+	 <and>
+       <using kind="Big Sword,Big Blunt,Ancient"/>
+	    <not>
+	       <using kind="Shield"/>
+	    </not>
+	  </and>
+    </add>
+  </for>
+</skill>
+<skill id="10004" levels="1" name="Air Rave">
+  <set name="mpConsume" val="10"/>
+  <set name="hpConsumePerc" val="15"/>
+  <set name="weaponsAllowed" val="512"/> <!-- Dual Sword-->
+  <set name="power" val="0"/>
+  <set name="hitTimings" val="15,15,15,30" />
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="40"/>
+  <set name="SSBoost" val="3.5"/>
+  <set name="followTarget" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="retries" val="2"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="hitTime" val="1150"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="450"/>
+  <set name="effectRange" val="750"/>
+  <set name="baseCritRate" val="15"/>
+  <set name="displayId" val="5720"/>
+  <set name="displayLvl" val="2"/>
+  <cond msg="You need to be farther away from target to Air Rave (100)">
+    <target mindistance="100"/>
+  </cond>
+  <for>
+	</for>
+</skill>
+<skill id="10005" levels="1" name="Point Blank Shot">
+  <set name="mpConsume" val="300"/>
+  <set name="weaponsAllowed" val="65568"/> 
+  <set name="power" val="5000"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="SSBoost" val="2"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="reuseDelay" val="25000"/>
+  <set name="hitTime" val="1700"/>
+  <set name="flyRadius" val="120"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="45"/>
+  <set name="effectRange" val="300"/>
+  <set name="baseCritRate" val="20"/>
+  <set name="displayId" val="921"/>
+  <set name="displayLvl" val="1"/>
+  <for>
+    <add order="0x40" stat="blowRate" val="37">
+       <using skillid="10005"/>
+    </add>
+	 <set order="0x40" stat="pDefIgnore" val="2500">
+       <using skillid="10005"/>
+    </set>
+    <set order="0x40" stat="pSkillEvasReduce" val="500">
+       <using skillid="10005"/>
+    </set>
+       <effect name="Knockback" val="0"/>
+	</for>
+</skill>
+<skill id="10006" levels="1" name="Mana Barrier">
+  <set name="mpConsume" val="100"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="5000"/>
+  <set name="skillType" val="CONT"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <for>
+    <effect count="0x7fffffff" name="MpConsumePerLevel" time="7" val="3" special="s_invulnerable">
+       <add order="0x40" stat="transDamMana" val="20"/>
+	   <set order="0x80" stat="regMp" val="0">
+	     <not>
+		    <using kind="Big Blunt,Dual Sword"/>
+		   </not>
+		</set>
+    </effect>
+  </for>
+</skill>
+<skill id="10007" levels="1" name="Stone Skin">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="180000"/>
+  <set name="hitTime" val="4500"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="5404"/>
+  <set name="displayLvl" val="2"/>
+  <for>
+    <effect name="StoneSkin" time="35" val="0" effectPower="5000" abnormal="invulnerable">
+	     <set order="0x85" stat="pDef" val="4000">
+		    <using kind="Magic"/>
+		 </set>
+	     <sub order="0x40" stat="runSpd" val="10"/>
+		 <mul order="0x30" stat="stunVuln" val="0.85"/>
+		 <mul order="0x30" stat="paralyzeVuln" val="0.85"/>
+		 <sub order="0x40" stat="mAtkSpd" val="100">
+		     <not>
+			   <using kind="Big Blunt"/>
+			 </not>
+		 </sub>
+    </effect>
+  </for>
+</skill>
+<skill id="10008" levels="1" name="Shoryuken">
+  <set name="weaponsAllowed" val="1024"/> <!-- Dual Fist -->
+    <set name="castRange" val="300"/>
+	<set name="skillRadius" val="300"/>
+    <set name="effectRange" val="500"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="2200"/>
+	<set name="olyDisabled" val="true"/>
+	<set name="coolTime" val="400"/>
+	<set name="areaLimit" val="true"/>
+	<set name="areaAngle" val="15"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="isDebuff" val="true"/>
+	<set name="maxLand" val="69"/>
+	<set name="minLand" val="27"/>
+	<set name="ignoreShld" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="overHit" val="true"/>
+    <set name="power" val="1500"/>
+	<set name="baseCritRate" val="20"/>
+	<set name="SSBoost" val="2.8"/>
+    <set name="reuseDelay" val="23000"/>
+	<set name="flyRadius" val="250"/>
+	<set name="knockbackType" val="THROW_UP"/>
+    <set name="skillType" val="CHARGEDAM"/>
+    <set name="target" val="TARGET_ONE"/>
+	<set name="requiredCharges" val="2"/>
+    <set name="numCharges" val="2"/>
+    <cond msg="You need to be farther away from target to Shoryuken (50)">
+      <target mindistance="50"/>
+    </cond>
+  <for>
+    <effect name="Stun" time="4" val="0" stackOrder="1" stackType="Stun" effectPower="72" effectType="STUN"/>
+	<effect name="Knockback" val="0"/>
+  </for>
+</skill>
+<skill id="10009" levels="1" name="Overdrive">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="20000"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="afterEffectId" val="5696"/>
+  <set name="afterEffectLvl" val="1"/>
+  <for>
+     <effect count="0x7fffffff" name="MpConsumePerLevel" time="7" val="3" abnormal="vitality">
+       <add order="0x40" stat="addDmg" val="200"/>
+	   <add order="0x40" stat="overdrive" val="100"/>
+	   <add order="0x40" stat="cAtk" val="0.4"/>
+	   <mul order="0x50" stat="gainHp" val="0.5"/>
+	   <mul order="0x50" stat="regHp" val="0.3"/>
+	   <mul order="0x50" stat="regMp" val="0.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10010" levels="1" name="Dimensional Portal">
+  <set name="mpConsume" val="500"/>
+  <set name="target" val="TARGET_ALL"/>
+  <set name="skillRadius" val="55"/>
+  <set name="escapeRange" val="260"/>
+  <set name="hitTime" val="5500"/>
+  <set name="reuseDelay" val="300000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="885"/>
+  <for>
+    <effect name="DimensionalWalk" time="300" val="0">
+    </effect>
+  </for>
+</skill>
+<skill id="10011" levels="1" name="Inescapable Clutch">
+    <set name="castRange" val="1400"/>
+    <set name="effectRange" val="3000"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="1800"/>
+	<set name="coolTime" val="500"/>
+	<set name="staticHitTime" val="true"/>
+	<set name="maxLand" val="95"/>
+	<set name="olyDisabled" val="true"/>
+	<set name="minLand" val="70"/>
+	<set name="ignoreShld" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="power" val="10000"/>
+    <set name="reuseDelay" val="65000"/>
+    <set name="skillType" val="AGGDAMAGE"/>
+	<set name="isDebuff" val="true"/>
+    <set name="target" val="TARGET_ONE"/>
+	<set name="displayId" val="427"/>
+	<set name="displayLvl" val="2"/>
+    <cond msg="You must be farther away from target to use this skill">
+      <target mindistance="200"/>
+    </cond>
+  <for>
+    <effect name="Debuff" time="7" val="0" effectPower="200" effectType="DEBUFF">
+	   <mul order="0x50" stat="runSpd" val="0.5"/>
+	   <mul order="0x50" stat="pAtkSpd" val="0.85"/>
+	</effect>
+	<effect name="Pull" val="0" noicon="1"/>
+	<effect name="TargetMe" time="3" val="0" noicon="1"/>
+  </for>
+</skill>
+<skill id="10012" levels="1" name="Legendary Evasion">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="improvedEvasion" val="1"/>
+	<sub order="0x40" stat="rEvas" val="5"/>
+  </for>
+</skill>
+<skill id="10013" levels="1" name="Point Crash">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="areaAngle" val="200"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="480000"/>
+  <set name="hitTime" val="1200"/>
+  <set name="canBeDispeled" val="false"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="368"/>
+  <for>
+    <effect name="ImmobileAutoAttack" time="13" val="0">
+	  <add order="0x10" stat="pAtkSpdMax" val="1000"/>
+      <add order="0x40" stat="pAtkSpd" val="1000">
+	    <not>
+		   <using kind="Bow,Crossbow"/>
+		</not>
+	   </add>
+	  <add order="0x40" stat="pAtkRange" val="25"/>
+	  <add order="0x40" stat="atkCountMax" val="1"/>
+      <mul order="0x50" stat="cancelVuln" val="0"/>
+	  <mul order="0x50" stat="stunVuln" val="0"/>
+	  <mul order="0x50" stat="debuffVuln" val="0"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10014" levels="1" name="Point Flash">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="areaAngle" val="120"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="480000"/>
+  <set name="hitTime" val="1200"/>
+  <set name="canBeDispeled" val="false"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="368"/>
+  <for>
+    <effect name="ImmobileAutoAttack" time="13" val="0">
+	  <add order="0x10" stat="pAtkSpdMax" val="1000"/>
+      <add order="0x40" stat="pAtkSpd" val="1000">
+	    <using kind="Bow,Crossbow"/>
+		</add>
+	  <mul order="0x40" stat="atkReuse" val="0.1"/>
+      <mul order="0x50" stat="cancelVuln" val="0"/>
+	  <mul order="0x50" stat="stunVuln" val="0"/>
+	  <mul order="0x50" stat="debuffVuln" val="0"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10015" levels="1" name="Mind Snap">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="180000"/>
+  <set name="hitTime" val="4000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="368"/>
+  <set name="triggeredId" val="11001"/>
+  <set name="triggeredLevel" val="1"/>
+  <set name="activationChance" val="2"/>
+  <set name="chanceType" val="ON_ATTACKED_HIT"/>
+  <cond>
+     <target front="true"/>
+  </cond>
+  <for>
+   	<add val="100" order="0x40" stat="skillPowerBoost">
+	  <and>
+	   <using skillid="11001"/>
+	   <using kind="Big Blunt, Big Sword, Ancient"/>
+	   </and>
+	</add>
+	<add val="5" order="0x40" stat="effectDurationChange">
+	  <and>
+	   <using skillid="11001"/>
+	   <using kind="Big Blunt, Big Sword, Ancient"/>
+	   </and>
+	</add>
+    <effect name="ChanceSkillTrigger" time="10" val="0" triggeredId="11001" chanceType="ON_ATTACKED_HIT" activationChance="10" abnormal="vitality">
+	</effect>
+  </for>
+</skill>
+<skill id="10016" levels="1" name="Conjure Haunt Tower">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="summonTotalLifeTime" val="40000"/>
+  <set name="hpConsume" val="800"/>
+  <set name="mpConsume" val="300"/>
+  <set name="hitTime" val="10000"/>
+  <set name="isMagic" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="180000"/>
+  <set name="skillType" val="DECOY"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="npcId" val="95682"/>
+  <set name="displayId" val="5920"/>
+   <for>
+  </for>
+</skill>
+<skill id="10017" levels="1" name="Fireball">
+  <set name="power" val="210"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpConsume" val="250"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="areaInclude" val="2"/>
+  <set name="areaDmgTaper" val="0.5"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="0"/> <!-- Fire -->
+  <set name="elementPower" val="30"/>
+  <set name="hitTime" val="6000"/>
+  <set name="reuseDelay" val="22000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="950"/>
+  <set name="effectRange" val="1400"/>
+  <set name="displayId" val="5496"/>
+  <set name="displayLvl" val="2"/>
+  <for>
+  <add val="0.00025" order="0x40" stat="distDmgBoostSkill">
+    <using skillid="10017"/>
+	</add>
+   	<add val="80" order="0x40" stat="skillPowerBoost">
+	  <and>
+	   <using skillid="10017"/>
+	   <using kind="Big Blunt, Big Sword, Ancient"/>
+	   </and>
+	</add>
+	<sub val="1500" order="0x40" stat="skillReuseChange">
+	<and>
+   	   <using skillid="10017"/>
+	   <using kind="Big Blunt, Big Sword, Ancient"/>
+	   </and>
+	</sub>
+  </for>
+</skill>
+<skill id="10018" levels="1" name="Blade Shine">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="240000"/>
+  <set name="hitTime" val="3000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="1374"/>
+  <for>
+   	<add val="6" order="0x40" stat="extraHit">
+	  <using kind="Sword"/>
+	</add>
+    <effect name="Buff" time="20" val="0">
+	  <add val="28" order="0x40" stat="extraHit">
+	     <using kind="Sword,Big Sword,Ancient"/>
+	  </add>
+	</effect>
+  </for>
+</skill>
+<skill id="10019" levels="1" name="Flying Dagger">
+  <set name="weaponsAllowed" val="393232"/> <!-- Dagger/Dual Daggers -->
+  <set name="power" val="6850"/>
+  <set name="SSBoost" val="3"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="mpConsume" val="200"/>
+  <set name="skillType" val="BLOW"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="condition" val="16"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="600"/>
+  <set name="effectRange" val="1000"/>
+  <set name="reuseDelay" val="14000"/>
+  <set name="overHit" val="true"/>
+  <set name="lethal1" val="8"/>
+  <set name="lethal2" val="2"/>
+  <set name="hitTime" val="2200"/>
+  <set name="coolTime" val="500"/>
+  <set name="baseCritRate" val="15"/>
+  <set name="displayId" val="5837"/>
+  <cond msg="You need to be farther away from target to throw dagger (200)">
+    <target mindistance="200"/>
+  </cond>
+  <for>
+    <mul order="0x60" stat="blowRate" val="0.6">
+	  <and>
+		<player invisible="false"/>
+         <using skillid="10019"/> 
+	   </and>
+    </mul>
+	<add order="0x40" stat="blowRate" val="15">
+	  <and>
+		<player invisible="true"/>
+         <using skillid="10019"/> 
+	   </and>
+    </add>
+	 <effect name="Disarm" self="1" time="2" val="0" noicon="1" nomsg="1" ignorep="1"/>
+  </for>
+</skill>
+<skill id="10020" levels="1" name="Hemorrhage">
+  <set name="power" val="4000"/>
+  <set name="abnormalLvl" val="100"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="mpConsume" val="200"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="3.5"/>
+  <set name="baseCritRate" val="30"/>
+  <set name="minLand" val="50"/>
+  <set name="effectType" val="BLEED"/>
+  <set name="reuseDelay" val="19000"/>
+  <set name="hitTime" val="2300"/>
+  <set name="coolTime" val="720"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="castRange" val="40"/>
+  <set name="effectRange" val="400"/>
+  <set name="weaponsAllowed" val="393812"/> <!-- Sword/Big Sword/Dagger/Dual Sword -->
+  <set name="displayId" val="223"/>
+  <for>
+    <effect count="9" name="DamOverTime" time="2" val="50" abnormal="bleed" effectPower="90" effectType="BLEED">
+	    <add order="0x40" stat="hamstring" val="6"/>
+		<add order="0x40" stat="hamstring" val="3">
+		  <using kind="Heavy"/>
+		</add>
+		<add order="0x40" stat="hamstring" val="1">
+		  <using kind="Shield"/>
+		</add>
+    </effect>
+  </for>
+</skill>
+<skill id="10021" levels="1" name="Phaze Shift">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="1800"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="1494"/>
+  <for>
+    <effect name="Buff" time="60" val="0">
+	  <add val="5" order="0x40" stat="demonicMove"/>
+	</effect>
+  </for>
+</skill>
+<skill id="10023" levels="1" name="Lunacy" enchantLevels1="15">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="skillType" val="CONT"/>
+  <set name="operateType" val="OP_TOGGLE"/>
+  <set name="afterEffectId" val="5696"/>
+  <set name="afterEffectLvl" val="1"/>
+   <cond msg="Lunacy can be used only at night" addName="1">
+	<and>
+	  <game night="false"/>
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+		  </and>
+   </cond>
+  <for>
+     <effect count="0x7fffffff" name="MpConsumePerLevel" time="7" val="17" abnormal="realtarget">
+	   <game night="true"/>
+       <mul val="1.15" order="0x30" stat="skillPowerBoost"/>
+	   <add val="5" order="0x40" stat="skillCritAdd"/>
+	   <add order="0x40" stat="critMax" val="100"/>
+	   <add val="10" order='0x40' stat='runSpd'/>
+	   <mul val="0.6" order="0x40" stat="pDef"/>
+	   <mul val="0.6" order="0x40" stat="mDef"/>
+	   <add val="1" order="0x40" stat="chargeMax"/>
+	   <add val="0.013" order="0x40" stat="pAtk_charge"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10025" levels="1" name="Midair Slash" enchantLevels1="15">
+  <set name="magicLvl" val="74"/>
+  <set name="power" val="16590"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="element" val="2"/> <!-- Wind -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="maxLand" val="80"/>
+   <set name="minLand" val="45"/>
+  <set name="reuseDelay" val="200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isMagic" val="false"/>
+  <set name="SSBoost" val="3.4"/>
+  <set name="overHit" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isDebuff" val="true"/>
+  <set name="areaAngle" val="45"/>
+  <set name="castRange" val="300"/>
+  <set name="skillRadius" val="200"/>
+  <set name="effectRange" val="300"/>
+  <set name="displayId" val="5501"/>
+  <set name="displayLvl" val="2"/>
+  <set name="flyRadius" val="200"/>
+  <set name="baseCritRate" val="20"/>
+  <set name="ignoreShld" val="true"/>
+	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Knockback" val="0" effectPower="65" effectType="STUN"/>
+    <effect name="Debuff" time="3" val="0" effectPower="45" effectType="DEBUFF">
+      <mul order="0x50" stat="gainHp" val="0.5"/>
+	  <mul order="0x50" stat="pAtkSpd" val="0.9"/>
+	  <mul order="0x50" stat="mAtkSpd" val="0.9"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10026" levels="1" name="Greater Hydro Blast" enchantLevels1="15">
+  <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="element" val="1"/> <!-- Water -->
+  <set name="elementPower" val="30"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="30000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillRadius" val="300"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="290"/>
+  <set name="castRange" val="700"/>
+  <set name="effectRange" val="900"/>
+    <set name="displayId" val="11025"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Debuff" time="8" val="0" effectPower="85" effectType="DEBUFF" stackOrder="1" stackType="RunSpeedDown">
+      <mul order="0x50" stat="runSpd" val="0.7"/>
+    </effect>
+  </for>
+  </skill>
+<skill id="100026" levels="1" name="Greater Hydro Blast" enchantLevels1="15">
+  <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="element" val="1"/> <!-- Water -->
+  <set name="elementPower" val="30"/>
+  <set name="hitTime" val="10000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillRadius" val="300"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="290"/>
+  <set name="castRange" val="900"/>
+  <set name="effectRange" val="500"/>
+  <set name="displayId" val="11025"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Debuff" time="8" val="0" effectPower="85" effectType="DEBUFF" stackOrder="1" stackType="RunSpeedDown">
+      <mul order="0x50" stat="runSpd" val="0.7"/>
+    </effect>
+  </for>
+  </skill>
+<skill id="10027" levels="1" name="Final Ground Strike" enchantLevels1="15">
+  <set name="hpConsumePerc" val="33"/>
+  <set name="weaponsAllowed" val="16456"/> <!-- Pole -->
+  <set name="magicLvl" val="78"/>
+  <set name="mpConsume" val="120"/>
+  <set name="power" val="6348"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="SSBoost" val="2.7"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="150"/>
+  <set name="effectRange" val="400"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="isDebuff" val="true"/>
+  <set name="maxLand" val="66"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="80000"/>
+  <set name="hitTime" val="2200"/>
+  <set name="coolTime" val="480"/>
+  <set name="baseCritRate" val="15"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+  	<add order="0x40" stat="skillDam" val="0.15">
+	<and>
+	  <using skillid="10027"/>
+      <using kind="Big Blunt"/>
+	  </and>
+    </add>
+     <effect name="RemoveTarget" val="0" noicon="1" effectType="DEBUFF" effectPower="100"/>
+  </for>
+</skill>
+<skill id="10028" levels="1" name="Spear of Leonidas" enchantLevels1="15">
+  <set name="baseCritRate" val="25"/>
+  <set name="castRange" val="600"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="350"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="500"/>
+  <set name="effectRange" val="300"/>
+  <set name="hitTime" val="3200"/>
+  <set name="coolTime" val="600"/>
+  <set name="areaLimit" val="true"/>
+  <set name="areaAngle" val="10"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="overHit" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="9237"/>
+  <set name="reuseDelay" val="70000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="pvpMulti" val="1.3"/>
+  <set name="SSBoost" val="3.65"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="weaponsAllowed" val="64"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+   <set order="0x40" stat="pDefIgnore" val="3000">
+      <using skillid="10028"/>
+   </set>
+   <effect name="Root" time="4" val="0" effectType="ROOT" effectPower="66" ignoreP="1" stackOrder="1" stackType="Root"/>
+  </for>
+</skill>
+<skill id="10029" levels="1" name="Groundstrike Fire" enchantLevels1="15">
+  <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="element" val="0"/> <!-- Fire -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="30000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="190"/>
+  <set name="displayId" val="11024"/>
+  <set name="castRange" val="900"/>
+  <set name="effectRange" val="1400"/>
+  	<cond msg="" addName="1">
+	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect count="10" name="DamOverTime" val="300" abnormal="flame" effectPower="90" effectType="DOT"/>
+  </for>
+</skill>
+<!--<skill id="10031" levels="1" name="Inescapable Clutch">
+    <set name="castRange" val="1400"/>
+    <set name="effectRange" val="3000"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="1800"/>
+	<set name="coolTime" val="500"/>
+	<set name="staticHitTime" val="true"/>
+	<set name="maxLand" val="95"/>
+	<set name="olyDisabled" val="true"/>
+	<set name="minLand" val="70"/>
+	<set name="ignoreShld" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="power" val="10000"/>
+    <set name="reuseDelay" val="65000"/>
+    <set name="skillType" val="AGGDAMAGE"/>
+	<set name="isDebuff" val="true"/>
+    <set name="target" val="TARGET_ONE"/>
+	<set name="displayId" val="427"/>
+	<set name="displayLvl" val="2"/>
+    <cond msg="You must be farther away from target to use this skill">
+      <target mindistance="200"/>
+    </cond>
+  <for>
+    <effect name="Debuff" time="7" val="0" effectPower="200" effectType="DEBUFF">
+	   <mul order="0x50" stat="runSpd" val="0.5"/>
+	   <mul order="0x50" stat="pAtkSpd" val="0.85"/>
+	</effect>
+	<effect name="Pull" val="0" noicon="1"/>
+	<effect name="TargetMe" time="3" val="0" noicon="1"/>
+  </for>
+</skill>-->
+
+<skill id="10031" levels="1" name="Inescapable Clutch" enchantLevels1="15">
+    <set name="castRange" val="1400"/>
+    <set name="effectRange" val="3000"/>
+	 <set name="neutral" val="true"/>
+	<set name="skillRadius" val="500"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="1800"/>
+	<set name="coolTime" val="500"/>
+	<set name="staticHitTime" val="true"/>
+	<set name="maxLand" val="95"/>
+	<set name="olyDisabled" val="true"/>
+	<set name="minLand" val="70"/>
+	<set name="ignoreShld" val="true"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="power" val="10000"/>
+    <set name="reuseDelay" val="65000"/>
+    <set name="skillType" val="BUFF"/>
+    <set name="target" val="TARGET_PARTY"/>
+	<set name="displayId" val="5738"/>
+	<set name="displayLvl" val="1"/>
+	<set name="isSuicideAttack" val="true"/>
+	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+	    <effect name="Pull" val="2"  noicon="1"/>
+		<effect name="Invincible" time="5" val="0" special="s_invulnerable" stackOrder="1" stackType="Instant_Shield"/>
+  </for>
+</skill>
+<skill id="10032" levels="1" name="Set Ablaze">
+  <set name="baseCritRate" val="25"/>
+  <set name="castRange" val="600"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="350"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="500"/>
+  <set name="effectRange" val="300"/>
+  <set name="hitTime" val="3200"/>
+  <set name="coolTime" val="600"/>
+  <set name="areaLimit" val="true"/>
+  <set name="areaAngle" val="10"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="9237"/>
+  <set name="reuseDelay" val="70000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="pvpMulti" val="1.3"/>
+  <set name="SSBoost" val="3.65"/>
+  	<set name="displayId" val="5582"/>
+	<set name="displayLvl" val="1"/>
+</skill>
+<skill id="100320" levels="1" name="Gust">
+  <set name="baseCritRate" val="25"/>
+  <set name="castRange" val="600"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="350"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="500"/>
+  <set name="effectRange" val="300"/>
+  <set name="hitTime" val="3200"/>
+  <set name="coolTime" val="600"/>
+  <set name="areaLimit" val="true"/>
+  <set name="areaAngle" val="10"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="9237"/>
+  <set name="reuseDelay" val="70000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="pvpMulti" val="1.3"/>
+  <set name="SSBoost" val="3.65"/>
+  	<set name="displayId" val="5734"/>
+	<set name="displayLvl" val="1"/>
+</skill>
+<skill id="100321" levels="1" name="Flaming Grounds">
+  <set name="baseCritRate" val="25"/>
+  <set name="castRange" val="600"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="350"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="500"/>
+  <set name="effectRange" val="300"/>
+  <set name="hitTime" val="3200"/>
+  <set name="coolTime" val="600"/>
+  <set name="areaLimit" val="true"/>
+  <set name="areaAngle" val="10"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="9237"/>
+  <set name="reuseDelay" val="70000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="pvpMulti" val="1.3"/>
+  <set name="SSBoost" val="3.65"/>
+  	<set name="displayId" val="5705"/>
+	<set name="displayLvl" val="1"/>
+</skill>
+<skill id="100322" levels="1" name="Soul Emission">
+  <set name="baseCritRate" val="25"/>
+  <set name="castRange" val="600"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="350"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="500"/>
+  <set name="effectRange" val="300"/>
+  <set name="hitTime" val="3200"/>
+  <set name="coolTime" val="600"/>
+  <set name="areaLimit" val="true"/>
+  <set name="areaAngle" val="10"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="target" val="TARGET_ONE"/>
+  <set name="overHit" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="9237"/>
+  <set name="reuseDelay" val="70000"/> <!-- Guess -->
+  <set name="skillType" val="PDAM"/>
+  <set name="pvpMulti" val="1.3"/>
+  <set name="SSBoost" val="3.65"/>
+  	<set name="displayId" val="5265"/>
+	<set name="displayLvl" val="1"/>
+</skill>
+<skill id="10039" levels="1" name="Armor Ripper Trap" enchantLevels1="15">
+  <set name="mpConsume" val="160"/>
+  <set name="hitTime" val="4500"/>
+  <set name="summonTotalLifeTime" val="120000"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="SUMMON_TRAP"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="triggerSkillId" val="10040"/>
+  <set name="triggerSkillLvl" val="1"/>
+  <set name="trapNpcId" val="13037"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+</skill>
+<skill id="10040" levels="1" name="Armor Ripper Trap Explosion" enchantLevels1="15">
+  <set name="isMagic" val="true"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="isSuicideAttack" val="true"/>
+  <set name="displayId" val="5268"/>
+  <set name="minLand" val="40"/>
+  <set name="canBeReflected" val="false"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="120"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="300"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="DisarmArmor" time="1" val="2" noicon="1" effectPower="400" effectType="PROC">
+    </effect>
+  </for>
+</skill>
+<skill id="10041" levels="1" name="Everlasting Whirlwind" enchantLevels1="15">
+ <set name="magicLvl" val="74"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="element" val="0"/> <!-- Wind -->
+  <set name="elementPower" val="30"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="30000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillRadius" val="300"/>
+  <set name="isDebuff" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="290"/>
+  <set name="castRange" val="700"/>
+  <set name="effectRange" val="900"/>
+   <set name="displayId" val="11026"/>
+   	<cond msg="" addName="1">
+		<and>
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+		</and>
+   </cond>
+</skill>
+<skill id="10047" levels="1" name="Final Lightning Strike" enchantLevels1="15">
+  <set name="magicLvl" val="95"/>
+  <set name="power" val="300"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="powerMulti" val="2.75"/>
+  <set name="mpConsume" val="300"/>
+  <set name="skillRadius" val="200"/>
+  <set name="element" val="0"/> <!-- Fire -->
+  <set name="elementPower" val="20"/>
+  <set name="reuseDelay" val="90000"/>
+  <set name="hitTime" val="5000"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="displayId" val="5844"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+</skill>
+<skill id="10049" levels="1" name="Sword Slash" enchantLevels1="15">
+    <set name="castRange" val="850"/>
+    <set name="effectRange" val="1500"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="olyDisabled" val="true"/>
+    <set name="hitTime" val="500"/>
+	<set name="areaLimit" val="true"/>
+	<set name="areaAngle" val="15"/>
+	<set name="coolTime" val="710"/>
+	<set name="powerMulti" val="1.15"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="magicLvl" val="75"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="overHit" val="true"/>
+    <set name="power" val="4200"/>
+    <set name="reuseDelay" val="90000"/>
+	<set name="baseCritRate" val="15"/>
+	<set name="ignoreShld" val="true"/>
+    <set name="skillRadius" val="600"/>
+    <set name="skillType" val="PDAM"/>
+    <set name="SSBoost" val="4.0"/>
+    <set name="target" val="TARGET_FRONT_AREA"/>
+	<set name="displayId" val="5925"/>
+	<set name="displayLvl" val="1"/>
+</skill>
+<skill id="10051" levels="1" name="Waylay" enchantLevels1="15">
+	<set name="magicLvl" val="78"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="mpConsume" val="400"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="INSTANT_JUMP"/>
+  <set name="castRange" val="550"/>
+  <set name="effectRange" val="900"/>
+  <set name="reuseDelay" val="10000"/>
+    <cond msgId="113">
+        <target mindistance="180"/>
+    </cond>
+  <set name="mustNegateId" val="37510"/>
+  	<cond msg="You need to Land Throwing Dagger" >
+		<and>
+			<target active_effect_id="37510"/>
+			<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+	</and>
+   </cond>
+
+
+  <for>
+  </for>
+</skill>
+<skill id="10056" levels="1" name="Mind Fortress" enchantLevels1="15">
+  <set name="mpConsume" val="3000"/>
+  <set name="hpConsume" val="2000"/>
+  <set name="target" val="TARGET_ALLY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="hitTime" val="3500"/>
+  <set name="olyNerf" val="400"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="displayId" val="5919"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Buff" time="15" val="0" self="1" noicon="1" abnormal="realtarget">
+	        <set order="0x60" stat="maxCp" val="0"/>
+			<mul val='0.01' order='0x30' stat='regCp'/>
+			<mul val='0.70' order='0x30' stat='pDef'/>
+		    <mul val='0.70' order='0x30' stat='mDef'/>
+	</effect>
+	<effect name="Buff" time="15" val="0" abnormal="imprison1" >
+				<mul val='1.00' order='0x30' stat='regCp'/>
+	</effect>
+	<effect count="15"  name="CombatPointHealOverTime"  val="500" noicon="1" >
+       <add order="0x40" stat="maxCp" val="4000"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10063" levels="1" name="Purging Flames" enchantLevels1="15">
+<set name="mpConsume" val="3000"/>
+<set name="hpConsume" val="2000"/>
+  <set name="power" val="2000"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="skillRadius" val="900"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="hitTime" val="3500"/>
+  <set name="olyNerf" val="400"/>
+  <set name="skillType" val="HEAL"/>
+  <set name="displayId" val="5919"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Buff" time="15" val="0" self="1"  abnormal="realtarget">
+	        <set order="0x60" stat="maxHp" val="15000"/>
+			<mul val='0.01' order='0x30' stat='regHp'/>
+			<mul val='0.65' order='0x30' stat='pDef'/>
+		    <mul val='0.65' order='0x30' stat='mDef'/>
+	</effect>
+	<effect name="Buff" time="15" val="0" abnormal="redcircle" >
+				<mul val='1.00' order='0x30' stat='regHp'/>
+	</effect>
+	<effect count="15"  name="HealOverTime"  val="500" noicon="1" >
+       <add order="0x40" stat="maxHp" val="4000"/>
+    </effect>
+  </for>
+</skill>
+<skill id="10068" levels="1" name="Final Berserker" enchantLevels1="15">
+  <set name="cpConsume" val="999999"/>
+  <set name="displayId" val="5738"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="mpConsume" val="300"/>
+  <set name="hitTime" val="1000"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hpConsumePerc" val="999999"/>
+  	<cond msg="Your Hp must be lower than 40%" addName="1">
+	<and>
+			 <player hp="40"/>
+			 	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+			 </and>
+   </cond>
+  <for>
+    <effect name="Invincible" time="8"  val="0" special="s_invulnerable" stackOrder="1" abnormal="realtarget" stackType="Instant_Shield">
+	<mul val='0.01' order='0x50' stat='maxCp'/>
+	<mul val='0.01' order='0x50' stat='gainHp'/>
+	<mul val='0.01' order='0x50' stat='absorbDam'/>
+	<mul val='0.01' order='0x50' stat='absorbDamSkill'/>
+	<add val='90' order='0x40' stat='pAtkAngle'/>
+	<add val="25" order="0x40" stat="runSpd" />
+	<add val="2" order="0x40" stat="atkCountMax"/>
+	<add val="200" order='0x40' stat='pAtkSpd'/>
+	<add val='40' order='0x40' stat='pAtkRange'/>
+	</effect>
+  </for>
+</skill>
+<skill id="10072" levels="1" name="Death Pool" enchantLevels1="15">
+<set name="magicLvl" val="85"/>
+  <set name="power" val="130"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="150"/>
+  <set name="element" val="5"/> <!-- Dark -->
+  <set name="elementPower" val="20"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="isDebuff" val="true"/>
+  <set name="displayId" val="5702"/>
+  <set name="skillType" val="DRAIN"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="8000"/>
+  <set name="reuseDelay" val="120000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="absorbPart" val="0.5"/> <!-- absorbs 50% of damage -->
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Paralyze" time="3" val="0" effectPower="70" effectType="PARALYZE">
+      <mul order="0x50" stat="runSpd" val="0.8"/>
+	  </effect>
+  </for>
+</skill>
+<skill id="10074" levels="1" name="Spike Trap" enchantLevels1="15">
+  <set name="mpConsume" val="160"/>
+  <set name="hitTime" val="4500"/>
+  <set name="summonTotalLifeTime" val="120000"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="SUMMON_TRAP"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="triggerSkillId" val="10075"/>
+  <set name="triggerSkillLvl" val="1"/>
+  <set name="trapNpcId" val="13037"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+</skill>
+<skill id="10075" levels="1" name="Spike Trap Explosion" enchantLevels1="15">
+  <set name="isMagic" val="true"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="isSuicideAttack" val="true"/>
+  <set name="displayId" val="5268"/>
+  <set name="minLand" val="45"/>
+  <set name="canBeReflected" val="false"/>
+  <set name="ignoreShld" val="true"/>
+  <set name="skillRadius" val="160"/>
+  <set name="isDebuff" val="true"/>
+  <set name="power" val="200"/>
+  <set name="effectType" val="BLEED"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect count="4" name="DamOverTime" time="2" val="50" abnormal="bleed" effectPower="90" effectType="BLEED">
+	    <add order="0x40" stat="hamstring" val="6"/>
+		<add order="0x40" stat="hamstring" val="3">
+		  <using kind="Heavy"/>
+		</add>
+		<add order="0x40" stat="hamstring" val="1">
+		  <using kind="Shield"/>
+		</add>
+    </effect>
+  </for>
+</skill>
+<skill id="10077" levels="1" name="Dark Matter" enchantLevels1="15">
+  <set name="power" val="300"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="30"/>
+  <set name="skillRadius" val="200"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="reuseDelay" val="90000"/>
+  <set name="element" val="5"/> <!-- Dark -->
+  <set name="elementPower" val="20"/>
+  <set name="hitTime" val="3100"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="isMagic" val="true"/>
+  <set name="SSBoost" val="3.1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="800"/>
+  <set name="baseCritRate" val="-105"/>
+  <set name="effectRange" val="1400"/>
+  <set name="displayId" val="904"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  </skill>
+<skill id="10078" levels="1" name="Mass Invisibility" enchantLevels1="15">
+    <set name="target" val="TARGET_PARTY"/>
+	<set name="reuseDelay" val="1800000"/>
+	<set name="staticReuse" val="true"/>
+	<set name="skillRadius" val="1000"/>
+	<set name="olyDisabled" val="true"/>
+    <set name="hitTime" val="2900"/>
+	<set name="effectRange" val="1000"/>
+    <set name="skillType" val="BUFF"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+		<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+    <for>
+      <effect name="Invisible" time="20" abnormal="stealth" val="0" stackType="stealth" stackOrder="1">
+	     <mul order="0x50" stat="runSpd" val="1"/>
+	  </effect>
+    </for>
+</skill>
+<skill id="10079" levels="1" name="Spiritual Equilibrium" enchantLevels1="15">
+  <set name="mpConsume" val="1300"/>
+  <set name="magicLvl" val="80"/>
+  <set name="target" val="TARGET_PARTY"/>
+  <set name="power" val="1500"/>
+  <set name="skillRadius" val="1000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="MANARECHARGE"/>
+  <set name="hitTime" val="5000"/>
+  <set name="reuseDelay" val="600000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="isMagic" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="10083" levels="1" name="Heaven's Call" enchantLevels1="15">
+  <set name="displayId" val="722"/>
+  <set name="hitTime" val="1500"/>
+  <set name="olyTimeMulti" val="0.25"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="reuseDelay" val="1200000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="target" val="TARGET_SELF"/>
+  	<cond msg="" addName="1">
+	  	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+    <effect name="Buff" time="30" val="0" abnormal="realtarget" >
+	<set val="100" order="0x40" stat="skillCritDamEvas"/>
+	<add order="0x40" stat="reflectSkillMagic" val="20"/>
+	<add order="0x40" stat="pDef" val="300"/>
+	<add order="0x40" stat="mDef" val="300"/>
+	<add val="150" order="0x40" stat="mAtkRange"/>
+	</effect>
+  </for>
+</skill>
+<!--<skill id="10083" levels="1" name="Heaven's Call" enchantLevels1="15">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<set val="100" order="0x40" stat="skillCritDamEvas"/>
+	<add order="0x40" stat="pDef" val="100"/>
+	<add val="150" order="0x40" stat="mAtkRange"/>
+  </for>
+</skill>-->
+<skill id="10500" levels="1" name="Improved Two-Weapon Fighting - Learn">
+  <set name="itemConsumeId" val="60006"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10000"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="107,88"/>
+      <player level="86"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10501" levels="1" name="Aurakyrian Grip - Learn">
+  <set name="itemConsumeId" val="60008"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10001"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="100"/>
+      <player level="86"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10502" levels="1" name="Divine Inspiration - 1">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="1405"/>
+  <set name="learnSkillLvl" val="1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="10503" levels="1" name="Divine Inspiration - 2">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="1405"/>
+  <set name="learnSkillLvl" val="2"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msg="You need to learn Divine Inspiration 1 first">
+      <player active_skill_id_lvl="1405,1"/>
+  </cond>
+</skill>
+<skill id="10504" levels="1" name="Divine Inspiration - 3">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="1405"/>
+  <set name="learnSkillLvl" val="3"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msg="You need to learn Divine Inspiration 2 first">
+      <player active_skill_id_lvl="1405,2"/>
+  </cond>
+</skill>
+<skill id="10505" levels="1" name="Divine Inspiration - 4">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="1405"/>
+  <set name="learnSkillLvl" val="4"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="1500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msg="You need to learn Divine Inspiration 3 first">
+      <player active_skill_id_lvl="1405,3"/>
+  </cond>
+</skill>
+<skill id="10506" levels="1" name="Wan Jian Jue - Learn">
+  <set name="itemConsumeId" val="60013"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10002"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="100"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10507" levels="1" name="Overpower - Learn">
+  <set name="itemConsumeId" val="60014"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10003"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="113"/>
+      <player level="86"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10508" levels="1" name="Air Rave - Learn">
+  <set name="itemConsumeId" val="60015"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10004"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="107"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10509" levels="1" name="Point Blank Shot - Learn">
+  <set name="itemConsumeId" val="60016"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10005"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="92,102,109"/>
+      <player level="86"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10510" levels="1" name="Mana Barrier - Learn">
+  <set name="itemConsumeId" val="60017"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10006"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="94,98,103,110,112"/>
+      <player level="86"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10511" levels="1" name="Stone Skin - Learn">
+  <set name="itemConsumeId" val="60018"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10007"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="97,105,112,115,116"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10512" levels="1" name="Shoryuken - Learn">
+  <set name="itemConsumeId" val="60019"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10008"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="114"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10525" levels="1" name="Overdrive - Learn">
+  <set name="itemConsumeId" val="60020"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10009"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="88,89,92,93,94,95,96,98,100,101,102,103,104,107,108,109,110,111,113,114,116,117,118,131,132,133,136"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10513" levels="1" name="Dimensional Portal - Learn">
+  <set name="itemConsumeId" val="60021"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10010"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="110,94,103"/>
+      <player level="87"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10514" levels="1" name="Inescapable Clutch - Learn">
+  <set name="itemConsumeId" val="60022"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10011"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player class_id_restriction="90,91,99,106"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10515" levels="1" name="Legendary Evasion - Learn">
+  <set name="itemConsumeId" val="60012"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10012"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10516" levels="1" name="Point Crash - Learn">
+  <set name="itemConsumeId" val="60023"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10013"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="131,113,100,117"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10517" levels="1" name="Point Flash - Learn">
+  <set name="itemConsumeId" val="60024"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10014"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="134,102,92,109"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10518" levels="1" name="Mind Snap - Learn">
+  <set name="itemConsumeId" val="60025"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10015"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="94,103,110,112"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10519" levels="1" name="Conjure Haunt Tower - Learn">
+  <set name="itemConsumeId" val="60026"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10016"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="95"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10520" levels="1" name="Fireball - Learn">
+  <set name="itemConsumeId" val="60027"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10017"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="94"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10521" levels="1" name="Blade Shine - Learn">
+  <set name="itemConsumeId" val="60028"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10018"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="100"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10522" levels="1" name="Flying Dagger - Learn">
+  <set name="itemConsumeId" val="60029"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10019"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="93,101,108"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10523" levels="1" name="Hemorrhage - Learn">
+  <set name="itemConsumeId" val="60030"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10020"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	  <player class_id_restriction="93,91"/>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="10524" levels="1" name="Phaze Shift - Learn">
+  <set name="itemConsumeId" val="60031"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="10021"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="4500"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player level="90"/>
+    </and>
+  </cond>
+</skill>
+</list>

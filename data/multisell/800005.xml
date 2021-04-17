@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+			<ingredient id="8542" count="3"/>
+			<production id="13432" count="1" enchant="16"/> 
+			<production id="13438" count="1" enchant="16"/> 		
+			<production id="13439" count="1" enchant="16"/> 
+			<production id="13440" count="1" enchant="16"/> 
+			<production id="13137" count="1" enchant="16"/> 
+  </item>
+
+
+  	<!--spacer-->
+	<item id="2"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<item id="3"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	<item id="4"> 
+		<ingredient id="8542" count="3"/>
+			<production id="13433" count="1" enchant="16"/> 
+			<production id="13441" count="1" enchant="16"/> 
+			<production id="13442" count="1" enchant="16"/> 
+			<production id="13443" count="1" enchant="16"/> 
+			<production id="13138" count="1" enchant="16"/> 
+  </item>
+
+  	<!--spacer-->
+	<item id="5"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<item id="6"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+	<item id="7"> 
+			<ingredient id="8542" count="3"/>
+			<production id="13434" count="1" enchant="16"/> 
+			<production id="13444" count="1" enchant="16"/> 
+			<production id="13445" count="1" enchant="16"/> 
+			<production id="13446" count="1" enchant="16"/> 
+			<production id="13139" count="1" enchant="16"/> 
+  </item>
+
+  	<!--spacer-->
+	<item id="8"> 
+		<production id="570140" count="1"/>
+		<ingredient id="570140" count="1"/>	
+    </item>
+	<!--spacer-->
+</list>

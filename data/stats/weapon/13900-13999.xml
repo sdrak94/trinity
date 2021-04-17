@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13971" name="Red Boing Fantasy Hammer">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13972" name="Blue Boing Fantasy Hammer">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13973" name="Small Red Boing Fantasy Hammer">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13974" name="Small Blue Boing Fantasy Hammer">
+  <for>
+    <set val="1" order="0x08" stat="pAtk"/>
+    <set val="61" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13978" name="Exclusive to Monsters (Mounted Troops High Level Leader)">
+  <for>
+    <set val="31" order="0x08" stat="pAtk"/>
+    <set val="21" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13979" name="Exclusive to Monsters (Dragon Steed Troop Battle Infantry Sword)">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13980" name="Exclusive to Monsters (Dragon Steed Troop Battle Infantry Shield)">
+  <for>
+    <sub val="0" order="0x10" stat="rEvas"/>
+    <set val="47" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="13981" name="Exclusive to Monsters (Mounted Troops Tactics)">
+  <for>
+    <set val="11" order="0x08" stat="pAtk"/>
+    <set val="12" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13982" name="Exclusive to Monsters (Death Knight_pole)">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13983" name="Exclusive to Monsters (Death Knight_2hs)">
+  <for>
+    <set val="78" order="0x08" stat="pAtk"/>
+    <set val="39" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13984" name="Exclusive to Monsters (Death Slayer_1hs)">
+  <for>
+    <set val="24" order="0x08" stat="pAtk"/>
+    <set val="17" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="13985" name="Exclusive to Monsters (Death Slayer_r)">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="91" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13986" name="Exclusive to Monsters (Death Slayer_l)">
+  <for>
+    <set val="213" order="0x08" stat="pAtk"/>
+    <set val="91" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13987" name="Exclusive to Monsters (Savage Warrior)">
+  <for>
+    <set val="175" order="0x08" stat="pAtk"/>
+    <set val="91" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

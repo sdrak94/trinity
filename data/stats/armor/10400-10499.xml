@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10416" name="Blue Talisman - Explosion">
+  <for/>
+</item>
+<item id="10417" name="Blue Talisman - Magic Explosion">
+  <for/>
+</item>
+<item id="10418" name="White Talisman - Storm">
+  <for/>
+</item>
+<item id="10419" name="White Talisman - Darkness">
+  <for/>
+</item>
+<item id="10420" name="White Talisman - Water">
+  <for/>
+</item>
+<item id="10421" name="White Talisman - Fire">
+  <for/>
+</item>
+<item id="10422" name="White Talisman - Light">
+  <for/>
+</item>
+<item id="10423" name="Blue Talisman - Self-Destruction">
+  <for/>
+</item>
+<item id="10424" name="Blue Talisman - Greater Healing">
+  <for/>
+</item>
+<item id="10470" name="Shadow Item - Red Crescent">
+  <for/>
+</item>
+<item id="10471" name="Shadow Item - Ring of Devotion">
+  <for/>
+</item>
+<item id="10472" name="Shadow Item - Necklace of Devotion">
+  <for/>
+</item>
+<item id="10489" name="Dynasty Jeweled Leather Armor - Enchanter">
+  <cond msgId="1518">
+    <player class_id_restriction="98, 115, 116, 136"/>
+  </cond>
+  <for/>
+</item>
+<item id="10490" name="Dynasty Jeweled Leather Armor - Summoner">
+  <cond msgId="1518">
+    <player class_id_restriction="96, 104, 111"/>
+  </cond>
+  <for/>
+</item>
+<item id="10491" name="Silk Shirt - HP">
+  <for>
+    <add val="9" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10492" name="Silk Shirt - MP">
+  <for>
+    <add val="9" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10493" name="Silk Shirt - CP">
+  <for>
+    <add val="9" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10494" name="Thin Leather Shirt - HP">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10495" name="Thin Leather Shirt - MP">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10496" name="Thin Leather Shirt - CP">
+  <for>
+    <add val="11" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10497" name="Scale Shirt - HP">
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10498" name="Scale Shirt - MP">
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10499" name="Scale Shirt - CP">
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+  </for>
+</item>
+</list>

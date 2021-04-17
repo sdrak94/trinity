@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance name="CrystalCaverns">
+	<activityTime val="90" />
+	<emptyDestroyTime val="1200" />
+	<allowSummon val="false" />
+	<spawnPoint spawnX="149442" spawnY="173520" spawnZ="-5024" />
+	<doorlist>
+		<door doorId="24220001" />
+		<door doorId="24220002" />
+		<door doorId="24220003" />
+		<door doorId="24220004" />
+		<door doorId="24220005" />
+		<door doorId="24220006" />
+		<door doorId="24220007" />
+		<door doorId="24220008" />
+		<door doorId="24220009" />
+		<door doorId="24220010" />
+		<door doorId="24220011" />
+		<door doorId="24220012" />
+		<door doorId="24220013" />
+		<door doorId="24220014" />
+		<door doorId="24220015" />
+		<door doorId="24220016" />
+		<door doorId="24220017" />
+		<door doorId="24220018" />
+		<door doorId="24220019" />
+		<door doorId="24220020" />
+		<door doorId="24220021" />
+		<door doorId="24220022" />
+		<door doorId="24220023" />
+		<door doorId="24220024" />
+		<door doorId="24220025" />
+		<door doorId="24220026" />
+		<door doorId="24220061" />
+	</doorlist>
+</instance>

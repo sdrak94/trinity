@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11500" name="Sealed Imperial Crusader Gauntlet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11501" name="Sealed Imperial Crusader Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11503" name="Sealed Imperial Crusader Helmet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11504" name="Sealed Imperial Crusader Breastplate">
+  <for>
+    <add val="193" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11505" name="Imperial Crusader Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.02" order="0x40" stat="pDef"/>
+  </for>
+</item>
+<item id="11506" name="Imperial Crusader Gauntlet">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.02" order="0x40" stat="pDef"/>
+  </for>
+</item>
+<item id="11507" name="Imperial Crusader Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.02" order="0x40" stat="pDef"/>
+  </for>
+</item>
+<item id="11509" name="Imperial Crusader Helmet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.02" order="0x40" stat="pDef"/>
+  </for>
+</item>
+<item id="11510" name="Imperial Crusader Breastplate">
+  <for>
+    <add val="205" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.02" order="0x40" stat="pDef"/>
+  </for>
+</item>
+<item id="11511" name="Great Wolf Orichalcum Armor">
+  <for>
+    <add val="171" order="0x10" stat="pDef"/>
+    <add val="14" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="11512" name="Dynasty Gaiters">
+  <for>
+    <add val="141" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11513" name="Dynasty Gauntlet">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11514" name="Dynasty Gloves">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11515" name="Dynasty Leather Gloves">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11516" name="Dynasty Leather Leggings">
+  <for>
+    <add val="106" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11517" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11518" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11519" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11520" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11521" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11522" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11523" name="Dynasty Leather Armor">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11524" name="Dynasty Leather Boots">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11525" name="Dynasty Leather Helmet">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11526" name="Dynasty Boots">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11527" name="Dynasty Breastplate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11528" name="Dynasty Breastplate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11529" name="Dynasty Breastplate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11530" name="Dynasty Breastplate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11531" name="Dynasty Breastplate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11533" name="Dynasty Shoes">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11534" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11535" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11536" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11537" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11538" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11539" name="Dynasty Circlet">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11540" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11541" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11542" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11543" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11544" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11545" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11546" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11547" name="Dynasty Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11548" name="Dynasty Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11549" name="Dynasty Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11550" name="Dynasty Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11551" name="Dynasty Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11552" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11553" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11554" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11555" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11556" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11557" name="Dynasty Helmet - Heavy Armor Use">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11558" name="Dynasty Stockings">
+  <for>
+    <add val="71" order="0x10" stat="pDef"/>
+    <add val="370" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11559" name="Sealed Dynasty Gaiters">
+  <for>
+    <add val="134" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11560" name="Sealed Dynasty Gauntlet">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11561" name="Sealed Dynasty Gloves">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11562" name="Sealed Dynasty Leather Gloves">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11563" name="Sealed Dynasty Leather Leggings">
+  <for>
+    <add val="100" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11564" name="Sealed Dynasty Leather Armor">
+  <for>
+    <add val="161" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11565" name="Sealed Dynasty Leather Boots">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11566" name="Sealed Dynasty Leather Helmet">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11567" name="Sealed Dynasty Boots">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11568" name="Sealed Dynasty Breastplate">
+  <for>
+    <add val="214" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11570" name="Sealed Dynasty Shoes">
+  <for>
+    <add val="61" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11571" name="Sealed Dynasty Circlet">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11572" name="Sealed Dynasty Tunic">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11573" name="Sealed Dynasty Helmet">
+  <for>
+    <add val="92" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11574" name="Sealed Dynasty Stockings">
+  <for>
+    <add val="67" order="0x10" stat="pDef"/>
+    <add val="370" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11575" name="Adamantite Earring">
+  <for>
+    <add val="51" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11576" name="Adamantite Necklace">
+  <for>
+    <add val="68" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11577" name="Adamantite Ring">
+  <for>
+    <add val="34" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11578" name="Earring of Black Ore">
+  <for>
+    <add val="54" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11579" name="Necklace of Black Ore">
+  <for>
+    <add val="72" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11580" name="Ring of Black Ore">
+  <for>
+    <add val="36" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11581" name="Sealed Phoenix Necklace">
+  <for>
+    <add val="76" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11582" name="Sealed Phoenix Ring">
+  <for>
+    <add val="38" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11583" name="Sealed Phoenix Earring">
+  <for>
+    <add val="57" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11584" name="Phoenix Necklace">
+  <for>
+    <add val="80" order="0x10" stat="mDef"/>
+    <add val="26" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11585" name="Phoenix Ring">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+    <add val="13" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11586" name="Phoenix Earring">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+    <add val="20" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11587" name="Majestic Necklace">
+  <for>
+    <add val="85" order="0x10" stat="mDef"/>
+    <add val="33" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11588" name="Majestic Ring">
+  <for>
+    <add val="42" order="0x10" stat="mDef"/>
+    <add val="17" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11589" name="Majestic Earring">
+  <for>
+    <add val="63" order="0x10" stat="mDef"/>
+    <add val="25" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11590" name="Sealed Majestic Necklace">
+  <for>
+    <add val="80" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11591" name="Sealed Majestic Ring">
+  <for>
+    <add val="40" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11592" name="Sealed Majestic Earring">
+  <for>
+    <add val="60" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11593" name="Sealed Tateossian Necklace">
+  <for>
+    <add val="91" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11594" name="Sealed Tateossian Ring">
+  <for>
+    <add val="46" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11595" name="Sealed Tateossian Earring">
+  <for>
+    <add val="68" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11596" name="Tateossian Necklace">
+  <for>
+    <add val="95" order="0x10" stat="mDef"/>
+    <add val="42" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11597" name="Tateossian Ring">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <add val="21" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11598" name="Tateossian Earring">
+  <for>
+    <add val="71" order="0x10" stat="mDef"/>
+    <add val="31" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="11599" name="Dynasty Necklace">
+  <for>
+    <add val="120" order="0x10" stat="mDef"/>
+    <add val="46" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+</list>

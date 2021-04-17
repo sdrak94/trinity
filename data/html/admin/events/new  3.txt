@@ -1,0 +1,67 @@
+for(Entry<Integer, GlobalStatsSum> e : data.entrySet())
+				{
+					stats = e.getValue();
+					
+					count++;
+					
+					if (count % playersPerPage == 1)
+					{
+						tb.append("<html><body><br><center><font color=ac9887>Server event statistics</font><br><br><br><center>");
+						
+						tb.append("<table width=742 bgcolor=5A5A5A><tr><td width=50 ><font color=B09D8E>&nbsp;&nbsp;#</font></td><td width=100><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.NAME.toString() + "\">Name</a>&nbsp;(<a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.LEVEL.toString() + "\">lvl</a>)</font></td><td width=85><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.COUNTPLAYED.toString() + "\">Events played</a></font></td><td width=65><center><font color=A9A8A7>Win%</font></td><td width=55><center><font color=A9A8A7>K:D</font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.WINS.toString() + "\">Wins</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.LOSES.toString() + "\">Loses</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.SCORE.toString() + "\">Score</a></font></td><td width=55><center><font color=A9A8A7><a action=\"bypass -h nxs_showstats_global_topplayers " + ((count-1) / playersPerPage) + " " + SortType.DEATHS.toString() + "\">Deaths</a></font></td><td width=100><center><font color=A9A8A7>Favorite Event</font></td></tr></table><br>" + "<center>");
+					}
+					
+					tb.append("<center><table width=740 " + (bg ? "bgcolor=3E3E3E" : "bgcolor=2E2E2E") + "><tr><td width=55 align=left><font color=B09D8E>&nbsp;&nbsp;" + count + ".</font></td>");
+					bg = !bg;
+					
+					tb.append("<td width=100><i>" + e.getValue().name + "</i> <font color=A9A8A7>(" + e.getValue().level + ")</font></td>");
+					
+					timesPlayed = stats.get(GlobalStatType.COUNT_PLAYED);
+					
+					wins = stats.get(GlobalStatType.WINS);
+					loses = stats.get(GlobalStatType.LOSES);
+					kills = stats.get(GlobalStatType.KILLS);
+					deaths = stats.get(GlobalStatType.DEATHS);
+					score = stats.get(GlobalStatType.SCORE);
+					kdRatio = String.valueOf((deaths == 0 ? (double) kills : ((double) kills / (double) deaths)));
+					success = String.valueOf((int) ((double)wins / timesPlayed * 100));
+					
+					kdRatio = kdRatio.substring(0, Math.min(3, kdRatio.length()));
+					success = success.substring(0, Math.min(5, success.length()));
+					
+					tb.append("<td width=85 align=center><font color=B3AA9D>" + timesPlayed + "</font></td><td width=100><center><font color=B3AA9D>" + success + "%</font></td><td width=50>&nbsp;<font color=B3AA9D>" + kdRatio + "</font></td><td width=55><center><font color=B3AA9D>" + wins + "</font></td><td width=55><center><font color=B3AA9D>" + loses + "</font></td><td width=55><center>&nbsp;&nbsp;<font color=B3AA9D>" + score + "</font></td>" + "<td width=55><center>&nbsp;&nbsp;&nbsp;<font color=B3AA9D>" + deaths + "</font></td><td width=120><center><font color=B3AA9D>" + (stats.mostPlayedEvent != null ? stats.mostPlayedEvent.getAltTitle() : "N/A") + "</font></td></tr>");
+					
+					tb.append("</table><img src=\"L2UI.SquareBlank\" width=740 height=3>");
+
+					if (count % playersPerPage == 0)
+					{
+						tb.append("<center><br><br><table width=140><tr><td width=70 align=left>" + ((count - 1) / playersPerPage != 0 ? "<button value=\"Page " + ((count - 1) / playersPerPage) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + ((count - 1) / playersPerPage) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td>"
+								+ "<td width=70 align=right>" + ((count - 1) / playersPerPage != size / playersPerPage ? "<button value=\"Page " + (((count - 1) / playersPerPage) + 2) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + (((count - 1) / playersPerPage) + 2) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+2) + "</font>") + "</td></tr></table>");
+						
+						tb.append("</body></html>");
+						
+						if(!_globalStatsHtml.containsKey(sortType))
+							_globalStatsHtml.put(sortType, new FastMap<Integer, String>());
+						
+						_globalStatsHtml.get(sortType).put(count / playersPerPage, tb.toString());
+						tb.clear();
+					}
+				}
+				
+				if (count % playersPerPage != 0)
+				{
+					tb.append("<center><br><br><table width=140><tr><td width=70 align=left>" + ((count - 1) / playersPerPage != 0 ? "<button value=\"Page " + ((count - 1) / playersPerPage) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + ((count - 1) / playersPerPage) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td>"
+							+ "<td width=70 align=right>" + ((count - 1) / playersPerPage != size / playersPerPage ? "<button value=\"Page " + (((count - 1) / playersPerPage) + 2) + "\" width=60 action=\"bypass nxs_showstats_global_topplayers " + (((count - 1) / playersPerPage) + 2) + " " + sortType.toString() + "\" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">" : "<font color=ac9887>Page " + (((count - 1) / playersPerPage)+1) + "</font>") + "</td></tr></table>");
+					
+					tb.append("</body></html>");
+					
+					if(!_globalStatsHtml.containsKey(sortType))
+						_globalStatsHtml.put(sortType, new FastMap<Integer, String>());
+					
+					if(!_globalStatsHtml.get(sortType).containsKey(count / playersPerPage + 1))
+					{
+						_globalStatsHtml.get(sortType).put((count / playersPerPage + 1), tb.toString());
+						tb.clear();
+					}
+				}
+			}

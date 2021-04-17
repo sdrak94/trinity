@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <!--<item id="1"> 
+	<ingredient id="62010" count="10"/>
+    <production id="62005" count="1"/> 
+  </item>
+  <item id="2"> 
+	<ingredient id="62011" count="10"/>
+    <production id="62006" count="1"/> 
+  </item>
+  <item id="3"> 
+	<ingredient id="62014" count="10"/>
+    <production id="62007" count="1"/> 
+  </item>
+  <item id="4"> 
+	<ingredient id="62013" count="10"/>
+    <production id="62008" count="1"/> 
+  </item>-->
+  <item id="1"> 
+	<ingredient id="97000" count="2"/>
+    <production id="97002" count="1"/> 
+  </item>
+    <item id="2"> 
+	<ingredient id="51003" count="8"/>
+    <production id="51004" count="1"/> 
+  </item>
+    <item id="3"> 
+	<ingredient id="51004" count="4"/>
+    <production id="51005" count="1"/> 
+  </item>
+</list>

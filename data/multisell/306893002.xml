@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Shadow Weapon Exchange C Grade - by BiTi -->
+<list>
+  <!-- Shadow Item: Stormbringer duals (120 min) for 1 C Grade Coupon -->
+  <item id="1">
+    <ingredient id="8870" count="1"/>
+    <production id="8937" count="1"/>
+  </item>
+  <!-- Shadow Item: Fisted Blade (120 min) for 1 C Grade Coupon -->
+  <item id="2">
+    <ingredient id="8870" count="1"/>
+    <production id="8934" count="1"/>
+  </item>
+  <!-- Shadow Item - War Axe (120 min) for 1 C Grade Coupon -->
+  <item id="3">
+    <ingredient id="8870" count="1"/>
+    <production id="10011" count="1"/>
+  </item>
+  <!-- Shadow Item: Akat Long Bow (120 min) for 1 C Grade Coupon -->
+  <item id="4">
+    <ingredient id="8870" count="1"/>
+    <production id="8932" count="1"/>
+  </item>
+  <!-- Shadow Item: Stick of Eternity (120 min) for 1 C Grade Coupon -->
+  <item id="5">
+    <ingredient id="8870" count="1"/>
+    <production id="8928" count="1"/>
+  </item>
+  <!-- Shadow Item: Dark Screamer (120 min) for 1 C Grade Coupon -->
+  <item id="6">
+    <ingredient id="8870" count="1"/>
+    <production id="8931" count="1"/>
+  </item>
+  <!-- Shadow Item: Inferno Staff (120 min) for 1 C Grade Coupon -->
+  <item id="7">
+    <ingredient id="8870" count="1"/>
+    <production id="8929" count="1"/>
+  </item>
+  <!-- Shadow Item: Sword of Delusion (120 min) for 1 C Grade Coupon -->
+  <item id="8">
+    <ingredient id="8870" count="1"/>
+    <production id="8926" count="1"/>
+  </item>
+  <!-- Shadow Item: Paagrian Sword (120 min) for 1 C Grade Coupon -->
+  <item id="9">
+    <ingredient id="8870" count="1"/>
+    <production id="8933" count="1"/>
+  </item>
+  <!-- Shadow Item: Poleaxe (120 min) for 1 C Grade Coupon -->
+  <item id="10">
+    <ingredient id="8870" count="1"/>
+    <production id="8927" count="1"/>
+  </item>
+  <!-- Shadow Item: Paagrian Hammer (120 min) for 1 C Grade Coupon -->
+  <item id="11">
+    <ingredient id="8870" count="1"/>
+    <production id="8930" count="1"/>
+  </item>
+  <!-- Shadow Weapon: Blinzlasher (120 min) for 1 C Grade Coupon -->
+  <item id="12">
+    <ingredient id="8870" count="1"/>
+    <production id="10008" count="1"/>
+  </item>
+  <!-- Shadow Weapon: Immortal Edge (120 min) for 1 C Grade Coupon -->
+  <item id="13">
+    <ingredient id="8870" count="1"/>
+    <production id="10009" count="1"/>
+  </item>
+  <!-- Shadow Weapon: Tathlum (120 min) for 1 C Grade Coupon -->
+  <item id="14">
+    <ingredient id="8870" count="1"/>
+    <production id="10010" count="1"/>
+  </item>
+</list>

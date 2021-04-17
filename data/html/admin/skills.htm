@@ -1,0 +1,26 @@
+<html><title>Skills</title><body>
+<table width=260>
+<tr>
+<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=180><center>Skills Menu</center></td>
+<td width=40><button value="Back" action="bypass -h admin_show_skills" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table><br>
+<table width=200>
+<tr><td><a action="bypass -h admin_help skills/Human/human.htm"><font color="deba73">Human Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Elf/elf.htm"><font color="bddf94">Elf Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/DarkElf/delf.htm"><font color="b5a6c6">Dark Elf Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Orc/orc.htm"><font color="b5dfad">Orc Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Dwarf/dwarf.htm"><font color="d6aa63">Dwarf Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Kamael/kamael.htm"><font color="ffffff">Kamael Skills</font></a></td></tr>
+<tr><td><br><a action="bypass -h admin_help skills/Special/Common_Skills.htm"><font color="676767">Common Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Special/Clan_Skills.htm"><font color="9a9a9a">Clan Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Special/Hero_Skills.htm"><font color="88aaaa">Hero Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Special/Nobless_Skills.htm"><font color="77bbbb">Nobless Skills</font></a></td></tr>
+<tr><td><a action="bypass -h admin_help skills/Special/GM_Skills.htm"><font color="66cccc">Gm Skills</font></a></td></tr>
+</table>
+<center><br>Add Skill through ID:<br><table width=100>
+<tr><td>Id:<edit var="id" width=40></td><td>Level:<edit var="level" width=40></td></tr>
+<tr><td><br><button value="Add" action="bypass -h admin_add_skill $id $level" width=40 height=15 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td></td></tr>
+</table></center>
+</body></html>

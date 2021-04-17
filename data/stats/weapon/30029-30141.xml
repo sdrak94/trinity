@@ -1,0 +1,12 @@
+<list>
+<item id='30047' name="Fuego">
+  <for>
+   <set val='500' order='0x08' stat='pAtk'/>
+   <set val='250' order='0x08' stat='mAtk'/>
+   <set val="8" order="0x08" stat="rCrit"/>    
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val='0' order='0x0C' stat='pAtk'/>
+   <enchant val='0' order='0x0C' stat='mAtk'/>
+  </for>
+</item>
+</list>

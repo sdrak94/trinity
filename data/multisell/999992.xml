@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+    <ingredient id="99999" count="20"/> 
+    <production id="20022" count="1"/> 
+  </item>
+   <item id="2"> 
+    <ingredient id="99999" count="40"/> 
+    <production id="13482" count="1"/> 
+  </item>
+   <item id="3"> 
+    <ingredient id="99999" count="40"/> 
+    <production id="20016" count="1"/> 
+  </item>
+   <item id="4"> 
+    <ingredient id="99999" count="20"/> 
+    <production id="8915" count="1"/> 
+  </item>
+</list>

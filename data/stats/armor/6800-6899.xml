@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="6834" name="Circlet of Innadril">
+  <cond msgId="1518">
+    <and>
+      <player castle = "6"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6835" name="Circlet of Dion">
+  <cond msgId="1518">
+    <and>
+      <player castle = "2"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6836" name="Circlet of Goddard">
+  <cond msgId="1518">
+    <and>
+      <player castle = "7"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6837" name="Circlet of Oren">
+  <cond msgId="1518">
+    <and>
+      <player castle = "4"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6838" name="Circlet of Gludio">
+  <cond msgId="1518">
+    <and>
+      <player castle = "1"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6839" name="Circlet of Giran">
+  <cond msgId="1518">
+    <and>
+      <player castle = "3"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+    <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6840" name="Circlet of Aden">
+  <cond msgId="1518">
+    <and>
+      <player castle = "5"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+    <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6841" name="The Lord's Crown">
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for>
+    <add val='250' order='0x40' stat='pDef'/>
+	<add val='250' order='0x40' stat='mDef'/>
+	<add order="0x40" stat="runSpd" val="4"/>
+    <add order="0x40" stat="maxCp" val="2500"/>
+	<mul val='3.0' order='0x30' stat='regHp'/>
+	<mul val='3.0' order='0x30' stat='regCp'/>
+    <add val='2000' order='0x40' stat='maxHp'/>
+	<add order="0x40" stat="rEvas" val="4"/>
+	<add order="0x40" stat="accCombat" val="4"/>
+	<add order="0x40" stat="rCrit" val="30"/>
+	<add order="0x40" stat="mCritRate" val="30"/>
+	<add order="0x40" stat="pAtkSpd" val="20"/>
+	<add order="0x40" stat="mAtkSpd" val="20"/>
+	<add order="0x40" stat="fireRes" val="25"/>
+	<add order="0x40" stat="waterRes" val="25"/>
+	<add order="0x40" stat="windRes" val="25"/>
+	<add order="0x40" stat="earthRes" val="25"/>
+	<add order="0x40" stat="holyRes" val="25"/>
+	<add order="0x40" stat="darkRes" val="25"/>
+    <!--<add val='200' order='0x40' stat='pDef'/>
+	<add val='200' order='0x40' stat='mDef'/>
+	<add val='2500' order='0x40' stat='maxHp'/>
+	<mul val='0.8' order='0x30' stat='derangementVuln'/>
+	<mul val='0.8' order='0x30' stat='paralyzeVuln'/>
+	<mul val='0.8' order='0x30' stat='stunVuln'/>
+	<mul val='0.8' order='0x30' stat='rootVuln'/>
+	<mul val='0.8' order='0x30' stat='sleepVuln'/>
+	<add val='0.15' order='0x40' stat='gainHp'/>-->
+  </for>
+</item>
+<item id="6842" name="Wings of Destiny Circlet">
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for>
+   	<add val='100' order='0x40' stat='pDef'/>
+	<add val='100' order='0x40' stat='mDef'/>
+	<add order="0x40" stat="runSpd" val="7"/>
+    <add order="0x40" stat="maxCp" val="2000"/>
+	<mul val='2.0' order='0x30' stat='regHp'/>
+	<mul val='2.0' order='0x30' stat='regCp'/>
+    <add val='1500' order='0x40' stat='maxHp'/>
+	<add order="0x40" stat="rEvas" val="4"/>
+	<add order="0x40" stat="accCombat" val="4"/>
+	<add order="0x40" stat="rCrit" val="40"/>
+	<add order="0x40" stat="mCritRate" val="40"/>
+	<add order="0x40" stat="pAtkSpd" val="30"/>
+	<add order="0x40" stat="mAtkSpd" val="30"/>
+	<add order="0x40" stat="firePower" val="20"/>
+	<add order="0x40" stat="waterPower" val="20"/>
+	<add order="0x40" stat="windPower" val="20"/>
+	<add order="0x40" stat="earthPower" val="20"/>
+	<add order="0x40" stat="holyPower" val="20"/>
+	<add order="0x40" stat="darkPower" val="20"/>
+  </for>
+</item>
+<!--<item id="6842" name="Wings of Destiny Circlet">
+  <cond msgId="1508">
+    <player olympiad="false"/>
+  </cond>
+  <for>
+   	<add val='100' order='0x40' stat='pDef'/>
+	<add val='100' order='0x40' stat='mDef'/>
+    <add order="0x40" stat="pSkillEvas" val="4"/>
+	<add order="0x40" stat="mSkillEvas" val="4"/>
+	<add order="0x40" stat="runSpd" val="11"/>
+    <add order="0x50" stat="maxCp" val="2000"/>
+	<mul val='2' order='0x30' stat='regHp'/>
+    <add val='1500' order='0x40' stat='maxHp'/>
+  </for>
+</item>-->
+<item id="6843" name="Cat Ears">
+  <for>
+    <basemul order="0x40" stat="mAtk" val="0.15"/>
+    <basemul order="0x40" stat="pDef" val="0.12"/>
+  </for>
+</item>
+<item id="6844" name="Lady's Hair Pin">
+  <cond msgId="1518">
+    <player sex="1"/>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="6845" name="Pirate's Eye Patch">
+  <for>
+      <add val="65" order="0x40" stat="pAtkSpd"/>
+	  <add val="7" order="0x40" stat="runSpd"/>
+    </for>
+</item>
+<item id="6846" name="Monocle">
+  <for>
+    <add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,37 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<br>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+<br>
+
+<font color=bbb499>%key%</font>
+
+<br>
+
+</center><font color=ac9887>Description:</font><br1><font color=9f9f9f>%desc%</font><center>
+
+<br><font color=bbb499>%value%</font>
+
+<br>
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+<table width=100>
+
+<tr>
+<td width=50><edit var="value" width=130 height=15></td>
+<td width=40><button value="Set Value" action="bypass admin_event_manage set_map_config %event% %key% $value" width=70 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table> 
+
+<br>
+
+<button value="Back" action="bypass admin_event_manage config_event_map %event%" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+</body></html>

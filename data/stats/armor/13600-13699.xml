@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13687" name="Knight's Cloak">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13688" name="Knight's Cloak - Light Armor exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13689" name="Knight's Cloak - Robe exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+<item id="13690" name="Knight's Cloak - Kamael exclusive">
+  <for>
+    <add val="20" order="0x10" stat="pDef"/>
+    <add order="0x40" stat="darkRes" val="30"/> <!-- Dark Attribute Defense +30 -->
+  </for>
+</item>
+</list>

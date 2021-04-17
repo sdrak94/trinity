@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+    
+
+-<item id="1">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6581" enchant="20" count="1"/>
+
+</item>
+
+<!-- Forgotten Blade Health -->
+
+
+
+-<item id="2">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6582" enchant="20" count="1"/>
+
+</item>
+
+<!-- Forgotten Blade Focus -->
+
+
+
+-<item id="3">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6583" enchant="20" count="1"/>
+
+</item>
+
+<!-- Heaven's Divider Haste -->
+
+
+
+-<item id="4">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6605" enchant="20" count="1"/>
+
+</item>
+
+<!-- Heaven's Divider Health -->
+
+
+
+-<item id="5">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6606" enchant="20" count="1"/>
+
+</item>
+
+<!-- Heaven's Divider Focus -->
+
+
+
+-<item id="6">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6607" enchant="20" count="1"/>
+
+</item>
+
+<!-- Arcana Mace Acumen -->
+
+
+
+-<item id="7">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6608" enchant="20" count="1"/>
+
+</item>
+
+<!-- Arcana Mace MP Regeneration -->
+
+
+
+-<item id="8">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6609" enchant="20" count="1"/>
+
+</item>
+
+<!-- Arcana Mace Mana Up -->
+
+
+
+-<item id="9">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6610" enchant="20" count="1"/>
+
+</item>
+
+<!-- Basalt Battlehammer HP Drain -->
+
+
+
+-<item id="10">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6584" enchant="20" count="1"/>
+
+</item>
+
+<!-- Basalt Battlehammer Health -->
+
+
+
+-<item id="11">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6585" enchant="20" count="1"/>
+
+</item>
+
+<!-- Basalt Battlehammer HP Regeneration -->
+
+
+
+-<item id="12">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6586" enchant="20" count="1"/>
+
+</item>
+
+<!-- Imperial Staff Empower -->
+
+
+
+-<item id="13">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6587" enchant="20" count="1"/>
+
+</item>
+
+<!-- Imperial Staff MP Regeneration -->
+
+
+
+-<item id="14">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6588" enchant="20" count="1"/>
+
+</item>
+
+<!-- Imperial Staff Magic Hold -->
+
+
+
+-<item id="15">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6589" enchant="20" count="1"/>
+
+</item>
+
+<!-- Dragon Hunter Axe HP Regeneration -->
+
+
+
+-<item id="16">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6596" enchant="20" count="1"/>
+
+</item>
+
+<!-- Dragon Hunter Axe Health -->
+
+
+
+-<item id="17">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6597" enchant="20" count="1"/>
+
+</item>
+
+<!-- Dragon Hunter Axe HP Drain -->
+
+
+
+-<item id="18">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6598" enchant="20" count="1"/>
+
+</item>
+
+<!-- Angel Slayer Crt. Damage -->
+
+
+
+-<item id="19">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6590" enchant="20" count="1"/>
+
+</item>
+
+<!-- Angel Slayer HP Drain -->
+
+
+
+-<item id="20">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6591" enchant="20" count="1"/>
+
+</item>
+
+<!-- Angel Slayer Haste -->
+
+
+
+-<item id="21">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6592" enchant="20" count="1"/>
+
+</item>
+
+<!-- Shining Bow Cheap Shot -->
+
+
+
+-<item id="22">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6593" enchant="20" count="1"/>
+
+</item>
+
+<!-- Shining Bow Focus -->
+
+
+
+-<item id="23">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6594" enchant="20" count="1"/>
+
+</item>
+
+<!-- Shining Crt. Slow -->
+
+
+
+-<item id="24">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6595" enchant="20" count="1"/>
+
+</item>
+
+<!-- Draconic Bow Cheap Shot -->
+
+
+
+-<item id="25">
+
+<ingredient id="8542" count="1"/>
+
+<production id="7576" enchant="20" count="1"/>
+
+</item>
+
+<!-- Draconic Bow Focus -->
+
+
+
+-<item id="26">
+
+<ingredient id="8542" count="1"/>
+
+<production id="7577" enchant="20" count="1"/>
+
+</item>
+
+<!-- Draconic Bow Critical Slow -->
+
+
+
+-<item id="27">
+
+<ingredient id="8542" count="1"/>
+
+<production id="7578" enchant="20" count="1"/>
+
+</item>
+
+<!-- Saint Spear Health -->
+
+
+
+-<item id="28">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6599" enchant="20" count="1"/>
+
+</item>
+
+<!-- Saint Spear Guidance -->
+
+
+
+-<item id="29">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6600" enchant="20" count="1"/>
+
+</item>
+
+<!-- Saint Spear Haste -->
+
+
+
+-<item id="30">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6601" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Focus -->
+
+
+
+-<item id="31">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6602" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Health -->
+
+
+
+-<item id="32">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6603" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Crt. Stun -->
+
+
+
+-<item id="33">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6604" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Focus -->
+
+
+
+-<item id="34">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9365" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Health -->
+
+
+
+-<item id="35">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9366" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Crt. Stun -->
+
+
+
+-<item id="36">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9367" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Focus -->
+
+
+
+-<item id="37">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9369" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Health -->
+
+
+
+-<item id="38">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9370" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Crt. Stun -->
+
+
+
+-<item id="39">
+
+<ingredient id="8542" count="1"/>
+
+<production id="9371" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Focus -->
+
+
+
+-<item id="40">
+
+<ingredient id="8542" count="1"/>
+
+<production id="11215" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Health -->
+
+
+
+-<item id="41">
+
+<ingredient id="8542" count="1"/>
+
+<production id="11216" enchant="20" count="1"/>
+
+</item>
+
+<!-- Demon Splinter Crt. Stun -->
+
+
+
+-<item id="42">
+
+<ingredient id="8542" count="1"/>
+
+<production id="11217" enchant="20" count="1"/>
+
+</item>
+
+<!-- Tallum Blade*Dark Legion's Edge -->
+
+
+
+-<item id="43">
+
+<ingredient id="8542" count="1"/>
+
+<production id="6580" enchant="20" count="1"/>
+
+</item>
+</list>

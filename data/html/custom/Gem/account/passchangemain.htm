@@ -1,0 +1,53 @@
+<html><title>Account Manager</title>
+<body>
+<center>
+<table width="100%">
+<tr>
+<td align=center><font color="22FFFF">%dtn%</font></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><font color="FF99FF">Enter your account's secret code and your desired account password below. Make sure you remember this new password and don't give it to anybody.</font></td>
+</tr>
+<tr>
+<td><font color="99FF99">Your password cannot be shorter than 3 characters or longer than 16 characters!</font></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td>Account secret code:</td>
+</tr>
+<tr>
+<td><multiedit var="secret" width=180 height=22></td>
+</tr>
+<tr></tr>
+<tr>
+<td>Your new password:</td>
+</tr>
+<tr>
+<td><multiedit var="pass" width=180 height=22></td>
+</tr>
+</table>
+<br><br>
+<table>
+<tr>
+<td align=center><button action="bypass -h gem_changepass_action $secret $pass" value="Confirm" width=120 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+<tr><td></td></tr>
+<tr>
+<td align=center><button action="bypass -h gem_gemmain" value="Cancel" width=120 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+<table>
+<tr>
+<td align=center><button action="bypass -h gem_changesecret" value="Change Secret Code" width=160 height=30 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+

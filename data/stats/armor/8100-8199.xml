@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="8177" name="Raid Challenger's Circlet">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="8178" name="Raid Adventurer's Circlet">
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="8179" name="Raid Master's Circlet">
+  <for>
+    <add val="1" order="0x10" stat="CON"/>
+	<mul val="1.15" order="0x30" stat="pvmDam"/>
+	<mul val="0.875" order="0x30" stat="pvmVuln"/>
+	<mul val="1.15" order="0x30" stat="rExp"/>
+  </for>
+</item>
+<item id="8180" name="Circlet of Ice Fairy Sirra">
+  <for>
+    <add val="3" order="0x10" stat="INT"/>
+	<add val="3" order="0x10" stat="STR"/>
+	<add val="15" order="0x40" stat="waterPower"/>
+	<add val="10" order="0x40" stat="waterRes"/>
+	<sub val="0.035" order="0x40" stat="skillDam"/>
+	<mul val="0.98" order="0x30" stat="pAtk"/>
+  </for>
+</item>
+<item id="8181" name="Academy Circlet">
+  <for>
+    <mul val="1.18" order="0x30" stat="rExp"/>
+	<add val="100" order="0x40" stat="pDef"/>
+	<add val="1" order="0x10" stat="MEN"/>
+  </for>
+</item>
+<item id="8182" name="Circlet of Rune">
+  <cond msgId="1518">
+    <and>
+      <player castle = "8"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="8183" name="Circlet of Schuttgart">
+  <cond msgId="1518">
+    <and>
+      <player castle = "9"/>
+      <player pledgeClass = "2"/>
+    </and>
+  </cond>
+  <for>
+    <add val="0" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="8184" name="Red Party Hat">
+  <for>
+      <sub val="0.16" order="0x40" stat="pReuse"/>
+      <basemul val="0.1" order="0x40" stat="mDef"/>
+	  <add val="50" order="0x40" stat="bonusHp"/>
+   </for>
+</item>
+<item id="8185" name="Feathered Hat">
+  <for>
+    <basemul val="0.09" order="0x40" stat="pDef"/>
+	<basemul val="0.09" order="0x40" stat="mDef"/>
+  </for>
+</item>
+<item id="8186" name="Artisan's Goggles">
+  <for>
+    <add val="9" order="0x40" stat="accCombat"/>
+  </for>
+</item>
+<item id="8187" name="Demon Horns">
+  <for>
+    <add val="20" order="0x40" stat="firePower"/>
+	<add val="10" order="0x40" stat="fireRes"/>
+	<add val="20" order="0x40" stat="darkPower"/>
+	<add val="35" order="0x40" stat="rCrit"/>
+	<add val="35" order="0x40" stat="mCritRate"/>
+  </for>
+</item>
+<item id="8188" name="Little Angel Wings">
+  <for>
+    <add val="8" order="0x40" stat="rEvas"/>
+	<add val="2" order="0x40" stat="runSpd"/>
+  </for>
+</item>
+<item id="8189" name="Fairy Antennae">
+  <for>
+    <add val="1" order="0x10" stat="INT"/>
+    <add val="2" order="0x10" stat="WIT"/>
+	<add val="4" order="0x40" stat="runSpd"/>
+  </for>
+</item>
+<item id="8191" name="Frintezza's Necklace">
+  <for>
+    <add val="90" order="0x10" stat="mDef"/>
+    <add val="42" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+</list>

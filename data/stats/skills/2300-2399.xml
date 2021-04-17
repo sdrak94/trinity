@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="2300" levels="1" name="Hair Style Change Potion">
+  <set name="itemConsumeId" val="8673"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="hitTime" val="500"/>
+    <set name="isPotion" val="true"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="CHANGE_APPEARANCE"/>
+  <set name="hairStyleId" val="2"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2301" levels="1" name="Hair Style Change Potion">
+  <set name="itemConsumeId" val="8674"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="500"/>
+    <set name="isPotion" val="true"/>
+	        <set name="reuseDelay" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="CHANGE_APPEARANCE"/>
+  <set name="hairStyleId" val="3"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2302" levels="1" name="Hair Style Change Potion">
+  <set name="itemConsumeId" val="8675"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="500"/>
+    <set name="isPotion" val="true"/>
+	        <set name="reuseDelay" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="CHANGE_APPEARANCE"/>
+  <set name="hairStyleId" val="4"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2303" levels="1" name="Hair Style Change Potion">
+  <set name="itemConsumeId" val="8676"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="500"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="staticHitTime" val="true"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="CHANGE_APPEARANCE"/>
+  <set name="hairStyleId" val="5"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2304" levels="1" name="Hair Style Change Potion">
+  <set name="itemConsumeId" val="8677"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="CHANGE_APPEARANCE"/>
+  <set name="hairStyleId" val="6"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2305" levels="1" name="Primeval Potion">
+  <!-- Improves resistance to various poisons and anesthetics that originate on the Primeval Isle. -->
+  <set name="target" val="TARGET_NONE"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="skillType" val="NOTDONE"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2306" levels="3" name="Primeval Crystals">
+  <!--
+  Lvl 1 Name - Blue Primeval Crystal
+  Lvl 2 Name - Green Primeval Crystal
+  Lvl 3 Name - Red Primeval Crystal
+  -->
+  <table name="#power"> 50000 100000 200000 </table>
+  <table name="#itemConsumeId"> 8954 8955 8956 </table>
+  <set name="itemConsumeId" val="#itemConsumeId"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="200"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="magicLvl" val="1"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="isPotion" val="true"/>
+  <set name="power" val="#power"/>
+  <set name="reuseDelay" val="3000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="skillType" val="GIVE_SP"/>
+  <set name="target" val="TARGET_SELF"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player flyMounted="False"/>
+      <player level="76"/>
+    </and>
+  </cond>
+</skill>
+<skill id="2307" levels="1" name="Remove Petrification Scroll">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+    <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2308" levels="36" name="Event Item">
+  <!-- Lvl 1-36 Name - Event Item -->
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2309" levels="1" name="Pig Chest">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2310" levels="1" name="Scroll of Guidance - Event Use">
+  <set name="itemConsumeId" val="9146"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="5" stackType="hit_up">
+      <add order="0x40" stat="accCombat" val="4"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2311" levels="1" name="Scroll of Death Whisper - Event Use">
+  <set name="itemConsumeId" val="9147"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2312" levels="1" name="Scroll of Focus - Event Use">
+  <set name="itemConsumeId" val="9148"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.3" stackType="critical_prob_up">
+      <basemul order="0x30" stat="rCrit" val="0.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2313" levels="1" name="Scroll of Acumen - Event Use">
+  <set name="itemConsumeId" val="9149"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="casting_time_down">
+      <mul order="0x30" stat="mAtkSpd" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2314" levels="1" name="Scroll of Haste - Event Use">
+  <set name="itemConsumeId" val="9150"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="attack_time_down">
+      <mul order="0x30" stat="pAtkSpd" val="1.33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2315" levels="1" name="Scroll of Agility - Event Use">
+  <set name="itemConsumeId" val="9151"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="5" stackType="rEvas">
+      <add order="0x40" stat="rEvas" val="4"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2316" levels="1" name="Scroll of Empower - Event Use">
+  <set name="itemConsumeId" val="9152"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.85" stackType="ma_up">
+      <mul order="0x30" stat="mAtk" val="1.75"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2317" levels="1" name="Scroll of Might - Event Use">
+  <set name="itemConsumeId" val="9153"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="pa_up">
+      <mul order="0x30" stat="pAtk" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2318" levels="1" name="Scroll of Wind Walk - Event Use">
+  <set name="itemConsumeId" val="9154"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="40" stackType="speed_up">
+      <add order="0x40" stat="runSpd" val="33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2319" levels="1" name="Scroll of Shield - Event Use">
+  <set name="itemConsumeId" val="9155"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="4000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="pd_up">
+      <mul order="0x30" stat="pDef" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2320" levels="1" name="Blessed Scroll of Escape - Event Use">
+  <set name="itemConsumeId" val="9156"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="2000000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2321" levels="1" name="Blessed Scroll of Resurrection - Event Use">
+  <set name="power" val="100"/>
+  <set name="target" val="TARGET_CORPSE_PLAYER"/>
+  <set name="hitTime" val="30000000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RESURRECT"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="400"/>
+  <set name="effectRange" val="600"/>
+</skill>
+<skill id="2322" levels="1" name="Chest Key - For Events Only">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+</skill>
+<skill id="2323" levels="1" name="Red Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2324" levels="1" name="Blue Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2325" levels="1" name="Orange Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2326" levels="1" name="Black Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2327" levels="1" name="White Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2328" levels="1" name="Green Sage's Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2329" levels="4" name="Fire Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2330" levels="4" name="Water Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2331" levels="4" name="Wind Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2332" levels="4" name="Earth Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2333" levels="4" name="Divine Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2334" levels="4" name="Dark Stone">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2335" levels="1" name="Fire Resist Potion">
+  <set name="itemConsumeId" val="9997"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="fireRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2336" levels="1" name="Water Resist Potion">
+  <set name="itemConsumeId" val="9998"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="waterRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2337" levels="1" name="Wind Resist Potion">
+  <set name="itemConsumeId" val="10000"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="windRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2338" levels="1" name="Earth Resist Potion">
+  <set name="itemConsumeId" val="9999"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="earthRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2339" levels="1" name="Holy Resist Potion">
+  <set name="itemConsumeId" val="10002"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="holyRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2340" levels="1" name="Unholy Resist Potion">
+  <set name="itemConsumeId" val="10001"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="hitTime" val="100"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="isPotion" val="true"/>
+          <set name="reuseDelay" val="3000"/>
+  <set name="buffDuration" val="600000"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="480" val="0" stackOrder="3" stackType="element_potion">
+      <add order="0x40" stat="darkRes" val="10"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2341" levels="1" name="Caravan's Secret Medicine">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <cond msgId="113" addName="1">
+    <player flyMounted="False"/>
+  </cond>
+</skill>
+<skill id="2342" levels="1" name="Ballista Bomb">
+  <set name="itemConsumeId" val="9688"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="skillType" val="BALLISTA"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="5000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="castRange" val="150"/>
+  <cond msgId="113" addName="1">
+    <target npcType="L2FortBallista"/>
+  </cond>
+</skill>
+<skill id="2343" levels="1" name="Gate Key of Kamael">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2344" levels="1" name="Gate Key of Records">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2345" levels="1" name="Gate Key of Observation">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2346" levels="1" name="Gate Key of Specula">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2347" levels="1" name="Enuma Elish Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2348" levels="1" name="Prahnah Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2349" levels="1" name="Gate Key of Arvitaire">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2350" levels="1" name="Leopold Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2351" levels="1" name="Gate Key of Prediction">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2352" levels="1" name="Gate Key of Nornil">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2353" levels="1" name="Nornil's Power">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1000"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2354" levels="1" name="Gate Key of Darkness">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2355" levels="1" name="Gate Key of Destruction">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2356" levels="1" name="Gate Key of Blood">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2357" levels="1" name="Fiery Demon Blood">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="1000"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2358" levels="1" name="Holy Water">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2359" levels="1" name="Magic Bottle">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2360" levels="1" name="Water Dragon Claw">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2361" levels="1" name="Evolving Wolf's Food">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="FEED_PET"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="feed" val="1000"/>
+</skill>
+<skill id="2362" levels="1" name="Prison Gate Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2363" levels="1" name="Underground Warehouse Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2364" levels="1" name="Blessed Scroll of Fortress Return">
+  <set name="itemConsumeId" val="10130"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="2000000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="recallType" val="Fortress"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player fort="-1"/>
+  </cond>
+</skill>
+<skill id="2365" levels="1" name="Scroll of Fortress Return">
+  <set name="itemConsumeId" val="10129"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="20000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="recallType" val="Fortress"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+</skill>
+<skill id="2366" levels="1" name="Blue Coral Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2367" levels="1" name="Red Coral Key">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2368" levels="1" name="Spirit of the Lake">
+  <set name="power" val="10000"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="hitTime" val="8000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="reuseDelay" val="8000"/> <!-- unknown -->
+  <set name="skillType" val="AGGREDUCE"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="itemConsumeId" val="9689"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="castRange" val="600"/>
+  <set name="effectRange" val="900"/>
+  <cond msgId="113" addName="1">
+    <and>
+      <player flyMounted="False"/>
+      <target npcId="18482"/>
+    </and>
+  </cond>
+  <for>
+    <effect name="HealOverTime" val="3000"/>
+  </for>
+</skill>
+<skill id="2369" levels="1" name="Water Dragon Scale">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="500"/>
+  <set name="staticHitTime" val="true"/>
+</skill>
+<skill id="2370" levels="1" name="Scroll of Transformation - Pig">
+  <set name="itemConsumeId" val="9897"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="104"/>
+  <for>
+    <effect name="Transformation" time="1800" val="0"> <!-- duration Guess -->
+		  <mul order="0x30" stat="pAtkSpd" val="0.5"/>
+	  <mul order="0x30" stat="mAtkSpd" val="0.5"/>
+	  </effect>
+  </for>
+</skill>
+<skill id="2371" levels="1" name="Transform Sealbook - Onyx Beast">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2372" levels="1" name="Transform Sealbook - Death Blader">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2373" levels="1" name="Transform Sealbook - Grail Apostle">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2374" levels="1" name="Transform Sealbook - Unicorn">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2375" levels="1" name="Transform Sealbook - Lilim Knight">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2376" levels="1" name="Transform Sealbook - Golem Guardian">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2377" levels="1" name="Transform Sealbook - Inferno Drake">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2378" levels="1" name="Transform Sealbook - Dragon Bomber">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+</skill>
+<skill id="2379" levels="1" name="Wind">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="40" stackType="speed_up">
+      <add order="0x40" stat="runSpd" val="33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2380" levels="1" name="Shield">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.2" stackType="pd_up">
+      <mul order="0x30" stat="pDef" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2381" levels="1" name="Magic Barrier">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.5" stackType="MagicDefUp">
+	  <basemul order="0x40" stat="mDef" val="0.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2382" levels="1" name="Bless Shield">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.4" stackType="shieldProbUp">
+      <mul order="0x30" stat="rShld" val="1.3"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2383" levels="1" name="Haste">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.33" stackType="attack_time_down">
+      <mul order="0x30" stat="pAtkSpd" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2384" levels="1" name="Acumen">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.23" stackType="casting_time_down">
+    </effect>
+  </for>
+</skill>
+<skill id="2385" levels="1" name="Empower">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="isPotion" val="true"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.65" stackType="ma_up">
+      <mul order="0x30" stat="mAtk" val="1.55"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2386" levels="1" name="Divine Power">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" >
+      <mul order="0x30" stat="gainHp" val="0.08"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2387" levels="1" name="Might">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="1.2" stackType="pa_up">
+      <mul order="0x30" stat="pAtk" val="1.15"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2388" levels="1" name="Focus">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="0.25" stackType="critical_prob_up">
+      <basemul order="0x30" stat="rCrit" val="0.2"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2389" levels="1" name="Guidance">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="3" stackType="hit_up">
+      <add order="0x40" stat="accCombat" val="2"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2390" levels="1" name="Berserker Spirit">
+  <set name="target" val="TARGET_SELF"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="2" stackType="berserk">
+      <mul order="0x30" stat="mAtk" val="1.16"/>
+      <mul order="0x30" stat="pAtk" val="1.08"/>
+      <mul order="0x30" stat="mDef" val="0.84"/>
+      <mul order="0x30" stat="pDef" val="0.92"/>
+      <mul order="0x30" stat="mAtkSpd" val="1.08"/>
+      <mul order="0x30" stat="pAtkSpd" val="1.08"/>
+      <add order="0x40" stat="runSpd" val="8"/>
+      <sub order="0x40" stat="rEvas" val="4"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2391" levels="1" name="Clarity">
+  <set name="target" val="TARGET_SELF"/>
+    <set name="isPotion" val="true"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="3600" val="0" stackOrder="2" stackType="MPrate">
+      <mul order="0x30" stat="MagicalMpConsumeRate" val="0.96"/>
+      <mul order="0x30" stat="PhysicalMpConsumeRate" val="0.9"/>
+      <mul order="0x30" stat="DanceMpConsumeRate" val="0.9"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2392" levels="1" name="Blessed Scroll of Battlefield Escape">
+  <set name="itemConsumeId" val="10149"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="hitTime" val="2000000"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="RECALL"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+</skill>
+<skill id="2393" levels="1" name="Blessed Scroll of Battlefield Resurrection">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="30000000"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+</skill>
+<skill id="2394" levels="1" name="Scroll of Battlefield Transformation - Pixy">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="transformId" val="304"/>
+  <for>
+    <effect name="Transformation" time="3600" val="0"> <!-- Transformation lasts 10 minutes -->
+	  <mul order="0x30" stat="mAtkSpd" val="0.95"/>
+	  <mul order="0x30" stat="pAtkSpd" val="0.95"/>
+	</effect>
+  </for>
+</skill>
+<skill id="2395" levels="1" name="Lesser Battlefield Healing Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+    <set name="isPotion" val="true"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+</skill>
+<skill id="2396" levels="1" name="Mental Potion">
+  <!-- by Z0mbie! -->
+  <set name="itemConsumeId" val="10155"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="reuseDelay" val="6000"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="1200000"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="30" stackType="MentalShield">
+      <mul order="0x30" stat="rootVuln" val="0.7"/>
+      <mul order="0x30" stat="sleepVuln" val="0.7"/>
+      <mul order="0x30" stat="confusionVuln" val="0.7"/>
+      <mul order="0x30" stat="derangementVuln" val="0.7"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2397" levels="1" name="Medusa Potion">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+    <set name="isPotion" val="true"/>
+	  <set name="reuseDelay" val="6000"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+</skill>
+<skill id="2398" levels="1" name="Instant Haste Potion">
+  <!-- Done by DJ MELERIX -->
+  <set name="itemConsumeId" val="10157"/>
+  <set name="itemConsumeCount" val="1"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+    <set name="reuseDelay" val="6000"/>
+  <set name="isPotion" val="true"/>
+  <set name="buffDuration" val="1200000"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+  <for>
+    <effect name="Buff" time="1200" val="0" stackOrder="33" stackType="speed_up">
+      <add order="0x40" stat="runSpd" val="33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="2399" levels="1" name="Capture Rope">
+  <set name="target" val="TARGET_NONE"/>
+  <set name="skillType" val="NOTDONE"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="hitTime" val="2000"/>
+  <cond msgId="113" addName="1">
+    <player SiegeZone="126"/>
+  </cond>
+</skill>
+</list>

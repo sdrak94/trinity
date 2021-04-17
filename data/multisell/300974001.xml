@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Trader Galladucci (Luxury Shop) Weapons -->
+<list>
+	<item id="1">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="78" count="1" />
+	</item>
+	<item id="2">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="91" count="1" />
+	</item>
+	<item id="3">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="92" count="1" />
+	</item>
+	<item id="4">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="142" count="1" />
+	</item>
+	<item id="5">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="148" count="1" />
+	</item>
+	<item id="6">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="229" count="1" />
+	</item>
+	<item id="7">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="243" count="1" />
+	</item>
+	<item id="8">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="267" count="1" />
+	</item>
+	<item id="9">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="284" count="1" />
+	</item>
+	<item id="10">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="300" count="1" />
+	</item>
+	<item id="11">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="7892" count="1" />
+	</item>
+	<item id="12">
+		<ingredient id="1460" count="579" />
+		<ingredient id="1459" count="1737" />
+		<production id="7900" count="1" />
+	</item>
+</list>

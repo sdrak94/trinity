@@ -1,0 +1,72 @@
+<list>
+<item id='999111' name="Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.09" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <sub val="0.05" order="0x40" stat="pReuse"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<!--extra-->
+	<basemul val="0.65" order="0x40" stat="pAtk"/>
+	<add val="4" order="0x40" stat="accCombat"/>
+	<add val="0.1" order="0x40" stat="damHeavy"/>
+	<add val='5' order='0x40' stat='pSkillEvasReduce'/>
+	<!--extra-->
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>
+<!--<item id='999111' name="Dread Finale Blades">
+  <for>
+    <set val="661" order="0x08" stat="pAtk"/>
+    <set val="237" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="280" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.3" order="0x40" stat="maxHp"/>
+	<basemul val="0.5" order="0x40" stat="rCrit"/>
+	<add val="0.4" order="0x40" stat="cAtk"/>
+	<basemul val="0.15" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="pAtk"/>
+    <add val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.05" order="0x40" stat="runSpd"/>
+	<sub val="40" order="0x40" stat="accCombat"/>
+	<add val="1" order="0x40" stat="chargeMax"/>
+	<add val="0.15" order="0x40" stat="skillDam"/>
+	<basemul val="0.05" order="0x40" stat="pDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+	<basemul val="0.05" order="0x40" stat="mDef">
+	  <or>
+	  <player hasSkill="13000"/>
+	  <player hasSkill="13001"/>
+	  <player hasSkill="13002"/>
+	  </or>
+	</basemul>
+  </for>
+</item>-->
+</list>

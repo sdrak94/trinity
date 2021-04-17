@@ -1,0 +1,385 @@
+addSpawn(110078, -255191, 143422, 2072, 55468, false, 0, false, world.instanceId); //Gladront
+addSpawn(110009, -255509, 143842, 2072, 53375, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110078, -255737, 144215, 2072, 54541, false, 0, false, world.instanceId); //Gladront
+addSpawn(110020, -256130, 144836, 2072, 4003, false, 0, false, world.instanceId); //Winged Terror
+addSpawn(110009, -256360, 145402, 2072, 51468, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110078, -256568, 145916, 2072, 51326, false, 0, false, world.instanceId); //Gladront
+addSpawn(110009, -256788, 146393, 2072, 52584, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110020, -257022, 146979, 2072, 2280, false, 0, false, world.instanceId); //Winged Terror
+addSpawn(110053, -257150, 147561, 2072, 49458, false, 0, false, world.instanceId); //Underground Knight
+addSpawn(110054, -257251, 148125, 2072, 52311, false, 0, false, world.instanceId); //Nedawn
+addSpawn(110009, -256670, 147885, 2072, 51746, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110073, -256516, 147138, 2072, 50449, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110054, -256179, 146300, 2072, 55097, false, 0, false, world.instanceId); //Nedawn
+addSpawn(110053, -256027, 145942, 2072, 52894, false, 0, false, world.instanceId); //Underground Knight
+addSpawn(110059, -255655, 145065, 2072, 53691, false, 0, false, world.instanceId); //Termo
+addSpawn(110053, -255205, 144382, 2072, 55595, false, 0, false, world.instanceId); //Underground Knight
+addSpawn(110054, -254952, 144003, 2072, 54240, false, 0, false, world.instanceId); //Nedawn
+addSpawn(110009, -254374, 144056, 2072, 53308, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110078, -254657, 144439, 2072, 54788, false, 0, false, world.instanceId); //Gladront
+addSpawn(110009, -254871, 144774, 2072, 54303, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110020, -255226, 145322, 2072, 37468, false, 0, false, world.instanceId); //Winged Terror
+addSpawn(110078, -255406, 145817, 2072, 52708, false, 0, false, world.instanceId); //Gladront
+addSpawn(110009, -255608, 146330, 2072, 55285, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110078, -255817, 146788, 2072, 52844, false, 0, false, world.instanceId); //Gladront
+addSpawn(110020, -256009, 147281, 2072, 35133, false, 0, false, world.instanceId); //Winged Terror
+addSpawn(110054, -256154, 147816, 2072, 48723, false, 0, false, world.instanceId); //Nedawn
+addSpawn(110053, -256238, 148287, 2072, 47429, false, 0, false, world.instanceId); //Underground Knight
+====================New Stage: 3 ====================
+addSpawn(110051, -256458, 149897, 4120, 47133, false, 0, false, world.instanceId); //Mictian Yez
+addSpawn(110052, -256419, 150373, 4120, 47886, false, 0, false, world.instanceId); //Queen's Guard
+addSpawn(110051, -256391, 150847, 4120, 45938, false, 0, false, world.instanceId); //Mictian Yez
+addSpawn(110060, -256448, 151429, 4120, 31415, false, 0, false, world.instanceId); //Slither Set
+addSpawn(110060, -256335, 151944, 4120, 46871, false, 0, false, world.instanceId); //Slither Set
+addSpawn(110034, -256206, 152451, 4120, 47585, false, 0, false, world.instanceId); //Wild Xercat
+addSpawn(110060, -256117, 152939, 4120, 45322, false, 0, false, world.instanceId); //Slither Set
+addSpawn(110073, -256003, 153501, 4120, 29513, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110053, -255810, 154018, 4120, 45916, false, 0, false, world.instanceId); //Underground Knight
+addSpawn(110076, -255641, 154460, 4120, 41136, false, 0, false, world.instanceId); //Saxon Namaah
+addSpawn(110054, -255431, 154914, 4120, 43943, false, 0, false, world.instanceId); //Nedawn
+addSpawn(110051, -256016, 154874, 4120, 44241, false, 0, false, world.instanceId); //Mictian Yez
+addSpawn(110059, -256156, 154534, 4120, 44460, false, 0, false, world.instanceId); //Termo
+addSpawn(110049, -256499, 153666, 4120, 46999, false, 0, false, world.instanceId); //Fenrimor
+addSpawn(110051, -256693, 152813, 4120, 46596, false, 0, false, world.instanceId); //Mictian Yez
+addSpawn(110052, -256786, 152357, 4120, 46093, false, 0, false, world.instanceId); //Queen's Guard
+addSpawn(110076, -256954, 151491, 4120, 48112, false, 0, false, world.instanceId); //Saxon Namaah
+addSpawn(110068, -256955, 150676, 4120, 48375, false, 0, false, world.instanceId); //Rusty Rico
+addSpawn(110034, -256948, 150143, 4120, 49400, false, 0, false, world.instanceId); //Wild Xercat
+addSpawn(110052, -257479, 149893, 4120, 48046, false, 0, false, world.instanceId); //Queen's Guard
+addSpawn(110051, -257486, 150426, 4120, 48351, false, 0, false, world.instanceId); //Mictian Yez
+addSpawn(110060, -257484, 151539, 4120, 63477, false, 0, false, world.instanceId); //Slither Set
+addSpawn(110034, -257345, 152149, 4120, 47085, false, 0, false, world.instanceId); //Wild Xercat
+addSpawn(110060, -257253, 152673, 4120, 47364, false, 0, false, world.instanceId); //Slither Set
+addSpawn(110068, -257170, 153167, 4120, 48161, false, 0, false, world.instanceId); //Rusty Rico
+addSpawn(110073, -257021, 153808, 4120, 63079, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110020, -256788, 154395, 4120, 44992, false, 0, false, world.instanceId); //Winged Terror
+addSpawn(110009, -256587, 154872, 4120, 45365, false, 0, false, world.instanceId); //Blazed Assassin
+addSpawn(110052, -256393, 155382, 4120, 43094, false, 0, false, world.instanceId); //Queen's Guard
+addSpawn(60007, -255768, 155467, 4120, 44789, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, -255769, 155457, 4120, 44315, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, -255769, 155457, 4120, 44315, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 4 ====================
+addSpawn(110074, -234641, 150939, 3608, 33579, false, 0, false, world.instanceId); //Shelldo
+addSpawn(110074, -235884, 150873, 3608, 65188, false, 0, false, world.instanceId); //Shelldo
+addSpawn(40005, -234552, 151470, 3608, 45077, false, 0, false, world.instanceId); //Dark Elven Wizard
+addSpawn(40005, -235987, 151347, 3608, 49151, false, 0, false, world.instanceId); //Dark Elven Wizard
+addSpawn(110073, -234423, 152114, 3608, 53529, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110073, -235121, 152029, 3608, 49715, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110073, -235752, 151897, 3608, 49995, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110073, -236342, 151757, 3608, 49895, false, 0, false, world.instanceId); //Jungle Fam
+addSpawn(110072, -234817, 152628, 3608, 51905, false, 0, false, world.instanceId); //Simian Pazzo
+addSpawn(110072, -236195, 152396, 3608, 50553, false, 0, false, world.instanceId); //Simian Pazzo
+addSpawn(110015, -235283, 151177, 3608, 49151, false, 0, false, world.instanceId); //Hell's Keeper
+addSpawn(110094, -235462, 152180, 3608, 51109, false, 0, false, world.instanceId); //Jeilriss Ryzzunty
+addSpawn(110094, -235462, 152180, 3608, 51109, false, 0, false, world.instanceId); //Jeilriss Ryzzunty
+addSpawn(110094, -235462, 152180, 3608, 51109, false, 0, false, world.instanceId); //Jeilriss Ryzzunty
+addSpawn(60007, -235567, 152870, 3608, 50874, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, -235567, 152870, 3608, 50874, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 5 ====================
+addSpawn(95124, -243663, 142885, 2072, 2246, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(95124, -245070, 142164, 2072, 33276, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(95124, -246337, 142165, 2072, 65014, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(95124, -244669, 142685, 2072, 1297, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110022, -244161, 142803, 2072, 2232, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110022, -243431, 142017, 2072, 3475, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110022, -244527, 141794, 2072, 63976, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110022, -245965, 142167, 2072, 56, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110033, -245030, 142693, 2072, 49441, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110033, -244898, 141654, 2072, 18387, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110033, -246836, 141659, 2072, 63739, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110062, -245566, 142735, 2072, 65229, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110062, -243697, 142412, 2072, 2289, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110062, -245987, 141616, 2072, 780, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110062, -246313, 142735, 2072, 64650, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110069, -245949, 142736, 2072, 65149, false, 0, false, world.instanceId); //Demongon
+addSpawn(110069, -244263, 142291, 2072, 967, false, 0, false, world.instanceId); //Demongon
+addSpawn(110069, -246415, 141611, 2072, 771, false, 0, false, world.instanceId); //Demongon
+addSpawn(110069, -245544, 141608, 2072, 297, false, 0, false, world.instanceId); //Demongon
+addSpawn(110032, -246693, 142768, 2072, 64856, false, 0, false, world.instanceId); //Tizjar
+addSpawn(110075, -247074, 142845, 2072, 62113, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110075, -244811, 142197, 2072, 496, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110075, -247279, 141737, 2072, 64249, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110048, -247079, 142276, 2072, 64265, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110048, -245574, 142162, 2072, 65250, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110048, -249493, 143597, 2584, 43150, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110026, -249856, 143909, 2584, 59170, false, 0, false, world.instanceId); //King's Guard
+====================New Stage: 6 ====================
+addSpawn(110048, -249493, 143597, 2584, 43150, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110026, -249856, 143909, 2584, 59170, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110032, -250172, 144130, 2584, 58498, false, 0, false, world.instanceId); //Tizjar
+addSpawn(110027, -250477, 144334, 2584, 59134, false, 0, false, world.instanceId); //Amon
+addSpawn(110019, -250773, 144579, 2584, 57556, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110026, -251037, 144841, 2584, 57499, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110069, -251295, 145102, 2584, 57161, false, 0, false, world.instanceId); //Demongon
+addSpawn(110018, -250031, 143348, 2584, 59940, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110022, -250312, 143521, 2584, 58696, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(95124, -250565, 143680, 2584, 58871, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110026, -250809, 143212, 2584, 59727, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110027, -250450, 142969, 2584, 58936, false, 0, false, world.instanceId); //Amon
+addSpawn(110026, -250091, 142733, 2584, 59790, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110019, -250924, 143943, 2584, 57625, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110029, -251307, 143605, 2584, 8843, false, 0, false, world.instanceId); //Deformed Drake
+addSpawn(110075, -251065, 144074, 2584, 24333, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110018, -251286, 144279, 2584, 57101, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110048, -251660, 144620, 2584, 58314, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110075, -252114, 144336, 2584, 57561, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110062, -251806, 144033, 2584, 57466, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110018, -252524, 144819, 2584, 7497, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110027, -252918, 145319, 2584, 56398, false, 0, false, world.instanceId); //Amon
+addSpawn(110083, -253112, 145726, 2584, 59286, false, 0, false, world.instanceId); //Grudon
+addSpawn(110075, -252632, 145547, 2584, 56337, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(60007, -251945, 144845, 2584, 54788, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 7 ====================
+addSpawn(110062, -248656, 145372, 3096, 17976, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110027, -248327, 145187, 3096, 28991, false, 0, false, world.instanceId); //Amon
+addSpawn(110069, -247976, 145042, 3096, 26797, false, 0, false, world.instanceId); //Demongon
+addSpawn(95124, -248155, 145521, 3096, 28576, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110026, -247835, 145385, 3096, 27931, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110018, -247643, 145086, 3096, 29412, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110029, -247477, 145427, 3096, 27931, false, 0, false, world.instanceId); //Deformed Drake
+addSpawn(110022, -247988, 145858, 3096, 27931, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110075, -247685, 145733, 3096, 29197, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110048, -247413, 145795, 3096, 30892, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110019, -248103, 146335, 3096, 35936, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110033, -247821, 146193, 3096, 28000, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110032, -247550, 146079, 3096, 28343, false, 0, false, world.instanceId); //Tizjar
+addSpawn(110026, -247176, 145143, 3096, 29968, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110062, -246822, 145076, 3096, 30445, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110069, -246468, 145009, 3096, 30873, false, 0, false, world.instanceId); //Demongon
+addSpawn(110048, -246117, 144970, 3096, 32420, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110033, -245761, 144972, 3096, 33070, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110032, -245404, 144971, 3096, 31910, false, 0, false, world.instanceId); //Tizjar
+addSpawn(110069, -245053, 145004, 3096, 34878, false, 0, false, world.instanceId); //Demongon
+addSpawn(95124, -244712, 145073, 3096, 35216, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(95124, -247073, 145506, 3096, 30744, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110022, -246761, 145444, 3096, 31013, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110075, -246421, 145379, 3096, 30709, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110027, -246099, 145346, 3096, 32136, false, 0, false, world.instanceId); //Amon
+addSpawn(110075, -245767, 145348, 3096, 32944, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110026, -245424, 145345, 3096, 33093, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110062, -245102, 145379, 3096, 36045, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110022, -244778, 145438, 3096, 36221, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(1000040, -244250, 145265, 3096, 36426, false, 0, false, world.instanceId); //Urthadar
+addSpawn(1000041, -244330, 145451, 3096, 34302, false, 0, false, world.instanceId); //Sonilak
+addSpawn(60007, -243918, 145497, 3096, 35467, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 8 ====================
+addSpawn(110018, -240420, 148159, 4632, 27728, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110026, -240766, 148298, 4632, 44741, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110026, -241107, 148451, 4632, 44789, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110018, -241442, 148600, 4632, 62545, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110048, -240519, 148969, 4632, 47971, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110048, -240885, 149070, 4632, 46898, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110091, -240631, 149750, 4632, 46800, false, 0, false, world.instanceId); //Nyldrig Moghum
+addSpawn(1000042, -240827, 148637, 4632, 45676, false, 0, false, world.instanceId); //Moghum
+addSpawn(60007, -240542, 150170, 4632, 14603, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 9 ====================
+addSpawn(95124, -253410, 150201, 7192, 49586, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110069, -253407, 150571, 7192, 48112, false, 0, false, world.instanceId); //Demongon
+addSpawn(110062, -253774, 150581, 7192, 49445, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110069, -254151, 150591, 7192, 48636, false, 0, false, world.instanceId); //Demongon
+addSpawn(110062, -254530, 150596, 7192, 49151, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110022, -254527, 150160, 7192, 50206, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(1000041, -253973, 150339, 7192, 48161, false, 0, false, world.instanceId); //Sonilak
+addSpawn(1000040, -253947, 151268, 7192, 47047, false, 0, false, world.instanceId); //Urthadar
+addSpawn(110048, -253498, 151138, 7192, 31155, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110048, -254481, 151270, 7192, 64496, false, 0, false, world.instanceId); //Flak Wyrr
+addSpawn(110026, -253300, 151686, 7192, 46596, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110075, -253907, 151565, 7192, 15229, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(110033, -254395, 151873, 7192, 47550, false, 0, false, world.instanceId); //Lizardude
+addSpawn(110019, -253224, 152057, 7192, 47454, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110018, -253781, 152070, 7192, 47822, false, 0, false, world.instanceId); //Jeratrix
+addSpawn(110027, -254311, 152295, 7192, 47671, false, 0, false, world.instanceId); //Amon
+addSpawn(110019, -253166, 152629, 7192, 29990, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110022, -253687, 152646, 7192, 47371, false, 0, false, world.instanceId); //Terrifying Gardener
+addSpawn(110019, -254148, 152934, 7192, 62575, false, 0, false, world.instanceId); //Underworld's Terror
+addSpawn(110075, -253611, 152908, 7192, 12449, false, 0, false, world.instanceId); //Abaddon's Guard
+addSpawn(95124, -252894, 153137, 7192, 44022, false, 0, false, world.instanceId); //Disfigured One
+addSpawn(110026, -253379, 153407, 7192, 45601, false, 0, false, world.instanceId); //King's Guard
+addSpawn(110069, -253942, 153544, 7192, 43842, false, 0, false, world.instanceId); //Demongon
+addSpawn(110062, -252752, 153485, 7192, 44022, false, 0, false, world.instanceId); //Majesty Slayer
+addSpawn(110029, -253164, 153943, 7192, 45671, false, 0, false, world.instanceId); //Deformed Drake
+addSpawn(110027, -253776, 153935, 7192, 43878, false, 0, false, world.instanceId); //Amon
+addSpawn(60007, -253050, 154273, 7192, 43370, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 10 ====================
+addSpawn(110083, -242610, 152688, 5144, 8191, false, 0, false, world.instanceId); //Grudon
+addSpawn(110080, -242357, 152207, 5144, 4594, false, 0, false, world.instanceId); //Flavelish
+addSpawn(110083, -242114, 151717, 5144, 5187, false, 0, false, world.instanceId); //Grudon
+addSpawn(1000043, -242958, 152331, 5144, 6649, false, 0, false, world.instanceId); //Gradyon
+addSpawn(1000044, -242586, 151631, 5144, 3921, false, 0, false, world.instanceId); //Elysia
+addSpawn(60007, -243223, 151740, 5144, 10557, false, 0, false, world.instanceId); //Floor Teleporter
+====================New Stage: 11 ====================
+addSpawn(29150, -245768, 150758, 4664, 48622, false, 0, false, world.instanceId); //Ekimus
+====================New Stage: 12 ====================
+addSpawn(110095, -245389, 151286, 11832, 44907, false, 0, false, world.instanceId); //Mighuss Raki
+addSpawn(110092, -245764, 151752, 11848, 48351, false, 0, false, world.instanceId); //Airrirth Cuthianienth
+addSpawn(60007, -245764, 151570, 4664, 49151, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, -245759, 149060, 11840, 16257, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(110092, -245764, 151752, 11848, 48351, false, 0, false, world.instanceId); //Airrirth Cuthianienth
+addSpawn(110092, -245764, 151752, 11848, 48351, false, 0, false, world.instanceId); //Airrirth Cuthianienth
+addSpawn(110092, -245764, 151752, 11848, 48351, false, 0, false, world.instanceId); //Airrirth Cuthianienth
+addSpawn(110092, -245764, 151752, 11848, 48351, false, 0, false, world.instanceId); //Airrirth Cuthianienth
+====================New Stage: 13 ====================
+addSpawn(110093, -246144, 151299, 11832, 50449, false, 0, false, world.instanceId); //Zamorak
+addSpawn(55503, 187215, 255306, -3323, 42601, false, 0, false, world.instanceId); //Water Temple's Shield Master
+addSpawn(55506, 185625, 252898, -3381, 42963, false, 0, false, world.instanceId); //Water Temple's Wizard
+addSpawn(55515, 190760, 257649, -3327, 28238, false, 0, false, world.instanceId); //Water Temple's Half Dragon
+addSpawn(55514, 190282, 256984, -3327, 24780, false, 0, false, world.instanceId); //Water Temple's Gryphon
+addSpawn(55327, 190923, 257084, -3322, 26128, false, 0, false, world.instanceId); //Water Spirit
+
+
+addSpawn(55516, 179817, 218050, -14307, 29794, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179759, 218145, -14304, 30068, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179828, 218210, -14304, 33184, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179838, 218333, -14304, 31522, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179859, 218454, -14311, 23799, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179980, 218467, -14316, 30849, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180276, 218515, -14322, 26941, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180282, 218700, -14323, 31839, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180215, 218864, -14307, 32073, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180169, 218989, -14305, 35575, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180135, 219099, -14300, 36318, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 180096, 219236, -14311, 35111, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179978, 219369, -14302, 42440, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179801, 219326, -14305, 45384, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179604, 219361, -14321, 55063, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179477, 219238, -14323, 47589, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179261, 219205, -14324, 45127, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179124, 219224, -14312, 45004, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178993, 219259, -14305, 43468, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178889, 219313, -14305, 43257, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178774, 219412, -14305, 38629, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178658, 219461, -14310, 50768, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178524, 219397, -14319, 57817, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178452, 219297, -14325, 55163, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178375, 219187, -14319, 50835, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178305, 219090, -14314, 49700, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178259, 218953, -14303, 57028, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178166, 218838, -14300, 54824, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178071, 218734, -14304, 53988, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177975, 218636, -14308, 62928, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177923, 218533, -14307, 55285, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177893, 218414, -14304, 60442, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177851, 218310, -14305, 56189, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177790, 218201, -14299, 60574, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177718, 218139, -14299, 60425, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177659, 218049, -14300, 59978, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177662, 217918, -14305, 59674, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177678, 217706, -14302, 62980, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177710, 217552, -14300, 743, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177752, 217407, -14309, 64215, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177698, 217272, -14304, 1904, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177616, 217147, -14305, 3190, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177778, 217118, -14305, 7979, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 177981, 217113, -14305, 6159, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178114, 217019, -14310, 6946, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178283, 216908, -14316, 10302, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178395, 216836, -14308, 10125, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178448, 216643, -14308, 9719, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178552, 216510, -14312, 13364, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178662, 216452, -14308, 14287, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178811, 216423, -14302, 17237, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178945, 216491, -14302, 18191, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179035, 216603, -14306, 19533, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179169, 216702, -14311, 16383, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179249, 216751, -14311, 17078, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179366, 216799, -14311, 16141, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179493, 216855, -14319, 25376, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179573, 216949, -14315, 21846, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179658, 217019, -14309, 24294, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55328, 180027, 217474, -14306, 30348, false, 0, false, world.instanceId); //Spirit King
+addSpawn(55500, 180778, 210644, -14816, 12815, false, 0, false, world.instanceId); //Fafurion
+addSpawn(60007, 191168, 256972, -3324, 28799, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, 180230, 217427, -14309, 30487, false, 0, false, world.instanceId); //Floor Teleporter
+addSpawn(60007, 180538, 209168, -14816, 14279, false, 0, false, world.instanceId); //Floor Teleporter
+
+
+
+
+
+addSpawn(55513, 184425, 251102, -3378, 43568, false, 0, false, world.instanceId); //Fafurion's Sword Master
+addSpawn(55512, 185011, 250889, -3379, 42409, false, 0, false, world.instanceId); //Fafurion's Brawler
+addSpawn(55512, 183977, 251539, -3379, 43235, false, 0, false, world.instanceId); //Fafurion's Brawler
+addSpawn(55510, 184245, 252108, -3378, 43161, false, 0, false, world.instanceId); //Fafurion's Archer
+addSpawn(55505, 184825, 251708, -3378, 41376, false, 0, false, world.instanceId); //Fafurion's Duelist
+addSpawn(55510, 185436, 251325, -3378, 43111, false, 0, false, world.instanceId); //Fafurion's Archer
+addSpawn(55517, 185679, 251882, -3379, 43037, false, 0, false, world.instanceId); //Fafurion's Shaman
+addSpawn(55504, 185218, 252287, -3378, 43408, false, 0, false, world.instanceId); //Fafurion's Pole Master
+addSpawn(55517, 184673, 252562, -3379, 42537, false, 0, false, world.instanceId); //Fafurion's Shaman
+addSpawn(55509, 185464, 253560, -3378, 42723, false, 0, false, world.instanceId); //Fafurion's Serpent
+addSpawn(55508, 186315, 252967, -3378, 42719, false, 0, false, world.instanceId); //Fafurion's Winged Serpent
+addSpawn(55507, 186672, 253519, -3378, 43370, false, 0, false, world.instanceId); //Fafurion's Cleric
+addSpawn(55506, 186237, 253814, -3377, 43240, false, 0, false, world.instanceId); //Fafurion's  Wizard
+addSpawn(55507, 185807, 254086, -3378, 42933, false, 0, false, world.instanceId); //Fafurion's Cleric
+addSpawn(55508, 186994, 253966, -3378, 43018, false, 0, false, world.instanceId); //Fafurion's Winged Serpent
+addSpawn(55509, 186096, 254562, -3378, 42824, false, 0, false, world.instanceId); //Fafurion's Serpent
+addSpawn(55512, 186966, 254700, -3347, 42851, false, 0, false, world.instanceId); //Fafurion's Brawler
+addSpawn(55512, 186742, 254816, -3349, 43862, false, 0, false, world.instanceId); //Fafurion's Brawler
+
+
+
+addSpawn(55503, 187215, 255287, -3322, 43110, false, 0, false, world.instanceId); //Fafurion's Shield Master
+
+
+
+
+addSpawn(55514, 190285, 256915, -3318, 26986, false, 0, false, world.instanceId); //Gryphon
+addSpawn(55515, 190103, 257524, -3318, 27033, false, 0, false, world.instanceId); //Half Dragon
+addSpawn(55514, 190666, 257698, -3318, 29105, false, 0, false, world.instanceId); //Gryphon
+addSpawn(55327, 191017, 257058, -3318, 28544, false, 0, false, world.instanceId); //Water Spirit
+addSpawn(55516, 178657, 219153, -14301, 51933, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179399, 219008, -14301, 42878, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179795, 218955, -14300, 39805, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179813, 218541, -14300, 32994, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178442, 216681, -14303, 14091, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 178807, 216485, -14301, 18306, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55516, 179239, 216839, -14312, 25753, false, 0, false, world.instanceId); //Fafurion's Minion
+addSpawn(55501, 178904, 218026, -14300, 32132, false, 0, false, world.instanceId); //Fafurion's Dragon Mage
+addSpawn(55501, 178790, 217229, -14309, 29373, false, 0, false, world.instanceId); //Fafurion's Dragon Mage
+addSpawn(55502, 179047, 217540, -14295, 31569, false, 0, false, world.instanceId); //Fafurion's Dragon Warrior
+addSpawn(55508, 179544, 217223, -14300, 32426, false, 0, false, world.instanceId); //Fafurion's Winged Serpent
+addSpawn(55509, 179540, 217834, -14300, 34347, false, 0, false, world.instanceId); //Fafurion's Serpent
+
+
+
+
+
+addSpawn(55328, 180023, 217435, -14304, 31481, false, 0, false, world.instanceId); //Spirit King
+
+
+
+addSpawn(55500, 180767, 210605, -14812, 14948, false, 0, false, world.instanceId); //Fafurion
+addSpawn(32518, 187471, 255685, -3324, 42960, false, 0, false, world.instanceId); //Vortex Gate
+addSpawn(55556, 180508, 217375, -14313, 29133, false, 0, false, world.instanceId); //Fafurion Teleporter
+addSpawn(55556, 191241, 256938, -3324, 32767, false, 0, false, world.instanceId); //Fafurion Teleporter
+addSpawn(31391, 51787, 217444, -3328, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 51788, 217283, -3328, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 51789, 217101, -3328, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 51793, 216905, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 51794, 216737, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 51800, 216585, -3339, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31390, 51961, 216567, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31390, 51950, 216724, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 51940, 216904, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 51941, 217105, -3331, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 51940, 217281, -3331, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 51934, 217443, -3328, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52195, 217449, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52197, 217286, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52194, 217104, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52194, 216918, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31390, 52185, 216567, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31390, 52355, 217447, -3328, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52352, 217285, -3331, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52347, 217102, -3331, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52344, 216921, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52340, 216759, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31390, 52338, 216580, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52502, 217445, -3328, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52502, 217274, -3331, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52501, 217108, -3332, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52506, 216918, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(31391, 52504, 216759, -3334, 9914, false, 0, false, world.instanceId); //Dummy  - Boy B
+addSpawn(31390, 52499, 216581, -3334, 9914, false, 0, false, world.instanceId); //Dummy - Boy A
+addSpawn(90005, 82249, 148611, -3393, 0, false, 0, false, world.instanceId); //Mysterious Merchant
+addSpawn(90005, 82249, 148611, -3393, 0, false, 0, false, world.instanceId); //Mysterious Merchant
+addSpawn(90005, 82249, 148611, -3393, 0, false, 0, false, world.instanceId); //Mysterious Merchant

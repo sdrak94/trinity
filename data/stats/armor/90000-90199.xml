@@ -1,0 +1,20 @@
+<list>
+<item id='90016' name="Dread Sigil">
+  <for>
+    <add val="25" order="0x10" stat="pDef"/>
+	<enchant val='0' order='0x0C' stat='mAtk'/>
+    <enchant val="0" order="0x50" stat="mAtkSpd"/>
+	<basemul val="0.1675" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.265" order="0x40" stat="mAtk"/>
+  </for>
+</item>
+<item id='31155' name="Corrupted Grimmoire">
+  <for>
+    <add val="25" order="0x10" stat="pDef"/>
+	<enchant val='0' order='0x0C' stat='mAtk'/>
+    <enchant val="0" order="0x50" stat="mAtkSpd"/>
+	<basemul val="0.1675" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.265" order="0x40" stat="mAtk"/>
+  </for>
+</item>
+</list>

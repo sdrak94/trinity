@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Fence List</title>
+	</head>
+	<body>
+		<table width="100%" height=40 bgcolor=00080b>
+			<tr>
+				<td width=45>
+					<button value="Main" action="bypass -h admin_admin" width=45 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+				</td>
+				<td width=180>
+					<center><font color="LEVEL">Fence List</font></center>
+				</td>
+				<td width=45>
+					<button value="Reload" action="bypass -h admin_fences" width=45 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+				</td>
+			</tr>
+		</table>
+		<table width="100%" bgcolor=00080b>
+			%fences%
+		</table>
+		<table width="100%" bgcolor=00080b>
+			<tr>
+				<td align=left>Name</td>
+				<td align=left>Width</td>
+				<td align=left>Length</td>
+				<td align=left>Store</td>
+			</tr>
+			<tr>
+				<td align=left><edit var="name" width=155></td>
+				<td align=left><edit var="width" width=155></td>
+				<td align=left><edit var="length" width=155></td>
+				<td><combobox width=65 var=store list=True;False></td>
+				<td align=left><button value="Spawn" action="bypass -h admin_spawn_fence $name $width $length $store" width=65 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+			</tr>
+		</table>
+		<br>%pages%<br>
+	</body>
+</html>

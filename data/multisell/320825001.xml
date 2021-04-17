@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- adventure guildsman territory manager - weapons shop -->
+<list>
+<!-- Tallum Blade -->
+ <item id="1">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="80" count="1"/>
+  </item>
+<!-- Infernal Master -->
+ <item id="2">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="7884" count="1"/>
+  </item>
+<!-- Destroyer Hammer -->
+ <item id="3">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="7899" count="1"/>
+  </item>
+<!-- Meteor Shower -->
+ <item id="4">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="2504" count="1"/>
+  </item>
+<!-- Carnage Bow -->
+ <item id="5">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="288" count="1"/>
+  </item>
+<!-- Bloody Orchid -->
+ <item id="6">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="235" count="1"/>
+  </item>
+<!-- Halberd -->
+ <item id="7">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="98" count="1"/>
+  </item>
+<!-- Blood Tornado -->
+ <item id="8">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="269" count="1"/>
+  </item>
+<!-- Dasparion's Staff -->
+ <item id="9">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="212" count="1"/>
+  </item>
+<!-- Spiritual Eye -->
+ <item id="10">
+   <ingredient id="9814" count="3660"/>
+   <ingredient id="9815" count="920"/>
+   <ingredient id="9816" count="2440"/>
+   <ingredient id="9817" count="1530"/>
+   <ingredient id="9818" count="610"/>
+   <ingredient id="8175" count="92"/>
+   <production id="7894" count="1"/>
+  </item>
+</list>

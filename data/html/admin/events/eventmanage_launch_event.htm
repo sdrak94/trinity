@@ -1,0 +1,68 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32 align=left>
+<br>
+
+<center>
+
+
+<font color=ac9887>Start event:</font><br1>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Event:</font></td>
+<td align=right><combobox width=130 height=17 var=event list="%events%"></td>
+<td><button value="Select" action="bypass admin_event_manage new_event $event" width=70 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32 align=left>
+
+<br>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Selected:</font></td>
+<td><font color=9f9f9f>%selected%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>%runTimeName%</font></td>    
+<td>%runTimeEdit%</td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Map:</font></td>
+<td><combobox width=130 height=17 var=map list="%aviable_maps%"></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Reg time:</font></td>
+<td><edit var="time" width=130 height=13></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>NPC cords:</font></td>
+<td><combobox width=130 height=17 var=npc list="%regNpcLocs%"></td>
+</tr>
+
+</table>
+
+
+<br><br>
+<button value="Launch" action="bypass -h admin_event_manage event_start $time ; $map ; $npc ; %runTimeVar%" width=120 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df">
+
+</center>
+
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32 align=left>
+
+</center>
+</body></html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="12000" name="Common Item - Arcana Mace">
+  <for>
+    <set val="225" order="0x08" stat="pAtk"/>
+    <set val="175" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12001" name="Common Item - Angel Slayer">
+  <for>
+    <set val="246" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12002" name="Common Item - Imperial Staff">
+  <for>
+    <set val="274" order="0x08" stat="pAtk"/>
+    <set val="193" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12003" name="Common Item - Tallum Blade*Dark Legion">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12004" name="Common Item - Forgotten Blade">
+  <for>
+    <set val="281" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12005" name="Common Item - Heaven's Divider">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="132" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="12013" name="Common Item - Bronze Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="101" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12025" name="Common Item - Aspis">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="114" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12051" name="Common Item - Hoplon">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="128" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12063" name="Common Item - Brigandine Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="142" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12069" name="Common Item - Kite Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="142" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12073" name="Common Item - Square Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="154" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12078" name="Common Item - Plate Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="154" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12091" name="Common Item - Eldarake">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="166" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+<item id="12096" name="Common Item - Chain Shield">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="166" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+  </for>
+</item>
+</list>

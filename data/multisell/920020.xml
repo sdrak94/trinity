@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+  <item id="1">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13236" count="1"/>
+  </item>
+  <item id="2">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13237" count="1"/>
+  </item>
+  <item id="3">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13238" count="1"/>
+  </item>
+  <item id="4">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="8568" count="1"/>
+  </item>
+  <item id="5">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="8567" count="1"/>
+  </item>
+  <item id="6">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="8921" count="1"/>
+  </item>
+  <item id="7">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13234" count="1"/>
+  </item>
+  <item id="8">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="34587" count="1"/>
+  </item>
+  <item id="9">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13515" count="1"/>
+  </item>
+  <item id="10">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13516" count="1"/>
+  </item>
+  <item id="11">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13522" count="1"/>
+  </item>
+  <item id="12">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13510" count="1"/>
+  </item>
+  <item id="13">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13511" count="1"/>
+  </item>
+  <item id="14">
+    <ingredient id="62030" count="1"/>
+	<ingredient id="50028" count="2"/>
+	<ingredient id="6393" count="150"/>
+	<ingredient id="4356" count="100"/>
+	<ingredient id="97002" count="120"/>
+	<ingredient id="99005" count="10"/>
+    <production id="13512" count="1"/>
+  </item>
+</list>

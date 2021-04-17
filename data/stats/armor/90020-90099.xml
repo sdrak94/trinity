@@ -1,0 +1,34 @@
+<list>
+<item id="90035" name="Titanium Sigil">
+  <for>
+    <add val="27" order="0x10" stat="pDef"/>
+	<enchant val='0' order='0x50' stat='mDef'/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<add val="1000" order="0x40" stat="mAtk"/>
+	<add val="50" order="0x40" stat="mCritMax"/>
+	<sub val="0.04" order="0x40" stat="critVuln">
+	<player class_id_restriction="97,105,112,115"/>
+	</sub>
+	<add val="1000" order="0x40" stat="maxMp">
+	<player class_id_restriction="97,105,112,115"/>
+	</add>
+  </for>
+</item>
+<item id="90066" name="Pricklelotus Sigil">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="90067" name="Belleface Sigil">
+  <for>
+    <sub val="8" order="0x10" stat="rEvas"/>
+    <set val="290" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

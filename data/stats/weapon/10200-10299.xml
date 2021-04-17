@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10212" name="npc Only (Bow)">
+  <for>
+   <set val="0" order="0x08" stat="pAtk"/>
+   <set val="0" order="0x08" stat="mAtk"/>
+   <set val="10" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10215" name="Icarus Sawsword">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10216" name="Icarus Disperser">
+  <for>
+   <set val="318" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10217" name="Icarus Spirit">
+  <for>
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10218" name="Icarus Heavy Arms">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10219" name="Icarus Trident">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10220" name="Icarus Hammer">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10221" name="Icarus Hand">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10222" name="Icarus Hall">
+  <for>
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10223" name="Icarus Spitter">
+  <for>
+   <set val="689" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="293" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10224" name="Icarus Stinger">
+  <for>
+   <set val="329" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="406" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10225" name="Icarus Wingblade">
+  <for>
+   <set val="393" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="6" order="0x08" stat="rCrit"/> 
+   <add val="2" order="0x10" stat="accCombat"/> 
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10226" name="Icarus Shooter">
+  <for>
+   <set val="400" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="303" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="10252" name="Dynasty Staff">
+  <for>
+   <set val="267" order="0x08" stat="pAtk"/>
+   <set val="202" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10253" name="Dynasty Crusher">
+  <for>
+   <set val="405" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="5" order="0x08" stat="rCrit"/>
+   <set val="379" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10277" name="Monster Only (Behamah Pole)">
+  <for>
+   <set val="24" order="0x08" stat="pAtk"/>
+   <set val="17" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="10278" name="Monster Only (Behamah Dual)">
+  <for>
+   <set val="73" order="0x08" stat="pAtk"/>
+   <set val="37" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

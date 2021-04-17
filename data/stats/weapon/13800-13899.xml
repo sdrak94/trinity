@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13809" name="Court Magician's Magic Staff">
+  <for>
+  </for>
+</item>
+<item id="13842" name="Tiat Two-Handed Weapon">
+  <for>
+    <set val="78" order="0x08" stat="pAtk"/>
+    <set val="39" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13843" name="Draconic Peltast Weapon">
+  <for>
+    <set val="5" order="0x08" stat="pAtk"/>
+    <set val="5" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13845" name="Attribute Master Yin's Sword">
+  <for>
+    <set val="140" order="0x08" stat="pAtk"/>
+    <set val="120" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13881" name="Attribute Master Yang's Sword">
+  <for>
+    <set val="140" order="0x08" stat="pAtk"/>
+    <set val="120" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="13882" name="Dual Dynasty Knives">
+  <for>
+    <set val="297" order="0x08" stat="pAtk"/>
+    <set val="151" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.4" order="0x40" stat="rCrit"/>
+	<basemul val="0.1" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.1" order="0x40" stat="pReuse"/>
+	<add val="3" order="0x40" stat="rEvas"/>
+	<basemul val="0.1" order="0x40" stat="maxHp"/>
+	<add val="0.15" order="0x40" stat="pAtk-undead"/>
+	<add val="0.15" order="0x40" stat="pvmDam"/>
+	<mul val="0.8" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.8" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.2" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="13883" name="Icarus Disruptors - Focus Cruelty Reuse">
+  <for>
+    <set val="332" order="0x08" stat="pAtk"/>
+    <set val="169" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="0.24" order="0x40" stat="cAtk"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/> 
+	<add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item>
+<item id="13884" name="Vesper Carvers - Focus Reuse Cruelty">
+  <for>
+    <set val="365" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.60" order="0x40" stat="rCrit"/>
+    <basemul val="0.17" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+    <add val="0.24" order="0x40" stat="cAtk"/>
+    <add val="0.2" order="0x40" stat="pAtk-demons"/>
+    <sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+</list>

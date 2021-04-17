@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/dressme/cloak.xsd">
+	<cloak number="1" id='77510' name="Purple Dread Cloak">
+		<price id="999008" count="1" />
+	</cloak>
+	<cloak number="2" id='77509' name="Blue Dread Cloak">
+		<price id="999008" count="1" />
+	</cloak>
+	</list>

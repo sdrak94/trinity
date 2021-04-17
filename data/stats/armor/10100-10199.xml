@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10119" name="Dynasty Sigil">
+  <for>
+    <add val="15" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="10120" name="Sealed Dynasty Sigil">
+  <cond msgId="1518">
+    <or>
+      <player active_skill_id="925"/>
+      <player active_skill_id="926"/>
+      <player active_skill_id="934"/>
+      <player active_skill_id="935"/>
+    </or>
+  </cond>
+  <for>
+    <add val="15" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10121" name="Sealed Arcana Sigil">
+  <cond msgId="1518">
+    <or>
+      <player active_skill_id="925"/>
+      <player active_skill_id="926"/>
+      <player active_skill_id="934"/>
+      <player active_skill_id="935"/>
+    </or>
+  </cond>
+  <for>
+    <add val="13" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10122" name="Red Crescent Earring">
+  <for>
+    <add val="24" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10123" name="Necklace of Devotion">
+  <for>
+    <add val="32" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10124" name="Ring of Devotion">
+  <for>
+    <add val="16" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10126" name="Dynasty Leather Armor - Force Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10127" name="Dynasty Leather Armor - Weapon Master">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10139" name="Agathion Bracelet">
+  <for/>
+</item>
+<item id="10140" name="Blessed Ring of Escape">
+  <for>
+    <add val="49" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10141" name="Grey Talisman - Yeti Transform">
+  <for/>
+</item>
+<item id="10142" name="Grey Talisman - Buffalo Transform">
+  <for/>
+</item>
+<item id="10158" name="Grey Talisman of Upper Grade Fishing">
+  <for/>
+</item>
+<item id="10168" name="Dynasty Leather Armor - Enchanter">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+    <enchant val="0" order="0x50" stat="maxHp"/>
+  </for>
+</item>
+<item id="10169" name="Enchanter Circlet (Kamael only)">
+  <cond msgId="1518">
+    <player class_id_restriction="136"/>
+  </cond>
+  <for/>
+</item>
+<item id="10175" name="Gobblin Circlet (Event)">
+  <for/>
+</item>
+<item id="10176" name="White Half Mask">
+  <for>
+     <add val="800" order="0x40" stat="mAtk"/>
+	 <add val="50" order="0x40" stat="pDef"/>
+	 <add val="50" order="0x40" stat="mAtkSpd"/>
+  	 <add val="120" order="0x40" stat="shieldDefAngle"/>
+	 <add val="100" order="0x40" stat="bonusHp"/>
+	 <add val="1000" order="0x40" stat="maxCp"/>
+	 <add val="550" order="0x40" stat="sDef"/>
+	 <mul val="1.15" order="0x30" stat="rShld"/>
+	 <set val="150" order="0x08" stat="sDef">
+	    <using kind="Sigil"/>
+	 </set>
+	 <set val="30" order="0x08" stat="rShld">
+	     <using kind="Sigil"/>
+	  </set>
+	 <sub val="0.15" order="0x40" stat="mReuse"/>
+	 <add val="4" order="0x40" stat="pSkillEvas"/>
+  </for>
+</item>
+<item id="10177" name="Black Half Mask">
+    <for>
+	 <add val="450" order="0x40" stat="pAtk"/>
+	 <add val="50" order="0x40" stat="pDef"/>
+	 <add val="40" order="0x40" stat="pAtkSpd"/>
+	 <add val="20" order="0x40" stat="pAtkRange"/>
+	 <add val="5" order="0x40" stat="accCombat"/>
+	 <add val="5" order="0x40" stat="rEvas"/>
+	 <add val="1000" order="0x40" stat="maxCp"/>
+	 <sub val="0.15" order="0x40" stat="pReuse"/>
+	 <add val="4" order="0x40" stat="mSkillEvas"/>
+  </for>
+</item>
+</list>

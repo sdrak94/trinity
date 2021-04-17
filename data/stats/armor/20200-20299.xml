@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="20200" name="Agathion of Love - 3 Day Expiration Period">
+  <for/>
+</item>
+<item id="20201" name="Agathion of Love - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20202" name="Agathion of Love - 15 Day Expiration Period">
+  <for/>
+</item>
+<item id="20203" name="Agathion of Love - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20204" name="Queen Ant's Ring (Event) - 3 Day Expiration Period">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20205" name="Queen Ant's Ring (Event) - 7 Day Expiration Period">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20206" name="Queen Ant's Ring (Event) - 15 Day Expiration Period">
+  <for>
+    <add val="48" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20207" name="Zaken's Earring (Event) - 3 Day Expiration Period">
+  <for>
+    <add val="71" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20208" name="Zaken's Earring (Event) - 7 Day Expiration Period">
+  <for>
+    <add val="71" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20209" name="Zaken's Earring (Event) - 15 Day Expiration Period">
+  <for>
+    <add val="71" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="20212" name="Agathion Seal Bracelet - Charming Cupid">
+  <for/>
+</item>
+<item id="20213" name="Agathion Seal Bracelet - Naughty Cupid">
+  <for/>
+</item>
+<item id="20221" name="Agathion Seal Bracelet - White Maneki Neko">
+  <for/>
+</item>
+<item id="20222" name="Agathion Seal Bracelet - Black Maneki Neko">
+  <for/>
+</item>
+<item id="20223" name="Agathion Seal Bracelet - Brown Maneki Neko">
+  <for/>
+</item>
+<item id="20224" name="Agathion Seal Bracelet - White Maneki Neko - Resurrection - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20225" name="Agathion Seal Bracelet - Black Maneki Neko - Escape - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20226" name="Agathion Seal Bracelet - Brown Maneki Neko - Vitality - 7-day limited time">
+  <for/>
+</item>
+<item id="20230" name="Agathion Seal Bracelet - One-Eyed Bat Drove">
+  <for/>
+</item>
+<item id="20231" name="Agathion Seal Bracelet - One-Eyed Bat Drove - Resist Unholy - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20232" name="Agathion Seal Bracelet - One-Eyed Bat Drove - Vitality - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20236" name="Agathion Seal Bracelet - Pegasus">
+  <for/>
+</item>
+<item id="20237" name="Agathion Seal Bracelet - Pegasus - Wind Walk - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20238" name="Agathion Seal Bracelet - Pegasus - Escape - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20245" name="Agathion Seal Bracelet - Yellow-Robed Tojigong">
+  <for/>
+</item>
+<item id="20246" name="Agathion Seal Bracelet - Blue-Robed Tojigong">
+  <for/>
+</item>
+<item id="20247" name="Agathion Seal Bracelet - Green-Robed Tojigong">
+  <for/>
+</item>
+<item id="20248" name="Agathion Seal Bracelet - Yellow-Robed Tojigong - Greater Heal - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20249" name="Agathion Seal Bracelet - Blue-Robed Tojigong - Reflect Damage - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20250" name="Agathion Seal Bracelet - Green-Robed Tojigong - Mana Regeneration - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20252" name="Agathion Seal Bracelet - Bugbear">
+  <for/>
+</item>
+<item id="20253" name="Agathion of Love (Event)">
+  <for/>
+</item>
+<item id="20266" name="Baguette Shield - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20275" name="Gold Afro">
+  <for/>
+</item>
+<item id="20276" name="Pink Afro">
+  <for/>
+</item>
+<item id="20297" name="Agathion Seal Bracelet - Red Sumo Wrestler">
+  <for/>
+</item>
+<item id="20298" name="Agathion Seal Bracelet - Red Sumo Wrestler - Death Whisper - 7 Day Expiration Period">
+  <for/>
+</item>
+<item id="20299" name="Agathion Seal Bracelet - Blue Sumo Wrestler">
+  <for/>
+</item>
+</list>

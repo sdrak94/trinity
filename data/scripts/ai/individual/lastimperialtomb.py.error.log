@@ -1,0 +1,6 @@
+Error on: C:\L2j-Gracia-Final\GAMESERVER\data\scripts\ai\individual\lastimperialtomb.py.error.log
+Line: -1 - Column: -1
+
+Traceback (innermost last):
+  File "lastimperialtomb.py", line 7, in ?
+ImportError: no module named lastimperialtomb

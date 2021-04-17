@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="14111" name="Sealed Vesper Shield">
+  <for>
+    <sub val="0" order="0x10" stat="rEvas"/>
+    <set val="352" order="0x08" stat="sDef"/>
+    <set val="20" order="0x08" stat="rShld"/>
+    <enchant val="0" order="0x0C" stat="sDef"/>
+  </for>
+</item>
+<item id="14118" name="Vesper Cutter">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.36" order="0x40" stat="maxHp"/>
+    <add val="5" order="0x40" stat="accCombat"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14119" name="Vesper Cutter - Health">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14120" name="Vesper Cutter - Focus">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14121" name="Vesper Slasher">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.36" order="0x40" stat="maxHp"/>
+    <add val="5" order="0x40" stat="accCombat"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14122" name="Vesper Slasher - Health">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14123" name="Vesper Slasher - Focus">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14124" name="Vesper Buster">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.13" order="0x40" stat="mAtkSpd"/>
+    <basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+    <basemul val="0.05" order="0x40" stat="runSpd"/>
+	<basemul val="0.4" order="0x40" stat="mCritRate"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14125" name="Vesper Buster - Acumen">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14126" name="Vesper Buster - Magic Hold">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>    
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14127" name="Vesper Shaper">
+  <for>
+    <set val="374" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <add val="5" order="0x40" stat="rEvas"/>
+    <add val="0.24" order="0x40" stat="cAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14128" name="Vesper Shaper - HP Drain">
+  <for>
+    <set val="374" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14129" name="Vesper Shaper - Haste">
+  <for>
+    <set val="374" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="433" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14130" name="Vesper Fighter">
+  <for>
+    <!--<set val="521" order="0x08" stat="pAtk"/>-->
+	<set val="491" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+    <add val="5" order="0x40" stat="rEvas"/>
+	<add val="0.24" order="0x40" stat="cAtk"/>
+   	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14131" name="Vesper Fighter - Health">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14132" name="Vesper Fighter - Critical Stun">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14133" name="Vesper Stormer">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+    <basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.36" order="0x40" stat="maxHp"/>
+    <add val="70" order="0x40" stat="pAtkAngle"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14134" name="Vesper Stormer - Guidance">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14135" name="Vesper Stormer - Haste">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="8" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14136" name="Vesper Avenger">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.36" order="0x40" stat="maxHp"/>
+    <basemul val="0.35" order="0x40" stat="pAtk"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14137" name="Vesper Avenger - Health">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14138" name="Vesper Avenger - HP Regeneration">
+  <for>
+    <set val="428" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14139" name="Vesper Retributer">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.36" order="0x40" stat="maxHp"/>
+	<basemul val="0.07" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+   <basemul val="0.35" order="0x40" stat="pAtk"/>
+    <add val="0.24" order="0x40" stat="cAtk"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14140" name="Vesper Retributer - Health">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14141" name="Vesper Retributer - HP Drain">
+  <for>
+    <set val="521" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14142" name="Vesper Caster">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.1" order="0x40" stat="mAtkSpd"/>
+    <basemul val="0.3" order="0x40" stat="mCritRate"/>
+	<add val="0.08" order="0x40" stat="giveHp"/>
+    <sub val="0.15" order="0x40" stat="mReuse"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14143" name="Vesper Caster - MP Regeneration">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14144" name="Vesper Caster - Mana Up">
+  <for>
+    <set val="342" order="0x08" stat="pAtk"/>
+    <set val="253" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="379" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14145" name="Vesper Singer ">
+  <for>
+    <set val="417" order="0x08" stat="pAtk"/>
+    <set val="286" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.25" order="0x40" stat="mAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="mAtkSpd"/>
+    <basemul val="0.50" order="0x40" stat="mAtk"/>
+	<basemul val="0.36" order="0x40" stat="maxHp"/>
+    <add val="0.19" order="0x40" stat="cAtkMagic"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14146" name="Vesper Singer - MP Regeneration">
+  <for>
+    <set val="417" order="0x08" stat="pAtk"/>
+    <set val="286" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14147" name="Vesper Singer - Magic Hold">
+  <for>
+    <set val="417" order="0x08" stat="pAtk"/>
+    <set val="286" order="0x08" stat="mAtk"/>
+    <set val="5" order="0x08" stat="rCrit"/>
+    <add val="4" order="0x10" stat="accCombat"/>
+    <set val="325" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14148" name="Vesper Thrower">
+  <for>
+    <set val="782" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.1" order="0x40" stat="atkReuse"/>
+    <add val="6" order="0x40" stat="accCombat"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14149" name="Vesper Thrower - Focus">
+  <for>
+    <set val="782" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14150" name="Vesper Thrower - Critical Slow">
+  <for>
+    <set val="782" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="293" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14151" name="Vesper Pincer">
+  <for>
+    <set val="388" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <add val="5" order="0x40" stat="rEvas"/>
+    <add val="0.24" order="0x40" stat="cAtk"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14152" name="Vesper Pincer - Health">
+  <for>
+    <set val="388" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14153" name="Vesper Pincer - Focus">
+  <for>
+    <set val="388" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="406" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14154" name="Vesper Sheutjeh">
+  <for>
+    <set val="480" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.07" order="0x40" stat="pAtkSpd"/>
+    <add val="5" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="rEvas"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="mReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14155" name="Vesper Sheutjeh - Focus">
+  <for>
+    <set val="480" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14156" name="Vesper Sheutjeh - Critical Slow">
+  <for>
+    <set val="480" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="10" order="0x08" stat="rCrit"/>
+    <add val="-1" order="0x10" stat="accCombat"/>
+    <set val="303" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14157" name="Vesper Nagan">
+  <for>
+    <set val="463" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/>
+	<add val="0.24" order="0x40" stat="cAtk"/>
+	<basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <basemul val="0.36" order="0x40" stat="maxHp"/>
+	<add val="0.2" order="0x40" stat="pAtk-demons"/>
+	<sub val="0.1" order="0x40" stat="pReuse"/>
+	<mul val="0.95" order="0x40" stat="pvpPhysDmg"/>
+	<mul val="0.95" order="0x40" stat="pvpMagicalDmg"/>
+	<sub val="0.05" order="0x40" stat="pvpPhysSkillsDmg"/>
+  </for>
+</item>
+<item id="14158" name="Vesper Nagan - Health">
+  <for>
+    <set val="463" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="14159" name="Vesper Nagan - Focus">
+  <for>
+    <set val="463" order="0x08" stat="pAtk"/>
+    <set val="190" order="0x08" stat="mAtk"/>
+    <set val="7" order="0x08" stat="rCrit"/>
+    <add val="2" order="0x10" stat="accCombat"/>
+    <set val="350" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+</list>

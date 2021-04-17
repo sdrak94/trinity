@@ -1,0 +1,904 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/dressme/weapon.xsd">
+	<!-- alt tit-->
+	<weapon id="900180" name="Alternative Titanium Razors" type="Dual Dagger">
+		 <requiredWepId setId="90018" />
+	</weapon>
+	<weapon id="900220" name="Alternative Titanium Dagger" type="Dagger" >
+		<requiredWepId setId="90022" />
+	</weapon>
+	<weapon id="900300" name="Alternative Titanium Phantom" type="Sword">
+		<requiredWepId setId="90030" />
+	</weapon>
+	<weapon id="900250" name="Alternative Titanium Destroyer" type="Big Sword">
+		<requiredWepId setId="90025" />
+	</weapon>
+	<weapon id="900270" name="Alternative Titanium Spear" type="Pole">
+		<requiredWepId setId="90027" />
+	</weapon>
+	<weapon id="900230" name="Alternative Titanium Crusher" type="Blunt">
+		<requiredWepId setId="90023" />
+	</weapon>
+	<weapon id="900260" name="Alternative Titanium Knuckles" type="Dual Fist">
+		<requiredWepId setId="90026" />
+	</weapon>
+	<weapon id="900280" name="Alternative Titanium Baton" type="Blunt">
+		<requiredWepId setId="90028" />
+	</weapon>
+	<weapon id="900310" name="Alternative Titanium Shot" type="Bow">
+		<requiredWepId setId="90031" />
+	</weapon>
+	<weapon id="900240" name="Alternative Titanium Maul" type="Big Blunt">
+		<requiredWepId setId="90024" />
+	</weapon>
+	<weapon id="900320" name="Alternative Titanium Saber" type="Rapier">
+		<requiredWepId setId="90032" />
+	</weapon>
+	<weapon id="900330" name="Alternative Titanium Charger" type="Ancient">
+		<requiredWepId setId="90033" />
+	</weapon>
+	<weapon id="900340" name="Alternative Titanium Raven" type="Crossbow">
+		<requiredWepId setId="90034" />
+	</weapon>
+	<weapon id="900190" name="Alternative Titanium Blades" type="Dual Sword">
+		<requiredWepId setId="90019" />
+	</weapon>
+	<weapon id="900210" name="Alternative Titanium Cutter" type="Sword">
+		<requiredWepId setId="90021" />
+	</weapon>
+	<!--alt tit-->
+	<!-- legacy tit-->
+	<weapon id="930180" name="Legacy Titanium Razors" type="Dual Dagger">
+		 <requiredWepId setId="90018" />
+	</weapon>
+	<weapon id="930220" name="Legacy Titanium Dagger" type="Dagger" >
+		<requiredWepId setId="90022" />
+	</weapon>
+	<weapon id="930300" name="Legacy Titanium Phantom" type="Sword">
+		<requiredWepId setId="90030" />
+	</weapon>
+	<weapon id="930250" name="Legacy Titanium Destroyer" type="Big Sword">
+		<requiredWepId setId="90025" />
+	</weapon>
+	<weapon id="930270" name="Legacy Titanium Spear" type="Pole">
+		<requiredWepId setId="90027" />
+	</weapon>
+	<weapon id="930230" name="Legacy Titanium Crusher" type="Blunt">
+		<requiredWepId setId="90023" />
+	</weapon>
+	<weapon id="930260" name="Legacy Titanium Knuckles" type="Dual Fist">
+		<requiredWepId setId="90026" />
+	</weapon>
+	<weapon id="930280" name="Legacy Titanium Baton" type="Blunt">
+		<requiredWepId setId="90028" />
+	</weapon>
+	<weapon id="930310" name="Legacy Titanium Shot" type="Bow">
+		<requiredWepId setId="90031" />
+	</weapon>
+	<weapon id="930240" name="Legacy Titanium Maul" type="Big Blunt">
+		<requiredWepId setId="90024" />
+	</weapon>
+	<weapon id="930290" name="Legacy Titanium Cane" type="Big Blunt">
+		<requiredWepId setId="90029" />
+	</weapon>
+	<weapon id="930320" name="Legacy Titanium Saber" type="Rapier">
+		<requiredWepId setId="90032" />
+	</weapon>
+	<weapon id="930330" name="Legacy Titanium Charger" type="Ancient">
+		<requiredWepId setId="90033" />
+	</weapon>
+	<weapon id="930340" name="Legacy Titanium Raven" type="Crossbow">
+		<requiredWepId setId="90034" />
+	</weapon>
+	<weapon id="930190" name="Legacy Titanium Blades" type="Dual Sword">
+		<requiredWepId setId="90019" />
+	</weapon>
+	<weapon id="930210" name="Legacy Titanium Cutter" type="Sword">
+		<requiredWepId setId="90021" />
+	</weapon>
+	<!--legacy tit-->
+	<!--red-->
+	<weapon id="992000" name="Red Dread Slayer" type="Sword">
+		<price id="999009" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="992001" name="Red Dread Talon" type="Dagger" >
+		<price id="999009" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="992002" name="Red Dread Banshee" type="Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="992003" name="Red Dread Zanbato" type="Big Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="992004" name="Red Dread Lance" type="Pole">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="992005" name="Red Dread Crusher" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="992006" name="Red Dread Claws" type="Dual Fist">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="992007" name="Red Dread Scepter" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="992008" name="Red Dread Shot" type="Bow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="992009" name="Red Dread Warmace" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="992010" name="Red Dread Staff" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="992011" name="Red Dread Rapier" type="Rapier">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="992012" name="Red Dread Nagan" type="Ancient">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="992013" name="Red Dread Bowgun" type="Crossbow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="992014" name="Red Dread Sins" type="Dual Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="992017" name="Red Dread Twisters" type="Dual Dagger">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	
+	<!--blue dread-->
+	<weapon id="991000" name="Blue Dread Slayer" type="Sword">
+		<price id="999009" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="991001" name="Blue Dread Talon" type="Dagger" >
+		<price id="999009" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="991002" name="Blue Dread Banshee" type="Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="991003" name="Blue Dread Zanbato" type="Big Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="991004" name="Blue Dread Lance" type="Pole">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="991005" name="Blue Dread Crusher" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="991006" name="Blue Dread Claws" type="Dual Fist">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="991007" name="Blue Dread Scepter" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="991008" name="Blue Dread Shot" type="Bow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="991009" name="Blue Dread Warmace" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="991010" name="Blue Dread Staff" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="991011" name="Blue Dread Rapier" type="Rapier">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="991012" name="Blue Dread Nagan" type="Ancient">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="991013" name="Blue Dread Bowgun" type="Crossbow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="991014" name="Blue Dread Sins" type="Dual Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="991017" name="Blue Dread Twisters" type="Dual Dagger">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	<!--Purple Dread-->
+	
+	<weapon id="990000" name="Purple Dread Slayer" type="Sword">
+		<price id="999009" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="990001" name="Purple Dread Talon" type="Dagger" >
+		<price id="999009" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="990002" name="Purple Dread Banshee" type="Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="990003" name="Purple Dread Zanbato" type="Big Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="990004" name="Purple Dread Lance" type="Pole">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="990005" name="Purple Dread Crusher" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="990006" name="Purple Dread Claws" type="Dual Fist">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="990007" name="Purple Dread Scepter" type="Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="990008" name="Purple Dread Shot" type="Bow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="990009" name="Purple Dread Warmace" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="990010" name="Purple Dread Staff" type="Big Blunt">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="990011" name="Purple Dread Rapier" type="Rapier">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="990012" name="Purple Dread Nagan" type="Ancient">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="990013" name="Purple Dread Bowgun" type="Crossbow">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="990014" name="Purple Dread Sins" type="Dual Sword">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="990017" name="Purple Dread Twisters" type="Dual Dagger">
+		<price id="999009" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	<!--Corrupted Glow-->
+	
+	
+	<weapon id="92000" name="Red Corrupted Slayer" type="Sword">
+		<price id="999010" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92001" name="Red Corrupted Talon" type="Dagger" >
+		<price id="999010" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92002" name="Red Corrupted Banshee" type="Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92003" name="Red Corrupted Zanbato" type="Big Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92004" name="Red Corrupted Lance" type="Pole">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92005" name="Red Corrupted Crusher" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92006" name="Red Corrupted Claws" type="Dual Fist">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92007" name="Red Corrupted Scepter" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92008" name="Red Corrupted Shot" type="Bow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92009" name="Red Corrupted Warmace" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92010" name="Red Corrupted Staff" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92011" name="Red Corrupted Rapier" type="Rapier">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92012" name="Red Corrupted Nagan" type="Ancient">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92013" name="Red Corrupted Bowgun" type="Crossbow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92014" name="Red Corrupted Sins" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92017" name="Red Corrupted Twisters" type="Dual Dagger">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	<weapon id="92100" name="Blue Corrupted Slayer" type="Sword">
+		<price id="999010" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92101" name="Blue Corrupted Talon" type="Dagger" >
+		<price id="999010" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92102" name="Blue Corrupted Banshee" type="Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92103" name="Blue Corrupted Zanbato" type="Big Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92104" name="Blue Corrupted Lance" type="Pole">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92105" name="Blue Corrupted Crusher" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92106" name="Blue Corrupted Claws" type="Dual Fist">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92107" name="Blue Corrupted Scepter" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92108" name="Blue Corrupted Shot" type="Bow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92109" name="Blue Corrupted Warmace" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92110" name="Blue Corrupted Staff" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92111" name="Blue Corrupted Rapier" type="Rapier">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92112" name="Blue Corrupted Nagan" type="Ancient">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92113" name="Blue Corrupted Bowgun" type="Crossbow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92114" name="Blue Corrupted Sins" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92117" name="Blue Corrupted Twisters" type="Dual Dagger">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	<weapon id="92200" name="Purple Corrupted Slayer" type="Sword">
+		<price id="999010" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92201" name="Purple Corrupted Talon" type="Dagger" >
+		<price id="999010" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92202" name="Purple Corrupted Banshee" type="Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92203" name="Purple Corrupted Zanbato" type="Big Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92204" name="Purple Corrupted Lance" type="Pole">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92205" name="Purple Corrupted Crusher" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92206" name="Purple Corrupted Claws" type="Dual Fist">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92207" name="Purple Corrupted Scepter" type="Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92208" name="Purple Corrupted Shot" type="Bow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92209" name="Purple Corrupted Warmace" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92210" name="Purple Corrupted Staff" type="Big Blunt">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92211" name="Purple Corrupted Rapier" type="Rapier">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92212" name="Purple Corrupted Nagan" type="Ancient">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92213" name="Purple Corrupted Bowgun" type="Crossbow">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92214" name="Purple Corrupted Sins" type="Dual Sword">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92217" name="Purple Corrupted Twisters" type="Dual Dagger">
+		<price id="999010" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+
+	<!--Blue Noble Glow-->
+	
+	
+	<weapon id="92300" name="Blue Glow Red Slayer" type="Sword">
+		<price id="999011" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92301" name="Blue Glow Red Talon" type="Dagger" >
+		<price id="999011" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92302" name="Blue Glow Red Banshee" type="Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92303" name="Blue Glow Red Zanbato" type="Big Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92304" name="Blue Glow Red Lance" type="Pole">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92305" name="Blue Glow Red Crusher" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92306" name="Blue Glow Red Claws" type="Dual Fist">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92307" name="Blue Glow Red Scepter" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92308" name="Blue Glow Red Shot" type="Bow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92309" name="Blue Glow Red Warmace" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92310" name="Blue Glow Red Staff" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92311" name="Blue Glow Red Rapier" type="Rapier">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92312" name="Blue Glow Red Nagan" type="Ancient">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92313" name="Blue Glow Red Bowgun" type="Crossbow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92314" name="Blue Glow Red Sins" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92317" name="Blue Glow Red Twisters" type="Dual Dagger">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	<weapon id="92400" name="Blue Glow Blue Slayer" type="Sword">
+		<price id="999011" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92401" name="Blue Glow Blue Talon" type="Dagger" >
+		<price id="999011" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92402" name="Blue Glow Blue Banshee" type="Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92403" name="Blue Glow Blue Zanbato" type="Big Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92404" name="Blue Glow Blue Lance" type="Pole">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92405" name="Blue Glow Blue Crusher" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92406" name="Blue Glow Blue Claws" type="Dual Fist">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92407" name="Blue Glow Blue Scepter" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92408" name="Blue Glow Blue Shot" type="Bow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92409" name="Blue Glow Blue Warmace" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92410" name="Blue Glow Blue Staff" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92411" name="Blue Glow Blue Rapier" type="Rapier">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92412" name="Blue Glow Blue Nagan" type="Ancient">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92413" name="Blue Glow Blue Bowgun" type="Crossbow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92414" name="Blue Glow Blue Sins" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92417" name="Blue Glow Blue Twisters" type="Dual Dagger">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	<weapon id="92500" name="Blue Glow Purple Slayer" type="Sword">
+		<price id="999011" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92501" name="Blue Glow Purple Talon" type="Dagger" >
+		<price id="999011" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92502" name="Blue Glow Purple Banshee" type="Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92503" name="Blue Glow Purple Zanbato" type="Big Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92504" name="Blue Glow Purple Lance" type="Pole">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92505" name="Blue Glow Purple Crusher" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92506" name="Blue Glow Purple Claws" type="Dual Fist">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92507" name="Blue Glow Purple Scepter" type="Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92508" name="Blue Glow Purple Shot" type="Bow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92509" name="Blue Glow Purple Warmace" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92510" name="Blue Glow Purple Staff" type="Big Blunt">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92511" name="Blue Glow Purple Rapier" type="Rapier">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92512" name="Blue Glow Purple Nagan" type="Ancient">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92513" name="Blue Glow Purple Bowgun" type="Crossbow">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92514" name="Blue Glow Purple Sins" type="Dual Sword">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92517" name="Blue Glow Purple Twisters" type="Dual Dagger">
+		<price id="999011" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+
+		
+			<!--Red Noble Glow-->
+	
+	
+	<weapon id="92600" name="Red Glow Red Slayer" type="Sword">
+		<price id="999012" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92601" name="Red Glow Red Talon" type="Dagger" >
+		<price id="999012" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92602" name="Red Glow Red Banshee" type="Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92603" name="Red Glow Red Zanbato" type="Big Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92604" name="Red Glow Red Lance" type="Pole">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92605" name="Red Glow Red Crusher" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92606" name="Red Glow Red Claws" type="Dual Fist">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92607" name="Red Glow Red Scepter" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92608" name="Red Glow Red Shot" type="Bow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92609" name="Red Glow Red Warmace" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92610" name="Red Glow Red Staff" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92611" name="Red Glow Red Rapier" type="Rapier">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92612" name="Red Glow Red Nagan" type="Ancient">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92613" name="Red Glow Red Bowgun" type="Crossbow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92614" name="Red Glow Red Sins" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92617" name="Red Glow Red Twisters" type="Dual Dagger">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	<weapon id="92700" name="Red Glow Blue Slayer" type="Sword">
+		<price id="999012" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92701" name="Red Glow Blue Talon" type="Dagger" >
+		<price id="999012" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92702" name="Red Glow Blue Banshee" type="Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92703" name="Red Glow Blue Zanbato" type="Big Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92704" name="Red Glow Blue Lance" type="Pole">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92705" name="Red Glow Blue Crusher" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92706" name="Red Glow Blue Claws" type="Dual Fist">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92707" name="Red Glow Blue Scepter" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92708" name="Red Glow Blue Shot" type="Bow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92709" name="Red Glow Blue Warmace" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92710" name="Red Glow Blue Staff" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92711" name="Red Glow Blue Rapier" type="Rapier">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92712" name="Red Glow Blue Nagan" type="Ancient">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92713" name="Red Glow Blue Bowgun" type="Crossbow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92714" name="Red Glow Blue Sins" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92717" name="Red Glow Blue Twisters" type="Dual Dagger">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+	
+	
+	<weapon id="92800" name="Red Glow Purple Slayer" type="Sword">
+		<price id="999012" count="1" />
+		 <requiredWepId setId="90000" />
+	</weapon>
+	<weapon id="92801" name="Red Glow Purple Talon" type="Dagger" >
+		<price id="999012" count="1" />
+		<requiredWepId setId="90001" />
+	</weapon>
+	<weapon id="92802" name="Red Glow Purple Banshee" type="Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90002" />
+	</weapon>
+	<weapon id="92803" name="Red Glow Purple Zanbato" type="Big Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90003" />
+	</weapon>
+	<weapon id="92804" name="Red Glow Purple Lance" type="Pole">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90004" />
+	</weapon>
+	<weapon id="92805" name="Red Glow Purple Crusher" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90005" />
+	</weapon>
+	<weapon id="92806" name="Red Glow Purple Claws" type="Dual Fist">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90006" />
+	</weapon>
+	<weapon id="92807" name="Red Glow Purple Scepter" type="Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90007" />
+	</weapon>
+	<weapon id="92808" name="Red Glow Purple Shot" type="Bow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90008" />
+	</weapon>
+	<weapon id="92809" name="Red Glow Purple Warmace" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90009" />
+	</weapon>
+	<weapon id="92810" name="Red Glow Purple Staff" type="Big Blunt">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90010" />
+	</weapon>
+	<weapon id="92811" name="Red Glow Purple Rapier" type="Rapier">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90011" />
+	</weapon>
+	<weapon id="92812" name="Red Glow Purple Nagan" type="Ancient">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90012" />
+	</weapon>
+	<weapon id="92813" name="Red Glow Purple Bowgun" type="Crossbow">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90013" />
+	</weapon>
+	<weapon id="92814" name="Red Glow Purple Sins" type="Dual Sword">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90014" />
+	</weapon>
+	<weapon id="92817" name="Red Glow Purple Twisters" type="Dual Dagger">
+		<price id="999012" count="1" />
+		<requiredWepId setId="90017" />
+	</weapon>
+
+		
+
+
+</list>

@@ -1,0 +1,30 @@
+<list>
+<item id="73108" name="The Belt of Truth">
+  <for>
+    <add val="150" order="0x40" stat="pDef"/>
+	<add val="150" order="0x40" stat="mDef"/>
+	<add val="2000" order="0x40" stat="maxHp"/>
+	<add val="2000" order="0x40" stat="maxMp"/>
+	<add val="2000" order="0x40" stat="maxCp"/>
+	<mull val="0.88" order="0x40" stat="pvmDam"/>
+	<add val="2" order="0x10" stat="INT"/>
+	<add val="2" order="0x10" stat="STR"/>
+	<add val="1" order="0x10" stat="WIT"/>
+	<add val="1" order="0x10" stat="DEX"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+  </for>
+</item>
+<item id="73109" name="Holy Belt">
+  <for>
+    <add val="100" order="0x40" stat="pDef"/>
+	<add val="100" order="0x40" stat="mDef"/>
+	<add val="1500" order="0x40" stat="maxHp"/>
+	<add val="1500" order="0x40" stat="maxMp"/>
+	<add val="1500" order="0x40" stat="maxCp"/>
+	<mull val="0.94" order="0x40" stat="pvmDam"/>
+    <enchant val="0" order="0x50" stat="pDef"/>
+	<add val="1" order="0x10" stat="STR"/>
+	<add val="1" order="0x10" stat="DEX"/>
+  </for>
+</item>
+</list>

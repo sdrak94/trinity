@@ -1,0 +1,1047 @@
+<list>
+<skill id="35200" levels="1" name="Physical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtk" val="100">
+	        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35201" levels="1" name="Physical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35200"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35202" levels="1" name="Physical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pDef" val="30">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35203" levels="1" name="Physical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35202"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35204" levels="1" name="Magical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="300">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35205" levels="1" name="Magical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35204"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35206" levels="1" name="Magical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mDef" val="30">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35207" levels="1" name="Magical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35206"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35208" levels="1" name="Greater Physical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtk" val="250">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35209" levels="1" name="Greater Physical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35208"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35210" levels="1" name="Greater Magical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtk" val="500">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35211" levels="1" name="Greater Magical Attack">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35210"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35212" levels="1" name="Greater Casting Speed">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mAtkSpd" val="20">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35213" levels="1" name="Greater Casting Speed">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35212"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35214" levels="1" name="Greater Focus">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="rCrit" val="25">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35215" levels="1" name="Greater Focus">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35214"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35216" levels="1" name="Greater Physical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pDef" val="50">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35217" levels="1" name="Greater Physical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35216"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35218" levels="1" name="Greater Magical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="mDef" val="50">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35219" levels="1" name="Greater Magical Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35218"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35220" levels="1" name="Boost CP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="300" order="0x40" stat="maxCp">
+		        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35221" levels="1" name="Boost CP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35220"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35222" levels="1" name="Resist Trait">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <mul val='0.94' order='0x30' stat='stunVuln'>
+  	        <player olympiad="false"/>
+      </mul>
+  <mul val='0.94' order='0x30' stat='sleepVuln'>
+    	        <player olympiad="false"/>
+      </mul>
+  <mul val='0.94' order='0x30' stat='paralyzeVuln'>
+    	        <player olympiad="false"/>
+      </mul>
+  <mul val="0.94" order="0x30" stat="debuffVuln">
+    	        <player olympiad="false"/>
+      </mul>
+  <mul val='0.94' order='0x30' stat='sleepVuln'>
+    	        <player olympiad="false"/>
+      </mul>
+  </for>
+ </skill>
+ <skill id="35223" levels="1" name="Resist Trait">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35222"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35224" levels="1" name="Haste">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtkSpd" val="20">
+			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35225" levels="1" name="Haste">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35224"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35226" levels="1" name="Boost Evasion">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="rEvas" val="2">
+			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35227" levels="1" name="Boost Evasion">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35226"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35228" levels="1" name="Long Shot">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="pAtkRange" val="50">
+	<and>
+	<player olympiad="false"/>
+	  <using kind="Bow"/>
+	  </and>
+	</add>
+	<add order="0x40" stat="pAtkRange" val="40">
+	<and>
+	<player olympiad="false"/>
+	  <using kind="Bow"/>
+	  </and>
+	</add>
+  </for>
+ </skill>
+ <skill id="35229" levels="1" name="Long Shot">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35228"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35230" levels="1" name="Critical Chance">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="20" order='0x40' stat='rCrit'>
+		<player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35231" levels="1" name="Critical Chance">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35230"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35232" levels="1" name="Boost HP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add order="0x40" stat="maxHp" val="300">
+				        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35233" levels="1" name="Boost HP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35232"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35234" levels="1" name="Critical Damage Reduction">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<sub val="0.04" order="0x40" stat="critVuln">
+				        <player olympiad="false"/>
+      </sub>
+  </for>
+ </skill>
+ <skill id="35235" levels="1" name="Critical Damage Reduction">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35234"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35236" levels="1" name="Counter Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="60" order="0x40" stat="pDef">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="60" order="0x40" stat="mDef">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35237" levels="1" name="Counter Defence">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35236"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35238" levels="1" name="Boost HP/MP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add order="0x40" stat="maxMp" val="500">
+  			        <player olympiad="false"/>
+      </add>
+  <add order="0x40" stat="maxHp" val="800">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35239" levels="1" name="Boost HP/MP">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35238"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35240" levels="1" name="Resist Elemental Attribute">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="15" order="0x40" stat="fireRes">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="15" order="0x40" stat="waterRes">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="15" order="0x40" stat="windRes">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="15" order="0x40" stat="earthRes">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35241" levels="1" name="Resist Elemental Attribute">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35240"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35242" levels="1" name="Counter Spirit">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="400" order="0x40" stat="mAtk"> 
+  			        <player olympiad="false"/>
+      </add>
+  <add val="200" order="0x40" stat="pAtk">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="20" order='0x40' stat='pAtkSpd'>
+  			        <player olympiad="false"/>
+      </add>
+  <add val="20" order='0x40' stat='mAtkSpd'>
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35243" levels="1" name="Coutner Spirit">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35242"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35244" levels="1" name="Anti-Magic">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<sub val="0.04" order="0x40" stat="magicDamVul">
+				        <player olympiad="false"/>
+      </sub>
+  </for>
+ </skill>
+ <skill id="35245" levels="1" name="Anti-Magic">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35244"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35246" levels="1" name="Mana Gain">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<mul val="1.20" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1013"/>
+   </mul>
+  </for>
+ </skill>
+ <skill id="35247" levels="1" name="Mana Gain">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35246"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35248" levels="1" name="Counter Mana">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<mul val="1.20" order="0x30" stat="skillPowerBoost">
+	  <using skillid="1398"/>
+   </mul>
+   <add order="0x40" stat="maxMp" val="500">
+   			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35249" levels="1" name="Counter Mana">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35248"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35250" levels="1" name="Boost Pray">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<add val="0.10" order="0x40" stat="gainHp">
+				        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35251" levels="1" name="Boost Pray">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35250"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35252" levels="1" name="Resist Divine Attribute">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="20" order="0x40" stat="holyRes">
+  			        <player olympiad="false"/>
+      </add>
+  <add val="20" order="0x40" stat="darkRes">
+  			   <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35253" levels="1" name="Resist Divine Attribute">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35252"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35254" levels="1" name="Counter Heal">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="0.04" order="0x40" stat="giveHp"/>
+  </for>
+ </skill>
+ <skill id="35255" levels="1" name="Counter Heal">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35254"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="91"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35256" levels="1" name="Boost Mana">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add order="0x40" stat="maxMp" val="300">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35257" levels="1" name="Boost Mana">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35256"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35258" levels="1" name="Mana Recovery">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <mul val="1.1" order="0x40" stat="regMp">
+  			        <player olympiad="false"/>
+      </mul>
+  </for>
+ </skill>
+ <skill id="35259" levels="1" name="Mana Recovery">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35258"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35260" levels="1" name="Counter Barrier">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add order="0x40" stat="delDmg" val="40">
+       <player olympiad="false"/>
+   </add>
+  </for>
+ </skill>
+ <skill id="35261" levels="1" name="Counter Barrier">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35260"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35262" levels="1" name="Vampiric Ability">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="4" order="0x40" stat="absorbDam">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35263" levels="1" name="Vampiric Ability">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35262"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="93"/>
+    </and>
+  </cond>
+</skill>
+<skill id="35264" levels="1" name="Boost Accuracy">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+  <add val="2" order="0x40" stat="accCombat">
+  			        <player olympiad="false"/>
+      </add>
+  </for>
+ </skill>
+ <skill id="35265" levels="1" name="Boost Accuracy">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="35264"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+		<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="88"/>
+    </and>
+  </cond>
+</skill>
+
+
+<!--emotes-->
+ <skill id="60970" levels="1" name="Coffin Dance Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="6097"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+ <skill id="60980" levels="1" name="Crying Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="6098"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+ <skill id="60990" levels="1" name="GG E-Z Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="6099"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+ <skill id="210140" levels="1" name="Disabled Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="21014"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+ <skill id="210150" levels="1" name="Clown Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="21015"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+ <skill id="210160" levels="1" name="1v1? Dance Emote">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="LEARN_SKILL"/>
+  <set name="displayId" val="2811"/>
+  <set name="learnSkillId" val="21016"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="hitTime" val="250"/>
+  <set name="staticHitTime" val="true"/>
+  <cond msgId="113" addName="1">
+    <and>
+	<not>
+	<player inzone="s80zone"/>
+	</not>
+      <player level="85"/>
+    </and>
+  </cond>
+</skill>
+</list>

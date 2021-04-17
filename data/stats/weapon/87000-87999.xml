@@ -1,0 +1,156 @@
+<list>
+<item id="87000" name="Daedalus Edge">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87001" name="Daedalus Disperser">
+  <for>
+   <set val="318" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="433" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87002" name="Daedalus Spirit">
+  <for>
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/> 
+   <set val="8" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+  </for>
+</item>
+<item id="87003" name="Daedalus Flamberge">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87004" name="Daedalus Trident">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87005" name="Daedalus Hammer">
+  <for>
+   <set val="363" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87006" name="Daedalus Katars">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="325" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87007" name="Daedalus Wand">
+  <for>
+   <set val="290" order="0x08" stat="pAtk"/> 
+   <set val="217" order="0x08" stat="mAtk"/>  
+   <set val="5" order="0x08" stat="rCrit"/> 
+   <add val="4" order="0x10" stat="accCombat"/> 
+   <set val="379" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87008" name="Daedalus Spitter">
+  <for>
+   <set val="689" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="11" order="0x08" stat="rCrit"/> 
+   <set val="293" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87009" name="Daedalus Stinger">
+  <for>
+   <set val="329" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="406" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87010" name="Daedalus Wingblade">
+  <for>
+   <set val="393" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="6" order="0x08" stat="rCrit"/> 
+   <add val="2" order="0x10" stat="accCombat"/> 
+   <set val="350" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87011" name="Daedalus Shooter">
+  <for>
+   <set val="400" order="0x08" stat="pAtk"/> 
+   <set val="163" order="0x08" stat="mAtk"/> 
+   <set val="10" order="0x08" stat="rCrit"/> 
+   <set val="303" order="0x08" stat="pAtkSpd"/> 
+   <enchant val="0" order="0x0C" stat="pAtk"/> 
+   <enchant val="0" order="0x0C" stat="mAtk"/> 
+  </for>
+</item>
+<item id="87012" name="Daedalus Chaos">
+  <for>
+   <set val="442" order="0x08" stat="pAtk"/>
+   <set val="163" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>   
+   <basemul val="0.12" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+   <basemul val="0.36" order="0x40" stat="maxHp"/>
+   <add val="0.24" order="0x40" stat="cAtk"/>
+   <add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item>
+<item id="87013" name="Daedalus Disrupters">
+  <for>
+    <set val="332" order="0x08" stat="pAtk"/>
+    <set val="169" order="0x08" stat="mAtk"/>
+    <set val="11" order="0x08" stat="rCrit"/>
+    <add val="-3" order="0x10" stat="accCombat"/>
+    <set val="411" order="0x08" stat="pAtkSpd"/>
+    <enchant val="0" order="0x0C" stat="pAtk"/>
+    <enchant val="0" order="0x0C" stat="mAtk"/>
+	<add val="0.24" order="0x40" stat="cAtk"/>
+	<basemul val="0.05" order="0x40" stat="pAtkSpd"/>
+    <sub val="0.15" order="0x40" stat="pReuse"/>
+	<basemul val="0.6" order="0x40" stat="rCrit"/> 
+	<add val="0.2" order="0x40" stat="pAtk-mcreatures"/>
+  </for>
+</item>
+</list>

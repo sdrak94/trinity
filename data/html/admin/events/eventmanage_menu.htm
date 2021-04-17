@@ -1,0 +1,163 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="666666">
+<tr>
+<td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr>
+</table>
+
+<br1>
+
+</center>
+<table bgcolor=2f2f2f width=300>
+
+<tr>
+<td width=15></td>
+<td width=140 align=left><button value="Auto events switch" action="bypass admin_event_manage autoevents" width=160 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td width=70 align=left><font color=9f9f9f>%autoevents%</font></td>
+</tr>
+
+</table>
+<center>
+
+<br1>
+
+<table width=270>
+
+<tr>
+<td align=center><button value="View Mini events" action="bypass admin_event_manage menu_mini" width=120 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td align=center><button value="GM Debug" action="bypass admin_event_manage debug_sign" width=120 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<br1>
+
+
+
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32 align=left>
+<br>
+
+<center>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Current event</font></td>
+<td><font color=9f9f9f>%event%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Current map</font></td>
+<td><font color=9f9f9f>%map%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Current state</font></td>
+<td><font color=9f9f9f>%state%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Time left</font></td>
+<td><font color=9f9f9f>%time%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Players count</font></td>
+<td><font color=9f9f9f>%players%</font></td>
+</tr>
+
+</table>
+
+<br>
+
+
+<table width=280>
+<tr>
+<td><button value="Abort" action="bypass admin_event_manage abort_current" width=70 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Launch event" action="bypass admin_event_manage new_event " width=120 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td>%runEventAction%</td>
+</tr>
+</table>
+
+<br>
+
+<font color=77A91D>Automatic scheduler:</font>
+
+<br1>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Auto scheduler</font></td>
+<td><font color=9f9f9f>%auto_scheduler%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Next event in:</font></td>
+<td><font color=9f9f9f>%auto_future%</font></td>
+</tr>
+
+%additionalParams%
+
+</table>
+
+<br>
+
+<table>
+<tr>
+<td>%runStop%</td>
+<td><button value="Config" action="bypass admin_event_manage config_auto_scheduler" width=85 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="%pauseName%" action="bypass admin_event_manage pause_auto_scheduler" width=85 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+
+
+ <br><br>
+
+
+<font color=77A91D>PvP Zone:</font>
+
+<br1>
+
+<table width=270>
+
+<tr>
+<td><font color=ac9887>Enabled</font></td>
+<td><font color=9f9f9f>%pvp_enabled%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Time active</font></td>
+<td><font color=9f9f9f>%pvp_timeactive%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Selected map</font></td>
+<td><font color=9f9f9f>%pvp_map%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9887>Current state</font></td>
+<td><font color=9f9f9f>%pvp_state%</font></td>
+</tr>
+
+
+</table>
+
+<br>
+
+<table>
+<tr>
+<td>%pvp_runstop%</td>
+<td><button value="Switch map" action="bypass admin_event_manage pvpzone_switchmap" width=85 height=23 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+
+
+</center>
+
+</center>
+</body></html>

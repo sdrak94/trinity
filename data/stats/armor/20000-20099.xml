@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="20006" name="Agathion Seal Bracelet - Majo">
+  <for/>
+</item>
+<item id="20007" name="Agathion Seal Bracelet - Gold Majo">
+  <for/>
+</item>
+<item id="20008" name="Agathion Seal Bracelet - Black Majo">
+  <for/>
+</item>
+<item id="20009" name="Agathion Seal Bracelet - Majo - Big Head 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20010" name="Agathion Seal Bracelet - Gold Majo - Resurrection 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20011" name="Agathion Seal Bracelet - Black Majo - Escape 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20012" name="Agathion Seal Bracelet - Plaipitak">
+  <for/>
+</item>
+<item id="20013" name="Agathion Seal Bracelet - Plaipitak - Big Head 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20014" name="Agathion Seal Bracelet - Plaipitak - Resurrection 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20015" name="Agathion Seal Bracelet - Plaipitak - Escape 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20016" name="Magic Glasses">
+  <for>
+    <add order="0x40" stat="seeInvisible" val="1"/>
+	<sub order="0x40" stat="conc" val="30"/>
+	<add order="0x40" stat="addDmg" val="150">
+	  <and>
+	    <player class_id_restriction="94,103,110"/>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add order="0x40" stat="addDmg" val="150">
+	  <and>
+	    <player class_id_restriction="95"/>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add order="0x40" stat="addDmg" val="100">
+	  <and>
+	    <not>
+	       <player class_id_restriction="94,95,103,110"/>
+		</not>
+	    <player usingmagic="true"/>
+	  </and>
+	</add>
+	<add val="100" order="0x40" stat="mAtkSpdMaxAdd"/>
+	<add order="0x10" stat="negateAutoTarget" val="100"/>
+	<add order="0x40" stat="mSkillEvasReduce" val="15"/>
+	<sub val="10000" order="0x40" stat="skillReuseChange">
+	   <using skillid="1056"/> <!-- cancel -->
+	 </sub>
+  </for>
+</item>
+<item id="20017" name="Afro Hair">
+  <for/>
+</item>
+<item id="20018" name="Afro Hair - Big Head, Firework">
+  <for/>
+</item>
+<item id="20019" name="Afro Hair - Wind Walk">
+  <for/>
+</item>
+<item id="20020" name="Uniform Hat">
+  <for>
+   <add val="0.000036" order="0x40" stat="distDmgBoost">
+	  <using kind="Crossbow"/>
+	</add>
+		<add val="0.000032" order="0x40" stat="distDmgBoost">
+	  <using kind="Bow"/>
+	</add>
+	<add order="0x40" stat="accCombat" val="5"/>
+	<add order="0x40" stat="rEvas" val="5"/>
+	<add order="0x40" stat="runSpd" val="10"/>
+   <sub order="0x40" stat="atkReuse" val="0.15"/>
+   <add order="0x40" stat="critMax" val="50"/>
+   <basemul val="0.06" order='0x40' stat='pAtkSpd'/>
+  </for>
+</item>
+<!--<item id="20021" name="Assassin's Bamboo Hat">
+  <for>
+    <add order="0x40" stat="negateAutoTarget" val="85"/>
+	<add order="0x40" stat="runSpd" val="8"/>
+	<mul order="0x30" stat="lethalRate" val="1.13"/>
+	<add order="0x40" stat="skillCritAdd" val="3"/>
+	<add order="0x40" stat="critMax" val="50"/>
+	<add order="0x40" stat="mCritMax" val="50"/>
+	<add order="0x40" stat="rEvas" val="4"/>
+  </for>
+</item>-->
+<item id="20021" name="Assassin's Bamboo Hat">
+  <for>
+    <add order="0x40" stat="negateAutoTarget" val="20"/>
+	<mul order="0x30" stat="lethalRate" val="1.05"/>
+	<add order="0x40" stat="skillCritAdd" val="3"/>
+	<add order="0x40" stat="rEvas" val="4"/>
+	<add val="50" order='0x40' stat='rCrit'/>
+	<add val="10" order='0x40' stat='blowRate'/>
+	<add val="0.15" order='0x40' stat='cAtk'/>
+	<add val="10" order='0x40' stat='pSkillEvas'/>
+	<add val="40" order='0x40' stat='evadeAOEHit'/>
+	<sub val="0.025" order="0x40" stat="critVuln"/>
+	<add val="4" order='0x40' stat='runSpd'/>
+	<sub val="10" order="0x40" stat="accCombat"/>
+  </for>
+</item>
+<item id="20022" name="Cruel Muzzle">
+    <for>
+  </for>
+</item>
+<item id="34587" name="Dread Muzzle">
+    <for>
+  </for>
+</item>
+<item id="20023" name="Ribbon Hairband">
+  <cond msgId="1518">
+    <player sex="1"/>
+  </cond>
+  <for/>
+</item>
+<item id="20024" name="Visor">
+  <for>
+  <add val="1" order="0x10" stat="DEX"/>
+  <add val="1" order="0x10" stat="CON"/>
+  <add val="50" order="0x40" stat="pDef"/>
+  <add val="50" order="0x40" stat="mDef"/>
+  <add val='50' order='0x40' stat="rCrit"/>
+  <basemul val="0.1" order="0x40" stat="pAtk"/>
+  </for>
+</item>
+<item id="20029" name="Light Purple-Maned Horse Mounting Bracelet">
+  <for/>
+</item>
+<item id="20030" name="Light Purple-Maned Horse Mounting Bracelet - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20031" name="Kat the Cat Hat">
+  <for/>
+</item>
+<item id="20032" name="Skull Hat">
+  <for/>
+</item>
+<item id="20063" name="Agathion Seal Bracelet - Baby Panda">
+  <for/>
+</item>
+<item id="20064" name="Agathion Seal Bracelet - Bamboo Panda">
+  <for/>
+</item>
+<item id="20065" name="Agathion Seal Bracelet - Sexy Panda">
+  <for/>
+</item>
+<item id="20066" name="Agathion Seal Bracelet - Baby Panda - Big Head-15 Day Expiration Period">
+  <for/>
+</item>
+<item id="20067" name="Agathion Seal Bracelet - Bamboo Panda - Resurrection-15 Day Expiration Period">
+  <for/>
+</item>
+<item id="20068" name="Agathion Seal Bracelet - Sexy Panda - Escape-15 Day Expiration Period">
+  <for/>
+</item>
+<item id="20083" name="Afro Hair - Energy - 3 Hour Expiration Period">
+  <for/>
+</item>
+<item id="20084" name="Afro Hair - Energy - 3 Day Expiration Period">
+  <for/>
+</item>
+<item id="20085" name="Afro Hair - Energy - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20086" name="Horn Rimmed Glasses - Energy - 3 Hour Expiration Period">
+  <for/>
+</item>
+<item id="20087" name="Horn Rimmed Glasses - Energy - 3 Day Expiration Period">
+  <for/>
+</item>
+<item id="20088" name="Horn Rimmed Glasses - Energy - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20089" name="Assassin's Bamboo Hat - Energy - 3 Hour Expiration Period">
+  <for/>
+</item>
+<item id="20090" name="Assassin's Bamboo Hat - Energy - 3 Day Expiration Period">
+  <for/>
+</item>
+<item id="20091" name="Assassin's Bamboo Hat - Energy - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20094" name="Agathion Seal Bracelet: Rudolph - Energy - 30 Day Expiration Period">
+  <for/>
+</item>
+<item id="20095" name="Santa Horn Hat">
+  <for/>
+</item>
+<item id="20098" name="Formal Dress - Event - 1 hour Shadow time">
+  <for/>
+</item>
+<item id="20099" name="Formal Dress - Event - 7 Day Expiration Period">
+  <for/>
+</item>
+</list>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="13234" name="Berserker's Crown">
+  <for>
+	<add order="0x10" stat="pAtkSpdMax" val="100"/>
+	<mul order="0x50" stat="pAtkSpd" val="1.06"/>
+	<mul order="0x50" stat="pAtkSpd" val="1.03">
+   	   <player hp="66"/>
+	</mul>
+	<mul order="0x50" stat="pAtkSpd" val="1.03">
+   	   <player hp="33"/>
+	</mul>
+   <basemul order="0x30" stat="pAtk" val="0.35"/>
+    <basemul order="0x30" stat="pAtk" val="0.15">
+   	   <player hp="66"/>
+	</basemul>
+	<basemul order="0x30" stat="pAtk" val="0.15">
+   	   <player hp="33"/>
+	</basemul>
+  </for>
+</item>
+<item id="13235" name="Avenger Guard">
+    <for>
+       <add val="50" order="0x40" stat="addDmg"/>
+	   <basemul val="0.15" order="0x40" stat="pDef"/>
+	   <basemul val="0.35" order="0x40" stat="pAtk"/>
+	   <add val="0.08" order="0x40" stat="skillDam"/>
+	   <add val="15" order="0x40" stat="negateShld"/>
+  </for>
+</item>
+<item id="13236" name="Imaskarian Karm">
+  <for>
+    <add order="0x40" stat="mCritMax" val="100"/>
+	<basemul order="0x40" stat="mCritRate" val="0.4"/>
+	<add order="0x40" stat="runSpd" val="8"/>
+	<add order="0x10" stat="WIT" val="2"/>
+	<add order="0x10" stat="INT" val="1"/>
+  </for>
+</item>
+<item id="13237" name="Aurakyrian Karm">
+  <for>
+    <add order="0x40" stat="critMax" val="100"/>
+	<add order="0x40" stat="accCombat" val="5"/>
+	<mul order="0x30" stat="rCrit" val="1.40"/>
+	<add val="4" order="0x40" stat="extraHit"/>
+	<add order="0x40" stat="cAtkAdd" val="1000"/>
+  </for>
+</item>
+<item id="13238" name="Balduran Protector">
+  <for>
+    <add val="1" order="0x10" stat="CON"/>
+    <sub val="0.07" order="0x40" stat="critVuln"/>
+    <set val="100" order="0x40" stat="skillCritDamEvas"/>
+	<set val="100" order="0x40" stat="mCritDamEvas"/>
+	<add order="0x40" stat="evadeAOEHit" val= "30"/>
+	<add val="150" order="0x80" stat="pDef"/>
+	<add val="150" order="0x80" stat="mDef"/>
+  </for>
+</item>
+<item id="13239" name="Kat the Cat Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13240" name="Feline Queen Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13241" name="Monster Eye Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13242" name="Brown Bear Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13243" name="Fungus Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13244" name="Skull Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13245" name="Ornithomimus Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13246" name="Feline King Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13247" name="Kai the Cat Hat - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13254" name="Agathion of Love - 7-day Limited Period">
+  <for/>
+</item>
+<item id="13260" name="Gran Kain's Squeaking Shoes - 10 hours limited period">
+  <for/>
+</item>
+<item id="13293" name="Pailaka Earring">
+  <for>
+    <add val="43" order="0x10" stat="mDef"/>
+    <add val="20" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="13294" name="Pailaka Ring">
+  <for>
+    <add val="29" order="0x10" stat="mDef"/>
+    <add val="15" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="13295" name="Pailaka Bracelet">
+  <for>
+    <add val="20" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="13296" name="Pailaka Shirt">
+  <for>
+    <add val="28" order="0x10" stat="pDef"/>
+    <add val="40" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+</list>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowsell="false">
+    <item id="1">  
+    <ingredient id="99005" count="20"/> 
+    <production id="81100" count="1" enchant="5"/>
+    </item>
+    <item id="2"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81101" count="1" enchant="5"/>
+    </item>
+    <item id="3">
+    <ingredient id="99005" count="20"/> 
+    <production id="81102" count="1" enchant="5"/>
+    </item>
+    <item id="4"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81103" count="1" enchant="5"/>
+    </item>
+    <item id="5"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81104" count="1" enchant="5"/>
+    </item>
+    <item id="6"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81105" count="1" enchant="5"/>
+    </item>
+    <item id="7"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81106" count="1" enchant="5"/>
+    </item>
+    <item id="8"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81107" count="1" enchant="5"/>
+    </item>
+    <item id="9"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81108" count="1" enchant="5"/>
+    </item>
+    <item id="10"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81109" count="1" enchant="5"/>
+    </item>
+    <item id="11"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81110" count="1" enchant="5"/>
+    </item>
+    <item id="12"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81111" count="1" enchant="5"/>
+    </item>
+    <item id="13"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81112" count="1" enchant="5"/>
+    </item>
+    <item id="14"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81113" count="1" enchant="5"/>
+    </item>
+    <item id="15"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81114" count="1" enchant="5"/>
+    </item>
+    <item id="16"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81115" count="1" enchant="5"/>
+    </item>
+    <item id="17"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81116" count="1" enchant="5"/>
+    </item>
+    <item id="18"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81117" count="1" enchant="5"/>
+    </item>
+    <item id="19"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81118" count="1" enchant="5"/>
+    </item>
+    <item id="20"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81119" count="1" enchant="5"/>
+    </item>
+    <item id="21"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81120" count="1" enchant="5"/>
+    </item>
+    <item id="22"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81121" count="1" enchant="5"/>
+    </item>
+    <item id="23"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81122" count="1" enchant="5"/>
+    </item>
+    <item id="24"> 
+    <ingredient id="99005" count="20"/> 
+    <production id="81123" count="1" enchant="5"/>
+    </item>
+</list>

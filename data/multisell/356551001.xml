@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Castle Merchant - magic related products (hear/face gear) -->
+
+<list>
+
+  <!-- Human Circlet -->
+  <item id="1">
+    <ingredient id="9912" count="1000"/>
+    <production id="9391" count="1"/>
+  </item>
+  
+    <!-- Elven Circlet -->
+  <item id="2">
+    <ingredient id="9912" count="1000"/>
+    <production id="9392" count="1"/>
+  </item>
+  
+    <!-- Dark Elven Circlet -->
+  <item id="3">
+    <ingredient id="9912" count="1000"/>
+    <production id="9393" count="1"/>
+  </item>
+  
+      <!-- Orcish Circlet -->
+  <item id="4">
+    <ingredient id="9912" count="1000"/>
+    <production id="9394" count="1"/>
+  </item>
+  
+      <!-- Dwarven Circlet -->
+  <item id="5">
+    <ingredient id="9912" count="1000"/>
+    <production id="9395" count="1"/>
+  </item>
+  
+      <!-- Kamaelic Circlet -->
+  <item id="6">
+    <ingredient id="9912" count="1000"/>
+    <production id="9396" count="1"/>
+  </item>
+  
+  </list>

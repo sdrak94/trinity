@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false" allowGem="false">
+   <item id="1"> 
+	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90021" count="1" enchant="8"/> 
+  </item>
+   <item id="2"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90022" count="1" enchant="8"/> 
+  </item>
+   <item id="3"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90023" count="1" enchant="8"/> 
+  </item>
+   <item id="4"> 
+   	
+   <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90024" count="1" enchant="8"/> 
+  </item>
+   <item id="5"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90025" count="1" enchant="8"/> 
+  </item>
+   <item id="6"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90026" count="1" enchant="8"/> 
+  </item>
+   <item id="7"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90027" count="1" enchant="8"/> 
+  </item>
+   <item id="8"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90028" count="1" enchant="8"/> 
+  </item>
+   <item id="9"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90029" count="1" enchant="8"/> 
+  </item>
+   <item id="10"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90030" count="1" enchant="8"/> 
+  </item>
+   <item id="11"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90031" count="1" enchant="8"/> 
+  </item>
+   <item id="12"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90032" count="1" enchant="8"/> 
+  </item>
+   <item id="13"> 
+   	
+   <production id="97003" count="20000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90033" count="1" enchant="8"/> 
+  </item>
+   <item id="14"> 
+   	
+   <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90034" count="1" enchant="8"/> 
+  </item>
+   <item id="15"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90019" count="1" enchant="8"/> 
+  </item>
+   <item id="16"> 
+   	
+   <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="2"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90018" count="1" enchant="8"/> 
+  </item>
+   <item id="17"> 
+   	
+	<production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="1"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90020" count="1" enchant="7"/> 
+  </item>
+   <item id="18"> 
+   	
+    <production id="97003" count="10000"/> 
+	<production id="4355" count="4500"/>
+	<production id="6673" count="60"/>
+	<production id="6393" count="1"/>
+	<production id="97006" count="1"/>
+    <ingredient id="90035" count="1" enchant="7"/> 
+  </item>
+</list>

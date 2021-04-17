@@ -1,0 +1,88 @@
+<html><title>%title%</title><body>
+<center>
+<table width=270 border=0 bgcolor="363636"><tr><td><button value="Main Events" action="bypass admin_event_manage edit_events_menu edit_events_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td><button value="Mini Events" action="bypass admin_event_manage mini_menu" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td><td width=120><button value="Config" action="bypass admin_event_manage globalconfig_menu Core 1" width=90 height=21 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td></tr></table>
+
+<br>
+
+<table width=200>
+
+<tr>
+<td><font color=ac9775>Event Name:</font></td>
+<td><font color=9f9f9f>%eventName%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Item ID:</font></td>
+<td><font color=9f9f9f>%id%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Min ammount</font></td>
+<td><font color=9f9f9f>%min%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Max ammount:</font></td>
+<td><font color=9f9f9f>%max%</font></td>
+</tr>
+
+<tr>
+<td><font color=ac9775>Chance in percent</font></td>
+<td><font color=9f9f9f>%chance%%</font></td>
+</tr>
+
+</table>
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<br>
+
+<edit var="var" width=190 height=13>
+
+<table width=160>
+
+<tr>
+<td><button value="Set ID" action="bypass admin_event_manage edit_event_reward_set_item_id $var" width=80 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Set Chance" action="bypass admin_event_manage edit_event_reward_set_chance $var" width=80 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<table width=180>
+
+<tr>
+<td><button value="Min Ammount" action="bypass admin_event_manage edit_event_reward_set_min $var" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Max Ammount" action="bypass admin_event_manage edit_event_reward_set_max $var" width=95 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+<br>
+
+<table width=100>
+
+<tr>
+<td><button value="Save" action="bypass admin_event_manage edit_event_reward_save" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+<td><button value="Remove" action="bypass admin_event_manage edit_event_reward_remove" width=60 height=20 back="L2UI_ct1.button_df_down" fore="L2UI_ct1.button_df"></td>
+</tr>
+
+</table>
+
+
+<img src="L2UI_CH3.herotower_deco" width=256 height=32>
+
+<font color=ac9775>Non-item rewards:</font>
+<br1>
+<table width=200>
+
+<tr>
+<td><font color=C8BFA3><a action="bypass admin_event_manage edit_event_reward_set_item_id exp">XP</a></font></td>
+<td><font color=C8BFA3><a action="bypass admin_event_manage edit_event_reward_set_item_id sp">SP</a></font></td>
+<td><font color=C8BFA3><a action="bypass admin_event_manage edit_event_reward_set_item_id fame">Fame</a></font></td>
+</tr>
+
+</table>
+
+
+</center>
+</body></html>

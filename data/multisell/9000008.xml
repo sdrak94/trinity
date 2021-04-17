@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+   <item id="1"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="17650" count="1" enchant="3"/> 
+  </item>
+   <item id="2"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83051" count="1" enchant="3"/> 
+  </item>
+   <item id="3"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31176" count="1" enchant="3"/> 
+  </item>
+  <item id="4"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83053" count="1" enchant="3"/> 
+  </item>
+   <item id="5"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83056" count="1" enchant="3"/> 
+  </item>
+   <item id="6"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83057" count="1" enchant="3"/> 
+  </item>
+   <item id="7"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83058" count="1" enchant="3"/> 
+  </item>
+   <item id="8"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="83059" count="1" enchant="3"/> 
+  </item>
+   <item id="9"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31151" count="1" enchant="3"/> 
+  </item>
+   <item id="10"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+	
+    <production id="17637" count="1" enchant="3"/> 
+  </item>
+   <item id="11"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31154" count="1" enchant="3"/> 
+  </item>
+  <item id="12"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31155" count="1" enchant="3"/> 
+  </item>
+   <item id="13"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31153" count="1" enchant="3"/> 
+  </item>
+   <item id="14"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31156" count="1" enchant="3"/> 
+  </item>
+   <item id="15"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31174" count="1" enchant="3"/> 
+  </item>
+   <item id="16"> 
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="31158" count="1" enchant="3"/> 
+  </item>
+   <item id="17"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="17649" count="1" enchant="3"/> 
+  </item>
+   <item id="18"> 
+
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+
+    <production id="17648" count="1" enchant="3"/> 
+  </item>
+    <item id="19"> 
+<ingredient id="62030" count="1"/>
+
+
+
+
+
+	
+    <production id="81121" count="1" enchant="3"/> 
+  </item>
+   <item id="20"> 
+
+	<ingredient id="62030" count="1"/> 
+    <production id="31175" count="1" enchant="3"/> 
+  </item>
+   <item id="21"> 
+	<ingredient id="62030" count="1"/> 
+
+
+
+    <production id="17644" count="1" enchant="3"/> 
+  </item>
+
+</list>

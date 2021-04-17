@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list allowSell="false">
+    <item id="1"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71001" count="1" enchant="3"/> 
+    </item>
+    <item id="2"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71002" count="1" enchant="3"/> 
+    </item>
+    <item id="3"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71003" count="1" enchant="3"/> 
+    </item>
+    <item id="4"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71004" count="1" enchant="3"/> 
+    </item>
+    <item id="5"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71000" count="1" enchant="3"/> 
+    </item>
+    <item id="6"> 
+  <ingredient id="99999" count="50"/> 
+    <production id="71011" count="1" enchant="3"/> 
+    </item>
+    <item id="7"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71012" count="1" enchant="3"/> 
+    </item>
+    <item id="8"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71013" count="1" enchant="3"/> 
+    </item>
+    <item id="9"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71014" count="1" enchant="3"/> 
+    </item>
+    <item id="10"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71010" count="1" enchant="3"/> 
+    </item>
+    <item id="11"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71021" count="1" enchant="3"/> 
+    </item>
+    <item id="12"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71022" count="1" enchant="3"/> 
+    </item>
+    <item id="13"> 
+   <ingredient id="99999" count="50"/> 
+    <production id="71023" count="1" enchant="3"/> 
+    </item>
+    <item id="14"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71024" count="1" enchant="3"/> 
+    </item>
+    <item id="15"> 
+    <ingredient id="99999" count="50"/> 
+    <production id="71020" count="1" enchant="3"/> 
+    </item>
+</list>

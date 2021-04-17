@@ -1,0 +1,288 @@
+<list>
+<skill id="11000" levels="1" name="Rex Hasta">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="triggeredId" val="11005"/>
+  <set name="triggeredLevel" val="1"/>
+  <set name="activationChance" val="100"/>
+  <set name="chanceType" val="ON_CRIT"/>
+  <for>
+  </for>
+</skill>
+<skill id="11001" levels="1" name="Mind Snap">
+  <set name="power" val="220"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="areaAngle" val="90"/>
+  <set name="areaLimit" val="false"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="200"/>
+  <set name="minLand" val="75"/>
+  <set name="castRange" val="200"/>
+  <set name="overHit" val="true"/>
+  <set name="coolTime" val="400"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="300"/>
+  <set name="reuseDelay" val="5000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="displayId" val="5501"/>
+  <set name="displayLvl" val="2"/>
+  <set name="isDebuff" val="true"/>
+  <set name="flyRadius" val="120"/>
+  <cond>
+     <target front="true"/>
+  </cond>
+  <for>
+    <effect self="1" name="Buff" time="5" val="0">
+      <basemul order="0x40" stat="mAtk" val="0.9">
+	   <not>
+	    <using kind="Big Blunt"/>
+		</not>
+	  </basemul>
+	 <basemul order="0x40" stat="mAtk" val="1.5">
+	    <using kind="Big Blunt"/>
+	  </basemul>
+    </effect>
+	<effect name="Knockback" val="0" effectType="STUN" effectPower="350"/>
+  </for>
+</skill>
+<skill id="11002" levels="1" name="Always Flash">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <for>
+	<set order="0x90" stat="critMax" val="1000"/>
+	<set order="0x90" stat="rCrit" val="1500"/>
+  </for>
+</skill>
+<skill id="11003" levels="1" name="Phantom Rain - Bow">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="triggeredId" val="11004"/>
+  <set name="triggeredLevel" val="1"/>
+  <set name="activationChance" val="100"/>
+  <set name="chanceType" val="ON_CRIT"/>
+  <for>
+  </for>
+</skill>
+<skill id="11004" levels="1" name="Phantom Rain">
+  <set name="power" val="200"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="150"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="772"/>
+  <set name="displayLvl" val="2"/>
+  <for>
+  </for>
+</skill>
+<skill id="11005" levels="1" name="Harlequin Wave">
+  <set name="power" val="50"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="areaAngle" val="90"/>
+  <set name="areaLimit" val="false"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="200"/>
+  <set name="minLand" val="75"/>
+  <set name="castRange" val="200"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="300"/>
+  <set name="displayId" val="5501"/>
+  <set name="displayLvl" val="1"/>
+  <set name="isDebuff" val="true"/>
+  <set name="flyRadius" val="120"/>
+  <for>
+	 <effect name="Knockback" val="0" effectType="STUN" effectPower="350"/>
+  </for>
+</skill>
+<skill id="11006" levels="1" name="Harlesk Farsa">
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="triggeredId" val="11007"/>
+  <set name="triggeredLevel" val="1"/>
+  <set name="activationChance" val="100"/>
+  <set name="chanceType" val="ON_HIT"/>
+  <for>
+  </for>
+</skill>
+<skill id="11007" levels="1" name="Crescent Tide">
+  <set name="power" val="9500"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="areaAngle" val="90"/>
+  <set name="areaLimit" val="false"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="400"/>
+  <set name="coolTime" val="300"/>
+  <set name="castRange" val="400"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.5"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="600"/>
+  <set name="displayId" val="3330"/>
+  <set name="displayLvl" val="1"/>
+  <for>
+  </for>
+</skill>
+<skill id="11024" levels="1" name="Groundstrike Fire">
+  <set name="power" val="200"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="150"/>
+  <set name="castRange" val="3000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="11024"/>
+  <for>
+  </for>
+</skill>
+<skill id="11025" levels="1" name="Greater Hydro Blast">
+  <set name="power" val="200"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillRadius" val="150"/>
+  <set name="staticReuse" val="true"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+    <set name="displayId" val="11024"/>
+  <for>
+  </for>
+</skill>
+<skill id="11026" levels="1" name="Furious Wind">
+  <set name="power" val="200"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillRadius" val="150"/>
+  <set name="staticReuse" val="true"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="11024"/>
+  <for>
+  </for>
+</skill>
+<skill id="11027" levels="1" name="Asuki Earth">
+  <set name="power" val="200"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="skillRadius" val="150"/>
+  <set name="staticReuse" val="true"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="11024"/>
+  <for>
+  </for>
+</skill>
+<skill id="11028" levels="1" name="Asuki 4 Elements">
+  <set name="power" val="200"/>
+  <set name="baseCritRate" val="35"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="skillRadius" val="150"/>
+  <set name="staticReuse" val="true"/>
+  <set name="castRange" val="3000"/>
+  <set name="reuseDelay" val="10000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="11024"/>
+  <for>
+  </for>
+</skill>
+<skill id="11029" levels="1" name="Soul of the Lion" enchantLevels1="15">
+  <set name="power" val="300"/>
+  <set name="target" val="TARGET_FRONT_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="reuseDelay" val="70000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="hitTime" val="2100"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="11029"/>
+    <set name="olyDisabled" val="true"/>
+    <cond msg="" addName="1">
+	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+  <effect count="3" name="Fear" time="3" val="0">
+	 <mul order="0x50" stat="runSpd" val="0.4"/>
+	 </effect>
+  </for>
+</skill>
+<skill id="11030" levels="1" name="Soul of the Pheonix" enchantLevels1="15">
+  <set name="power" val="300"/>
+  <set name="target" val="TARGET_AREA"/>
+  <set name="mpInitialConsume" val="0"/>
+  <set name="reuseDelay" val="70000"/>
+  <set name="staticReuse" val="true"/>
+  <set name="hitTime" val="2100"/>
+  <set name="skillRadius" val="150"/>
+  <set name="castRange" val="3000"/>
+  <set name="overHit" val="true"/>
+  <set name="SSBoost" val="2.0"/>
+  <set name="skillType" val="MDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="effectRange" val="3500"/>
+  <set name="displayId" val="10781"/>
+  <set name="olyDisabled" val="true"/>
+  <cond msg="" addName="1">
+	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+  <for>
+  <effect name="Root" time="6" val="0" effectType="ROOT" effectPower="66" ignoreP="1" stackOrder="1" stackType="Root"/>
+  </for>
+</skill>
+</list>

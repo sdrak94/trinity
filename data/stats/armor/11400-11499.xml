@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="11400" name="Blue Wolf Gloves - Light Armor Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11401" name="Blue Wolf Gloves - Robe Use">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11402" name="Blue Wolf Tunic">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <add val="377" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11403" name="Blue Wolf Helmet - Heavy Armor Use">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11404" name="Blue Wolf Stockings">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <add val="236" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11405" name="Blue Wolf Breastplate">
+  <for>
+    <add val="166" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11406" name="Stockings of Doom">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <add val="236" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11407" name="Dark Crystal Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11408" name="Dark Crystal Gloves - Heavy Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11409" name="Dark Crystal Gloves - Light Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11410" name="Dark Crystal Gloves - Robe Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11411" name="Dark Crystal Leather Armor">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11412" name="Dark Crystal Robe">
+  <for>
+    <add val="139" order="0x10" stat="pDef"/>
+    <add val="665" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11413" name="Dark Crystal Boots - Heavy Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11414" name="Dark Crystal Boots - Light Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11415" name="Dark Crystal Boots - Robe Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11417" name="Dark Crystal Helmet - Heavy Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11418" name="Dark Crystal Breastplate">
+  <for>
+    <add val="171" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11419" name="Dark Crystal Leggings">
+  <for>
+    <add val="85" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11420" name="Sealed Dark Crystal Gaiters">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11421" name="Sealed Dark Crystal Gloves">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11422" name="Sealed Dark Crystal Leather Armor">
+  <for>
+    <add val="128" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11423" name="Sealed Dark Crystal Robe">
+  <for>
+    <add val="139" order="0x10" stat="pDef"/>
+    <add val="665" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11424" name="Sealed Dark Crystal Boots">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11426" name="Sealed Dark Crystal Helmet - Heavy Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11427" name="Sealed Dark Crystal breastplate">
+  <for>
+    <add val="171" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11428" name="Sealed Dark Crystal Leggings">
+  <for>
+    <add val="80" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11429" name="Sealed Tallum Gloves">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11430" name="Sealed Tallum Leather Armor">
+  <for>
+    <add val="209" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11431" name="Sealed Tallum Boots">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11432" name="Sealed Tallum Tunic">
+  <for>
+    <add val="86" order="0x10" stat="pDef"/>
+    <add val="409" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11433" name="Sealed Tallum Plate Armor">
+  <for>
+    <add val="278" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11434" name="Sealed Tallum Helmet - Heavy Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11435" name="Sealed Tallum Stockings">
+  <for>
+    <add val="53" order="0x10" stat="pDef"/>
+    <add val="256" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11436" name="(Not In Use) Holy Spirit's Cloak">
+  <for>
+    <add val="18" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11437" name="Tallum Gloves - Heavy Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11438" name="Tallum Gloves - Light Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11439" name="Tallum Gloves - Robe Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11440" name="Tallum Leather Armor">
+  <for>
+    <add val="209" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11441" name="Tallum Boots - Heavy Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11442" name="Tallum Boots - Light Armor Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11443" name="Tallum Boots - Robe Use">
+  <for>
+    <add val="46" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11444" name="Tallum Tunic">
+  <for>
+    <add val="86" order="0x10" stat="pDef"/>
+    <add val="409" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11445" name="Tallum Plate Armor">
+  <for>
+    <add val="278" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11446" name="Tallum Helmet - Heavy Armor Use">
+  <for>
+    <add val="69" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11447" name="Tallum Stockings">
+  <for>
+    <add val="53" order="0x10" stat="pDef"/>
+    <add val="256" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11448" name="Majestic Gauntlet - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11449" name="Majestic Gauntlet - Light Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11450" name="Majestic Gauntlet - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11451" name="Majestic Leather Armor">
+  <for>
+    <add val="220" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11452" name="Majestic Robe">
+  <for>
+    <add val="147" order="0x10" stat="pDef"/>
+    <add val="718" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11453" name="Majestic Boots - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11454" name="Majestic Boots - Light Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11455" name="Majestic Boots - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11456" name="Majestic Circlet - Heavy Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11457" name="Majestic Plate Armor">
+  <for>
+    <add val="293" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11458" name="Sealed Majestic Gauntlet">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11459" name="Sealed Majestic Leather Armor">
+  <for>
+    <add val="220" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11460" name="Sealed Majestic Robe">
+  <for>
+    <add val="147" order="0x10" stat="pDef"/>
+    <add val="718" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11461" name="Sealed Majestic Boots">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11462" name="Sealed Majestic Circlet - Heavy Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11463" name="Sealed Majestic Plate Armor">
+  <for>
+    <add val="293" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11464" name="Sealed Armor of Nightmare">
+  <for>
+    <add val="293" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11465" name="Sealed Gauntlet of Nightmare">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11466" name="Sealed Leather Armor of Nightmare">
+  <for>
+    <add val="220" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11467" name="Sealed Nightmare Robe">
+  <for>
+    <add val="147" order="0x10" stat="pDef"/>
+    <add val="718" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11468" name="Sealed Boots of Nightmare">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11470" name="Sealed Helm of Nightmare - Heavy Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11471" name="Armor of Nightmare">
+  <for>
+    <add val="293" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11472" name="Gauntlet of Nightmare - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11473" name="Gauntlet of Nightmare - Light Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11474" name="Gauntlet of Nightmare - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11475" name="Nightmarish Leather Armor">
+  <for>
+    <add val="220" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11476" name="Nightmare Robe">
+  <for>
+    <add val="147" order="0x10" stat="pDef"/>
+    <add val="718" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11477" name="Boots of Nightmare - Heavy Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11478" name="Boots of Nightmare - Light Armor Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11479" name="Boots of Nightmare - Robe Use">
+  <for>
+    <add val="70" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11481" name="Helm of Nightmare - Heavy Armor Use">
+  <for>
+    <add val="73" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11482" name="Great Wolf Oriharukon Armor">
+  <for>
+    <add val="160" order="0x10" stat="pDef"/>
+    <add val="14" order="0x10" stat="mDef"/>
+  </for>
+</item>
+<item id="11483" name="Draconic Leather Gloves (Masterwork)">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.022" order="0x40" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11484" name="Draconic Leather Boots (Masterwork)">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.022" order="0x40" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11485" name="Draconic Leather Armor (Masterwork)">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.022" order="0x40" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11486" name="Draconic Leather Helmet (Masterwork)">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.03" order="0x40" stat="pAtk"/>
+	<basemul val="0.022" order="0x40" stat="pAtkSpd"/>
+  </for>
+</item>
+<item id="11487" name="Major Arcana Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="mAtk"/>
+	<basemul val="0.022" order="0x40" stat="mAtkSpd"/>
+  </for>
+</item>
+<item id="11488" name="Major Arcana Robe">
+  <for>
+    <add val="166" order="0x10" stat="pDef"/>
+    <add val="866" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="mAtk"/>
+	<basemul val="0.022" order="0x40" stat="mAtkSpd"/>
+  </for>
+</item>
+<item id="11489" name="Major Arcana Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="mAtk"/>
+	<basemul val="0.022" order="0x40" stat="mAtkSpd"/>
+  </for>
+</item>
+<item id="11490" name="Major Arcana Circlet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="mAtk"/>
+	<basemul val="0.022" order="0x40" stat="mAtkSpd"/>
+  </for>
+</item>
+<item id="11491" name="Sealed Draconic Leather Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11492" name="Sealed Draconic Leather Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11493" name="Sealed Draconic Leather Armor">
+  <for>
+    <add val="236" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11494" name="Sealed Draconic Leather Helmet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11495" name="Sealed Major Arcana Gloves">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11496" name="Sealed Major Arcana Robe">
+  <for>
+    <add val="205" order="0x10" stat="pDef"/>
+    <add val="866" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11497" name="Sealed Major Arcana Boots">
+  <for>
+    <add val="55" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11498" name="Sealed Major Arcana Circlet">
+  <for>
+    <add val="83" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="11499" name="Sealed Imperial Crusader Gaiters">
+  <for>
+    <add val="121" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+</list>

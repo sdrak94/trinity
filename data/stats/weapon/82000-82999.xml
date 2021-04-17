@@ -1,0 +1,42 @@
+<list> <!-- S84 grade Rare & Epic weapons -->
+<!-- ############################################################################ -->
+                         <!-- epic weapons -->
+<!-- ############################################################################ -->
+<item id="82100" name="God's Blade"><!-- sword -->
+  <for>
+   <set val="533" order="0x08" stat="pAtk"/>
+   <set val="241" order="0x08" stat="mAtk"/>
+   <set val="8" order="0x08" stat="rCrit"/>
+   <set val="325" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <basemul val="0.1" order="0x40" stat="pDef"/>
+   <basemul val="0.1" order="0x40" stat="mDef"/>
+   <basemul val="0.3" order="0x40" stat="maxHp"/>
+   <add val="10" order="0x40" stat="accCombat"/>
+   <basemul val="0.3" order="0x40" stat="pAtk"/>
+   <add val="200" order="0x40" stat="addDmg"/>
+   <add val="100" order="0x40" stat="gainHp"/>
+  </for>
+</item>
+<item id="82101" name="Dragon's Tooth"><!-- dagger -->
+  <for>
+   <set val="291" order="0x08" stat="pAtk"/>
+   <set val="151" order="0x08" stat="mAtk"/>
+   <set val="11" order="0x08" stat="rCrit"/>
+   <add val="-3" order="0x10" stat="accCombat"/>
+   <set val="433" order="0x08" stat="pAtkSpd"/>
+   <enchant val="0" order="0x0C" stat="pAtk"/>
+   <enchant val="0" order="0x0C" stat="mAtk"/>
+   <add val="0.4" order="0x40" stat="cAtk"/>
+   <add val="6" order="0x40" stat="absorbDamSkill"/>
+   <add val="100" order="0x40" stat="cAtkBleed"/>
+   <mul val="1.6" order="0x30" stat="skillPowerBoost">
+	   <using skillid="96"/>
+   </mul>
+   <sub val="0.3" order="0x40" stat="pReuse">
+	   <target abnormal="1"/>
+   </sub>
+  </for>
+  </item>
+</list>

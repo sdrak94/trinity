@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id="10207" name="Enhanced Striped Scale Shirt">
+  <for>
+    <add val="18" order="0x10" stat="pDef"/>
+  </for>
+</item>
+<item id="10208" name="Enhanced Striped Mithril Shirt">
+  <for>
+    <add val="15" order="0x10" stat="pDef"/>
+    <add val="70" order="0x40" stat="maxMp"/>
+  </for>
+</item>
+<item id="10209" name="Enhanced Steel Bracelet">
+  <for>
+    <set val="3" order="0x50" stat="talisman"/>
+  </for>
+</item>
+<item id="10210" name="Enhanced Mithril Bracelet">
+  <for>
+    <add val="120" order="0x40" stat="maxMp"/>
+    <set val="4" order="0x50" stat="talisman"/>
+  </for>
+</item>
+<item id="10211" name="Blessed Ring of Resurrection">
+  <for>
+    <add val="30" order="0x10" stat="mDef"/>
+    <enchant val="0" order="0x0C" stat="mDef"/>
+  </for>
+</item>
+<item id="10214" name="Dynasty Leather Armor - Summoner">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10227" name="Dynasty Platinum Plate">
+  <for>
+    <add val="226" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10228" name="Dynasty Platinum Plate - Royal Guard">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="pDef"/>
+	<mul val="1.2" order="0x30" stat="aggressionProf"/>
+	<add val="25" order="0x40" stat="tankBow"/>
+	<add val="10" order="0x40" stat="tankSpell"/>
+	<add val="10" order="0x40" stat="shieldDefAngle"/>
+	<mul val="1.1" order="0x30" stat="sDef"/>
+	<basemul val="0.35" order="0x40" stat="pAtk">
+	   <using kind="Pole"/>
+	</basemul>
+	<add val="30" order="0x20" stat="rShld">
+	   <using kind="Pole"/>
+	</add>
+	<add val="700" order="0x40" stat="sDef">
+	   <using kind="Pole"/>
+	</add>
+	<add val="1" order="0x40" stat="atkCountMax">
+	   <using kind="Pole"/>
+	</add>
+  </for>
+</item>
+<item id="10229" name="Dynasty Platinum Plate - Champion">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="pDef"/>
+	<add val="40" order="0x40" stat="negateShld"/>
+	<add val="1" order="0x10" stat="CON"/>
+	<mul val="1.09" order="0x50" stat="pAtk"/>
+	<add val="1" order="0x10" stat="CON">
+	  <using kind="Blunt,Big Blunt"/>
+	</add>
+  </for>
+</item>
+<item id="10230" name="Dynasty Platinum Plate - Rival">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="pDef"/>
+	<basemul val="0.1" order="0x40" stat="maxCp"/>
+	<add val="1" order="0x40" stat="chargeMax"/>
+	<add val="0.013" order="0x40" stat="pAtk_charge"/>
+	<add val="50" order="0x40" stat="rCrit">
+	  <using kind="Big Sword,Ancient,Pole"/>
+	</add>
+  </for>
+</item>
+<item id="10231" name="Dynasty Platinum Plate - Kensei">
+  <for>
+    <add val="249" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<basemul val="0.04" order="0x40" stat="pDef"/>
+	<add val="5" order="0x40" stat="accCombat"/>
+	<basemul val="0.11" order="0x40" stat="pAtkSpd"/>
+	<add val="40" order="0x40" stat="pAtkAngle"/>
+	<add val="1" order="0x40" stat="atkCountMax">
+	  <using kind="Dual Sword"/>
+	</add>
+	  <add val="30" order="0x40" stat="pAtkAngle">
+	    <using kind="Dual Sword"/>
+	  </add>
+  </for>
+</item>
+<item id="10232" name="Dynasty Jewel Leather Mail">
+  <for>
+    <add val="170" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10233" name="Dynasty Jewel Leather - Assassin">
+  <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<add order="0x40" stat="rEvas" val="2"/>
+	<add order="0x40" stat="lethalRate" val="1"/>
+	<set order="0x50" stat="blowRate" val="100">
+	   <player behind="true"/>
+	</set>
+	<add order="0x40" stat="backAngle" val="13"/>
+	<add order="0x40" stat="negateAutoTarget" val="25"/>
+	<add order="0x40" stat="cAtk" val="0.1"/>
+  </for>
+</item>
+<item id="10234" name="Dynasty Windswept Leather - Sentinel">
+  <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<add order="0x40" stat="rEvas" val="2"/>
+	<add order="0x80" stat="pAtkRange" val="100">
+	    <using kind="Bow,Crossbow"/>
+	</add>
+	<add order="0x40" stat="negateAtkTarget" val="33"/> 
+    <add order="0x40" stat="accCombat" val="4"/>
+	<add order="0x40" stat="doubleShot" val="5"/>
+	<add order="0x40" stat="runSpd" val="9"/>
+	<add order="0x40" stat="critMax" val="50"/>
+  </for>
+</item>
+<item id="10487" name="Dynasty Neodymium Suit - Jedi">
+  <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<add order="0x40" stat="rEvas" val="2"/>
+	<add val="0.08" order="0x40" stat="forceDam"/>
+	<add val="0.12" order="0x40" stat="negateShld"/>
+	<add val="1" order="0x40" stat="chargeMax"/>
+	<add val="0.013" order="0x40" stat="pAtk_charge"/>
+	<add val="0.006" order="0x40" stat="pAtk_soul"/>
+	<add val="120" order="0x40" stat="pAtkAngle">
+	  <or>
+	  <using slotitem="81101;9"/>
+	  <using slotitem="81102;16"/>
+	  <using slotitem="81108;16"/>
+	  </or>
+	</add>
+	<add val="6" order="0x40" stat="accCombat">
+	  <using slotitem="81101;9"/>
+	</add>
+	<add val="6" order="0x40" stat="rEvas">
+	  <using slotitem="81101;9"/>
+	</add>
+	<add val="2" order="0x40" stat="atkCountMax">
+	  <using slotitem="81102;16"/>
+	</add>
+	<add val="50" order="0x40" stat="pAtkSpd">
+	  <using slotitem="81102;16"/>
+	</add>
+	<sub val="0.1" order="0x50" stat="pDefIgnore">
+	  <using slotitem="81108;16"/>
+	</sub>
+  </for>
+</item>
+<item id="10488" name="Dynasty Jeweled Armor - Warmonger">
+   <for>
+    <add val="187" order="0x10" stat="pDef"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+	<add order="0x40" stat="rEvas" val="2"/>
+	<basemul val="0.08" order="0x40" stat="pAtkSpd"/>
+	<basemul val="0.12" order="0x40" stat="pAtk"/>
+	<add val="3" order="0x40" stat="accCombat"/>
+	<add val="5" order="0x40" stat="absorbDam"/>
+	<mul val="0.5" order="0x50" stat="stunVuln"/>
+  </for>
+</item>
+<item id="10235" name="Dynasty Silver Satin Tunic">
+  <for>
+    <add val="113" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+  </for>
+</item>
+<item id="10236" name="Dynasty Silver Satin Tunic - Celestial">
+  <for>
+    <add val="124" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+    <basemul val="0.04" order="0x40" stat="mDef"/>
+	<add val="0.08" order="0x40" stat="gainHp"/>
+	<add val="0.08" order="0x40" stat="giveHp"/>
+	<add val="1000" order="0x40" stat="maxMp"/>
+	<add val="25" order="0x40" stat="holyRes"/>
+	<add val="50" order="0x40" stat="holyPower"/>
+  </for>
+</item>
+<item id="10237" name="Dynasty Torn Satin Tunic - Soothsayer">
+  <for>
+    <add val="124" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+    <basemul val="0.06" order="0x40" stat="mDef"/>
+	<add val="50" order="0x40" stat="conc"/>
+	<mul val="0.5" order="0x50" stat="derangementVuln"/>
+	<mul val="0.85" order="0x30" stat="MpConsume"/>
+	<add val="4" order="0x40" stat="skillMastery"/>
+  </for>
+</item>
+<item id="10238" name="Dynasty Blue Satin Tunic - Arcane">
+  <for>
+    <add val="124" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+    <basemul val="0.06" order="0x40" stat="mDef"/>
+	<add val="100" order="0x40" stat="mAtkSpdMaxAdd"/>
+	<add val="50" order="0x40" stat="mAtkRange"/>
+	<basemul val="0.1" order="0x40" stat="mAtkSpd"/>
+	<sub val="0.13" order="0x40" stat="mReuse"/>
+  </for>
+</item>
+<item id="10239" name="Dynasty Red Satin Tunic - Hellfire">
+  <for>
+    <add val="124" order="0x10" stat="pDef"/>
+    <add val="592" order="0x40" stat="maxMp"/>
+    <enchant val="0" order="0x0C" stat="pDef"/>
+    <basemul val="0.04" order="0x40" stat="mDef"/>
+	<add val="5" order="0x40" stat="mCritMax"/>
+	<add val="0.25" order="0x40" stat="cAtkMagic"/>
+	<basemul val="0.15" order="0x40" stat="mAtk"/>
+	<add val="20" order="0x40" stat="firePower"/>
+	<add val="20" order="0x40" stat="darkPower"/>
+  </for>
+</item>
+<item id="10240" name="Bird Nest">
+  <for/>
+</item>
+<item id="10241" name="Purple Viking Circlet">
+  <for/>
+</item>
+<item id="10242" name="Golden Viking Circlet">
+  <for/>
+</item>
+<item id="10243" name="Panda Hat">
+  <for/>
+</item>
+<item id="10244" name="White Sheep Hat">
+  <for/>
+</item>
+<item id="10245" name="Black Sheep Hat">
+  <for/>
+</item>
+<item id="10246" name="Frog Hat">
+  <for/>
+</item>
+<item id="10247" name="Fish Hat">
+  <for/>
+</item>
+<item id="10248" name="Straw Hat">
+  <for>
+   <add order="0x40" stat="rEvas" val="5"/>
+   <add order="0x40" stat="runSpd" val="7"/>
+    <add val="3" order="0x40" stat="accCombat"/>
+   <sub order="0x40" stat="atkReuse" val="0.12"/>
+   <add order="0x40" stat="critMax" val="50"/>
+   <add order="0x40" stat="fireRes" val="20"/>
+   <add order="0x40" stat="waterRes" val="20"/>
+   <add order="0x40" stat="windRes" val="20"/>
+   <add order="0x40" stat="earthRes" val="20"/>
+   <basemul val="0.05" order='0x40' stat='pAtkSpd'/>
+  </for>
+</item>
+<item id="10249" name="Chicken Hat">
+  <for/>
+</item>
+<item id="10250" name="Adventurer Hat (Event)">
+  <for/>
+</item>
+<item id="10251" name="Medieval Party Mask">
+  <for/>
+</item>
+<item id="10273" name="Wolf Summoning Bracelet">
+  <for/>
+</item>
+</list>

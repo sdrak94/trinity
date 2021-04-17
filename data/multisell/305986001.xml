@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Newbie Weapon Token -->
+<list>
+        <item id="1">
+                <production id="10474" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+        <item id="2">
+                <production id="10475" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+        <item id="3">
+                <production id="10476" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+        <item id="4">
+                <production id="10477" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+        <item id="5">
+                <production id="10478" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+        <item id="6">
+                <production id="10479" count="1"/>
+                <ingredient id="7832" count="1"/>
+        </item>
+</list>

@@ -1,0 +1,2918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<classes>
+		<class classid="88" name="Duelist">
+			<skill class="0" skillId="3" level="9" name="Power Strike"/>
+			<skill class="0" skillId="56" level="9" name="Power Shot"/>
+			<skill class="0" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="0" skillId="16" level="8" name="Mortal Blow"/>
+			<skill class="0" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="0" skillId="226" level="1" name="Relax"/>
+			<skill class="1" skillId="121" level="1" name="Battle Roar"/>
+			<skill class="1" skillId="212" level="8" name="Fast HP Recovery"/>
+			<skill class="1" skillId="227" level="50" name="Light Armor Mastery"/>
+			<skill class="1" skillId="245" level="15" name="Wild Sweep"/>
+			<skill class="1" skillId="256" level="1" name="Accuracy"/>
+			<skill class="1" skillId="287" level="3" name="Lionheart"/>
+			<skill class="1" skillId="75" level="1" name="Detect Insect Weakness"/>
+			<skill class="1" skillId="100" level="15" name="Stun Attack"/>
+			<skill class="1" skillId="211" level="3" name="Boost HP"/>
+			<skill class="1" skillId="216" level="8" name="Polearm Mastery"/>
+			<skill class="1" skillId="231" level="50" name="Heavy Armor Mastery"/>
+			<skill class="1" skillId="255" level="15" name="Power Smash"/>
+			<skill class="1" skillId="257" level="45" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="1" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="1" skillId="78" level="2" name="War Cry"/>
+			<skill class="2" skillId="9" level="34" name="Sonic Buster"/>
+			<skill class="2" skillId="87" level="1" name="Detect Animal Weakness"/>
+			<skill class="2" skillId="104" level="1" name="Detect Plant Weakness"/>
+			<skill class="2" skillId="190" level="37" name="Fatal Strike"/>
+			<skill class="2" skillId="261" level="22" name="Triple Sonic Slash"/>
+			<skill class="2" skillId="297" level="2" name="Duelist Spirit"/>
+			<skill class="2" skillId="1" level="37" name="Triple Slash"/>
+			<skill class="2" skillId="451" level="2" name="Sonic Move"/>
+			<skill class="2" skillId="6" level="37" name="Sonic Blaster"/>
+			<skill class="2" skillId="8" level="8" name="Sonic Focus"/>
+			<skill class="2" skillId="80" level="1" name="Detect Beast Weakness"/>
+			<skill class="2" skillId="88" level="1" name="Detect Dragon Weakness"/>
+			<skill class="2" skillId="144" level="37" name="Dual Weapon Mastery"/>
+			<skill class="2" skillId="260" level="37" name="Hammer Crush"/>
+			<skill class="2" skillId="290" level="14" name="Final Frenzy"/>
+			<skill class="2" skillId="424" level="3" name="War Frenzy"/>
+			<skill class="2" skillId="5" level="31" name="Double Sonic Slash"/>
+			<skill class="2" skillId="38000" level="1" name="Hidden"/>
+			<skill class="2" skillId="7" level="28" name="Sonic Storm"/>
+			<skill class="88" skillId="329" level="1" name="Health"/>
+			<skill class="88" skillId="37554" level="115" name="Sonic Death"/>
+			<skill class="88" skillId="340" level="1" name="Riposte Stance"/>
+			<skill class="88" skillId="359" level="1" name="Eye of Hunter"/>
+			<skill class="88" skillId="430" level="1" name="Master of Combat"/>
+			<skill class="88" skillId="442" level="1" name="Sonic Barrier"/>
+			<skill class="88" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="88" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="88" skillId="917" level="1" name="Final Secret"/>
+			<skill class="88" skillId="328" level="1" name="Wisdom"/>
+			<skill class="88" skillId="9074" level="1" name="Boost HP" />
+			<skill class="88" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="88" skillId="345" level="1" name="Sonic Rage"/>
+			<skill class="88" skillId="360" level="1" name="Eye of Slayer"/>
+			<skill class="88" skillId="440" level="1" name="Braveheart"/>
+			<skill class="88" skillId="458" level="1" name="Symbol of Energy"/>
+			<skill class="88" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="88" skillId="775" level="1" name="Weapon Blockade"/>
+			<skill class="88" skillId="919" level="1" name="Maximum Sonic Force"/>
+		</class>
+		<class classid="89" name="Warlord">
+			<skill class="0" skillId="16" level="8" name="Mortal Blow" />
+			<skill class="0" skillId="141" level="3" name="Weapon Mastery" />
+			<skill class="0" skillId="226" level="1" name="Relax" />
+			<skill class="0" skillId="3" level="9" name="Power Strike" />
+			<skill class="0" skillId="56" level="9" name="Power Shot" />
+			<skill class="0" skillId="142" level="5" name="Armor Mastery" />
+			<skill class="1" skillId="100" level="15" name="Stun Attack" />
+			<skill class="1" skillId="211" level="10" name="Boost HP" />
+			<skill class="1" skillId="216" level="45" name="Polearm Mastery" />
+			<skill class="1" skillId="231" level="50" name="Heavy Armor Mastery" />
+			<skill class="1" skillId="255" level="15" name="Power Smash" />
+			<skill class="1" skillId="257" level="8" name="Sword/Blunt Weapon Mastery" />
+			<skill class="1" skillId="312" level="20" name="Vicious Stance" />
+			<skill class="1" skillId="78" level="1" name="War Cry" />
+			<skill class="1" skillId="121" level="6" name="Battle Roar" />
+			<skill class="1" skillId="212" level="8" name="Fast HP Recovery" />
+			<skill class="1" skillId="227" level="50" name="Light Armor Mastery" />
+			<skill class="1" skillId="245" level="15" name="Wild Sweep" />
+			<skill class="1" skillId="256" level="1" name="Accuracy" />
+			<skill class="1" skillId="287" level="3" name="Lionheart" />
+			<skill class="1" skillId="75" level="1" name="Detect Insect Weakness" />
+			<skill class="3" skillId="80" level="1" name="Detect Beast Weakness" />
+			<skill class="3" skillId="88" level="1" name="Detect Dragon Weakness" />
+			<skill class="3" skillId="116" level="14" name="Howl" />
+			<skill class="3" skillId="181" level="1" name="Revival" />
+			<skill class="3" skillId="290" level="14" name="Final Frenzy" />
+			<skill class="3" skillId="320" level="10" name="Wrath" />
+			<skill class="3" skillId="422" level="3" name="Polearm Accuracy" />
+			<skill class="3" skillId="452" level="5" name="Shock Stomp" />
+			<skill class="3" skillId="48" level="37" name="Thunder Storm" />
+			<skill class="3" skillId="38034" level="1" name="Hidden" />
+			<skill class="3" skillId="87" level="1" name="Detect Animal Weakness" />
+			<skill class="3" skillId="104" level="1" name="Detect Plant Weakness" />
+			<skill class="3" skillId="130" level="2" name="Thrill Fight" />
+			<skill class="3" skillId="286" level="3" name="Provoke" />
+			<skill class="3" skillId="317" level="5" name="Focus Attack" />
+			<skill class="3" skillId="421" level="5" name="Fell Swoop" />
+			<skill class="3" skillId="424" level="3" name="War Frenzy" />
+			<skill class="3" skillId="36" level="37" name="Whirlwind" />
+			<skill class="3" skillId="920" level="37" name="Power Crush" />
+			<class class="89" skillId="9074" level="1" name="Boost HP" />
+			<skill class="89" skillId="767" level="1" name="Expose Weak Point" />
+			<skill class="89" skillId="4" level="1" name="Dash" />
+			<skill class="89" skillId="917" level="1" name="Final Secret" />
+			<skill class="89" skillId="328" level="1" name="Wisdom" />
+			<skill class="89" skillId="10028" level="115" name="Heavenly Spear" />
+			<skill class="89" skillId="330" level="1" name="Skill Mastery" />
+			<skill class="89" skillId="37502" level="1" name="Heavenly Spears" />
+			<skill class="89" skillId="347" level="1" name="Earthquake" />
+			<skill class="89" skillId="360" level="1" name="Eye of Slayer" />
+			<skill class="89" skillId="430" level="1" name="Master of Combat" />
+			<skill class="89" skillId="457" level="1" name="Symbol of Honor" />
+			<skill class="89" skillId="759" level="1" name="Archer's Will" />
+			<skill class="89" skillId="774" level="1" name="Dread Pool" />
+			<skill class="89" skillId="94" level="1" name="Rage" />
+			<skill class="89" skillId="921" level="1" name="Cursed Pierce" />
+			<skill class="89" skillId="329" level="1" name="Health" />
+			<skill class="89" skillId="14522" level="115" name="Point Dash" />
+			<skill class="89" skillId="339" level="1" name="Parry Stance" />
+			<skill class="89" skillId="359" level="1" name="Eye of Hunter" />
+			<skill class="89" skillId="361" level="1" name="Shock Blast" />
+			<skill class="89" skillId="440" level="1" name="Braveheart" />
+			<skill class="89" skillId="758" level="1" name="Fighter's Will" />
+		</class>
+		<class classid="90" name="Phoenix Knight">
+			<skill class="0" skillId="16" level="8" name="Mortal Blow" />
+			<skill class="0" skillId="141" level="3" name="Weapon Mastery" />
+			<skill class="0" skillId="226" level="1" name="Relax" />
+			<skill class="0" skillId="3" level="9" name="Power Strike" />
+			<skill class="0" skillId="56" level="9" name="Power Shot" />
+			<skill class="0" skillId="142" level="5" name="Armor Mastery" />
+			<skill class="4" skillId="82" level="3" name="Majesty" />
+			<skill class="4" skillId="110" level="2" name="Ultimate Defense" />
+			<skill class="4" skillId="147" level="51" name="Magic Resistance" />
+			<skill class="4" skillId="191" level="6" name="Focus Mind" />
+			<skill class="4" skillId="232" level="52" name="Heavy Armor Mastery" />
+			<skill class="4" skillId="70" level="13" name="Drain Health" />
+			<skill class="4" skillId="92" level="52" name="Shield Stun" />
+			<skill class="4" skillId="112" level="4" name="Deflect Arrow" />
+			<skill class="4" skillId="153" level="4" name="Shield Mastery" />
+			<skill class="4" skillId="217" level="45" name="Sword/Blunt Weapon Mastery" />
+			<skill class="4" skillId="28" level="49" name="Aggression" />
+			<skill class="5" skillId="196" level="1" name="Holy Blade" />
+			<skill class="5" skillId="262" level="37" name="Holy Blessing" />
+			<skill class="5" skillId="318" level="1" name="Aegis Stance" />
+			<skill class="5" skillId="400" level="10" name="Tribunal" />
+			<skill class="5" skillId="404" level="5" name="Mass Shackling" />
+			<skill class="5" skillId="406" level="3" name="Angelic Icon" />
+			<skill class="5" skillId="44" level="3" name="Remedy" />
+			<skill class="5" skillId="916" level="4" name="Shield Deflect Magic" />
+			<skill class="5" skillId="69" level="25" name="Sacrifice" />
+			<skill class="5" skillId="97" level="11" name="Sanctuary" />
+			<skill class="5" skillId="197" level="2" name="Holy Armor" />
+			<skill class="5" skillId="291" level="11" name="Final Fortress" />
+			<skill class="5" skillId="322" level="6" name="Shield Fortress" />
+			<skill class="5" skillId="403" level="10" name="Shackle" />
+			<skill class="5" skillId="405" level="10" name="Banish Undead" />
+			<skill class="5" skillId="18" level="37" name="Aura of Hate" />
+			<skill class="5" skillId="810" level="1" name="Vanguard" />
+			<skill class="5" skillId="49" level="26" name="Holy Strike" />
+			<skill class="5" skillId="38001" level="1" name="Hidden" />
+			<skill class="5" skillId="72" level="3" name="Iron Will" />
+			<class class="90" skillId="9074" level="1" name="Boost HP" />
+			<skill class="90" skillId="784" level="1" name="Spirit of Phoenix " />
+			<skill class="90" skillId="329" level="1" name="Health" />
+			<skill class="90" skillId="912" level="1" name="Summon Imperial Phoenix" />
+			<skill class="90" skillId="341" level="1" name="Touch of Life" />
+			<skill class="90" skillId="9074" level="1" name="Boost HP" />
+			<skill class="90" skillId="353" level="1" name="Shield Slam" />
+			<skill class="90" skillId="11030" level="115" name="Pheonix Real Form" />
+			<skill class="90" skillId="429" level="1" name="Knighthood" />
+			<skill class="90" skillId="454" level="1" name="Symbol of Defense" />
+			<skill class="90" skillId="528" level="1" name="Shield of Faith" />
+			<skill class="90" skillId="759" level="1" name="Archer's Will" />
+			<skill class="90" skillId="45" level="9" name="Divine Heal" />
+			<skill class="90" skillId="766" level="1" name="Sixth Sense" />
+			<skill class="90" skillId="328" level="1" name="Wisdom" />
+			<skill class="90" skillId="785" level="1" name="Flame Icon" />
+			<skill class="90" skillId="335" level="1" name="Fortitude" />
+			<skill class="90" skillId="913" level="1" name="Deflect Magic" />
+			<skill class="90" skillId="350" level="1" name="Physical Mirror" />
+			<skill class="90" skillId="9083" level="1" name="Nerf PAtk" />
+			<skill class="90" skillId="368" level="1" name="Vengeance" />
+			<skill class="90" skillId="438" level="1" name="Soul of the Phoenix" />
+			<skill class="90" skillId="527" level="1" name="Iron Shield" />
+			<skill class="90" skillId="758" level="1" name="Fighter's Will" />
+			<skill class="90" skillId="760" level="1" name="Anti-Magic Armor" />
+			<skill class="90" skillId="107" level="9" name="Holy Aura" />
+		</class>
+		<class classid="91" name="Hell Knight">
+			<skill class="0" skillId="16" level="8" name="Mortal Blow" />
+			<skill class="0" skillId="141" level="3" name="Weapon Mastery" />
+			<skill class="0" skillId="226" level="1" name="Relax" />
+			<skill class="0" skillId="3" level="9" name="Power Strike" />
+			<skill class="0" skillId="56" level="9" name="Power Shot" />
+			<skill class="0" skillId="142" level="5" name="Armor Mastery" />
+			<skill class="4" skillId="82" level="3" name="Majesty" />
+			<skill class="4" skillId="110" level="2" name="Ultimate Defense" />
+			<skill class="4" skillId="147" level="51" name="Magic Resistance" />
+			<skill class="4" skillId="191" level="6" name="Focus Mind" />
+			<skill class="4" skillId="232" level="52" name="Heavy Armor Mastery" />
+			<skill class="4" skillId="70" level="53" name="Drain Health" />
+			<skill class="4" skillId="92" level="52" name="Shield Stun" />
+			<skill class="4" skillId="112" level="4" name="Deflect Arrow" />
+			<skill class="4" skillId="153" level="4" name="Shield Mastery" />
+			<skill class="4" skillId="217" level="45" name="Sword/Blunt Weapon Mastery" />
+			<skill class="4" skillId="28" level="49" name="Aggression" />
+			<skill class="6" skillId="103" level="4" name="Corpse Plague" />
+			<skill class="6" skillId="283" level="7" name="Summon Dark Panther" />
+			<skill class="6" skillId="322" level="6" name="Shield Fortress" />
+			<skill class="6" skillId="403" level="10" name="Shackle" />
+			<skill class="6" skillId="811" level="1" name="Vanguard" />
+			<skill class="6" skillId="38002" level="1" name="Hidden" />
+			<skill class="6" skillId="45" level="9" name="Divine Heal" />
+			<skill class="6" skillId="65" level="13" name="Horror" />
+			<skill class="6" skillId="86" level="3" name="Reflect Damage" />
+			<skill class="6" skillId="127" level="14" name="Hamstring" />
+			<skill class="6" skillId="291" level="11" name="Final Fortress" />
+			<skill class="6" skillId="401" level="10" name="Judgment" />
+			<skill class="6" skillId="450" level="10" name="Banish Seraph" />
+			<skill class="6" skillId="916" level="4" name="Shield Deflect Magic" />
+			<skill class="6" skillId="18" level="37" name="Aura of Hate" />
+			<skill class="6" skillId="46" level="15" name="Life Scavenge" />
+			<skill class="6" skillId="72" level="3" name="Iron Will" />
+			<class class="91" skillId="9074" level="1" name="Boost HP" />
+			<skill class="91" skillId="11029" level="115" name="King of Beasts" />
+			<skill class="91" skillId="368" level="1" name="Vengeance" />
+			<skill class="91" skillId="439" level="1" name="Shield of Revenge" />
+			<skill class="91" skillId="527" level="1" name="Iron Shield" />
+			<skill class="91" skillId="758" level="1" name="Fighter's Will" />
+			<skill class="91" skillId="760" level="1" name="Anti-Magic Armor" />
+			<skill class="91" skillId="762" level="1" name="Insane Crusher" />
+			<skill class="91" skillId="329" level="1" name="Health" />
+			<skill class="91" skillId="766" level="1" name="Sixth Sense" />
+			<skill class="91" skillId="342" level="1" name="Touch of Death" />
+			<skill class="91" skillId="9074" level="1" name="Boost HP" />
+			<skill class="91" skillId="353" level="1" name="Shield Slam" />
+			<skill class="91" skillId="429" level="1" name="Knighthood" />
+			<skill class="91" skillId="454" level="1" name="Symbol of Defense" />
+			<skill class="91" skillId="528" level="1" name="Shield of Faith" />
+			<skill class="91" skillId="759" level="1" name="Archer's Will" />
+			<skill class="91" skillId="761" level="1" name="Seed of Revenge" />
+			<skill class="91" skillId="328" level="1" name="Wisdom" />
+			<skill class="91" skillId="763" level="1" name="Hell Screem" />
+			<skill class="91" skillId="335" level="1" name="Fortitude" />
+			<skill class="91" skillId="913" level="1" name="Deflect Magic" />
+			<skill class="91" skillId="350" level="1" name="Physical Mirror" />
+		</class>
+		<class classid="92" name="Sagitarius">
+			<skill class="0" skillId="16" level="24" name="Mortal Blow" />
+			<skill class="0" skillId="141" level="3" name="Weapon Mastery" />
+			<skill class="0" skillId="226" level="1" name="Relax" />
+			<skill class="0" skillId="3" level="9" name="Power Strike" />
+			<skill class="0" skillId="56" level="24" name="Power Shot" />
+			<skill class="0" skillId="142" level="5" name="Armor Mastery" />
+			<skill class="7" skillId="256" level="1" name="Accuracy" />
+			<skill class="7" skillId="96" level="2" name="Bleed" />
+			<skill class="7" skillId="101" level="40" name="Stunning Shot" />
+			<skill class="7" skillId="113" level="2" name="Long Shot" />
+			<skill class="7" skillId="168" level="1" name="Boost Attack Speed" />
+			<skill class="7" skillId="171" level="8" name="Esprit" />
+			<skill class="7" skillId="198" level="1" name="Boost Evasion" />
+			<skill class="7" skillId="209" level="8" name="Dagger Mastery" />
+			<skill class="7" skillId="233" level="47" name="Light Armor Mastery" />
+			<skill class="7" skillId="27" level="5" name="Unlock" />
+			<skill class="7" skillId="312" level="20" name="Vicious Stance" />
+			<skill class="7" skillId="99" level="2" name="Rapid Shot" />
+			<skill class="7" skillId="111" level="1" name="Ultimate Evasion" />
+			<skill class="7" skillId="137" level="1" name="Critical Chance" />
+			<skill class="7" skillId="169" level="2" name="Quick Step" />
+			<skill class="7" skillId="193" level="2" name="Critical Power" />
+			<skill class="7" skillId="208" level="52" name="Bow Mastery" />
+			<skill class="7" skillId="225" level="3" name="Acrobatic Move" />
+			<skill class="7" skillId="4" level="1" name="Dash" />
+			<skill class="9" skillId="19" level="37" name="Double Shot" />
+			<skill class="9" skillId="131" level="3" name="Hawk Eye" />
+			<skill class="9" skillId="415" level="3" name="Spirit of Sagittarius" />
+			<skill class="9" skillId="417" level="5" name="Pain of Sagittarius" />
+			<skill class="9" skillId="38003" level="1" name="Hidden" />
+			<skill class="9" skillId="24" level="31" name="Burst Shot" />
+			<skill class="9" skillId="313" level="8" name="Snipe" />
+			<skill class="9" skillId="416" level="3" name="Blessing of Sagittarius" />
+			<skill class="9" skillId="933" level="1" name="Detection" />
+			<class class="92" skillId="9073" level="1" name="Boost HP" />
+			<skill class="92" skillId="459" level="1" name="Symbol of the Sniper" />
+			<skill class="92" skillId="535" level="1" name="Counter Mind" />
+			<skill class="92" skillId="759" level="1" name="Archer's Will" />
+			<skill class="92" skillId="924" level="1" name="Seven Arrow" />
+			<skill class="92" skillId="9073" level="1" name="Boost HP" />
+			<skill class="92" skillId="330" level="1" name="Skill Mastery" />
+			<skill class="92" skillId="343" level="1" name="Lethal Shot" />
+			<skill class="92" skillId="431" level="1" name="Archery" />
+			<skill class="92" skillId="534" level="1" name="Counter Dash" />
+			<skill class="92" skillId="758" level="1" name="Fighter's Will" />
+			<skill class="92" skillId="771" level="1" name="Flame Hawk" />
+			<skill class="92" skillId="946" level="1" name="Silent Mind" />
+			<skill class="92" skillId="9078" level="115" name="Seven Flame Hawks" />
+			<skill class="92" skillId="328" level="1" name="Wisdom" />
+			<skill class="92" skillId="334" level="1" name="Focus Skill Mastery" />
+			<skill class="92" skillId="354" level="1" name="Hamstring Shot" />
+		</class>
+		<class classid="93" name="Adventurer">
+			<skill class="0" skillId="16" level="24" name="MortalBlow" />
+			<skill class="0" skillId="141" level="3" name="WeaponMastery" />
+			<skill class="0" skillId="226" level="1" name="Relax" />
+			<skill class="0" skillId="3" level="9" name="PowerStrike" />
+			<skill class="0" skillId="56" level="24" name="PowerShot" />
+			<skill class="0" skillId="142" level="5" name="ArmorMastery" />
+			<skill class="7" skillId="256" level="1" name="Accuracy" />
+			<skill class="7" skillId="96" level="6" name="Bleed" />
+			<skill class="7" skillId="101" level="3" name="StunningShot" />
+			<skill class="7" skillId="113" level="1" name="LongShot" />
+			<skill class="7" skillId="168" level="3" name="BoostAttackSpeed" />
+			<skill class="7" skillId="171" level="8" name="Esprit" />
+			<skill class="7" skillId="198" level="3" name="BoostEvasion" />
+			<skill class="7" skillId="209" level="45" name="DaggerMastery" />
+			<skill class="7" skillId="233" level="47" name="LightArmorMastery" />
+			<skill class="7" skillId="27" level="14" name="Unlock" />
+			<skill class="7" skillId="312" level="20" name="ViciousStance" />
+			<skill class="7" skillId="99" level="1" name="RapidShot" />
+			<skill class="7" skillId="111" level="2" name="UltimateEvasion" />
+			<skill class="7" skillId="137" level="3" name="CriticalChance" />
+			<skill class="7" skillId="169" level="2" name="QuickStep" />
+			<skill class="7" skillId="193" level="6" name="CriticalPower" />
+			<skill class="7" skillId="208" level="15" name="BowMastery" />
+			<skill class="7" skillId="225" level="3" name="AcrobaticMove" />
+			<skill class="7" skillId="4" level="2" name="Dash" />
+			<skill class="8" skillId="11" level="12" name="Trick" />
+			<skill class="8" skillId="30" level="37" name="Backstab" />
+			<skill class="8" skillId="60" level="1" name="FakeDeath" />
+			<skill class="8" skillId="221" level="1" name="SilentMove" />
+			<skill class="8" skillId="409" level="10" name="CriticalBlow" />
+			<skill class="8" skillId="412" level="10" name="SandBomb" />
+			<skill class="8" skillId="623" level="1" name="FindTrap" />
+			<skill class="8" skillId="38004" level="1" name="Hidden" />
+			<skill class="8" skillId="12" level="14" name="Switch" />
+			<skill class="8" skillId="51" level="1" name="Lure" />
+			<skill class="8" skillId="106" level="14" name="Veil" />
+			<skill class="8" skillId="263" level="37" name="DeadlyBlow" />
+			<skill class="8" skillId="411" level="3" name="Stealth" />
+			<skill class="8" skillId="453" level="1" name="EscapeShackle" />
+			<skill class="8" skillId="624" level="1" name="RemoveTrap" />
+			<class class="93" skillId="9073" level="1" name="Boost HP" />
+			<skill class="93" skillId="768" level="1" name="ExcitingAdventure" />
+			<skill class="93" skillId="328" level="1" name="Wisdom" />
+			<skill class="93" skillId="821" level="1" name="ShadowStep" />
+			<skill class="93" skillId="334" level="1" name="FocusSkillMastery" />
+			<skill class="93" skillId="923" level="1" name="DualDaggerMastery" />
+			<skill class="93" skillId="356" level="1" name="FocusChance" />
+			<skill class="93" skillId="9073" level="1" name="BoostHP" />
+			<skill class="93" skillId="358" level="1" name="Bluff" />
+			<skill class="93" skillId="37510" level="115" name="ThrowingKnife" />
+			<skill class="93" skillId="445" level="1" name="Mirage" />
+			<skill class="93" skillId="531" level="1" name="CriticalWound" />
+			<skill class="93" skillId="759" level="1" name="Archer'sWill" />
+			<skill class="93" skillId="767" level="1" name="ExposeWeakPoint" />
+			<skill class="93" skillId="820" level="1" name="EvasionHaste" />
+			<skill class="93" skillId="330" level="1" name="SkillMastery" />
+			<skill class="93" skillId="922" level="1" name="Hide" />
+			<skill class="93" skillId="344" level="1" name="LethalBlow" />
+			<skill class="93" skillId="928" level="1" name="DualBlow" />
+			<skill class="93" skillId="357" level="1" name="FocusPower" />
+			<skill class="93" skillId="10051" level="115" name="Waylay" />
+			<skill class="93" skillId="432" level="1" name="Assassination" />
+			<skill class="93" skillId="460" level="1" name="SymboloftheAssassin" />
+			<skill class="93" skillId="758" level="1" name="Fighter'sWill" />
+			<skill class="93" skillId="766" level="1" name="SixthSense" />
+		</class> 
+		<class classid="94" name="Archmage">
+			<skill class="10" skillId="146" level="45" name="Anti Magic" />
+			<skill class="10" skillId="244" level="3" name="Armor Mastery" />
+			<skill class="10" skillId="1015" level="3" name="Battle Heal" />
+			<skill class="10" skillId="118" level="1" name="Magician's Movement" />
+			<skill class="10" skillId="163" level="1" name="Spellcraft" />
+			<skill class="10" skillId="249" level="42" name="Weapon Mastery" />
+			<skill class="11" skillId="228" level="3" name="Fast Spell Casting" />
+			<skill class="11" skillId="1069" level="42" name="Sleep" />
+			<skill class="11" skillId="1126" level="6" name="Servitor Recharge" />
+			<skill class="11" skillId="1151" level="2" name="Corpse Life Drain" />
+			<skill class="11" skillId="1160" level="15" name="Slow" />
+			<skill class="11" skillId="1167" level="2" name="Poisonous Cloud" />
+			<skill class="11" skillId="1222" level="1" name="Curse Chaos" />
+			<skill class="11" skillId="212" level="6" name="Fast HP Recovery" />
+			<skill class="11" skillId="234" level="41" name="Robe Mastery" />
+			<skill class="11" skillId="1083" level="17" name="Surrender To Fire" />
+			<skill class="11" skillId="1127" level="12" name="Servitor Heal" />
+			<skill class="11" skillId="1157" level="1" name="Body To Mind" />
+			<skill class="11" skillId="1164" level="5" name="Curse: Weakness" />
+			<skill class="11" skillId="1168" level="3" name="Curse: Poison" />
+			<skill class="11" skillId="164" level="3" name="Quick Recycle" />
+			<skill class="12" skillId="1072" level="5" name="Sleeping Cloud" />
+			<skill class="12" skillId="38005" level="1" name="Hidden" />
+			<skill class="12" skillId="1078" level="6" name="Concentration" />
+			<skill class="12" skillId="1171" level="19" name="Blazing Circle" />
+			<skill class="12" skillId="1231" level="28" name="Aura Flare" />
+			<skill class="12" skillId="1233" level="4" name="Decay" />
+			<skill class="12" skillId="1285" level="1" name="Seed of Fire" />
+			<skill class="12" skillId="1289" level="1" name="Inferno" />
+			<skill class="12" skillId="1296" level="9" name="Rain of Fire" />
+			<skill class="12" skillId="1056" level="12" name="Cancellation" />
+			<skill class="12" skillId="1417" level="5" name="Aura Flash" />
+			<skill class="12" skillId="1074" level="14" name="Surrender To Wind" />
+			<skill class="12" skillId="1169" level="14" name="Curse Fear" />
+			<skill class="12" skillId="1230" level="28" name="Prominence" />
+			<skill class="12" skillId="1232" level="3" name="Blazing Skin" />
+			<skill class="12" skillId="1275" level="14" name="Aura Bolt " />
+			<skill class="12" skillId="1288" level="1" name="Aura Symphony" />
+			<skill class="12" skillId="1292" level="1" name="Elemental Assault" />
+			<skill class="12" skillId="1040" level="1" name="Shield" />
+			<skill class="12" skillId="1411" level="1" name="Mystic Immunity" />
+			<class class="94" skillId="9073" level="1" name="Boost HP" />
+			<skill class="94" skillId="9073" level="1" name="Boost HP" />
+			<skill class="94" skillId="331" level="1" name="Skill Mastery" />
+			<skill class="94" skillId="433" level="1" name="Arcane Roar" />
+			<skill class="94" skillId="945" level="1" name="Magician's Will" />
+			<skill class="94" skillId="1339" level="1" name="Fire Vortex" />
+			<skill class="94" skillId="1451" level="1" name="Fire Vortex Buster" />
+			<skill class="94" skillId="1467" level="1" name="Meteor" />
+			<skill class="94" skillId="1532" level="1" name="Enlightenment-Wizard" />
+			<skill class="94" skillId="10029" level="115" name="The Fire Within" />
+			<skill class="94" skillId="328" level="1" name="Wisdom" />
+			<skill class="94" skillId="337" level="1" name="Arcane Power" />
+			<skill class="94" skillId="925" level="1" name="Sigil Mastery" />
+			<skill class="94" skillId="1338" level="1" name="Arcane Chaos" />
+			<skill class="94" skillId="1419" level="1" name="Volcano" />
+			<skill class="94" skillId="1452" level="1" name="Count of Fire" />
+			<skill class="94" skillId="1492" level="1" name="Flame Armor" />
+		</class>
+		<class classid="95" name="Soultaker">
+			<skill class="10" skillId="146" level="45" name="Anti Magic" />
+			<skill class="10" skillId="244" level="3" name="Armor Mastery" />
+			<skill class="10" skillId="1015" level="3" name="Battle Heal" />
+			<skill class="10" skillId="118" level="1" name="Magician'sMovement" />
+			<skill class="10" skillId="163" level="1" name="Spellcraft" />
+			<skill class="10" skillId="249" level="42" name="Weapon Mastery" />
+			<skill class="11" skillId="228" level="3" name="Fast Spell Casting" />
+			<skill class="11" skillId="1069" level="42" name="Sleep" />
+			<skill class="11" skillId="1126" level="6" name="ServitorRecharge" />
+			<skill class="11" skillId="1151" level="16" name="CorpseLifeDrain" />
+			<skill class="11" skillId="1160" level="1" name="Slow" />
+			<skill class="11" skillId="1167" level="6" name="PoisonousCloud" />
+			<skill class="11" skillId="1222" level="15" name="CurseChaos" />
+			<skill class="11" skillId="212" level="6" name="FastHPRecovery" />
+			<skill class="11" skillId="234" level="41" name="RobeMastery" />
+			<skill class="11" skillId="1083" level="3" name="SurrenderToFire" />
+			<skill class="11" skillId="1127" level="12" name="ServitorHeal" />
+			<skill class="11" skillId="1157" level="5" name="BodyToMind" />
+			<skill class="11" skillId="1164" level="19" name="Curse Weakness" />
+			<skill class="11" skillId="1168" level="7" name="Curse Poison" />
+			<skill class="11" skillId="164" level="3" name="Quick Recycle" />
+			<skill class="13" skillId="1129" level="7" name="Summon Reanimated Man" />
+			<skill class="13" skillId="38006" level="1" name="Hidden" />
+			<skill class="13" skillId="1154" level="6" name="Summon Corrupted Man" />
+			<skill class="13" skillId="1156" level="13" name="Forget" />
+			<skill class="13" skillId="1163" level="14" name="Curse Discord" />
+			<skill class="13" skillId="1170" level="13" name="Anchor" />
+			<skill class="13" skillId="1262" level="5" name="Transfer Pain" />
+			<skill class="13" skillId="1269" level="9" name="Curse Disease" />
+			<skill class="13" skillId="1334" level="7" name="Summon Cursed Man" />
+			<skill class="13" skillId="1064" level="14" name="Silence" />
+			<skill class="13" skillId="1382" level="5" name="Mass Gloom" />
+			<skill class="13" skillId="1148" level="13" name="Death Spike" />
+			<skill class="13" skillId="1155" level="15" name="Corpse Burst" />
+			<skill class="13" skillId="1159" level="22" name="Curse Death Link" />
+			<skill class="13" skillId="1169" level="14" name="Curse Fear" />
+			<skill class="13" skillId="1234" level="28" name="Vampiric Claw" />
+			<skill class="13" skillId="1263" level="13" name="Curse Gloom" />
+			<skill class="13" skillId="1298" level="14" name="Mass Slow" />
+			<skill class="13" skillId="1040" level="1" name="Shield" />
+			<skill class="13" skillId="1381" level="5" name="Mass Fear" />
+			<class class="95" skillId="9073" level="1" name="Boost HP" />
+			<skill class="95" skillId="1423" level="1" name="Gehenna" />
+			<skill class="95" skillId="1495" level="1" name="Vampiric Mist" />
+			<skill class="95" skillId="329" level="1" name="Health" />
+			<skill class="95" skillId="1541" level="1" name="Curse of Desparion" />
+			<skill class="95" skillId="337" level="1" name="Arcane Power" />
+			<skill class="95" skillId="10072" level="115" name="Death Pool" />
+			<skill class="95" skillId="925" level="1" name="Sigil Mastery" />
+			<skill class="95" skillId="1144" level="2" name="Servitor WindWalk" />
+			<skill class="95" skillId="1337" level="1" name="Curse of Abyss" />
+			<skill class="95" skillId="1344" level="1" name="Mass Warrior Bane" />
+			<skill class="95" skillId="1422" level="1" name="Day of Doom" />
+			<skill class="95" skillId="1467" level="1" name="Meteor" />
+			<skill class="95" skillId="328" level="1" name="Wisdom" />
+			<skill class="95" skillId="1532" level="1" name="Enlightenment-Wizard" />
+			<skill class="95" skillId="331" level="1" name="Skill Mastery" />
+			<skill class="95" skillId="9073" level="1" name="Boost HP" />
+			<skill class="95" skillId="434" level="1" name="Necromancy" />
+			<skill class="95" skillId="945" level="1" name="Magician's Will" />
+			<skill class="95" skillId="1336" level="1" name="Curse of Doom" />
+			<skill class="95" skillId="1343" level="1" name="Dark Vortex" />
+			<skill class="95" skillId="1345" level="1" name="Mass Mage Bane" />
+		</class>
+		<class classid="96" name="Arcana Lord">
+			<skill class="10" skillId="146" level="45" name="Anti Magic" />
+			<skill class="10" skillId="244" level="3" name="Armor Mastery" />
+			<skill class="10" skillId="1015" level="3" name="Battle Heal" />
+			<skill class="10" skillId="118" level="1" name="Magician's Movement" />
+			<skill class="10" skillId="163" level="1" name="Spellcraft" />
+			<skill class="10" skillId="249" level="42" name="Weapon Mastery" />
+			<skill class="11" skillId="228" level="3" name="Fast Spell Casting" />
+			<skill class="11" skillId="1069" level="9" name="Sleep" />
+			<skill class="11" skillId="1126" level="34" name="Servitor Recharge" />
+			<skill class="11" skillId="1151" level="2" name="Corpse Life Drain" />
+			<skill class="11" skillId="1160" level="1" name="Slow" />
+			<skill class="11" skillId="1167" level="2" name="Poisonous Cloud" />
+			<skill class="11" skillId="1222" level="1" name="Curse Chaos" />
+			<skill class="11" skillId="212" level="6" name="Fast HP Recovery" />
+			<skill class="11" skillId="234" level="8" name="Robe Mastery" />
+			<skill class="11" skillId="1083" level="3" name="Surrender To Fire" />
+			<skill class="11" skillId="1127" level="45" name="Servitor Heal" />
+			<skill class="11" skillId="1157" level="1" name="Body To Mind" />
+			<skill class="11" skillId="1164" level="5" name="Curse: Weakness" />
+			<skill class="11" skillId="1168" level="3" name="Curse: Poison" />
+			<skill class="11" skillId="164" level="2" name="Quick Recycle" />
+			<skill class="14" skillId="1262" level="5" name="Transfer Pain" />
+			<skill class="14" skillId="1299" level="2" name="Servitor Empowerment" />
+			<skill class="14" skillId="1301" level="1" name="Servitor Blessing" />
+			<skill class="14" skillId="1380" level="10" name="Betray" />
+			<skill class="14" skillId="1386" level="10" name="Arcane Disruption" />
+			<skill class="14" skillId="143" level="2" name="Cubic Mastery" />
+			<skill class="14" skillId="1279" level="9" name="Summon Binding Cubic" />
+			<skill class="14" skillId="1300" level="3" name="Servitor Cure" />
+			<skill class="14" skillId="1328" level="8" name="Mass Summon Storm Cubic" />
+			<skill class="14" skillId="1383" level="5" name="Mass Surrender to Fire" />
+			<skill class="14" skillId="38007" level="1" name="Hidedn" />
+			<skill class="14" skillId="10" level="8" name="Summon Storm Cubic" />
+			<class class="96" skillId="9073" level="1" name="Boost HP" />
+			<skill class="96" skillId="1125" level="1" name="Pet res" />
+			<skill class="96" skillId="222" level="1" name="Fury Fists" />
+			<skill class="96" skillId="1346" level="1" name="Warrior Servitor" />
+			<skill class="96" skillId="279" level="5" name="Lightning Strike" />
+			<skill class="96" skillId="1350" level="1" name="Warrior Bane" />
+			<skill class="96" skillId="281" level="37" name="Soul Breaker" />
+			<skill class="96" skillId="1406" level="1" name="Summon Feline King" />
+			<skill class="96" skillId="328" level="1" name="Wisdom" />
+			<skill class="96" skillId="1478" level="1" name="Protection Instict" />
+			<skill class="96" skillId="346" level="1" name="Raging Force" />
+			<skill class="96" skillId="4" level="2" name="Dash" />
+			<skill class="96" skillId="1497" level="1" name="Excessive Loyalty" />
+			<skill class="96" skillId="435" level="1" name="Summon Lore" />
+			<skill class="96" skillId="78" level="1" name="War Cry" />
+			<skill class="96" skillId="9073" level="1" name="Boost HP" />
+			<skill class="96" skillId="781" level="1" name="Summon Smart Cubic" />
+			<skill class="96" skillId="137" level="3" name="Critical Chance" />
+			<skill class="96" skillId="949" level="1" name="Onslaught of Pa'agrio" />
+			<skill class="96" skillId="210" level="45" name="Fist Weapon Mastery" />
+			<skill class="96" skillId="1306" level="6" name="Ritual of Life" />
+			<skill class="96" skillId="227" level="45" name="Light Armor Mastery" />
+			<skill class="96" skillId="1349" level="1" name="Final Servitor" />
+			<skill class="96" skillId="280" level="37" name="Burning Fist" />
+			<skill class="96" skillId="1351" level="1" name="Mage Bane" />
+			<skill class="96" skillId="319" level="2" name="Agile Movement" />
+			<skill class="96" skillId="1424" level="1" name="Anti-Summoning Field" />
+			<skill class="96" skillId="338" level="1" name="Arcane Agility" />
+			<skill class="96" skillId="1496" level="1" name="Servitor Barrier" />
+			<skill class="96" skillId="420" level="2" name="Zealot" />
+			<skill class="96" skillId="35" level="28" name="Force Storm" />
+			<skill class="96" skillId="1498" level="1" name="Mutual Response" />
+			<skill class="96" skillId="758" level="1" name="Fighter's Will" />
+			<skill class="96" skillId="83" level="1" name="Wolf Spirit Totem" />
+			<skill class="96" skillId="37508" level="115" name="Final Transformation" />
+			<skill class="96" skillId="945" level="1" name="Magician's Will" />
+			<skill class="96" skillId="168" level="3" name="Boost Attack Speed" />
+		</class>
+		<class classid="97" name="Cardinal">
+			<skill class="10" skillId="118" level="1" name="Magician's Movement" />
+			<skill class="10" skillId="163" level="1" name="Spellcraft" />
+			<skill class="10" skillId="249" level="42" name="Weapon Mastery" />
+			<skill class="10" skillId="146" level="45" name="Anti Magic" />
+			<skill class="10" skillId="244" level="3" name="Armor Mastery" />
+			<skill class="10" skillId="1015" level="15" name="Battle Heal" />
+			<skill class="15" skillId="164" level="3" name="Quick Recycle" />
+			<skill class="15" skillId="228" level="3" name="Fast Spell Casting" />
+			<skill class="15" skillId="212" level="6" name="Fast HP Recovery" />
+			<skill class="15" skillId="236" level="41" name="Light Armor Mastery" />
+			<skill class="16" skillId="1012" level="3" name="Cure Poison" />
+			<skill class="16" skillId="1401" level="11" name="Major Heal" />
+			<skill class="16" skillId="1204" level="2" name="Wind Walk" />
+			<skill class="16" skillId="1018" level="3" name="Purify" />
+			<skill class="16" skillId="1418" level="1" name="Celestial Shield" />
+			<skill class="16" skillId="1218" level="33" name="Greater Battle Heal" />
+			<skill class="16" skillId="1028" level="19" name="Might of Heaven" />
+			<skill class="16" skillId="1520" level="1" name="Inquisitor" />
+			<skill class="16" skillId="1254" level="6" name="Mass Resurrection" />
+			<skill class="16" skillId="1040" level="2" name="Shield" />
+			<skill class="16" skillId="1271" level="1" name="Benediction" />
+			<skill class="16" skillId="1049" level="14" name="Requiem" />
+			<skill class="16" skillId="1311" level="6" name="Body of Avatar" />
+			<skill class="16" skillId="1069" level="42" name="Sleep" />
+			<skill class="16" skillId="1395" level="10" name="Erase" />
+			<skill class="16" skillId="1078" level="2" name="Concentration" />
+			<skill class="16" skillId="1398" level="10" name="Mana Burn" />
+			<skill class="16" skillId="1177" level="5" name="Wind Strike" />
+			<skill class="16" skillId="235" level="41" name="Robe Mastery" />
+			<skill class="16" skillId="1400" level="10" name="Turn Undead" />
+			<skill class="16" skillId="1201" level="9" name="Dryad Root" />
+			<skill class="16" skillId="1016" level="9" name="Resurrection" />
+			<skill class="16" skillId="1402" level="5" name="Major Group Heal" />
+			<skill class="16" skillId="1217" level="33" name="Greater Heal" />
+			<skill class="16" skillId="1020" level="27" name="Vitalize" />
+			<skill class="16" skillId="1430" level="5" name="Invocation" />
+			<skill class="16" skillId="1219" level="33" name="Greater Group Heal" />
+			<skill class="16" skillId="1034" level="13" name="Repose" />
+			<skill class="16" skillId="38008" level="1" name="Hidden" />
+			<skill class="16" skillId="1258" level="4" name="Restore Life" />
+			<skill class="16" skillId="1042" level="12" name="Hold Undead" />
+			<skill class="16" skillId="1307" level="3" name="Prayer" />
+			<skill class="16" skillId="1062" level="1" name="Berserket Spirit" />
+			<skill class="16" skillId="1394" level="10" name="Trance" />
+			<skill class="16" skillId="1075" level="15" name="Peace" />
+			<skill class="16" skillId="1396" level="10" name="Magical Backfire" />
+			<skill class="16" skillId="1085" level="2" name="Acumen" />
+			<skill class="16" skillId="1399" level="5" name="Mana Storm" />
+			<skill class="16" skillId="1191" level="1" name="Resist Fire" />
+			<class class="97" skillId="9073" level="1" name="Boost HP" />
+			<skill class="97" skillId="1409" level="1" name="Cleanse" />
+			<skill class="97" skillId="1425" level="1" name="Purification Field" />
+			<skill class="97" skillId="1459" level="1" name="Divine Power" />
+			<skill class="97" skillId="328" level="1" name="Wisdom" />
+			<skill class="97" skillId="1533" level="1" name="Enlightenment-Healer" />
+			<skill class="97" skillId="331" level="1" name="Skill Mastery" />
+			<skill class="97" skillId="9073" level="1" name="Boost HP" />
+			<skill class="97" skillId="436" level="1" name="Divine Lore" />
+			<skill class="97" skillId="945" level="1" name="Magician's Will" />
+			<skill class="97" skillId="1353" level="1" name="Divine Protection" />
+			<skill class="97" skillId="1361" level="1" name="Mass Block Wind Walk" />
+			<skill class="97" skillId="1410" level="1" name="Salvation" />
+			<skill class="97" skillId="1426" level="1" name="Miracle" />
+			<skill class="97" skillId="1505" level="1" name="Sublime Self-Sacrifice" />
+			<skill class="97" skillId="329" level="1" name="Health" />
+			<skill class="97" skillId="1540" level="1" name="Turn Stone" />
+			<skill class="97" skillId="336" level="1" name="Arcane Wisdom" />
+			<skill class="97" skillId="10083" level="115" name="Heaven's Call" />
+			<skill class="97" skillId="926" level="1" name="Sigil Mastery" />
+			<skill class="97" skillId="1335" level="1" name="Balance Life" />
+			<skill class="97" skillId="1360" level="1" name="Mass Block Shield" />
+		</class>
+		<class classid="98" name="Hierophant">
+			<skill class="10" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="10" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="10" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="10" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="10" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="10" skillId="1015" level="15" name="Battle Heal"/>
+			<skill class="15" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="15" skillId="236" level="41" name="Light Armor Mastery"/>
+			<skill class="15" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="15" skillId="228" level="1" name="Fast Spell Casting"/>
+			<skill class="17" skillId="211" level="7" name="Boost HP"/>
+			<skill class="17" skillId="1001" level="10" name="Soul Cry"/>
+			<skill class="17" skillId="1395" level="10" name="Erase"/>
+			<skill class="17" skillId="1448" level="1" name="Blink"/>
+			<skill class="17" skillId="38009" level="1" name="Hidden"/>
+			<skill class="17" skillId="210" level="45" name="Fist Weapon Mastery"/>
+			<skill class="17" skillId="222" level="1" name="Fist Fury"/>
+			<skill class="17" skillId="1272" level="13" name="Word of Fear"/>
+			<skill class="17" skillId="1398" level="10" name="Mana Burn"/>
+			<skill class="17" skillId="1526" level="3" name="Steal Mana"/>
+			<class class="98" skillId="9073" level="1" name="Boost HP" />
+			<skill class="98" skillId="37588" level="1" name="Warp"/>
+			<skill class="98" skillId="499" level="1" name="Courage"/>
+			<skill class="98" skillId="37590" level="1" name="Air Strike"/>
+			<skill class="98" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="98" skillId="37592" level="1" name="Fallen Away"/>
+			<skill class="98" skillId="1358" level="1" name="Block Shield"/>
+			<skill class="98" skillId="37594" level="1" name="Hiero Vortex Slug"/>
+			<skill class="98" skillId="1412" level="1" name="Spell Turning"/>
+			<skill class="98" skillId="37596" level="1" name="Hiero Heal"/>
+			<skill class="98" skillId="1446" level="11" name="Shadow Bind"/>
+			<skill class="98" skillId="37598" level="1" name="Wind Enhance"/>
+			<skill class="98" skillId="1470" level="1" name="Prahnah"/>
+			<skill class="98" skillId="1501" level="1" name="Imporeved Condition"/>
+			<skill class="98" skillId="328" level="1" name="Wisdom"/>
+			<skill class="98" skillId="425" level="1" name="Hawk Spirit Totem"/>
+			<skill class="98" skillId="37589" level="115" name="Deceive"/>
+			<skill class="98" skillId="622" level="1" name="Ultimate Escape"/>
+			<skill class="98" skillId="37591" level="1" name="Whirl Stun"/>
+			<skill class="98" skillId="927" level="14" name="Burning Chop"/>
+			<skill class="98" skillId="37593" level="1" name="Hiero Vortex"/>
+			<skill class="98" skillId="1359" level="1" name="Block Wind Walk"/>
+			<skill class="98" skillId="37595" level="1" name="Triple Air Strike"/>
+			<skill class="98" skillId="1442" level="1" name="Protection from Darkness"/>
+			<skill class="98" skillId="37597" level="1" name="War Rage"/>
+			<skill class="98" skillId="1447" level="9" name="Voice Bind"/>
+			<skill class="98" skillId="37599" level="1" name="Protection from Elements"/>
+			<skill class="98" skillId="1499" level="1" name="Improved Combat"/>
+			<skill class="98" skillId="76" level="1" name="Bear Spirit Totem"/>
+			<skill class="98" skillId="1542" level="1" name="Counter Critical"/>
+			<skill class="98" skillId="329" level="1" name="Health"/>
+		</class>
+		<class classid="99" name="Eva's Templar">
+			<skill class="18" skillId="58" level="55" name="Elemental Heal"/>
+			<skill class="18" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="18" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="18" skillId="3" level="9" name="Power Strike"/>
+			<skill class="18" skillId="56" level="9" name="Power Shot"/>
+			<skill class="18" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="18" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="18" skillId="16" level="9" name="Mortal Blow"/>
+			<skill class="19" skillId="21" level="3" name="Poison Recovery"/>
+			<skill class="19" skillId="61" level="3" name="Cure Bleeding"/>
+			<skill class="19" skillId="112" level="4" name="Deflect Arrow"/>
+			<skill class="19" skillId="153" level="4" name="Shield Mastery"/>
+			<skill class="19" skillId="217" level="45" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="19" skillId="232" level="52" name="Heavy Armor Mastery"/>
+			<skill class="19" skillId="15" level="52" name="Charm"/>
+			<skill class="19" skillId="28" level="49" name="Aggression"/>
+			<skill class="19" skillId="102" level="16" name="Entangle"/>
+			<skill class="19" skillId="147" level="51" name="Magic Resistance"/>
+			<skill class="19" skillId="191" level="6" name="Focus Mind"/>
+			<skill class="19" skillId="230" level="2" name="Sprint"/>
+			<skill class="20" skillId="812" level="1" name="Vanguard"/>
+			<skill class="20" skillId="10" level="8" name="Summon Storm Cubic"/>
+			<skill class="20" skillId="9009" level="1" name="Summon Fang of Eva"/>
+			<skill class="20" skillId="67" level="7" name="Summon Life Cubic"/>
+			<skill class="20" skillId="110" level="2" name="Ultimate Defense"/>
+			<skill class="20" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="20" skillId="288" level="4" name="Guard Stance"/>
+			<skill class="20" skillId="316" level="1" name="Aegis"/>
+			<skill class="20" skillId="400" level="10" name="Tribunal"/>
+			<skill class="20" skillId="449" level="4" name="Summon Attractive Cubic"/>
+			<skill class="20" skillId="916" level="4" name="Shield Deflect Magic"/>
+			<skill class="20" skillId="18" level="37" name="Aura of Hate"/>
+			<skill class="20" skillId="38010" level="1" name="Hidden"/>
+			<skill class="20" skillId="107" level="9" name="Holy Aura"/>
+			<skill class="20" skillId="123" level="3" name="Spirit Barrier"/>
+			<skill class="20" skillId="197" level="2" name="Holy Armor"/>
+			<skill class="20" skillId="291" level="11" name="Final Fortress"/>
+			<skill class="20" skillId="322" level="6" name="Shield Fortress"/>
+			<skill class="20" skillId="402" level="10" name="Arrest"/>
+			<class class="99" skillId="9074" level="1" name="Boost HP" />
+			<skill class="99" skillId="760" level="1" name="Anti-Magic Armor"/>
+			<skill class="99" skillId="779" level="1" name="Summon Smart Cubic"/>
+			<skill class="99" skillId="328" level="1" name="Wisdom"/>
+			<skill class="99" skillId="787" level="1" name="Touch of Eva"/>
+			<skill class="99" skillId="335" level="1" name="Fortitude"/>
+			<skill class="99" skillId="1034" level="1" name="Repose"/>
+			<skill class="99" skillId="351" level="1" name="Magical Mirror"/>
+			<skill class="99" skillId="9085" level="1" name="Boost Speed"/>
+			<skill class="99" skillId="368" level="1" name="Vengeance"/>
+			<skill class="99" skillId="454" level="1" name="Symbol of Defense"/>
+			<skill class="99" skillId="528" level="1" name="Shield of Faith"/>
+			<skill class="99" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="99" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="99" skillId="786" level="1" name="Eva's Will"/>
+			<skill class="99" skillId="329" level="1" name="Health"/>
+			<skill class="99" skillId="913" level="1" name="Deflect Magic"/>
+			<skill class="99" skillId="341" level="1" name="Touch of Life"/>
+			<skill class="99" skillId="9074" level="1" name="Boost HP"/>
+			<skill class="99" skillId="352" level="1" name="Shield Bash"/>
+			<skill class="99" skillId="13109" level="115" name="Downfall"/>
+			<skill class="99" skillId="429" level="1" name="Knighthood"/>
+			<skill class="99" skillId="527" level="1" name="Iron Shield"/>
+			<skill class="99" skillId="758" level="1" name="Fighter's Will"/>
+		</class>
+		<class classid="100" name="Sword Muse">
+			<skill class="18" skillId="58" level="55" name="Elemental Heal"/>
+			<skill class="18" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="18" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="18" skillId="3" level="9" name="Power Strike"/>
+			<skill class="18" skillId="56" level="9" name="Power Shot"/>
+			<skill class="18" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="18" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="18" skillId="16" level="9" name="Mortal Blow"/>
+			<skill class="19" skillId="21" level="3" name="Poison Recovery"/>
+			<skill class="19" skillId="61" level="3" name="Cure Bleeding"/>
+			<skill class="19" skillId="112" level="2" name="Deflect Arrow"/>
+			<skill class="19" skillId="153" level="2" name="Shield Mastery"/>
+			<skill class="19" skillId="217" level="45" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="19" skillId="232" level="15" name="Heavy Armor Mastery"/>
+			<skill class="19" skillId="15" level="52" name="Charm"/>
+			<skill class="19" skillId="28" level="12" name="Aggression"/>
+			<skill class="19" skillId="102" level="16" name="Entangle"/>
+			<skill class="19" skillId="147" level="51" name="Magic Resistance"/>
+			<skill class="19" skillId="191" level="6" name="Focus Mind"/>
+			<skill class="19" skillId="230" level="2" name="Sprint"/>
+			<skill class="21" skillId="402" level="10" name="Arrest"/>
+			<skill class="21" skillId="98" level="5" name="Sword Symphony"/>
+			<skill class="21" skillId="38011" level="1" name="Hidden"/>
+			<skill class="21" skillId="196" level="1" name="Holy Blade"/>
+			<skill class="21" skillId="264" level="1" name="Song of Earth"/>
+			<skill class="21" skillId="266" level="1" name="Song of Water"/>
+			<skill class="21" skillId="268" level="1" name="Song of Wind"/>
+			<skill class="21" skillId="270" level="1" name="Song of Invocation"/>
+			<skill class="21" skillId="305" level="1" name="Song of Vengeance"/>
+			<skill class="21" skillId="308" level="1" name="Song of Storm Guard"/>
+			<skill class="21" skillId="407" level="10" name="Psycho Symphony"/>
+			<skill class="21" skillId="123" level="3" name="Spirit Barrier"/>
+			<skill class="21" skillId="227" level="35" name="Light Armor Mastery"/>
+			<skill class="21" skillId="265" level="1" name="Song of Life"/>
+			<skill class="21" skillId="267" level="1" name="Song of Warding"/>
+			<skill class="21" skillId="269" level="1" name="Song of Hunter"/>
+			<skill class="21" skillId="304" level="1" name="Song of Vitality"/>
+			<skill class="21" skillId="306" level="1" name="Song of Flame Guard"/>
+			<class class="100" skillId="9073" level="1" name="Boost HP" />
+			<skill class="100" skillId="764" level="1" name="Song of Wind Storm"/>
+			<skill class="100" skillId="349" level="1" name="Song of Renewal"/>
+			<skill class="100" skillId="812" level="1" name="Vanguard"/>
+			<skill class="100" skillId="363" level="1" name="Song of Meditation"/>
+			<skill class="100" skillId="7" level="28" name="Sonic Storm"/>
+			<skill class="100" skillId="914" level="1" name="Song of Purification"/>
+			<skill class="100" skillId="428" level="1" name="Inner Rhythm"/>
+			<skill class="100" skillId="78" level="1" name="Warcry"/>
+			<skill class="100" skillId="9012" level="1" name="Crosscut"/>
+			<skill class="100" skillId="440" level="1" name="Braveheart"/>
+			<skill class="100" skillId="168" level="2" name="Boost Attack Speed"/>
+			<skill class="100" skillId="9077" level="1" name="Nerf Accuracy"/>
+			<skill class="100" skillId="455" level="1" name="Symbol of Noise"/>
+			<skill class="100" skillId="190" level="37" name="Fatal Strike"/>
+			<skill class="100" skillId="499" level="1" name="Courage"/>
+			<skill class="100" skillId="256" level="1" name="Accuracy"/>
+			<skill class="100" skillId="529" level="1" name="Song of Elemental"/>
+			<skill class="100" skillId="328" level="1" name="Wisdom"/>
+			<skill class="100" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="100" skillId="339" level="1" name="Parry Stance"/>
+			<skill class="100" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="100" skillId="353" level="1" name="Shield Slam"/>
+			<skill class="100" skillId="6" level="37" name="Sonic Blaster"/>
+			<skill class="100" skillId="913" level="1" name="Deflect Magic"/>
+			<skill class="100" skillId="364" level="1" name="Song of Champion"/>
+			<skill class="100" skillId="8" level="8" name="Sonic focus"/>
+			<skill class="100" skillId="1297" level="1" name="Clear Mind"/>
+			<skill class="100" skillId="437" level="1" name="Song of Silence"/>
+			<skill class="100" skillId="137" level="3" name="Critical Chance"/>
+			<skill class="100" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="100" skillId="451" level="1" name="Sonic Move"/>
+			<skill class="100" skillId="169" level="2" name="Quick Step"/>
+			<skill class="100" skillId="12507" level="115" name="Soul Pressure"/>
+			<skill class="100" skillId="483" level="1" name="Sword Shield"/>
+			<skill class="100" skillId="198" level="1" name="Boost Evasion"/>
+			<skill class="100" skillId="505" level="10" name="Shining Edge"/>
+			<skill class="100" skillId="319" level="1" name="Agile Movement"/>
+			<skill class="100" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="100" skillId="329" level="1" name="Health"/>
+		</class>
+		<class classid="101" name="Wind Rider">
+			<skill class="18" skillId="58" level="55" name="Elemental Heal"/>
+			<skill class="18" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="18" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="18" skillId="3" level="9" name="Power Strike"/>
+			<skill class="18" skillId="56" level="24" name="Power Shot"/>
+			<skill class="18" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="18" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="18" skillId="16" level="24" name="Mortal Blow"/>
+			<skill class="22" skillId="171" level="8" name="Esprit"/>
+			<skill class="22" skillId="208" level="15" name="Bow Mastery"/>
+			<skill class="22" skillId="225" level="3" name="Acrobatic Move"/>
+			<skill class="22" skillId="21" level="3" name="Poison Recovery"/>
+			<skill class="22" skillId="233" level="47" name="Light Armor Mastery"/>
+			<skill class="22" skillId="61" level="3" name="Cure Bleeding"/>
+			<skill class="22" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="22" skillId="99" level="1" name="Rapid Shot"/>
+			<skill class="22" skillId="102" level="16" name="Entangle"/>
+			<skill class="22" skillId="113" level="1" name="Long Shot"/>
+			<skill class="22" skillId="169" level="2" name="Quick Step"/>
+			<skill class="22" skillId="198" level="3" name="Boost Evasion"/>
+			<skill class="22" skillId="209" level="45" name="Dagger Mastery"/>
+			<skill class="22" skillId="15" level="52" name="Charm"/>
+			<skill class="22" skillId="230" level="2" name="Sprint"/>
+			<skill class="22" skillId="27" level="14" name="Unlock"/>
+			<skill class="22" skillId="256" level="1" name="Accuracy"/>
+			<skill class="22" skillId="96" level="6" name="Bleed"/>
+			<skill class="22" skillId="101" level="3" name="Stunning Shot"/>
+			<skill class="22" skillId="111" level="2" name="Ultimate Evasion"/>
+			<skill class="22" skillId="137" level="4" name="Critical Chance"/>
+			<skill class="23" skillId="263" level="37" name="Deadly Blow"/>
+			<skill class="23" skillId="321" level="10" name="Blinding Blow"/>
+			<skill class="23" skillId="412" level="10" name="Sand Bomb"/>
+			<skill class="23" skillId="623" level="1" name="Find Trap"/>
+			<skill class="23" skillId="38012" level="1" name="Hidden"/>
+			<skill class="23" skillId="30" level="37" name="Backstab"/>
+			<skill class="23" skillId="60" level="1" name="Fake Death"/>
+			<skill class="23" skillId="221" level="1" name="Silent Move"/>
+			<skill class="23" skillId="296" level="1" name="Chameleon Rest"/>
+			<skill class="23" skillId="410" level="3" name="Mortal Strike"/>
+			<skill class="23" skillId="453" level="1" name="Escape Shackle"/>
+			<skill class="23" skillId="624" level="1" name="Remove Trap"/>
+			<skill class="23" skillId="12" level="14" name="Switch"/>
+			<skill class="23" skillId="51" level="1" name="Lure"/>
+			<skill class="23" skillId="123" level="3" name="Spirit Barrier"/>
+			<class class="101" skillId="9073" level="1" name="Boost HP" />
+			<skill class="101" skillId="14508" level="115" name="Secret Slayer Veil"/>
+			<skill class="101" skillId="432" level="1" name="Assassination"/>
+			<skill class="101" skillId="460" level="1" name="Symbol of the Assassin"/>
+			<skill class="101" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="101" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="101" skillId="769" level="1" name="Wind Riding"/>
+			<skill class="101" skillId="328" level="1" name="Wisdom"/>
+			<skill class="101" skillId="821" level="1" name="Shadow Step"/>
+			<skill class="101" skillId="334" level="1" name="Focus Skill Mastery"/>
+			<skill class="101" skillId="923" level="1" name="Dual Dagger Mastery"/>
+			<skill class="101" skillId="355" level="1" name="Focus Death"/>
+			<skill class="101" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="101" skillId="358" level="1" name="Bluff"/>
+			<skill class="101" skillId="446" level="1" name="Dodge"/>
+			<skill class="101" skillId="531" level="1" name="Critical Wound"/>
+			<skill class="101" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="101" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="101" skillId="11" level="1" name="Trick"/>
+			<skill class="101" skillId="819" level="1" name="Evasion Chance"/>
+			<skill class="101" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="101" skillId="922" level="1" name="Hide"/>
+			<skill class="101" skillId="344" level="1" name="Lethal Blow"/>
+			<skill class="101" skillId="928" level="1" name="Dual Blow"/>
+			<skill class="101" skillId="356" level="1" name="Focus Chance"/>
+		</class>
+		<class classid="102" name="Moonlight Sentinel">
+			<skill class="18" skillId="58" level="55" name="Elemental Heal"/>
+			<skill class="18" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="18" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="18" skillId="3" level="9" name="Power Strike"/>
+			<skill class="18" skillId="56" level="24" name="Power Shot"/>
+			<skill class="18" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="18" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="18" skillId="16" level="24" name="Mortal Blow"/>
+			<skill class="22" skillId="171" level="8" name="Esprit"/>
+			<skill class="22" skillId="208" level="52" name="Bow Mastery"/>
+			<skill class="22" skillId="225" level="3" name="Acrobatic Move"/>
+			<skill class="22" skillId="21" level="3" name="Poison Recovery"/>
+			<skill class="22" skillId="233" level="47" name="Light Armor Mastery"/>
+			<skill class="22" skillId="61" level="3" name="Cure Bleeding"/>
+			<skill class="22" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="22" skillId="99" level="2" name="Rapid Shot"/>
+			<skill class="22" skillId="102" level="16" name="Entangle"/>
+			<skill class="22" skillId="113" level="2" name="Long Shot"/>
+			<skill class="22" skillId="169" level="2" name="Quick Step"/>
+			<skill class="22" skillId="198" level="1" name="Boost Evasion"/>
+			<skill class="22" skillId="209" level="8" name="Dagger Mastery"/>
+			<skill class="22" skillId="15" level="52" name="Charm"/>
+			<skill class="22" skillId="230" level="2" name="Sprint"/>
+			<skill class="22" skillId="27" level="5" name="Unlock"/>
+			<skill class="22" skillId="256" level="1" name="Accuracy"/>
+			<skill class="22" skillId="96" level="2" name="Bleed"/>
+			<skill class="22" skillId="101" level="40" name="Stunning Shot"/>
+			<skill class="22" skillId="111" level="1" name="Ultimate Evasion"/>
+			<skill class="22" skillId="137" level="1" name="Critical Chance"/>
+			<skill class="24" skillId="933" level="1" name="Detection"/>
+			<skill class="24" skillId="24" level="31" name="Burst Shot"/>
+			<skill class="24" skillId="413" level="8" name="Rapid Fire"/>
+			<skill class="24" skillId="416" level="3" name="Blessing of Sagittarius"/>
+			<skill class="24" skillId="38013" level="1" name="Hidden"/>
+			<skill class="24" skillId="19" level="37" name="Double Shot"/>
+			<skill class="24" skillId="123" level="3" name="Spirit Barrier"/>
+			<skill class="24" skillId="415" level="3" name="Spirit of Sagittarius"/>
+			<skill class="102" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="102" skillId="328" level="1" name="Wisdom"/>
+			<skill class="102" skillId="334" level="1" name="Focus Skill Mastery"/>
+			<skill class="102" skillId="354" level="1" name="Hamstring Shot"/>
+			<skill class="102" skillId="431" level="1" name="Archery"/>
+			<skill class="102" skillId="533" level="1" name="Counter Rapid Shot"/>
+			<skill class="102" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="102" skillId="772" level="1" name="Arrow Rain"/>
+			<skill class="102" skillId="946" level="1" name="Silent Mind"/>
+			<skill class="102" skillId="9079" level="115" name="Endless Rain"/>
+			<skill class="102" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="102" skillId="343" level="1" name="Lethal Shot"/>
+			<skill class="102" skillId="369" level="1" name="Evade Shot"/>
+			<skill class="102" skillId="459" level="1" name="Symbol of the Sniper"/>
+			<skill class="102" skillId="534" level="1" name="Counter Dash"/>
+			<skill class="102" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="102" skillId="924" level="1" name="Seven Arrow"/>
+		</class>
+		<class classid="103" name="Mystic Muse">
+			<skill class="25" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="25" skillId="1206" level="5" name="Wind Shackle"/>
+			<skill class="25" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="25" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="25" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="25" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="26" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="26" skillId="1069" level="42" name="Sleep"/>
+			<skill class="26" skillId="1127" level="12" name="Servitor Heal"/>
+			<skill class="26" skillId="1223" level="15" name="Surrender To Earth"/>
+			<skill class="26" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="26" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="26" skillId="1126" level="6" name="Servitor Recharge"/>
+			<skill class="26" skillId="1164" level="19" name="Curse: Weakness"/>
+			<skill class="27" skillId="1295" level="9" name="Aqua Splash"/>
+			<skill class="27" skillId="1169" level="14" name="Curse Fear"/>
+			<skill class="27" skillId="1417" level="5" name="Aura Flash"/>
+			<skill class="27" skillId="1182" level="3" name="Resist Aqua"/>
+			<skill class="27" skillId="1231" level="28" name="Aura Flare"/>
+			<skill class="27" skillId="1236" level="19" name="Frost Bolt"/>
+			<skill class="27" skillId="1238" level="3" name="Freezing Skin"/>
+			<skill class="27" skillId="1275" level="14" name="Aura Bolt"/>
+			<skill class="27" skillId="1015" level="3" name="Battle Heal"/>
+			<skill class="27" skillId="1288" level="1" name="Aura Symphony"/>
+			<skill class="27" skillId="1056" level="12" name="Cancellation"/>
+			<skill class="27" skillId="1293" level="1" name="Elemental Symphony"/>
+			<skill class="27" skillId="1072" level="5" name="Sleeping Cloud"/>
+			<skill class="27" skillId="1411" level="1" name="Mystic Immunity"/>
+			<skill class="27" skillId="1174" level="22" name="Frost Wall"/>
+			<skill class="27" skillId="38014" level="1" name="Hidden"/>
+			<skill class="27" skillId="1183" level="4" name="Freezing Shackle"/>
+			<skill class="27" skillId="1235" level="28" name="Hydro Blast"/>
+			<skill class="27" skillId="1237" level="17" name="Ice Dagger"/>
+			<skill class="27" skillId="1265" level="14" name="Solar Flare"/>
+			<skill class="27" skillId="234" level="41" name="Robe Mastery"/>
+			<skill class="27" skillId="1286" level="1" name="Seed of Water"/>
+			<skill class="27" skillId="1047" level="4" name="Mana Regeneration"/>
+			<skill class="27" skillId="1290" level="1" name="Blizzard"/>
+			<skill class="27" skillId="1071" level="14" name="Surrender To Water"/>
+			<skill class="103" skillId="1468" level="1" name="Star Fall"/>
+			<skill class="103" skillId="1532" level="1" name="Enlightenment-Wizard"/>
+			<skill class="103" skillId="328" level="1" name="Wisdom"/>
+			<skill class="103" skillId="10026" level="115" name="Greater Hydro Blast"/>
+			<skill class="103" skillId="337" level="1" name="Arcane Power"/>
+			<skill class="103" skillId="925" level="1" name="Sigil Mastery"/>
+			<skill class="103" skillId="1338" level="1" name="Arcane Chaos"/>
+			<skill class="103" skillId="1342" level="1" name="Light Vortex"/>
+			<skill class="103" skillId="1453" level="1" name="Ice Vortex Crusher"/>
+			<skill class="103" skillId="1455" level="1" name="Throne of Ice"/>
+			<skill class="103" skillId="1493" level="1" name="Frost Armor"/>
+			<skill class="103" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="103" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="103" skillId="433" level="1" name="Arcane Roar"/>
+			<skill class="103" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="103" skillId="1340" level="1" name="Ice Vortex"/>
+			<skill class="103" skillId="1421" level="1" name="Raging Waves"/>
+			<skill class="103" skillId="1454" level="1" name="Diamond Dust"/>
+		</class>
+		<class classid="104" name="Elemental Master">
+			<skill class="25" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="25" skillId="1206" level="19" name="Wind Shackle"/>
+			<skill class="25" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="25" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="25" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="25" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="26" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="26" skillId="1069" level="9" name="Sleep"/>
+			<skill class="26" skillId="1127" level="45" name="Servitor Heal"/>
+			<skill class="26" skillId="1223" level="1" name="Surrender To Earth"/>
+			<skill class="26" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="26" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="26" skillId="1126" level="34" name="Servitor Recharge"/>
+			<skill class="26" skillId="1164" level="5" name="Curse: Weakness"/>
+			<skill class="28" skillId="1301" level="1" name="Servitor Blessing"/>
+			<skill class="28" skillId="1380" level="10" name="Betray"/>
+			<skill class="28" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="28" skillId="1280" level="9" name="Summon Aqua Cubic"/>
+			<skill class="28" skillId="1300" level="3" name="Servitor Cure"/>
+			<skill class="28" skillId="1329" level="9" name="Mass Summon Aqua Cubic"/>
+			<skill class="28" skillId="38015" level="1" name="Hidden"/>
+			<skill class="28" skillId="67" level="7" name="Summon Life Cubic"/>
+			<skill class="28" skillId="1262" level="5" name="Transfer Pain"/>
+			<skill class="28" skillId="1299" level="2" name="Servitor Empowerment"/>
+			<skill class="104" skillId="1183" level="3" name="Freezing Shackle"/>
+			<skill class="104" skillId="1524" level="15" name="Surrender to the Holy"/>
+			<skill class="104" skillId="1236" level="10" name="Frost Bolt"/>
+			<skill class="104" skillId="1264" level="1" name="Solar Spark"/>
+			<skill class="104" skillId="4" level="2" name="Dash"/>
+			<skill class="104" skillId="1275" level="7" name="Aura Bolt"/>
+			<skill class="104" skillId="234" level="41" name="Robe Mastery"/>
+			<skill class="104" skillId="1349" level="1" name="Final Servitor"/>
+			<skill class="104" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="104" skillId="1384" level="5" name="Mass Surrender to Water"/>
+			<skill class="104" skillId="435" level="1" name="Summon Lore"/>
+			<skill class="104" skillId="1424" level="1" name="Anti-Summoning Field"/>
+			<skill class="104" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="104" skillId="1496" level="1" name="Servitor Barrier"/>
+			<skill class="104" skillId="1125" level="1" name="Pet Res"/>
+			<skill class="104" skillId="1498" level="1" name="Mutual Response"/>
+			<skill class="104" skillId="1235" level="1" name="Hydro Blast"/>
+			<skill class="104" skillId="37506" level="115" name="Awakened Holy Knight"/>
+			<skill class="104" skillId="1237" level="10" name="Ice Dagger"/>
+			<skill class="104" skillId="1265" level="4" name="Solar Flare"/>
+			<skill class="104" skillId="211" level="10" name="Boost HP"/>
+			<skill class="104" skillId="1347" level="1" name="Wizard Servitor"/>
+			<skill class="104" skillId="328" level="1" name="Wisdom"/>
+			<skill class="104" skillId="1350" level="1" name="Warrior Bane"/>
+			<skill class="104" skillId="338" level="1" name="Arcane Agility"/>
+			<skill class="104" skillId="1407" level="1" name="Summon Magnus the Unicorn"/>
+			<skill class="104" skillId="779" level="1" name="Summon Smart Cubic"/>
+			<skill class="104" skillId="1479" level="1" name="Magic Impulse"/>
+			<skill class="104" skillId="1071" level="14" name="Surrender to Water"/>
+			<skill class="104" skillId="1497" level="1" name="Excessive Loyalty"/>
+		</class>
+		<class classid="105" name="Eva's Saint">
+			<skill class="25" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="25" skillId="1206" level="19" name="Wind Shackle"/>
+			<skill class="25" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="25" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="25" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="25" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="29" skillId="1043" level="1" name="Holy Weapon"/>
+			<skill class="29" skillId="1068" level="3" name="Might"/>
+			<skill class="29" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="29" skillId="1073" level="2" name="Kiss of Eva"/>
+			<skill class="29" skillId="235" level="41" name="Robe Mastery"/>
+			<skill class="29" skillId="1087" level="3" name="Agility"/>
+			<skill class="29" skillId="1011" level="18" name="Heal"/>
+			<skill class="29" skillId="1204" level="2" name="Wind Walk"/>
+			<skill class="29" skillId="1013" level="32" name="Recharge"/>
+			<skill class="29" skillId="1016" level="7" name="Resurrection"/>
+			<skill class="29" skillId="1033" level="3" name="Resist Poison"/>
+			<skill class="29" skillId="1040" level="3" name="Shield"/>
+			<skill class="29" skillId="1044" level="3" name="Regeneration"/>
+			<skill class="29" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="29" skillId="1069" level="42" name="Sleep"/>
+			<skill class="29" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="29" skillId="1078" level="6" name="Concentration"/>
+			<skill class="29" skillId="236" level="41" name="Light Armor Mastery"/>
+			<skill class="29" skillId="1201" level="9" name="Dryad Root"/>
+			<skill class="29" skillId="1012" level="3" name="Cure Poison"/>
+			<skill class="29" skillId="1257" level="3" name="Decrease Weight"/>
+			<skill class="29" skillId="1015" level="15" name="Battle Heal"/>
+			<skill class="29" skillId="1031" level="8" name="Disrupt Undead"/>
+			<skill class="29" skillId="1035" level="4" name="Mental Shield"/>
+			<skill class="30" skillId="1034" level="1" name="Repose"/>
+			<skill class="30" skillId="1521" level="1" name="Inquisitor"/>
+			<skill class="30" skillId="1335" level="1" name="Balance Life"/>
+			<skill class="30" skillId="1177" level="5" name="Wind Strike"/>
+			<skill class="30" skillId="1393" level="3" name="Unholy Resistance"/>
+			<skill class="30" skillId="1218" level="33" name="Greater Battle Heal"/>
+			<skill class="30" skillId="1395" level="10" name="Erase"/>
+			<skill class="30" skillId="1243" level="6" name="Bless Shield"/>
+			<skill class="30" skillId="1398" level="10" name="Mana Burn"/>
+			<skill class="30" skillId="1258" level="3" name="Restore Life"/>
+			<skill class="30" skillId="1401" level="10" name="Major Heal"/>
+			<skill class="30" skillId="1264" level="2" name="Solar Spark"/>
+			<skill class="30" skillId="67" level="7" name="Summon Life Cubic"/>
+			<skill class="30" skillId="1411" level="1" name="Mystic Immunity"/>
+			<skill class="30" skillId="1281" level="9" name="Summon Spark Cubic"/>
+			<skill class="30" skillId="525" level="5" name="Decoy"/>
+			<skill class="30" skillId="1417" level="1" name="Aura Flash"/>
+			<skill class="30" skillId="1303" level="2" name="Wild Magic"/>
+			<skill class="30" skillId="1028" level="19" name="Might of Heaven"/>
+			<skill class="30" skillId="1515" level="1" name="Lightning Barrier"/>
+			<skill class="30" skillId="1329" level="9" name="Mass Summon Aqua Cubic"/>
+			<skill class="30" skillId="1050" level="2" name="Return"/>
+			<skill class="30" skillId="38016" level="1" name="Hidden"/>
+			<skill class="30" skillId="1361" level="1" name="Mass Block Wind Walk"/>
+			<skill class="30" skillId="1217" level="29" name="Greater Heal"/>
+			<skill class="30" skillId="1394" level="10" name="Trance"/>
+			<skill class="30" skillId="1219" level="29" name="Greater Group Heal"/>
+			<skill class="30" skillId="1397" level="3" name="Clarity"/>
+			<skill class="30" skillId="1255" level="2" name="Party Recall"/>
+			<skill class="30" skillId="1400" level="10" name="Turn Undead"/>
+			<skill class="30" skillId="1259" level="4" name="Resist Shock"/>
+			<skill class="30" skillId="1409" level="1" name="Cleanse"/>
+			<skill class="30" skillId="1273" level="13" name="Serenade of Eva"/>
+			<skill class="30" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="30" skillId="1412" level="1" name="Spell Turning"/>
+			<skill class="30" skillId="1286" level="1" name="Seed of Water"/>
+			<skill class="30" skillId="1020" level="27" name="Vitalize"/>
+			<skill class="30" skillId="1430" level="5" name="Invocation"/>
+			<skill class="30" skillId="1304" level="3" name="Advanced Block"/>
+			<skill class="105" skillId="1503" level="1" name="Improved Shield Defence"/>
+			<skill class="105" skillId="328" level="1" name="Wisdom"/>
+			<skill class="105" skillId="1506" level="1" name="Blessing of Eva"/>
+			<skill class="105" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="105" skillId="1540" level="1" name="Turn Stone"/>
+			<skill class="105" skillId="436" level="1" name="Divine Lore"/>
+			<skill class="105" skillId="10078" level="115" name="Mass Invisibility"/>
+			<skill class="105" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="105" skillId="37553" level="1" name="Elven's Blessing"/>
+			<skill class="105" skillId="1353" level="1" name="Divine Protection"/>
+			<skill class="105" skillId="1355" level="1" name="Prophecy of Water"/>
+			<skill class="105" skillId="1402" level="5" name="Major Group Heal"/>
+			<skill class="105" skillId="1460" level="1" name="Mana Gain"/>
+			<skill class="105" skillId="1504" level="1" name="Improved Movement"/>
+			<skill class="105" skillId="329" level="1" name="Health"/>
+			<skill class="105" skillId="1533" level="1" name="Enlightenment-Healer"/>
+			<skill class="105" skillId="336" level="1" name="Arcane Wisdom"/>
+			<skill class="105" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="105" skillId="926" level="1" name="Sigil Mastery"/>
+			<skill class="105" skillId="37550" level="1" name="Front Lines"/>
+			<skill class="105" skillId="1342" level="1" name="Light Vortex"/>
+			<skill class="105" skillId="1354" level="1" name="Arcane Protection"/>
+			<skill class="105" skillId="1359" level="1" name="Block Wind Walk"/>
+			<skill class="105" skillId="1428" level="1" name="Mass Recharge"/>
+		</class>
+		<class classid="106" name="Shillien Templar">
+			<skill class="31" skillId="70" level="53" name="Drain Health"/>
+			<skill class="31" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="31" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="31" skillId="3" level="9" name="Power Strike"/>
+			<skill class="31" skillId="56" level="9" name="Power Shot"/>
+			<skill class="31" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="31" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="31" skillId="294" level="1" name="Shadow Sense"/>
+			<skill class="31" skillId="16" level="9" name="Mortal Blow"/>
+			<skill class="32" skillId="2" level="19" name="Confusion"/>
+			<skill class="32" skillId="105" level="24" name="Freezing Strike"/>
+			<skill class="32" skillId="115" level="17" name="Power Break"/>
+			<skill class="32" skillId="147" level="51" name="Magic Resistance"/>
+			<skill class="32" skillId="191" level="6" name="Focus Mind"/>
+			<skill class="32" skillId="223" level="49" name="Sting"/>
+			<skill class="32" skillId="28" level="49" name="Aggression"/>
+			<skill class="32" skillId="112" level="4" name="Deflect Arrow"/>
+			<skill class="32" skillId="129" level="5" name="Poison"/>
+			<skill class="32" skillId="153" level="4" name="Shield Mastery"/>
+			<skill class="32" skillId="217" level="45" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="33" skillId="401" level="10" name="Judgment"/>
+			<skill class="33" skillId="18" level="37" name="Aura of Hate"/>
+			<skill class="33" skillId="450" level="10" name="Banish Seraph"/>
+			<skill class="33" skillId="33" level="8" name="Summon Phantom Cubic"/>
+			<skill class="33" skillId="916" level="4" name="Shield Deflect Magic"/>
+			<skill class="33" skillId="110" level="2" name="Ultimate Defense"/>
+			<skill class="33" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="33" skillId="278" level="6" name="Summon Viper Cubic"/>
+			<skill class="33" skillId="288" level="4" name="Guard Stance"/>
+			<skill class="33" skillId="291" level="11" name="Final Fortress"/>
+			<skill class="33" skillId="322" level="6" name="Shield Fortress"/>
+			<skill class="33" skillId="402" level="10" name="Arrest"/>
+			<skill class="33" skillId="22" level="7" name="Summon Vampiric Cubic"/>
+			<skill class="33" skillId="813" level="1" name="Vanguard"/>
+			<skill class="33" skillId="103" level="4" name="Corpse Plague"/>
+			<skill class="33" skillId="38017" level="1" name="Hidden"/>
+			<skill class="33" skillId="122" level="15" name="Hex"/>
+			<skill class="33" skillId="232" level="52" name="Heavy Armor Mastery"/>
+			<skill class="33" skillId="279" level="5" name="Lightning Strike"/>
+			<skill class="33" skillId="289" level="15" name="Life Leech"/>
+			<skill class="33" skillId="316" level="1" name="Aegis"/>
+			<skill class="106" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="106" skillId="760" level="1" name="Anti-Magic Armor"/>
+			<skill class="106" skillId="780" level="1" name="Summon Smart Cubic"/>
+			<skill class="106" skillId="328" level="1" name="Wisdom"/>
+			<skill class="106" skillId="789" level="1" name="Spirit of Shilen"/>
+			<skill class="106" skillId="335" level="1" name="Fortitude"/>
+			<skill class="106" skillId="9074" level="1" name="Boost HP"/>
+			<skill class="106" skillId="351" level="1" name="Magical Mirror"/>
+			<skill class="106" skillId="10047" level="115" name="Final Ligtning Strike"/>
+			<skill class="106" skillId="368" level="1" name="Vengeance"/>
+			<skill class="106" skillId="454" level="1" name="Symbol of Defense"/>
+			<skill class="106" skillId="528" level="1" name="Shield of Faith"/>
+			<skill class="106" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="106" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="106" skillId="788" level="1" name="Pain of Shilen"/>
+			<skill class="106" skillId="329" level="1" name="Health"/>
+			<skill class="106" skillId="913" level="1" name="Deflect Magic"/>
+			<skill class="106" skillId="342" level="1" name="Touch of Death"/>
+			<skill class="106" skillId="9084" level="1" name="Nerf PDef"/>
+			<skill class="106" skillId="352" level="1" name="Shield Bash"/>
+			<skill class="106" skillId="429" level="1" name="Knighthood"/>
+			<skill class="106" skillId="527" level="1" name="Iron Shield"/>
+		</class>
+		<class classid="107" name="Spectral Dancer">
+			<skill class="31" skillId="70" level="53" name="Drain Health"/>
+			<skill class="31" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="31" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="31" skillId="3" level="9" name="Power Strike"/>
+			<skill class="31" skillId="56" level="9" name="Power Shot"/>
+			<skill class="31" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="31" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="31" skillId="294" level="1" name="Shadow Sense"/>
+			<skill class="31" skillId="16" level="9" name="Mortal Blow"/>
+			<skill class="32" skillId="2" level="19" name="Confusion"/>
+			<skill class="32" skillId="105" level="24" name="Freezing Strike"/>
+			<skill class="32" skillId="115" level="17" name="Power Break"/>
+			<skill class="32" skillId="147" level="51" name="Magic Resistance"/>
+			<skill class="32" skillId="191" level="6" name="Focus Mind"/>
+			<skill class="32" skillId="223" level="49" name="Sting"/>
+			<skill class="32" skillId="28" level="12" name="Aggression"/>
+			<skill class="32" skillId="112" level="2" name="Deflect Arrow"/>
+			<skill class="32" skillId="129" level="5" name="Poison"/>
+			<skill class="32" skillId="153" level="2" name="Shield Mastery"/>
+			<skill class="32" skillId="217" level="8" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="34" skillId="276" level="1" name="Dance of Concentration"/>
+			<skill class="34" skillId="4" level="1" name="Dash"/>
+			<skill class="34" skillId="297" level="1" name="Duelist Spirit"/>
+			<skill class="34" skillId="94" level="1" name="Rage"/>
+			<skill class="34" skillId="309" level="1" name="Dance of Earth Guard"/>
+			<skill class="34" skillId="122" level="15" name="Hex"/>
+			<skill class="34" skillId="311" level="1" name="Dance of Protection"/>
+			<skill class="34" skillId="168" level="3" name="Boost Attack Speed"/>
+			<skill class="34" skillId="408" level="10" name="Demonic Blade Dance"/>
+			<skill class="34" skillId="198" level="3" name="Boost Evasion"/>
+			<skill class="34" skillId="271" level="1" name="Dance of the Warrior"/>
+			<skill class="34" skillId="273" level="1" name="Dance of the Mystic"/>
+			<skill class="34" skillId="275" level="1" name="Dance of Fury"/>
+			<skill class="34" skillId="277" level="1" name="Dance of Light"/>
+			<skill class="34" skillId="84" level="3" name="Poison Blade Dance"/>
+			<skill class="34" skillId="307" level="1" name="Dance of Aqua Guard"/>
+			<skill class="34" skillId="111" level="1" name="Ultimate Evasion"/>
+			<skill class="34" skillId="310" level="1" name="Dance of the Vampire"/>
+			<skill class="34" skillId="144" level="37" name="Dual Weapon Mastery"/>
+			<skill class="34" skillId="402" level="10" name="Arrest"/>
+			<skill class="34" skillId="169" level="2" name="Quick Step"/>
+			<skill class="34" skillId="38018" level="1" name="Hidden"/>
+			<skill class="34" skillId="227" level="50" name="Light Armor Mastery"/>
+			<skill class="34" skillId="272" level="1" name="Dance of Inspiration"/>
+			<skill class="34" skillId="274" level="1" name="Dance of Fire"/>
+			<skill class="107" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="107" skillId="339" level="1" name="Parry Stance"/>
+			<skill class="107" skillId="37557" level="1" name="Samurai's Rage"/>
+			<skill class="107" skillId="366" level="1" name="Dance of Shadows"/>
+			<skill class="107" skillId="428" level="1" name="Inner Rhythm"/>
+			<skill class="107" skillId="495" level="10" name="Blade Rush"/>
+			<skill class="107" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="107" skillId="1" level="37" name="Triple Slash"/>
+			<skill class="107" skillId="765" level="1" name="Dance of Blade Storm"/>
+			<skill class="107" skillId="130" level="1" name="Thrill Fight"/>
+			<skill class="107" skillId="815" level="43" name="Blade Hurricane"/>
+			<skill class="107" skillId="319" level="2" name="Agile Movement"/>
+			<skill class="107" skillId="915" level="1" name="Dance of Berserker"/>
+			<skill class="107" skillId="329" level="1" name="Health"/>
+			<skill class="107" skillId="9076" level="1" name="Nerf Evasion"/>
+			<skill class="107" skillId="365" level="1" name="Siren's Dance"/>
+			<skill class="107" skillId="367" level="1" name="Dance of Medusa"/>
+			<skill class="107" skillId="455" level="1" name="Symbol of Noise"/>
+			<skill class="107" skillId="530" level="1" name="Dance of Alignment"/>
+			<skill class="107" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="107" skillId="36" level="37" name="Whirlwind"/>
+			<skill class="107" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="107" skillId="225" level="1" name="Acrobatic Move"/>
+			<skill class="107" skillId="913" level="1" name="Deflect Magic"/>
+			<skill class="107" skillId="328" level="1" name="Wisdom"/>
+		</class>
+		<class classid="108" name="Ghost Hunter">
+			<skill class="31" skillId="70" level="53" name="Drain Health"/>
+			<skill class="31" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="31" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="31" skillId="3" level="9" name="Power Strike"/>
+			<skill class="31" skillId="56" level="24" name="Power Shot"/>
+			<skill class="31" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="31" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="31" skillId="294" level="1" name="Shadow Sense"/>
+			<skill class="31" skillId="16" level="24" name="Mortal Blow"/>
+			<skill class="35" skillId="171" level="8" name="Esprit"/>
+			<skill class="35" skillId="198" level="3" name="Boost Evasion"/>
+			<skill class="35" skillId="209" level="45" name="Dagger Mastery"/>
+			<skill class="35" skillId="2" level="19" name="Confusion"/>
+			<skill class="35" skillId="225" level="3" name="Acrobatic Move"/>
+			<skill class="35" skillId="96" level="6" name="Bleed"/>
+			<skill class="35" skillId="256" level="1" name="Accuracy"/>
+			<skill class="35" skillId="101" level="3" name="Stunning Shot"/>
+			<skill class="35" skillId="111" level="2" name="Ultimate Evasion"/>
+			<skill class="35" skillId="115" level="17" name="Power Break"/>
+			<skill class="35" skillId="169" level="2" name="Quick Step"/>
+			<skill class="35" skillId="193" level="7" name="Critical Power"/>
+			<skill class="35" skillId="208" level="15" name="Bow Mastery"/>
+			<skill class="35" skillId="223" level="49" name="Sting"/>
+			<skill class="35" skillId="27" level="14" name="Unlock"/>
+			<skill class="35" skillId="233" level="47" name="Light Armor Mastery"/>
+			<skill class="35" skillId="99" level="1" name="Rapid Shot"/>
+			<skill class="35" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="35" skillId="105" level="24" name="Freezing Strike"/>
+			<skill class="35" skillId="113" level="1" name="Long Shot"/>
+			<skill class="35" skillId="129" level="5" name="Poison"/>
+			<skill class="36" skillId="221" level="1" name="Silent Move"/>
+			<skill class="36" skillId="321" level="10" name="Blinding Blow"/>
+			<skill class="36" skillId="412" level="10" name="Sand Bomb"/>
+			<skill class="36" skillId="623" level="1" name="Find Trap"/>
+			<skill class="36" skillId="38019" level="1" name="hidden"/>
+			<skill class="36" skillId="11" level="12" name="Trick"/>
+			<skill class="36" skillId="51" level="1" name="Lure"/>
+			<skill class="36" skillId="122" level="15" name="Hex"/>
+			<skill class="36" skillId="263" level="37" name="Deadly Blow"/>
+			<skill class="36" skillId="410" level="3" name="Mortal Strike"/>
+			<skill class="36" skillId="453" level="1" name="Escape Shackle"/>
+			<skill class="36" skillId="624" level="1" name="Remove Trap"/>
+			<skill class="36" skillId="30" level="37" name="Backstab"/>
+			<skill class="36" skillId="106" level="14" name="Veil"/>
+			<skill class="108" skillId="447" level="1" name="Counterattack"/>
+			<skill class="108" skillId="531" level="1" name="Critical Wound"/>
+			<skill class="108" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="108" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="108" skillId="818" level="1" name="Evasion Coutner"/>
+			<skill class="108" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="108" skillId="922" level="1" name="Hide"/>
+			<skill class="108" skillId="344" level="1" name="Lethal Blow"/>
+			<skill class="108" skillId="928" level="1" name="Dual blow"/>
+			<skill class="108" skillId="357" level="1" name="Focus Power"/>
+			<skill class="108" skillId="37556" level="115" name="Double Shadow Step"/>
+			<skill class="108" skillId="432" level="1" name="Assassination"/>
+			<skill class="108" skillId="460" level="1" name="Symbol of the Assassin"/>
+			<skill class="108" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="108" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="108" skillId="770" level="1" name="Ghost Walking"/>
+			<skill class="108" skillId="328" level="1" name="Wisdom"/>
+			<skill class="108" skillId="821" level="1" name="Shadow Step"/>
+			<skill class="108" skillId="334" level="1" name="Focus Skill Mastery"/>
+			<skill class="108" skillId="923" level="1" name="Dual Dagger Mastery"/>
+			<skill class="108" skillId="355" level="1" name="Focus Death"/>
+			<skill class="108" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="108" skillId="358" level="1" name="Bluff"/>
+		</class>
+		<class classid="109" name="Ghost Sentinel">
+			<skill class="31" skillId="70" level="53" name="Drain Health"/>
+			<skill class="31" skillId="91" level="2" name="Defense Aura"/>
+			<skill class="31" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="31" skillId="3" level="9" name="Power Strike"/>
+			<skill class="31" skillId="56" level="24" name="Power Shot"/>
+			<skill class="31" skillId="77" level="2" name="Attack Aura"/>
+			<skill class="31" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="31" skillId="294" level="1" name="Shadow Sense"/>
+			<skill class="31" skillId="16" level="24" name="Mortal Blow"/>
+			<skill class="35" skillId="171" level="8" name="Esprit"/>
+			<skill class="35" skillId="198" level="1" name="Boost Evasion"/>
+			<skill class="35" skillId="209" level="8" name="Dagger Mastery"/>
+			<skill class="35" skillId="2" level="19" name="Confusion"/>
+			<skill class="35" skillId="225" level="3" name="Acrobatic Move"/>
+			<skill class="35" skillId="96" level="2" name="Bleed"/>
+			<skill class="35" skillId="256" level="1" name="Accuracy"/>
+			<skill class="35" skillId="101" level="40" name="Stunning Shot"/>
+			<skill class="35" skillId="111" level="1" name="Ultimate Evasion"/>
+			<skill class="35" skillId="115" level="17" name="Power Break"/>
+			<skill class="35" skillId="169" level="2" name="Quick Step"/>
+			<skill class="35" skillId="193" level="2" name="Critical Power"/>
+			<skill class="35" skillId="208" level="52" name="Bow Mastery"/>
+			<skill class="35" skillId="223" level="49" name="Sting"/>
+			<skill class="35" skillId="27" level="5" name="Unlock"/>
+			<skill class="35" skillId="233" level="47" name="Light Armor Mastery"/>
+			<skill class="35" skillId="99" level="2" name="Rapid Shot"/>
+			<skill class="35" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="35" skillId="105" level="24" name="Freezing Strike"/>
+			<skill class="35" skillId="113" level="2" name="Long Shot"/>
+			<skill class="35" skillId="129" level="5" name="Poison"/>
+			<skill class="37" skillId="417" level="5" name="Pain of Sagittarius"/>
+			<skill class="37" skillId="38020" level="1" name="Hidden"/>
+			<skill class="37" skillId="19" level="37" name="Double Shot"/>
+			<skill class="37" skillId="314" level="16" name="Fatal Counter"/>
+			<skill class="37" skillId="415" level="3" name="Spirit of Sagittarius"/>
+			<skill class="37" skillId="933" level="1" name="Detection"/>
+			<skill class="37" skillId="122" level="15" name="Hex"/>
+			<skill class="37" skillId="414" level="8" name="Dead Eye"/>
+			<skill class="109" skillId="946" level="1" name="Silent Mind"/>
+			<skill class="109" skillId="9075" level="1" name="Boost Patk"/>
+			<skill class="109" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="109" skillId="343" level="1" name="Lethal Shot"/>
+			<skill class="109" skillId="369" level="1" name="Evade Shot"/>
+			<skill class="109" skillId="459" level="1" name="Symbol of the Sniper"/>
+			<skill class="109" skillId="535" level="1" name="Counter Mind"/>
+			<skill class="109" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="109" skillId="924" level="1" name="Seven Arrow"/>
+			<skill class="109" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="109" skillId="328" level="1" name="Wisdom"/>
+			<skill class="109" skillId="9080" level="115" name="Heavenly Piercing"/>
+			<skill class="109" skillId="334" level="1" name="Focus Skill Mastery"/>
+			<skill class="109" skillId="354" level="1" name="Hamstring Shot"/>
+			<skill class="109" skillId="431" level="1" name="Archery"/>
+			<skill class="109" skillId="532" level="1" name="Counter Chance"/>
+			<skill class="109" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="109" skillId="773" level="1" name="Ghost Piercing"/>
+		</class>
+		<class classid="110" name="Storm Screamer">
+			<skill class="38" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="38" skillId="1011" level="6" name="Heal"/>
+			<skill class="38" skillId="1015" level="3" name="Battle Heal"/>
+			<skill class="38" skillId="1068" level="1" name="Might"/>
+			<skill class="38" skillId="1168" level="7" name="Curse: Poison"/>
+			<skill class="38" skillId="1184" level="4" name="Ice Bolt"/>
+			<skill class="38" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="38" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="38" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="38" skillId="1012" level="1" name="Cure Poison"/>
+			<skill class="38" skillId="1040" level="1" name="Shield"/>
+			<skill class="38" skillId="1147" level="2" name="Vampiric Touch"/>
+			<skill class="38" skillId="1177" level="5" name="Wind Strike"/>
+			<skill class="38" skillId="1206" level="5" name="Wind Shackle"/>
+			<skill class="38" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="39" skillId="1126" level="6" name="Servitor Recharge"/>
+			<skill class="39" skillId="1151" level="16" name="Corpse Life Drain"/>
+			<skill class="39" skillId="1160" level="15" name="Slow"/>
+			<skill class="39" skillId="1178" level="8" name="Twister"/>
+			<skill class="39" skillId="1224" level="17" name="Surrender To Poison"/>
+			<skill class="39" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="39" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="39" skillId="1069" level="42" name="Sleep"/>
+			<skill class="39" skillId="1127" level="12" name="Servitor Heal"/>
+			<skill class="39" skillId="1157" level="5" name="Body To Mind"/>
+			<skill class="39" skillId="1167" level="6" name="Poisonous Cloud"/>
+			<skill class="39" skillId="1222" level="15" name="Curse Chaos"/>
+			<skill class="39" skillId="1266" level="3" name="Shadow Spark"/>
+			<skill class="39" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="39" skillId="234" level="41" name="Robe Mastery"/>
+			<skill class="40" skillId="1176" level="15" name="Tempest"/>
+			<skill class="40" skillId="1239" level="28" name="Hurricane"/>
+			<skill class="40" skillId="1287" level="1" name="Seed of Wind"/>
+			<skill class="40" skillId="1291" level="1" name="Demon Wind"/>
+			<skill class="40" skillId="1411" level="1" name="Mystic Immunity"/>
+			<skill class="40" skillId="38021" level="1" name="Hidden"/>
+			<skill class="40" skillId="1064" level="14" name="Silence"/>
+			<skill class="40" skillId="1148" level="13" name="Death Spike"/>
+			<skill class="40" skillId="1169" level="14" name="Curse Fear"/>
+			<skill class="40" skillId="1234" level="28" name="Vampiric Claw"/>
+			<skill class="40" skillId="1267" level="14" name="Shadow Flare"/>
+			<skill class="40" skillId="1288" level="1" name="Aura Symphony"/>
+			<skill class="40" skillId="1294" level="1" name="Elemental Storm"/>
+			<skill class="40" skillId="1417" level="5" name="Aura Flash"/>
+			<skill class="40" skillId="1074" level="14" name="Surrender To Wind"/>
+			<skill class="40" skillId="1159" level="22" name="Curse Death Link"/>
+			<skill class="110" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="110" skillId="1341" level="1" name="Wind Vortex"/>
+			<skill class="110" skillId="1420" level="1" name="Cyclone"/>
+			<skill class="110" skillId="1457" level="1" name="Empowering Echo"/>
+			<skill class="110" skillId="1468" level="1" name="Star Fall"/>
+			<skill class="110" skillId="1532" level="1" name="Enlightenment-Wizard"/>
+			<skill class="110" skillId="329" level="1" name="Health"/>
+			<skill class="110" skillId="10041" level="115" name="Everlasting Whirlwind"/>
+			<skill class="110" skillId="337" level="1" name="Arcane Power"/>
+			<skill class="110" skillId="925" level="1" name="Sigil Mastery"/>
+			<skill class="110" skillId="1338" level="1" name="Arcane Chaos"/>
+			<skill class="110" skillId="1343" level="1" name="Dark Vortex"/>
+			<skill class="110" skillId="1456" level="1" name="Wind Vortex Slug"/>
+			<skill class="110" skillId="1458" level="1" name="Throne of Wind"/>
+			<skill class="110" skillId="1494" level="1" name="Hurricane Armor"/>
+			<skill class="110" skillId="328" level="1" name="Wisdom"/>
+			<skill class="110" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="110" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="110" skillId="433" level="1" name="Arcane Roar"/>
+		</class>
+		<class classid="111" name="Spectral Master">
+			<skill class="38" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="38" skillId="1011" level="6" name="Heal"/>
+			<skill class="38" skillId="1015" level="3" name="Battle Heal"/>
+			<skill class="38" skillId="1068" level="1" name="Might"/>
+			<skill class="38" skillId="1168" level="7" name="Curse: Poison"/>
+			<skill class="38" skillId="1184" level="4" name="Ice Bolt"/>
+			<skill class="38" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="38" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="38" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="38" skillId="1012" level="1" name="Cure Poison"/>
+			<skill class="38" skillId="1040" level="1" name="Shield"/>
+			<skill class="38" skillId="1147" level="2" name="Vampiric Touch"/>
+			<skill class="38" skillId="1177" level="5" name="Wind Strike"/>
+			<skill class="38" skillId="1206" level="19" name="Wind Shackle"/>
+			<skill class="38" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="39" skillId="1126" level="34" name="Servitor Recharge"/>
+			<skill class="39" skillId="1151" level="2" name="Corpse Life Drain"/>
+			<skill class="39" skillId="1160" level="1" name="Slow"/>
+			<skill class="39" skillId="1178" level="8" name="Twister"/>
+			<skill class="39" skillId="1224" level="3" name="Surrender To Poison"/>
+			<skill class="39" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="39" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="39" skillId="1069" level="9" name="Sleep"/>
+			<skill class="39" skillId="1127" level="45" name="Servitor Heal"/>
+			<skill class="39" skillId="1157" level="1" name="Body To Mind"/>
+			<skill class="39" skillId="1167" level="2" name="Poisonous Cloud"/>
+			<skill class="39" skillId="1222" level="1" name="Curse Chaos"/>
+			<skill class="39" skillId="1266" level="3" name="Shadow Spark"/>
+			<skill class="39" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="39" skillId="234" level="8" name="Robe Mastery"/>
+			<skill class="41" skillId="1300" level="3" name="Servitor Cure"/>
+			<skill class="41" skillId="1330" level="8" name="Mass Summon Phantom Cubic"/>
+			<skill class="41" skillId="38022" level="1" name="hidden"/>
+			<skill class="41" skillId="33" level="8" name="Summon Phantom Cubic"/>
+			<skill class="41" skillId="1262" level="5" name="Transfer Pain"/>
+			<skill class="41" skillId="1299" level="2" name="Servitor Empowerment"/>
+			<skill class="41" skillId="1301" level="1" name="Servitor Blessing"/>
+			<skill class="41" skillId="1380" level="10" name="Betray"/>
+			<skill class="41" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="41" skillId="1281" level="9" name="Summon Spark Cubic"/>
+			<skill class="111" skillId="1477" level="2" name="Vampiric Impulse"/>
+			<skill class="111" skillId="446" level="1" name="Dodge"/>
+			<skill class="111" skillId="1497" level="1" name="Excessive Loyalty"/>
+			<skill class="111" skillId="484" level="1" name="Rush"/>
+			<skill class="111" skillId="1514" level="1" name="Soul Barrier"/>
+			<skill class="111" skillId="783" level="1" name="Summon Smart Cubic"/>
+			<skill class="111" skillId="30" level="37" name="Backstab"/>
+			<skill class="111" skillId="37507" level="115" name="Final Transformation"/>
+			<skill class="111" skillId="927" level="14" name="Burning Chop"/>
+			<skill class="111" skillId="168" level="3" name="Boost Attack Speed"/>
+			<skill class="111" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="111" skillId="209" level="45" name="Dagger Mastery"/>
+			<skill class="111" skillId="1348" level="1" name="Assassin Servitor"/>
+			<skill class="111" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="111" skillId="1351" level="1" name="Mage Bane"/>
+			<skill class="111" skillId="329" level="1" name="Health"/>
+			<skill class="111" skillId="1424" level="1" name="Anti-Summoning Field"/>
+			<skill class="111" skillId="435" level="1" name="Summon Lore"/>
+			<skill class="111" skillId="1496" level="1" name="Servitor Barrier"/>
+			<skill class="111" skillId="482" level="2" name="Furious Soul"/>
+			<skill class="111" skillId="1498" level="1" name="Mutual Respone"/>
+			<skill class="111" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="111" skillId="12" level="14" name="Switch"/>
+			<skill class="111" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="111" skillId="821" level="1" name="Shadow Step"/>
+			<skill class="111" skillId="122" level="15" name="Hex"/>
+			<skill class="111" skillId="928" level="1" name="Dual Blow"/>
+			<skill class="111" skillId="169" level="2" name="Qucik Step"/>
+			<skill class="111" skillId="1125" level="1" name="Pet Res"/>
+			<skill class="111" skillId="227" level="45" name="Light Armor Mastery"/>
+			<skill class="111" skillId="1349" level="1" name="Final Servitor"/>
+			<skill class="111" skillId="328" level="1" name="Wisdom"/>
+			<skill class="111" skillId="1408" level="1" name="Summon Spectral Lord"/>
+			<skill class="111" skillId="338" level="1" name="Arcane Agility"/>
+		</class>
+		<class classid="112" name="Shillien Saint">
+			<skill class="38" skillId="244" level="3" name="Armor Mastery"/>
+			<skill class="38" skillId="1011" level="18" name="Heal"/>
+			<skill class="38" skillId="1015" level="15" name="Battle Heal"/>
+			<skill class="38" skillId="1068" level="3" name="Might"/>
+			<skill class="38" skillId="1168" level="1" name="Curse: Poison"/>
+			<skill class="38" skillId="1184" level="4" name="Ice Bolt"/>
+			<skill class="38" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="38" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="38" skillId="249" level="42" name="Weapon Mastery"/>
+			<skill class="38" skillId="1012" level="3" name="Cure Poison"/>
+			<skill class="38" skillId="1040" level="3" name="Shield"/>
+			<skill class="38" skillId="1147" level="2" name="Vampiric Touch"/>
+			<skill class="38" skillId="1177" level="5" name="Wind Strike"/>
+			<skill class="38" skillId="1206" level="19" name="Wind Shackle"/>
+			<skill class="38" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="42" skillId="1013" level="32" name="Recharge"/>
+			<skill class="42" skillId="1031" level="8" name="Disrupt Undead"/>
+			<skill class="42" skillId="1059" level="3" name="Empower"/>
+			<skill class="42" skillId="1073" level="2" name="Kiss of Eva"/>
+			<skill class="42" skillId="1078" level="6" name="Concentration"/>
+			<skill class="42" skillId="1201" level="33" name="Dryad Root"/>
+			<skill class="42" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="42" skillId="1268" level="4" name="Vampiric Rage"/>
+			<skill class="42" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="42" skillId="236" level="41" name="Light Armor Mastery"/>
+			<skill class="42" skillId="1016" level="2" name="Resurrection"/>
+			<skill class="42" skillId="1035" level="4" name="Mental Shield"/>
+			<skill class="42" skillId="1069" level="9" name="Sleep"/>
+			<skill class="42" skillId="1077" level="3" name="Focus"/>
+			<skill class="42" skillId="1189" level="3" name="Resist Wind"/>
+			<skill class="42" skillId="1204" level="2" name="Wind Walk"/>
+			<skill class="42" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="42" skillId="235" level="41" name="Robe Mastery"/>
+			<skill class="43" skillId="525" level="5" name="Decoy"/>
+			<skill class="43" skillId="1398" level="10" name="Mana Burn"/>
+			<skill class="43" skillId="1018" level="3" name="Purify"/>
+			<skill class="43" skillId="1411" level="1" name="Mystic Immunity"/>
+			<skill class="43" skillId="1219" level="29" name="Greater Group Heal"/>
+			<skill class="43" skillId="1417" level="1" name="Aura Flash"/>
+			<skill class="43" skillId="1242" level="3" name="Death Whisper"/>
+			<skill class="43" skillId="1435" level="9" name="Death mark"/>
+			<skill class="43" skillId="1271" level="1" name="Benediction"/>
+			<skill class="43" skillId="1522" level="1" name="Inquisitor"/>
+			<skill class="43" skillId="1303" level="2" name="Wild Magic"/>
+			<skill class="43" skillId="1539" level="4" name="Stigma of Shilen"/>
+			<skill class="43" skillId="1330" level="8" name="Mass Summon Phantom Cubic"/>
+			<skill class="43" skillId="1360" level="1" name="Mass Block Shield"/>
+			<skill class="43" skillId="143" level="2" name="Cubic Mastery"/>
+			<skill class="43" skillId="1395" level="10" name="Erase"/>
+			<skill class="43" skillId="789" level="1" name="Touch of Shilen"/>
+			<skill class="43" skillId="1402" level="5" name="Major Group Heal"/>
+			<skill class="43" skillId="1217" level="29" name="Greater Heal"/>
+			<skill class="43" skillId="1412" level="1" name="Spell Turning"/>
+			<skill class="43" skillId="1240" level="3" name="Guidance"/>
+			<skill class="43" skillId="1430" level="5" name="Invocation"/>
+			<skill class="43" skillId="1266" level="2" name="Shadow Spark"/>
+			<skill class="43" skillId="1514" level="1" name="Soul Barrier"/>
+			<skill class="43" skillId="1287" level="1" name="Seed of Wind"/>
+			<skill class="43" skillId="1531" level="7" name="Bless the Blood"/>
+			<skill class="43" skillId="1328" level="8" name="Mass Summon Storm Cubic"/>
+			<skill class="43" skillId="38023" level="1" name="hidden"/>
+			<skill class="43" skillId="1335" level="1" name="Balance Life"/>
+			<skill class="43" skillId="22" level="7" name="Summon Vampiric Cubic"/>
+			<skill class="43" skillId="1392" level="3" name="Holy Resistance"/>
+			<skill class="112" skillId="336" level="1" name="Arcane Wisdom"/>
+			<skill class="112" skillId="1508" level="1" name="Throne Root"/>
+			<skill class="112" skillId="926" level="1" name="Sigil Mastery"/>
+			<skill class="112" skillId="1540" level="1" name="Turn Stone"/>
+			<skill class="112" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="112" skillId="10078" level="115" name="Mass Invisibility"/>
+			<skill class="112" skillId="1311" level="5" name="Body of Avatar"/>
+			<skill class="112" skillId="1354" level="1" name="Arcane Protection"/>
+			<skill class="112" skillId="1358" level="1" name="Block Shield"/>
+			<skill class="112" skillId="1409" level="1" name="Cleanse"/>
+			<skill class="112" skillId="328" level="1" name="Wisdom"/>
+			<skill class="112" skillId="1500" level="1" name="Improved Magic"/>
+			<skill class="112" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="112" skillId="1507" level="1" name="Lord of Vampire"/>
+			<skill class="112" skillId="436" level="1" name="Divine Lore"/>
+			<skill class="112" skillId="1533" level="1" name="Enlightenment-Healer"/>
+			<skill class="112" skillId="933" level="1" name="Detection"/>
+			<skill class="112" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="112" skillId="1218" level="33" name="Greater Battle Heal"/>
+			<skill class="112" skillId="37552" level="1" name="Shilien Blessing"/>
+			<skill class="112" skillId="1343" level="1" name="Dark Vortex"/>
+			<skill class="112" skillId="1357" level="1" name="Prophecy of Wind"/>
+			<skill class="112" skillId="1401" level="11" name="Major Heal"/>
+			<skill class="112" skillId="1460" level="1" name="Mana Gain"/>
+			<skill class="112" skillId="329" level="1" name="Health"/>
+			<skill class="112" skillId="1502" level="1" name="Improved Critical Attack"/>
+		</class>
+		<class classid="113" name="Titan">
+			<skill class="44" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="44" skillId="226" level="1" name="Relax"/>
+			<skill class="44" skillId="3" level="9" name="Power Strike"/>
+			<skill class="44" skillId="134" level="1" name="Toughness"/>
+			<skill class="44" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="44" skillId="295" level="1" name="Iron Body"/>
+			<skill class="44" skillId="29" level="9" name="Iron Punch"/>
+			<skill class="45" skillId="256" level="1" name="Accuracy"/>
+			<skill class="45" skillId="287" level="3" name="Lionheart"/>
+			<skill class="45" skillId="34" level="3" name="Bandage"/>
+			<skill class="45" skillId="312" level="20" name="Vicious Stance"/>
+			<skill class="45" skillId="100" level="15" name="Stun Attack"/>
+			<skill class="45" skillId="139" level="3" name="Guts"/>
+			<skill class="45" skillId="211" level="10" name="Boost HP"/>
+			<skill class="45" skillId="216" level="45" name="Polearm Mastery"/>
+			<skill class="45" skillId="231" level="50" name="Heavy Armor Mastery"/>
+			<skill class="45" skillId="255" level="15" name="Power Smash"/>
+			<skill class="45" skillId="257" level="45" name="Sword/Blunt Weapon Mastery"/>
+			<skill class="45" skillId="293" level="20" name="Two-handed Weapon Mastery"/>
+			<skill class="45" skillId="94" level="2" name="Rage"/>
+			<skill class="45" skillId="121" level="6" name="Battle Roar"/>
+			<skill class="45" skillId="176" level="3" name="Frenzy"/>
+			<skill class="45" skillId="212" level="8" name="Fast HP Recovery"/>
+			<skill class="45" skillId="227" level="50" name="Light Armor Mastery"/>
+			<skill class="45" skillId="245" level="15" name="Wild Sweep"/>
+			<skill class="46" skillId="190" level="37" name="Fatal Strike"/>
+			<skill class="46" skillId="315" level="16" name="Crush of Doom"/>
+			<skill class="46" skillId="420" level="3" name="Zealot"/>
+			<skill class="46" skillId="423" level="3" name="Infernal Form"/>
+			<skill class="46" skillId="38024" level="1" name="Hidden"/>
+			<skill class="46" skillId="36" level="37" name="Whirlwind"/>
+			<skill class="46" skillId="260" level="37" name="Hammer Crush"/>
+			<skill class="46" skillId="320" level="10" name="Wrath"/>
+			<skill class="46" skillId="422" level="3" name="Polearm Accuracy"/>
+			<skill class="46" skillId="424" level="3" name="War Frenzy"/>
+			<skill class="113" skillId="328" level="1" name="Wisdom"/>
+			<skill class="113" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="113" skillId="339" level="1" name="Parry Stance"/>
+			<skill class="113" skillId="362" level="1" name="Armor Crush"/>
+			<skill class="113" skillId="440" level="1" name="Braveheart"/>
+			<skill class="113" skillId="536" level="1" name="Over the Body"/>
+			<skill class="113" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="113" skillId="777" level="1" name="Demolition Impact"/>
+			<skill class="113" skillId="37555" level="115" name="Titan's Wrath"/>
+			<class class="113" skillId="9074" level="1" name="Boost HP" />
+			<skill class="113" skillId="329" level="1" name="Health"/>
+			<skill class="113" skillId="335" level="1" name="Fortitude"/>
+			<skill class="113" skillId="347" level="1" name="Earthquake"/>
+			<skill class="113" skillId="430" level="1" name="Master of Combat"/>
+			<skill class="113" skillId="456" level="1" name="Symbol of Resistance"/>
+			<skill class="113" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="113" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="113" skillId="917" level="1" name="Final Secret"/>
+		</class>
+		<class classid="114" name="Grand Khauatari">
+			<skill class="44" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="44" skillId="226" level="1" name="Relax"/>
+			<skill class="44" skillId="3" level="9" name="Power Strike"/>
+			<skill class="44" skillId="134" level="1" name="Toughness"/>
+			<skill class="44" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="44" skillId="295" level="1" name="Iron Body"/>
+			<skill class="44" skillId="29" level="24" name="Iron Punch"/>
+			<skill class="47" skillId="50" level="8" name="Focused Force"/>
+			<skill class="47" skillId="76" level="1" name="Bear Spirit Totem"/>
+			<skill class="47" skillId="95" level="20" name="Cripple"/>
+			<skill class="47" skillId="168" level="3" name="Boost Attack Speed"/>
+			<skill class="47" skillId="233" level="47" name="Light Armor Mastery"/>
+			<skill class="47" skillId="319" level="2" name="Agile Movement"/>
+			<skill class="47" skillId="54" level="49" name="Force Blaster"/>
+			<skill class="47" skillId="83" level="1" name="Wolf Spirit Totem"/>
+			<skill class="47" skillId="120" level="15" name="Stunning Fist"/>
+			<skill class="47" skillId="210" level="45" name="Fist Weapon Mastery"/>
+			<skill class="47" skillId="284" level="40" name="Hurricane Assault"/>
+			<skill class="48" skillId="81" level="3" name="Punch of Doom"/>
+			<skill class="48" skillId="222" level="1" name="Fist Fury"/>
+			<skill class="48" skillId="281" level="37" name="Soul Breaker"/>
+			<skill class="48" skillId="292" level="1" name="Bison Spirit Totem"/>
+			<skill class="48" skillId="420" level="3" name="Zealot"/>
+			<skill class="48" skillId="424" level="3" name="War Frenzy"/>
+			<skill class="48" skillId="461" level="2" name="Break Duress"/>
+			<skill class="48" skillId="35" level="28" name="Force Storm"/>
+			<skill class="48" skillId="109" level="1" name="Ogre Spirit Totem"/>
+			<skill class="48" skillId="280" level="37" name="Burning Fist"/>
+			<skill class="48" skillId="282" level="1" name="Puma Spirit Totem"/>
+			<skill class="48" skillId="298" level="1" name="Rabbit Spirit Totem"/>
+			<skill class="48" skillId="423" level="3" name="Infernal Form"/>
+			<skill class="48" skillId="425" level="1" name="Hawk Spirit Totem"/>
+			<skill class="48" skillId="38025" level="1" name="hidden"/>
+			<skill class="48" skillId="17" level="34" name="Force Burst"/>
+			<skill class="114" skillId="329" level="1" name="Health"/>
+			<skill class="114" skillId="335" level="1" name="Fortitude"/>
+			<skill class="114" skillId="346" level="1" name="Raging Force"/>
+			<skill class="114" skillId="441" level="1" name="Force Meditation"/>
+			<skill class="114" skillId="458" level="1" name="Symbol of Energy"/>
+			<skill class="114" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="114" skillId="776" level="1" name="Force of Destruction"/>
+			<skill class="114" skillId="918" level="1" name="Maximum Focus Force"/>
+			<skill class="114" skillId="328" level="1" name="Wisdom"/>
+			<skill class="114" skillId="10023" level="115" name="Lunacy"/>
+			<skill class="114" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="114" skillId="340" level="1" name="Riposte Stance"/>
+			<skill class="114" skillId="430" level="1" name="Master of Combat"/>
+			<skill class="114" skillId="443" level="1" name="Force Barrier"/>
+			<skill class="114" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="114" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="114" skillId="917" level="1" name="Final Secret"/>
+			<skill class="114" skillId="9073" level="1" name="Boost HP"/>
+		</class>
+		<class classid="115" name="Dominator">
+			<skill class="49" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="49" skillId="251" level="45" name="Robe Mastery"/>
+			<skill class="49" skillId="253" level="43" name="Heavy Armor Mastery"/>
+			<skill class="49" skillId="1007" level="2" name="Chant of Battle"/>
+			<skill class="49" skillId="1090" level="6" name="Life Drain"/>
+			<skill class="49" skillId="1095" level="3" name="Venom"/>
+			<skill class="49" skillId="1100" level="2" name="Chill Flame"/>
+			<skill class="49" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="49" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="49" skillId="250" level="42" name="Weapon Mastery"/>
+			<skill class="49" skillId="252" level="45" name="Light Armor Mastery"/>
+			<skill class="49" skillId="1001" level="10" name="Soul Cry"/>
+			<skill class="49" skillId="1010" level="3" name="Soul Shield"/>
+			<skill class="49" skillId="1092" level="19" name="Fear"/>
+			<skill class="49" skillId="1097" level="20" name="Dreaming Spirit"/>
+			<skill class="49" skillId="134" level="1" name="Toughness"/>
+			<skill class="50" skillId="1002" level="1" name="Flame Chant"/>
+			<skill class="50" skillId="1005" level="3" name="Blessings of Pa'agrio"/>
+			<skill class="50" skillId="1009" level="2" name="Chant of Shielding"/>
+			<skill class="50" skillId="1099" level="15" name="Seal of Slow"/>
+			<skill class="50" skillId="1102" level="2" name="Aura Sink"/>
+			<skill class="50" skillId="1107" level="2" name="Frost Flame"/>
+			<skill class="50" skillId="1209" level="6" name="Seal of Poison"/>
+			<skill class="50" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="50" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="50" skillId="1003" level="3" name="Pa'agrian Gift"/>
+			<skill class="50" skillId="1006" level="1" name="Chant of Fire"/>
+			<skill class="50" skillId="1096" level="16" name="Seal of Chaos"/>
+			<skill class="50" skillId="1101" level="2" name="Blaze Quake"/>
+			<skill class="50" skillId="1105" level="18" name="Madness"/>
+			<skill class="50" skillId="1208" level="17" name="Seal of Binding"/>
+			<skill class="50" skillId="100" level="12" name="Stun Attack"/>
+			<skill class="50" skillId="1229" level="4" name="Chant of Life"/>
+			<skill class="50" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="51" skillId="260" level="35" name="Hammer Crush"/>
+			<skill class="51" skillId="1283" level="13" name="Soul Guard"/>
+			<skill class="51" skillId="1008" level="3" name="The Glory of Pa'agrio"/>
+			<skill class="51" skillId="1306" level="6" name="Ritual of Life"/>
+			<skill class="51" skillId="1108" level="4" name="Seal of Flame"/>
+			<skill class="51" skillId="1213" level="13" name="Seal of Mirage"/>
+			<skill class="51" skillId="1246" level="12" name="Seal of Silence"/>
+			<skill class="51" skillId="1248" level="12" name="Seal of Suspension"/>
+			<skill class="51" skillId="1250" level="3" name="Under the Protection of Pa'agrio"/>
+			<skill class="51" skillId="1260" level="3" name="The Tact of Pa'agrio"/>
+			<skill class="51" skillId="211" level="7" name="Boost HP"/>
+			<skill class="51" skillId="1282" level="2" name="Pa'agrian Haste"/>
+			<skill class="51" skillId="1004" level="3" name="The Wisdom of Pa'agrio"/>
+			<skill class="51" skillId="1305" level="5" name="The Honor of Pa'agrio"/>
+			<skill class="51" skillId="1104" level="14" name="Seal of Winter"/>
+			<skill class="51" skillId="38026" level="1" name="hidden"/>
+			<skill class="51" skillId="1210" level="4" name="Seal of Gloom"/>
+			<skill class="51" skillId="1245" level="14" name="Steal Essence"/>
+			<skill class="51" skillId="1247" level="14" name="Seal of Scourge"/>
+			<skill class="51" skillId="1249" level="3" name="The Vision of Pa'agrio"/>
+			<skill class="51" skillId="1256" level="13" name="The Heart of Pa'agrio"/>
+			<skill class="51" skillId="1261" level="2" name="The Rage of Pa'agrio"/>
+			<skill class="115" skillId="1366" level="1" name="Seal of Despair"/>
+			<skill class="115" skillId="1414" level="1" name="Victory of Pa'agrio"/>
+			<skill class="115" skillId="1416" level="1" name="Pa'agrio's Fist"/>
+			<skill class="115" skillId="328" level="1" name="Wisdom"/>
+			<skill class="115" skillId="1462" level="1" name="Seal of Blockade"/>
+			<skill class="115" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="115" skillId="1533" level="1" name="Enlightenment-Healer"/>
+			<skill class="115" skillId="436" level="1" name="Divine Lore"/>
+			<skill class="115" skillId="1537" level="1" name="Critical of Pa'agrio"/>
+			<skill class="115" skillId="927" level="12" name="Burning Chop"/>
+			<skill class="115" skillId="1540" level="1" name="Turn Stone"/>
+			<skill class="115" skillId="949" level="1" name="Onslaught of Pa'agrio"/>
+			<skill class="115" skillId="1365" level="1" name="Soul of Pa'agrio"/>
+			<skill class="115" skillId="1367" level="1" name="Seal of Disease"/>
+			<skill class="115" skillId="1415" level="1" name="Pa'agrio's Emblem"/>
+			<skill class="115" skillId="1427" level="1" name="Flames of Invincibility"/>
+			<skill class="115" skillId="329" level="1" name="Health"/>
+			<skill class="115" skillId="1509" level="1" name="Seal of Limit"/>
+			<skill class="115" skillId="337" level="1" name="Arcane Power"/>
+			<skill class="115" skillId="1536" level="1" name="Combat of Pa'agrio"/>
+			<skill class="115" skillId="926" level="1" name="Sigil Mastery"/>
+			<skill class="115" skillId="1538" level="1" name="Condition of Pa'agrio"/>
+			<skill class="115" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="115" skillId="10056" level="115" name="Mind Fortress"/>
+			<skill class="115" skillId="1364" level="1" name="Eye of Pa'agrio"/>
+			<class class="115" skillId="9073" level="1" name="Boost HP" />
+		</class>
+		<class classid="116" name="Doom Cryer">
+			<skill class="49" skillId="163" level="1" name="Spellcraft"/>
+			<skill class="49" skillId="251" level="45" name="Robe Mastery"/>
+			<skill class="49" skillId="253" level="43" name="Heavy Armor Mastery"/>
+			<skill class="49" skillId="1007" level="3" name="Chant of Battle"/>
+			<skill class="49" skillId="1090" level="6" name="Life Drain"/>
+			<skill class="49" skillId="1095" level="5" name="Venom"/>
+			<skill class="49" skillId="1100" level="2" name="Chill Flame"/>
+			<skill class="49" skillId="118" level="1" name="Magician's Movement"/>
+			<skill class="49" skillId="146" level="45" name="Anti Magic"/>
+			<skill class="49" skillId="250" level="42" name="Weapon Mastery"/>
+			<skill class="49" skillId="252" level="45" name="Light Armor Mastery"/>
+			<skill class="49" skillId="1001" level="10" name="Soul Cry"/>
+			<skill class="49" skillId="1010" level="3" name="Soul Shield"/>
+			<skill class="49" skillId="1092" level="19" name="Fear"/>
+			<skill class="49" skillId="1097" level="20" name="Dreaming Spirit"/>
+			<skill class="49" skillId="134" level="1" name="Toughness"/>
+			<skill class="50" skillId="1002" level="3" name="Flame Chant"/>
+			<skill class="50" skillId="1005" level="1" name="Blessings of Pa'agrio"/>
+			<skill class="50" skillId="1009" level="3" name="Chant of Shielding"/>
+			<skill class="50" skillId="1099" level="1" name="Seal of Slow"/>
+			<skill class="50" skillId="1102" level="6" name="Aura Sink"/>
+			<skill class="50" skillId="1107" level="2" name="Frost Flame"/>
+			<skill class="50" skillId="1209" level="2" name="Seal of Poison"/>
+			<skill class="50" skillId="164" level="3" name="Quick Recycle"/>
+			<skill class="50" skillId="228" level="3" name="Fast Spell Casting"/>
+			<skill class="50" skillId="1003" level="1" name="Pa'agrian Gift"/>
+			<skill class="50" skillId="1006" level="3" name="Chant of Fire"/>
+			<skill class="50" skillId="1096" level="2" name="Seal of Chaos"/>
+			<skill class="50" skillId="1101" level="2" name="Blaze Quake"/>
+			<skill class="50" skillId="1105" level="18" name="Madness"/>
+			<skill class="50" skillId="1208" level="3" name="Seal of Binding"/>
+			<skill class="50" skillId="100" level="12" name="Stun Attack"/>
+			<skill class="50" skillId="1229" level="18" name="Chant of Life"/>
+			<skill class="50" skillId="212" level="6" name="Fast HP Recovery"/>
+			<skill class="52" skillId="260" level="35" name="Hammer Crush"/>
+			<skill class="52" skillId="1244" level="4" name="Freezing Flame"/>
+			<skill class="52" skillId="1251" level="2" name="Chant of Fury"/>
+			<skill class="52" skillId="1253" level="3" name="Chant of Rage"/>
+			<skill class="52" skillId="1308" level="3" name="Chant of Predator"/>
+			<skill class="52" skillId="1310" level="4" name="Chant of Vampire"/>
+			<skill class="52" skillId="1391" level="3" name="Earth Chant"/>
+			<skill class="52" skillId="211" level="7" name="Boost HP"/>
+			<skill class="52" skillId="927" level="14" name="Burning Chop"/>
+			<skill class="52" skillId="1245" level="14" name="Steal Essence"/>
+			<skill class="52" skillId="1252" level="3" name="Chant of Evasion"/>
+			<skill class="52" skillId="1284" level="3" name="Chant of Revenge"/>
+			<skill class="52" skillId="1309" level="3" name="Chant of Eagle"/>
+			<skill class="52" skillId="1390" level="3" name="War Chant"/>
+			<skill class="52" skillId="38027" level="1" name="hidden"/>
+			<skill class="116" skillId="497" level="16" name="Crushing Pain"/>
+			<skill class="116" skillId="121" level="6" name="Battle Roar"/>
+			<skill class="116" skillId="10063" level="115" name="Purging Flames"/>
+			<skill class="116" skillId="935" level="1" name="Sigil Mastery"/>
+			<skill class="116" skillId="245" level="15" name="Wild Sweep"/>
+			<skill class="116" skillId="1362" level="1" name="Chant of Spirit"/>
+			<skill class="116" skillId="290" level="14" name="Final Frenzy"/>
+			<skill class="116" skillId="1413" level="1" name="Magnus' Chant"/>
+			<skill class="116" skillId="328" level="1" name="Wisdom"/>
+			<skill class="116" skillId="1437" level="26" name="Dark Flame"/>
+			<skill class="116" skillId="331" level="1" name="Skill Mastery"/>
+			<skill class="116" skillId="1517" level="1" name="Chant of Combat"/>
+			<skill class="116" skillId="352" level="1" name="Shield Bash"/>
+			<skill class="116" skillId="1519" level="1" name="Chant of Blood Awakening"/>
+			<skill class="116" skillId="436" level="1" name="Divine Lore"/>
+			<skill class="116" skillId="78" level="2" name="War Cry"/>
+			<skill class="116" skillId="1537" level="1" name="Chant of Movement"/>
+			<skill class="116" skillId="482" level="2" name="Furious Soul"/>
+			<skill class="116" skillId="116" level="14" name="Howl"/>
+			<skill class="116" skillId="1543" level="1" name="Great Fury"/>
+			<skill class="116" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="116" skillId="139" level="1" name="Guts"/>
+			<skill class="116" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="116" skillId="286" level="2" name="Provoke"/>
+			<skill class="116" skillId="1363" level="1" name="Chant of Victory"/>
+			<skill class="116" skillId="315" level="16" name="Crush of Doom"/>
+			<skill class="116" skillId="1429" level="1" name="Gate Chant"/>
+			<skill class="116" skillId="329" level="1" name="Health"/>
+			<skill class="116" skillId="1461" level="1" name="Chant of Protection"/>
+			<skill class="116" skillId="336" level="1" name="Arcane Wisdom"/>
+			<skill class="116" skillId="1518" level="1" name="Chant of Critical Attack"/>
+			<skill class="116" skillId="423" level="3" name="Infernal Form"/>
+			<skill class="116" skillId="1533" level="1" name="Enlightenment-Healer"/>
+			<skill class="116" skillId="452" level="5" name="Shock Stomp"/>
+			<skill class="116" skillId="94" level="2" name="Rage"/>
+			<skill class="116" skillId="1540" level="1" name="Turn Stone"/>
+			<class class="116" skillId="9073" level="1" name="Boost HP" />
+		</class>
+		<class classid="117" name="Fortune Seeker">
+			<skill class="53" skillId="121" level="6" name="Battle Roar"/>
+			<skill class="53" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="53" skillId="176" level="1" name="Frenzy"/>
+			<skill class="53" skillId="255" level="15" name="Power Smash"/>
+			<skill class="53" skillId="291" level="11" name="Final Fortress"/>
+			<skill class="53" skillId="536" level="1" name="Over The Body"/>
+			<skill class="53" skillId="42" level="1" name="Sweeper"/>
+			<skill class="53" skillId="110" level="1" name="Ultimate Defense"/>
+			<skill class="53" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="53" skillId="153" level="2" name="Shield Mastery"/>
+			<skill class="53" skillId="254" level="11" name="Spoil"/>
+			<skill class="53" skillId="290" level="14" name="Final Frenzy"/>
+			<skill class="53" skillId="322" level="6" name="Shield Fortress"/>
+			<skill class="53" skillId="94" level="1" name="Rage"/>
+			<skill class="54" skillId="227" level="50" name="Light Armor Mastery"/>
+			<skill class="54" skillId="245" level="15" name="Wild Sweep"/>
+			<skill class="54" skillId="302" level="9" name="Spoil Festival"/>
+			<skill class="54" skillId="100" level="15" name="Stun Attack"/>
+			<skill class="54" skillId="211" level="10" name="Boost HP"/>
+			<skill class="54" skillId="216" level="45" name="Polearm Mastery"/>
+			<skill class="54" skillId="231" level="50" name="Heavy Armor Mastery"/>
+			<skill class="54" skillId="248" level="5" name="Crystallize"/>
+			<skill class="54" skillId="34" level="3" name="Bandage"/>
+			<skill class="54" skillId="205" level="45" name="Blunt Weapon Mastery"/>
+			<skill class="54" skillId="212" level="8" name="Fast HP Recovery"/>
+			<skill class="55" skillId="60" level="1" name="Fake Death"/>
+			<skill class="55" skillId="260" level="37" name="Hammer Crush"/>
+			<skill class="55" skillId="422" level="3" name="Polearm Accuracy"/>
+			<skill class="55" skillId="952" level="5" name="Collector's Experience"/>
+			<skill class="55" skillId="36" level="37" name="Whirlwind"/>
+			<skill class="55" skillId="190" level="37" name="Fatal Strike"/>
+			<skill class="55" skillId="320" level="10" name="Wrath"/>
+			<skill class="55" skillId="424" level="3" name="War Frenzy"/>
+			<skill class="55" skillId="38028" level="1" name="hidden"/>
+			<skill class="117" skillId="116" level="13" name="Howl"/>
+			<skill class="117" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="117" skillId="328" level="1" name="Wisdom"/>
+			<skill class="117" skillId="947" level="1" name="Lucky Strike"/>
+			<skill class="117" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="117" skillId="340" level="1" name="Riposte Stance"/>
+			<skill class="117" skillId="348" level="1" name="Spoil Crush"/>
+			<skill class="117" skillId="430" level="1" name="Master of Combat"/>
+			<skill class="117" skillId="453" level="1" name="Escape Shackle"/>
+			<skill class="117" skillId="537" level="1" name="Spoil Bomb"/>
+			<skill class="117" skillId="4" level="1" name="Dash"/>
+			<skill class="117" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="117" skillId="315" level="10" name="Crush of Doom"/>
+			<skill class="117" skillId="917" level="1" name="Final Secret"/>
+			<skill class="117" skillId="329" level="1" name="Health"/>
+			<skill class="117" skillId="10068" level="115" name="Final Berzerker"/>
+			<skill class="117" skillId="339" level="1" name="Parry Stance"/>
+			<skill class="117" skillId="347" level="1" name="Earthquake"/>
+			<skill class="117" skillId="362" level="1" name="Armor Crush"/>
+			<skill class="117" skillId="440" level="1" name="Braveheart"/>
+			<skill class="117" skillId="456" level="1" name="Symbol of Resistance"/>
+			<skill class="117" skillId="758" level="1" name="Fighter's Will"/>
+			<class class="117" skillId="9074" level="1" name="Boost HP" />
+		</class>
+		<class classid="118" name="Maestro">
+			<skill class="53" skillId="121" level="6" name="Battle Roar"/>
+			<skill class="53" skillId="142" level="5" name="Armor Mastery"/>
+			<skill class="53" skillId="176" level="1" name="Frenzy"/>
+			<skill class="53" skillId="255" level="15" name="Power Smash"/>
+			<skill class="53" skillId="291" level="11" name="Final Fortress"/>
+			<skill class="53" skillId="536" level="1" name="Over The Body"/>
+			<skill class="53" skillId="42" level="1" name="Sweeper"/>
+			<skill class="53" skillId="110" level="1" name="Ultimate Defense"/>
+			<skill class="53" skillId="141" level="3" name="Weapon Mastery"/>
+			<skill class="53" skillId="153" level="2" name="Shield Mastery"/>
+			<skill class="53" skillId="254" level="11" name="Spoil"/>
+			<skill class="53" skillId="290" level="14" name="Final Frenzy"/>
+			<skill class="53" skillId="322" level="6" name="Shield Fortress"/>
+			<skill class="53" skillId="94" level="1" name="Rage"/>
+			<skill class="54" skillId="227" level="50" name="Light Armor Mastery"/>
+			<skill class="54" skillId="245" level="15" name="Wild Sweep"/>
+			<skill class="54" skillId="302" level="9" name="Spoil Festival"/>
+			<skill class="54" skillId="100" level="15" name="Stun Attack"/>
+			<skill class="54" skillId="211" level="10" name="Boost HP"/>
+			<skill class="54" skillId="216" level="45" name="Polearm Mastery"/>
+			<skill class="54" skillId="231" level="50" name="Heavy Armor Mastery"/>
+			<skill class="54" skillId="248" level="5" name="Crystallize"/>
+			<skill class="54" skillId="34" level="3" name="Bandage"/>
+			<skill class="54" skillId="205" level="45" name="Blunt Weapon Mastery"/>
+			<skill class="54" skillId="212" level="8" name="Fast HP Recovery"/>
+			<skill class="55" skillId="60" level="1" name="Fake Death"/>
+			<skill class="55" skillId="260" level="37" name="Hammer Crush"/>
+			<skill class="55" skillId="422" level="3" name="Polearm Accuracy"/>
+			<skill class="55" skillId="952" level="5" name="Collector's Experience"/>
+			<skill class="55" skillId="36" level="37" name="Whirlwind"/>
+			<skill class="55" skillId="190" level="37" name="Fatal Strike"/>
+			<skill class="55" skillId="320" level="10" name="Wrath"/>
+			<skill class="55" skillId="424" level="3" name="War Frenzy"/>
+			<skill class="55" skillId="38028" level="1" name="hidden"/>
+			<skill class="117" skillId="116" level="13" name="Howl"/>
+			<skill class="117" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="117" skillId="328" level="1" name="Wisdom"/>
+			<skill class="117" skillId="947" level="1" name="Lucky Strike"/>
+			<skill class="117" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="117" skillId="340" level="1" name="Riposte Stance"/>
+			<skill class="117" skillId="348" level="1" name="Spoil Crush"/>
+			<skill class="117" skillId="430" level="1" name="Master of Combat"/>
+			<skill class="117" skillId="453" level="1" name="Escape Shackle"/>
+			<skill class="117" skillId="537" level="1" name="Spoil Bomb"/>
+			<skill class="117" skillId="4" level="1" name="Dash"/>
+			<skill class="117" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="117" skillId="315" level="10" name="Crush of Doom"/>
+			<skill class="117" skillId="917" level="1" name="Final Secret"/>
+			<skill class="117" skillId="329" level="1" name="Health"/>
+			<skill class="117" skillId="10068" level="115" name="Final Berzerker"/>
+			<skill class="117" skillId="339" level="1" name="Parry Stance"/>
+			<skill class="117" skillId="347" level="1" name="Earthquake"/>
+			<skill class="117" skillId="362" level="1" name="Armor Crush"/>
+			<skill class="117" skillId="440" level="1" name="Braveheart"/>
+			<skill class="117" skillId="456" level="1" name="Symbol of Resistance"/>
+			<skill class="117" skillId="758" level="1" name="Fighter's Will"/>
+			<class class="118" skillId="9074" level="1" name="Boost HP" />
+		</class>
+		<class classid="131" name="Doombringer">
+			<skill class="123" skillId="466" level="55" name="Magic Immunity"/>
+			<skill class="123" skillId="468" level="9" name="Fallen Attack"/>
+			<skill class="123" skillId="1432" level="2" name="Increase Power"/>
+			<skill class="123" skillId="462" level="1" name="Guilted Body"/>
+			<skill class="123" skillId="464" level="5" name="Armor Mastery"/>
+			<skill class="123" skillId="467" level="23" name="Soul Mastery"/>
+			<skill class="123" skillId="1431" level="6" name="Fallen Arrow"/>
+			<skill class="123" skillId="463" level="3" name="Weapon Mastery"/>
+			<skill class="125" skillId="485" level="7" name="Disarm"/>
+			<skill class="125" skillId="1433" level="10" name="Abyssal Blaze"/>
+			<skill class="125" skillId="1435" level="2" name="Death Mark"/>
+			<skill class="125" skillId="472" level="45" name="Ancient Sword Mastery"/>
+			<skill class="125" skillId="1473" level="1" name="Change Weapon"/>
+			<skill class="125" skillId="475" level="1" name="Strike Back"/>
+			<skill class="125" skillId="478" level="15" name="Double Thrust"/>
+			<skill class="125" skillId="480" level="1" name="Dark Blade"/>
+			<skill class="125" skillId="482" level="2" name="Furious Soul"/>
+			<skill class="125" skillId="484" level="1" name="Rush"/>
+			<skill class="125" skillId="499" level="3" name="Courage"/>
+			<skill class="125" skillId="1434" level="4" name="Dark Explosion"/>
+			<skill class="125" skillId="465" level="50" name="Light Armor Mastery"/>
+			<skill class="125" skillId="1445" level="3" name="Surrender to the Unholy"/>
+			<skill class="125" skillId="474" level="8" name="Rapier Mastery"/>
+			<skill class="125" skillId="1475" level="1" name="Erase Mark"/>
+			<skill class="125" skillId="476" level="15" name="Dark Strike"/>
+			<skill class="125" skillId="479" level="1" name="Hard March"/>
+			<skill class="125" skillId="481" level="2" name="Dark Armor"/>
+			<skill class="125" skillId="483" level="2" name="Sword Shield"/>
+			<skill class="127" skillId="498" level="12" name="Contagion"/>
+			<skill class="127" skillId="501" level="12" name="Violent Temper"/>
+			<skill class="127" skillId="503" level="3" name="Scorn"/>
+			<skill class="127" skillId="626" level="4" name="Critical Sense"/>
+			<skill class="127" skillId="833" level="1" name="Body Reconstruction"/>
+			<skill class="127" skillId="477" level="37" name="Dark Smash"/>
+			<skill class="127" skillId="1510" level="1" name="Soul Cleanse"/>
+			<skill class="127" skillId="493" level="28" name="Storm Assault"/>
+			<skill class="127" skillId="38030" level="1" name="hidden"/>
+			<skill class="127" skillId="495" level="10" name="Blade Rush"/>
+			<skill class="127" skillId="497" level="16" name="Crushing Pain"/>
+			<skill class="127" skillId="500" level="2" name="True Berserker"/>
+			<skill class="127" skillId="502" level="5" name="Life to Soul"/>
+			<skill class="127" skillId="625" level="1" name="Soul Gathering"/>
+			<skill class="127" skillId="832" level="1" name="Fast Recovery"/>
+			<skill class="127" skillId="834" level="1" name="Blood Pact"/>
+			<skill class="127" skillId="492" level="25" name="Spread Wing"/>
+			<skill class="127" skillId="1514" level="1" name="Soul Barrier"/>
+			<skill class="127" skillId="494" level="37" name="Shoulder Charge"/>
+			<skill class="127" skillId="496" level="31" name="Slashing Blade"/>
+			<skill class="131" skillId="526" level="1" name="Enuma Elish"/>
+			<skill class="131" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="131" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="131" skillId="794" level="1" name="Mass Disarm"/>
+			<skill class="131" skillId="939" level="1" name="Soul Rage"/>
+			<skill class="131" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="131" skillId="10025" level="115" name="Midair Slash"/>
+			<skill class="131" skillId="329" level="1" name="Health"/>
+			<skill class="131" skillId="335" level="1" name="Fortitude"/>
+			<skill class="131" skillId="538" level="1" name="Final Form"/>
+			<skill class="131" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="131" skillId="793" level="1" name="Rush Impact"/>
+			<skill class="131" skillId="917" level="1" name="Final Secret"/>
+			<skill class="131" skillId="948" level="1" name="Eye for Eye"/>
+			<skill class="131" skillId="9082" level="1" name="Nerf Critical Damage"/>
+			<skill class="131" skillId="328" level="1" name="Wisdom"/>
+			<skill class="131" skillId="330" level="1" name="Skill Mastery"/>
+		</class>
+		<class classid="132" name="Male Soulhound">
+			<skill class="123" skillId="466" level="55" name="Magic Immunity"/>
+			<skill class="123" skillId="468" level="9" name="Fallen Attack"/>
+			<skill class="123" skillId="1432" level="2" name="Increase Power"/>
+			<skill class="123" skillId="462" level="1" name="Guilted Body"/>
+			<skill class="123" skillId="464" level="5" name="Armor Mastery"/>
+			<skill class="123" skillId="467" level="23" name="Soul Mastery"/>
+			<skill class="123" skillId="1431" level="6" name="Fallen Arrow"/>
+			<skill class="123" skillId="463" level="3" name="Weapon Mastery"/>
+			<skill class="125" skillId="485" level="1" name="Disarm"/>
+			<skill class="125" skillId="1433" level="10" name="Abyssal Blaze"/>
+			<skill class="125" skillId="1435" level="10" name="Death Mark"/>
+			<skill class="125" skillId="472" level="8" name="Ancient Sword Mastery"/>
+			<skill class="125" skillId="1473" level="1" name="Change Weapon"/>
+			<skill class="125" skillId="475" level="1" name="Strike Back"/>
+			<skill class="125" skillId="478" level="15" name="Double Thrust"/>
+			<skill class="125" skillId="480" level="1" name="Dark Blade"/>
+			<skill class="125" skillId="482" level="1" name="Furious Soul"/>
+			<skill class="125" skillId="484" level="1" name="Rush"/>
+			<skill class="125" skillId="499" level="1" name="Courage"/>
+			<skill class="125" skillId="1434" level="4" name="Dark Explosion"/>
+			<skill class="125" skillId="465" level="50" name="Light Armor Mastery"/>
+			<skill class="125" skillId="1445" level="18" name="Surrender to the Unholy"/>
+			<skill class="125" skillId="474" level="45" name="Rapier Mastery"/>
+			<skill class="125" skillId="1475" level="3" name="Erase Mark"/>
+			<skill class="125" skillId="476" level="15" name="Dark Strike"/>
+			<skill class="125" skillId="479" level="1" name="Hard March"/>
+			<skill class="125" skillId="481" level="2" name="Dark Armor"/>
+			<skill class="125" skillId="483" level="1" name="Sword Shield"/>
+			<skill class="128" skillId="832" level="1" name="Fast Recovery"/>
+			<skill class="128" skillId="1529" level="7" name="Soul Web"/>
+			<skill class="128" skillId="1436" level="30" name="Soul of Pain"/>
+			<skill class="128" skillId="1438" level="9" name="Annihilation Circle"/>
+			<skill class="128" skillId="1440" level="5" name="Steal Divinity"/>
+			<skill class="128" skillId="1442" level="3" name="Protection from Darkness"/>
+			<skill class="128" skillId="492" level="25" name="Spread Wing"/>
+			<skill class="128" skillId="1446" level="11" name="Shadow Bind"/>
+			<skill class="128" skillId="504" level="37" name="Triple Thrust"/>
+			<skill class="128" skillId="1448" level="1" name="Blink"/>
+			<skill class="128" skillId="506" level="4" name="Checkmate"/>
+			<skill class="128" skillId="1510" level="1" name="Soul Cleanse"/>
+			<skill class="128" skillId="626" level="4" name="Critical Sense"/>
+			<skill class="128" skillId="1527" level="1" name="Expert Casting"/>
+			<skill class="128" skillId="837" level="1" name="Painkiller"/>
+			<skill class="128" skillId="38031" level="1" name="hidden"/>
+			<skill class="128" skillId="1437" level="26" name="Dark Flame"/>
+			<skill class="128" skillId="1439" level="5" name="Curse of Divinity"/>
+			<skill class="128" skillId="1441" level="2" name="Soul to Empower"/>
+			<skill class="128" skillId="1443" level="1" name="Dark Weapon"/>
+			<skill class="128" skillId="502" level="5" name="Life to Soul"/>
+			<skill class="128" skillId="1447" level="9" name="Voice Bind"/>
+			<skill class="128" skillId="505" level="28" name="Shining Edge"/>
+			<skill class="128" skillId="1474" level="1" name="Abyssal Power"/>
+			<skill class="128" skillId="625" level="1" name="Soul Gathering"/>
+			<skill class="128" skillId="1511" level="8" name="Curse of Life Flow"/>
+			<skill class="132" skillId="1513" level="1" name="Soul Vortex Extinction"/>
+			<skill class="132" skillId="1516" level="1" name="Soul Strike"/>
+			<skill class="132" skillId="328" level="1" name="Wisdom"/>
+			<skill class="132" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="132" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="132" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="132" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="132" skillId="791" level="1" name="Lightning Shock"/>
+			<skill class="132" skillId="1444" level="1" name="Pride of Kamael"/>
+			<skill class="132" skillId="1512" level="1" name="Soul Vortex"/>
+			<skill class="132" skillId="1515" level="1" name="Lightning Barrier"/>
+			<skill class="132" skillId="1532" level="1" name="Enlightenment-Wizard"/>
+			<skill class="132" skillId="329" level="1" name="Health"/>
+			<skill class="132" skillId="12500" level="115" name="Soul Force"/>
+			<skill class="132" skillId="538" level="1" name="Final Form"/>
+			<skill class="132" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="132" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="132" skillId="939" level="1" name="Soul Rage"/>
+			<skill class="132" skillId="1469" level="1" name="Leopold"/>
+
+		</class>
+		<class classid="133" name="Female Soulhound">
+			<skill class="124" skillId="466" level="55" name="Magic Immunity"/>
+			<skill class="124" skillId="468" level="9" name="Fallen Attack"/>
+			<skill class="124" skillId="470" level="3" name="Detect Trap"/>
+			<skill class="124" skillId="1431" level="6" name="Fallen Arrow"/>
+			<skill class="124" skillId="462" level="1" name="Guilted Body"/>
+			<skill class="124" skillId="464" level="5" name="Armor Mastery"/>
+			<skill class="124" skillId="467" level="23" name="Soul Mastery"/>
+			<skill class="124" skillId="469" level="1" name="Rapid Attack"/>
+			<skill class="124" skillId="471" level="3" name="Defuse Trap"/>
+			<skill class="124" skillId="463" level="3" name="Weapon Mastery"/>
+			<skill class="126" skillId="490" level="1" name="Fast Shot"/>
+			<skill class="126" skillId="622" level="1" name="Ultimate Escape"/>
+			<skill class="126" skillId="628" level="1" name="Warp"/>
+			<skill class="126" skillId="1434" level="4" name="Dark Explosion"/>
+			<skill class="126" skillId="473" level="8" name="Crossbow Mastery"/>
+			<skill class="126" skillId="1445" level="18" name="Surrender to the Unholy"/>
+			<skill class="126" skillId="478" level="15" name="Double Thrust"/>
+			<skill class="126" skillId="1475" level="3" name="Erase Mark"/>
+			<skill class="126" skillId="480" level="1" name="Dark Blade"/>
+			<skill class="126" skillId="482" level="1" name="Furious Soul"/>
+			<skill class="126" skillId="487" level="15" name="Penetrating Shot"/>
+			<skill class="126" skillId="514" level="2" name="Fire Trap"/>
+			<skill class="126" skillId="627" level="3" name="Soul Shock"/>
+			<skill class="126" skillId="1433" level="10" name="Abyssal Blaze"/>
+			<skill class="126" skillId="465" level="50" name="Light Armor Mastery"/>
+			<skill class="126" skillId="1435" level="10" name="Death Mark"/>
+			<skill class="126" skillId="474" level="45" name="Rapier Mastery"/>
+			<skill class="126" skillId="1473" level="1" name="Change Weapon"/>
+			<skill class="126" skillId="479" level="1" name="Hard March"/>
+			<skill class="126" skillId="481" level="2" name="Dark Armor"/>
+			<skill class="126" skillId="486" level="1" name="Increase Range"/>
+			<skill class="129" skillId="506" level="4" name="Checkmate"/>
+			<skill class="129" skillId="1510" level="1" name="Soul Cleanse"/>
+			<skill class="129" skillId="626" level="4" name="Critical Sense"/>
+			<skill class="129" skillId="1527" level="1" name="Expert Casting"/>
+			<skill class="129" skillId="837" level="1" name="Painkiller"/>
+			<skill class="129" skillId="38035" level="1" name="Hidden"/>
+			<skill class="129" skillId="1437" level="26" name="Dark Flame"/>
+			<skill class="129" skillId="1439" level="5" name="Curse of Divinity"/>
+			<skill class="129" skillId="1441" level="2" name="Soul to Empower"/>
+			<skill class="129" skillId="1443" level="1" name="Dark Weapon"/>
+			<skill class="129" skillId="502" level="5" name="Life to Soul"/>
+			<skill class="129" skillId="1447" level="9" name="Voice Bind"/>
+			<skill class="129" skillId="505" level="28" name="Shining Edge"/>
+			<skill class="129" skillId="1474" level="1" name="Abyssal Power"/>
+			<skill class="129" skillId="625" level="1" name="Soul Gathering"/>
+			<skill class="129" skillId="1511" level="8" name="Curse of Life Flow"/>
+			<skill class="129" skillId="832" level="1" name="Fast Recovery"/>
+			<skill class="129" skillId="1529" level="7" name="Soul Web"/>
+			<skill class="129" skillId="1436" level="30" name="Soul of Pain"/>
+			<skill class="129" skillId="1438" level="9" name="Annihilation Circle"/>
+			<skill class="129" skillId="1440" level="5" name="Steal Divinity"/>
+			<skill class="129" skillId="1442" level="3" name="Protection from Darkness"/>
+			<skill class="129" skillId="492" level="25" name="Spread Wing"/>
+			<skill class="129" skillId="1446" level="11" name="Shadow Bind"/>
+			<skill class="129" skillId="504" level="37" name="Triple Thrust"/>
+			<skill class="129" skillId="1448" level="1" name="Blink"/>
+			<skill class="133" skillId="1444" level="1" name="Pride of Kamael"/>
+			<skill class="133" skillId="1512" level="1" name="Soul Vortex"/>
+			<skill class="133" skillId="1515" level="1" name="Lightning Barrier"/>
+			<skill class="133" skillId="1532" level="1" name="Enlightenment-Wizard"/>
+			<skill class="133" skillId="329" level="1" name="Health"/>
+			<skill class="133" skillId="12500" level="115" name="Soul Force"/>
+			<skill class="133" skillId="538" level="1" name="Final Form"/>
+			<skill class="133" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="133" skillId="767" level="1" name="Expose Weak Point"/>
+			<skill class="133" skillId="939" level="1" name="Soul Rage"/>
+			<skill class="133" skillId="1469" level="1" name="Leopold"/>
+			<skill class="133" skillId="1513" level="1" name="Soul Vortex Extinction"/>
+			<skill class="133" skillId="1516" level="1" name="Soul Strike"/>
+			<skill class="133" skillId="328" level="1" name="Wisdom"/>
+			<skill class="133" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="133" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="133" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="133" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="133" skillId="791" level="1" name="Lightning Shock"/>
+		</class>
+		<class classid="134" name="Trickster">
+			<skill class="124" skillId="466" level="55" name="Magic Immunity"/>
+			<skill class="124" skillId="468" level="9" name="Fallen Attack"/>
+			<skill class="124" skillId="470" level="3" name="Detect Trap"/>
+			<skill class="124" skillId="1431" level="6" name="Fallen Arrow"/>
+			<skill class="124" skillId="462" level="1" name="Guilted Body"/>
+			<skill class="124" skillId="464" level="5" name="Armor Mastery"/>
+			<skill class="124" skillId="467" level="23" name="Soul Mastery"/>
+			<skill class="124" skillId="469" level="1" name="Rapid Attack"/>
+			<skill class="124" skillId="471" level="7" name="Defuse Trap"/>
+			<skill class="124" skillId="463" level="3" name="Weapon Mastery"/>
+			<skill class="126" skillId="490" level="2" name="Fast Shot"/>
+			<skill class="126" skillId="622" level="2" name="Ultimate Escape"/>
+			<skill class="126" skillId="628" level="1" name="Warp"/>
+			<skill class="126" skillId="1434" level="4" name="Dark Explosion"/>
+			<skill class="126" skillId="473" level="45" name="Crossbow Mastery"/>
+			<skill class="126" skillId="1445" level="3" name="Surrender to the Unholy"/>
+			<skill class="126" skillId="478" level="15" name="Double Thrust"/>
+			<skill class="126" skillId="1475" level="1" name="Erase Mark"/>
+			<skill class="126" skillId="480" level="1" name="Dark Blade"/>
+			<skill class="126" skillId="482" level="1" name="Furious Soul"/>
+			<skill class="126" skillId="487" level="15" name="Penetrating Shot"/>
+			<skill class="126" skillId="514" level="9" name="Fire Trap"/>
+			<skill class="126" skillId="627" level="40" name="Soul Shock"/>
+			<skill class="126" skillId="1433" level="10" name="Abyssal Blaze"/>
+			<skill class="126" skillId="465" level="50" name="Light Armor Mastery"/>
+			<skill class="126" skillId="1435" level="5" name="Death Mark"/>
+			<skill class="126" skillId="474" level="8" name="Rapier Mastery"/>
+			<skill class="126" skillId="1473" level="1" name="Change Weapon"/>
+			<skill class="126" skillId="479" level="1" name="Hard March"/>
+			<skill class="126" skillId="481" level="1" name="Dark Armor"/>
+			<skill class="126" skillId="486" level="2" name="Increase Range"/>
+			<skill class="130" skillId="509" level="34" name="Bleeding Shot"/>
+			<skill class="130" skillId="1510" level="1" name="Soul Cleanse"/>
+			<skill class="130" skillId="511" level="1" name="Temptation"/>
+			<skill class="130" skillId="38032" level="1" name="hidden"/>
+			<skill class="130" skillId="516" level="6" name="Slow Trap"/>
+			<skill class="130" skillId="518" level="8" name="Binding Trap"/>
+			<skill class="130" skillId="522" level="4" name="Real Target"/>
+			<skill class="130" skillId="524" level="1" name="Cure Dark Seed"/>
+			<skill class="130" skillId="625" level="1" name="Soul Gathering"/>
+			<skill class="130" skillId="502" level="5" name="Life to Soul"/>
+			<skill class="130" skillId="832" level="1" name="Fast Recovery"/>
+			<skill class="130" skillId="508" level="31" name="Rising Shot"/>
+			<skill class="130" skillId="836" level="3" name="Oblivion Trap"/>
+			<skill class="130" skillId="510" level="5" name="Deadly Roulette"/>
+			<skill class="130" skillId="1514" level="1" name="Soul Barrier"/>
+			<skill class="130" skillId="515" level="6" name="Poison Trap"/>
+			<skill class="130" skillId="517" level="5" name="Flash Trap"/>
+			<skill class="130" skillId="521" level="8" name="Sharpshooting"/>
+			<skill class="130" skillId="523" level="7" name="Imbue Dark Seed"/>
+			<skill class="130" skillId="525" level="6" name="Decoy"/>
+			<skill class="130" skillId="489" level="1" name="Shift Target"/>
+			<skill class="130" skillId="626" level="4" name="Critical Sense"/>
+			<skill class="130" skillId="507" level="37" name="Twin Shot"/>
+			<skill class="130" skillId="835" level="4" name="Imbue Seed of Destruction"/>
+			<skill class="134" skillId="1470" level="1" name="Prahnah"/>
+			<skill class="134" skillId="10039" level="115" name="Armor Ripper Trap"/>
+			<skill class="134" skillId="328" level="1" name="Wisdom"/>
+			<skill class="134" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="134" skillId="538" level="1" name="Final Form"/>
+			<skill class="134" skillId="759" level="1" name="Archer's Will"/>
+			<skill class="134" skillId="790" level="1" name="Wild Shot"/>
+			<skill class="134" skillId="939" level="1" name="Soul Rage"/>
+			<skill class="134" skillId="9073" level="1" name="Boost HP"/>
+			<skill class="134" skillId="10074" level="115" name="Spike Trap"/>
+			<skill class="134" skillId="11" level="1" name="Trick"/>
+			<skill class="134" skillId="329" level="1" name="Health"/>
+			<skill class="134" skillId="334" level="1" name="Focus Skill Mastery"/>
+			<skill class="134" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="134" skillId="766" level="1" name="Sixth Sense"/>
+			<skill class="134" skillId="792" level="1" name="Betrayal Mark"/>
+		</class>
+		<class classid="136" name="Judicator">
+			<skill class="123" skillId="466" level="55" name="Magic Immunity"/>
+			<skill class="123" skillId="468" level="9" name="Fallen Attack"/>
+			<skill class="123" skillId="1432" level="2" name="Increase Power"/>
+			<skill class="123" skillId="462" level="1" name="Guilted Body"/>
+			<skill class="123" skillId="464" level="5" name="Armor Mastery"/>
+			<skill class="123" skillId="467" level="23" name="Soul Mastery"/>
+			<skill class="123" skillId="1431" level="6" name="Fallen Arrow"/>
+			<skill class="123" skillId="463" level="3" name="Weapon Mastery"/>
+			<skill class="125" skillId="485" level="1" name="Disarm"/>
+			<skill class="125" skillId="1433" level="10" name="Abyssal Blaze"/>
+			<skill class="125" skillId="1435" level="2" name="Death Mark"/>
+			<skill class="125" skillId="472" level="8" name="Ancient Sword Mastery"/>
+			<skill class="125" skillId="1473" level="1" name="Change Weapon"/>
+			<skill class="125" skillId="475" level="1" name="Strike Back"/>
+			<skill class="125" skillId="478" level="15" name="Double Thrust"/>
+			<skill class="125" skillId="480" level="1" name="Dark Blade"/>
+			<skill class="125" skillId="482" level="1" name="Furious Soul"/>
+			<skill class="125" skillId="484" level="1" name="Rush"/>
+			<skill class="125" skillId="499" level="1" name="Courage"/>
+			<skill class="125" skillId="1434" level="115" name="Dark Explosion"/>
+			<skill class="125" skillId="465" level="50" name="Light Armor Mastery"/>
+			<skill class="125" skillId="1445" level="3" name="Surrender to the Unholy"/>
+			<skill class="125" skillId="474" level="45" name="Rapier Mastery"/>
+			<skill class="125" skillId="1475" level="1" name="Erase Mark"/>
+			<skill class="125" skillId="476" level="15" name="Dark Strike"/>
+			<skill class="125" skillId="479" level="1" name="Hard March"/>
+			<skill class="125" skillId="481" level="1" name="Dark Armor"/>
+			<skill class="125" skillId="483" level="1" name="Sword Shield"/>
+			<skill class="135" skillId="1450" level="1" name="Chain Lightning"/>
+			<skill class="135" skillId="1477" level="3" name="Vampiric Impulse"/>
+			<skill class="135" skillId="1479" level="3" name="Magic Impulse"/>
+			<skill class="135" skillId="1481" level="7" name="Obilivion"/>
+			<skill class="135" skillId="1483" level="6" name="Thin Skin"/>
+			<skill class="135" skillId="492" level="25" name="Spread Wing"/>
+			<skill class="135" skillId="1485" level="3" name="Spite"/>
+			<skill class="135" skillId="504" level="37" name="Triple Thrust"/>
+			<skill class="135" skillId="1487" level="8" name="Restoration"/>
+			<skill class="135" skillId="625" level="1" name="Soul Gathering"/>
+			<skill class="135" skillId="1510" level="1" name="Soul Cleanse"/>
+			<skill class="135" skillId="837" level="1" name="Painkiller"/>
+			<skill class="135" skillId="38033" level="1" name="hidden"/>
+			<skill class="135" skillId="1476" level="3" name="Appetite for Destruction"/>
+			<skill class="135" skillId="1478" level="2" name="Protection Instinct"/>
+			<skill class="135" skillId="1480" level="1" name="Soul Harmony"/>
+			<skill class="135" skillId="1482" level="4" name="Weak Constitution"/>
+			<skill class="135" skillId="1484" level="4" name="Enervation"/>
+			<skill class="135" skillId="502" level="5" name="Life to Soul"/>
+			<skill class="135" skillId="1486" level="4" name="Mental Impoverish"/>
+			<skill class="135" skillId="505" level="28" name="Shining Edge"/>
+			<skill class="135" skillId="1488" level="3" name="Restoration Impact"/>
+			<skill class="135" skillId="832" level="1" name="Fast Recovery"/>
+			<skill class="135" skillId="1527" level="1" name="Expert Casting"/>
+			<skill class="136" skillId="328" level="1" name="Wisdom"/>
+			<skill class="136" skillId="330" level="1" name="Skill Mastery"/>
+			<skill class="136" skillId="628" level="1" name="Warp"/>
+			<skill class="136" skillId="791" level="1" name="Lightning Shock"/>
+			<skill class="136" skillId="945" level="1" name="Magician's Will"/>
+			<skill class="136" skillId="1441" level="1" name="Soul to Empower"/>
+			<skill class="136" skillId="1515" level="1" name="Lightning Barrier"/>
+			<skill class="136" skillId="329" level="1" name="Health"/>
+			<skill class="136" skillId="538" level="1" name="Final Form"/>
+			<skill class="136" skillId="758" level="1" name="Fighter's Will"/>
+			<skill class="136" skillId="939" level="1" name="Soul Rage"/>
+			<skill class="136" skillId="1439" level="5" name="Curse of Divinity"/>
+			<skill class="136" skillId="1444" level="1" name="Pride of Kamael"/>
+			<skill class="136" skillId="9073" level="1" name="Boost HP"/>
+		</class>
+	</classes>
+	<transforms>
+		<transform transformId="316" name="Inquisitor Bishop">
+			<skill skillId="1523" level="42" name="Divine Punishment" />
+			<skill skillId="1528" level="42" name="Divine Flash" />
+			<skill skillId="1524" level="42" name="Surrender to the Holy" />
+			<skill skillId="1525" level="42" name="Divine Curse" />
+			<skill skillId="5491" level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="317" name="Inquisitor Elven Elder">
+			<skill skillId="1523" level="42" name="Divine Punishment" />
+			<skill skillId="1528" level="42" name="Divine Flash" />
+			<skill skillId="1524" level="42" name="Surrender to the Holy" />
+			<skill skillId="1525" level="42" name="Divine Curse" />
+			<skill skillId="5491" level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="318" name="Inquisitor Shillien Elder">
+			<skill skillId="1523" level="42" name="Divine Punishment" />
+			<skill skillId="1528" level="42" name="Divine Flash" />
+			<skill skillId="1043" level="42" name="Holy Weapon" />
+			<skill skillId="1524" level="42" name="Surrender to the Holy" />
+			<skill skillId="1525" level="1" name="Divine Curse" />
+			<skill skillId="5491"  level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="313" name="Vanguard Dark Avenger">
+			<skill skillId="817" level="42" name="Double Strike" />
+			<skill skillId="815" level="42" name="Blade Hurricane" />
+			<skill skillId="494" level="37" name="Shoulder Charge" />
+			<skill skillId="362" level="1" name="Armor Crush" />
+			<skill skillId="361" level="1" name="Shock Blast" />
+			<skill skillId="78" level="2" name="War cry" />
+			<skill skillId="5491"  level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="312" name="Vanguard Paladin">
+			<skill skillId="816" level="42" name="Power Divide" />
+			<skill skillId="814" level="42" name="Full Swing" />
+			<skill skillId="494" level="37" name="Shoulder Charge" />
+			<skill skillId="362" level="1" name="Armor Crush" />
+			<skill skillId="361" level="1" name="Shock Blast" />
+			<skill skillId="78" level="2" name="War cry" />
+			<skill skillId="5491"  level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="315" name="Vanguard Shilien Knight">
+			<skill skillId="817" level="42" name="Double Strike" />
+			<skill skillId="815" level="42" name="Blade Hurricane" />
+			<skill skillId="494" level="37" name="Shoulder Charge" />
+			<skill skillId="362" level="1" name="Armor Crush" />
+			<skill skillId="361" level="1" name="Shock Blast" />
+			<skill skillId="78" level="2" name="War cry" />
+			<skill skillId="5491"  level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+		<transform transformId="314" name="Vanguard Temple Knight">
+			<skill skillId="816" level="42" name="Power Divide" />
+			<skill skillId="814" level="42" name="Full Swing" />
+			<skill skillId="494" level="37" name="Shoulder Charge" />
+			<skill skillId="362" level="1" name="Armor Crush" />
+			<skill skillId="361" level="1" name="Shock Blast" />
+			<skill skillId="78" level="2" name="War cry" />
+			<skill skillId="5491"  level="1" name="Decrease Bow/Crossbow Attack Speed" />
+			<skill skillId="838"  level="1" name="Switch Stance" />
+		</transform>
+	</transforms>
+	<items>
+	<!-- Custom Armor Start -->
+		<item item_id="850012" name="Fafurion's Tear" skill="94200" level="2"/>
+		<item item_id="850011" name="Superior Fafurion's Tear" skill="94200" level="2"/>
+		<item item_id="850008" name="Superior Orfen's Wrath" skill="9420" level="1"/>
+		<item item_id="70011" name="Orfen's Wrath" skill="9420" level="1"/>
+		<item item_id="850010" name="Superior Helbram's Ring" skill="9419" level="1"/>
+		<item item_id="70014" name="Helbram's Ring" skill="9419" level="1"/>
+		<item item_id="850009" name="Superior Core's Soul" skill="9418" level="1"/>
+		<item item_id="70013" name="Core's Soul" skill="9418" level="1"/>
+		<item item_id="70016" name="Circle of the Eight Ring" skill="9105" level="1"/>
+		<item item_id="70040" name="Bamboo Earring" skill="9105" level="1"/>
+		<item item_id="70017" name="Ring of the Lords" skill="9105" level="1"/>
+		<item item_id="70015" name="Shonan Family Ring" skill="9105" level="1"/>
+		<item item_id="70010" name="Stone of Jordan Ring" skill="9105" level="1"/>
+		<item item_id="70007" name="Soul Scream Ring" skill="9105" level="1"/>
+		<item item_id="70012" name="Blood Drinker Ring" skill="9105" level="1"/>
+		<item item_id="850007" name="Superior Baylor's Earring" skill="9010" level="1"/>
+		<item item_id="10170" name="Baylor's Earring" skill="9010" level="1"/>
+		<item item_id="600011" name="Royal Lion Mount Bracelet" skill="40011" level="1"/>
+		<item item_id="600010" name="War Tiger Mount Bracelet" skill="40010" level="1"/>
+		<item item_id="600009" name="War Drake Mount Bracelet" skill="40009" level="1"/>
+		<item item_id="600008" name="Doom Horse Mount Bracelet" skill="40008" level="1"/>
+		<item item_id="600007" name="Winged Hound Mount Bracelet" skill="40007" level="1"/>
+		<item item_id="600006" name="Elder Pegasus Mount Bracelet" skill="40006" level="1"/>
+		<item item_id="600005" name="Dragon Horse Mount Bracelet" skill="40005" level="1"/>
+		<item item_id="600004" name="Lindvior Mount Bracelet" skill="40004" level="1"/>
+		<item item_id="600003" name="Saber Tiger Mount Bracelet" skill="40003" level="1"/>
+		<item item_id="600002" name="Hell Dog Mount Bracelet" skill="40002" level="1"/>
+		<item item_id="600001" name="Salamander Mount Bracelet" skill="40001" level="1"/>
+		<item item_id="600000" name="Griffin Mount Bracelet" skill="40000" level="1"/>
+		<item item_id="34587" name="Dread Muzzle" skill="38100" level="2"/>
+		<item item_id="771011" name="Purple Dread Chain Cuirass" skill="37605" level="1"/>
+		<item item_id="71001" name="Dread Breastplate" skill="37605" level="1"/>
+		<item item_id="71011" name="Dread Chain Cuirass" skill="37605" level="1"/>
+		<item item_id="791011" name="Blue  Dread Chain Cuirass" skill="37605" level="1"/>
+		<item item_id="791001" name="Blue Dread Breastplate" skill="37605" level="1"/>
+		<item item_id="781011" name="Red Dread Chain Cuirass" skill="37605" level="1"/>
+		<item item_id="771001" name="Purple Dread Breastplate" skill="37605" level="1"/>
+		<item item_id="781001" name="Red Dread Breastplate" skill="37605" level="1"/>
+		<item item_id="850006" name="Superior Beleth's Ring" skill="3649" level="1"/>
+		<item item_id="10314" name="Beleth's Ring" skill="3649" level="1"/>
+		<item item_id="850005" name="Superior Frintezza's Phylactery" skill="3604" level="2"/>
+		<item item_id="70005" name="Frintezza's Phylactery" skill="3604" level="2"/>
+		<item item_id="850004" name="Superior Queen's Grasp" skill="3562" level="2"/>
+		<item item_id="70004" name="Queen's Grasp" skill="3562" level="2"/>
+		<item item_id="850002" name="Superior Baium's Anger" skill="3561" level="2"/>
+		<item item_id="70002" name="Baium's Anger" skill="3561" level="2"/>
+		<item item_id="850003" name="Superior Zaken's Dementia" skill="3559" level="2"/>
+		<item item_id="70003" name="Zaken's Dementia" skill="3559" level="2"/>
+		<item item_id="850001" name="Superior Antharas' Tremor" skill="3558" level="2"/>
+		<item item_id="70001" name="Antharas' Tremor" skill="3558" level="2"/>
+		<item item_id="850000" name="Superior Valakas' Fiery" skill="3557" level="2"/>
+		<item item_id="70000" name="Valakas' Fiery" skill="3557" level="2"/>
+	<!-- Custom Armor End -->
+	<!-- Armor Start -->
+		<item item_id="13519" name="Secret Slayer Veil" skill="9102" level="1"/>
+		<item item_id="13479" name="Harvest Wind Circlet" skill="9100" level="1"/>
+		<item item_id="14675" name="Agathion Seal Bracelet - Saerom" skill="6124" level="1"/>
+		<item item_id="14675" name="Agathion Seal Bracelet - Saerom" skill="3267" level="1"/>
+		<item item_id="14675" name="Agathion Seal Bracelet - Saerom" skill="8314" level="1"/>
+		<item item_id="10119" name="Dynasty Sigil" skill="8311" level="1"/>
+		<item item_id="13078" name="Arcana Sigil" skill="8310" level="1"/>
+		<item item_id="14605" name="Red Talisman - Territory Guard" skill="8309" level="1"/>
+		<item item_id="14604" name="Red Talisman - Territory Guardian" skill="8308" level="1"/>
+		<item item_id="13753" name="Olympiad Warrior's Necklace" skill="8294" level="1"/>
+		<item item_id="13754" name="Olympiad Warrior's Earring" skill="8293" level="1"/>
+		<item item_id="13752" name="Olympiad Warrior's Ring" skill="8292" level="1"/>
+		<item item_id="13964" name="High-Grade Magic Pin Iron Belt" skill="8291" level="9"/>
+		<item item_id="13966" name="Low-Grade Magic Pin Mithril Belt" skill="8291" level="9"/>
+		<item item_id="13961" name="Top-Grade Magic Pin Leather Belt" skill="8291" level="8"/>
+		<item item_id="13963" name="Regular Magic Pin Iron Belt" skill="8291" level="8"/>
+		<item item_id="13960" name="High-Grade Magic Pin Leather Belt" skill="8291" level="7"/>
+		<item item_id="13962" name="Low-Grade Magic Pin Iron Belt" skill="8291" level="7"/>
+		<item item_id="13957" name="Top-Grade Magic Pin Cloth Belt" skill="8291" level="6"/>
+		<item item_id="13959" name="Regular Magic Pin Leather Belt" skill="8291" level="6"/>
+		<item item_id="13956" name="High-Grade Magic Pin Cloth Belt" skill="8291" level="5"/>
+		<item item_id="13958" name="Low-Grade Magic Pin Leather Belt" skill="8291" level="5"/>
+		<item item_id="13955" name="Regular Magic Pin Cloth Belt" skill="8291" level="4"/>
+		<item item_id="13954" name="Low-Grade Magic Pin Cloth Belt" skill="8291" level="3"/>
+		<item item_id="13969" name="Top-Grade Magic Pin Mithril Belt" skill="8291" level="12"/>
+		<item item_id="13968" name="High-Grade Magic Pin Mithril Belt" skill="8291" level="11"/>
+		<item item_id="13965" name="Top-Grade Magic Pin Iron Belt" skill="8291" level="10"/>
+		<item item_id="13967" name="Regular Magic Pin Mithril Belt" skill="8291" level="10"/>
+		<item item_id="13948" name="High-Grade Magic Pouch Iron Belt" skill="8290" level="9"/>
+		<item item_id="13950" name="Low-Grade Magic Pouch Mithril Belt" skill="8290" level="9"/>
+		<item item_id="13945" name="Top-Grade Magic Pouch Leather Belt" skill="8290" level="8"/>
+		<item item_id="13947" name="Regular Magic Pouch Iron Belt" skill="8290" level="8"/>
+		<item item_id="13944" name="High-Grade Magic Pouch Leather Belt" skill="8290" level="7"/>
+		<item item_id="13946" name="Low-Grade Magic Pouch Iron Belt" skill="8290" level="7"/>
+		<item item_id="13941" name="Top-Grade Magic Pouch Cloth Belt" skill="8290" level="6"/>
+		<item item_id="13943" name="Regular Magic Pouch Leather Belt" skill="8290" level="6"/>
+		<item item_id="13940" name="High-Grade Magic Pouch Cloth Belt" skill="8290" level="5"/>
+		<item item_id="13942" name="Low-Grade Magic Pouch Leather Belt" skill="8290" level="5"/>
+		<item item_id="13939" name="Regular Magic Pouch Cloth Belt" skill="8290" level="4"/>
+		<item item_id="13938" name="Low-Grade Magic Pouch Cloth Belt" skill="8290" level="3"/>
+		<item item_id="13953" name="Top-Grade Magic Pouch Mithril Belt" skill="8290" level="12"/>
+		<item item_id="13952" name="High-Grade Magic Pouch Mithril Belt" skill="8290" level="11"/>
+		<item item_id="13949" name="Top-Grade Magic Pouch Iron Belt" skill="8290" level="10"/>
+		<item item_id="13951" name="Regular Magic Pouch Mithril Belt" skill="8290" level="10"/>
+		<item item_id="13547" name="Tawny-Maned Lion Mounting Bracelet (7 days)" skill="8262" level="1"/>
+		<item item_id="14053" name="Gold-Maned Lion Mounting Bracelet - 7-day Limited Period" skill="8262" level="1"/>
+		<item item_id="14066" name="Gold Maned Lion Mounting Bracelet (event) - 7-day Limited Period" skill="8262" level="1"/>
+		<item item_id="14054" name="Steam Beatle Mounting Bracelet - 7-day Limited Period" skill="8261" level="1"/>
+		<item item_id="14067" name="Steam Beatle Mounting Bracelet (event) - 7-day Limited Period" skill="8261" level="1"/>
+		<item item_id="20396" name="Steam Beatle Mounting Bracelet" skill="8261" level="1"/>
+		<item item_id="10139" name="Agathion Bracelet" skill="5414" level="1"/>
+		<item item_id="10139" name="Agathion Bracelet" skill="3269" level="1"/>
+		<item item_id="10139" name="Agathion Bracelet" skill="3267" level="1"/>
+		<item item_id="10139" name="Agathion Bracelet" skill="3268" level="1"/>
+		<item item_id="10139" name="Agathion Bracelet" skill="5415" level="1"/>
+		<item item_id="8921" name="Demonic Circlet" skill="669" level="1"/>
+		<item item_id="9455" name="Dynasty Earring" skill="3824" level="1"/>
+		<item item_id="9457" name="Dynasty Ring" skill="3823" level="1"/>
+		<item item_id="9456" name="Dynasty Amulet" skill="3822" level="1"/>
+		<item item_id="20022" name="Cruel Muzzle" skill="38100" level="1"/>
+		<item item_id="20024" name="Visor" skill="37600" level="1"/>
+		<item item_id="12818" name="Yellow Talisman - Damage Transition" skill="3667" level="1"/>
+		<item item_id="12817" name="Yellow Talisman - Increase Force" skill="3666" level="1"/>
+		<item item_id="12816" name="Red Talisman - CP Regeneration" skill="3665" level="1"/>
+		<item item_id="12815" name="Red Talisman - Max CP" skill="3664" level="1"/>
+		<item item_id="6836" name="Circlet of Goddard" skill="3633" level="2"/>
+		<item item_id="6840" name="Circlet of Aden" skill="3633" level="2"/>
+		<item item_id="8182" name="Circlet of Rune" skill="3633" level="2"/>
+		<item item_id="8183" name="Circlet of Schuttgart" skill="3633" level="2"/>
+		<item item_id="6834" name="Circlet of Innadril" skill="3633" level="1"/>
+		<item item_id="6835" name="Circlet of Dion" skill="3633" level="1"/>
+		<item item_id="6837" name="Circlet of Oren" skill="3633" level="1"/>
+		<item item_id="6838" name="Circlet of Gludio" skill="3633" level="1"/>
+		<item item_id="6839" name="Circlet of Giran" skill="3633" level="1"/>
+		<item item_id="6841" name="The Lord's Crown" skill="3633" level="2"/>
+		<item item_id="6841" name="The Lord's Crown" skill="3632" level="1"/>
+		<item item_id="8191" name="Frintezza's Necklace" skill="3604" level="1"/>
+		<item item_id="6662" name="Ring of Core" skill="3563" level="1"/>
+		<item item_id="6660" name="Ring of Queen Ant" skill="3562" level="1"/>
+		<item item_id="20204" name="Queen Ant's Ring (Event) - 3-day Expiration Period" skill="3562" level="1"/>
+		<item item_id="20205" name="Queen Ant's Ring (Event) - 7-day Expiration Period" skill="3562" level="1"/>
+		<item item_id="20206" name="Queen Ant's Ring (Event) - 15 Day Expiration Period" skill="3562" level="1"/>
+		<item item_id="6658" name="Ring of Baium" skill="3561" level="1"/>
+		<item item_id="6661" name="Earring of Orfen" skill="3560" level="1"/>
+		<item item_id="6659" name="Zaken's Earring" skill="3559" level="1"/>
+		<item item_id="20207" name="Zaken's Earring (Event) - 3-day Expiration Period" skill="3559" level="1"/>
+		<item item_id="20208" name="Zaken's Earring (Event) - 7-day Expiration Period" skill="3559" level="1"/>
+		<item item_id="20209" name="Zaken's Earring (Event) - 15 Day Expiration Period" skill="3559" level="1"/>
+		<item item_id="6656" name="Earring of Antharas" skill="3558" level="1"/>
+		<item item_id="6657" name="Necklace of Valakas" skill="3557" level="1"/>
+		<item item_id="10541" name="Yellow Talisman - Low Grade MP regeneration rate" skill="3497" level="1"/>
+		<item item_id="10542" name="Red Talisman - HP/CP Recovery" skill="3496" level="1"/>
+		<item item_id="10538" name="Yellow Talisman - Healing Power" skill="3495" level="1"/>
+		<item item_id="10539" name="Yellow Talisman - CP Recovery Rate" skill="3494" level="1"/>
+		<item item_id="10540" name="Yellow Talisman - HP Recovery Rate" skill="3493" level="1"/>
+		<item item_id="10543" name="Yellow Talisman - Speed" skill="3492" level="1"/>
+		<item item_id="10537" name="Yellow Talisman - Evasion" skill="3491" level="1"/>
+		<item item_id="10535" name="Yellow Talisman - Defense Power" skill="3490" level="1"/>
+		<item item_id="10536" name="Yellow Talisman - Magic Power" skill="3489" level="1"/>
+		<item item_id="10534" name="Blue Talisman - Shield Defense" skill="3488" level="1"/>
+		<item item_id="10533" name="Blue Talisman - Attack Power" skill="3487" level="1"/>
+		<item item_id="10424" name="Blue Talisman - Greater Healing" skill="3438" level="1"/>
+		<item item_id="10417" name="Blue Talisman - Magic Explosion" skill="3437" level="1"/>
+		<item item_id="10423" name="Blue Talisman - Self-Destruction" skill="3436" level="1"/>
+		<item item_id="10422" name="White Talisman - Light" skill="3435" level="1"/>
+		<item item_id="10519" name="White Talisman -  Earth" skill="3434" level="1"/>
+		<item item_id="10421" name="White Talisman - Fire" skill="3433" level="1"/>
+		<item item_id="10420" name="White Talisman - Water" skill="3432" level="1"/>
+		<item item_id="10418" name="White Talisman - Storm" skill="3431" level="1"/>
+		<item item_id="10419" name="White Talisman - Darkness" skill="3430" level="1"/>
+		<item item_id="10518" name="Red Talisman - Life Force" skill="3429" level="1"/>
+		<item item_id="10416" name="Blue Talisman - Explosion" skill="3428" level="1"/>
+		<item item_id="9919" name="Blue Talisman of Reflection" skill="3410" level="1"/>
+		<item item_id="10211" name="Blessed Ring of Resurrection" skill="3409" level="1"/>
+		<item item_id="10140" name="Blessed Ring of Escape" skill="3408" level="1"/>
+		<item item_id="9899" name="Weight Loss Ring" skill="3406" level="1"/>
+		<item item_id="9458" name="Dynasty Pendant" skill="3367" level="1"/>
+		<item item_id="9460" name="Dynasty Band" skill="3366" level="1"/>
+		<item item_id="10142" name="Grey Talisman - Buffalo Transform" skill="3336" level="1"/>
+		<item item_id="10141" name="Grey Talisman - Yeti Transform" skill="3335" level="1"/>
+		<item item_id="9954" name="Orange Talisman - Elixir of Mental Strength" skill="3334" level="1"/>
+		<item item_id="9953" name="Orange Talisman - Elixir of Life" skill="3333" level="1"/>
+		<item item_id="9952" name="Orange Talisman - Hot Springs Recovery" skill="3332" level="1"/>
+		<item item_id="9592" name="Mithril Bracelet" skill="3325" level="1"/>
+		<item item_id="10210" name="Enhanced Mithril Bracelet" skill="3325" level="1"/>
+		<item item_id="9591" name="Steel Bracelet" skill="3324" level="1"/>
+		<item item_id="10209" name="Enhanced Steel Bracelet" skill="3324" level="1"/>
+		<item item_id="9590" name="Bronze Bracelet" skill="3323" level="1"/>
+		<item item_id="13295" name="Pailaka Bracelet" skill="3323" level="1"/>
+		<item item_id="9589" name="Iron Bracelet" skill="3322" level="1"/>
+		<item item_id="9930" name="Blue Talisman of Evasion" skill="3321" level="1"/>
+		<item item_id="9949" name="Yellow Talisman of Mental Regeneration" skill="3320" level="1"/>
+		<item item_id="9942" name="Yellow Talisman of Critical Reduction" skill="3317" level="1"/>
+		<item item_id="9944" name="Yellow Talisman of Critical Dodging" skill="3316" level="1"/>
+		<item item_id="9951" name="Grey Talisman of Mid-Grade Fishing" skill="3315" level="1"/>
+		<item item_id="10158" name="Grey Talisman of Upper Grade Fishing" skill="3315" level="1"/>
+		<item item_id="9950" name="Grey Talisman of Weight Training" skill="3314" level="1"/>
+		<item item_id="9940" name="Yellow Talisman of Alacrity" skill="3313" level="1"/>
+		<item item_id="9946" name="Yellow Talisman of Healing" skill="3312" level="1"/>
+		<item item_id="9947" name="Yellow Talisman of CP Regeneration" skill="3311" level="1"/>
+		<item item_id="9948" name="Yellow Talisman of Physical Regeneration" skill="3310" level="1"/>
+		<item item_id="9965" name="White Talisman of Protection" skill="3309" level="1"/>
+		<item item_id="9966" name="White Talisman of Freedom" skill="3308" level="1"/>
+		<item item_id="9961" name="White Talisman of Motion" skill="3307" level="1"/>
+		<item item_id="9960" name="White Talisman of Bravery" skill="3306" level="1"/>
+		<item item_id="9962" name="White Talisman of Grounding" skill="3305" level="1"/>
+		<item item_id="9963" name="White Talisman of Attention" skill="3304" level="1"/>
+		<item item_id="9964" name="White Talisman of Bandages" skill="3303" level="1"/>
+		<item item_id="9937" name="Yellow Talisman of Arcane Haste" skill="3302" level="1"/>
+		<item item_id="9934" name="Yellow Talisman of Violent Haste" skill="3301" level="1"/>
+		<item item_id="9941" name="Yellow Talisman of Speed" skill="3300" level="1"/>
+		<item item_id="9943" name="Yellow Talisman of Critical Power" skill="3299" level="1"/>
+		<item item_id="9945" name="Yellow Talisman of Evasion" skill="3298" level="1"/>
+		<item item_id="9938" name="Yellow Talisman of Accuracy" skill="3297" level="1"/>
+		<item item_id="9935" name="Yellow Talisman of Arcane Defense" skill="3296" level="1"/>
+		<item item_id="9939" name="Yellow Talisman of Defense" skill="3295" level="1"/>
+		<item item_id="9936" name="Yellow Talisman of Arcane Power" skill="3294" level="1"/>
+		<item item_id="9933" name="Yellow Talisman of Power" skill="3293" level="1"/>
+		<item item_id="9959" name="Black Talisman of Free Speech" skill="3292" level="1"/>
+		<item item_id="9955" name="Black Talisman of Vocalization" skill="3291" level="1"/>
+		<item item_id="9958" name="Black Talisman of Rescue" skill="3290" level="1"/>
+		<item item_id="9923" name="Black Talisman - Escape" skill="3289" level="1"/>
+		<item item_id="9956" name="Black Talisman of Arcane Freedom" skill="3288" level="1"/>
+		<item item_id="9957" name="Black Talisman of Physical Freedom" skill="3287" level="1"/>
+		<item item_id="9922" name="Black Talisman - Mending" skill="3286" level="1"/>
+		<item item_id="9926" name="Blue Talisman of Defense" skill="3285" level="1"/>
+		<item item_id="9932" name="Blue Talisman - Divine Protection" skill="3284" level="1"/>
+		<item item_id="9924" name="Blue Talisman of Healing" skill="3283" level="1"/>
+		<item item_id="9918" name="Red Talisman of Maximum Clarity" skill="3282" level="1"/>
+		<item item_id="9917" name="Red Talisman of Minimum Clarity" skill="3281" level="1"/>
+		<item item_id="9920" name="Blue Talisman of Invisibility" skill="3280" level="1"/>
+		<item item_id="9931" name="Red Talisman of Meditation" skill="3279" level="1"/>
+		<item item_id="9928" name="Red Talisman of Mental Regeneration" skill="3278" level="1"/>
+		<item item_id="9915" name="Blue Talisman of Wild Magic" skill="3277" level="1"/>
+		<item item_id="9927" name="Blue Talisman of Magic Defense" skill="3276" level="1"/>
+		<item item_id="9929" name="Blue Talisman of Protection" skill="3275" level="1"/>
+		<item item_id="9921" name="Blue Talisman - Shield Protection" skill="3274" level="1"/>
+		<item item_id="9925" name="Red Talisman of Recovery" skill="3273" level="1"/>
+		<item item_id="9916" name="Blue Talisman of Defense" skill="3272" level="1"/>
+		<item item_id="9914" name="Blue Talisman of Power" skill="3271" level="1"/>
+		<item item_id="14165" name="Vesper Ring" skill="13106" level="1"/>
+		<item item_id="14163" name="Vesper Earring" skill="13105" level="1"/>
+		<item item_id="14164" name="Vesper Necklace" skill="13104" level="1"/>
+		<!-- Armor End -->
+		<!-- ArmorSets Start -->
+		<item name="Titanium Robes" skill="37604" level="1" />
+		<item name="Titanium Robes" skill="13101" level="1" />
+		<item name="Titanium Robes" skill="8288" level="1" />
+		<item name="Titanium Robes" skill="39017" level="1" />
+		<item name="Vesper Robes" skill="8287" level="1" />
+		<item name="Vesper Robes" skill="37603" level="1" />
+		<item name="Vesper Robes" skill="39014" level="1" />
+		<item name="Titanium Light" skill="13101" level="1" />
+		<item name="Titanium Light" skill="8286" level="1" />
+		<item name="Titanium Light" skill="37604" level="1" />
+		<item name="Titanium Light" skill="39016" level="1" />
+		<item name="Vesper Light" skill="8285" level="1" />
+		<item name="Vesper Light" skill="37603" level="1" />
+		<item name="Vesper Light" skill="39013" level="1" />
+		<item name="Titanium Heavy" skill="37604" level="1" />
+		<item name="Titanium Heavy" skill="8284" level="1" />
+		<item name="Titanium Heavy" skill="13101" level="1" />
+		<item name="Titanium Heavy" skill="3417" level="1" />
+		<item name="Titanium Heavy" skill="39015" level="1" />
+		<item name="Vesper Heavy" skill="37603" level="1" />
+		<item name="Vesper Heavy" skill="8283" level="1" />
+		<item name="Vesper Heavy" skill="3417" level="1" />
+		<item name="Vesper Heavy" skill="39012" level="1" />
+		<item name="Guardian of the Dawn" skill="8278" level="1" />
+		<item name="Native" skill="8277" level="1" />
+		<item name="Apella Robes" skill="3610" level="1" />
+		<item name="Apella Light" skill="3609" level="1" />
+		<item name="Apella Heavy" skill="3608" level="1" />
+		<item name="Clan Oath Robes" skill="3607" level="1" />
+		<item name="Clan Oath Light" skill="3606" level="1" />
+		<item name="Clan Oath Heavy" skill="3605" level="1" />
+		<item name="Enchant Clan Oath Robes" skill="3613" level="1" />
+		<item name="Enchant Clan Oath Light" skill="3612" level="1" />
+		<item name="Enchant Clan Oath Heavy" skill="3611" level="1" />
+		<item name="Major Arcana" skill="3556" level="1" />
+		<item name="Draconic Leather" skill="3555" level="1" />
+		<item name="Imperial Crusader" skill="3553" level="1" />
+		<item name="Imperial Crusader" skill="3554" level="1" />
+		<item name="Majestic Robes" skill="3541" level="1" />
+		<item name="Majestic Robes" skill="3622" level="1" />
+		<item name="Nightmare Robes" skill="3540" level="1" />
+		<item name="Majestic Leather" skill="3539" level="1" />
+		<item name="Majestic Leather" skill="3621" level="1" />
+		<item name="Nightmare Light" skill="3538" level="1" />
+		<item name="Majestic Heavy" skill="3537" level="1" />
+		<item name="Majestic Heavy" skill="3620" level="1" />
+		<item name="Nightmare Heavy" skill="3536" level="1" />
+		<item name="Nightmare Heavy" skill="3551" level="1" />
+		<item name="Dark Crystal Robes" skill="3535" level="1" />
+		<item name="Tallum Robes" skill="3534" level="1" />
+		<item name="Tallum Light" skill="3533" level="1" />
+		<item name="Dark Crystal Light" skill="3532" level="1" />
+		<item name="Tallum Heavy" skill="3531" level="1" />
+		<item name="Dark Crystal Heavy" skill="3530" level="1" />
+		<item name="Dark Crystal Heavy" skill="3550" level="1" />
+		<item name="Doom Robes" skill="3529" level="1" />
+		<item name="Doom Robes" skill="3619" level="1" />
+		<item name="Blue Wolf Robes" skill="3528" level="1" />
+		<item name="Doom Light" skill="3527" level="1" />
+		<item name="Doom Light" skill="3618" level="1" />
+		<item name="Blue Wolf Light" skill="3526" level="1" />
+		<item name="Doom Heavy" skill="3525" level="1" />
+		<item name="Doom Heavy" skill="3549" level="1" />
+		<item name="Doom Heavy" skill="3617" level="1" />
+		<item name="Blue Wolf Heavy" skill="3524" level="1" />
+		<item name="Blue Wolf Heavy" skill="3617" level="1" />
+		<item name="Avadon Robes" skill="3523" level="1" />
+		<item name="Zubei Robes" skill="3522" level="1" />
+		<item name="Avadon Light" skill="3521" level="1" />
+		<item name="Zubei Light" skill="3520" level="1" />
+		<item name="Avadon Heavy" skill="3519" level="1" />
+		<item name="Avadon Heavy" skill="3548" level="1" />
+		<item name="Avadon Heavy" skill="3617" level="1" />
+		<item name="Zubei Heavy" skill="3518" level="1" />
+		<item name="Dynasty Light - Warmonger" skill="37602" level="1" />
+		<item name="Dynasty Light - Warmonger" skill="3415" level="1" />
+		<item name="Dynasty Light - Warmonger" skill="39007" level="1" />
+		<item name="Dynasty Light - Weapon" skill="37601" level="1" />
+		<item name="Dynasty Light - Weapon" skill="3415" level="1" />
+		<item name="Dynasty Light - Jedi" skill="37602" level="1" />
+		<item name="Dynasty Light - Jedi" skill="3414" level="1" />
+		<item name="Dynasty Light - Jedi" skill="39006" level="1" />
+		<item name="Dynasty Light Force Master" skill="3414" level="1" />
+		<item name="Dynasty Light Force Master" skill="37601" level="1" />
+		<item name="Dynasty Robe - Hellfire" skill="3357" level="1" />
+		<item name="Dynasty Robe - Hellfire" skill="37602" level="1" />
+		<item name="Dynasty Robe - Hellfire" skill="39011" level="1" />
+		<item name="Dynasty Tunic - Destruction" skill="3357" level="1" />
+		<item name="Dynasty Tunic - Destruction" skill="37601" level="1" />
+		<item name="Dynasty Tunic - Destruction" skill="39010" level="1" />
+		<item name="Dynasty Robe - Arcane" skill="3356" level="1" />
+		<item name="Dynasty Robe - Arcane" skill="37602" level="1" />
+		<item name="Dynasty Tunic - Mysticism" skill="3356" level="1" />
+		<item name="Dynasty Tunic - Mysticism" skill="37601" level="1" />
+		<item name="Dynasty Robe - Soothsayer" skill="37602" level="1" />
+		<item name="Dynasty Robe - Soothsayer" skill="3355" level="1" />
+		<item name="Dynasty Robe - Soothsayer" skill="39009" level="1" />
+		<item name="Dynasty Tunic - Enchanter" skill="37601" level="1" />
+		<item name="Dynasty Tunic - Enchanter" skill="3355" level="1" />
+		<item name="Dynasty Robe - Celestial" skill="37602" level="1" />
+		<item name="Dynasty Robe - Celestial" skill="3354" level="1" />
+		<item name="Dynasty Robe - Celestial" skill="39008" level="1" />
+		<item name="Dynasty Tunic - Divine" skill="37601" level="1" />
+		<item name="Dynasty Tunic - Divine" skill="3354" level="1" />
+		<item name="Dynasty Light - Sentinel" skill="37602" level="1" />
+		<item name="Dynasty Light - Sentinel" skill="3353" level="1" />
+		<item name="Dynasty Light - Sentinel" skill="39005" level="1" />
+		<item name="Dynasty Light - Bow" skill="37601" level="1" />
+		<item name="Dynasty Light - Bow" skill="3353" level="1" />
+		<item name="Dynasty Light - Assassin" skill="3352" level="1" />
+		<item name="Dynasty Light - Assassin" skill="3352" level="1" />
+		<item name="Dynasty Light - Assassin" skill="39004" level="1" />
+		<item name="Dynasty Light - Dagger" skill="3352" level="1" />
+		<item name="Dynasty Light - Dagger" skill="37601" level="1" />
+		<item name="Dynasty Heavy - Kensei" skill="3351" level="1" />
+		<item name="Dynasty Heavy - Kensei" skill="37602" level="1" />
+		<item name="Dynasty Heavy - Kensei" skill="39003" level="1" />
+		<item name="Dynasty Heavy - Finesse" skill="3351" level="1" />
+		<item name="Dynasty Heavy - Finesse" skill="37601" level="1" />
+		<item name="Dynasty Heavy - Finesse" skill="39000" level="1" />
+		<item name="Dynasty Heavy - Rival" skill="37602" level="1" />
+		<item name="Dynasty Heavy - Rival" skill="3350" level="1" />
+		<item name="Dynasty Heavy - Rival" skill="39002" level="1" />
+		<item name="Dynasty Heavy - Force" skill="37601" level="1" />
+		<item name="Dynasty Heavy - Force" skill="3350" level="1" />
+		<item name="Dynasty Heavy - Champion" skill="37602" level="1" />
+		<item name="Dynasty Heavy - Champion" skill="3349" level="1" />
+		<item name="Dynasty Heavy - Champion" skill="39001" level="1" />
+		<item name="Dynasty Heavy - Weapon" skill="3349" level="1" />
+		<item name="Dynasty Heavy - Weapon" skill="37601" level="1" />
+		<item name="Dynasty Heavy - Royal Guard" skill="37602" level="1" />
+		<item name="Dynasty Heavy - Royal Guard" skill="3348" level="1" />
+		<item name="Dynasty Heavy - Royal Guard" skill="39000" level="1" />
+		<item name="Dynasty Heavy - Royal Guard" skill="3417" level="1" />
+		<item name="Dynasty Heavy - Knight" skill="37601" level="1" />
+		<item name="Dynasty Heavy - Knight" skill="3348" level="1" />
+		<item name="Concentration Set" skill="13010" level="1" />
+		<item name="Rykros Robe" skill="13009" level="1" />
+		<item name="Rykros Robe" skill="39023" level="1" />
+		<item name="Rykros Light" skill="13008" level="1" />
+		<item name="Rykros Light" skill="39022" level="1" />
+		<item name="Rykros Heavy" skill="13007" level="1" />
+		<item name="Rykros Heavy" skill="39021" level="1" />
+		<item name="Dread Robe" skill="13002" level="1" />
+		<item name="Dread Robe" skill="13102" level="1" />
+		<item name="Dread Robe" skill="37605" level="1" />
+		<item name="Dread Robe" skill="39020" level="1" />
+		<item name="Ultima Dread Robe" skill="3625" level="1" />
+		<item name="Dread Light" skill="13001" level="1" />
+		<item name="Dread Light" skill="39019" level="1" />
+		<item name="Ultima Dread Light" skill="3624" level="1" />
+		<item name="Ultima Dread Heavy" skill="39018" level="1" />
+		<item name="Ultima Dread Heavy" skill="3623" level="1" />
+		<item name="Ultima Dread Heavy" skill="3417" level="1" />
+		<!-- ArmorSets End -->
+		<!-- Custom Weapons Start -->
+		<item item_id="91004" name="Flesh Ripper" skill="9109" level="1" />
+		<item item_id="80107" name="Escharon" skill="763" level="1" />
+		<item item_id="83057" name="Corrupted Apostle Spear" skill="763" level="1" />
+		<item item_id="80102" name="Venom Slayer" skill="665" level="1" />
+		<item item_id="81004" name="Frost Raven" skill="263" level="30" />
+		<item item_id="81113" name="Wavebrand" skill="16502" level="1" />
+		<item item_id="81112" name="Rayblade" skill="16501" level="1" />
+		<item item_id="81111" name="Aurafang" skill="16500" level="1" />
+		<item item_id="80111" name="Ishrakea" skill="13103" level="1" />
+		<item item_id="900270" name="Titanium" skill="13100" level="1" />
+		<item item_id="81114" name="Phantom Rain" skill="11003" level="1" />
+		<item item_id="82100" name="God's Blade" skill="11000" level="1" />
+	<!-- Custom Weapons End -->
+	</items>
+</list>

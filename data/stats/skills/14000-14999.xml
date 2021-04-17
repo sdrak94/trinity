@@ -1,0 +1,578 @@
+<list>
+<skill id="14000" levels="3" name="Crit Stun">
+  <table name="#dur"> 3 5 7 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Stun" time="#dur" val="0" stackOrder="3" stackType="Stun"/>
+  </for>
+</skill>
+<skill id="14001" levels="3" name="Crit Slow">
+  <table name="#dur"> 15 20 25 </table>
+  <table name="#val"> 0.6 0.5 0.4 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="#dur" val="0" stackOrder="3" stackType="RunSpeedDown">
+       <mul order="0x50" stat="runSpd" val="#val"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14002" levels="3" name="Crit Trick">
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="40"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect time="4" self="1" name="Buff" val="0" noicon="1">
+      <add order="0x40" stat="negateAutoTarget" val="100"/>
+	  <add order="0x40" stat="negateAtkTarget" val="100"/>
+    </effect>
+     <effect name="RemoveTarget" val="0" noicon="1"/>
+  </for>
+</skill>
+<skill id="14003" levels="3" name="Crit Switch">
+  <table name="#dur"> 5 10 15 </table>
+  <table name="#val"> 4 6 8 </table>
+  <table name="#val2"> 0.9 0.9 0.85 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="40"/>
+  <set name="nextDanceCost" val="#val"/>
+  <set name="skillType" val="SWITCH"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="#dur" val="0">
+       <mul order="0x50" stat="pAtkSpd" val="#val2"/>
+	   <mul order="0x50" stat="mAtkSpd" val="#val2"/>
+    </effect>
+	</for>
+</skill>
+<skill id="14004" levels="3" name="Crit Bluff">
+  <table name="#dur"> 1 2 3 </table>
+  <table name="#val"> 1 0.9 0.8 </table>
+  <table name="#val2"> 0.8 0.4 0.0 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="40"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect time="3" self="1" name="Buff" val="0" noicon="1">
+      <add order="0x40" stat="negateAutoTarget" val="100"/>
+	  <add order="0x40" stat="negateAtkTarget" val="100"/>
+    </effect>
+   <effect name="Bluff2" time="#dur" val="0" abnormal="stun">
+       <mul order="0x50" stat="rEvas" val="#val"/>
+	   <mul order="0x50" stat="pSkillEvas" val="#val2"/>
+   </effect>
+  </for>
+</skill>
+<skill id="14005" levels="3" name="Crit Root">
+  <table name="#dur"> 6 10 14 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Root" time="#dur" val="0" stackOrder="3" stackType="Root"/>
+  </for>
+</skill>
+<skill id="14006" levels="3" name="Crit Paralyze">
+  <table name="#dur"> 2 3 5 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="20"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Paralyze" time="#dur" val="0"/>
+  </for>
+</skill>
+<skill id="14007" levels="3" name="Crit Disarm">
+  <table name="#dur"> 3 5 7 </table>
+  <table name="#val"> 0.8 0.6 0.4 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="20"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Disarm" time="#dur" val="0" stackOrder="1" stackType="disarm">
+	   <mul order="0x50" stat="runSpd" val="#val"/>
+	 </effect>
+  </for>
+</skill>
+<skill id="14008" levels="3" name="Crit Weaken">
+  <table name="#dur"> 15 20 25 </table>
+  <table name="#val"> 0.8 0.7 0.6 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="#dur" val="0">
+	 <mul order="0x50" stat="pAtk" val="#val"/>
+	 <mul order="0x50" stat="mAtk" val="#val"/>
+	</effect>
+  </for>
+</skill>
+<skill id="14009" levels="3" name="Crit Hex">
+  <table name="#dur"> 15 20 25 </table>
+  <table name="#val"> 0.8 0.7 0.6 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+   <effect name="Debuff" time="#dur" val="0">
+	 <mul order="0x50" stat="pDef" val="#val"/>
+	</effect>
+  </for>
+</skill>
+<skill id="14010" levels="3" name="Crit Silence">
+<table name="#dur"> 4 5 6 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Mute" time="#dur" val="0"/>
+  </for>
+</skill>
+<skill id="14011" levels="3" name="Crit Physical Mute">
+<table name="#dur"> 5 8 12 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="minLand" val="20"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="PhysicalMute" time="#dur" val="0"/>
+  </for>
+</skill>
+<skill id="14012" levels="3" name="Crit Bleed">
+  <table name="#dur"> 8 12 16 </table>
+  <table name="#dot"> 150 250 350 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="35"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="BLEED"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect count="#dur" name="DamOverTime" time="2" val="#dot" abnormal="bleed">
+        <mul order="0x50" stat="runSpd" val="0.85"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14013" levels="3" name="Magic Hex">
+  <table name="#dur"> 15 20 25 </table>
+  <table name="#val"> 0.8 0.7 0.6 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="20"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="#dur" val="0">
+	 <mul order="0x50" stat="mDef" val="#val"/>
+	</effect>
+  </for>
+</skill>
+<skill id="14014" levels="3" name="Magic Sleep">
+  <table name="#dur"> 15 22 30 </table>
+  <table name="#val"> 0.6 0.3 0 </table>
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="40"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Sleep" time="#dur" val="0" stackOrder="1" stackType="sleep">
+	    <mul order="0x50" stat="rEvas" val="#val"/>
+		<mul order="0x50" stat="pSkillEvas" val="#val"/>
+		<mul order="0x50" stat="mSkillEvas" val="#val"/>
+	</effect>
+  </for>
+</skill>
+<skill id="14015" levels="1" name="Voodoo Curse">
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="40"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect name="Debuff" time="20" val="0">
+	 <mul order="0x50" stat="regHp" val="0"/>
+	 <mul order="0x50" stat="regCp" val="0"/>
+	 <mul order="0x50" stat="gainHp" val="0.25"/>
+	</effect>
+  </for>
+</skill>
+<skill id="14016" levels="1" name="Magical Darkness">
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="minLand" val="40"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+    <effect time="4" self="1" name="Buff" val="0">
+      <add order="0x40" stat="negateAutoTarget" val="100"/>
+    </effect>
+	<effect name="RemoveTarget" val="0" noicon="1"/>
+	<effect name="Debuff" time="5" val="0">
+       <mul order="0x50" stat="accCombat" val="0.66"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14017" levels="1" name="Venom Slayer">
+  <set name="magicLvl" val="91"/>
+  <set name="isDebuff" val="true"/>
+  <set name="lethal1" val="9"/>
+  <set name="lethal2" val="3"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="killByDot" val="true"/>
+  <set name="power" val="1000"/>
+  <set name="reuseDelay" val="3000"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="displayId" val="5843"/>
+  <for>
+	<effect count="5" name="DamOverTime" time="2" val="666" abnormal="poison">
+      <mul order="0x50" stat="gainHp" val="0"/>
+	  <mul order="0x50" stat="regHp" val="0"/>
+	  <mul order="0x50" stat="regCp" val="0"/>
+	  <mul order="0x50" stat="runSpd" val="0.6"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14018" levels="3" name="Crit Disarmor">
+  <table name="#val"> 1 2 3 </table>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="400"/>
+  <set name="reuseDelay" val="7000"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect name="DisarmArmor" time="1" val="#val" noicon="1" effectPower="400" effectType="PROC">
+    </effect>
+  </for>
+</skill>
+<skill id="14019" levels="3" name="Crit Hemorrhage">
+  <table name="#dur"> 10 15 20 </table>
+  <table name="#val"> 5 8 11 </table>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="400"/>
+  <set name="reuseDelay" val="3000"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect name="Debuff" time="#dur" val="0">
+	   <add order="0x40" stat="hamstring" val="#val"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14400" levels="3" name="Mass Hemorrhage">
+  <table name="#dur"> 180 35 60 </table>
+  <table name="#val"> 6 11 14 </table>
+  <set name="isDebuff" val="true"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="400"/>
+  <set name="reuseDelay" val="1000"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_AURA"/>
+  <set name="skillRadius" val="2500"/>
+  <set name="escapeRange" val="2800"/>
+  <for>
+	<effect name="Debuff" time="#dur" val="0" noicon="1" nomsg="1">
+	   <add order="0x40" stat="hamstring" val="#val"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14500" levels="1" name="Hex Absolute">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+      <mul order="0x50" stat="pDef" val="0.75"/>
+	  <mul order="0x50" stat="mDef" val="0.75"/>
+	  <mul order="0x50" stat="sDef" val="0.75"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14501" levels="1" name="Rigor Mortis">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+      <mul order="0x50" stat="pReuse" val="3"/>
+	  <mul order="0x50" stat="mReuse" val="3"/>
+	  <mul order="0x50" stat="pAtkSpd" val="0.66"/>
+	  <mul order="0x50" stat="mAtkSpd" val="0.66"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14502" levels="1" name="Soma Ataxia">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+      <mul order="0x50" stat="accCombat" val="0.66"/>
+	  <mul order="0x50" stat="rEvas" val="0.66"/>
+	  <mul order="0x50" stat="pSkillEvas" val="0"/>
+	  <mul order="0x50" stat="mSkillEvas" val="0"/>
+	  <mul order="0x50" stat="mAtkRange" val="0.2"/>
+	  <mul order="0x50" stat="pAtkRange" val="0.2"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14503" levels="1" name="Life Void">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+      <mul order="0x50" stat="regCp" val="0"/>
+	  <mul order="0x50" stat="regHp" val="0"/>
+	  <mul order="0x50" stat="regMp" val="0"/>
+	  <mul order="0x50" stat="gainHp" val="0"/>
+	  <mul order="0x50" stat="gainMp" val="0"/>
+	  <mul order="0x50" stat="maxHp" val="0.75"/>
+	  <mul order="0x50" stat="absorbDam" val="0"/>
+	  <mul order="0x50" stat="absorbDamMana" val="0"/>
+	  <mul order="0x50" stat="absorbDamStatic" val="0"/>
+	  <mul order="0x50" stat="absorbDamSkill" val="0"/>
+	  <mul order="0x50" stat="transDam" val="0"/>
+	  <mul order="0x50" stat="transDamMana" val="0"/>
+	  <mul order="0x50" stat="drainBoost" val="0"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14504" levels="1" name="Septic Bloodia">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+	  <mul order="0x50" stat="runSpd" val="0.3"/>
+	  <mul order="0x50" stat="rCrit" val="0.25"/>
+	  <mul order="0x50" stat="skillCritAdd" val="0.25"/>
+	  <mul order="0x50" stat="mCritRate" val="0.25"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14505" levels="1" name="Grave Anemia">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+	  <mul order="0x50" stat="pAtk" val="0.5"/>
+	  <mul order="0x50" stat="mAtk" val="0.33"/>
+	  <mul order="0x50" stat="cAtk" val="0.33"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14506" levels="1" name="Morbid Mind">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <for>
+	<effect count="1" name="Debuff" time="6" val="0" abnormal="deathmark">
+	  <mul order="0x50" stat="maxCp" val="0"/>
+	  <mul order="0x50" stat="maxMp" val="0"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14507" levels="1" name="Departed Soul">
+  <set name="magicLvl" val="93"/>
+  <set name="isDebuff" val="true"/>
+  <set name="minLand" val="50"/>
+  <set name="sound" val="SkillSound5.soul_retain_cast"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="power" val="500"/>
+  <set name="skillType" val="PROC"/>
+  <set name="target" val="TARGET_ONE"/>
+  <set name="stayAfterDeath" val="true"/>
+  <for>
+	<effect count="1" name="Debuff" time="60" val="0" abnormal="deathmark">
+	  <mul order="0x50" stat="GiveHp" val="0.1"/>
+	  <add order="0x40" stat="disableRes" val="1"/>
+    </effect>
+  </for>
+</skill>
+<skill id="14508" levels="1" name="Secret Slayer Veil"  enchantLevels1="15" >
+    <set name="target" val="TARGET_SELF"/>
+    <set name="reuseDelay" val="170000"/>
+	<set name="olyDisabled" val="true"/>
+    <set name="hitTime" val="700"/>
+	<set name="retries" val="1"/>
+    <set name="skillType" val="BUFF"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+	<set name="displayId" val="6104"/>
+	 <cond msg="" addName="1">
+	<or>
+		<player level="94"/>
+		<player hasSkill="9001"/>
+	    <player hasSkill="9002"/>
+	    <player hasSkill="9003"/>
+	    <player hasSkill="9004"/>
+		<player hasSkill="9005"/>
+		<player hasSkill="9006"/>
+	</or>
+   </cond>
+    <for>
+      <effect name="Invisible" time="6" count="1" abnormal="stealth" val="0">
+	    <mul order="0x80" stat="regHp" val="0.4"/>
+		<mul order="0x80" stat="regCp" val="0.4"/>
+		<add val="60" order='0x40' stat='runSpd'/>
+		<add val="0.45" order='0x40' stat='cAtk'/>
+		</effect>
+    </for>
+</skill>
+<skill id="14519" levels="1" name="Air Rave">
+  <set name="mpConsume" val="10"/>
+  <set name="hpConsumePerc" val="15"/>
+  <set name="weaponsAllowed" val="512"/> <!-- Dual Sword-->
+  <set name="power" val="0"/>
+  <set name="hitTimings" val="15,15,15,30" />
+  <set name="target" val="TARGET_AREA"/>
+  <set name="skillRadius" val="40"/>
+  <set name="SSBoost" val="3.5"/>
+  <set name="followTarget" val="true"/>
+  <set name="olyDisabled" val="true"/>
+  <set name="overHit" val="true"/>
+  <set name="retries" val="2"/>
+  <set name="reuseDelay" val="13000"/>
+  <set name="hitTime" val="1150"/>
+  <set name="staticHitTime" val="true"/>
+  <set name="skillType" val="PDAM"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <set name="castRange" val="450"/>
+  <set name="effectRange" val="750"/>
+  <set name="baseCritRate" val="15"/>
+  <set name="displayId" val="5720"/>
+  <set name="displayLvl" val="2"/>
+  <cond msg="You need to be farther away from target to Air Rave (100)">
+    <target mindistance="100"/>
+  </cond>
+  <for>
+	</for>
+</skill>
+<skill id="14522" levels="1" name="Point Dash"  enchantLevels1="15">
+	<set name="mpConsume" val="150"/>
+    <set name="castRange" val="550"/>
+	<set name="skillRadius" val="550"/>
+    <set name="effectRange" val="1000"/>
+    <set name="flyType" val="CHARGE"/>
+    <set name="hitTime" val="620"/>
+	<set name="areaLimit" val="true"/>
+	<set name="areaAngle" val="20"/>
+	<set name="staticHitTime" val="true"/>
+    <set name="isDebuff" val="true"/>
+	<set name="maxLand" val="69"/>
+	<set name="minLand" val="27"/>
+    <set name="magicLvl" val="75"/>
+    <set name="operateType" val="OP_ACTIVE"/>
+    <set name="overHit" val="true"/>
+    <set name="power" val="3500"/> <!-- Base Land Rate -->
+	<set name="SSBoost" val="2.8"/>
+    <set name="reuseDelay" val="15000"/>
+	<set name="flyRadius" val="65"/>
+    <set name="skillType" val="PDAM"/>
+    <set name="target" val="TARGET_ONE"/>
+  <set name="mustNegateId" val="10028"/>
+  <cond msg="Spear of Leonidas must be Active">
+    <target active_effect_id="10028"/>
+  </cond>
+  <for>
+      <effect count="1" name="Knockback" time="2" val="0" effectPower="65" effectType="STUN" abnormal="stun"/>
+  </for>
+</skill>
+</list>
