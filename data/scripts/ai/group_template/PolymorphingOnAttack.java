@@ -16,6 +16,7 @@ package ai.group_template;
  
 import java.util.Map;
 
+import javolution.util.FastMap;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -24,8 +25,6 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.clientpackets.Say2;
 import net.sf.l2j.gameserver.network.serverpackets.CreatureSay;
 import net.sf.l2j.util.Rnd;
- 
-import javolution.util.FastMap;
  
 /**
  * @author Slyce

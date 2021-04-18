@@ -1,7 +1,5 @@
 /bin/
 /build/
-/libs/
-/config/
 /dist/
 /log/
 /target/
@@ -20,3 +18,4 @@ data/logs/
 data/crests/
 data/logs/
 
+strix-platform/

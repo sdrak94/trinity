@@ -19,9 +19,8 @@ import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 
 import java.util.Collection;
 
-import javolution.util.FastList;
 import ai.group_template.L2AttackableAIScript;
-
+import javolution.util.FastList;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.datatables.SkillTable;
 import net.sf.l2j.gameserver.instancemanager.GrandBossManager;

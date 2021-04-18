@@ -17,6 +17,7 @@ package ai.individual;
 import java.util.concurrent.Future;
 import java.util.logging.Level;
 
+import ai.group_template.L2AttackableAIScript;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.cache.HtmCache;
@@ -35,7 +36,6 @@ import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.ExShowScreenMessage;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Ice Fairy Sirra AI

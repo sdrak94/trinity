@@ -18,15 +18,8 @@ import java.util.StringTokenizer;
 
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
-import net.sf.l2j.gameserver.network.clientpackets.RequestPVPMatchRecord;
 import net.sf.l2j.gameserver.network.serverpackets.AdminForgePacket;
-import net.sf.l2j.gameserver.network.serverpackets.ExPCCafePointInfo;
-import net.sf.l2j.gameserver.network.serverpackets.ExRegMax;
-import net.sf.l2j.gameserver.network.serverpackets.ExSetCompassZoneCode;
-import net.sf.l2j.gameserver.network.serverpackets.ExShowQuestMark;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
-import net.sf.l2j.gameserver.network.serverpackets.ShopPreviewList;
-import net.sf.l2j.gameserver.network.serverpackets.ShowXMasSeal;
 import net.sf.l2j.gameserver.util.StringUtil;
 
 /**

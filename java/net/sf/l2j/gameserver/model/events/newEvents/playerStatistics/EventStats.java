@@ -10,7 +10,6 @@ import java.util.Map.Entry;
 import cz.nxs.l2j.CallBack;
 import javolution.util.FastMap;
 import net.sf.l2j.L2DatabaseFactory;
-import net.sf.l2j.gameserver.communitybbs.Manager.AdminBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.EventBBSManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.events.dataTables.PlayerStatsTemplate;

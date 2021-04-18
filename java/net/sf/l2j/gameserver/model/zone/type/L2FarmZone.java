@@ -12,13 +12,9 @@
  */
 package net.sf.l2j.gameserver.model.zone.type;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import luna.custom.LunaVariables;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
-import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;

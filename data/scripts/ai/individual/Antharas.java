@@ -14,6 +14,7 @@
  */
 package ai.individual;
 
+import ai.group_template.L2AttackableAIScript;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.instancemanager.GrandBossManager;
 import net.sf.l2j.gameserver.model.L2CharPosition;
@@ -26,7 +27,6 @@ import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.network.serverpackets.SpecialCamera;
 import net.sf.l2j.gameserver.templates.StatsSet;
 import net.sf.l2j.util.Rnd;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Antharas AI

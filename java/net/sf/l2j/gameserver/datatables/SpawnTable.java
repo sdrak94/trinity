@@ -237,7 +237,7 @@ private void fillSpawnTable()
 						if (spawnDat.getLastSpawn() != null)
 						{
 							spawnDat.getLastSpawn().doDie(null);
-							_log.warning("Killing "+spawnDat.getLastSpawn().getName()+" at the start of server!!!!");
+							//_log.warning("Killing "+spawnDat.getLastSpawn().getName()+" at the start of server!!!!");
 						}
 					}
 				}
@@ -355,7 +355,7 @@ private void fillSpawnTable()
 							if (spawnDat.getLastSpawn() != null)
 							{
 								spawnDat.getLastSpawn().doDie(null);
-								_log.warning("Killing "+spawnDat.getLastSpawn().getName()+" at the start of server!!!!");
+								//_log.warning("Killing "+spawnDat.getLastSpawn().getName()+" at the start of server!!!!");
 							}
 						}
 					}

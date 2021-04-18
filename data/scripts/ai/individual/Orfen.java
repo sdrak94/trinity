@@ -16,6 +16,7 @@ package ai.individual;
 
 import java.util.List;
 
+import ai.group_template.L2AttackableAIScript;
 import javolution.util.FastList;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.datatables.SkillTable;
@@ -33,7 +34,6 @@ import net.sf.l2j.gameserver.network.serverpackets.NpcSay;
 import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.templates.StatsSet;
 import net.sf.l2j.util.Rnd;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Orfen AI
@@ -47,9 +47,9 @@ public class Orfen extends L2AttackableAIScript
 		{55024,17368,-5412},{53504,21248,-5486},{53248,24576,-5262}};
 
 	private static final String[] Text = {"PLAYERNAME, stop kidding yourthis about your own powerlessness!",
-	        "PLAYERNAME, I’ll make you feel what true fear is!",
-	        "You’re really stupid to have challenged me. PLAYERNAME! Get ready!",
-	        "PLAYERNAME, do you think that’s going to work?!"};
+	        "PLAYERNAME, Iï¿½ll make you feel what true fear is!",
+	        "Youï¿½re really stupid to have challenged me. PLAYERNAME! Get ready!",
+	        "PLAYERNAME, do you think thatï¿½s going to work?!"};
 
 	private static final int ORFEN = 29014;
 	//private static final int RAIKEL = 29015;

@@ -10,7 +10,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
-import javolution.util.FastList;
 import luna.custom.globalScheduler.GlobalScheduleTables;
 import luna.custom.globalScheduler.template.FuturedGlobalEvent;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -24,7 +23,6 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewDomination;
 import net.sf.l2j.gameserver.model.events.newEvents.NewFOS;
 import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
 import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
-import net.sf.l2j.gameserver.util.StringUtil;
 
 public class Communicator
 {

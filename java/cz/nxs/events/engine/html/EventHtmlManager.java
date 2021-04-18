@@ -32,7 +32,6 @@ import cz.nxs.events.engine.stats.EventStatsManager;
 import cz.nxs.events.engine.team.EventTeam;
 import cz.nxs.interf.NexusEvents;
 import cz.nxs.interf.PlayerEventInfo;
-import cz.nxs.interf.callback.HtmlManager;
 import cz.nxs.interf.delegate.InstanceData;
 import cz.nxs.interf.delegate.NpcData;
 import cz.nxs.interf.delegate.ShowBoardData;

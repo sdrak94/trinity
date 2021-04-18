@@ -14,10 +14,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 
-import javolution.util.FastList;
-import luna.custom.handler.items.bdoBox.BdoData.GainData;
-import luna.custom.handler.items.lootBox.LootData;
-import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.util.Rnd;
 

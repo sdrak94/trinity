@@ -1,7 +1,6 @@
 package instances.Fortress;
 
 import javolution.util.FastMap;
-
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.datatables.NpcTable;
 import net.sf.l2j.gameserver.datatables.SpawnTable;

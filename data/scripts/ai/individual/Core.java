@@ -16,6 +16,7 @@ package ai.individual;
 
 import java.util.List;
 
+import ai.group_template.L2AttackableAIScript;
 import javolution.util.FastList;
 import net.sf.l2j.gameserver.instancemanager.GrandBossManager;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
@@ -26,7 +27,6 @@ import net.sf.l2j.gameserver.network.serverpackets.NpcSay;
 import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.templates.StatsSet;
 import net.sf.l2j.util.Rnd;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Core AI

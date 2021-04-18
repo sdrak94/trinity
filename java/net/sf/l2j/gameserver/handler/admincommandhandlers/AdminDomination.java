@@ -1,18 +1,12 @@
 package net.sf.l2j.gameserver.handler.admincommandhandlers;
 
-import java.util.ArrayList;
-import java.util.Map;
 import java.util.StringTokenizer;
 
 import luna.custom.globalScheduler.GlobalEventsParser;
 import luna.custom.guard.LunaSkillGuard;
 import luna.custom.holder.LunaGlobalVariablesHolder;
 import luna.custom.skilltrees.SkillTreesParser;
-import net.sf.l2j.gameserver.GmListTable;
-import net.sf.l2j.gameserver.datatables.SkillTreeTable;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
-import net.sf.l2j.gameserver.model.L2Skill;
-import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.events.Domination;
 import net.sf.l2j.gameserver.model.events.manager.EventCommander;

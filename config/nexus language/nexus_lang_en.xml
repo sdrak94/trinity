@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization lang="English" version="3.0" author="Cyan">
+
+	<!-- ============================================ -->
+	<!-- Basic engine messages and names added in 3.0 -->
+	
+	<message id="system_warning" text="You have received a warning. If you receive %i more warnings, you will be unable to participate in event. Warnings decrease by 1 every day." />
+	<message id="system_warningsDecreased" text="Your event warnings count has been decreased by 1, now you have %i." />
+	
+	<message id="registering_jail" text="You cannot register from the jail." />
+	<message id="registering_siege" text="You cannot register while in siege." />
+	<message id="registering_duel" text="You cannot register while you are dueling." />
+	<message id="registering_olympiad" text="You cannot register while you are in the olympiad." />
+	<message id="registering_karma" text="You cannot register if you have karma." />
+	<message id="registering_cursedWeapon" text="You cannot register with a cursed weapon." />
+	
+	<message id="registering_highLevel" text="Your level is higher than the max allowed level." />
+	<message id="registering_lowLevel" text="Your level is lower than the min required level." />
+	<message id="registering_sameIp" text="There are too many registered players in the event using the same IP as you." />
+	<message id="registering_status" text="Your status doesn't allow you to participate the event." />
+	<message id="registering_notRegState" text="The event is no in the registration state, you cannot register now." />
+	<message id="registering_alreadyRegistered" text="You are already registered to another event." />
+	<message id="registering_warningPoints" text="You cannot join the event because you have more than allowed count of Warning points. Warning points decrease every day by 1 and you gain them by doing unallowed things on events, such as disconnecting or trying to exploit. If you have more than %i points, you won't be allowed to participate in event. You currently have %i warning points." />
+	<message id="registering_notAllowed" text="You may not register to this event." />
+	<message id="registering_buffs" text="You might also want to select some buffs for the event." />
+	<message id="registering_registered" text="You have successfully registered to the event!" />
+	<message id="registering_registered2" text="You have successfully registered to %s event!" />
+	<message id="registering_fail" text="You failed to register to the event." />
+	<message id="registering_full" text="The event is already full." />
+	<message id="registering_timeCheckFail" text="You have to wait at least %i minutes to join this event again." />
+	<message id="registering_noInstance" text="No event instance was found for you." />
+	<message id="registering_notEnoughtPlayers" text="There are not enought players in your instance to start the event." />
+	<message id="registering_timeCheckFailed" text="You cannot register now. Try it again later." />
+	<message id="registering_party" text="You must have a party to join the event." />
+	<message id="registering_noParty" text="You are not in the party." />
+	<message id="registering_partyLeader" text="Only party leaders can register their parties to the event." />
+	<message id="registering_partyLeader_unregister" text="Only party leaders can unregister their parties from the event." />
+	<message id="registering_partyMembers" text="You need exactly %i members in your party to join the event." />
+	<message id="registering_partyCantRegister" text="Your party does not meet requirements to participate in this event." />
+	<message id="registering_party_memberAlreadyRegistered" text="Player %s is already registered to another event." />
+	<message id="registering_party_timeCheckFail" text="Player %s cannot register cause of the delay he has to wait to join this event again." />
+	<message id="registering_party_noHealer" text="Healers and buffers are not allowed on this mini event." />
+	<message id="registering_afterDisconnect_true" text="Welcome back. You are being teleported back to your previous event." />
+	<message id="registering_afterDisconnect_false" text="The engine could not teleport you back to your previous event anymore. The event has propably ended already or was full." />
+	
+	<message id="registered_first_type1" text="You are one of the first %i registered players, if you win the event, you will get some extra rewards!" />
+	<message id="registered_first_type2" text="You are one of the first %i registered players, in the end of the event, you will get some extra rewards!" />
+	
+	<message id="unregistering_cantUnregister" text="Unregistering is not allowed here." />
+	<message id="unregistering_notRegistered" text="You are not registered!" />
+	<message id="unregistering_cant" text="You cannot unregister now." />
+	<message id="unregistering_unregistered" text="You have been unregistered from the event." />
+	<message id="unregistering_unregistered2" text="You have been unregistered from %s event." />
+	<message id="unregistering_unregistered_partyBig" text="You have been unregistered from %s event because your party is too big now." />
+	<message id="unregistering_memberKicked" text="Player %s was kicked from your team. He has done something against the rules of the event." />
+	<message id="unregistering_memberKicked_anotherEvent" text="Player %s was kicked from your team because he has registered to another event." />
+	<message id="unregistering_memberKicked_leftParty" text="Player %s was kicked from your team because he left your party." />
+	
+	<message id="observing_gameEnded" text="This game has already ended." />
+	<message id="observing_cant" text="Your status doesn not allow you to observe a match." />
+	<message id="observing_alreadyRegistered" text="You are already register to an event." />
+	<message id="observing_noSpawn" text="No spawn was found for you. You cannot spectate this event." />
+	
+	<message id="announce_eventStarted" text="Registration for event %s has been opened." />
+	<message id="announce_npcPos" text="The registration NPC is available in %s." />
+	<message id="announce_moreInfoInCb" text="More informations in Community Board." />
+	<message id="announce_regAborted" text="Registration has been aborted by a GM." />
+	<message id="announce_eventAborted" text="The event has been aborted by GM." />
+	<message id="announce_noInstance" text="The event could not be started due to lack of players in instances." />
+	
+	<message id="announce_timeleft_min" text="%i minutes left to register." />
+	<message id="announce_timeleft_sec" text="%i seconds left to register." />
+	
+	<message id="announce_regClosed" text="Registration has been closed." />
+	<message id="announce_lackOfParticipants" text="The event has been aborted due to lack of participants." />
+	<message id="announce_started" text="The event has started!" />
+	<message id="announce_teleport10sec" text="You will be teleported to the event in 10 seconds." />
+	<message id="announce_teleportBack10sec" text="You will be teleported back in 10 seconds." />
+	<message id="announce_end" text="The event has ended." />
+	<message id="announce_alldisconnected" text="All enemy teams have disconnected. The event has been aborted." />
+	
+	<message id="event_choosingInstance" text="You will play in event instance %s." />
+	<message id="event_revive" text="You will be respawned in %i seconds." />
+	<message id="event_firstBlood" text="First blood on this event is caused by killer %s!" />
+	<message id="event_mysteriousError" text="Sorry, an error occured in the event engine. It had to be aborted, we are working on a fix." />
+	<message id="event_countdown_sec" text="%i seconds left till the event ends." />
+	<message id="event_countdown_min" text="%i minutes left till the event ends." />
+	<message id="event_extraReward" text="You receive extra rewards becuase you were one of the first %i registered players." />
+	<message id="event_announceScore" text="%i. %s - %i score." />
+	<message id="event_announceScore_includeKills" text="%i. %s - %i score, %i kills." />
+	
+	<message id="event_afkWarning" text="You have been inactive on this event for %i seconds. If you continue for the next %i seconds, your rewards might be lowered in end of the event." />
+	<message id="event_afkWarning_kill" text="You have been inactive on this event for %i seconds. If you continue for the next %i seconds, you will be killed!" />
+	<message id="event_afkMarked" text="You are now marked as AFK. Your rewards from this event might be lowered." />
+	<message id="event_afkMarked_andDied" text="Noob %s has gone afk and is now dead." />
+	<message id="event_afkDurationInfo" text="You have been AFK for %i minute(s)." />
+	
+	<message id="event_disconnect_team" text="All players from team %s disconnected." />
+	<message id="event_disconnect_all" text="All enemy players have disconnected. The event has been aborted." />
+	<message id="game_playerDisconnected" text="Player %s disconnected from the match." />
+	<message id="game_playerDisconnected2" text="Your opponent %s disconnected from the match." />
+	<message id="game_teamDisconnected" text="%s disconnected from the match." />
+	
+	<message id="event_itemNotAllowed" text="This item is not allowed on this event." />
+	<message id="event_skillNotAllowed" text="This skill is not allowed on this event." />
+	<message id="event_petsNotAllowed" text="Pets are not allowed on this event." />
+	<message id="event_summonsNotAllowed" text="Summons are not allowed on this event." />
+	
+	<message id="event_ffa_announceWinner1" text="%s has won the event." />
+	<message id="event_ffa_announceWinner2_part1" text="%s and" />
+	<message id="event_ffa_announceWinner2_part2" text="have won the match." />
+	<message id="event_ffa_announceWinner3" text="All players have the same score." />
+	
+	<message id="event_team_announceWinner1" text="%s has won the event." />
+	<message id="event_team_announceWinner2_part1" text="%s and" />
+	<message id="event_team_announceWinner2_part2" text="have won the match." />
+	<message id="event_team_announceWinner3" text="All teams have the same score." />
+	
+	<message id="event_notEnoughtScore" text="You need at least %i score to receive a reward." />
+
+	<message id="event_error" text="An error in the Event Engine occured. The event has been aborted." />
+	<message id="event_scorebar_time" text="Time: %s" />
+	<message id="event_title_pvppk" text="Kills: %i Deaths: %i" />
+	<message id="event_title_scoredeath" text="Score: %i Deaths: %i" />
+	
+	<message id="event_teleportBack" text="You are being teleported back to your previous location." />
+	<message id="event_respawned" text="You have been respawned." />
+	
+	
+	<message id="ctf_tooFar" text="You need to come closer." />
+	<message id="ctf_score" text="%s scores for the %s team! The %s flag has been returned." />
+	<message id="ctf_score_player" text="Congratulations! You've scored." />
+	<message id="ctf_goForEnemyFlag" text="Go for enemy's flag!" />
+	<message id="ctf_yourFlagStolen" text="Your flag has been stolen." />
+	<message id="ctf_flagStolen" text="This flag has already been stolen." />
+	<message id="ctf_flagTaken" text="You've taken the flag! Run back!" />
+	<message id="ctf_flagReturned" text="The %s flag has been returned by %s." />
+	<message id="ctf_flagReturned2" text="The %s flag has been returned." />
+	<message id="ctf_flagReturn_afk1" text="%s went afk while holding a flag. The % has been returned." />
+	<message id="ctf_flagReturn_afk2" text="The %s flag returned, the flag holder went afk." />
+	<message id="ctf_flagReturn" text="The %s flag returned." />
+	<message id="ctf_flagReturn_timeOver1" text="%s didn't manage to score or return his flag within %i seconds time limit. The %s flag has been returned." />
+	<message id="ctf_flagReturn_timeOver2" text="The %s flag returned, the limit of %i seconds has passed." />
+	<message id="ctf_flagTaken_announce" text="%s has taken the %s flag!" />
+	<message id="ctf_flagHolderDisconnect" text="Player %s holding %s team's flag disconnected." />
+	<message id="ctf_flagTaken_announce" text="%s has taken the %s flag!" />
+	
+	<message id="dm_topKills" text="Top kills: %i" />
+	<message id="dm_cantChat" text="You may not chat on this event." />
+	
+	<message id="dom_gainedZone" text="%s has gained the zone." />
+	<message id="dom_score" text="%s has scored for owning the zone." />
+	<message id="dom_leftToScore" text="%i %s left to score for %s." />
+	<message id="dom_lostZone" text="%s has lost the zone." />
+	
+	<message id="dom_npcTitle_owner" text="Owned by %s" />
+	<message id="dom_npcTitle_noOwner" text="No owner" />
+	
+	<message id="mDom_gainedZone" text="%s has gained zone %i." />
+	<message id="mDom_lostZone" text="%s has lost zone %i." />
+	<message id="mDom_dominating" text="%s is dominating %i zones!" />
+	<message id="mDom_lostDomination" text="%s has lost zones domination." />
+	<message id="mDom_score" text="%ss scored for owning %i zones!" />
+	<message id="mDom_leftToScore" text="%i %s left to score for %s." />
+	
+	<message id="lms_roundStart" text="Round %i starts in %i seconds." />
+	<message id="lms_roundStarted" text="Round %i has started!" />
+	<message id="lms_roundWon" text="%s has won round %i." />
+	<message id="lms_roundStartsIn" text="Next round starts in %i seconds." />
+	<message id="lms_eventEnded" text="The event has ended!" />
+	<message id="lms_roundAborted_timeLimit" text="This round has been aborted due to a time limit of %i minutes." />
+	<message id="lms_roundAborted" text="This round has been aborted." />
+	<message id="lms_notifyPlayerRespawn" text="You will respawn in the next round." />
+	<message id="lms_scorebar_alive" text="Alive:" />
+	<message id="lms_scorebar_rounds" text="Rounds:" />
+	<message id="lms_scorebar_top" text="Top:" />
+	
+	<message id="vip_selectNew" text="VIPs will be selected in %i seconds." />
+	<message id="vip_becomeVip" text="Player %s has become a VIP for your team!" />
+	<message id="vip_vipDied" text="VIP %s of team %s has died!" />
+	<message id="vip_vipKilled" text="Your VIP %s has been killed!" />
+	<message id="vip_vipAfk" text="Your VIP %s has gone afk and is now dead!" />
+	<message id="vip_enemyVipAfk" text="Enemy VIP %s has gone afk and is now dead!" />
+	<message id="vip_vipDisconnected" text="VIP %s of team %s has disconnected." />
+	
+	<message id="chests_player_scored" text="You've scored!" />
+	<message id="chests_player_scored_x2" text="You've killed a blessed chest!" />
+	<message id="chests_player_scored_x4" text="What an epic chest! Getting 4 points." />
+	
+	<message id="chests_player_windWalk" text="You've received wind walk level %i." />
+	<message id="chests_player_windWalk_upgrade" text="Your wind walk buff was upgraded to level %i." />
+	<message id="chests_player_hateAura" text="You've received Hate aura skill!" />
+	<message id="chests_player_whirlWind" text="You've received Whirl wind skill!" />
+	<message id="chests_player_rushSkill" text="You've received Rush skill!" />
+	<message id="chests_player_bombShield" text="You've received one-bomb shield!" />
+	<message id="chests_player_bombShield_info" text="You now have %i bomb shield(s)." />
+	<message id="chests_player_bombShield_info2" text="You still have %i bomb shield(s)." />
+	<message id="chests_player_criticalRateBuff" text="You've received crit rate raise buff, level %i." />
+	<message id="chests_player_criticalRateBuff_levelUp" text="Your crit rate buff was upgraded to level %i." />
+	
+	<message id="chests_player_itemShieldSuccess" text="The shield has protected you from the explosion." />
+	<message id="chests_player_bombShieldSuccess" text="The bomb shield has protected you from the explosion." />
+	<message id="chests_player_bombShieldSuccess_curse" text="The bomb shield has protected you from the explosion." />
+	<message id="chests_player_deathStreakShieldSuccess" text="The bomb shield has protected you from the explosion." />
+	<message id="chests_player_deathStreakShieldSuccess_curse" text="The bomb shield has protected you from chest's curse." />
+	
+	<message id="chests_player_paralyzed" text="taking a photo - do not move" />
+	<message id="chests_player_horrifyingChest" text="Bieber's chest" />
+	
+	<message id="chests_player_transform_bunny1" text="You've been transformed into a bunny!" />
+	<message id="chests_player_transform_bunny2" text="You CAN attack other players." />
+	<message id="chests_player_transform_bunny3" text="Transformation lasts %i seconds or until you die." />
+	<message id="chests_player_transform_bunny_announce" text="Player %s has become a bunny." />
+	<message id="chests_player_transform_bunny_title" text="Hostile" />
+	<message id="chests_player_transform_bunny_scoreMsg" text="You've SCORED! +1 point." />
+	<message id="chests_player_transform_bunny_diedMsg" text="Rabbit hunted for %i points. Bravo!" />
+	
+	<message id="chests_player_transform_frog1" text="You've become a 7-second frog! Deal with it." />
+	<message id="chests_player_transform_frog2" text="Nothing you can do. You can only jump." />
+	<message id="chests_player_transform_frog3" text="Your life will be %i seconds long." />
+	<message id="chests_player_transform_frog_announce" text="Player %s is a 7-second frog. Hunt him down for points!" />
+	<message id="chests_player_transform_frog_title" text="Mad" />
+	<message id="chests_player_transform_frog_diedMsg" text="Frog rapped for %i points. Bravo!" />
+	
+	<message id="chests_player_transform_pig1" text="You are such a pig dude." />
+	<message id="chests_player_transform_pig2" text="So take the advantage of it and kill the humans." />
+	<message id="chests_player_transform_pig3" text="Transformation lasts %i seconds or until you die." />
+	<message id="chests_player_transform_pig_announce" text="Player %s has become a ............ pig!" />
+	<message id="chests_player_transform_pig_title" text="Very Hostile" />
+	<message id="chests_player_transform_pig_scoreMsg" text="You've SCORED! +1 point." />
+	<message id="chests_player_transform_pig_diedMsg" text="Pig shred for %i points." />
+	
+	<message id="chests_player_transform_yeti1" text="Welcome Great Yeti." />
+	<message id="chests_player_transform_yeti2" text="You're the new rul0r. Kill the players for extra points!" />
+	<message id="chests_player_transform_yeti3" text="Transformation lasts %i seconds or until you die." />
+	<message id="chests_player_transform_yeti_announce" text="Yeti's spirit has gained control over %s's body. Everyone is in danger now." />
+	<message id="chests_player_transform_yeti_title" text="Hostile! HP: %i%" />
+	<message id="chests_player_transform_yeti_scoreMsg" text="Owned! +1 point." />
+	<message id="chests_player_transform_yeti_diedMsg" text="Killing yeti requires lots of courage. Receiving %i points!" />
+	
+	<message id="chests_obtainedWeapon_bow" text="You've obtained a bow! You won't explode anymore." />
+	<message id="chests_obtainedWeapon_hammer" text="You've obtained a hammer! It can stun." />
+	
+	<message id="chests_player_deathStreakShieldRemoved" text="Deathstreak bomb shield was removed." />
+	<message id="chests_player_buffRemoved" text="%s (Lv%i) buff was removed." />
+	<message id="chests_player_deathstreakReset" text="Your death streak count was reset." />
+	<message id="chests_player_killStreakReset" text="Kill streak reset." />
+	<message id="chests_player_respawnDelayDecreased" text="Respawn time was decreased by %s due to your death streak." />
+	<message id="chests_player_deathStreakWindWalk" text="You have died %i times in a row, death streak system gave you Wind walk buff!" />
+	<message id="chests_player_deathStreakSuperiorShield" text="You have died %i times in a row, death streak system gave you Superior bomb shield!" />
+	
+	<message id="chests_player_sameSpecie" text="Do not attack same species!" />
+	<message id="chests_player_cantAttackPlayers" text="You can only attack other players when transformed." />
+	<message id="chests_player_cantAttackChests" text="You cannot attack chests when you are transformed." />
+	<message id="chests_player_cantUseWeapon" text="You don't own this weapon." />
+	<message id="chests_player_cantDestroyWeapon" text="Sorry, no items can be destroyed while in Lucky Chests event." />
+	<message id="chests_player_skillOnlyWith" text="This skill can be used only with a %s." />
+	
+	<message id="chests_player_killStreak_killedInRow" text="%i chests killed in a row!" />
+	<message id="chests_player_killStreak_killedInRow2" text="%i chests rapped in a row!" />
+	<message id="chests_player_killStreak_bombShield" text="Received one-bomb shield shield as a five-time killstreak reward!" />
+	<message id="chests_player_killStreak_weapon" text="Received a new weapon as a killstreak reward!" />
+	<message id="chests_player_killStreak_sword" text="Received a new deadly weapon as a ten-time killstreak reward." />
+	<message id="chests_player_killStreak_bow" text="Received a new deadly bow as a thirteen-time killstreak reward." />
+	<message id="chests_player_killStreak_itemShield" text="Received anti-bomb shield as a killstreak reward!" />
+	<message id="chests_player_killStreak_killedInRow3" text="You've just got your %ith chest in a row!" />
+	
+	<message id="chests_scorebar_chestsLeft" text="Chests:" />
+	<message id="chests_scorebar_topScore" text="Top score:" />
+	
+	<message id="team_ffaevent" text="Players" />
+	<message id="team_blue" text="Blue" />
+	<message id="team_red" text="Red" />
+	<message id="team_green" text="Green" />
+	<message id="team_purple" text="Purple" />
+	<message id="team_yellow" text="Yellow" />
+	
+	<message id="team_fullname_blue" text="Blue Team" />
+	<message id="team_fullname_red" text="Red Team" />
+	<message id="team_fullname_green" text="Green Team" />
+	<message id="team_fullname_purple" text="Purple Team" />
+	<message id="team_fullname_yellow" text="Yellow Team" />
+	
+	<!-- Mini events -->
+	<message id="game_aborted" text="Event has been aborted." />
+	<message id="game_unregistered" text="You have been unregistered from the %s event." />
+	<message id="game_delayMsg" text="You will be able to join this event again in %i minutes." />
+	
+	<message id="game_countdown" text="%i %s left till the event ends." />
+	
+	<message id="game_teleporting" text="Teleporting players to the event..." />
+	<message id="game_teleportDone" text="Teleporting done. Prepare for the match now!" />
+	<message id="game_matchStartsIn" text="The match starts in %i seconds." />
+	<message id="game_roundStartIn" text="%s round starts in %i seconds." />
+	<message id="game_roundStarted" text="%s round has started!" />
+	<message id="game_roundWonBy" text="%s round was won by %s." />
+	<message id="game_matchEnd" text="The match has ended." />
+	<message id="game_matchEnd_timeLimit" text="The match has reached its limit of %i minutes." />
+	<message id="game_matchEnd_tie" text="The match has ended as a tie." />
+	
+	<message id="game_korean_teleportingToArena" text="Teleporting to the arena..." />
+	<message id="game_korean_nextFight" text="%s -vs- %s, fight starts in %i seconds." />
+	<message id="game_korean_fightStarted" text="Go and fight!" />
+	<message id="game_korean_nextPlayer" text="%s is next, go fight!" />
+	<message id="game_korean_winner" text="%s has won the match." />
+	
+	<message id="round_1" text="1st" />
+	<message id="round_2" text="2nd" />
+	<message id="round_3" text="3rd" />
+	<message id="round_4" text="4th" />
+	<message id="round_5" text="5th" />
+	<message id="round_6" text="6th" />
+	<message id="round_7" text="7th" />
+	<message id="round_8" text="8th" />
+	<message id="round_9" text="9th" />
+	<message id="round_10" text="10th" />
+	<message id="round_final" text="Final" />
+	
+	<!-- ============================================ -->
+
+</localization>

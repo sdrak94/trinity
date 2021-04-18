@@ -65,14 +65,14 @@ public class SkillTreesParser
 										}
 									}
 									classTemp.add(new ClassTemplate(id, name, _skills));
-									System.out.println("Loaded: " + _skills.size() + " skills for class: " + name + " (" + id + ")");
+									//System.out.println("Loaded: " + _skills.size() + " skills for class: " + name + " (" + id + ")");
 								}
 								if (!classTemp.isEmpty())
 								{
 									classTemp.forEach(classInd ->
 									{
 										classSkillTrees.put(classInd.getId(), classInd);
-										System.out.println("Added class: " + classInd.getId());
+										//System.out.println("Added class: " + classInd.getId());
 										classInd.getSkills().forEach(skill ->
 										{
 											if (!_allSkills.contains(skill.getId()))
@@ -83,7 +83,7 @@ public class SkillTreesParser
 									});
 								}
 							}
-							System.out.println("Loaded: " + _allSkills.size() + " Class skills");
+							//System.out.println("Loaded: " + _allSkills.size() + " Class skills");
 						}
 						if (n.getNodeName().equalsIgnoreCase("items"))
 						{
@@ -100,7 +100,7 @@ public class SkillTreesParser
 									}
 								}
 							}
-							System.out.println("Loaded: " + _itemSkills.size() + " item skills");
+							//System.out.println("Loaded: " + _itemSkills.size() + " item skills");
 						}
 					}
 				}

@@ -8,7 +8,6 @@ import java.util.StringTokenizer;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
-import net.sf.l2j.gameserver.model.events.Communicator;
 import net.sf.l2j.gameserver.model.events.dataTables.FuturedEvent;
 import net.sf.l2j.util.Rnd;
 

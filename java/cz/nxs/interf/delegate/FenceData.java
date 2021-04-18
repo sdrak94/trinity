@@ -4,7 +4,6 @@ import cz.nxs.l2j.delegate.IObjectData;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.L2WorldRegion;
 import net.sf.l2j.gameserver.model.actor.instance.L2FenceInstance;
-import net.sf.l2j.gameserver.model.actor.instance.L2FenceNexusInstance;
 
 /**
  * @author hNoke

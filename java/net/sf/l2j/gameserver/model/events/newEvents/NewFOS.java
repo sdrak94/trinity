@@ -40,7 +40,6 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PetInstance;
 import net.sf.l2j.gameserver.model.entity.Duel;
 import net.sf.l2j.gameserver.model.events.CTF;
 import net.sf.l2j.gameserver.model.events.Communicator;
-import net.sf.l2j.gameserver.model.events.FOS;
 import net.sf.l2j.gameserver.model.events.TvT;
 import net.sf.l2j.gameserver.model.events.dataTables.PlayerStatsTemplate;
 import net.sf.l2j.gameserver.model.events.manager.EventEngine;

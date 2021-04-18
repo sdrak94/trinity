@@ -8,21 +8,17 @@ import javolution.util.FastList;
 import javolution.util.FastMap;
 import net.sf.l2j.gameserver.cache.HtmCache;
 import net.sf.l2j.gameserver.communitybbs.Manager.BaseBBSManager;
-import net.sf.l2j.gameserver.communitybbs.Manager.ClanBBSManager;
 import net.sf.l2j.gameserver.datatables.BufferSkillsTable;
 import net.sf.l2j.gameserver.datatables.CharSchemesTable;
-import net.sf.l2j.gameserver.datatables.FencesTable;
 import net.sf.l2j.gameserver.datatables.SkillTable;
 import net.sf.l2j.gameserver.model.L2Effect;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.L2Character;
-import net.sf.l2j.gameserver.model.actor.L2Summon;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2SummonInstance;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
-import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
 
 /**
  * <b><font size=3>NPC Buffer instance handler</font></b><br>

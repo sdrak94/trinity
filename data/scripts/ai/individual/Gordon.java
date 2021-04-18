@@ -15,6 +15,8 @@
 package ai.individual;
 
 import java.util.Collection;
+
+import ai.group_template.L2AttackableAIScript;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.datatables.SpawnTable;
 import net.sf.l2j.gameserver.model.L2CharPosition;
@@ -22,7 +24,6 @@ import net.sf.l2j.gameserver.model.L2Spawn;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
 import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Gordon AI

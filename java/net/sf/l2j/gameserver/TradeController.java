@@ -90,7 +90,7 @@ public class TradeController
 					L2TradeItem item = new L2TradeItem(itemId);
 					if (ItemTable.getInstance().getTemplate(itemId) == null)
 					{
-						_log.warning("Skipping itemId: " + itemId + " on buylistId: " + buy1.getListId() + ", missing data for that item.");
+						//_log.warning("Skipping itemId: " + itemId + " on buylistId: " + buy1.getListId() + ", missing data for that item.");
 						continue;
 					}
 					

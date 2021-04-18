@@ -1,7 +1,7 @@
 package transformations;
 
-import net.sf.l2j.gameserver.model.L2Transformation;
 import net.sf.l2j.gameserver.instancemanager.TransformationManager;
+import net.sf.l2j.gameserver.model.L2Transformation;
 
 /**
  * This is currently only a test of the java script engine

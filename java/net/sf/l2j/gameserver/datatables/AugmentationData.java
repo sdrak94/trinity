@@ -29,7 +29,6 @@ import org.w3c.dom.Node;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
-import net.sf.l2j.gameserver.GmListTable;
 import net.sf.l2j.gameserver.model.L2Augmentation;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.network.clientpackets.AbstractRefinePacket;

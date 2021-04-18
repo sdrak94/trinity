@@ -42,7 +42,6 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewFOS;
 import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
 import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.events.newEvents.playerStatistics.EventStats;
-import net.sf.l2j.gameserver.network.serverpackets.ShowBoard;
 import net.sf.l2j.gameserver.templates.item.L2Item;
 import net.sf.l2j.gameserver.util.StringUtil;
 import net.sf.l2j.util.Rnd;

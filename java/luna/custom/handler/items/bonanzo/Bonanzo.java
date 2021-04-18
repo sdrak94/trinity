@@ -3,7 +3,6 @@ package luna.custom.handler.items.bonanzo;
 import java.util.logging.Logger;
 
 import luna.custom.handler.items.bonanzo.BonanzoData.RewardData;
-import net.sf.l2j.gameserver.Announcements;
 import net.sf.l2j.gameserver.cache.HtmCache;
 import net.sf.l2j.gameserver.datatables.ItemTable;
 import net.sf.l2j.gameserver.handler.IItemHandler;

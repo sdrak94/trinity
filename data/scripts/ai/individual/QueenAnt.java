@@ -16,6 +16,7 @@ package ai.individual;
 
 import java.util.List;
 
+import ai.group_template.L2AttackableAIScript;
 import javolution.util.FastList;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.datatables.SkillTable;
@@ -29,7 +30,6 @@ import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.network.serverpackets.SocialAction;
 import net.sf.l2j.gameserver.templates.StatsSet;
 import net.sf.l2j.util.Rnd;
-import ai.group_template.L2AttackableAIScript;
 
 /**
  * Queen Ant AI

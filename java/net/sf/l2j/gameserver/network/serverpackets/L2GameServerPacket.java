@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 import org.mmocore.network.SendablePacket;
 
 import net.sf.l2j.Config;
-import net.sf.l2j.gameserver.Announcements;
 import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
 import net.sf.l2j.gameserver.network.L2GameClient;
 

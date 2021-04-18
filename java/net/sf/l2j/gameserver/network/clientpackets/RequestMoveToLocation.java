@@ -19,7 +19,6 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewFOS;
 import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
 import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
-import net.sf.l2j.gameserver.network.serverpackets.ExShowTrace;
 import net.sf.l2j.gameserver.network.serverpackets.FlyToLocation;
 import net.sf.l2j.gameserver.network.serverpackets.FlyToLocation.FlyType;
 import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;

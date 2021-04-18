@@ -18,7 +18,6 @@ import cz.nxs.interf.delegate.SkillData;
 import cz.nxs.l2j.CallBack;
 import javolution.text.TextBuilder;
 import javolution.util.FastMap;
-import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 
 /**
