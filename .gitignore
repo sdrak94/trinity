@@ -19,3 +19,5 @@ data/crests/
 data/logs/
 
 strix-platform/
+
+/lib/cachedir/
