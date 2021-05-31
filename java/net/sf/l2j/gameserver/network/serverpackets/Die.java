@@ -12,7 +12,6 @@
  */
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.datatables.AccessLevels;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.instancemanager.FortManager;
@@ -65,16 +64,7 @@ public class Die extends L2GameServerPacket
 		_canTeleport = !((cha instanceof L2PcInstance && TvTEvent.isStarted() && TvTEvent.isPlayerParticipant(_charObjId)) || cha.isPendingRevive());
 		if (_activeChar.isInFunEvent())
 			_canTeleport = false;
-		else if (cha instanceof L2PcInstance)
-		{
-			if (NexusEvents.isInEvent((L2PcInstance) cha))
-			{
-				if (!NexusEvents.canShowToVillageWindow((L2PcInstance) cha))
-				{
-					_canTeleport = false;
-				}
-			}
-		}
+
 		if (cha instanceof L2PcInstance)
 		{
 			if (((L2PcInstance) cha).isInKoreanEvent())

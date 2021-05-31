@@ -9,7 +9,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.logging.Level;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GameTimeController;
@@ -3075,11 +3074,6 @@ public class L2Npc extends L2Character
 				filename = (getHtmlPath(npcId, val));
 				break;
 		}
-		if (NexusEvents.onNpcAction(player, this))
-		{
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
 		// Send a Server->Client NpcHtmlMessage containing the text of the L2NpcInstance to the L2PcInstance
 		NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
 		html.setFile(filename);
@@ -3450,6 +3444,15 @@ public class L2Npc extends L2Character
 		}
 	}
 	
-	
+	public void broadcastNpcInfo()
+	{
+		Collection<L2PcInstance> plrs = this.getKnownList().getKnownPlayers().values();
+		{
+			for (L2PcInstance player : plrs)
+			{
+				((L2Npc)this).sendInfo(player);
+			}
+		}
+	}
 	
 }

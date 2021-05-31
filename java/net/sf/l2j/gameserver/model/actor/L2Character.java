@@ -14,7 +14,6 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import luna.custom.handler.AchievementBp;
@@ -1057,15 +1056,7 @@ public abstract class L2Character extends L2Object
 			}
 		}
 		_move = null;
-		if (NexusEvents.isInEvent(this) && NexusEvents.isInEvent(target))
-		{
-			if (!NexusEvents.onAttack(this, target))
-			{
-				getAI().setIntention(CtrlIntention.AI_INTENTION_IDLE);
-				sendPacket(ActionFailed.STATIC_PACKET);
-				return;
-			}
-		}
+
 		// Reduce the current CP if TIREDNESS configuration is activated
 		if (Config.ALT_GAME_TIREDNESS)
 			setCurrentCp(getCurrentCp() - 10);
@@ -7922,10 +7913,6 @@ public abstract class L2Character extends L2Object
 						if (!((L2PcInstance) this).decreaseSouls(skill.getSoulConsumeCount() > 0 ? skill.getSoulConsumeCount() : skill.getMaxSoulConsumeCount(this), skill))
 							return;
 				}
-				if (NexusEvents.isInEvent((L2PcInstance) this))
-				{
-					NexusEvents.onUseSkill((L2PcInstance) this, skill);
-				}
 			}
 			// On each repeat restore shots before cast
 			/*
@@ -9334,13 +9321,7 @@ public abstract class L2Character extends L2Object
 			return false;
 		if (player1.isInFunEvent() != player2.isInFunEvent())
 			return false;
-		if (NexusEvents.isInEvent(player2))
-		{
-			if (NexusEvents.canAttack(player1, player2))
-				return true;
-			else
-				return false;
-		}
+
 		if (TvT._started || NewTvT._started || NewHuntingGrounds._started || FOS._started || NewFOS._started || CTF._started || NewCTF._started || VIP._started || DM._started || NewDM._started || NewDomination._started) // when events started it's slightly different
 		{
 			// if (player1.getInEventPeaceZone())

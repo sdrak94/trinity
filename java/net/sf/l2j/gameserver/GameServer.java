@@ -15,7 +15,6 @@ import org.mmocore.network.SelectorConfig;
 import org.mmocore.network.SelectorThread;
 import org.strixplatform.StrixPlatform;
 
-import cz.nxs.interf.NexusEvents;
 // import luna.custom.BossEvent.PortalData;
 // import luna.custom.BossEvent.PortalScheduler;
 import luna.custom.DressMeEngine.DressMeLoader;
@@ -26,7 +25,6 @@ import luna.custom.handler.items.bonanzo.BonanzoData;
 import luna.custom.loader.Loader;
 import luna.custom.ranking.Ranking;
 import luna.custom.ranking.xml.data.RanksParser;
-import luna.custom.season.SeasonManager;
 import luna.custom.utils.SpawnUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
@@ -437,8 +435,6 @@ public class GameServer
 		SiegeManager.getInstance();
 		FortManager.getInstance().loadInstances();
 		FortSiegeManager.getInstance();
-		CommonUtil.printSection("Nexus Event Engine");
-		NexusEvents.start();
 		EventScheduler.getInstance();
 		CommonUtil.printSection("General Data");
 		TeleportLocationTable.getInstance();
@@ -762,8 +758,6 @@ public class GameServer
 		CastleManager.getInstance().activateInstances();
 		FortManager.getInstance().activateInstances();
 		Universe.getInstance();
-		SeasonManager.getInstance();
-		_log.config("Season Manager: Current Season " + SeasonManager.getInstance().getSeason());
 		if (Config.ACCEPT_GEOEDITOR_CONN)
 			GeoEditorListener.getInstance();
 		Runtime.getRuntime().addShutdownHook(Shutdown.getInstance());

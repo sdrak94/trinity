@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.model.actor.instance;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.SevenSigns;
 import net.sf.l2j.gameserver.instancemanager.InstanceManager;
@@ -222,11 +221,6 @@ private static final boolean validateGateCondition(L2PcInstance clanLeader, L2Pc
 		}
 	}
 	
-	if(NexusEvents.isInEvent(player) || NexusEvents.isInEvent(clanLeader))
-	{
-		player.sendMessage("You or your CL is on an event. You cannot teleport!");
-		return false;
-	}
 	
 	if (!TvTEvent.onEscapeUse(player.getObjectId()))
 	{

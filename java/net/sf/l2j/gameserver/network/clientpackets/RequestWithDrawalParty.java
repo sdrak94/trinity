@@ -14,7 +14,6 @@
  */
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 
@@ -44,7 +43,7 @@ protected void runImpl()
 	
 	if (player.isInParty())
 	{
-		if (player.isInUniqueInstance() && !NexusEvents.isInEvent(player))
+		if (player.isInUniqueInstance())
 			player.sendMessage("You can't exit party when you are in an instance.");
 		else if (player.getParty().isInDimensionalRift() && !player.getParty().getDimensionalRift().getRevivedAtWaitingRoom().contains(player))
 			player.sendMessage("You can't exit party when you are in Dimensional Rift.");

@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.skills.l2skills;
 
 import java.util.logging.Level;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.datatables.MapRegionTable;
 import net.sf.l2j.gameserver.instancemanager.GrandBossManager;
 import net.sf.l2j.gameserver.model.L2Object;
@@ -50,12 +49,6 @@ public void useSkill(L2Character activeChar, L2Object[] targets)
 			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		
-		if(NexusEvents.isInEvent((L2PcInstance) activeChar))
-		{
-			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
 		if (activeChar.isAfraid())
 		{
 			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
@@ -88,9 +81,6 @@ public void useSkill(L2Character activeChar, L2Object[] targets)
 					targetChar.sendMessage("You may not use an escape skill in a festival.");
 					continue;
 				}
-				
-				if(NexusEvents.isInEvent(targetChar))
-					continue;
 				
 				// Check to see if player is in jail
 				if (targetChar.isInJail())

@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.model.actor;
 
 import java.util.logging.Level;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
@@ -499,10 +498,6 @@ public class L2Attackable extends L2Npc
 				player = killer.getActingPlayer();
 			if (player != null)
 			{
-				if (NexusEvents.isInEvent(player))
-				{
-					NexusEvents.onKill(player, this);
-				}
 				if (getTemplate().getEventQuests(QuestEventType.ON_KILL) != null)
 					for (Quest quest : getTemplate().getEventQuests(QuestEventType.ON_KILL))
 						ThreadPoolManager.getInstance().scheduleEffect(new OnKillNotifyTask(this, quest, player, killer instanceof L2Summon), 5000);

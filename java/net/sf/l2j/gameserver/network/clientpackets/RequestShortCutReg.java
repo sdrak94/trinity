@@ -14,7 +14,6 @@
  */
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.model.L2ShortCut;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.serverpackets.ShortCutRegister;
@@ -60,11 +59,6 @@ public final class RequestShortCutReg extends L2GameClientPacket
 		
 		boolean saveToDb = true;
 		
-		if(NexusEvents.isInEvent(activeChar))
-		{
-			if(!NexusEvents.canSaveShortcuts(activeChar))
-				saveToDb = false;
-		}
 
 		switch (_type)
 		{

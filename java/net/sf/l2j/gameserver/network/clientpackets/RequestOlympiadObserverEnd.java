@@ -14,7 +14,6 @@
  */
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
@@ -45,8 +44,6 @@ public final class RequestOlympiadObserverEnd extends L2GameClientPacket
 		L2PcInstance activeChar = getClient().getActiveChar();
 		if (activeChar == null)
 			return;
-		if(NexusEvents.isObserving(activeChar))
-			NexusEvents.endObserving(activeChar);
 		else if (activeChar.inObserverMode()) 
 			activeChar.leaveOlympiadObserverMode();
 	}

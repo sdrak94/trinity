@@ -231,16 +231,7 @@ public class CharInfo extends L2GameServerPacket
 		}
 		else
 		{
-			boolean antifeed;
-			try
-			{
-				antifeed = _activeChar.getEventInfo().hasAntifeedProtection();
-			}
-			catch (NullPointerException e)
-			{
-				antifeed = false;
-			}
-			final boolean olympiad = (_activeChar.isInOlympiadMode() || antifeed || _activeChar.isDisguised() || (_activeChar._inEventDM && (DM._started || NewDM._started)));
+			final boolean olympiad = (_activeChar.isInOlympiadMode() || _activeChar.isDisguised() || (_activeChar._inEventDM && (DM._started || NewDM._started)));
 			writeC(0x31);
 			writeD(_x);
 			writeD(_y);
@@ -570,11 +561,11 @@ public class CharInfo extends L2GameServerPacket
 			writeD(_activeChar.getFishx());
 			writeD(_activeChar.getFishy());
 			writeD(_activeChar.getFishz());
-			writeD(antifeed ? 0xFFFFFF : _activeChar.getAppearance().getNameColor());
+			writeD(_activeChar.getAppearance().getNameColor());
 			writeD(_heading);
 			writeD(cursed || olympiad ? 0 : _activeChar.getPledgeClass());
 			writeD(cursed || olympiad ? 0 : _activeChar.getPledgeType());
-			writeD(antifeed ? 0xFFFF77 : _activeChar.getAppearance().getTitleColor());
+			writeD(_activeChar.getAppearance().getTitleColor());
 			if (cursed)
 				writeD(CursedWeaponsManager.getInstance().getLevel(_activeChar.getCursedWeaponEquippedId()));
 			else

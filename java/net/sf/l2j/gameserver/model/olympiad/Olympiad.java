@@ -30,7 +30,6 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
@@ -508,11 +507,6 @@ public class Olympiad
 		if (TvTEvent.isPlayerParticipant(noble.getObjectId()))
 		{
 			noble.sendMessage("You can't join olympiad while participating on TvT Event.");
-			return false;
-		}
-		if (NexusEvents.isRegistered(noble))
-		{
-			noble.sendMessage("You can't join olympiad while participating on an Event.");
 			return false;
 		}
 		/** End Olympiad Restrictions */
@@ -1042,11 +1036,6 @@ public class Olympiad
 		if (!TvTEvent.isInactive() && TvTEvent.isPlayerParticipant(spectator.getObjectId()))
 		{
 			spectator.sendMessage("You can not observe games while registered for TvT");
-			return;
-		}
-		if (NexusEvents.isRegistered(spectator))
-		{
-			spectator.sendMessage("You can't spectate olympiad while participating on an Event.");
 			return;
 		}
 		OlympiadManager.STADIUMS[id].addSpectator(id, spectator, storeCoords);

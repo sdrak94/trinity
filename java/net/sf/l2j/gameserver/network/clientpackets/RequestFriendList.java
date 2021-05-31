@@ -48,12 +48,6 @@ protected void runImpl()
 	
 	if (activeChar == null)
 		return;
-		
-				if(activeChar.getEventInfo().hasAntifeedProtection())
-		{
-			activeChar.sendMessage("You may not open your friend list while on olympiad games / event.");
-			return;
-		}
 	
 	SystemMessage sm;
 	Connection con = null;

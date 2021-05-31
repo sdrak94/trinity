@@ -369,7 +369,7 @@ protected void runImpl()
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		if (target.getActingPlayer().isInHuntersVillage() || target.getActingPlayer().isInOrcVillage() || target.getActingPlayer().isInPI() || target.getActingPlayer().isInsideZone(L2Character.ZONE_TOWN) || target.isInFunEvent() || target.getActingPlayer().getEventInfo().isInEvent())
+		if (target.getActingPlayer().isInHuntersVillage() || target.getActingPlayer().isInOrcVillage() || target.getActingPlayer().isInPI() || target.getActingPlayer().isInsideZone(L2Character.ZONE_TOWN) || target.isInFunEvent())
 		{
 			activeChar.sendMessage("Target is not in a proper zone, avoid abusing the report button. Use it carefully!");
 			sendPacket(ActionFailed.STATIC_PACKET);

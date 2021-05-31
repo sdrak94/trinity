@@ -18,7 +18,6 @@ import org.strixplatform.network.IStrixClientData;
 import org.strixplatform.network.cipher.StrixGameCrypt;
 import org.strixplatform.utils.StrixClientData;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
@@ -780,7 +779,7 @@ public void run()
 		L2PcInstance player = getActiveChar();
 		if (player != null)
 		{
-			if (!player.isInOlympiadMode() && !player.isFestivalParticipant() && !NexusEvents.isInEvent(player) && !TvTEvent.isPlayerParticipant(player.getObjectId()) && !player.isInJail())
+			if (!player.isInOlympiadMode() && !player.isFestivalParticipant() && !TvTEvent.isPlayerParticipant(player.getObjectId()) && !player.isInJail())
 			{
 				if ((player.isInStoreMode() && Config.OFFLINE_TRADE_ENABLE) || (player.isInCraftMode() && Config.OFFLINE_CRAFT_ENABLE))
 				{

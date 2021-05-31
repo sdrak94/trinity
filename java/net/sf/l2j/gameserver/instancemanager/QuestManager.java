@@ -21,7 +21,6 @@ import java.util.logging.Logger;
 import net.sf.l2j.gameserver.model.quest.Quest;
 import net.sf.l2j.gameserver.scripting.ScriptManager;
 import scripts.achievements.Achievements;
-import scripts.instances.DVC.DVC;
 import scripts.instances.Embryo.Embryo;
 import scripts.instances.Fafurion.Fafurion;
 import scripts.instances.Kamaloka.Kamaloka;

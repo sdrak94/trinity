@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.network.clientpackets;
 
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.BlockList;
 import net.sf.l2j.gameserver.model.L2Party;
@@ -97,12 +96,6 @@ protected void runImpl()
 		if (target.isInJail() || requestor.isInJail())
 		{
 			requestor.sendMessage("Player is in Jail");
-			return;
-		}
-		
-		if(NexusEvents.isInEvent(requestor) && !NexusEvents.canInviteToParty(requestor, target))
-		{
-			requestor.sendMessage("You may not invite this player to the party.");
 			return;
 		}
 		if (target.isInOlympiadMode() || requestor.isInOlympiadMode())

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 
-import cz.nxs.events.engine.EventManager;
-import cz.nxs.interf.NexusEvents;
-import cz.nxs.interf.PlayerEventInfo;
 import luna.IBypassHandler;
 import luna.custom.captcha.RandomString;
 import luna.custom.captcha.instancemanager.BotsPreventionManager;
@@ -116,22 +113,7 @@ public final class RequestBypassToServer extends L2GameClientPacket
 			
 			String _AntibotCommand1 = RandomString.getInstance().getRandomString1() + "_";
 			String _AntibotCommand2 = RandomString.getInstance().getRandomString2() + "_";
-			if (NexusEvents.onBypass(activeChar, _command))
-				return;
-			if (_command.equalsIgnoreCase("npcbuffer_buffmenu player _bbs"))
-			{
-				if (!activeChar.isInOlympiadMode() && !Olympiad.getInstance().isRegistered(activeChar) && !Olympiad.getInstance().isRegisteredInComp(activeChar))
-				{
-					activeChar.sendMessage("Can't use while in oly mode");
-					PlayerEventInfo pi = NexusEvents.getPlayer(activeChar);
-					EventManager.getInstance().onBypass(pi, _command);
-					return;
-				}
-				else
-				{
-					activeChar.sendMessage("Can't use while in oly mode");
-				}
-			}
+
 			if (_command.startsWith("admin_"))
 			{
 				String command = _command.split(" ")[0];

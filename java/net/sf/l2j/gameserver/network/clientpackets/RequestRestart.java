@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.network.clientpackets;
 
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.GmListTable;
 import net.sf.l2j.gameserver.SevenSignsFestival;
 import net.sf.l2j.gameserver.model.L2Party;
@@ -154,12 +153,6 @@ public final class RequestRestart extends L2GameClientPacket
 	            return;
 	        }
 	        
-	   if(NexusEvents.isInEvent(player))
-		{
-			player.sendMessage("A superior power doesn't allow you to leave the event");
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
         }
 
 		/*

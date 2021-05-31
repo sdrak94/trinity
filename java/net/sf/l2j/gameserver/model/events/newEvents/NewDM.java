@@ -9,7 +9,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.delegate.NpcData;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import luna.custom.holder.LunaGlobalVariablesHolder;
@@ -258,13 +257,12 @@ public class NewDM
 			_npcSpawn.setInstanceId(0);
 			
 			L2Npc npc = _npcSpawn.doSpawn();
-			NpcData npcData = new NpcData(npc);
 			boolean update = false;
 			npc.setTitle(_eventName);
 			npc._isLunaEventNpc = true;
 			update = true;
 			if (update)
-				npcData.broadcastNpcInfo();
+				npc.broadcastNpcInfo();
 			npc.broadcastPacket(new MagicSkillUse(_npcSpawn.getLastSpawn(), _npcSpawn.getLastSpawn(), 1034, 1, 1, 1));
 			_registrationNpc = npc;
 		}

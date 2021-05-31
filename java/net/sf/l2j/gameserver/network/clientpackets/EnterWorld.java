@@ -8,7 +8,6 @@ import java.util.logging.Level;
 
 import org.strixplatform.StrixPlatform;
 
-import cz.nxs.interf.NexusEvents;
 import luna.custom.captcha.instancemanager.BotsPreventionManager;
 import luna.custom.email.EmailRegistration;
 import luna.custom.guard.LunaSkillGuard;
@@ -540,7 +539,6 @@ public class EnterWorld extends L2GameClientPacket
 			{
 				if (_player != null)
 				{
-					NexusEvents.onLogin(_player);
 					if ((TvT._started || TvT._teleport) && TvT._savePlayers.contains(_player.getObjectId()))
 					{
 						TvT.addDisconnectedPlayer(_player);

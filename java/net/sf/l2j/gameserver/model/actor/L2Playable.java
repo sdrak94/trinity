@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.model.actor;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.ai.CtrlEvent;
@@ -363,10 +362,7 @@ public final boolean isInFunEvent()
 	final L2PcInstance _owner = getActingPlayer();
 	
 	if (_owner != null)
-	{
-		if (NexusEvents.isInEvent(_owner))
-			return true;
-		
+	{		
 		return (_owner.atEvent || (TvT._started && _owner._inEventTvT) || (NewHuntingGrounds._started && _owner._inEventHG) || (NewTvT._started && _owner._inEventTvT) || (FOS._started && _owner._inEventFOS) || (NewFOS._started && _owner._inEventFOS) || (DM._started && _owner._inEventDM) || (NewDM._started && _owner._inEventDM) || (CTF._started && _owner._inEventCTF) || (NewCTF._started && _owner._inEventCTF || (NewDomination._started && _owner._inEventLunaDomi))
 				|| (VIP._started && _owner._inEventVIP) || _owner._inEventTvTi || _owner._isInActiveKoreanRoom);
 	}

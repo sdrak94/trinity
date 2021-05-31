@@ -5,7 +5,6 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.handler.ChatHandler;
 import net.sf.l2j.gameserver.handler.IChatHandler;
@@ -230,11 +229,6 @@ public final class Say2 extends L2GameClientPacket
 				activeChar.sendMessage("You cannot chat with players outside of the jail.");
 				return;
 			}
-		}
-		if (!NexusEvents.onSay(activeChar, _text, _type))
-		{
-			activeChar.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
 		}
 		_text = _text.replaceAll("DvC", "Embryo Instance");
 		_text = _text.replaceAll("DVC", "Embryo Instance");

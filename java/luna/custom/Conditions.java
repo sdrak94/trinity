@@ -1,6 +1,5 @@
 package luna.custom;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
@@ -102,11 +101,11 @@ public class Conditions
 			return false;
 		}
 		
-		if (NexusEvents.isRegistered(player) || NexusEvents.isInEvent(player))
-		{
-			player.sendMessage("Cannot use while in event.");
-			return false;
-		}
+//		if (NexusEvents.isRegistered(player) || NexusEvents.isInEvent(player))
+//		{
+//			player.sendMessage("Cannot use while in event.");
+//			return false;
+//		}
 		
 		if (player.getKarma() > 0)
 		{

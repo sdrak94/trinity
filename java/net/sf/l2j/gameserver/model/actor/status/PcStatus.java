@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.model.actor.status;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.instancemanager.DuelManager;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -154,13 +153,6 @@ public final void reduceHp(double value, L2Character attacker, boolean awake, bo
 			}
 		}
 		
-		if(attackerPlayer != null)
-		{
-			if(NexusEvents.isInEvent(attackerPlayer))
-			{
-				NexusEvents.onHit(attackerPlayer, getActiveChar(), fullValue, isDOT);
-			}
-		}
 		
 		// Check and calculate transfered damage
 		final L2Summon summon = getActiveChar().getPet();

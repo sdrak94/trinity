@@ -16,7 +16,6 @@ package net.sf.l2j.gameserver.model;
 
 import java.util.StringTokenizer;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.text.TextBuilder;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -239,11 +238,6 @@ public class PvPColorChanger
 	{
 		if(player.isInOlympiadMode())
 			return false;
-		else if(NexusEvents.isInEvent(player))
-		{
-			player.sendMessage("You are in event, you can't do this.");
-			return false;
-		}
 		else if (player.isAlikeDead())
 		{
 			player.sendPacket(ActionFailed.STATIC_PACKET);

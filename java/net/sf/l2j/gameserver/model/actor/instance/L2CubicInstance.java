@@ -5,7 +5,6 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.ThreadPoolManager;
@@ -332,15 +331,7 @@ public class L2CubicInstance
 				}
 				return;
 			}
-			if (NexusEvents.isInEvent(_owner))
-			{
-				if (ownerTarget instanceof L2Character)
-				{
-					if (NexusEvents.canAttack(_owner, (L2Character) ownerTarget))
-						_target = (L2Character) ownerTarget;
-					return;
-				}
-			}
+
 			// Duel targeting
 			if (_owner.isInDuel())
 			{

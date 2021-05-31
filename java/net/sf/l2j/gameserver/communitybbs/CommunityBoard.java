@@ -12,7 +12,6 @@
  */
 package net.sf.l2j.gameserver.communitybbs;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.communitybbs.Manager.ClanBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.Donation;
@@ -54,8 +53,6 @@ public class CommunityBoard
 	{
 		final L2PcInstance activeChar = client.getActiveChar();
 		if (activeChar == null)
-			return;
-		if (NexusEvents.cbBypass(activeChar, command))
 			return;
 		switch (Config.COMMUNITY_TYPE)
 		{

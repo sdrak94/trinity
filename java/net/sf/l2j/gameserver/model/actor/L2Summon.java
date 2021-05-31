@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.model.actor;
 
 import java.util.Collection;
 
-import cz.nxs.interf.PlayerEventInfo;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
@@ -897,10 +896,6 @@ public void sendInfo(L2PcInstance activeChar)
 		activeChar.sendPacket(new AbstractNpcInfo.SummonInfo(this, activeChar, 0));
 }
 
-public PlayerEventInfo getEventInfo()
-{
-	return _owner.getEventInfo();
-}
 
 @Override
 public int getMaxHp()

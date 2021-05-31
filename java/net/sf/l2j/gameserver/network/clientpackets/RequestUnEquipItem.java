@@ -16,7 +16,6 @@ package net.sf.l2j.gameserver.network.clientpackets;
 
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -73,11 +72,6 @@ public class RequestUnEquipItem extends L2GameClientPacket
 			// Message ?
 			return;
 		}
-		if(NexusEvents.isInEvent(activeChar))
-		{
-			NexusEvents.onUseItem(activeChar, item);
-			return;
-		}
 		if (NewHuntingGrounds._started && activeChar._inEventHG)
 		{
 			return;
@@ -113,12 +107,6 @@ public class RequestUnEquipItem extends L2GameClientPacket
 		{
 
             SystemMessage sm = null;
-			if(NexusEvents.isInEvent(activeChar))
-			{
-				if(!NexusEvents.canUseItem(activeChar, item))
-		        activeChar.sendPacket(sm);
-	            sm = null;
-			}
             if (unequiped[0].getEnchantLevel() > 0)
             {
             	sm = new SystemMessage(SystemMessageId.EQUIPMENT_S1_S2_REMOVED);

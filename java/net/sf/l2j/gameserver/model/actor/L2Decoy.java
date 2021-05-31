@@ -2,7 +2,6 @@ package net.sf.l2j.gameserver.model.actor;
 
 import java.util.Collection;
 
-import cz.nxs.interf.PlayerEventInfo;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
@@ -452,10 +451,6 @@ public boolean isInFunEvent()
 	return _owner.isInFunEvent();
 }
 
-public PlayerEventInfo getEventInfo()
-{
-	return _owner.getEventInfo();
-}
 
 @Override
 public void sendDamageMessage(L2Character target, int damage, boolean mcrit, boolean pcrit, boolean miss)

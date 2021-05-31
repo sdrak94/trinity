@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import cz.nxs.l2j.CallBack;
+import net.sf.l2j.L2DatabaseFactory;
 
 public class FenceManager
 {
@@ -17,7 +17,7 @@ public class FenceManager
 		int id = 0;
 		try
 		{
-			con = CallBack.getInstance().getOut().getConnection();
+			con = L2DatabaseFactory.getInstance().getConnection();
 			PreparedStatement statement = con.prepareStatement("SELECT COUNT(*) from fence_spawns");
 			ResultSet rset = statement.executeQuery();
 			while (rset.next())

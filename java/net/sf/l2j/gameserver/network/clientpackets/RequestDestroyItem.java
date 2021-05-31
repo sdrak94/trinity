@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
@@ -113,11 +112,6 @@ protected void runImpl()
 		return;
 	}
 	
-	if(!NexusEvents.canDestroyItem(activeChar, itemToRemove))
-	{
-		activeChar.sendMessage("Cannot destroy this item.");
-		return;
-	}
 	
 	if(count > 1 && !itemToRemove.isStackable())
 	{

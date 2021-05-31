@@ -23,8 +23,6 @@ import java.util.logging.Level;
 
 import org.strixplatform.StrixPlatform;
 
-import cz.nxs.interf.NexusEvents;
-import cz.nxs.interf.PlayerEventInfo;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import luna.PassportManager;
@@ -38,7 +36,6 @@ import luna.custom.eventengine.managers.EventManager;
 import luna.custom.handler.UpdateLunaDetailStats;
 import luna.custom.holder.LunaGlobalVariablesHolder;
 import luna.custom.logger.LunaLogger;
-import luna.custom.season.SeasonManager;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.Announcements;
@@ -86,7 +83,6 @@ import net.sf.l2j.gameserver.handler.itemhandlers.PetFood;
 import net.sf.l2j.gameserver.handler.itemhandlers.Potions;
 import net.sf.l2j.gameserver.handler.itemhandlers.RollingDice;
 import net.sf.l2j.gameserver.handler.itemhandlers.ScrollOfResurrection;
-import net.sf.l2j.gameserver.idfactory.IdFactory;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.instancemanager.CoupleManager;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
@@ -187,7 +183,6 @@ import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.Quest;
 import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.model.quest.QuestState;
-import net.sf.l2j.gameserver.model.quest.State;
 import net.sf.l2j.gameserver.model.zone.L2ZoneType;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.SystemMessageId;
@@ -239,7 +234,6 @@ import net.sf.l2j.gameserver.network.serverpackets.PrivateStoreManageListBuy;
 import net.sf.l2j.gameserver.network.serverpackets.PrivateStoreManageListSell;
 import net.sf.l2j.gameserver.network.serverpackets.PrivateStoreMsgBuy;
 import net.sf.l2j.gameserver.network.serverpackets.PrivateStoreMsgSell;
-import net.sf.l2j.gameserver.network.serverpackets.QuestList;
 import net.sf.l2j.gameserver.network.serverpackets.RecipeShopMsg;
 import net.sf.l2j.gameserver.network.serverpackets.RecipeShopSellList;
 import net.sf.l2j.gameserver.network.serverpackets.RelationChanged;
@@ -4888,21 +4882,7 @@ public final class L2PcInstance extends L2Playable
 		L2ItemInstance old = getInventory().getPaperdollItem(Inventory.PAPERDOLL_LRHAND);
 		if (old == null)
 			old = getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
-		if (NexusEvents.isInEvent(this))
-		{
-			if (isEquiped && !NexusEvents.canUseItem(this, item))
-			{
-				sendMessage("Can't unequip " + item.getName());
-				return;
-			}
-			if (!NexusEvents.canUseItem(this, item))
-			{
-				sendMessage("Can't equip " + item.getName());
-				return;
-			}
-			else
-				sendMessage("Requested Equip Approved.");
-		}
+
 		if (NewHuntingGrounds._started && _inEventHG)
 		{
 			if (isEquiped)
@@ -5862,10 +5842,7 @@ public final class L2PcInstance extends L2Playable
 	 */
 	public void standUp()
 	{
-		if (NexusEvents.isInEvent(this) && eventSitForced)
-		{
-			sendMessage("A dark force beyond your mortal understanding makes your knees to shake when you try to stand up ...");
-		}
+
 		if (eventSitForced && isInKoreanEvent())
 		{
 			sendMessage("You can not stand up at this moment");
@@ -8134,14 +8111,6 @@ public final class L2PcInstance extends L2Playable
 	{
 		if (newTarget != null)
 		{
-			if (!isGM() && isInFunEvent())
-			{
-				if (newTarget instanceof L2Attackable && !NexusEvents.isInEvent(this))
-				{
-					sendPacket(ActionFailed.STATIC_PACKET);
-					return;
-				}
-			}
 			boolean isParty = (((newTarget instanceof L2PcInstance) && isInParty() && getParty().getPartyMembers().contains(newTarget)));
 			// Check if the new target is visible
 			if (!isParty && !newTarget.isVisible())
@@ -8567,12 +8536,7 @@ public final class L2PcInstance extends L2Playable
 				}
 			}
 			_streak = 0;
-			if (NexusEvents.isInEvent(this))
-			{
-				NexusEvents.onDie(this, killer);
-				if (pk != null && NexusEvents.isInEvent(pk))
-					NexusEvents.onKill(pk, this);
-			}
+
 			if (pk != null)
 			{
 				TvTEvent.onKill(killer, this);
@@ -8836,11 +8800,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			// if (_countTvTkills > 19 || _countFOSKills > 19 || _countDMkills > 18)
 			// return;
-			if (NexusEvents.isInEvent(this) && NexusEvents.canAttack(this, target) && NexusEvents.gainPvpPointsOnEvents())
-			{
-				increasePvpKills(targetPlayer, false);
-				return;
-			}
+
 			increasePvpKills(targetPlayer, false);
 			return;
 		}
@@ -9322,10 +9282,6 @@ public final class L2PcInstance extends L2Playable
 							}
 							if (isInFunEvent())
 							{
-								if (NexusEvents.isInEvent(mate))
-								{
-									NexusEvents.onKill(mate, target);
-								}
 								if (_inEventTvT && mate._inEventTvT)
 								{
 									mate._countTvTkills++;
@@ -10189,44 +10145,6 @@ public final class L2PcInstance extends L2Playable
 	final private int getFameStreak()
 	{
 		return _famestreak;
-	}
-	
-	final private static void storePvPForRanking(final L2PcInstance killer, final L2PcInstance target)
-	{
-		final int killer_objId = killer.getObjectId();
-		final int target_objId = target.getObjectId();
-		long today = System.currentTimeMillis();
-		int season = SeasonManager.getInstance().getSeason();
-		Connection con = null;
-		PreparedStatement statement = null;
-		try
-		{
-			con = L2DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement("INSERT INTO luna_rank_pvps(killer, victim, date, type_of_kill, season) VALUES(?,?,?,?,?)");
-			statement.setInt(1, killer_objId);
-			statement.setInt(2, target_objId);
-			statement.setLong(3, today);
-			statement.setString(4, "pvp");
-			statement.setInt(5, season);
-			statement.execute();
-			statement.close();
-		}
-		catch (Exception e)
-		{
-			_log.fine("could not audit PVP action: " + killer.getName() + " " + e);
-		}
-		finally
-		{
-			try
-			{
-				if (con != null)
-					con.close();
-			}
-			catch (SQLException e)
-			{
-				e.printStackTrace();
-			}
-		}
 	}
 	
 	final private static void auditPvP(final L2PcInstance killer, final L2PcInstance target, final int fameGiven)
@@ -11276,11 +11194,7 @@ public final class L2PcInstance extends L2Playable
 		// Don't allow disarming a cursed weapon
 		if (isCursedWeaponEquipped())
 			return false;
-		if (NexusEvents.isInEvent(this))
-		{
-			if (!NexusEvents.canBeDisarmed(this))
-				return false;
-		}
+
 		// Unequip the weapon
 		L2ItemInstance wpn = getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
 		if (wpn == null)
@@ -14234,16 +14148,7 @@ public final class L2PcInstance extends L2Playable
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		if (NexusEvents.isInEvent(this))
-		{
-			if (!NexusEvents.canUseSkill(this, skill))
-			{
-				sendPacket(ActionFailed.STATIC_PACKET);
-				return;
-			}
-			else
-			{}
-		}
+
 		if (_inEventHG && NewHuntingGrounds._started)
 		{
 			this.sendMessage("You can't use skills in this event");
@@ -16456,18 +16361,7 @@ public final class L2PcInstance extends L2Playable
 					continue;
 				if (!s.isPassive())
 				{
-					if (NexusEvents.isInEvent(this) && !isInStance())
-					{
-						int canUseSkill = NexusEvents.allowTransformationSkill(this, s);
-						if (canUseSkill == -1)
-							continue;
-						else if (canUseSkill == 0)
-						{
-							if (!isSkillDisabledDueToTransformation(s.getId()) && !s.allowOnTransform())
-								continue;
-						}
-					}
-					else if (isSkillDisabledDueToTransformation(s.getId()))
+					if (isSkillDisabledDueToTransformation(s.getId()))
 						continue;
 				}
 				if (s.sendIcon())
@@ -16543,8 +16437,6 @@ public final class L2PcInstance extends L2Playable
 		try
 		{
 			if (isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
-				return false;
-			if (NexusEvents.isRegistered(this))
 				return false;
 			if (getTotalSubClasses() == Config.MAX_SUBCLASS)
 				return false;
@@ -17319,7 +17211,6 @@ public final class L2PcInstance extends L2Playable
 	
 	public void onActionRequest()
 	{
-		getEventInfo().onAction();
 		setProtection(false);
 	}
 	
@@ -17879,14 +17770,6 @@ public final class L2PcInstance extends L2Playable
 		}
 		try
 		{
-			NexusEvents.onLogout(this);
-		}
-		catch (Exception e)
-		{
-			_log.log(Level.SEVERE, "deleteMe() - nexus events", e);
-		}
-		try
-		{
 			if (getDecoy() != null)
 			{
 				getDecoy().unSummon(this);
@@ -18078,14 +17961,6 @@ public final class L2PcInstance extends L2Playable
 		catch (Exception e)
 		{
 			_log.log(Level.SEVERE, "deleteMe()", e);
-		}
-		try
-		{
-			NexusEvents.onLogout(this);
-		}
-		catch (Exception e)
-		{
-			_log.log(Level.SEVERE, "deleteMe() - nexus events", e);
 		}
 		try
 		{
@@ -21882,13 +21757,7 @@ public final class L2PcInstance extends L2Playable
 		}
 		return "FFFF77";
 	}
-	
-	private PlayerEventInfo _eventInfo = new PlayerEventInfo(this);
-	
-	public PlayerEventInfo getEventInfo()
-	{
-		return _eventInfo;
-	}
+
 	
 	// Nexus Events start
 	private L2PcTemplate	_antifeedTemplate	= null;

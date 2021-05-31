@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.SevenSignsFestival;
 import net.sf.l2j.gameserver.model.L2Party;
@@ -95,19 +94,6 @@ protected void runImpl()
 		{
 			player.sendMessage("You are not allowed to log out during Last Team Standing Event");
 			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
-		
-		if (player.getEventInfo().isInEvent())
-		{
-			player.sendMessage("Can't restart while on event.");
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
-		if(NexusEvents.isInEvent(player))
-		{
-			player.sendMessage("A superior power doesn't allow you to leave the event");
-			sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 	}

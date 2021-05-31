@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import cz.nxs.l2j.CallBack;
 import javolution.util.FastMap;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.EventBBSManager;
@@ -23,7 +22,7 @@ public class EventStats
 		Connection con = null;
 		try
 		{
-			con = CallBack.getInstance().getOut().getConnection();
+			con = L2DatabaseFactory.getInstance().getConnection();
 			PreparedStatement statement;
 			for (Entry<L2PcInstance, PlayerStatsTemplate> e : data.entrySet())
 			{

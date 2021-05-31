@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.model.actor.appearance;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.events.CTF;
 import net.sf.l2j.gameserver.model.events.DM;
@@ -64,11 +63,6 @@ public class PcAppearance
 		{
 			return "Olympiader";
 		}
-		if (NexusEvents.isInEvent(_owner))
-		{
-			if (_owner.getEventInfo().hasAntifeedProtection())
-				return "Player";
-		}
 		if (_owner._inEventDM && DM._started)
 		{
 			return "Contestant";
@@ -106,11 +100,6 @@ public class PcAppearance
 	{
 		if (_owner.isInOlympiadMode())
 			return "";
-		if (NexusEvents.isInEvent(_owner))
-		{
-			if (_owner.getEventInfo().hasAntifeedProtection())
-				return "";
-		}
 		else if (_owner._inEventTvT && TvT._started)
 			return "Kills: " + _owner._countTvTkills + " Deaths: " + _owner._countTvTdies;
 		else if (_owner._inEventTvT && NewTvT._started)

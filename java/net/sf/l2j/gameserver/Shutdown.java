@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.datatables.CharSchemesTable;
@@ -524,7 +523,6 @@ public class Shutdown extends Thread
 		// persist after reboot
 		QuestManager.getInstance().save();
 
-		NexusEvents.serverShutDown();
 
 		// Save items on ground before closing
 		if (Config.SAVE_DROPPED_ITEM)

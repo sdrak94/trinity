@@ -6,7 +6,6 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
@@ -188,14 +187,6 @@ public void reduceHp(double value, L2Character attacker, boolean awake, boolean 
 			getActiveChar().stopImmobileUntilAttacked(null);
 	}
 	
-	if(attacker != null)
-	{
-		if(NexusEvents.isInEvent(getActiveChar()) && NexusEvents.isInEvent(attacker))
-		{
-			NexusEvents.onDamageGive(getActiveChar(), attacker, (int)value, isDOT);
-		}
-	}
-	
 	if (value > 0) // Reduce Hp if any, and Hp can't be negative
 		setCurrentHp(Math.max(getCurrentHp() - value, 0));
 	
@@ -240,12 +231,7 @@ public void reduceHp(double value, L2Character attacker, boolean awake, boolean 
 			((L2Playable)getActiveChar()).setIgnorePK(true);
 		
 		boolean allowDie = true;
-		if(NexusEvents.isInEvent(getActiveChar()))
-		{
-			if(!NexusEvents.allowDie(getActiveChar(), attacker))
-				allowDie = false;
-		}
-		
+
 		if(allowDie)
 			getActiveChar().doDie(attacker);
 	}

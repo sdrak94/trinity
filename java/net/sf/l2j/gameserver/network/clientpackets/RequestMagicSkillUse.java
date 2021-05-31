@@ -16,7 +16,6 @@ package net.sf.l2j.gameserver.network.clientpackets;
 
 import java.util.logging.Logger;
 
-import cz.nxs.interf.NexusEvents;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.SkillTable;
 import net.sf.l2j.gameserver.model.L2Object;
@@ -437,16 +436,6 @@ protected void runImpl()
 		}
 		
 		boolean allow = true;
-		if(activeChar.isTransformed())
-		{
-			if(NexusEvents.isInEvent(activeChar))
-			{
-				int allowSkill = NexusEvents.allowTransformationSkill(activeChar, skill);
-				
-				if(allowSkill == -1)
-					allow = false;
-			}
-		}
 		
 		// activeChar.stopMove();
 		if (!allow)
