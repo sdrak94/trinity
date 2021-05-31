@@ -16,6 +16,8 @@ package net.sf.l2j.gameserver.network.serverpackets;
 
 import java.util.ArrayList;
 
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+
 /**
  *
  * 01                // Packet Identifier <BR>
@@ -97,6 +99,12 @@ public final class StatusUpdate extends L2GameServerPacket
 	{
 		_attributes = new ArrayList<>();
 		_objectId = objectId;
+	}
+
+	public StatusUpdate(L2PcInstance player)
+	{
+		_attributes = new ArrayList<>();
+		_objectId = player.getObjectId();
 	}
     public void addAttribute(int id, int level)
     {

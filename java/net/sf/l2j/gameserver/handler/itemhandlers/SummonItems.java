@@ -182,7 +182,7 @@ public void run()
 		// check for summon item validity
 		if (_item == null
 				|| _item.getOwnerId() != _activeChar.getObjectId()
-				|| _item.getLocation() != L2ItemInstance.ItemLocation.INVENTORY)
+				|| _item.getItemLocation() != L2ItemInstance.ItemLocation.INVENTORY)
 			return;
 		
 		final L2PetInstance petSummon = L2PetInstance.spawnPet(_npcTemplate, _activeChar, _item);

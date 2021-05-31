@@ -1889,8 +1889,8 @@ public class DonatePotion implements IItemHandler
 							try
 							{
 								Olympiad.resetNobleStats(player.getObjectId());
-								Hero._heroes.remove(player.getObjectId());
-								Hero._completeHeroes.remove(player.getObjectId());
+								Hero.HEROES.remove(player.getObjectId());
+								Hero.COMPLETE_HEROS.remove(player.getObjectId());
 								player.wipeHeroOlyStatsDatabase();
 								player.sendMessage("Your hero and olympiad status have been reset");
 							}

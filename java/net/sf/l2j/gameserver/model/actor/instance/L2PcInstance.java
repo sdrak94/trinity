@@ -27,6 +27,8 @@ import cz.nxs.interf.NexusEvents;
 import cz.nxs.interf.PlayerEventInfo;
 import javolution.util.FastList;
 import javolution.util.FastMap;
+import luna.PassportManager;
+import luna.PlayerPassport;
 import luna.custom.LunaVariables;
 import luna.custom.eventengine.LunaEvent;
 import luna.custom.eventengine.enums.EventState;
@@ -84,6 +86,7 @@ import net.sf.l2j.gameserver.handler.itemhandlers.PetFood;
 import net.sf.l2j.gameserver.handler.itemhandlers.Potions;
 import net.sf.l2j.gameserver.handler.itemhandlers.RollingDice;
 import net.sf.l2j.gameserver.handler.itemhandlers.ScrollOfResurrection;
+import net.sf.l2j.gameserver.idfactory.IdFactory;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.instancemanager.CoupleManager;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
@@ -103,6 +106,7 @@ import net.sf.l2j.gameserver.model.CharEffectList;
 import net.sf.l2j.gameserver.model.CursedWeapon;
 import net.sf.l2j.gameserver.model.Elementals;
 import net.sf.l2j.gameserver.model.FishData;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2AccessLevel;
 import net.sf.l2j.gameserver.model.L2CharPosition;
 import net.sf.l2j.gameserver.model.L2Clan;
@@ -181,6 +185,7 @@ import net.sf.l2j.gameserver.model.itemcontainer.PcWarehouse;
 import net.sf.l2j.gameserver.model.itemcontainer.PetInventory;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.model.quest.QuestState;
 import net.sf.l2j.gameserver.model.quest.State;
 import net.sf.l2j.gameserver.model.zone.L2ZoneType;
@@ -384,6 +389,7 @@ public final class L2PcInstance extends L2Playable
 	public String				_reason									= "";
 	public int					EMBRYO_DAMAGE_DEALT;
 	private long				_museumOnlineTime;
+	private final PlayerPassport _passport;
 	static Map<Integer, Long>	_dressMeExpiryDates						= new FastMap<Integer, Long>();
 	
 	public static Map<Integer, Long> getDressMeExpiryDates()
@@ -2498,7 +2504,7 @@ public final class L2PcInstance extends L2Playable
 	/** Last NPC Id talked on a quest */
 	private int									_questNpcObject			= 0;
 	/** The table containing all Quests began by the L2PcInstance */
-	private final Map<String, QuestState>		_quests					= new FastMap<String, QuestState>();
+	private final List<QuestState> _quests = new ArrayList<>();
 	/** The list containing all shortCuts of this L2PcInstance */
 	private final ShortCuts						_shortCuts				= new ShortCuts(this);
 	/** The list containing all macroses of this L2PcInstance */
@@ -3676,6 +3682,7 @@ public final class L2PcInstance extends L2Playable
 		_ai = new L2PlayerAI(new L2PcInstance.AIAccessor());
 		// Create a L2Radar object
 		_radar = new L2Radar(this);
+		_passport = PassportManager.getInstance().fetch(this);
 		// Retrieve from the database all skills of this L2PcInstance and add them to _skills
 		// Retrieve from the database all items of this L2PcInstance and add them to _inventory
 		getInventory().restore();
@@ -3689,6 +3696,7 @@ public final class L2PcInstance extends L2Playable
 		super(objectId, null);
 		super.initCharStatusUpdateValues();
 		initPcStatusUpdateValues();
+		_passport = PassportManager.getInstance().fetch(this);
 	}
 	
 	@Override
@@ -4090,9 +4098,12 @@ public final class L2PcInstance extends L2Playable
 	 * @param quest
 	 *            The name of the quest
 	 */
-	public QuestState getQuestState(String quest)
+	public QuestState getQuestState(final String name)
 	{
-		return _quests.get(quest);
+		for (final QuestState qs : _quests)
+			if (name.equals(qs.getQuest().getName()))
+				return qs;
+		return null;
 	}
 	
 	/**
@@ -4102,9 +4113,9 @@ public final class L2PcInstance extends L2Playable
 	 * @param qs
 	 *            The QuestState to add to _quest
 	 */
-	public void setQuestState(QuestState qs)
+	public void setQuestState(final QuestState qs)
 	{
-		_quests.put(qs.getQuestName(), qs);
+		_quests.add(qs);
 	}
 	
 	/**
@@ -4114,9 +4125,9 @@ public final class L2PcInstance extends L2Playable
 	 * @param quest
 	 *            The name of the quest
 	 */
-	public void delQuestState(String quest)
+	public void delQuestState(final QuestState qs)
 	{
-		_quests.remove(quest);
+		_quests.remove(qs);
 	}
 	
 	private QuestState[] addToQuestStateArray(QuestState[] questStateArray, QuestState state)
@@ -4136,17 +4147,22 @@ public final class L2PcInstance extends L2Playable
 	public Quest[] getAllActiveQuests()
 	{
 		FastList<Quest> quests = new FastList<Quest>();
-		for (QuestState qs : _quests.values())
+		_quests.forEach(qs ->
 		{
-			if (qs == null || qs.getQuest() == null)
-				continue;
-			int questId = qs.getQuest().getQuestIntId();
-			if ((questId > 19999) || (questId < 1))
-				continue;
-			if (!qs.isStarted() && !Config.DEVELOPER)
-				continue;
-			quests.add(qs.getQuest());
+			if (qs != null || qs.getQuest() != null)
+			{
+				int questId = qs.getQuest().getQuestId();
+				if ((questId > 19999) || (questId < 1))
+				{
+					if (!qs.isStarted() && !Config.DEVELOPER)
+					{
+						quests.add(qs.getQuest());
+					}
+				}
+			}
 		}
+		);
+		
 		return quests.toArray(new Quest[quests.size()]);
 	}
 	
@@ -4162,7 +4178,7 @@ public final class L2PcInstance extends L2Playable
 		// Create a QuestState table that will contain all QuestState to modify
 		QuestState[] states = null;
 		// Go through the QuestState of the L2PcInstance quests
-		for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_ATTACK))
+		for (Quest quest : npc.getTemplate().getEventQuests(QuestEventType.ON_ATTACK))
 		{
 			// Check if the Identifier of the L2Attackable attck is needed for the current quest
 			if (getQuestState(quest.getName()) != null)
@@ -4193,7 +4209,7 @@ public final class L2PcInstance extends L2Playable
 		// Create a QuestState table that will contain all QuestState to modify
 		QuestState[] states = null;
 		// Go through the QuestState of the L2PcInstance quests
-		for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_KILL))
+		for (Quest quest : npc.getTemplate().getEventQuests(QuestEventType.ON_KILL))
 		{
 			// Check if the Identifier of the L2Attackable killed is needed for the current quest
 			if (getQuestState(quest.getName()) != null)
@@ -4224,7 +4240,7 @@ public final class L2PcInstance extends L2Playable
 		// Create a QuestState table that will contain all QuestState to modify
 		QuestState[] states = null;
 		// Go through the QuestState of the L2PcInstance quests
-		Quest[] quests = NpcTable.getInstance().getTemplate(npcId).getEventQuests(Quest.QuestEventType.ON_TALK);
+		List<Quest> quests = NpcTable.getInstance().getTemplate(npcId).getEventQuests(QuestEventType.ON_TALK);
 		if (quests != null)
 		{
 			for (Quest quest : quests)
@@ -4249,49 +4265,27 @@ public final class L2PcInstance extends L2Playable
 		return states;
 	}
 	
-	public QuestState processQuestEvent(String quest, String event)
+	public void processQuestEvent(final String questName, final String event)
 	{
-		QuestState retval = null;
-		if (event == null)
-			event = "";
-		if (!_quests.containsKey(quest))
-			return retval;
-		QuestState qs = getQuestState(quest);
-		if (qs == null && event.length() == 0)
-			return retval;
+		final Quest quest = QuestManager.getInstance().getQuest(questName);
+		if (quest == null)
+			return;
+		final QuestState qs = getQuestState(questName);
 		if (qs == null)
-		{
-			Quest q = QuestManager.getInstance().getQuest(quest);
-			if (q == null)
-				return retval;
-			qs = q.newQuestState(this);
-		}
-		if (qs != null)
-		{
-			if (getLastQuestNpcObject() > 0)
+			return;
+		final L2Object object = L2World.getInstance().findObject(getLastQuestNpcObject());
+		if (!(object instanceof L2Npc) || !isInsideRadius(object, L2Npc.INTERACTION_DISTANCE, false, false))
+			return;
+		final L2Npc npc = (L2Npc) object;
+		final List<Quest> quests = npc.getTemplate().getEventQuests(QuestEventType.ON_TALK);
+		if (quests != null)
+			for (final Quest onTalk : quests)
 			{
-				L2Object object = L2World.getInstance().findObject(getLastQuestNpcObject());
-				if (object instanceof L2Npc && isInsideRadius(object, L2Npc.INTERACTION_DISTANCE, false, false))
-				{
-					L2Npc npc = (L2Npc) object;
-					QuestState[] states = getQuestsForTalk(npc.getNpcId());
-					if (states != null)
-					{
-						for (QuestState state : states)
-						{
-							if ((state.getQuest().getQuestIntId() == qs.getQuest().getQuestIntId()))
-							{
-								if (qs.getQuest().notifyEvent(event, npc, this))
-									showQuestWindow(quest, State.getStateName(qs.getState()));
-								retval = qs;
-							}
-						}
-						sendPacket(new QuestList());
-					}
-				}
+				if (onTalk == null || onTalk != quest)
+					continue;
+				quest.notifyEvent(event, npc, this);
+				break;
 			}
-		}
-		return retval;
 	}
 	
 	private void showQuestWindow(String questId, String stateId)
@@ -5647,14 +5641,17 @@ public final class L2PcInstance extends L2Playable
 			case 5:
 				return Race.Kamael;
 			case 6:
-				return Race.HumanMystic;
+				return Race.MHuman;
 			case 7:
-				return Race.OrcMystic;
+				return Race.MOrc;
 			default:
 				return Race.Human;
 		}
 	}
-	
+	public final boolean getSex()
+	{
+		return _appearance.getSex();
+	}
 	public L2Radar getRadar()
 	{
 		return _radar;
@@ -7076,6 +7073,10 @@ public final class L2PcInstance extends L2Playable
 			}
 		}
 	}
+	public Location getCurrentSkillWorldPositionLoc()
+	{
+		return new Location(_currentSkillWorldPosition.getX(), _currentSkillWorldPosition.getY(), _currentSkillWorldPosition.getZ());
+	}
 	
 	public Point3D getCurrentSkillWorldPosition()
 	{
@@ -8476,6 +8477,7 @@ public final class L2PcInstance extends L2Playable
 	{
 		if (!super.doDie(killer))
 			return false;
+
 		if (isInEvent())
 		{
 			LunaEvent activeEvent = EventManager.getInstance().getActiveEvent();
@@ -14664,7 +14666,7 @@ public final class L2PcInstance extends L2Playable
 		}
 	}
 	
-	private boolean checkUseMagicConditions(L2Skill skill, boolean forceUse, boolean dontMove)
+	public boolean checkUseMagicConditions(L2Skill skill, boolean forceUse, boolean dontMove)
 	{
 		final L2SkillType sklType = skill.getSkillType();
 		// ************************************* Check Player State *******************************************
@@ -17529,13 +17531,13 @@ public final class L2PcInstance extends L2Playable
 	
 	public synchronized boolean validateBypass(String cmd)
 	{
-		if (!Config.BYPASS_VALIDATION)
+		if (Config.BYPASS_VALIDATION)
 			return true;
 		for (String bp : _validBypass)
 		{
 			if (bp == null)
 				continue;
-			// _log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
+			_log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
 			if (bp.equals(cmd))
 				return true;
 		}
@@ -17543,7 +17545,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			if (bp == null)
 				continue;
-			// _log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
+			_log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
 			if (cmd.startsWith(bp))
 				return true;
 		}
@@ -21399,8 +21401,8 @@ public final class L2PcInstance extends L2Playable
 	{
 		if (!(target instanceof L2Playable))
 			return false;
-		final int targetRace = target.getActingPlayer().getRace().getRealOrdinal();
-		switch (getRace().getRealOrdinal())
+		final int targetRace = target.getActingPlayer().getRace().ordinal();
+		switch (getRace().ordinal())
 		{
 			case 0:
 				return targetRace == 5;
@@ -22309,12 +22311,12 @@ public final class L2PcInstance extends L2Playable
 						switch (this.getRace())
 						{
 							case Human:
-							case HumanMystic:
+							case MHuman:
 							case Dwarf:
 							case Elf:
 							case DarkElf:
 							case Orc:
-							case OrcMystic:
+							case MOrc:
 							{
 								switch (wpn.getItemType())
 								{
@@ -23320,5 +23322,66 @@ public final class L2PcInstance extends L2Playable
 				return false;
 		}
 		return true;
+	}
+
+	@Override
+	public PlayerPassport getPassport()
+	{
+		return _passport;
+	}
+	
+	@Override
+	public boolean isSamePartyWith(final L2Character character)
+	{
+		if (character == this)
+			return true;
+		if (character == null)
+			return false;
+		final L2Party myParty = getParty();
+		if (myParty == null)
+			return false;
+		final L2Party hisParty = character.getParty();
+		if (hisParty == null)
+			return false;
+		return myParty == hisParty;
+	}
+	
+	public boolean isSameHWID(final L2PcInstance other)
+	{
+		if (other == null)
+			return false;
+		
+		final String myHWID = getHWID();
+		final String otHWID = other.getHWID();
+		
+		
+		return myHWID == otHWID;
+	}
+
+	@Override
+	public int getInstanceWorld()
+	{
+		return getInstanceId();
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		return this.getLoc();
+	}
+	
+	public List<Quest> getAllQuests(final boolean completed)
+	{
+		final List<Quest> quests = new ArrayList<>();
+		for (final QuestState qs : _quests)
+		{
+			if (qs == null || completed && qs.isCreated() || !completed && !qs.isStarted())
+				continue;
+			final Quest quest = qs.getQuest();
+			if (quest == null || !quest.isRealQuest())
+				continue;
+			quests.add(quest);
+		}
+		return quests;
 	}
 }

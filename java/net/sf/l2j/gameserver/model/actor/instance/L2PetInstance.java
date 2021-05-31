@@ -32,6 +32,7 @@ import net.sf.l2j.gameserver.handler.ItemHandler;
 import net.sf.l2j.gameserver.idfactory.IdFactory;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
 import net.sf.l2j.gameserver.instancemanager.ItemsOnGroundManager;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.L2PetData;
@@ -365,7 +366,7 @@ public void setCurrentFed(int num) { _curFed = num > getMaxFed() ? getMaxFed() :
 public L2ItemInstance getActiveWeaponInstance()
 {
 	for (L2ItemInstance item : getInventory().getItems())
-		if (item.getLocation() == L2ItemInstance.ItemLocation.PET_EQUIP &&
+		if (item.getItemLocation() == L2ItemInstance.ItemLocation.PET_EQUIP &&
 		item.getItem().getBodyPart() == L2Item.SLOT_R_HAND)
 			return item;
 	
@@ -1187,6 +1188,20 @@ public final int getJewel()
 public int getPetSpeed()
 {
 	return getPetData().getPetSpeed();
+}
+
+@Override
+public int getInstanceWorld()
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+@Override
+public ILocational getLocation()
+{
+	// TODO Auto-generated method stub
+	return null;
 }
 }
 

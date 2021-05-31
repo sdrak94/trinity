@@ -208,7 +208,10 @@ public class L2DatabaseFactory
 		}
 		return _instance;
 	}
-	
+	public static Connection getConnectionS()
+	{
+		return _instance.getConnection();
+	}
 	public Connection getConnection() //throws SQLException
 	{
 		Connection con = null;

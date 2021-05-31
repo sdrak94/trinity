@@ -1,11 +1,13 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 
 import cz.nxs.events.engine.EventManager;
 import cz.nxs.interf.NexusEvents;
 import cz.nxs.interf.PlayerEventInfo;
+import luna.IBypassHandler;
 import luna.custom.captcha.RandomString;
 import luna.custom.captcha.instancemanager.BotsPreventionManager;
 import luna.custom.email.EmailRegistration;
@@ -66,6 +68,15 @@ public final class RequestBypassToServer extends L2GameClientPacket
 {
 	private static final String	_C__21_REQUESTBYPASSTOSERVER	= "[C] 21 RequestBypassToServer";
 	// S
+
+	private static ArrayList<IBypassHandler> _handlers = new ArrayList<>();
+
+	public static void register(IBypassHandler handler)
+	{
+		_handlers.add(handler);
+	}
+	
+	
 	private String				_command;
 	
 	/**
@@ -77,10 +88,11 @@ public final class RequestBypassToServer extends L2GameClientPacket
 		_command = readS();
 	}
 	
+	
 	@Override
 	protected void runImpl()
 	{
-		// _log.info("RBS: -> "+ _command);
+		_log.info("RBS: -> "+ _command);
 		final L2PcInstance activeChar = getClient().getActiveChar();
 		if (activeChar == null)
 			return;
@@ -88,6 +100,20 @@ public final class RequestBypassToServer extends L2GameClientPacket
 			return;
 		try
 		{
+			for (final var handler : _handlers)
+			{
+				try
+				{
+					if (handler.handleBypass(activeChar, _command))
+						return;
+				}
+				catch (Exception e)
+				{
+					handler.exception(e);
+					return;
+				}
+			}
+			
 			String _AntibotCommand1 = RandomString.getInstance().getRandomString1() + "_";
 			String _AntibotCommand2 = RandomString.getInstance().getRandomString2() + "_";
 			if (NexusEvents.onBypass(activeChar, _command))
@@ -260,6 +286,27 @@ public final class RequestBypassToServer extends L2GameClientPacket
 							}
 							break;
 					}
+				}
+			}
+			else if (_command.startsWith("npc_"))
+			{
+				if (!activeChar.validateBypass(_command))
+					return;
+				final int endOfId = _command.indexOf('_', 5);
+				String id;
+				if (endOfId > 0)
+					id = _command.substring(4, endOfId);
+				else
+					id = _command.substring(4);
+				try
+				{
+					final L2Object object = L2World.getInstance().findObject(Integer.parseInt(id));
+					if (object != null && object instanceof L2Npc && endOfId > 0 && activeChar.isInsideRadius(object, L2Npc.INTERACTION_DISTANCE, false, false))
+						((L2Npc) object).onBypassFeedback(activeChar, _command.substring(endOfId + 1));
+					activeChar.sendPacket(ActionFailed.STATIC_PACKET);
+				}
+				catch (final NumberFormatException nfe)
+				{
 				}
 			}
 			else if (_command.startsWith("npc_"))

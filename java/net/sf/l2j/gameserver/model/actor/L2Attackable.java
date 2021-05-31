@@ -47,6 +47,7 @@ import net.sf.l2j.gameserver.model.actor.status.AttackableStatus;
 import net.sf.l2j.gameserver.model.base.Experience;
 import net.sf.l2j.gameserver.model.entity.Instance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.clientpackets.Say2;
 import net.sf.l2j.gameserver.network.serverpackets.CreatureSay;
@@ -502,8 +503,8 @@ public class L2Attackable extends L2Npc
 				{
 					NexusEvents.onKill(player, this);
 				}
-				if (getTemplate().getEventQuests(Quest.QuestEventType.ON_KILL) != null)
-					for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.ON_KILL))
+				if (getTemplate().getEventQuests(QuestEventType.ON_KILL) != null)
+					for (Quest quest : getTemplate().getEventQuests(QuestEventType.ON_KILL))
 						ThreadPoolManager.getInstance().scheduleEffect(new OnKillNotifyTask(this, quest, player, killer instanceof L2Summon), 5000);
 			}
 		}
@@ -778,8 +779,8 @@ public class L2Attackable extends L2Npc
 				L2PcInstance player = attacker.getActingPlayer();
 				if (player != null)
 				{
-					if (getTemplate().getEventQuests(Quest.QuestEventType.ON_ATTACK) != null)
-						for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.ON_ATTACK))
+					if (getTemplate().getEventQuests(QuestEventType.ON_ATTACK) != null)
+						for (Quest quest : getTemplate().getEventQuests(QuestEventType.ON_ATTACK))
 							quest.notifyAttack(this, player, damage, (attacker instanceof L2Summon || attacker instanceof L2Decoy), skill);
 				}
 			}
@@ -824,8 +825,8 @@ public class L2Attackable extends L2Npc
 		L2PcInstance targetPlayer = attacker.getActingPlayer();
 		if (targetPlayer != null && aggro == 0)
 		{
-			if (getTemplate().getEventQuests(Quest.QuestEventType.ON_AGGRO_RANGE_ENTER) != null)
-				for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.ON_AGGRO_RANGE_ENTER))
+			if (getTemplate().getEventQuests(QuestEventType.ON_AGGRO_RANGE_ENTER) != null)
+				for (Quest quest : getTemplate().getEventQuests(QuestEventType.ON_AGGRO_RANGE_ENTER))
 					quest.notifyAggroRangeEnter(this, targetPlayer, (attacker instanceof L2Summon || attacker instanceof L2Decoy));
 		}
 		// Set the intention to the L2Attackable to AI_INTENTION_ACTIVE

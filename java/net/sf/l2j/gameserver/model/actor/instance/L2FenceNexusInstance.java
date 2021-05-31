@@ -15,6 +15,7 @@
 
 package net.sf.l2j.gameserver.model.actor.instance;
 
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.network.L2GameClient;
@@ -111,5 +112,26 @@ public void onActionShift(L2GameClient client)
 	}
 	else
 		player.sendPacket(ActionFailed.STATIC_PACKET);
+}
+
+@Override
+public int getHeading()
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+@Override
+public int getInstanceWorld()
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+@Override
+public ILocational getLocation()
+{
+	// TODO Auto-generated method stub
+	return null;
 }
 }

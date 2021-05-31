@@ -7,6 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+
 import net.sf.l2j.gameserver.GameServer;
 
 
@@ -24,10 +31,61 @@ public class IconsTable
 	public void reload()
 	{
 		itemIcons.clear();
-		// skillIcons.clear();
+		skillIcons.clear();
 		parseData();
+		parseSkillData();
 	}
-	
+	public void parseSkillData()
+	{
+		final long t0 = System.currentTimeMillis();
+		try
+		{
+//			loadItemIcons();
+//			loadSkillIcons();
+			
+			final DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newDefaultInstance();
+			final DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
+			
+			
+			final File iconsXml = new File("./data/xml/icons.xml");
+			
+			final Document doc = docBuilder.parse(iconsXml); 
+			
+			for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
+			{
+				if ("icons".equalsIgnoreCase(n.getNodeName()))
+				{
+					for (Node n1 = n.getFirstChild(); n1 != null; n1 = n1.getNextSibling())
+					{
+						final NamedNodeMap nnm = n1.getAttributes();
+						
+						if ("skill".equalsIgnoreCase(n1.getNodeName()))
+						{
+							final int id = Integer.parseInt(nnm.getNamedItem("id").getNodeValue());
+							final String icon = nnm.getNamedItem("icon").getNodeValue();
+							
+							skillIcons.put(id, icon);
+						}
+//						else if ("item".equalsIgnoreCase(n1.getNodeName()))
+//						{
+//							final int id = Integer.parseInt(nnm.getNamedItem("id").getNodeValue());
+//							final String icon = nnm.getNamedItem("icon").getNodeValue();
+//							
+//							itemIcons.put(id, icon);
+//						}
+					}
+				}
+			}
+			
+			final long t = System.currentTimeMillis() - t0;
+			_log.config("IconsTable: Succesfully loaded " + (itemIcons.size() + skillIcons.size()) + " icons, in " + t + " Millisecondss.");
+		}
+		catch (final Exception e)
+		{
+			_log.config("IconsTable: Failed loading IconsTable. Possible error: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
 	public void parseData()
 	{
 		final long t0 = System.currentTimeMillis();

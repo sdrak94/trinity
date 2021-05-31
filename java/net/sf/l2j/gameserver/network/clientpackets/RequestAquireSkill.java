@@ -14,6 +14,7 @@
  */
 package net.sf.l2j.gameserver.network.clientpackets;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 import net.sf.l2j.Config;
@@ -33,6 +34,7 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2TransformManagerInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2VillageMasterInstance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ExStorageMaxCount;
 import net.sf.l2j.gameserver.network.serverpackets.PledgeSkillList;
@@ -346,21 +348,21 @@ public class RequestAquireSkill extends L2GameClientPacket
 			}
 			case 4:
 			{
-				_requiredSp = 0;
-				Quest[] qlst = trainer.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_LEARN);
-				if ((qlst != null) && qlst.length == 1)
-				{
-					if (!qlst[0].notifyAcquireSkill(trainer, player, skill))
-					{
-						qlst[0].notifyAcquireSkillList(trainer, player);
-						return;
-					}
-				}
-				else
-				{
-					return;
-				}
-				break;
+//				_requiredSp = 0;
+//				List<Quest> qlst = trainer.getTemplate().getEventQuests(QuestEventType.ON_SKILL_LEARN);
+//				if ((qlst != null) && qlst.siz == 1)
+//				{
+//					if (!qlst[0].notifyAcquireSkill(trainer, player, skill))
+//					{
+//						qlst[0].notifyAcquireSkillList(trainer, player);
+//						return;
+//					}
+//				}
+//				else
+//				{
+//					return;
+//				}
+//				break;
 			}
 			case 6:
 			{
@@ -456,8 +458,8 @@ public class RequestAquireSkill extends L2GameClientPacket
 		player.sendSkillList();
 		if (_skillType == 4)
 		{
-			Quest[] qlst = trainer.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_LEARN);
-			qlst[0].notifyAcquireSkillList(trainer, player);
+//			Quest[] qlst = trainer.getTemplate().getEventQuests(QuestEventType.ON_SKILL_LEARN);
+//			qlst[0].notifyAcquireSkillList(trainer, player);
 		}
 		else if (trainer instanceof L2FishermanInstance)
 			((L2FishermanInstance) trainer).showSkillList(player);

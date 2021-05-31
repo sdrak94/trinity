@@ -24,6 +24,7 @@ import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.serverpackets.L2GameServerPacket;
 
 /**
@@ -49,7 +50,7 @@ private int _maxLvl;
 private int[] _race;
 private int[] _class;
 private char _classType;
-private Map<Quest.QuestEventType, FastList<Quest>> _questEvents;
+private Map<QuestEventType, FastList<Quest>> _questEvents;
 public boolean _allowShops = true;
 
 protected L2ZoneType(int id)
@@ -319,7 +320,7 @@ public void revalidateInZone(L2Character character)
 		// Was the character not yet inside this zone?
 		if (!_characterList.containsKey(character.getObjectId()))
 		{
-			FastList<Quest> quests = getQuestByEvent(Quest.QuestEventType.ON_ENTER_ZONE);
+			FastList<Quest> quests = getQuestByEvent(QuestEventType.ON_ENTER_ZONE);
 			if (quests != null)
 			{
 				for (Quest quest : quests)
@@ -346,7 +347,7 @@ public void removeCharacter(L2Character character)
 {
 	if (_characterList.containsKey(character.getObjectId()))
 	{
-		FastList<Quest> quests = getQuestByEvent(Quest.QuestEventType.ON_EXIT_ZONE);
+		FastList<Quest> quests = getQuestByEvent(QuestEventType.ON_EXIT_ZONE);
 		if (quests != null)
 		{
 			for (Quest quest : quests)
@@ -382,10 +383,10 @@ public FastMap<Integer, L2Character> getCharactersInside()
 	return _characterList;
 }
 
-public void addQuestEvent(Quest.QuestEventType EventType, Quest q)
+public void addQuestEvent(QuestEventType EventType, Quest q)
 {
 	if (_questEvents == null)
-		_questEvents = new FastMap<Quest.QuestEventType, FastList<Quest>>();
+		_questEvents = new FastMap<QuestEventType, FastList<Quest>>();
 	FastList<Quest> questByEvents = _questEvents.get(EventType);
 	if (questByEvents == null)
 		questByEvents = new FastList<Quest>();
@@ -394,7 +395,7 @@ public void addQuestEvent(Quest.QuestEventType EventType, Quest q)
 	_questEvents.put(EventType, questByEvents);
 }
 
-public FastList<Quest> getQuestByEvent(Quest.QuestEventType EventType)
+public FastList<Quest> getQuestByEvent(QuestEventType EventType)
 {
 	if (_questEvents == null)
 		return null;

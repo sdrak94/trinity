@@ -29,6 +29,7 @@ import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.ai.L2CharacterAI;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.knownlist.BoatKnownList;
@@ -939,4 +940,18 @@ public class L2BoatInstance extends L2Character
         	this.sendVehicleDeparture(activeChar);
         }
     }
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

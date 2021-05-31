@@ -48,6 +48,10 @@ public static final int SHIFT_BY = 12;
 public static int FAKE_NUMBER_OF_ONLINE_PEOPLE = 0;
 
 /** Map dimensions */
+public static final int TILE_X_MIN = 11;
+public static final int TILE_Y_MIN = 10;
+public static final int TILE_X_MAX = 26;
+public static final int TILE_Y_MAX = 26;
 public static final int MAP_MIN_X = -327680;
 public static final int MAP_MAX_X = 229376;
 public static final int MAP_MIN_Y = -262144;

@@ -820,7 +820,7 @@ public abstract class AbstractEnchantPacket extends L2GameClientPacket
 		{
 			return false;
 		}
-		if (item.getLocation() != L2ItemInstance.ItemLocation.INVENTORY && item.getLocation() != L2ItemInstance.ItemLocation.PAPERDOLL)
+		if (item.getItemLocation() != L2ItemInstance.ItemLocation.INVENTORY && item.getItemLocation() != L2ItemInstance.ItemLocation.PAPERDOLL)
 		{
 			return false;
 		}

@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.instancemanager;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,6 +11,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
+import luna.custom.utils.SpawnUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.GmListTable;
@@ -131,6 +133,21 @@ private void init()
 		{
 			e.printStackTrace();
 		}
+	}
+
+	try
+	{
+		SpawnUtil.getInstance().parseSpawnsToXml();
+	}
+	catch (SQLException e)
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	catch (IOException e)
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
 }
 
@@ -553,7 +570,7 @@ public Map<Integer, L2RaidBossInstance> getBosses()
 	return _bosses;
 }
 
-public Map<Integer, L2Spawn> getSpawns()
+public static Map<Integer, L2Spawn> getSpawns()
 {
 	return _spawns;
 }

@@ -14,57 +14,71 @@
  */
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import net.sf.l2j.gameserver.model.L2Object;
+import net.sf.l2j.gameserver.model.actor.L2Character;
+import net.sf.l2j.gameserver.model.actor.L2Decoy;
+
 /**
- *
- * <p>
- * sample  bf 73 5d 30 49 01 00
- * <p>
- * format dh	(objectid, color)
- * <p>
- * color 	-xx -> -9 	red<p>
- * 			-8  -> -6	light-red<p>
- * 			-5	-> -3	yellow<p>
- * 			-2	-> 2    white<p>
- * 			 3	-> 5	green<p>
- * 			 6	-> 8	light-blue<p>
- * 			 9	-> xx	blue<p>
- * <p>
- * usually the color equals the level difference to the selected target
- *
- * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
+ * format dh (objectid, color)<br>
+ * color legend : usually the color equals the level difference to the selected target<br>
+ * -xx -> -9 red<br>
+ * -8 -> -6 light red<br>
+ * -5 -> -3 yellow<br>
+ * 2 -> 2 white<br>
+ * 3 -> 5 green<br>
+ * 6 -> 8 light blue<br>
+ * 9 -> xx dark blue
  */
+
+
+
 public class MyTargetSelected extends L2GameServerPacket
 {
-	private static final String _S__BF_MYTARGETSELECTED = "[S] b9 MyTargetSelected";
-	private int _objectId;
-	private int _color;
-
+	public static int HIDE    = 1;
+	public static int HIDE_EX = 2;
+	public static int SHOW    = 3;
+	public static int SHOW_EX = 4;
+	private final int _objectId, _flags;
+	
 	/**
-	 * @param int objectId of the target
-	 * @param int level difference to the target. name color is calculated from that
+	 * @param objectId int objectId of the target
+	 * @param color level difference, the color is calculated from that.
 	 */
-	public MyTargetSelected(int objectId, int color)
+	public MyTargetSelected(final int objectId, final int flags)
 	{
 		_objectId = objectId;
-		_color = color;
+		_flags = flags;
 	}
 
+	public MyTargetSelected(final L2Character activeChar, final L2Object target)
+	{
+		_objectId = target.getObjectId();
+		
+		int flags = HIDE;
+		
+		if (target instanceof L2Decoy)
+			flags = SHOW;
+		
+		final var player = target.getActingPlayer();
+		if (player != null && player.getClanId() > 0)
+			flags = flags + 1;
+		
+		_flags = flags;
+	}
+	
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb9);
+		writeC(0xB9); /** H5 **/
 		writeD(_objectId);
-		writeH(_color);
+		writeH(_flags); // target type
 		writeD(0x00);
 	}
 
-	/* (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
-		return _S__BF_MYTARGETSELECTED;
+		// TODO Auto-generated method stub
+		return null;
 	}
-
 }

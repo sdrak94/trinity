@@ -535,7 +535,7 @@ protected void onIntentionPickUp(L2Object object)
 	// Stop the actor auto-attack client side by sending Server->Client packet AutoAttackStop (broadcast)
 	clientStopAutoAttack();
 	
-	if (object instanceof L2ItemInstance && ((L2ItemInstance)object).getLocation() != ItemLocation.VOID)
+	if (object instanceof L2ItemInstance && ((L2ItemInstance)object).getItemLocation() != ItemLocation.VOID)
 		return;
 	
 	// Set the Intention of this AbstractAI to AI_INTENTION_PICK_UP

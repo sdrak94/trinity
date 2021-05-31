@@ -29,6 +29,7 @@ import net.sf.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2TransformManagerInstance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.serverpackets.AcquireSkillInfo;
 
 /**
@@ -171,19 +172,19 @@ public class RequestAquireSkillInfo extends L2GameClientPacket
         }
 		else if (_skillType == 4)
 		{
-			Quest[] qlst = trainer.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_LEARN);
-			if ((qlst != null) && qlst.length == 1)
-			{
-				if (!qlst[0].notifyAcquireSkillInfo(trainer, activeChar, skill))
-				{
-					qlst[0].notifyAcquireSkillList(trainer, activeChar);
-					return;
-				}
-			}
-			else
-			{
-				return;
-			}
+//			Quest[] qlst = trainer.getTemplate().getEventQuests(QuestEventType.ON_SKILL_LEARN);
+//			if ((qlst != null) && qlst.length == 1)
+//			{
+//				if (!qlst[0].notifyAcquireSkillInfo(trainer, activeChar, skill))
+//				{
+//					qlst[0].notifyAcquireSkillList(trainer, activeChar);
+//					return;
+//				}
+//			}
+//			else
+//			{
+//				return;
+//			}
 		}
 		else if (_skillType == 6)
         {

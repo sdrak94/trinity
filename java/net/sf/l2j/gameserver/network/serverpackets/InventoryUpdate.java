@@ -201,7 +201,10 @@ protected final void writeImpl()
 	_items.clear();
 	_items = null;
 }
-
+public boolean isEmpty()
+{
+	return _items.isEmpty();
+}
 /* (non-Javadoc)
  * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
  */

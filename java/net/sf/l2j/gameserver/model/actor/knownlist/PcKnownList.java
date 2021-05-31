@@ -1,5 +1,9 @@
 package net.sf.l2j.gameserver.model.actor.knownlist;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -8,6 +12,7 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2TrapInstance;
 import net.sf.l2j.gameserver.network.serverpackets.DeleteObject;
 import net.sf.l2j.gameserver.network.serverpackets.SpawnItem;
+import net.sf.l2j.gameserver.util.Util;
 
 public class PcKnownList extends PlayableKnownList
 {
@@ -162,4 +167,5 @@ public int getDistanceToWatchObject(L2Object object)
 	if (knownlistSize <= 70) return (int) (2400*instanceBoost);
 	else return (int) (1750*instanceBoost); // Siege, TOI, city
 	 */}
+
 }

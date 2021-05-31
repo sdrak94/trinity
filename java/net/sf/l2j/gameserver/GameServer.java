@@ -27,6 +27,7 @@ import luna.custom.loader.Loader;
 import luna.custom.ranking.Ranking;
 import luna.custom.ranking.xml.data.RanksParser;
 import luna.custom.season.SeasonManager;
+import luna.custom.utils.SpawnUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.Server;
@@ -303,9 +304,6 @@ import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.L2GamePacketHandler;
 import net.sf.l2j.gameserver.pathfinding.PathFinding;
-import net.sf.l2j.gameserver.script.faenor.FaenorScriptEngine;
-import net.sf.l2j.gameserver.scripting.CompiledScriptCache;
-import net.sf.l2j.gameserver.scripting.L2ScriptEngineManager;
 import net.sf.l2j.gameserver.taskmanager.AutoAnnounceTaskManager;
 import net.sf.l2j.gameserver.taskmanager.KnownListUpdateTaskManager;
 import net.sf.l2j.gameserver.taskmanager.TaskManager;
@@ -359,7 +357,7 @@ public class GameServer
 		new File("log/game").mkdirs();
 		// load script engines
 		CommonUtil.printSection("Scripts");
-		L2ScriptEngineManager.getInstance();
+//		L2ScriptEngineManager.getInstance();
 		// start game time control early
 		CommonUtil.printSection("GameTime");
 		GameTimeController.getInstance();
@@ -425,6 +423,8 @@ public class GameServer
 			_log.severe("Could not find the extraced files. Please Check Your Data.");
 			throw new Exception("Could not initialize the npc table");
 		}
+
+		SpawnUtil.getInstance().parseDropsToXml();
 		CommonUtil.printSection("Henna");
 		HennaTable.getInstance();
 		HennaTreeTable.getInstance();
@@ -477,42 +477,42 @@ public class GameServer
 		RandomString.start();
 		FencesTable.getInstance();
 		FenceTable.getInstance();
-		try
-		{
-			_log.info("Loading Server Scripts");
-			File scripts = new File(Config.DATAPACK_ROOT + "/data/scripts.cfg");
-			if (!Config.ALT_DEV_NO_QUESTS)
-				L2ScriptEngineManager.getInstance().executeScriptList(scripts);
-		}
-		catch (IOException ioe)
-		{
-			_log.severe("Failed loading scripts.cfg, no script going to be loaded");
-		}
-		try
-		{
-			CompiledScriptCache compiledScriptCache = L2ScriptEngineManager.getInstance().getCompiledScriptCache();
-			if (compiledScriptCache == null)
-			{
-				_log.info("Compiled Scripts Cache is disabled.");
-			}
-			else
-			{
-				compiledScriptCache.purge();
-				if (compiledScriptCache.isModified())
-				{
-					compiledScriptCache.save();
-					_log.info("Compiled Scripts Cache was saved.");
-				}
-				else
-				{
-					_log.info("Compiled Scripts Cache is up-to-date.");
-				}
-			}
-		}
-		catch (IOException e)
-		{
-			_log.log(Level.SEVERE, "Failed to store Compiled Scripts Cache.", e);
-		}
+//		try
+//		{
+//			_log.info("Loading Server Scripts");
+//			File scripts = new File(Config.DATAPACK_ROOT + "/data/scripts.cfg");
+//			if (!Config.ALT_DEV_NO_QUESTS)
+//				L2ScriptEngineManager.getInstance().executeScriptList(scripts);
+//		}
+//		catch (IOException ioe)
+//		{
+//			_log.severe("Failed loading scripts.cfg, no script going to be loaded");
+//		}
+//		try
+//		{
+//			CompiledScriptCache compiledScriptCache = L2ScriptEngineManager.getInstance().getCompiledScriptCache();
+//			if (compiledScriptCache == null)
+//			{
+//				_log.info("Compiled Scripts Cache is disabled.");
+//			}
+//			else
+//			{
+//				compiledScriptCache.purge();
+//				if (compiledScriptCache.isModified())
+//				{
+//					compiledScriptCache.save();
+//					_log.info("Compiled Scripts Cache was saved.");
+//				}
+//				else
+//				{
+//					_log.info("Compiled Scripts Cache is up-to-date.");
+//				}
+//			}
+//		}
+//		catch (IOException e)
+//		{
+//			_log.log(Level.SEVERE, "Failed to store Compiled Scripts Cache.", e);
+//		}
 		QuestManager.getInstance().report();
 		TransformationManager.getInstance().report();
 		CommonUtil.printSection("Augment Manager");
@@ -530,7 +530,7 @@ public class GameServer
 		CommonUtil.printSection("Olympiad & Heroes");
 		Olympiad.getInstance();
 		Hero.getInstance();
-		FaenorScriptEngine.getInstance();
+//		FaenorScriptEngine.getInstance();
 		// Init of a cursed weapon manager
 		CommonUtil.printSection("Cursed Weapons");
 		CursedWeaponsManager.getInstance();

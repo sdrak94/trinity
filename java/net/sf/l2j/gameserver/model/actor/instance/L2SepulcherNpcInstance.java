@@ -15,6 +15,7 @@
 package net.sf.l2j.gameserver.model.actor.instance;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
@@ -28,6 +29,7 @@ import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.clientpackets.Say2;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.CreatureSay;
@@ -252,13 +254,13 @@ public class L2SepulcherNpcInstance extends L2Npc
 			
 			default:
 			{
-            	Quest[] qlsa = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
-            	if ( (qlsa != null) && qlsa.length > 0)
-            		player.setLastQuestNpcObject(getObjectId());
-            	Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.ON_FIRST_TALK);
-            	if ( (qlst != null) && qlst.length == 1)
-            		qlst[0].notifyFirstTalk(this, player);
-            	else
+//            	List<Quest> qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+//            	if ( (qlsa != null) && qlsa.size() > 0)
+//            		player.setLastQuestNpcObject(getObjectId());
+//            	List<Quest> qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
+//            	if ( (qlst != null) && qlst.size() == 1)
+//            		qlst[1].notifyFirstTalk(this, player);
+//            	else
             		showChatWindow(player, 0);
 			}
 		}

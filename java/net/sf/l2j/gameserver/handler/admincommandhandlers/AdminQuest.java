@@ -29,7 +29,6 @@ import java.io.File;
 import javax.script.ScriptException;
 
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
-import net.sf.l2j.gameserver.instancemanager.QuestManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.scripting.L2ScriptEngineManager;
 
@@ -68,30 +67,30 @@ public class AdminQuest implements IAdminCommandHandler
 			}
 			else
 			{
-				// try the first param as id
-				try
-				{
-					int questId = Integer.parseInt(parts[1]);
-					if (QuestManager.getInstance().reload(questId))
-					{
-						activeChar.sendMessage("Quest Reloaded Successfully.");
-					}
-					else
-					{
-						activeChar.sendMessage("Quest Reloaded Failed");
-					}
-				}
-				catch (NumberFormatException e)
-				{
-					if (QuestManager.getInstance().reload(parts[1]))
-					{
-						activeChar.sendMessage("Quest Reloaded Successfully.");
-					}
-					else
-					{
-						activeChar.sendMessage("Quest Reloaded Failed");
-					}
-				}
+//				// try the first param as id
+//				try
+//				{
+//					int questId = Integer.parseInt(parts[1]);
+//					if (QuestManager.getInstance().reload(questId))
+//					{
+//						activeChar.sendMessage("Quest Reloaded Successfully.");
+//					}
+//					else
+//					{
+//						activeChar.sendMessage("Quest Reloaded Failed");
+//					}
+//				}
+//				catch (NumberFormatException e)
+//				{
+//					if (QuestManager.getInstance().reload(parts[1]))
+//					{
+//						activeChar.sendMessage("Quest Reloaded Successfully.");
+//					}
+//					else
+//					{
+//						activeChar.sendMessage("Quest Reloaded Failed");
+//					}
+//				}
 			}
 		}
 		// script load should NOT be used in place of reload.  If a script is already loaded

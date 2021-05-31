@@ -87,7 +87,7 @@ public class RequestExEnchantItemAttribute extends L2GameClientPacket
 			player.setActiveEnchantAttrItem(null);
 			return;
 		}
-		if ((item.getLocation() != L2ItemInstance.ItemLocation.INVENTORY) && (item.getLocation() != L2ItemInstance.ItemLocation.PAPERDOLL))
+		if ((item.getItemLocation() != L2ItemInstance.ItemLocation.INVENTORY) && (item.getItemLocation() != L2ItemInstance.ItemLocation.PAPERDOLL))
 		{
 			player.setActiveEnchantAttrItem(null);
 			return;
@@ -107,7 +107,7 @@ public class RequestExEnchantItemAttribute extends L2GameClientPacket
 			player.setActiveEnchantAttrItem(null);
 			return;
 		}
-		switch (item.getLocation())
+		switch (item.getItemLocation())
 		{
 			case INVENTORY:
 			case PAPERDOLL:

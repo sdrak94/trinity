@@ -40,6 +40,7 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2RiftInvaderInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2StaticObjectInstance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.taskmanager.DecayTaskManager;
 import net.sf.l2j.gameserver.util.Util;
 import net.sf.l2j.util.Rnd;
@@ -412,8 +413,8 @@ private void thinkActive()
 				        && !npc.isInsideRadius(obj, npc.getAggroRange(), true, false) )
 					{
 						L2PcInstance targetPlayer = (obj instanceof L2PcInstance)? (L2PcInstance) obj: ((L2Summon) obj).getOwner();
-				    	if (npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_AGGRO_RANGE_ENTER) !=null)
-				    		for (Quest quest: npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_AGGRO_RANGE_ENTER))
+				    	if (npc.getTemplate().getEventQuests(QuestEventType.ON_AGGRO_RANGE_ENTER) !=null)
+				    		for (Quest quest: npc.getTemplate().getEventQuests(QuestEventType.ON_AGGRO_RANGE_ENTER))
 				    			quest.notifyAggroRangeEnter(npc, targetPlayer, (obj instanceof L2Summon));
 					}
 				}
@@ -2214,7 +2215,7 @@ private void notifyFactionAttacked(L2Character attacker)
 					{
 						if ((attacker instanceof L2Playable) || (attacker instanceof L2Decoy))
 						{
-							if (npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_FACTION_CALL) != null)
+							if (npc.getTemplate().getEventQuests(QuestEventType.ON_FACTION_CALL) != null)
 							{
 								L2PcInstance player = (attacker instanceof L2PcInstance) ? (L2PcInstance) attacker : attacker.getActingPlayer();
 								
@@ -2232,7 +2233,7 @@ private void notifyFactionAttacked(L2Character attacker)
 									{
 									}
 									
-									for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.ON_FACTION_CALL))
+									for (Quest quest : npc.getTemplate().getEventQuests(QuestEventType.ON_FACTION_CALL))
 										quest.notifyFactionCall(npc, me, player, (attacker instanceof L2Summon));
 								}
 							}

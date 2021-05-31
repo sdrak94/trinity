@@ -30,6 +30,10 @@ import net.sf.l2j.Config;
  */
 public class StatsSet extends HashMap<String, Object>
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7918316498247277289L;
 	private static final Logger			_log	= Logger.getLogger(StatsSet.class.getName());
 	private final Map<String, Object>	_set	= new FastMap<String, Object>();
 	

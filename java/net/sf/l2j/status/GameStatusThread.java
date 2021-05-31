@@ -1169,7 +1169,7 @@ public String getServerStatus()
 				if (((L2Character)obj).hasAI())
 					AICount++;
 			if (obj instanceof L2ItemInstance)
-				if (((L2ItemInstance)obj).getLocation() == L2ItemInstance.ItemLocation.VOID)
+				if (((L2ItemInstance)obj).getItemLocation() == L2ItemInstance.ItemLocation.VOID)
 					itemVoidCount++;
 				else
 					itemCount++;

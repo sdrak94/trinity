@@ -6,8 +6,11 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.math.BigInteger;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
@@ -15,6 +18,7 @@ import java.util.logging.Logger;
 
 import javolution.util.FastList;
 import javolution.util.FastMap;
+import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.events.AutomatedTvT;
 import net.sf.l2j.gameserver.util.FloodProtectorConfig;
 import net.sf.l2j.gameserver.util.StringUtil;
@@ -409,6 +413,11 @@ public final class Config
 	public static boolean						GRIDS_ALWAYS_ON;
 	public static int							GRID_NEIGHBOR_TURNON_TIME;
 	public static int							GRID_NEIGHBOR_TURNOFF_TIME;
+
+	public static Path GEODATA_PATH;
+	public static boolean TRY_LOAD_UNSPECIFIED_REGIONS;
+	public static Map<String, Boolean> GEODATA_REGIONS;
+	
 	public static int							GEODATA;
 	public static boolean						GEODATA_CELLFINDING;
 	public static boolean						FORCE_GEODATA;
@@ -1829,6 +1838,22 @@ public final class Config
 					GRIDS_ALWAYS_ON = Boolean.parseBoolean(General.getProperty("GridsAlwaysOn", "False"));
 					GRID_NEIGHBOR_TURNON_TIME = Integer.parseInt(General.getProperty("GridNeighborTurnOnTime", "1"));
 					GRID_NEIGHBOR_TURNOFF_TIME = Integer.parseInt(General.getProperty("GridNeighborTurnOffTime", "90"));
+					
+					GEODATA_PATH = Paths.get(General.getString("GeoDataPath", "./data/geodata"));
+					TRY_LOAD_UNSPECIFIED_REGIONS = General.getBoolean("TryLoadUnspecifiedRegions", true);
+					GEODATA_REGIONS = new HashMap<>();
+					for (int regionX = L2World.TILE_X_MIN; regionX <= L2World.TILE_X_MAX; regionX++)
+					{
+						for (int regionY = L2World.TILE_Y_MIN; regionY <= L2World.TILE_Y_MAX; regionY++)
+						{
+							String key = regionX + "_" + regionY;
+							if (General.containsKey(regionX + "_" + regionY))
+							{
+								GEODATA_REGIONS.put(key, General.getBoolean(key, false));
+							}
+						}
+					}
+					
 					GEODATA = Integer.parseInt(General.getProperty("GeoData", "0"));
 					GEODATA_CELLFINDING = Boolean.parseBoolean(General.getProperty("CellPathFinding", "False"));
 					FORCE_GEODATA = Boolean.parseBoolean(General.getProperty("ForceGeodata", "True"));

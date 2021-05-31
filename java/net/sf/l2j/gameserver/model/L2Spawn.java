@@ -580,6 +580,9 @@ public L2Npc doSpawn()
 {
 	return doSpawn(false);
 }
+
+
+
 /**
  * Create the L2NpcInstance, add it to the world and lauch its OnSpawn action.<BR><BR>
  *

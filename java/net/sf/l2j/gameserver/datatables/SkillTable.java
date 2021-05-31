@@ -1,7 +1,12 @@
 package net.sf.l2j.gameserver.datatables;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+
 import gnu.trove.map.hash.TIntIntHashMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
+import luna.chill.model.AutoChill.ChillAction;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.skills.SkillsEngine;
 
@@ -9,6 +14,31 @@ public class SkillTable
 {
 private TIntObjectHashMap<L2Skill> _skills;
 private TIntIntHashMap _skillMaxLevel;
+
+private final ArrayList<L2Skill> _pvpSkills;
+private static final L2Skill[] _heroSkills = new L2Skill[14];
+private static final int[] _heroSkillsId =
+{
+	395,
+	396,
+	1374,
+	1375,
+	1376,
+};
+private static final L2Skill[] _nobleSkills = new L2Skill[8];
+private static final int[] _nobleSkillsId =
+{
+	325,
+	326,
+	327,
+	1323,
+	1324,
+	1325,
+	1326,
+	1327
+};
+
+private static final HashSet<L2Skill> _nobleSkillz = new HashSet<>(_nobleSkills.length);
 
 public static SkillTable getInstance()
 {
@@ -19,6 +49,7 @@ private SkillTable()
 {
 	_skills = new TIntObjectHashMap<L2Skill>();
 	_skillMaxLevel = new TIntIntHashMap();
+	_pvpSkills = new ArrayList<>();
 	reload();
 }
 
@@ -42,7 +73,15 @@ public void reload()
 		if (skillLvl > maxLvl)
 			lvls.put(skillId, skillLvl);
 	}
+	// Loading FrequentSkill enumeration values
+	for (final FrequentSkill sk : FrequentSkill.values())
+		sk._skill = getInfo(sk._id, sk._level);
+	for (int i = 0; i < _heroSkillsId.length; i++)
+		_heroSkills[i] = getInfo(_heroSkillsId[i], 1);
+	for (int i = 0; i < _nobleSkills.length; i++)
+		_nobleSkills[i] = getInfo(_nobleSkillsId[i], 1);
 	
+	_nobleSkillz.addAll(Arrays.asList(_nobleSkills));
 	_skills = skills;
 	_skillMaxLevel = lvls;
 }
@@ -93,6 +132,15 @@ public final int getMaxLevel(final int skillId)
 	return _skillMaxLevel.get(skillId);
 }
 
+
+
+public TIntObjectHashMap<L2Skill> getAllSkills()
+{
+	return _skills;
+}
+
+
+
 /**
  * Returns an array with siege skills. If addNoble == true, will add also Advanced headquarters.
  */
@@ -113,10 +161,58 @@ public L2Skill[] getSiegeSkills(boolean addNoble)
 	
 	return temp;
 }
-
+public static enum FrequentSkill
+{
+	LUCKY(194, 1),
+	SEAL_OF_RULER(246, 1),
+	BUILD_HEADQUARTERS(247, 1),
+	STRIDER_SIEGE_ASSAULT(325, 1),
+	DWARVEN_CRAFT(1321, 1),
+	COMMON_CRAFT(1322, 1),
+	LARGE_FIREWORK(2025, 1),
+	SPECIAL_TREE_RECOVERY_BONUS(2139, 1),
+	RAID_CURSE(4215, 1),
+	WYVERN_BREATH(4289, 1),
+	ARENA_CP_RECOVERY(4380, 1),
+	RAID_CURSE2(4515, 1),
+	VARKA_KETRA_PETRIFICATION(4578, 1),
+	FAKE_PETRIFICATION(4616, 1),
+	THE_VICTOR_OF_WAR(5074, 1),
+	THE_VANQUISHED_OF_WAR(5075, 1),
+	BLESSING_OF_PROTECTION(5182, 1),
+	FIREWORK(5965, 1);
+	protected final int _id;
+	protected final int _level;
+	protected L2Skill _skill = null;
+	
+	private FrequentSkill(final int id, final int level)
+	{
+		_id = id;
+		_level = level;
+	}
+	
+	public L2Skill getSkill()
+	{
+		return _skill;
+	}
+}
 @SuppressWarnings("synthetic-access")
 private static class SingletonHolder
 {
 protected static final SkillTable _instance = new SkillTable();
+}
+public boolean isNobleSkill(final L2Skill skill)
+{
+	return _nobleSkillz.contains(skill);
+}
+
+public L2Skill getInfoLevelMax(final int skillId)
+{
+	return _skills.get(getSkillHashCode(skillId, getMaxLevel(skillId)));
+}
+
+public static L2Skill getSkill(final ChillAction chillAction)
+{
+	return getInstance().getInfoLevelMax(chillAction.getActionId());
 }
 }

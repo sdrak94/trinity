@@ -12,6 +12,7 @@
  */
 package net.sf.l2j.gameserver.model;
 
+import luna.PlayerPassport;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.idfactory.IdFactory;
 import net.sf.l2j.gameserver.instancemanager.InstanceManager;
@@ -36,7 +37,7 @@ import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
  * <li>L2ItemInstance</li>
  * <li>L2Potion</li>
  */
-public abstract class L2Object
+public abstract class L2Object implements ILocational
 {
 	// =========================================================
 	// Data Field
@@ -97,6 +98,13 @@ public abstract class L2Object
 	
 	// =========================================================
 	// Position - Should remove to fully move to L2ObjectPosition
+	
+	
+	public final void setXYZ(ILocational loc)
+	{
+		setXYZ(loc.getX(), loc.getY(), loc.getZ());
+	}
+	
 	public final void setXYZ(int x, int y, int z)
 	{
 		getPosition().setXYZ(x, y, z);
@@ -565,5 +573,10 @@ public abstract class L2Object
 	public double getHpPercent()
 	{
 		return 100;
+	}
+
+	public PlayerPassport getPassport()
+	{
+		return null;
 	}
 }

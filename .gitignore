@@ -12,6 +12,10 @@ data/universe/
 data/faenor/
 data/crests/
 data/logs/
+data/geodata/
+data/pathnode/
+
+data/pathnode/
 
 
 
@@ -22,3 +26,5 @@ strix-platform/
 
 */cachedir/
 /L2TrinityGit/
+
+*error*

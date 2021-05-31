@@ -170,7 +170,7 @@ public abstract class AbstractRefinePacket extends L2GameClientPacket
 		if (refinerItem.getOwnerId() != player.getObjectId())
 			return false;
 		// Lifestone must be located in inventory
-		if (refinerItem.getLocation() != L2ItemInstance.ItemLocation.INVENTORY)
+		if (refinerItem.getItemLocation() != L2ItemInstance.ItemLocation.INVENTORY)
 			return false;
 		final LifeStone ls = getLifeStone(refinerItem.getItemId());
 		if (ls == null)
@@ -253,7 +253,7 @@ public abstract class AbstractRefinePacket extends L2GameClientPacket
 		 * return false;
 		 */
 		// Source item can be equipped or in inventory
-		switch (item.getLocation())
+		switch (item.getItemLocation())
 		{
 			case INVENTORY:
 			case PAPERDOLL:

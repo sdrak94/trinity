@@ -11,12 +11,17 @@ public class PingVCmd implements IVoicedCommandHandler
 	private static final String[] VOICED_COMMANDS =
 	{
 		"ping",
+		"farm",
+		"farmon",
+		"farmoff"
 	};
 	
 	@Override
 	public boolean useVoicedCommand(String command, L2PcInstance activeChar, String target)
 	{
-		activeChar.loadEmail();
+		switch (command)
+		{
+		}
 		return true;
 	}
 	

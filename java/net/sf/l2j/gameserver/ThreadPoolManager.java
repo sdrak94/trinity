@@ -98,6 +98,11 @@ public class ThreadPoolManager
 		_aiScheduledThreadPool = new ScheduledThreadPoolExecutor(Config.AI_MAX_THREAD, new PriorityThreadFactory("AISTPool", Thread.NORM_PRIORITY));
 	}
 	
+	public ScheduledFuture<?> schedule(final Runnable r, final long delay)
+	{
+		return scheduleGeneral(r, delay);
+	}
+	
 	public static long validateDelay(long delay)
 	{
 		if (delay < 0)

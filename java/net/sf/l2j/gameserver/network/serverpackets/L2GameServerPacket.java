@@ -30,7 +30,7 @@ public abstract class L2GameServerPacket extends SendablePacket<L2GameClient>
 {
 private static final Logger _log = Logger.getLogger(L2GameServerPacket.class.getName());
 
-
+L2GameClient client = getClient();
 protected boolean _invisible = false;
 private static final int[] PAPERDOLL_ORDER = new int[]
 {
@@ -90,6 +90,10 @@ protected void write()
 	{
 		//Announcements.getInstance().announceToAll(getClass().getSimpleName());
 		//System.out.println(getClass().getSimpleName());
+
+		//_client = getClient();
+		L2GameClient client = getClient();
+		L2GameClient _client = getClient();
 		writeImpl();
 	}
 	catch (Exception e)
@@ -108,7 +112,8 @@ protected void write()
 
 public void runImpl()
 {
-	
+	L2GameClient client = getClient();
+	L2GameClient _client = getClient();
 }
 
 protected abstract void writeImpl();

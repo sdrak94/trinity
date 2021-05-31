@@ -9,6 +9,8 @@ import javolution.util.FastList;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.ai.L2CharacterAI;
+import net.sf.l2j.gameserver.datatables.IconsTable;
+import net.sf.l2j.gameserver.datatables.SkillTable;
 import net.sf.l2j.gameserver.datatables.SkillTreeTable;
 import net.sf.l2j.gameserver.instancemanager.FortManager;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
@@ -311,6 +313,8 @@ public abstract class L2Skill implements IChanceSkillTrigger
 	private final float _olyTimeMulti;
 	public final int _retries;
 
+	private final boolean _chillIgnore;
+	
 	public final int getRetries(L2Character caster)
 	{
 		return (int) caster.calcStat(Stats.SKILL_RETRY_CHANGE, _retries, null, this);
@@ -329,6 +333,8 @@ public abstract class L2Skill implements IChanceSkillTrigger
 	
 	protected L2Skill(StatsSet set)
 	{
+		_chillIgnore = set.getBool("chillIgnore", false);
+		
 		_id = set.getInteger("skill_id");
 		_level = set.getInteger("level");
 		_refId = set.getInteger("referenceId", set.getInteger("itemConsumeId", 0));
@@ -4427,6 +4433,21 @@ public abstract class L2Skill implements IChanceSkillTrigger
 	public FuncTemplate[] getFuncTemplates()
 	{
 		return _funcTemplates;
+	}
+
+	public final boolean isNoble()
+	{
+		return SkillTable.getInstance().isNobleSkill(this);
+	}
+
+	public boolean isChillAllow()
+	{
+		return !_chillIgnore;
+	}
+	
+	public final String getIcon()
+	{
+		return IconsTable.getInstance().getSkillIcon(_id);
 	}
 
 }

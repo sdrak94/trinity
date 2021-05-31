@@ -25,73 +25,89 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 public class QuestTimer
 {
 	protected static final Logger _log = Logger.getLogger(QuestTimer.class.getName());
-	// =========================================================
-	// Schedule Task
-	public class ScheduleTimerTask implements Runnable
+	private final Quest _quest;
+	private final String _name;
+	private final L2Npc _npc;
+	private final L2PcInstance _player;
+	private ScheduledFuture<?> _schedular;
+	private final boolean _isRepeating;
+	private boolean _isActive = true;
+	
+	QuestTimer(final Quest quest, final String name, final L2Npc npc, final L2PcInstance player, final long time, final boolean repeating)
 	{
+		_quest = quest;
+		_name = name;
+		_npc = npc;
+		_player = player;
+		_isRepeating = repeating;
+		if (repeating)
+			_schedular = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new ScheduleTimerTask(), time, time);
+		else
+			_schedular = ThreadPoolManager.getInstance().scheduleGeneral(new ScheduleTimerTask(), time);
+	}
+	
+	final Quest getQuest()
+	{
+		return _quest;
+	}
+	
+	final String getName()
+	{
+		return _name;
+	}
+	
+	final L2Npc getNpc()
+	{
+		return _npc;
+	}
+	
+	final L2PcInstance getPlayer()
+	{
+		return _player;
+	}
+	
+	final boolean getIsRepeating()
+	{
+		return _isRepeating;
+	}
+	
+	final boolean getIsActive()
+	{
+		return _isActive;
+	}
+	
+	@Override
+	public final String toString()
+	{
+		return _name;
+	}
+	
+	final class ScheduleTimerTask implements Runnable
+	{
+		@Override
 		public void run()
 		{
-			if (this == null || !getIsActive())
+			if (!getIsActive())
 				return;
-			
 			try
 			{
 				if (!getIsRepeating())
 					cancel();
 				getQuest().notifyEvent(getName(), getNpc(), getPlayer());
 			}
-			catch (Exception e)
+			catch (final Exception e)
 			{
 				_log.log(Level.SEVERE, "", e);
 			}
 		}
 	}
 	
-	// =========================================================
-	// Data Field
-	private boolean _isActive = true;
-	private String _name;
-	private Quest _quest;
-	private L2Npc _npc;
-	private L2PcInstance _player;
-	private boolean _isRepeating;
-	private ScheduledFuture<?> _schedular;
-	
-	// =========================================================
-	// Constructor
-	public QuestTimer(Quest quest, String name, long time, L2Npc npc, L2PcInstance player, boolean repeating)
-	{
-		_name = name;
-		_quest = quest;
-		_player = player;
-		_npc = npc;
-		_isRepeating = repeating;
-		if (repeating)
-			_schedular = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new ScheduleTimerTask(), time, time); // Prepare auto end task
-		else
-			_schedular = ThreadPoolManager.getInstance().scheduleGeneral(new ScheduleTimerTask(), time); // Prepare auto end task
-	}
-	
-	public QuestTimer(Quest quest, String name, long time, L2Npc npc, L2PcInstance player)
-	{
-		this(quest, name, time, npc, player, false);
-	}
-	
-	public QuestTimer(QuestState qs, String name, long time)
-	{
-		this(qs.getQuest(), name, time, null, qs.getPlayer(), false);
-	}
-	
-	// =========================================================
-	// Method - Public
-	public void cancel()
+	public final void cancel()
 	{
 		_isActive = false;
-		
 		if (_schedular != null)
 			_schedular.cancel(false);
-		
-		getQuest().removeQuestTimer(this);
+		_quest.removeQuestTimer(this);
 	}
 	
 	/**
@@ -100,51 +116,14 @@ public class QuestTimer
 	 * @param name : Name of the timer
 	 * @param npc : Npc instance attached to the desired timer (null if no npc attached)
 	 * @param player : Player instance attached to the desired timer (null if no player attached)
+	 * @return boolean
 	 */
-	public boolean isMatch(Quest quest, String name, L2Npc npc, L2PcInstance player)
+	final boolean equals(final Quest quest, final String name, final L2Npc npc, final L2PcInstance player)
 	{
-		if ((quest == null) || (name == null))
+		if (quest == null || quest != _quest)
 			return false;
-		if ((quest != getQuest()) || name.compareToIgnoreCase(getName()) != 0)
+		if (name == null || !name.equals(_name))
 			return false;
-		return ((npc == getNpc()) && (player == getPlayer()));
-	}
-	
-	// =========================================================
-	// Property - Public
-	public final boolean getIsActive()
-	{
-		return _isActive;
-	}
-	
-	public final boolean getIsRepeating()
-	{
-		return _isRepeating;
-	}
-	
-	public final Quest getQuest()
-	{
-		return _quest;
-	}
-	
-	public final String getName()
-	{
-		return _name;
-	}
-	
-	public final L2Npc getNpc()
-	{
-		return _npc;
-	}
-	
-	public final L2PcInstance getPlayer()
-	{
-		return _player;
-	}
-	
-	@Override
-	public final String toString()
-	{
-		return _name;
+		return npc == _npc && player == _player;
 	}
 }

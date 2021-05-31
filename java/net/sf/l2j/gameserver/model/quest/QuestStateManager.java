@@ -64,7 +64,7 @@ public class QuestStateManager
 	{
 		QuestState qs = getQuestState(player);
 		if (qs == null)
-			qs = new QuestState(quest, player, state);
+			qs = new QuestState(player, quest, state);
 	}
 	
 	/**

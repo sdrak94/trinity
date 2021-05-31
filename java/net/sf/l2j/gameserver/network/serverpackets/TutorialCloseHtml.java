@@ -17,6 +17,7 @@ package net.sf.l2j.gameserver.network.serverpackets;
 public class TutorialCloseHtml extends L2GameServerPacket
 {
 	private static final String _S__A9_TUTORIALCLOSEHTML = "[S] a9 TutorialCloseHtml";
+	public static final TutorialCloseHtml STATIC_PACKET = new TutorialCloseHtml();
 
 	@Override
 	protected void writeImpl()

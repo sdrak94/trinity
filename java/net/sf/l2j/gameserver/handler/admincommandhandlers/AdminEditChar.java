@@ -1423,8 +1423,8 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 		}
 		
 		Olympiad.resetNobleStats(player.getObjectId());
-		Hero._heroes.remove(player.getObjectId());
-		Hero._completeHeroes.remove(player.getObjectId());
+		Hero.HEROES.remove(player.getObjectId());
+		Hero.COMPLETE_HEROS.remove(player.getObjectId());
 		player.wipeHeroOlyStatsDatabase();
 		activeChar.sendMessage("You have wiped "+player.getName()+"'s olympiad and hero status");
 	}
@@ -1449,8 +1449,8 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 		}
 		
 		Olympiad.resetNobleStats(player.getObjectId(), 20);
-		Hero._heroes.remove(player.getObjectId());
-		Hero._completeHeroes.remove(player.getObjectId());
+		Hero.HEROES.remove(player.getObjectId());
+		Hero.COMPLETE_HEROS.remove(player.getObjectId());
 		player.wipeHeroOlyStatsDatabase();
 		activeChar.sendMessage("You have wiped "+player.getName()+"'s olympiad and hero status");
 	}

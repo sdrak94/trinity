@@ -18,6 +18,7 @@ import java.util.Map;
 import javolution.util.FastMap;
 import net.sf.l2j.gameserver.datatables.FencesTable;
 import net.sf.l2j.gameserver.idfactory.IdFactory;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.Location;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -286,5 +287,26 @@ public final class L2FenceInstance extends L2Object
 		}
 		else
 			player.sendPacket(ActionFailed.STATIC_PACKET);
+	}
+
+	@Override
+	public int getHeading()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

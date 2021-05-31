@@ -1240,14 +1240,14 @@ public class PlayerEventInfo implements IPlayerEventInfo
 	@Override
 	public boolean isFighter()
 	{
-		return PlayerClass.values()[_owner.getActiveClass()].isOfType(ClassType.Fighter);
+		return PlayerClass.values()[_owner.getActiveClass()].isOfType(ClassType.MELEE);
 	}
 	
 	/** returns true if player is of Priest class type (not nuker) */
 	@Override
 	public boolean isPriest()
 	{
-		if(PlayerClass.values()[_owner.getActiveClass()] == PlayerClass.cardinal || PlayerClass.values()[_owner.getActiveClass()] == PlayerClass.Bishop)
+		if(PlayerClass.values()[_owner.getActiveClass()] == PlayerClass.Cardinal || PlayerClass.values()[_owner.getActiveClass()] == PlayerClass.Bishop)
 			return true;
 		
 		return false;
@@ -1257,7 +1257,7 @@ public class PlayerEventInfo implements IPlayerEventInfo
 	@Override
 	public boolean isMystic()
 	{
-		return PlayerClass.values()[_owner.getActiveClass()].isOfType(ClassType.Mystic);
+		return PlayerClass.values()[_owner.getActiveClass()].isOfType(ClassType.MAGE);
 	}
 	
 	@Override

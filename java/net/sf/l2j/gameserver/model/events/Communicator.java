@@ -358,7 +358,7 @@ public class Communicator
 		final HashMap<Integer, ArrayList<FuturedEvent>> scheduledEvents = EventScheduleTables.getInstance().getFuturedEvents();
 		ArrayList<FuturedEvent> todayEvents = scheduledEvents.get(Calendar.getInstance().get(Calendar.DAY_OF_WEEK));
 		if (todayEvents == null)
-			todayEvents = scheduledEvents.get(new Integer(0));
+			todayEvents = scheduledEvents.get(0);
 		for (FuturedEvent evt : todayEvents)
 		{
 			final Date date = new Date(System.currentTimeMillis());
@@ -402,7 +402,7 @@ public class Communicator
 			ArrayList<FuturedEvent> todayEvents = scheduledEvents.get(nextDay);
 			if (todayEvents == null)
 			{
-				todayEvents = scheduledEvents.get(new Integer(0));
+				todayEvents = scheduledEvents.get(0);
 			}
 			if (todayEvents == null)
 			{

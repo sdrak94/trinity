@@ -31,6 +31,7 @@ import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.ai.L2CharacterAI;
 import net.sf.l2j.gameserver.instancemanager.AirShipManager;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.knownlist.AirShipKnownList;
@@ -637,4 +638,18 @@ public class L2AirShipInstance extends L2Character
     		activeChar.sendPacket(new ExAirShipInfo(this));
     	}
     }
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

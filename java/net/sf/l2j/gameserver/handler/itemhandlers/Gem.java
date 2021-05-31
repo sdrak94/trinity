@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 
-import instances.Ultraverse.Ultraverse;
 import javolution.text.TextBuilder;
 import net.sf.l2j.Base64;
 import net.sf.l2j.Config;
@@ -44,6 +43,7 @@ import net.sf.l2j.gameserver.network.serverpackets.SellList;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.Formulas;
 import net.sf.l2j.gameserver.skills.Stats;
+import scripts.instances.Ultraverse.Ultraverse;
 
 public class Gem implements IItemHandler
 {

@@ -1460,9 +1460,9 @@ public class L2Clan
 	
 	public class SubPledge
 	{
-		private final int		_id;
-		private final String	_subPledgeName;
-		private int				_leaderId;
+		private final int _id;
+		private String _subPledgeName;
+		private int _leaderId;
 		
 		public SubPledge(int id, String name, int leaderId)
 		{
@@ -1479,6 +1479,11 @@ public class L2Clan
 		public String getName()
 		{
 			return _subPledgeName;
+		}
+
+		public void setName(final String name)
+		{
+			_subPledgeName = name;
 		}
 		
 		public int getLeaderId()
@@ -2874,5 +2879,10 @@ public class L2Clan
 			}
 		}
 		return true;
+	}
+
+	public synchronized void addReputationScore(final int value)
+	{
+		setReputationScore(getReputationScore() + value, true);
 	}
 }

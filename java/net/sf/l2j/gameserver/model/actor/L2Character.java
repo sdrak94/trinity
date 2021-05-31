@@ -93,6 +93,7 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
 import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.AbstractNpcInfo;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
@@ -586,6 +587,13 @@ public abstract class L2Character extends L2Object
 					player.sendPacket(mov);
 			}
 		}
+	}
+	
+	public void broadcastPacket(L2GameServerPacket mov, L2PcInstance receiver)
+	{
+		if (receiver == null || receiver == this)
+			return;
+		receiver.sendPacket(mov);
 	}
 	
 	/**
@@ -2683,7 +2691,7 @@ public abstract class L2Character extends L2Object
 	}
 	
 	@SuppressWarnings("incomplete-switch")
-	protected boolean checkDoCastConditions(L2Skill skill)
+	public boolean checkDoCastConditions(L2Skill skill)
 	{
 		if (skill == null || isSkillDisabled(skill.getId()))
 			return false;
@@ -5750,6 +5758,13 @@ public abstract class L2Character extends L2Object
 		return _target;
 	}
 	
+	public L2Character getTargetChar()
+	{
+		if (_target instanceof L2Character)
+			return (L2Character) _target;
+		return null;
+	}
+	
 	// called from AIAccessor only
 	/**
 	 * Calculate movement data for a move to location action and add the L2Character to movingObjects of GameTimeController (only called by AI Accessor).<BR>
@@ -8049,10 +8064,10 @@ public abstract class L2Character extends L2Object
 		{
 			try
 			{
-				if (((L2NpcTemplate) getTemplate()).getEventQuests(Quest.QuestEventType.ON_SPELL_FINISHED) != null)
+				if (((L2NpcTemplate) getTemplate()).getEventQuests(QuestEventType.ON_SPELL_FINISHED) != null)
 				{
 					L2PcInstance player = target.getActingPlayer();
-					for (Quest quest : ((L2NpcTemplate) getTemplate()).getEventQuests(Quest.QuestEventType.ON_SPELL_FINISHED))
+					for (Quest quest : ((L2NpcTemplate) getTemplate()).getEventQuests(QuestEventType.ON_SPELL_FINISHED))
 					{
 						quest.notifySpellFinished(((L2Npc) this), player, skill);
 					}
@@ -8364,8 +8379,8 @@ public abstract class L2Character extends L2Object
 							if (spMob instanceof L2Npc)
 							{
 								L2Npc npcMob = (L2Npc) spMob;
-								if ((npcMob.isInsideRadius(player, 1000, true, true)) && (npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE) != null))
-									for (Quest quest : npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE))
+								if ((npcMob.isInsideRadius(player, 1000, true, true)) && (npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE) != null))
+									for (Quest quest : npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE))
 										quest.notifySkillSee(npcMob, player, skill, targets, this instanceof L2Summon);
 							}
 						}
@@ -9773,6 +9788,86 @@ public abstract class L2Character extends L2Object
 		return false;
 	}
 	
+	public boolean isSamePartyWith(final L2Character character)
+	{
+		return false;
+	}
+	
+	public boolean isAlikeAlive()
+	{
+		return !isAlikeDead();
+	}
+	
+	public boolean isMaxHpLess(final int num)
+	{
+		return getMaxHp() < num;
+	}
+	
+	public boolean isMaxHpLess100K()
+	{
+		return isMaxHpLess(100_000);
+	}
+	
 	public void broadcastUserInfo()
 	{}
+
+	public boolean testDoCastConditions(final L2Skill skill)
+	{
+		if (skill == null || isSkillDisabled(skill.getId()) || ((skill.getFlyType() == FlyType.CHARGE.toString()) && isMovementDisabled()))
+		{
+			return false;
+		}
+		// Check if the caster has enough MP
+		if (getCurrentMp() < getStat().getMpConsume(skill) + getStat().getMpInitialConsume(skill) && skill.isHeal())
+		{
+			return false;
+		}
+		// Check if the caster has enough HP
+		if (getCurrentHp() <= skill.getHpConsume())
+		{
+			return false;
+		}
+		// Verify the different types of silence (magic and physic)
+		if (!skill.isPotion()  && (skill.isMagic() && isMuted() || !skill.isMagic() && isPhysicalMuted()))
+		{
+			return false;
+		}
+		// prevent casting signets to peace zone
+		if (skill.getSkillType() == L2SkillType.SIGNET || skill.getSkillType() == L2SkillType.SIGNET_CASTTIME)
+		{
+			final L2WorldRegion region = getWorldRegion();
+			if (region == null)
+				return false;
+			if (skill.getTargetType(this) == SkillTargetType.TARGET_GROUND && this instanceof L2PcInstance)
+			{
+				final Location wp = ((L2PcInstance) this).getCurrentSkillWorldPositionLoc();
+				if (!region.checkEffectRangeInsidePeaceZone(skill, wp.getX(), wp.getY(), wp.getZ()))
+				{
+					return false;
+				}
+			} else if (!region.checkEffectRangeInsidePeaceZone(skill, getX(), getY(), getZ()))
+			{
+				return false;
+			}
+		}
+		if (!skill.getWeaponDependancy(this, true))
+		{
+			return false;
+		}
+		if (skill.getItemConsumeId() > 0 && getInventory() != null)
+		{
+			final L2ItemInstance requiredItems = getInventory().getItemByItemId(skill.getItemConsumeId());
+			if (requiredItems == null || requiredItems.getCount() < skill.getItemConsume())
+			{
+				if (skill.getSkillType() == L2SkillType.SUMMON)
+				{
+					return false;
+				}
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
 }

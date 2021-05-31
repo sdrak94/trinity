@@ -4,6 +4,7 @@ import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.logging.Level;
@@ -31,6 +32,7 @@ import net.sf.l2j.gameserver.instancemanager.FortManager;
 import net.sf.l2j.gameserver.instancemanager.QuestManager;
 import net.sf.l2j.gameserver.instancemanager.TownManager;
 import net.sf.l2j.gameserver.instancemanager.games.Lottery;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Clan;
 import net.sf.l2j.gameserver.model.L2DropCategory;
 import net.sf.l2j.gameserver.model.L2DropData;
@@ -82,8 +84,8 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.itemcontainer.NpcInventory;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.model.quest.QuestState;
-import net.sf.l2j.gameserver.model.quest.State;
 import net.sf.l2j.gameserver.model.zone.type.L2TownZone;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.SystemMessageId;
@@ -1223,13 +1225,13 @@ public class L2Npc extends L2Character
 					// L2KoreanRegInstance
 					else
 					{
-						Quest[] qlsa = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
-						if ((qlsa != null) && qlsa.length > 0)
-							player.setLastQuestNpcObject(getObjectId());
-						Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.ON_FIRST_TALK);
-						if ((qlst != null) && qlst.length == 1)
-							qlst[0].notifyFirstTalk(this, player);
-						else
+//						Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+//						if ((qlsa != null) && qlsa.length > 0)
+//							player.setLastQuestNpcObject(getObjectId());
+//						Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
+//						if ((qlst != null) && qlst.length == 1)
+//							qlst[0].notifyFirstTalk(this, player);
+//						else
 							showChatWindow(player, 0);
 					}
 				}
@@ -1651,13 +1653,13 @@ public class L2Npc extends L2Character
 							}
 							else
 							{
-								Quest[] qlsa = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
-								if ((qlsa != null) && qlsa.length > 0)
-									player.setLastQuestNpcObject(getObjectId());
-								Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.ON_FIRST_TALK);
-								if ((qlst != null) && qlst.length == 1)
-									qlst[0].notifyFirstTalk(this, player);
-								else
+//								Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+//								if ((qlsa != null) && qlsa.length > 0)
+//									player.setLastQuestNpcObject(getObjectId());
+//								Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
+//								if ((qlst != null) && qlst.length == 1)
+//									qlst[0].notifyFirstTalk(this, player);
+//								else
 									showChatWindow(player, 0);
 							}
 						}
@@ -1775,12 +1777,13 @@ public class L2Npc extends L2Character
 				{
 					quest = command.substring(5).trim();
 				}
-				catch (IndexOutOfBoundsException ioobe)
-				{}
-				if (quest.length() == 0)
-					showQuestWindow(player);
+				catch (final IndexOutOfBoundsException ioobe)
+				{
+				}
+				if (quest.isEmpty())
+					showQuestWindowGeneral(player, this);
 				else
-					showQuestWindow(player, quest);
+					showQuestWindowSingle(player, this, QuestManager.getInstance().getQuest(quest));
 			}
 			else if (command.startsWith("Chat"))
 			{
@@ -2151,23 +2154,23 @@ public class L2Npc extends L2Character
 	public void showQuestChooseWindow(L2PcInstance player, Quest[] quests)
 	{
 		final StringBuilder sb = StringUtil.startAppend(150, "<html><body>");
-		for (Quest q : quests)
-		{
-			StringUtil.append(sb, "<a action=\"bypass -h npc_", String.valueOf(getObjectId()), "_Quest ", q.getName(), "\">[", q.getDescr());
-			QuestState qs = player.getQuestState(q.getScriptName());
-			if (qs != null)
-			{
-				if (qs.getState() == State.STARTED && qs.getInt("cond") > 0)
-				{
-					sb.append(" (In Progress)");
-				}
-				else if (qs.getState() == State.COMPLETED)
-				{
-					sb.append(" (Done)");
-				}
-			}
-			sb.append("]</a><br>");
-		}
+//		for (Quest q : quests)
+//		{
+//			StringUtil.append(sb, "<a action=\"bypass -h npc_", String.valueOf(getObjectId()), "_Quest ", q.getName(), "\">[", q.getDescr());
+//			QuestState qs = player.getQuestState(q.getScriptName());
+//			if (qs != null)
+//			{
+//				if (qs.getState() == State.STARTED && qs.getInt("cond") > 0)
+//				{
+//					sb.append(" (In Progress)");
+//				}
+//				else if (qs.getState() == State.COMPLETED)
+//				{
+//					sb.append(" (Done)");
+//				}
+//			}
+//			sb.append("]</a><br>");
+//		}
 		sb.append("</body></html>");
 		// Send a Server->Client packet NpcHtmlMessage to the L2PcInstance in order to display the message of the L2NpcInstance
 		insertObjectIdAndShowChatWindow(player, sb.toString());
@@ -2191,72 +2194,98 @@ public class L2Npc extends L2Character
 	public void showQuestWindow(L2PcInstance player, String questId)
 	{
 		String content = null;
-		Quest q = QuestManager.getInstance().getQuest(questId);
 		// Get the state of the selected quest
-		QuestState qs = player.getQuestState(questId);
-		if (q == null)
-		{
-			// no quests found
-			content = "<html><body>You are either not on a quest that involves this NPC, or you don't meet this NPC's minimum quest requirements.</body></html>";
-		}
-		else
-		{
-			if ((q.getQuestIntId() >= 1 && q.getQuestIntId() < 20000) && (player.getWeightPenalty() >= 3 || player.getInventoryLimit() * 0.8 <= player.getInventory().getSize()))
-			{
-				player.sendPacket(new SystemMessage(SystemMessageId.INVENTORY_LESS_THAN_80_PERCENT));
-				return;
-			}
-			if (qs == null)
-			{
-				if (q.getQuestIntId() >= 1 && q.getQuestIntId() < 20000)
-				{
-					Quest[] questList = player.getAllActiveQuests();
-					if (questList.length >= 25) // if too many ongoing quests, don't show window and send message
-					{
-						player.sendPacket(new SystemMessage(SystemMessageId.TOO_MANY_QUESTS));
-						return;
-					}
-				}
-				// check for start point
-				Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
-				if (qlst != null && qlst.length > 0)
-				{
-					for (Quest temp : qlst)
-					{
-						if (temp == q)
-						{
-							qs = q.newQuestState(player);
-							break;
-						}
-					}
-				}
-			}
-		}
-		if (qs != null)
-		{
-			// If the quest is alreday started, no need to show a window
-			if (!qs.getQuest().notifyTalk(this, qs))
-				return;
-			questId = qs.getQuest().getName();
-			String stateId = State.getStateName(qs.getState());
-			String path = "data/scripts/quests/" + questId + "/" + stateId + ".htm";
-			content = HtmCache.getInstance().getHtm(path); // TODO path for quests html
-			if (Config.DEBUG)
-			{
-				if (content != null)
-				{
-					_log.fine("Showing quest window for quest " + questId + " html path: " + path);
-				}
-				else
-				{
-					_log.fine("File not exists for quest " + questId + " html path: " + path);
-				}
-			}
-		}
+
 		// Send a Server->Client packet NpcHtmlMessage to the L2PcInstance in order to display the message of the L2NpcInstance
 		if (content != null)
 			insertObjectIdAndShowChatWindow(player, content);
 		// Send a Server->Client ActionFailed to the L2PcInstance in order to avoid that the client wait another packet
+		player.sendPacket(ActionFailed.STATIC_PACKET);
+	}
+	public static void showQuestWindowGeneral(final L2PcInstance player, final L2Npc npc)
+	{
+		final List<Quest> quests = new ArrayList<>();
+		final List<Quest> awaits = npc.getTemplate().getEventQuests(QuestEventType.ON_TALK);
+		if (awaits != null)
+			for (final Quest quest : awaits)
+			{
+				if (quest == null || !quest.isRealQuest() || quests.contains(quest))
+					continue;
+				final QuestState qs = player.getQuestState(quest.getName());
+				if (qs == null || qs.isCreated())
+					continue;
+				quests.add(quest);
+			}
+		final List<Quest> starts = npc.getTemplate().getEventQuests(QuestEventType.QUEST_START);
+		if (starts != null)
+			for (final Quest quest : starts)
+			{
+				if (quest == null || !quest.isRealQuest() || quests.contains(quest))
+					continue;
+				quests.add(quest);
+			}
+		if (quests.isEmpty())
+			showQuestWindowSingle(player, npc, null);
+		else if (quests.size() == 1)
+			showQuestWindowSingle(player, npc, quests.get(0));
+		else
+			showQuestWindowChoose(player, npc, quests);
+	}
+	
+	public static void showQuestWindowSingle(final L2PcInstance player, final L2Npc npc, final Quest quest)
+	{
+		if (quest == null)
+		{
+			final NpcHtmlMessage npcReply = new NpcHtmlMessage(npc.getObjectId());
+			npcReply.setHtml(Quest.getNoQuestMsg());
+			npcReply.replace("%objectId%", String.valueOf(npc.getObjectId()));
+			player.sendPacket(npcReply);
+			player.sendPacket(ActionFailed.STATIC_PACKET);
+			return;
+		}
+		QuestState qs = player.getQuestState(quest.getName());
+		if (qs == null)
+		{
+			if (quest.isRealQuest() && player.getAllQuests(false).size() > 40)
+			{
+				player.sendPacket(SystemMessageId.TOO_MANY_QUESTS);
+				return;
+			}
+			final List<Quest> qlst = npc.getTemplate().getEventQuests(QuestEventType.QUEST_START);
+			if (qlst != null && qlst.contains(quest))
+				qs = quest.newQuestState(player);
+		}
+		if (qs != null)
+			quest.notifyTalk(npc, qs.getPlayer());
+	}
+	
+	/**
+	 * Shows the list of available quest of the L2Npc.
+	 * @param player The L2PcInstance that talk with the L2Npc.
+	 * @param npc The L2Npc instance.
+	 * @param quests The list containing quests of the L2Npc.
+	 */
+	public static void showQuestWindowChoose(final L2PcInstance player, final L2Npc npc, final List<Quest> quests)
+	{
+		final StringBuilder sb = StringUtil.startAppend(150, "<html><body>");
+		for (final Quest q : quests)
+		{
+			if (q == null)
+				continue;
+			StringUtil.append(sb, "<a action=\"bypass -h npc_", String.valueOf(npc.getObjectId()), "_Quest ", q.getName(), "\">[", q.getDescr());
+			final QuestState qs = player.getQuestState(q.getName());
+			if (qs != null && qs.isStarted())
+				sb.append(" (In Progress)]</a><br>");
+			else if (qs != null && qs.isCompleted())
+				sb.append(" (Done)]</a><br>");
+			else
+				sb.append("]</a><br>");
+		}
+		sb.append("</body></html>");
+		final NpcHtmlMessage npcReply = new NpcHtmlMessage(npc.getObjectId());
+		npcReply.setHtml(sb.toString());
+		npcReply.replace("%objectId%", String.valueOf(npc.getObjectId()));
+		player.sendPacket(npcReply);
 		player.sendPacket(ActionFailed.STATIC_PACKET);
 	}
 	
@@ -2272,7 +2301,7 @@ public class L2Npc extends L2Character
 		// collect awaiting quests and start points
 		List<Quest> options = new FastList<Quest>();
 		QuestState[] awaits = player.getQuestsForTalk(getTemplate().npcId);
-		Quest[] starts = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
+		//Quest[] starts = getTemplate().getEventQuests(QuestEventType.QUEST_START);
 		// Quests are limited between 1 and 999 because those are the quests that are supported by the client.
 		// By limiting them there, we are allowed to create custom quests at higher IDs without interfering
 		if (awaits != null)
@@ -2280,19 +2309,19 @@ public class L2Npc extends L2Character
 			for (QuestState x : awaits)
 			{
 				if (!options.contains(x.getQuest()))
-					if ((x.getQuest().getQuestIntId() > 0) && (x.getQuest().getQuestIntId() < 20000))
+					if ((x.getQuest().getQuestId() > 0) && (x.getQuest().getQuestId() < 20000))
 						options.add(x.getQuest());
 			}
 		}
-		if (starts != null)
-		{
-			for (Quest x : starts)
-			{
-				if (!options.contains(x))
-					if ((x.getQuestIntId() > 0) && (x.getQuestIntId() < 20000))
-						options.add(x);
-			}
-		}
+//		if (starts != null)
+//		{
+//			for (Quest x : starts)
+//			{
+//				if (!options.contains(x))
+//					if ((x.getQuestId() > 0) && (x.getQuestId() < 20000))
+//						options.add(x);
+//			}
+//		}
 		// Display a QuestChooseWindow (if several quests are available) or QuestWindow
 		if (options.size() > 1)
 		{
@@ -3184,9 +3213,6 @@ public class L2Npc extends L2Character
 		if (_inventory != null)
 			_inventory.reset();
 		super.onSpawn();
-		if (getTemplate().getEventQuests(Quest.QuestEventType.ON_SPAWN) != null)
-			for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.ON_SPAWN))
-				quest.notifySpawn(this);
 	}
 	
 	/**
@@ -3393,4 +3419,37 @@ public class L2Npc extends L2Character
 	{
 		_tempSpawn = true;
 	}
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public L2Npc scheduleDespawn(final long delay)
+	{
+		ThreadPoolManager.getInstance().scheduleGeneral(this.new DespawnTask(), delay);
+		return this;
+	}
+	
+	protected class DespawnTask implements Runnable
+	{
+		@Override
+		public void run()
+		{
+			if (!isDecayed())
+				deleteMe();
+		}
+	}
+	
+	
+	
 }

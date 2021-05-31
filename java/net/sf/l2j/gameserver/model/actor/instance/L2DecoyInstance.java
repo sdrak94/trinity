@@ -5,6 +5,7 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 
 import net.sf.l2j.gameserver.ThreadPoolManager;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -366,5 +367,19 @@ public int getMCriticalHit(L2Character target, L2Skill skill)
 public int getShldDef()
 {
 	return getActingPlayer().getStat().getShldDef();
+}
+
+@Override
+public int getInstanceWorld()
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+@Override
+public ILocational getLocation()
+{
+	// TODO Auto-generated method stub
+	return null;
 }
 }

@@ -100,7 +100,7 @@ public class PcFreight extends ItemContainer
 	protected void addItem(L2ItemInstance item)
     {
         super.addItem(item);
-    	if (_activeLocationId > 0) item.setLocation(item.getLocation(), _activeLocationId);
+    	if (_activeLocationId > 0) item.setLocation(item.getItemLocation(), _activeLocationId);
     }
 
     /**

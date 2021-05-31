@@ -69,8 +69,6 @@ public class AntibotConfigs extends AbstractConfigs
     ANTIBOT_FARM_TYPE = Integer.parseInt(AntibotProperties.getProperty("AntibotFarmType", "0"));
     ANTIBOT_FARM_CHANCE = Float.parseFloat(AntibotProperties.getProperty("AntibotFarmChance", "50"));
     ANTIBOT_MOB_COUNTER = Integer.parseInt(AntibotProperties.getProperty("AntibotMobCounter", "100"));
-    String[] mobIds = AntibotProperties.getProperty("FarmMobsIds", "").split(";");
-    ANTIBOT_FARM_MOBS_IDS = new ArrayList(mobIds.length);
     /*Object localObject1 = mobIds;
     int localThrowable1 = localObject1.toString().length();
     for (int localThrowable3 = 0;

@@ -1,8 +1,9 @@
 package net.sf.l2j.gameserver.handler.admincommandhandlers;
 
+import java.awt.Color;
 import java.util.StringTokenizer;
 
-import custom.achievements.Achievements;
+import luna.chill.ChillController;
 import luna.custom.DressMeEngine.DressMeLoader;
 import luna.custom.handler.items.bdoBox.BdoData;
 import luna.custom.handler.items.bonanzo.BonanzoData;
@@ -10,6 +11,7 @@ import luna.custom.handler.items.capsuledItems.CapsuleData;
 import luna.custom.handler.items.lootBox.LootData;
 import luna.custom.ranking.xml.data.RanksParser;
 import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.Announcements;
 import net.sf.l2j.gameserver.GmListTable;
 import net.sf.l2j.gameserver.cache.HtmCache;
 import net.sf.l2j.gameserver.datatables.AccessLevels;
@@ -42,11 +44,14 @@ import net.sf.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
 import net.sf.l2j.gameserver.model.events.EventScheduler;
 import net.sf.l2j.gameserver.model.itemcontainer.PcInventory;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
+import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.CreatureSay;
+import net.sf.l2j.gameserver.network.serverpackets.ExServerPrimitive;
 import net.sf.l2j.gameserver.network.serverpackets.ItemList;
 import net.sf.l2j.gameserver.network.serverpackets.SocialAction;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
+import scripts.achievements.Achievements;
 
 /**
  * This class handles following admin commands:
@@ -108,6 +113,7 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 	
 	if (command.startsWith("admin_admin"))
 	{
+
 		showMainPage(activeChar, command);
 	}
 	else if (command.startsWith("admin_start_event_engine"))
@@ -700,6 +706,12 @@ public String[] getAdminCommandList()
 
 private void showMainPage(L2PcInstance activeChar, String command)
 {
+	final var serverPrimitive = new ExServerPrimitive("Bliz0", activeChar.getLoc());
+	serverPrimitive.addCircle(Color.RED, 300, 30	, 1);
+	serverPrimitive.addCircle(Color.RED, 300, 30	, 3);
+	serverPrimitive.addCircle(Color.RED, 300, 30	, 5);
+	
+	activeChar.sendPacket(serverPrimitive);
 	int mode = 0;
 	String filename = null;
 	try
@@ -733,6 +745,8 @@ private void showMainPage(L2PcInstance activeChar, String command)
 			filename = "classic";
 		break;
 	}
-	AdminHelpPage.showHelpPage(activeChar, filename + "_menu.htm");
+	//AdminHelpPage.showHelpPage(activeChar, filename + "_menu.htm");
+
+	ChillController.getInstance().renderChill(activeChar);
 }
 }

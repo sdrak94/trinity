@@ -14,17 +14,12 @@
  */
 package net.sf.l2j.gameserver;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.Map;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
-import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.model.AutoSpawnHandler.AutoSpawnInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -578,7 +573,8 @@ public class SevenSigns
 	
 	public final int getSealOwner(int seal)
 	{
-		return _signsSealOwners.get(seal);
+		return 0;
+		//return _signsSealOwners.get(seal);
 	}
 	
 	public final int getSealProportion(int seal, int cabal)

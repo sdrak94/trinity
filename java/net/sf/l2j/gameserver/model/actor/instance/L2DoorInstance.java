@@ -27,6 +27,7 @@ import net.sf.l2j.gameserver.ai.L2CharacterAI;
 import net.sf.l2j.gameserver.ai.L2DoorAI;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.instancemanager.FortManager;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2CharPosition;
 import net.sf.l2j.gameserver.model.L2Clan;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
@@ -951,5 +952,19 @@ public boolean doDie(L2Character killer)
 public void sendInfo(L2PcInstance activeChar)
 {
 	activeChar.sendPacket(new StaticObject(this, false));
+}
+
+@Override
+public int getInstanceWorld()
+{
+	// TODO Auto-generated method stub
+	return 0;
+}
+
+@Override
+public ILocational getLocation()
+{
+	// TODO Auto-generated method stub
+	return null;
 }
 }

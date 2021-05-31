@@ -380,7 +380,7 @@ public L2Clan getClan()
 	return _clan;
 }
 
-public int calculatePledgeClass(L2PcInstance player)
+public static int calculatePledgeClass(L2PcInstance player)
 {
 	int pledgeClass = 0;
 	

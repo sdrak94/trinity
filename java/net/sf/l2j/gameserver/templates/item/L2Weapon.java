@@ -29,6 +29,7 @@ import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.quest.Quest;
+import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.gameserver.network.serverpackets.PlaySound;
 import net.sf.l2j.gameserver.skills.Env;
 import net.sf.l2j.gameserver.skills.Formulas;
@@ -356,8 +357,8 @@ public boolean getSkillEffects(L2Character caster, L2Character target, boolean c
 					{
 						L2Npc npcMob = (L2Npc) spMob;
 						
-						if (npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE) != null)
-							for (Quest quest : npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE))
+						if (npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE) != null)
+							for (Quest quest : npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE))
 								quest.notifySkillSee(npcMob, (L2PcInstance) caster, _skillsOnCrit, targets, false);
 					}
 				}
@@ -439,8 +440,8 @@ public boolean getSkillEffects(L2Character caster, L2Character target, L2Skill t
 					{
 						L2Npc npcMob = (L2Npc) spMob;
 						
-						if (npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE) != null)
-							for (Quest quest : npcMob.getTemplate().getEventQuests(Quest.QuestEventType.ON_SKILL_SEE))
+						if (npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE) != null)
+							for (Quest quest : npcMob.getTemplate().getEventQuests(QuestEventType.ON_SKILL_SEE))
 								quest.notifySkillSee(npcMob, (L2PcInstance) caster, _skillsOnCast, targets, false);
 					}
 				}

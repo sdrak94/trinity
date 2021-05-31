@@ -31,6 +31,7 @@ import java.util.Collection;
 import java.util.Date;
 
 import net.sf.l2j.gameserver.ThreadPoolManager;
+import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -133,7 +134,17 @@ public final class Util
 		
 		return calculateDistance(obj1.getPosition().getX(), obj1.getPosition().getY(), obj1.getPosition().getZ(), obj2.getPosition().getX(), obj2.getPosition().getY(), obj2.getPosition().getZ(), includeZAxis);
 	}
+
+	public static double calculateDistance(ILocational loc1, ILocational loc2, boolean includeZAxis)
+	{
+		return calculateDistance(loc1.getX(), loc1.getY(), loc1.getZ(), loc2.getX(), loc2.getY(), loc2.getZ(), includeZAxis, false);
+	}
 	
+	public static double calculateDistance(double x1, double y1, double z1, double x2, double y2, double z2, boolean includeZAxis, boolean squared)
+	{
+		final double distance = Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2) + (includeZAxis ? Math.pow(z1 - z2, 2) : 0);
+		return (squared) ? distance : Math.sqrt(distance);
+	}
 	/**
 	 * Capitalizes the first letter of a string, and returns the result.<BR>
 	 * (Based on ucfirst() function of PHP)
@@ -422,4 +433,16 @@ public final class Util
 			return dateFormat.format(date);
 		return null;
 	}
+
+	public static int limit(int numToTest, int min, int max)
+	{
+		return (numToTest > max) ? max : ((numToTest < min) ? min : numToTest);
+	}
+	
+	public static <A> void clearArray(final A[] array)
+	{
+		for (int i = 0; i < array.length; i++)
+			array[i] = null;
+	}
+
 }

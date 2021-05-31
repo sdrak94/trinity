@@ -807,7 +807,7 @@ protected static final boolean isEnchantable(L2ItemInstance item)
 	if (item.getItem().getBodyPart() == L2Item.SLOT_BACK)
 		return false;
 	// only items in inventory and equipped can be enchanted
-	if (item.getLocation() != L2ItemInstance.ItemLocation.INVENTORY && item.getLocation() != L2ItemInstance.ItemLocation.PAPERDOLL)
+	if (item.getItemLocation() != L2ItemInstance.ItemLocation.INVENTORY && item.getItemLocation() != L2ItemInstance.ItemLocation.PAPERDOLL)
 		return false;
 /*	if (item.getItem().getType2() == L2Item.TYPE2_WEAPON && item.getEnchantLevel() >=13 && item.getUniqueness() == 3.5) //Uniques CAP +13
 		return false;

@@ -456,7 +456,7 @@ public final class L2ItemInstance extends L2Object
 		_storedInDb = false;
 	}
 	
-	public ItemLocation getLocation()
+	public ItemLocation getItemLocation()
 	{
 		return _loc;
 	}
@@ -1492,7 +1492,7 @@ public final class L2ItemInstance extends L2Object
 					}
 					player.sendPacket(iu);
 				}
-				if (getLocation() != ItemLocation.WAREHOUSE)
+				if (getItemLocation() != ItemLocation.WAREHOUSE)
 				{
 					// destroy
 					player.getInventory().destroyItem("L2ItemInstance", this, player, null);
@@ -1515,7 +1515,7 @@ public final class L2ItemInstance extends L2Object
 				{
 					scheduleConsumeManaTask();
 				}
-				if (getLocation() != ItemLocation.WAREHOUSE)
+				if (getItemLocation() != ItemLocation.WAREHOUSE)
 				{
 					InventoryUpdate iu = new InventoryUpdate();
 					iu.addModifiedItem(this);
@@ -2050,7 +2050,7 @@ public final class L2ItemInstance extends L2Object
 				player.sendPacket(iu);
 				player.broadcastUserInfo();
 			}
-			if (getLocation() != ItemLocation.WAREHOUSE)
+			if (getItemLocation() != ItemLocation.WAREHOUSE)
 			{
 				// destroy
 				player.getInventory().destroyItem("L2ItemInstance", this, player, null);
@@ -2715,4 +2715,26 @@ public final class L2ItemInstance extends L2Object
 	{
 		_tryingItemId = itemId;
 	}
+
+	@Override
+	public int getHeading()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getInstanceWorld()
+	{
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public ILocational getLocation()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

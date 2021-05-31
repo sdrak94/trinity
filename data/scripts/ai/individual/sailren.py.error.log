@@ -1,6 +1,0 @@
-Error on: C:\L2j-Gracia-Final\GAMESERVER\data\scripts\ai\individual\sailren.py.error.log
-Line: -1 - Column: -1
-
-Traceback (innermost last):
-  File "sailren.py", line 3, in ?
-ImportError: no module named grandbosses

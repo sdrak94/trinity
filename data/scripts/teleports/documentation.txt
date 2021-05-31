@@ -1,7 +1,0 @@
-jscript/teleports is used for definitions of teleports that are too advanced to be done under normal means.
-For example, teleporting to the race track allows a player a free teleport and a free return to the SAME
-city from which the player went to the race track.  Normal teleports do not store any information about 
-the origin.  In order to achieve this special teleportation, a teleport script is needed.
-
-Teleport scripts are essentially dummy quests, hidden from the client.  All implementation details are
-fully covered by quests.  For more info, please see the documentation in "scripts/quests/documentation.txt"
