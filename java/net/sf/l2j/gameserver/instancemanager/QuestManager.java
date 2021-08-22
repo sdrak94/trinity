@@ -56,7 +56,7 @@ public class QuestManager extends ScriptManager<Quest>
 		addQuest(new Q246_PossessorOfAPreciousSoul());
 		addQuest(new Q247_PossessorOfAPreciousSoul());
 		
-		addQuest(new Achievements());
+		addQuest(new Achievements(-1, "Achievements", "custom"));
 		
 		addQuest(new Embryo(-1, "Embryo", "instances"));
 		addQuest(new Kamaloka(-1, "Kamaloka", "instances"));

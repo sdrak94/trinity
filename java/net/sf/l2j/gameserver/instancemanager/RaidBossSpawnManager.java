@@ -134,21 +134,6 @@ private void init()
 			e.printStackTrace();
 		}
 	}
-
-	try
-	{
-		SpawnUtil.getInstance().parseSpawnsToXml();
-	}
-	catch (SQLException e)
-	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	catch (IOException e)
-	{
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
 }
 
 private class spawnSchedule implements Runnable

@@ -22,6 +22,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javolution.util.FastMap;
+import luna.custom.utils.SpawnUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.model.L2TeleportLocation;
@@ -62,7 +63,7 @@ public class TeleportLocationTable
 			while (rset.next())
 			{
 				teleport = new L2TeleportLocation();
-				
+				teleport.setDesc(rset.getString("Description"));
 				teleport.setTeleId(rset.getInt("id"));
 				teleport.setLocX(rset.getInt("loc_x"));
 				teleport.setLocY(rset.getInt("loc_y"));
@@ -105,6 +106,7 @@ public class TeleportLocationTable
 				while (rset.next())
 				{
 					teleport = new L2TeleportLocation();
+					teleport.setDesc(rset.getString("Description"));
 					teleport.setTeleId(rset.getInt("id"));
 					teleport.setLocX(rset.getInt("loc_x"));
 					teleport.setLocY(rset.getInt("loc_y"));
@@ -143,6 +145,15 @@ public class TeleportLocationTable
 	public L2TeleportLocation getTemplate(int id)
 	{
 		return _teleports.get(id);
+	}
+	
+	public Map<Integer, L2TeleportLocation> getTeleports()
+	{
+		Map<Integer,L2TeleportLocation> teles = new FastMap<Integer, L2TeleportLocation>();
+		
+		teles.putAll(_teleports);
+		
+		return teles;
 	}
 	
 	@SuppressWarnings("synthetic-access")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="luna/museum/|net/sf/l2j/gameserver/model/actor/instance/L2MuseumStatueInstance.java" including="**/*.java" kind="src" output="L2TrinityGit/bin" path="java">
+	<classpathentry excluding="luna/museum/|net/sf/l2j/gameserver/model/actor/instance/L2MuseumStatueInstance.java|aluna/|aluna/datatables/|aluna/datatables/blueprint/|aluna/datatables/node/|aluna/drivers/|aluna/instance/|aluna/instance/world/|aluna/l2event/|aluna/l2event/events/|aluna/l2event/events/games/|aluna/l2event/events/worlds/|aluna/model/|aluna/model/controlers/|aluna/model/enums/|aluna/model/interfaces/|aluna/model/template/data/|aluna/model/template/enums/|aluna/model/template/event/|aluna/model/template/world/|aluna/model/world/|aluna/util/" including="**/*.java" kind="src" output="bin" path="java">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="optional" value="true"/>
@@ -35,6 +35,6 @@
 	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/lib/dom4j-2.0.3.jar"/>
 	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/lib/commons-io-2.8.0.jar"/>
-	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/java-engine.jar"/>
+	<classpathentry kind="lib" path="lib/java-engine.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

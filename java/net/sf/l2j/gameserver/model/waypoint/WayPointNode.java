@@ -291,8 +291,7 @@ public class WayPointNode extends L2Object
 	@Override
 	public ILocational getLocation()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return this.getLoc();
 	}
 	
 }

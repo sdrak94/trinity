@@ -143,12 +143,22 @@ private boolean _validate = true;
  * @param text
  * @param itemId
  */
+
+public NpcHtmlMessage()
+{
+	this(0x00);
+}
+
 public NpcHtmlMessage(int npcObjId, int itemId)
 {
 	_npcObjId = npcObjId;
 	_itemId = itemId;
 }
-
+public NpcHtmlMessage(final String filename)
+{
+	this(0x00);
+	setHtml(HtmCache.getInstance().getHtmForce(filename));
+}
 /**
  * @param _characters
  */

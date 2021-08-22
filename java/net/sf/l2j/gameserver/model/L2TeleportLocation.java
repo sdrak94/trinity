@@ -21,6 +21,7 @@ package net.sf.l2j.gameserver.model;
  */
 public class L2TeleportLocation
 {
+	private String _description;
 	private int _teleId;
 	private int _locX;
 	private int _locY;
@@ -29,6 +30,10 @@ public class L2TeleportLocation
 	private boolean _forNoble;
 
 
+	public void setDesc(String desc)
+	{
+		_description = desc;
+	}
 	/**
 	 * @param id
 	 */
@@ -77,7 +82,10 @@ public class L2TeleportLocation
 		_forNoble = val;
 	}
 
-
+	public String getDescription()
+	{
+		return _description;
+	}
 	/**
 	 * @return
 	 */

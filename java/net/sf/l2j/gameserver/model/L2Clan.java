@@ -2885,4 +2885,30 @@ public class L2Clan
 	{
 		setReputationScore(getReputationScore() + value, true);
 	}
+	/**
+	 * @return the online clan member count.
+	 */
+	public int getOnlineCount()
+	{
+		int count = 0;
+		for (final L2ClanMember temp : _members.values())
+		{
+			if (temp == null || !temp.isOnline())
+				continue;
+			count++;
+		}
+		return count;
+	}
+	
+	public int getOnlineCount(int level)
+	{
+		int count = 0;
+		for (final L2ClanMember temp : _members.values())
+		{
+			if (temp == null || !temp.isOnline() || temp.getLevel() < level)
+				continue;
+			count++;
+		}
+		return count;
+	}
 }

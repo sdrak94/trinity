@@ -1,21 +1,20 @@
 package luna.chill.model.enums;
 
+import net.sf.l2j.Config;
+
 public enum ESearchType
 {
-	Off("FF6363", -1),
-	Assist("LEVEL", 0),
-	Close("63FF63", 11400),
-	Near("63FF63", 11000),
-	Far("63FF63", 15800);
+	Off("FF6363"),
+	Assist("LEVEL"),
+	Close("63FF63"),
+	Near("63FF63"),
+	Far("63FF63");
 
 	private final String _color;
 
-	private final int _range;
-	
-	private ESearchType(final String color, final int range)
+	private ESearchType(final String color)
 	{
 		_color = color;
-		_range = range;
 	}
 	
 	public String getColor()
@@ -25,6 +24,19 @@ public enum ESearchType
 	
 	public int getRange()
 	{
-		return _range;
+		switch (this)
+		{
+			case Off:
+				return -1;
+			case Assist:
+				return 0;
+			case Close:
+				return Config.RANGE_CLOSE;
+			case Near:
+				return Config.RANGE_NEAR;
+			case Far:
+				return Config.RANGE_FAR;
+		}
+		return 0;
 	}
 }

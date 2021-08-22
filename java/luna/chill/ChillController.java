@@ -3,29 +3,44 @@ package luna.chill;
 import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 
+import gnu.trove.map.hash.TIntLongHashMap;
+import gnu.trove.map.hash.TLongObjectHashMap;
 import luna.IBypassHandler;
 import luna.PassportManager;
 import luna.PlayerPassport;
 import luna.chill.model.AutoChill;
+import luna.chill.model.enums.EActionPriority;
 import luna.chill.model.enums.EAutoAttack;
 import luna.chill.model.enums.EMoveType;
 import luna.chill.model.enums.ESearchType;
+import luna.chill.model.enums.EPanelOptions;
+import luna.custom.globalScheduler.ITimeTrigger;
+import luna.custom.globalScheduler.RealTimeController;
+import net.sf.l2j.Config;
+import net.sf.l2j.L2DatabaseFactory;
+import net.sf.l2j.gameserver.Shutdown;
+import net.sf.l2j.gameserver.Shutdown.Savable;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.clientpackets.RequestBypassToServer;
 
 
-public class ChillController implements IBypassHandler
+
+public class ChillController implements IBypassHandler, Savable, ITimeTrigger
 {
-	private static final int TICKS = 50;
+	private static final int TICKS = Config.CHILL_SLEEP_TICKS;
 	
-	public final ConcurrentHashMap<PlayerPassport, AutoChill> _playerChills = new ConcurrentHashMap<>();
+	private final TIntLongHashMap _playerCredit = new TIntLongHashMap();
+	
+	private final ConcurrentHashMap<PlayerPassport, AutoChill> _playerChills = new ConcurrentHashMap<>();
 	
 	private ChillController()
 	{
 		RequestBypassToServer.register(this);
-
+		Shutdown.addShutdownHook(this);
+		RealTimeController.registerHook(this);
 		ThreadPoolManager.getInstance().schedule(new ChillTask(), 1000);
+		load();
 	}
 	
 	private class ChillTask implements Runnable
@@ -33,15 +48,37 @@ public class ChillController implements IBypassHandler
 		@Override
 		public void run()
 		{
-			for (final var autoChill : _playerChills.values()) if (autoChill.isRunning())
+			final TLongObjectHashMap<AutoChill> hwids = new TLongObjectHashMap<>();
+			
+			for (final var autoChill : _playerChills.values())
 			{
-				try
+				final var player = autoChill.getActivePlayer();
+				
+				if (player != null && autoChill.isRunning())
 				{
-					autoChill.tick(TICKS);
-				}
-				catch (Exception e)
-				{
-					e.printStackTrace();
+					try
+					{
+						//final long hwid = player.getHWID();
+						//final var oldChill = hwids.get(hwid);
+						
+//						if  (oldChill != null)
+//						{
+//							player.sendMessage("Your HWID is already using AutoChill on a different session!");
+//							autoChill.setRunning(false);
+//							autoChill.render();
+//						}
+//						else
+//						{
+//							hwids.put(hwid, autoChill);
+//							autoChill.tick(TICKS);
+//						}
+
+						autoChill.tick(TICKS);
+					}
+					catch (Exception e)
+					{
+						e.printStackTrace();
+					}
 				}
 			}
 			
@@ -57,7 +94,7 @@ public class ChillController implements IBypassHandler
 		
 		if (autoChill == null)
 		{
-			autoChill = new AutoChill(playerPassport);
+			autoChill = new AutoChill(playerPassport, _playerCredit.get(playerPassport.getObjectId()));
 			_playerChills.put(playerPassport, autoChill);
 		}
 		
@@ -73,8 +110,14 @@ public class ChillController implements IBypassHandler
 	@Override
 	public boolean handleBypass(L2PcInstance player, String cmd)
 	{
+		if (!cmd.contains("chill"))
+			return false;
+		
 		final var autoChill = fetchChill(player);
 
+		final StringTokenizer st = new StringTokenizer(cmd);
+		st.nextToken();
+		
 		if (cmd.startsWith("chill_start"))
 		{
 			autoChill.setRunning(true);
@@ -101,9 +144,6 @@ public class ChillController implements IBypassHandler
 		}
 		else if (cmd.startsWith("chill_attack_type"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
 			if (st.hasMoreTokens())
 			{
 				String strType = st.nextToken();
@@ -116,9 +156,6 @@ public class ChillController implements IBypassHandler
 		}
 		else if (cmd.startsWith("chill_move_type"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
 			if (st.hasMoreTokens())
 			{
 				String strType = st.nextToken();
@@ -133,9 +170,6 @@ public class ChillController implements IBypassHandler
 		}
 		else if (cmd.startsWith("chill_search_type"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
 			if (st.hasMoreTokens())
 			{
 				final ESearchType searchType = Enum.valueOf(ESearchType.class, st.nextToken());
@@ -147,9 +181,6 @@ public class ChillController implements IBypassHandler
 		}
 		else if (cmd.startsWith("chill_party_target"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
 			if (st.hasMoreTokens())
 			{
 				String name = st.nextToken();
@@ -160,16 +191,11 @@ public class ChillController implements IBypassHandler
 				
 				autoChill.setPartyTarget(targetPassport);
 				autoChill.render();
-//				if (name.equalsIgnoreCase("Not Set"))
-					
 					
 			}
 		}
 		else if (cmd.startsWith("chill_action_edit"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-			
 			final int slot = Integer.parseInt(st.nextToken());
 			
 			int page = 0;
@@ -180,82 +206,114 @@ public class ChillController implements IBypassHandler
 		}
 		else if (cmd.startsWith("chill_action_set"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
+			if (st.hasMoreTokens())
+			{
+				final int slot = Integer.parseInt(st.nextToken());
+				if (st.hasMoreTokens())
+				{
+					final int acid = Integer.parseInt(st.nextToken());
+					
+					autoChill.setChillAction(slot, acid, true);
 
-			final int slot = Integer.parseInt(st.nextToken());
-			final int acid = Integer.parseInt(st.nextToken());
-			
-			autoChill.setChillAction(slot, acid, true);
-
-			autoChill.renderActionEdit(slot, 0);
+					autoChill.renderActionEdit(slot, 0);
+				}
+			}
 		}
 		else if (cmd.startsWith("chill_reuse_set"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
-			final int slot = Integer.parseInt(st.nextToken());
-			final double reus = Double.parseDouble(st.nextToken());
-			
-			final var action = autoChill.getChillAction(slot, true);
-			if (action != null)
-				action.setReuse(reus);
-			
-			autoChill.renderActionEdit(slot, 0);
+			if (st.hasMoreTokens())
+			{
+				final int slot = Integer.parseInt(st.nextToken());
+				if (st.hasMoreTokens())
+				{
+					final double reus = Double.parseDouble(st.nextToken());
+					
+					final var action = autoChill.getChillAction(slot, true);
+					if (action != null)
+						action.setReuse(reus);
+					
+					autoChill.renderActionEdit(slot, 0);
+				}
+			}
 		}
 		else if (cmd.startsWith("chill_hpp_set"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
-			final int slot = Integer.parseInt(st.nextToken());
-			final double userHp = Double.parseDouble(st.nextToken());
-			
-			final var action = autoChill.getChillAction(slot, true);
-			if (action != null)
-				action.setUserHP(userHp);
-			
-			autoChill.renderActionEdit(slot, 0);
+			if (st.hasMoreTokens())
+			{
+				final int slot = Integer.parseInt(st.nextToken());
+				if (st.hasMoreTokens())
+				{
+					final double userHp = Double.parseDouble(st.nextToken());
+					
+					final var action = autoChill.getChillAction(slot, true);
+					if (action != null)
+						action.setUserHP(userHp);
+					
+					autoChill.renderActionEdit(slot, 0);
+				}
+			}
+		}
+		else if (cmd.startsWith("chill_tpp_set"))
+		{
+			if (st.hasMoreTokens())
+			{
+				final int slot = Integer.parseInt(st.nextToken());
+				if (st.hasMoreTokens())
+				{
+					final double targHp = Double.parseDouble(st.nextToken());
+					
+					final var action = autoChill.getChillAction(slot, true);
+					if (action != null)
+						action.setTargetHP(targHp);
+					
+					autoChill.renderActionEdit(slot, 0);
+				}
+			}
 		}
 		else if (cmd.startsWith("chill_slot_set"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-
-			final int slot0 = Integer.parseInt(st.nextToken());
-			final int slot1 = Integer.parseInt(st.nextToken()) - 1;
-			
-			final var action = autoChill.getChillAction(slot0, true);
-			
-			if (autoChill.swapChillAction(slot0, slot1, action.isSkill()))
-				autoChill.renderActionEdit(slot1, 0);
+			if (st.hasMoreTokens())
+			{
+				final int slot0 = Integer.parseInt(st.nextToken());
+				if (st.hasMoreTokens())
+				{
+					final int slot1 = Integer.parseInt(st.nextToken()) - 1;
+					
+					final var action = autoChill.getChillAction(slot0, true);
+					
+					final var newPriority = EActionPriority.values()[slot1];
+					if (newPriority == EActionPriority.Remove)
+					{
+						autoChill.deleteChillAction(slot0, action.isSkill());
+						autoChill.render();
+					}
+					else if (autoChill.swapChillAction(slot0, slot1, action.isSkill()))
+						autoChill.renderActionEdit(slot1, 0);
+				}
+			}
 		}
-		else if (cmd.startsWith("chill_mobs"))
+		else if (cmd.startsWith("chill_open_menu"))
 		{
-			autoChill.renderBannableMobs();
+			if (st.hasMoreTokens())
+			{
+				final int ord = Integer.parseInt(st.nextToken()) - 1;
+				final var panelOptions = EPanelOptions.values();
+				if (ord < panelOptions.length)
+				{
+					final var panelOption = panelOptions[ord];
+					panelOption.render(autoChill);
+				}
+			}
 		}
-		else if (cmd.startsWith("chill_ban_mob"))
+		else if (cmd.startsWith("chill_filter_target"))
 		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-			
-			final int npcId = Integer.parseInt(st.nextToken());
-			
-
-			autoChill.banMob(npcId, true);
+			if (st.hasMoreTokens())
+			{
+				final int npcId = Integer.parseInt(st.nextToken());
+				autoChill.toggleFilteredTarget(npcId);
+			}
 		}
 
-		else if (cmd.startsWith("chill_unban_mob"))
-		{
-			final StringTokenizer st = new StringTokenizer(cmd);
-			st.nextToken();
-			
-			final int npcId = Integer.parseInt(st.nextToken());
-			
-
-			autoChill.banMob(npcId, false);
-		}
 		return false;
 	}
 	
@@ -278,7 +336,87 @@ public class ChillController implements IBypassHandler
 	@Override
 	public void exception(Exception e)
 	{
-		e.printStackTrace();
+		//e.printStackTrace();
+	}
+
+	@Override
+	public void store()
+	{
+		final long t0 = System.currentTimeMillis();
+		
+		try (final var con = L2DatabaseFactory.getConnectionS();
+			 final var pst = con.prepareStatement("INSERT INTO character_chill_credit (owner_id, credits) VALUES (?, ?) ON DUPLICATE KEY UPDATE credits = ?"))
+		{
+			con.setAutoCommit(false);
+			for (final var autoChillSet : _playerChills.entrySet())
+			{
+				final var playerPassport = autoChillSet.getKey();
+				final var autoChill = autoChillSet.getValue();
+
+				pst.setInt(1, playerPassport.getObjectId());
+				pst.setLong(2, autoChill.getCredit());
+				pst.setLong(3, autoChill.getCredit());
+				
+				pst.addBatch();
+				
+			}
+			
+			
+			final int total = pst.executeBatch().length;
+
+			con.commit();
+			
+			final long t1 = System.currentTimeMillis();
+			
+			System.err.println("Updates " + total + " player Auto Chill credits in " + (t1 - t0) + " ms!!!" );
+			
+			
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public void load()
+	{
+		try (final var con = L2DatabaseFactory.getConnectionS();
+			 final var  st = con.createStatement();
+			 final var  rs = st.executeQuery("SELECT * FROM character_chill_credit"))
+		{
+			while (rs.next())
+			{
+				final int ownerId = rs.getInt("owner_id");
+				final var credit = rs.getLong("credits");
+				
+				_playerCredit.put(ownerId, credit);
+			}
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void notify(String dayName, String timeString)
+	{
+		if (timeString.equals(Config.DAILY_CREDIT_TIME))
+		{
+			for (final var autoChill : _playerChills.values())
+			{
+				autoChill.addCredit(Config.DAILY_CREDIT);
+				final var player = autoChill.getActivePlayer();
+				if (player != null)
+					player.sendMessage(String.format("You have been rewarded with %.2f hours of daily auto chill credit.", Config.DAILY_CREDIT / 3_600_000D));
+			}
+		}
+	}
+
+	@Override
+	public void notify(int day, String trigger)
+	{
 	}
 
 }
+

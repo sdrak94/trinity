@@ -43,4 +43,11 @@ public class ScheduleExecutioner implements ITimeTrigger
 	{
 		return InstanceHolder._instance;
 	}
+
+	@Override
+	public void notify(String dayName, String timeString)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }

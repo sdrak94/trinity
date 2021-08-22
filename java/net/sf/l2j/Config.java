@@ -55,6 +55,22 @@ public final class Config
 	public static final String					LUNA									= "./config/Luna.properties";
 	private static final String					DONATION_CONFIG_FILE					= "./config/Donation.ini";
 	public static final String					SMART_CB								= "./config/SmartCB.properties";
+	public static final String					CHILL_FILE								= "./config/chill.properties";
+	// --------------------------------------------------
+	// Chill settings
+	// --------------------------------------------------
+	/** Auto Chill */
+	public static int							CHILL_SLEEP_TICKS;
+	public static int							DAILY_CREDIT;
+	public static int							LAG_NEW_TARGET;
+	public static int							LAG_DIE_TARGET;
+	public static int							LAG_KIL_TARGET;
+	public static int							LAG_ASI_TARGET;
+	public static int							FOLLOW_INIT_RANGE;
+	public static int							RANGE_CLOSE;
+	public static int							RANGE_NEAR;
+	public static int							RANGE_FAR;
+	public static String						DAILY_CREDIT_TIME;
 	// Smart Community Board Definitions
 	// --------------------------------------------------
 	public static int							TOP_PLAYER_ROW_HEIGHT;
@@ -386,6 +402,7 @@ public final class Config
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_SERVER_BYPASS			= new FloodProtectorConfig("ServerBypassFloodProtector");
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_MULTISELL				= new FloodProtectorConfig("MultiSellFloodProtector");
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_TRANSACTION				= new FloodProtectorConfig("TransactionFloodProtector");
+	public static boolean						SERVER_LOCAL							= false;
 	public static boolean						ALLOW_DISCARDITEM;
 	public static int							AUTODESTROY_ITEM_AFTER;
 	public static int							HERB_AUTO_DESTROY_TIME;
@@ -413,11 +430,9 @@ public final class Config
 	public static boolean						GRIDS_ALWAYS_ON;
 	public static int							GRID_NEIGHBOR_TURNON_TIME;
 	public static int							GRID_NEIGHBOR_TURNOFF_TIME;
-
-	public static Path GEODATA_PATH;
-	public static boolean TRY_LOAD_UNSPECIFIED_REGIONS;
-	public static Map<String, Boolean> GEODATA_REGIONS;
-	
+	public static Path							GEODATA_PATH;
+	public static boolean						TRY_LOAD_UNSPECIFIED_REGIONS;
+	public static Map<String, Boolean>			GEODATA_REGIONS;
 	public static int							GEODATA;
 	public static boolean						GEODATA_CELLFINDING;
 	public static boolean						FORCE_GEODATA;
@@ -1240,6 +1255,7 @@ public final class Config
 					MAXIMUM_ONLINE_USERS = Integer.parseInt(serverSettings.getProperty("MaximumOnlineUsers", "100"));
 					MIN_PROTOCOL_REVISION = Integer.parseInt(serverSettings.getProperty("MinProtocolRevision", "660"));
 					MAX_PROTOCOL_REVISION = Integer.parseInt(serverSettings.getProperty("MaxProtocolRevision", "665"));
+					SERVER_LOCAL = Boolean.parseBoolean(serverSettings.getProperty("ServerLocal", "True"));
 					if (MIN_PROTOCOL_REVISION > MAX_PROTOCOL_REVISION)
 					{
 						throw new Error("MinProtocolRevision is bigger than MaxProtocolRevision in server configuration file.");
@@ -1838,7 +1854,6 @@ public final class Config
 					GRIDS_ALWAYS_ON = Boolean.parseBoolean(General.getProperty("GridsAlwaysOn", "False"));
 					GRID_NEIGHBOR_TURNON_TIME = Integer.parseInt(General.getProperty("GridNeighborTurnOnTime", "1"));
 					GRID_NEIGHBOR_TURNOFF_TIME = Integer.parseInt(General.getProperty("GridNeighborTurnOffTime", "90"));
-					
 					GEODATA_PATH = Paths.get(General.getString("GeoDataPath", "./data/geodata"));
 					TRY_LOAD_UNSPECIFIED_REGIONS = General.getBoolean("TryLoadUnspecifiedRegions", true);
 					GEODATA_REGIONS = new HashMap<>();
@@ -1853,7 +1868,6 @@ public final class Config
 							}
 						}
 					}
-					
 					GEODATA = Integer.parseInt(General.getProperty("GeoData", "0"));
 					GEODATA_CELLFINDING = Boolean.parseBoolean(General.getProperty("CellPathFinding", "False"));
 					FORCE_GEODATA = Boolean.parseBoolean(General.getProperty("ForceGeodata", "True"));
@@ -2190,14 +2204,11 @@ public final class Config
 					HWID_FARMZONES_CHECK = Boolean.parseBoolean(Luna.getProperty("hwidfarmzone_check", "true"));
 					HWID_EVENTS_CHECK = Boolean.parseBoolean(Luna.getProperty("hwidevents_check", "true"));
 					HWID_EVENTZONES_CHECK = Boolean.parseBoolean(Luna.getProperty("hwideventzone_check", "true"));
-					
 					HWID_FARMWHILEEVENT_CHECK = Boolean.parseBoolean(Luna.getProperty("hwidfarmwhileevent_check", "true"));
 					EVENTS_LIMIT_IPS = Boolean.parseBoolean(Luna.getProperty("events_limit_ips_enable", "true"));
 					EVENTS_LIMIT_IPS_NUM = Integer.parseInt(Luna.getProperty("events_max_ips", "3"));
 					ENABLE_OLD_NIGHT = Boolean.parseBoolean(Luna.getProperty("enable_old_night", "true"));
 					ENABLE_OLD_OLY = Boolean.parseBoolean(Luna.getProperty("enable_old_oly", "true"));
-					
-					
 					SYNERGY_CHANCE_ON_PVP = Integer.parseInt(Luna.getProperty("synergy_chance_on_pvp", "35"));
 					CHANCE_EFFECT_DISPLAY = Integer.parseInt(Luna.getProperty("chance_effect_display_events", "25"));
 					ENABLE_SKILL_ANIMATIONS = Boolean.parseBoolean(Luna.getProperty("enable_skill_animations", "false"));
@@ -2250,9 +2261,8 @@ public final class Config
 					ADEN_PVPS = Integer.parseInt(Luna.getProperty("aden_pvps", "1000"));
 					ADEN_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("aden_support_pvps", "500"));
 					ADEN_LEVELS = Integer.parseInt(Luna.getProperty("aden_level", "91"));
-					//logger
+					// logger
 					ENABLE_SUBCLASS_LOGS = Boolean.parseBoolean(Luna.getProperty("enable_subclass_logs", "true"));
-					
 				}
 				catch (Exception e)
 				{
@@ -2540,6 +2550,29 @@ public final class Config
 				{
 					e.printStackTrace();
 					throw new Error("Failed to Load " + RATES_CONFIG_FILE + " File.");
+				}
+				try
+				{
+					L2Properties chill = new L2Properties();
+					is = new FileInputStream(new File(CHILL_FILE));
+					chill.load(is);
+					CHILL_SLEEP_TICKS = Integer.parseInt(chill.getProperty("SleepTicks", "333"));
+					DAILY_CREDIT = Integer.parseInt(chill.getProperty("DailyCredit", "14400000"));
+					LAG_NEW_TARGET = Integer.parseInt(chill.getProperty("LagNewTarget", "2000"));
+					LAG_DIE_TARGET = Integer.parseInt(chill.getProperty("LagDieTarget", "1000"));
+					LAG_KIL_TARGET = Integer.parseInt(chill.getProperty("LagKilTarget", "1000"));
+					LAG_ASI_TARGET = Integer.parseInt(chill.getProperty("LagAsiTarget", "1000"));
+					FOLLOW_INIT_RANGE = Integer.parseInt(chill.getProperty("FollowInitRange", "400"));
+					RANGE_CLOSE = Integer.parseInt(chill.getProperty("RangeClose", "400"));
+					RANGE_NEAR = Integer.parseInt(chill.getProperty("RangeNear", "800"));
+					RANGE_FAR = Integer.parseInt(chill.getProperty("RangeFar", "1400"));
+					DAILY_CREDIT_TIME = chill.getProperty("DailyCreditTime", "2:00");
+				}
+				catch (Exception e)
+				{
+					System.out.println("FIXME: CHILL.PROPERTIES ERROR");
+					e.printStackTrace();
+					System.exit(1);
 				}
 				// Load L2JMod Properties file (if exists)
 				try

@@ -473,7 +473,7 @@ public abstract class AbstractEnchantPacket extends L2GameClientPacket
 			{
 				chance += supportItem.getChanceAdd();
 			}
-			chance += enchantItem.getItem().getWeight();
+			//chance += enchantItem.getItem().getWeight();
 			switch (_scrollLvl)
 			{
 				case 0:

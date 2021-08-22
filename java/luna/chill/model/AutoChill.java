@@ -7,11 +7,14 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
+import gnu.trove.set.hash.TIntHashSet;
 import luna.PlayerPassport;
 import luna.chill.model.enums.EActionPriority;
 import luna.chill.model.enums.EAutoAttack;
 import luna.chill.model.enums.EMoveType;
+import luna.chill.model.enums.EPanelOptions;
 import luna.chill.model.enums.ESearchType;
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.datatables.IconsTable;
@@ -22,7 +25,6 @@ import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.Location;
 import net.sf.l2j.gameserver.model.actor.L2Attackable;
 import net.sf.l2j.gameserver.model.actor.L2Character;
-import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.actor.instance.L2MonsterInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.serverpackets.ExServerPrimitive;
@@ -30,14 +32,13 @@ import net.sf.l2j.gameserver.network.serverpackets.MyTargetSelected;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.StatusUpdate;
 import net.sf.l2j.gameserver.network.serverpackets.ValidateLocation;
-import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
 import net.sf.l2j.gameserver.util.Util;
 
 
 
 public class AutoChill implements Runnable
 {
-	private final long INIT_TICKS = 14 * 3_600_000;
+	private final long INIT_TICKS = 4 * 3_600_000;
 	
 	private final PlayerPassport _playerPassport;
 	
@@ -59,14 +60,14 @@ public class AutoChill implements Runnable
 	private final ChillAction[] _chillItems  = new ChillAction[2];
 	
 
-	private final DistanceComperator distanceComperator = new DistanceComperator();
+	private final TargetComparator targetComperator = new TargetComparator();
 	private final TargetFilter targetFilter = new TargetFilter();
+	private final VTargetFilter vtargetFilter = new VTargetFilter();
 	private final ActionFilter actionFilter = new ActionFilter();
-	private final SkillFilter skillFilter = new SkillFilter();
-	private final AvailSkillActionFilter availSkillFilter = new AvailSkillActionFilter();
+
+	private final TIntHashSet _filteredNpcIds = new TIntHashSet();
 	
-	private final ArrayList<Integer> listedMonsters = new ArrayList<Integer>();
-	private final ArrayList<Integer> bannedMonsters = new ArrayList<Integer>();
+	private final AvailSkillActionFilter availSkillFilter = new AvailSkillActionFilter();
 	
 	public void setChillAction(int slot, int actionId, boolean isSkill)
 	{
@@ -105,11 +106,30 @@ public class AutoChill implements Runnable
 		return true;
 	}
 	
-	public AutoChill(final PlayerPassport playerPassport)
+	public void deleteChillAction(final int slot0, final boolean isSkill)
+	{
+		final var chillActions = isSkill ? _chillSkills : _chillItems;
+		chillActions[slot0] = null;
+	}
+	
+	public AutoChill(final PlayerPassport playerPassport, final long remainingTicks)
 	{
 		_playerPassport = playerPassport;
-		
+		if (remainingTicks > 0)
+			_remainingTicks = remainingTicks;
+		else
+			_remainingTicks = INIT_TICKS;
 		reset();
+	}
+	
+	public void addCredit(final long ticks)
+	{
+		_remainingTicks += ticks;
+	}
+	
+	public long getCredit()
+	{
+		return _remainingTicks;
 	}
 	
 	public void tick(final long ticks)
@@ -117,10 +137,11 @@ public class AutoChill implements Runnable
 
 		final var player = getActivePlayer();
 		
-		if (_remainingTicks - ticks < 0 || player == null)
+		if (_remainingTicks - ticks < 0 || player == null || player.isDead())
 		{
 			_remainingTicks = 0;
 			setRunning(false);
+			render();
 			return;
 		}
 
@@ -142,37 +163,42 @@ public class AutoChill implements Runnable
 				player.breakAttack();
 			
 			player.setTarget(null);
-			_lagTicks += 0;
+			_lagTicks += Config.LAG_DIE_TARGET;
 			return;
 		}
 		
 		final var party = player.getParty();
 		
-		if (party == null)
+		final var assistPlayer = getAssistPlayer();
+		if (assistPlayer != null && !assistPlayer.isSamePartyWith(player))
+			_assistPassport = null;
+		
+		if (party == null || _assistPassport == null)
 		{
+			boolean render = false;
 			if (_moveType == EMoveType.Follow_Target)
 			{
 				setMoveType(EMoveType.Not_Set);
-				render();
+				render = true;
 			}
 			
 			if (_searchType == ESearchType.Assist)
 			{
 				setSearchTarget(ESearchType.Off);
-				render();
+				render = true;
 			}
+			
+			if (render)
+				render();
 		}
-		
-		final var assistPlayer = getAssistPlayer();
-		if (assistPlayer != null && !assistPlayer.isSamePartyWith(player))
-			_assistPassport = null;
+
+		final var currTarget = player.getTargetChar();
 		
 		if (_searchType != ESearchType.Off)
 		{
 			if (_moveType == EMoveType.Not_Set)
 				renderRange();
 			
-			final var currTarget = player.getTargetChar();
 
 			if (currTarget != null && currTarget.isAlikeDead())
 			{
@@ -180,17 +206,11 @@ public class AutoChill implements Runnable
 				return;
 			}
 			
-			if (currTarget == null || !(currTarget instanceof L2MonsterInstance) )
+			else if (currTarget == null || !(currTarget instanceof L2MonsterInstance))
 			{
 				final var newTarget = searchTarget();
 				if (newTarget != null)
 				{
-//					if (_lastSavedLocation != null &&_moveType == EMoveType.Saved_Location)
-//					{
-//						final int targetDist = (int) Util.calculateDistance(_lastSavedLocation, newTarget, true);
-//						if (targetDist > _searchType.getRange())
-//							return;
-//					}
 					
 					player.setTarget(newTarget);
 					player.sendPacket(new MyTargetSelected(player, newTarget));
@@ -200,9 +220,32 @@ public class AutoChill implements Runnable
 					player.sendPacket(su);
 
 					player.sendPacket(new ValidateLocation(player));
-					_lagTicks += 0;
+					_lagTicks += Config.LAG_NEW_TARGET;
 					return;
 				}
+			}
+		}
+		else if (assistPlayer != null)
+		{
+			if (_moveType == EMoveType.Follow_Target && !player.isMoving())  
+			{
+				if (player.isInsideRadius(assistPlayer, 500, false) || player.isInCombat())
+				{
+					player.getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE);
+				}
+				else
+				{
+					player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, assistPlayer);
+					return;
+				}
+				
+			}
+			
+			if (currTarget == null)
+			{
+				player.setTarget(assistPlayer);
+				player.sendPacket(new MyTargetSelected(player, assistPlayer));
+				_lagTicks += Config.LAG_ASI_TARGET;
 			}
 		}
 		
@@ -211,6 +254,14 @@ public class AutoChill implements Runnable
 		if (actualTarget == null)
 			return;
 		
+		final var playerTarget = actualTarget.getActingPlayer();
+		if (playerTarget != null && playerTarget.isSameHWID(player))
+		{
+			player.sendMessage("Its not allowed to auto chill targets from the same IP!");
+			setRunning(false);
+			render();
+		}
+		
 		if (_autoAttack == EAutoAttack.Always || (player.isAllSkillsDisabled() && _autoAttack == EAutoAttack.Skills_Reuse))
 		{
 			startAutoAttack(actualTarget);
@@ -218,8 +269,6 @@ public class AutoChill implements Runnable
 		}
 		else
 		{
-			
-			
 			final var avail = getAvailSkillActions().filter(availSkillFilter).findFirst();
 			
 			if (avail != null && avail.isPresent())
@@ -234,10 +283,6 @@ public class AutoChill implements Runnable
 						{
 							player.useMagic(availSkill, false, false);
 							availAction.initReuse();
-						}
-						if(!GeoData.getInstance().canSeeTarget(player, player.getTarget()))
-						{
-							startAutoAttack(actualTarget);
 						}
 					}
 				}
@@ -258,7 +303,7 @@ public class AutoChill implements Runnable
 	
 	public void onKill(final L2Character target)
 	{
-		_lagTicks += 0;
+		_lagTicks += Config.LAG_KIL_TARGET;
 	}
 	
 	private void startAutoAttack(final L2Character actualTarget)
@@ -266,20 +311,6 @@ public class AutoChill implements Runnable
 		final var player = getActivePlayer();
 		if (player != null && player.getTarget() instanceof L2MonsterInstance)
 			player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, actualTarget);
-		if(!GeoData.getInstance().canSeeTarget(player, player.getTarget()))
-		{
-			player.setTarget(null);
-		}
-	}
-	
-	private class SkillFilter implements Predicate<L2Skill>
-	{
-		@Override
-		public boolean test(L2Skill t)
-		{
-			return true;
-		}
-		
 	}
 	
 	private Stream<ChillAction> getAvailSkillActions()
@@ -308,37 +339,18 @@ public class AutoChill implements Runnable
 		
 		return assistPlayer.getTargetChar();
 	}
-	public boolean canInterract(L2PcInstance player, L2Attackable attackable)
-	{
-		if(bannedMonsters.contains(attackable.getNpcId())	)
-		{
-			return false;
-		}
-		return GeoData.getInstance().canMove(player, attackable);
-	}
-	
+
 	public L2Character getTargetByRange(final int range)
 	{
 		final var player = getActivePlayer();
 		
-		return player.getKnownList().getKnownTypeInRadius(L2Attackable.class, range, bannedMonsters).stream().
-		filter(L2Attackable::isAlikeAlive).
-		filter((attackable) -> {return canInterract(player, attackable)
-		;}).
-		sorted(new DistanceComperator()).
+		return player.getKnownList().getKnownType(L2Attackable.class).stream().
+		filter(targetFilter).
+		sorted(targetComperator).
+		
 		findFirst().orElse(null);
 	}
-//	public L2Character getTargetByRange(final int range)
-//	{
-//		final var player = getActivePlayer();
-//		
-//		return player.getKnownList().getKnownTypeInRadius(L2Attackable.class, range).stream().
-//		filter(L2Attackable::isAlikeAlive).
-//		filter((attackable) -> {return GeoData.getInstance().canMove(player, attackable);}).
-//		sorted(new DistanceComperator()).
-//		
-//		findFirst().orElse(null);
-//	}
+	
 	public ILocational getSearchLocation()
 	{
 		final var loc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : getActivePlayer();
@@ -347,19 +359,41 @@ public class AutoChill implements Runnable
 	
 	private class TargetFilter implements Predicate<L2Attackable>
 	{
+		
 		@Override
 		public boolean test(L2Attackable target)
 		{
 			if (target.isAlikeDead())
 				return false;
-			//if (target.getMaxHp() > 100_000 && !getActivePlayer().isInParty())
-			//	return false;
-
+			
+			if (!target.isAutoAttackable(getActivePlayer()))
+				return false;
+			
+			if (_filteredNpcIds.contains(target.getNpcId()))
+				return false;
+			
 			final var loc = getSearchLocation();
 			if (!target.isInsideRadius(loc, _searchType.getRange(), true, true))
 				return false;
 			
 			if (!GeoData.getInstance().canSeeTarget(target, loc))
+				return false;
+			
+			return true;
+		}
+		
+	}
+	
+	private class VTargetFilter implements Predicate<L2Attackable>
+	{
+		
+		@Override
+		public boolean test(L2Attackable target)
+		{
+			if (target.isAlikeDead())
+				return false;
+			
+			if (!target.isAutoAttackable(getActivePlayer()))
 				return false;
 			
 			return true;
@@ -386,6 +420,9 @@ public class AutoChill implements Runnable
 			if (!t.isUserHp(player))
 				return false;
 			
+			final var targetPlayer = player.getTargetChar();
+			if (targetPlayer != null && !t.isTargetHp(targetPlayer))
+				return false;
 			
 			return true;
 		}
@@ -407,7 +444,7 @@ public class AutoChill implements Runnable
 			
 			final var player = getActivePlayer();
 			
-			if (!player.checkDoCastConditions(skill))
+			if (!player.testDoCastConditions(skill))
 				return false;
 			
 			return true;
@@ -417,7 +454,7 @@ public class AutoChill implements Runnable
 	
 	
 	
-	private class DistanceComperator implements Comparator<L2Character>
+	private class TargetComparator implements Comparator<L2Character>
 	{
 		@Override
 		public int compare(L2Character o1, L2Character o2)
@@ -431,7 +468,6 @@ public class AutoChill implements Runnable
 				return 1;
 			return -1;
 		}
-		
 	}
 
 	public L2PcInstance getActivePlayer()
@@ -550,15 +586,12 @@ public class AutoChill implements Runnable
 		renderRange();
 	}
 	
-//	private static String STOPPED = "<td align=center><button value=\"Start\" action=\"bypass chill_start\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td align=center><font name=hs10 color=\"FF6363\">Stopped</font></td>";
-//	private static String RUNNING = "<td align=center><font name=hs10 color=\"63FF63\">Running</font></td><td align=center><button value=\"Stop\" action=\"bypass chill_stop\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>";
+	private static final String STOPPED = "<td align=center><button value=\"Start\" action=\"bypass chill_start\" width=70 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td align=center><font name=hs12 color=\"FF6363\">Stopped</font></td>";
+	private static final String RUNNING = "<td align=center><font name=hs12 color=\"63FF63\">Running</font></td><td align=center><button value=\"Stop\" action=\"bypass chill_stop\" width=70 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>";
+
 	
 	public void render()
 	{
-		String STOPPED = "<td align=center><button value=\"Start\" action=\"bypass chill_start\" width=70 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td align=center><font name=hs12 color=\"FF6363\">Stopped</font></td>";
-		String RUNNING = "<td align=center><font name=hs12 color=\"63FF63\">Running</font></td><td align=center><button value=\"Stop\" action=\"bypass chill_stop\" width=70 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>";
-
-		
 		final var player = getActivePlayer();
 		if (player != null)
 		{
@@ -570,6 +603,7 @@ public class AutoChill implements Runnable
 			npcHtml.replace("%attack%", buildAutoAttack());
 			npcHtml.replace("%move%", buildMoveType());
 			npcHtml.replace("%party%", buildParty());
+			npcHtml.replace("%opt%", buildOptions());
 			
 			npcHtml.replace("%search%", buildSearch());
 			npcHtml.replace("%time%", buildTime());
@@ -582,95 +616,63 @@ public class AutoChill implements Runnable
 		
 	}
 	
-	public void banMob(int npcId, boolean ban)
+	public void renderTargetFilter()
 	{
-		L2NpcTemplate npc = NpcTable.getInstance().getNpcs().get(npcId);
-
-		final var player = getActivePlayer();
+		final String filteredNpcTemplate = "<tr><td><button value=\"\" action=\"bypass chill_filter_target %d\" width=32 height=32 back=\"L2UI_ct1.MiniMap_DF_%s_over\" fore=\"L2UI_ct1.MiniMap_DF_%s\"></td><td><font name=\"hs12\" color=\"%s\">Lv.%d %s</font></td></tr>";
 		
-		if(npc == null)
-		{
-			player.sendMessage("There was an error with the selected npc");
+		final var player = getActivePlayer();
+		if (player == null)
 			return;
-		}
-		if(ban)
-		{
-			if(!bannedMonsters.contains(npc))
-			{
-				bannedMonsters.add(npc.getNpcId());
+		
+		final var npcHtml = new NpcHtmlMessage(1);
+		npcHtml.setFile("data/html/custom/chill/chillfilter.htm");
 
-				player.sendMessage("You have disabled " + npc.getName() +" from your target list.");
-			}
-		}
-		else
-		{
-			if(bannedMonsters.contains(npcId))
-			{
-				for (int i = 0; i < bannedMonsters.size(); i++)
-				{
-					if (bannedMonsters.get(i) == npcId)
-					{
-						bannedMonsters.remove(i);
-						break;
-					}
-					else
-						continue;
-				}
-				//bannedMonsters.remove(npcId);
-				player.sendMessage("You have enabled " + npc.getName() +" on your target list.");
-			}
-		}
-		renderBannableMobs();
-	}
-	public void renderBannableMobs()
-	{
-		StringBuilder sb = new StringBuilder(1024);
+		final int range = (_searchType.getRange() < 2 ? 2000 : _searchType.getRange()) / 2;
 		
-		final var player = getActivePlayer();
-		if (player != null)
+		final int[] closeNpcIds = player.getKnownList().getKnownTypeInRadius(L2Attackable.class, range)
+		.stream()
+		.filter(vtargetFilter)
+//		.sorted(targetComperator)
+		.mapToInt(L2Attackable::getNpcId)
+		.sorted()
+		.distinct()
+		.toArray();
+		
+		final StringBuilder sb = new StringBuilder(2048);
+		
+		for (final var closeNpcId : closeNpcIds)
 		{
-			if(_searchType == ESearchType.Assist || _searchType == ESearchType.Off)
-			{
-				player.sendMessage("You need to set a search range.");
-				render();
-				return;
-			}
+			final var npcTemplate = NpcTable.getInstance().getTemplate(closeNpcId);
+			if (npcTemplate == null)
+				continue;
 			
-			final var npcHtml = new NpcHtmlMessage(1);
-			npcHtml.setFile("data/html/custom/chill/autochillmobs.htm");
-			listedMonsters.clear();
-			for(L2Npc npc : player.getKnownList().getKnownMonsterssInRadius(_searchType.getRange()))
-			{
-				if(npc instanceof L2MonsterInstance)
-				{
-					if (listedMonsters.contains(npc.getNpcId()))
-						continue;
-					else
-					{
-						listedMonsters.add(npc.getNpcId());	
-					}
-				}
-			}
-			listedMonsters.stream().forEach(mob -> {
-				sb.append("<tr>"+
-				   "<td align=left>"+
-					 String.format("<button value=\"\" action=\"%s\" width=32 height=32 back=\"L2UI_ct1.MiniMap_DF_%s_over\" fore=\"L2UI_ct1.MiniMap_DF_%s\">", bannedMonsters.contains(mob) ? "bypass chill_unban_mob "  + mob : "bypass chill_ban_mob "  + mob, bannedMonsters.contains(mob) ? "PlusBtn_Blue" : "MinusBtn_Red", bannedMonsters.contains(mob) ? "PlusBtn_Blue" : "MinusBtn_Red" )+
-				   "</td>"+
-				   "<td align=left>"+
-				   		String.format("<font name=\"hs15\" color=\"%s\">"+ NpcTable.getInstance().getTemplate(mob).getName() +" </font>", bannedMonsters.contains(mob) ? "863737" : "2E807C") +
-				   "</td>"+
-				"</tr>");
-				
-			});
-			
-			//state
-			npcHtml.replace("%npcs%", sb.toString());
-			
-			player.sendPacket(npcHtml);
+			final boolean isFiltered = _filteredNpcIds.contains(closeNpcId);
+			sb.append(String.format(filteredNpcTemplate, npcTemplate.getNpcId(), isFiltered ? "PlusBtn_Blue" : "MinusBtn_Blue", isFiltered ? "PlusBtn_Blue" : "MinusBtn_Blue", isFiltered ? "863737" : "2E807C", npcTemplate.getLevel(), npcTemplate.getName()));
 		}
 		
+		if (closeNpcIds.length > 11)
+			npcHtml.replace("noscrollbar", "");
+
+		npcHtml.replace("%filt%", sb.toString());
+		npcHtml.replace("%r%", String.valueOf(range));
+		
+		player.sendPacket(npcHtml);
 	}
 	
+	public void toggleFilteredTarget(final int npcTemplateId)
+	{
+		final var npcTemplate = NpcTable.getInstance().getTemplate(npcTemplateId);
+		if (npcTemplate != null)
+		{
+			if (_filteredNpcIds.contains(npcTemplateId))
+				_filteredNpcIds.remove(npcTemplateId);
+			else
+				_filteredNpcIds.add(npcTemplateId);
+			
+			renderTargetFilter();
+		}
+	}
+
 	private String buildTime()
 	{
 		final long hours = _remainingTicks / 3_600_000;
@@ -757,8 +759,15 @@ public class AutoChill implements Runnable
 		return sb.toString();
 	}
 	
+	private String buildOptions()
+	{
+		String opts = "";
+		for (final var opt : EPanelOptions.values())
+			opts += opt.toString();
+		return opts;
+	}
+	
 	private static final String actionTemplate = "<td align=center width=50><table height=34 cellspacing=0 cellpadding=0 background=%s><tr><td><table cellspacing=0 cellpadding=0><tr><td><button action=\"bypass chill_action_edit %s\" width=34 height=34 back=L2UI_CH3.menu_outline_Down fore=L2UI_CH3.menu_outline></td></tr></table></td></tr></table></td>";
-	private static final String actionTemplate2 = "<td align=center width=50><table height=34 cellspacing=0 cellpadding=0><tr><td><table cellspacing=0 cellpadding=0><tr><td><button action=\"bypass chill_action_edit %s\" width=32 height=32 back=%s fore=%s></td></tr></table></td></tr></table></td>";
 
 	private String buildActions(final ChillAction[] chillActions)
 	{
@@ -769,9 +778,9 @@ public class AutoChill implements Runnable
 		for (final var chillAction : chillActions)
 		{
 			if (chillAction != null)
-				sb.append(String.format(actionTemplate2, String.valueOf(aid++), chillAction.getIcon(), chillAction.getIcon()));
+				sb.append(String.format(actionTemplate, chillAction.getIcon(), String.valueOf(aid++)));
 			else
-				sb.append(String.format(actionTemplate2, String.valueOf(aid++), "L2UI_CT1.Inventory_DF_CloakSlot_Disable", "L2UI_CT1.Inventory_DF_CloakSlot_Disable"));
+				sb.append(String.format(actionTemplate, "L2UI_CT1.Inventory_DF_CloakSlot_Disable", String.valueOf(aid++)));
 		}
 		
 		return sb.toString();
@@ -806,8 +815,7 @@ public class AutoChill implements Runnable
 			if (indx < skillsLen)
 			{
 				final var skill = availSkills.get(indx);
-				sb.append(String.format(actionTemplate2.replace("chill_action_edit", "chill_action_set"), slot + " " + skill.getId(), skill.getIcon(), skill.getIcon()));
-				//sb.append(String.format(actionTemplate.replace("chill_action_edit", "chill_action_set"), skill.getIcon(), slot + " " + skill.getId()));
+				sb.append(String.format(actionTemplate.replace("chill_action_edit", "chill_action_set"), skill.getIcon(), slot + " " + skill.getId()));
 			}
 			
 		}
@@ -846,6 +854,7 @@ public class AutoChill implements Runnable
 			
 			npcHtml.replace("%reu%", String.format("%.2fs", action.getReuse()));
 			npcHtml.replace("%hpp%", String.format("%05.2f%%", action.getUserHp()));
+			npcHtml.replace("%tpp%", String.format("%05.2f%%", action.getTargetHp()));
 			
 			final var epriorities = EActionPriority.values();
 			final var priority = epriorities[slot];
@@ -863,11 +872,12 @@ public class AutoChill implements Runnable
 
 			npcHtml.replace("%reu%", "?");
 			npcHtml.replace("%hpp%", "?");
+			npcHtml.replace("%tpp%", "?");
 			npcHtml.replace("%pr%", "");
 		}
 
-		npcHtml.replace("%priority%", "" + slot+1);
-		npcHtml.replace("%slot%", "" +  slot);
+		npcHtml.replace("%priority%","" + slot+1);
+		npcHtml.replace("%slot%","" + slot);
 
 		
 		player.sendPacket(npcHtml);
@@ -881,7 +891,7 @@ public class AutoChill implements Runnable
 		
 		final ILocational renderLoc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : player;
 		
-		final ExServerPrimitive renderRange = new ExServerPrimitive("SearchRange", new Location(player.getX(), player.getY(), player.getZ() - 200));
+		final ExServerPrimitive renderRange = new ExServerPrimitive("SearchRange", renderLoc);
 		if ((_moveType != EMoveType.Follow_Target) && (searchRange > 1))
 		{
 			final var color = _running ? Color.GREEN : Color.RED;
@@ -928,6 +938,8 @@ public class AutoChill implements Runnable
 		
 		private double _userHp = 100;
 		
+		private double _targHp = 100;
+		
 		private long _reuse;
 		
 		private long _lastUse;
@@ -953,16 +965,6 @@ public class AutoChill implements Runnable
 			return _lastUse + _reuse > System.currentTimeMillis();
 		}
 		
-		public boolean isUserHp(final L2PcInstance player)
-		{
-			return player.getHpPercent() <= _userHp;
-		}
-		
-		public double getUserHp()
-		{
-			return _userHp;
-		}
-		
 		public void initReuse()
 		{
 			_lastUse = System.currentTimeMillis();
@@ -975,22 +977,42 @@ public class AutoChill implements Runnable
 		
 		public void setReuse(final double reuseSec)
 		{
-			_reuse = (long) (reuseSec * 1000L);
+			_reuse = Math.min((long) (reuseSec * 1000L), 300_000);
 		}
 		
 		public void setUserHP(final double userHp)
 		{
-			_userHp = userHp;
+			_userHp = Math.min(100d, userHp);
+		}
+
+		public boolean isUserHp(final L2PcInstance player)
+		{
+			return player.getHpPercent() <= _userHp;
+		}
+		
+		public double getUserHp()
+		{
+			return _userHp;
+		}
+		
+		public void setTargetHP(final double targHp)
+		{
+			_targHp = Math.min(100d, targHp);
+		}
+
+		public boolean isTargetHp(final L2Character target)
+		{
+			return target.getHpPercent() <= _targHp;
+		}
+		
+		public double getTargetHp()
+		{
+			return _targHp;
 		}
 		
 		public boolean isSkill()
 		{
 			return _isSkill;
 		}
-	}
-	
-	private static class ActionPair
-	{
-		
 	}
 }

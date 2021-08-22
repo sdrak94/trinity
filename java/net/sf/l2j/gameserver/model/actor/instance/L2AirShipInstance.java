@@ -642,14 +642,12 @@ public class L2AirShipInstance extends L2Character
 	@Override
 	public int getInstanceWorld()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		return this.getInstanceWorld();
 	}
 
 	@Override
 	public ILocational getLocation()
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return this.getLoc();
 	}
 }

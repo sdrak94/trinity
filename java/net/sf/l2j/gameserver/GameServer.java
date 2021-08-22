@@ -438,6 +438,15 @@ public class GameServer
 		EventScheduler.getInstance();
 		CommonUtil.printSection("General Data");
 		TeleportLocationTable.getInstance();
+
+		try
+		{
+			SpawnUtil.getInstance().parseTeleportsToXml();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 		LevelUpData.getInstance();
 		L2World.getInstance();
 		SpawnTable.getInstance();

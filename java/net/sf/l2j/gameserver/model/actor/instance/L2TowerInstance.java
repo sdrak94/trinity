@@ -310,7 +310,6 @@ public int getInstanceWorld()
 @Override
 public ILocational getLocation()
 {
-	// TODO Auto-generated method stub
-	return null;
+	return this.getLoc();
 }
 }

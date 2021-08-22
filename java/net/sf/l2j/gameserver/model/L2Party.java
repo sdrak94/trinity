@@ -1286,4 +1286,20 @@ private void updateEffectIcons()
 		return _members.size();
 	}
 
+	public int getTotalPvPs()
+	{
+		int pvps = 0;
+		for (L2PcInstance membah : _members)
+			pvps += membah.getPvpKills();
+		return pvps;
+	}
+	
+	public int getTotalPKs()
+	{
+		int pks = 0;
+		for (L2PcInstance membah : _members)
+			pks += membah.getPkKills();
+		return pks;
+	}
+
 }

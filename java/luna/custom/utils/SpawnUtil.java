@@ -14,11 +14,13 @@ import net.sf.l2j.gameserver.datatables.ItemLists;
 import net.sf.l2j.gameserver.datatables.ItemTable;
 import net.sf.l2j.gameserver.datatables.NpcTable;
 import net.sf.l2j.gameserver.datatables.SkillTable;
+import net.sf.l2j.gameserver.datatables.TeleportLocationTable;
 import net.sf.l2j.gameserver.instancemanager.RaidBossSpawnManager;
 import net.sf.l2j.gameserver.model.L2DropCategory;
 import net.sf.l2j.gameserver.model.L2DropData;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.L2Spawn;
+import net.sf.l2j.gameserver.model.L2TeleportLocation;
 import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
 
 public class SpawnUtil
@@ -136,6 +138,76 @@ public class SpawnUtil
 			}
 		}
 	}
+	
+	
+	
+	public void parseTeleportsToXml() throws SQLException, IOException
+	{
+		final Map<Integer,L2TeleportLocation> teleports = TeleportLocationTable.getInstance().getTeleports();
+		
+		class Sorted implements Comparable<Sorted>
+		{
+			int _level;
+			String xml;
+			
+			public Sorted(int level, StringBuilder sb)
+			{
+				_level = level;
+				xml = sb.toString();
+			}
+			
+			@Override
+			public int compareTo(Sorted arg)
+			{
+				return _level - arg._level;
+			}
+		}
+		
+		ArrayList<Sorted> sortedList = new ArrayList<>(); 
+		for ( int teleId : teleports.keySet() )
+		{
+			try
+			{
+					L2TeleportLocation tele = TeleportLocationTable.getInstance().getTemplate(teleId);
+					StringBuilder sb = new StringBuilder();
+					sb.append("\t<teleport id=\"" + tele.getTeleId() + "\" desc=\"" + tele.getDescription() + "\" >\n");
+					sb.append("\t\t<set name=\"loc_x\" value=\"" + tele.getLocX() +"\" />\n");
+					sb.append("\t\t<set name=\"loc_y\" value=\"" + tele.getLocY() +"\" />\n");
+					sb.append("\t\t<set name=\"loc_z\" value=\"" + tele.getLocZ() +"\" />\n");
+					sb.append("\t</teleport>\n");
+					
+					int level = tele.getTeleId();
+					
+					Sorted sd = new Sorted(level, sb);
+					sortedList.add(sd);
+			}
+			catch (Exception e)
+			{
+				e.printStackTrace();
+			}
+			
+		}
+		Collections.sort(sortedList);
+
+		File f = new File("data/xml/droplists/teleports.xml");
+		FileWriter writer = new FileWriter(f, true);
+
+		if (!f.exists())
+			f.createNewFile();
+		
+		for(Sorted st : sortedList)
+		{
+			try
+			{
+				writer.write(st.xml);
+				System.out.println(st.xml);
+			}
+			finally
+			{
+			}
+		}
+	}
+	
 	public void parseDropsToXml() throws SQLException, IOException
 	{
 		final Map<Integer, L2NpcTemplate> npcs = NpcTable.getInstance().getNpcs();

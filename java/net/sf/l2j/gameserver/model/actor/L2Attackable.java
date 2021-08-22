@@ -797,6 +797,10 @@ public class L2Attackable extends L2Npc
 	 * @param aggro
 	 *            The hate (=damage) given by the attacker L2Character
 	 */
+	public void addDamageHate(final L2Character attacker, final int damage, int aggro)
+	{
+		addDamageHate(attacker, damage, aggro);
+	}
 	public void addDamageHate(L2Character attacker, int aggro)
 	{
 		if (attacker == null)

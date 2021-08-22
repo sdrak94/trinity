@@ -562,7 +562,7 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 				}
 				else if (type.startsWith("achievements"))
 				{
-					Achievements.main(null);
+					//Achievements.main(null);
 					activeChar.sendMessage("Achievements Boxes reloaded.");
 				}
 				else if (type.startsWith("icons"))
@@ -743,8 +743,8 @@ private void showMainPage(L2PcInstance activeChar, String command)
 			filename = "classic";
 		break;
 	}
-	//AdminHelpPage.showHelpPage(activeChar, filename + "_menu.htm");
+	AdminHelpPage.showHelpPage(activeChar, filename + "_menu.htm");
 
-	ChillController.getInstance().renderChill(activeChar);
+	//ChillController.getInstance().renderChill(activeChar);
 }
 }

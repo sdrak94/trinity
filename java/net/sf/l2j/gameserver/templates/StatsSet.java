@@ -649,4 +649,91 @@ public class StatsSet extends HashMap<String, Object>
 	{
 		_set.put(name, value);
 	}
+
+	public boolean getBoolean(String key, boolean defaultValue)
+	{
+		Object val = _set.get(key);
+		if (val == null)
+		{
+			return defaultValue;
+		}
+		if (val instanceof Boolean)
+		{
+			return ((Boolean) val).booleanValue();
+		}
+		try
+		{
+			return Boolean.parseBoolean((String) val);
+		}
+		catch (Exception e)
+		{
+			return defaultValue;
+		}
+	}
+
+	public int getInt(String key)
+	{
+		final Object val = _set.get(key);
+		if (val == null)
+		{
+			throw new IllegalArgumentException("Integer value required, but not specified: " + key + "!");
+		}
+		
+		if (val instanceof Number)
+		{
+			return ((Number) val).intValue();
+		}
+		
+		try
+		{
+			return Integer.parseInt((String) val);
+		}
+		catch (Exception e)
+		{
+			throw new IllegalArgumentException("Integer value required, but found: " + val + "!");
+		}
+	}
+	
+	public int getInt(String key, int defaultValue)
+	{
+		Object val = _set.get(key);
+		if (val == null)
+		{
+			return defaultValue;
+		}
+		if (val instanceof Number)
+		{
+			return ((Number) val).intValue();
+		}
+		try
+		{
+			return Integer.parseInt((String) val);
+		}
+		catch (Exception e)
+		{
+			throw new IllegalArgumentException("Integer value required, but found: " + val);
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	public <E extends Enum<E>> E getEnumU(final String key, final Class<E> enumClass, final E defaultValue)
+	{
+		Object val = _set.get(key);
+		if (val == null)
+		{
+			return defaultValue;
+		}
+		if (enumClass.isInstance(val))
+		{
+			return (E) val;
+		}
+		try
+		{
+			return Enum.valueOf(enumClass, String.valueOf(val).toUpperCase());
+		}
+		catch (Exception e)
+		{
+			throw new IllegalArgumentException("Enum value of type " + enumClass.getName() + " required, but found: " + val);
+		}
+	}
 }

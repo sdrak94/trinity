@@ -270,14 +270,12 @@ public int getShldDef()
 @Override
 public int getInstanceWorld()
 {
-	// TODO Auto-generated method stub
-	return 0;
+	return this.getInstanceWorld();
 }
 
 @Override
 public ILocational getLocation()
 {
-	// TODO Auto-generated method stub
-	return null;
+	return this.getLoc();
 }
 }

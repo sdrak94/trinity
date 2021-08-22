@@ -33,4 +33,11 @@ public class DelaysController implements ITimeTrigger, Savable
 	{
 		// TODO Auto-generated method stub
 	}
+
+	@Override
+	public void notify(String dayName, String timeString)
+	{
+		// TODO Auto-generated method stub
+		
+	}
 }

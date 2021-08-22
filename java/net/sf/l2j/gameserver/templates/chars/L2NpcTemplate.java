@@ -84,6 +84,7 @@ public final class L2NpcTemplate extends L2CharTemplate
 	public boolean					isQuestMonster;										// doesn't include all mobs that are involved in
 	// quests, just plain quest monsters for preventing champion spawn
 	public final float				baseVitalityDivider;
+	private final int _zoneRadius;
 
 	
 	public boolean isLevelOneRB()
@@ -172,6 +173,7 @@ public final class L2NpcTemplate extends L2CharTemplate
 	public L2NpcTemplate(StatsSet set)
 	{
 		super(set);
+		_zoneRadius = set.getInt("zoneRadius", 300);
 		npcId = set.getInteger("npcId");
 		idTemplate = set.getInteger("idTemplate");
 		type = set.getString("type");
@@ -267,6 +269,8 @@ public final class L2NpcTemplate extends L2CharTemplate
 			baseDarkRes += 10;
 		}
 		baseVitalityDivider = level > 0 && rewardExp > 0 ? baseHpMax * 9 * level * level / (100 * rewardExp) : 0;
+		
+		
 	}
 	
 	public final String getFactionId()
@@ -690,5 +694,9 @@ public final class L2NpcTemplate extends L2CharTemplate
 	public int getTemplateId()
 	{
 		return idTemplate;
+	}
+	public int getZoneRadius()
+	{
+		return _zoneRadius;
 	}
 }

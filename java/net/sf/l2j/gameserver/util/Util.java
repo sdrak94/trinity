@@ -187,7 +187,23 @@ public final class Util
 		
 		return result;
 	}
-	
+	public static boolean checkIfInRange(int range, ILocational loc1, ILocational loc2, boolean includeZAxis)
+	{
+		if ((loc1 == null) || (loc2 == null) || (loc1.getInstanceWorld() != loc2.getInstanceWorld()))
+			return false;
+		if (range == -1)
+			return true; // not limited
+		int radius = 0;
+		if (loc1 instanceof L2Character)
+			radius += ((L2Character)loc1).getActingPlayer().getTemplate().getCollisionRadius();
+		if (loc2 instanceof L2Character)
+			radius += ((L2Character)loc2).getActingPlayer().getTemplate().getCollisionRadius();
+		return calculateDistance(loc1, loc2, includeZAxis, false) <= (range + radius);
+	}
+	public static double calculateDistance(ILocational loc1, ILocational loc2, boolean includeZAxis, boolean squared)
+	{
+		return calculateDistance(loc1.getX(), loc1.getY(), loc1.getZ(), loc2.getX(), loc2.getY(), loc2.getZ(), includeZAxis, squared);
+	}
 	/*
 	 *  Checks if object is within range, adding collisionRadius
 	 */
@@ -444,5 +460,33 @@ public final class Util
 		for (int i = 0; i < array.length; i++)
 			array[i] = null;
 	}
+
+	public static int[] toIntArray(String str, String delim)
+	{
+		return toIntArray(str.split(delim));
+	}
+	
+	public static int[] toIntArray(String str)
+	{
+		if (str == null)
+			return new int[0];
+		return toIntArray(str.replace(" ", "").split(","));
+	}
+	public static int[] toIntArray(String[] strArray)
+	{
+		if (strArray == null || strArray.length == 0)
+			return new int[0];
+		final int[] intArray = new int[strArray.length];
+		for (int i=0;i<strArray.length;i++)
+		{	try
+			{	intArray[i] = Integer.parseInt(strArray[i].trim());
+			}
+			catch (Exception e)
+			{	e.printStackTrace();
+			}
+		}
+		return intArray;
+	}
+	
 
 }

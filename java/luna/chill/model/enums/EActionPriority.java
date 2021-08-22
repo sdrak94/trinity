@@ -7,7 +7,8 @@ public enum EActionPriority
 	High,
 	Medium,
 	Low,
-	Lowest;
+	Lowest,
+	Remove;
 	
 	@Override
 	public String toString()

@@ -17,6 +17,7 @@ import luna.custom.skilltrees.SkillTreesParser;
 import net.sf.l2j.gameserver.handler.AdminCommandHandler;
 import net.sf.l2j.gameserver.handler.ItemHandler;
 import net.sf.l2j.gameserver.handler.UserCommandHandler;
+import net.sf.l2j.gameserver.instancemanager.QuestManager;
 import net.sf.l2j.gameserver.instancemanager.TransformationManager;
 import net.sf.l2j.gameserver.model.events.Communicator;
 import scripts.transformations.*;
@@ -34,6 +35,7 @@ public class Loader
 		SkillTreesParser.getInstance().Reload(null);
 		WarFinisherChecker.getInstance().init();
 		loadTransformations();
+		QuestManager.getInstance().reloadAllQuests();
 	}
 	
 	private void loadItems()

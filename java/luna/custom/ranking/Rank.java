@@ -1,35 +1,53 @@
 package luna.custom.ranking;
-public enum Rank 
+
+public class Rank
 {
-	CHALLENGER("ead054",	"L2VeronicaIcons.Unranked_Emblem_s",		"",	"Challenger"), //challenger
-	GRANDMASTER("f8161f",	"L2VeronicaIcons.Grandmaster_Emblem_s",		"",	"Grand Master"), //Grandmaster
-	MASTER("984cc5",      	"L2VeronicaIcons.Master_Emblem_s",			"",	"Master"), //Master
-	DIAMOND("7270da",		"L2VeronicaIcons.Diamond_Emblem_s",			"",	"Diamond"), //Diamon
-	PLATINUM("3f8188",		"L2VeronicaIcons.Platinum_Emblem_s",		"",	"Platinum"), //Platinum
-	GOLD("dc904e",			"L2VeronicaIcons.Gold_Emblem_s",			"",	"Gold"), //Gold
-	SILVER("a6b9c0",		"L2VeronicaIcons.Silver_Emblem_s",			"",	"Silver"), //Silver
-	BRONZE("944b2e",		"L2VeronicaIcons.Bronze_Emblem_s",			"",	"Bronze"), //Bronze
-	IRON("695f5a",			"L2VeronicaIcons.Iron_Emblem_s",			"",	"Iron"), //Iron
-	UNRANKED("427879",		"L2VeronicaIcons.Unranked_Emblem_s",		"",	"Unranked"); //Unranked
+//	CHALLENGER("Challenger", "L2VeronicaIcons.Challenger_Emblem", 1),
+//	GRAND_MASTER("Grand Master", "L2VeronicaIcons.Grandmaster_Emblem", 2),
+//	MASTER("Master", "L2VeronicaIcons.Master_Emblem", 2),
+//	DIAMOND("Diamond", "L2VeronicaIcons.Diamond_Emblem", 5),
+//	PLATINUM("Platinum", "L2VeronicaIcons.Platinum_Emblem", 10),
+//	GOLD("Gold", "L2VeronicaIcons.Gold_Emblem", 20),
+//	SILVER("Silver", "L2VeronicaIcons.Silver_Emblem", 20),
+//	BRONZE("Bronze", "L2VeronicaIcons.Bronze_Emblem", 20),
+//	IRON("Iron", "L2VeronicaIcons.Iron_Emblem", 20),
+//	UNRANKED("Unranked", "L2VeronicaIcons.Unranked_Emblem", 0);
 	
-	public String _color;
-	public String _icon;
-	public String _iconl;
-	public String _bgcolor;
-	public String _dispname;
+	private final String _name;
+	private final String _colr;
+	private final String _icon;
+	private final    int _pool;
 	
-	private Rank(String color, String icon, String bgcolor, String dispname)
+	public Rank(String name, String colr, String icon, int pool)
 	{
-		_color = color;
+		_name = name;
+		_colr = colr;
 		_icon = icon;
-		_iconl = icon.replace("_s", "_l");
-		_bgcolor = bgcolor;
-		_dispname = dispname;
+		_pool = pool;
+	}
+
+	public String getName()
+	{
+		return _name;
 	}
 	
-	@Override
-	public String toString()
+	public String getColor()
 	{
-		return _dispname;
+		return _colr;
 	}
-};
+	
+	public String getIconSmall()
+	{
+		return _icon + "_s";
+	}
+	
+	public String getIconBig()
+	{
+		return _icon + "_l";
+	}
+	
+	public int getPool()
+	{
+		return _pool;
+	}
+}

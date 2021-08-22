@@ -12827,7 +12827,6 @@ public final class L2PcInstance extends L2Playable
 		}
 		return oldSkill;
 	}
-	
 	@Override
 	public L2Skill removeSkill(L2Skill skill, boolean store)
 	{
@@ -23230,7 +23229,7 @@ public final class L2PcInstance extends L2Playable
 	@Override
 	public int getInstanceWorld()
 	{
-		return getInstanceId();
+		return this.getInstanceWorld();
 	}
 
 	@Override
@@ -23253,4 +23252,17 @@ public final class L2PcInstance extends L2Playable
 		}
 		return quests;
 	}
+
+	public int getSexNumber()
+	{
+		return getSex() ? 1 : 0;
+	}
+
+	public int getRaceId()
+	{
+		return _race;
+	}
+
+
+	
 }

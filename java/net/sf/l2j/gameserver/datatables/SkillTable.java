@@ -8,6 +8,7 @@ import gnu.trove.map.hash.TIntIntHashMap;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import luna.chill.model.AutoChill.ChillAction;
 import net.sf.l2j.gameserver.model.L2Skill;
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.skills.SkillsEngine;
 
 public class SkillTable
@@ -126,7 +127,29 @@ public final L2Skill getInfo(final int skillId, final int level)
 	
 	return null;
 }
-
+public final L2Skill getTransformSkillInfo(final L2PcInstance player, final int skillId, final int level)
+{
+	final L2Skill result = _skills.get(getSkillHashCode(skillId, level));
+	if (result != null)
+	{
+		for (L2Skill a : player.getAllSkills())
+		{
+			if(a.getLevel() > 100)
+			{
+				result.setLevel(a.getLevel());
+			}
+		}
+		return result;
+	}
+	
+	// skill/level not found, fix for transformation scripts
+	final int maxLvl = _skillMaxLevel.get(skillId);
+	// requested level too high
+	if (maxLvl > 0 && level > maxLvl)
+		return _skills.get(getSkillHashCode(skillId, maxLvl));
+	
+	return null;
+}
 public final int getMaxLevel(final int skillId)
 {
 	return _skillMaxLevel.get(skillId);
