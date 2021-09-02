@@ -3,7 +3,9 @@ package net.sf.l2j.gameserver.handler.admincommandhandlers;
 import java.awt.Color;
 import java.util.StringTokenizer;
 
-import luna.chill.ChillController;
+import ghosts.controller.GhostTemplateTable;
+import inertia.controller.InertiaController;
+import inertia.model.extensions.tables.InertiaConfigurationTable;
 import luna.custom.DressMeEngine.DressMeLoader;
 import luna.custom.handler.items.bdoBox.BdoData;
 import luna.custom.handler.items.bonanzo.BonanzoData;
@@ -49,7 +51,6 @@ import net.sf.l2j.gameserver.network.serverpackets.ExServerPrimitive;
 import net.sf.l2j.gameserver.network.serverpackets.ItemList;
 import net.sf.l2j.gameserver.network.serverpackets.SocialAction;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
-import scripts.achievements.Achievements;
 
 /**
  * This class handles following admin commands:
@@ -431,6 +432,17 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 					activeChar.sendMessage("multisell reloaded");
 					System.out.println("multisell reloaded by "+activeChar.getName());
 				}
+				else if (type.startsWith("inertia"))
+				{
+					InertiaConfigurationTable.getInstance().reload();
+					activeChar.sendMessage("Inertia templates have been reloaded.");
+				}
+				else if (type.startsWith("ghost"))
+				{
+					InertiaConfigurationTable.getInstance().reload();
+					GhostTemplateTable.getInstance().reload();
+					activeChar.sendMessage("Ghost templates have been reloaded.");
+				}
 				else if (type.startsWith("acar"))
 				{
 					AdminCommandAccessRights.getInstance().reloadAdminCommandAccessRights();
@@ -745,6 +757,6 @@ private void showMainPage(L2PcInstance activeChar, String command)
 	}
 	AdminHelpPage.showHelpPage(activeChar, filename + "_menu.htm");
 
-	//ChillController.getInstance().renderChill(activeChar);
+	//InertiaController.getInstance().renderChill(activeChar);
 }
 }

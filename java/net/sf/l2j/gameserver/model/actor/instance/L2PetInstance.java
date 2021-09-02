@@ -1193,7 +1193,7 @@ public int getPetSpeed()
 @Override
 public int getInstanceWorld()
 {
-	return this.getInstanceWorld();
+	return getInstanceId();
 }
 
 @Override

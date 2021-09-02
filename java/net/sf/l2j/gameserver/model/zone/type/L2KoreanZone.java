@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.model.zone.type;
 
+import ghosts.model.Ghost;
 import luna.custom.LunaVariables;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2World;
@@ -50,7 +51,8 @@ public class L2KoreanZone  extends L2ZoneType
 					String hwid = ((L2PcInstance) character).getHWID();
 					for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 					{
-						if (player.getClient().isDetached())
+
+						if (!(player instanceof Ghost) && player.getClient().isDetached())
 						{
 							continue;
 						}

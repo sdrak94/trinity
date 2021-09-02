@@ -449,9 +449,6 @@ protected void runImpl()
 	else
 	{
 		activeChar.sendPacket(ActionFailed.STATIC_PACKET);
-		
-		if (skill == null)
-			_log.warning("No skill found with id " + _magicId + " and level " + level + " !!");
 	}
 }
 

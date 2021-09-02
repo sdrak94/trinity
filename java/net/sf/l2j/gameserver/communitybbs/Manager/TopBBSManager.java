@@ -222,7 +222,7 @@ public void parsecmd(String command, L2PcInstance activeChar)
 			if (file.startsWith("raiddeneixame"))
 			{
 				String rfid = file.substring(13);
-				RaidList rd = new RaidList(rfid);
+				RaidList rd = new RaidList("1");
 				content = content.replaceAll("%raidlist%", rd.loadRaidList());
 			}
 			

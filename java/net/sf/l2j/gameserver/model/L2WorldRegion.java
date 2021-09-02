@@ -31,6 +31,7 @@ import net.sf.l2j.gameserver.model.actor.L2Attackable;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.actor.L2Playable;
+import net.sf.l2j.gameserver.model.actor.instance.L2FenceInstance;
 import net.sf.l2j.gameserver.model.zone.L2ZoneType;
 import net.sf.l2j.gameserver.model.zone.type.L2DerbyTrackZone;
 import net.sf.l2j.gameserver.model.zone.type.L2PeaceZone;
@@ -56,6 +57,8 @@ private final int _tileX, _tileY;
 private Boolean _active = false;
 private ScheduledFuture<?> _neighborsTask = null;
 private final FastList<L2ZoneType>			_zones;
+
+private final List<L2FenceInstance> _fences = new ArrayList<>(1);
 
 public L2WorldRegion(int pTileX, int pTileY)
 {
@@ -101,6 +104,24 @@ public void revalidateZones(L2Character character)
 	{
 		if(z != null) z.revalidateInZone(character);
 	}
+}
+
+public synchronized void addFence(L2FenceInstance fence)
+{
+	if (!_fences.contains(fence))
+	{
+		_fences.add(fence);
+	}
+}
+
+private synchronized void removeFence(L2FenceInstance fence)
+{
+	_fences.remove(fence);
+}
+
+public List<L2FenceInstance> getFences()
+{
+	return _fences;
 }
 
 /*public void revalidateZonesTele(L2Character character)

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import javolution.util.FastMap;
@@ -1690,6 +1691,8 @@ public class TvT
 					continue;
 				String HWID = player.getClient().getStrixClientData().getClientHWID();
 				String HWID2 = eventPlayer.getClient().getStrixClientData().getClientHWID();
+				if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
+					continue;
 				if (HWID == null || HWID2 == null)
 					continue;
 				if (HWID.equalsIgnoreCase(HWID2))

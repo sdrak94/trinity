@@ -228,24 +228,21 @@ public class GameTimeController
 		{
 			int h = (getGameTime() / 60) % 24; // Time in hour
 			boolean tempIsNight = (h > 21 || h < 5);
-			if (Config.ENABLE_OLD_NIGHT)
-			{
-				if (tempIsNight != _isNight)
-				{ // If diff day/night state
-					_isNight = tempIsNight; // Set current day/night varible to value of temp varible
-					DayNightSpawnManager.getInstance().notifyChangeMode();
-					if (_isNight)
-					{
-						Announcements.getInstance().announceToAll("Night begins");
-						Announcements.getInstance().announceToAll("Pagan's Temple is open");
-					}
-					else
-					{
-						DayNightSpawnManager.getInstance().kickAllPlayersFromPTWhenNightIsOver();
-						Announcements.getInstance().announceToAll("Day begins");
-						Announcements.getInstance().announceToAll("The sun raised and the undeads vanished.");
-					}
-				}
+			if (tempIsNight != _isNight)
+			{ // If diff day/night state
+				_isNight = tempIsNight; // Set current day/night varible to value of temp varible
+				DayNightSpawnManager.getInstance().notifyChangeMode();
+//				if (_isNight)
+//				{
+//					Announcements.getInstance().announceToAll("Night begins");
+//					Announcements.getInstance().announceToAll("Pagan's Temple is open");
+//				}
+//				else
+//				{
+//					DayNightSpawnManager.getInstance().kickAllPlayersFromPTWhenNightIsOver();
+//					Announcements.getInstance().announceToAll("Day begins");
+//					Announcements.getInstance().announceToAll("The sun raised and the undeads vanished.");
+//				}
 			}
 		}
 	}

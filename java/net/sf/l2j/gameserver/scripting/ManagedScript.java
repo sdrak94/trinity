@@ -14,10 +14,11 @@
  */
 package net.sf.l2j.gameserver.scripting;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.nio.file.Path;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import javax.script.ScriptException;
+import net.sf.l2j.gameserver.script.mobius.ScriptEngineManager;
 
 /**
  * Abstract class for classes that are meant to be implemented by scripts.<BR>
@@ -25,41 +26,42 @@ import javax.script.ScriptException;
  */
 public abstract class ManagedScript
 {
-	private final File _scriptFile;
+	private static final Logger LOGGER = Logger.getLogger(ManagedScript.class.getName());
+	
+	private final Path _scriptFile;
 	private long _lastLoadTime;
 	private boolean _isActive;
 	
 	public ManagedScript()
 	{
-		_scriptFile = L2ScriptEngineManager.getInstance().getCurrentLoadingScript();
+		_scriptFile = getScriptPath();
 		setLastLoadTime(System.currentTimeMillis());
 	}
 	
+	public abstract Path getScriptPath();
+	
 	/**
-	 * Attempts to reload this script and to refresh the necessary bindings with it ScriptControler.<BR>
+	 * Attempts to reload this script and to refresh the necessary bindings with it ScriptControler.<br>
 	 * Subclasses of this class should override this method to properly refresh their bindings when necessary.
-	 * @return true if and only if the scrip was reloaded, false otherwise.
+	 * @return true if and only if the script was reloaded, false otherwise.
 	 */
 	public boolean reload()
 	{
 		try
 		{
-			L2ScriptEngineManager.getInstance().executeScript(getScriptFile());
+			ScriptEngineManager.getInstance().executeScript(getScriptFile());
 			return true;
 		}
-		catch (final FileNotFoundException e)
+		catch (Exception e)
 		{
-			return false;
-		}
-		catch (final ScriptException e)
-		{
+			LOGGER.log(Level.WARNING, "Failed to reload script!", e);
 			return false;
 		}
 	}
 	
 	public abstract boolean unload();
 	
-	public void setActive(final boolean status)
+	public void setActive(boolean status)
 	{
 		_isActive = status;
 	}
@@ -72,7 +74,7 @@ public abstract class ManagedScript
 	/**
 	 * @return Returns the scriptFile.
 	 */
-	public File getScriptFile()
+	public Path getScriptFile()
 	{
 		return _scriptFile;
 	}
@@ -80,7 +82,7 @@ public abstract class ManagedScript
 	/**
 	 * @param lastLoadTime The lastLoadTime to set.
 	 */
-	protected void setLastLoadTime(final long lastLoadTime)
+	protected void setLastLoadTime(long lastLoadTime)
 	{
 		_lastLoadTime = lastLoadTime;
 	}
@@ -93,7 +95,15 @@ public abstract class ManagedScript
 		return _lastLoadTime;
 	}
 	
-	public abstract String getName();
-	
-	public abstract ScriptManager<?> getScriptManager();
+	public abstract String getScriptName();
+
+	/**
+	 * Return name of the quest.
+	 * 
+	 * @return String
+	 */
+	public String getName()
+	{
+		return getScriptName();
+	}
 }

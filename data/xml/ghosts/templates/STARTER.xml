@@ -1,0 +1,163 @@
+<templates>
+	<template id="DUELIST_STARTER" classId="duelist" tier="STARTER" >
+	
+		<races>
+			<race name="Human" />
+			<race name="Elf" />
+		</races>
+		
+		<InertiaExtensions>
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__DUELIST_STARTER" />
+			<set name="pvp" value="1000-15000" />
+		</stats>
+		
+		<hennas>
+			<henna id="170" /> <!-- STR +4 DEX -4 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="71001" enchant="8-12" element="50-90" equipped="true" />
+			<item id="57" count="2000000000" />
+			<item id="91028" enchant="10-15" element="100-300" equipped="true" />	<!-- Star Smashers -->
+			<item id="70001" enchant="16" equipped="true" temp="true" /> <!-- Antharas' Tremor -->
+			<item id="70003" enchant="16" equipped="true" temp="true" /> <!-- Zaken's Dementia -->
+			<item id="70000" enchant="16" equipped="true" temp="true" /> <!-- Valakas' Fiery -->
+			<item id="70002" enchant="16" equipped="true" temp="true" /> <!-- Baium's Anger -->
+			<item id="70004" enchant="16" equipped="true" temp="true" /> <!-- Queen's Grasp -->
+			<item id="77010" equipped="true" /> <!-- Warrior's Cloak -->
+		</inventory>
+		
+		
+		
+	</template>
+	<template id="ADVENTURER_STARTER" classId="adventurer" tier="STARTER" >
+	
+		<InertiaExtensions>
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<races>
+			<race name="Human" />
+			<race name="Elf" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__ADVENTURER_STARTER" />
+			<set name="pvp" value="1000-15000" />
+		</stats>
+		
+		<hennas>
+			<henna id="170" /> <!-- STR +4 DEX -4 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="71011" enchant="8-12" element="50-90" equipped="true" />
+			<item id="57" count="2000000000" />
+			<item id="90001" enchant="10-15" element="100-300" equipped="true" /> <!-- Dread Talon -->
+			<item id="70001" enchant="16" equipped="true" temp="true" /> <!-- Antharas' Tremor -->
+			<item id="70003" enchant="16" equipped="true" temp="true" /> <!-- Zaken's Dementia -->
+			<item id="70000" enchant="16" equipped="true" temp="true" /> <!-- Valakas' Fiery -->
+			<item id="70002" enchant="16" equipped="true" temp="true" /> <!-- Baium's Anger -->
+			<item id="70004" enchant="16" equipped="true" temp="true" /> <!-- Queen's Grasp -->
+			<item id="77009" equipped="true" /> <!-- Rogue's Cloak -->
+		</inventory>
+		
+		
+		
+	</template>
+
+	<template id="NECRO_STARTER" classId="soultaker" tier="STARTER" >
+	
+	
+		<InertiaExtensions>
+			<ext name="Kite" />
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<races>
+			<race name="Human" />
+			<race name="Elf" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__SOULTAKER_STARTER" />
+			<set name="pvp" value="1000-15000" />
+		</stats>
+		
+		<hennas>
+			<henna id="170" /> <!-- STR +4 DEX -4 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="71021" enchant="8-12" element="50-90" equipped="true" />
+			<item id="57" count="2000000000" />
+			<item id="91007" enchant="10-15" element="100-300" equipped="true" />
+			<item id="91008" enchant="10-15" element="100-300" equipped="true" />
+			<item id="70001" enchant="16" equipped="true" /> <!-- Antharas' Tremor -->
+			<item id="70003" enchant="16" equipped="true" /> <!-- Zaken's Dementia -->
+			<item id="70000" enchant="16" equipped="true" /> <!-- Valakas' Fiery -->
+			<item id="70002" enchant="16" equipped="true" /> <!-- Baium's Anger -->
+			<item id="70004" enchant="16" equipped="true" /> <!-- Queen's Grasp -->
+			<item id="77012" equipped="true" /> <!-- Wizard's Cloak -->
+		</inventory>
+		
+		
+		
+	</template>
+	
+	
+	
+		<template id="SAGITTARIUS_STARTER" classId="sagittarius" tier="STARTER" >
+	
+	
+		<InertiaExtensions>
+			<ext name="Kite" />
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<races>
+			<race name="Human" />
+			<race name="Elf" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__SAGITTARIUS_STARTER" />
+			<set name="pvp" value="1000-15000" />
+		</stats>
+		
+		<hennas>
+			<henna id="170" /> <!-- STR +4 DEX -4 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="71011" enchant="8-12" element="50-90" equipped="true" /> <!-- id == Chest ID -->
+			<item id="57" count="2000000000" />
+			<item id="91002" enchant="10-15" element="100-300" equipped="true" />
+			<item id="70001" enchant="16" equipped="true" /> <!-- Antharas' Tremor -->
+			<item id="70003" enchant="16" equipped="true" /> <!-- Zaken's Dementia -->
+			<item id="70000" enchant="16" equipped="true" /> <!-- Valakas' Fiery -->
+			<item id="70002" enchant="16" equipped="true" /> <!-- Baium's Anger -->
+			<item id="70004" enchant="16" equipped="true" /> <!-- Queen's Grasp -->
+			<item id="77006" equipped="true" /> <!-- Archer's Cloak -->
+		</inventory>
+		
+		
+		
+	</template>
+	
+	
+	
+	
+</templates>

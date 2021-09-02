@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.concurrent.Future;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import javolution.util.FastMap;
@@ -2438,6 +2439,8 @@ public class NewCTF
 				for (L2PcInstance player : _playersShuffle)
 				{
 					if (player == null || eventPlayer == null)
+						continue;
+					if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
 						continue;
 					String IP = player.getClient().getIP();
 					String IP2 = eventPlayer.getClient().getIP();

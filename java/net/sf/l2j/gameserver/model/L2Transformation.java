@@ -3,42 +3,47 @@
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 3 of the License, or (at your option) any later
  * version.
- * 
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- * 
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model;
 
+import java.util.ArrayList;
+
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.model.actor.transform.TransformType;
+import net.sf.l2j.gameserver.templates.StatsSet;
 
 /**
- *
- * @author  KenM
+ * @author KenM
  */
 public abstract class L2Transformation implements Cloneable, Runnable
 {
-	private final int _id;
-	private final int _graphicalId;
-	private double _collisionRadius;
-	private double _collisionHeight;
-	private final boolean _isStance;
+	private final int			_id;
+	private final int			_graphicalId;
+	private double				_collisionRadius;
+	private double				_collisionHeight;
+	private final boolean		_isStance;
+	private ArrayList<Integer>	_allowedSkills		= new ArrayList<>();
 	
-	public static final int TRANSFORM_ZARICHE = 301;
-	public static final int TRANSFORM_AKAMANAH = 302;
+	public static final int		TRANSFORM_ZARICHE	= 301;
+	public static final int		TRANSFORM_AKAMANAH	= 302;
 	
-	private L2PcInstance _player;
+	private L2PcInstance		_player;
 	
 	/**
-	 * 
-	 * @param id Internal id that server will use to associate this transformation
-	 * @param graphicalId Client visible transformation id
-	 * @param collisionRadius Collision Radius of the player while transformed
-	 * @param collisionHeight  Collision Height of the player while transformed
+	 * @param id
+	 *            Internal id that server will use to associate this transformation
+	 * @param graphicalId
+	 *            Client visible transformation id
+	 * @param collisionRadius
+	 *            Collision Radius of the player while transformed
+	 * @param collisionHeight
+	 *            Collision Height of the player while transformed
 	 */
 	public L2Transformation(int id, int graphicalId, double collisionRadius, double collisionHeight)
 	{
@@ -50,10 +55,12 @@ public abstract class L2Transformation implements Cloneable, Runnable
 	}
 	
 	/**
-	 * 
-	 * @param id Internal id(will be used also as client graphical id) that server will use to associate this transformation
-	 * @param collisionRadius Collision Radius of the player while transformed
-	 * @param collisionHeight  Collision Height of the player while transformed
+	 * @param id
+	 *            Internal id(will be used also as client graphical id) that server will use to associate this transformation
+	 * @param collisionRadius
+	 *            Collision Radius of the player while transformed
+	 * @param collisionHeight
+	 *            Collision Height of the player while transformed
 	 */
 	public L2Transformation(int id, double collisionRadius, double collisionHeight)
 	{
@@ -61,17 +68,26 @@ public abstract class L2Transformation implements Cloneable, Runnable
 	}
 	
 	/**
-	 * 
-	 * @param id Internal id(will be used also as client graphical id) that server will use to associate this transformation
-	 * Used for stances
+	 * @param id
+	 *            Internal id(will be used also as client graphical id) that server will use to associate this transformation
+	 *            Used for stances
 	 */
 	public L2Transformation(int id)
 	{
 		_id = id;
 		_graphicalId = id;
 		_isStance = true;
+		_allowedSkills = new ArrayList<Integer>();
 	}
 	
+	public void addAllowedSkills(int skillId)
+	{
+		_allowedSkills.add(skillId);
+	}
+	public ArrayList<Integer> getAllowedSkills()
+	{
+		return _allowedSkills;
+	}
 	/**
 	 * @return Returns the id.
 	 */
@@ -90,6 +106,7 @@ public abstract class L2Transformation implements Cloneable, Runnable
 	
 	/**
 	 * Return true if this is a stance (vanguard/inquisitor)
+	 * 
 	 * @return
 	 */
 	public boolean isStance()
@@ -123,7 +140,8 @@ public abstract class L2Transformation implements Cloneable, Runnable
 	public abstract void onUntransform();
 	
 	/**
-	 * @param player The player to set.
+	 * @param player
+	 *            The player to set.
 	 */
 	private void setPlayer(L2PcInstance player)
 	{
@@ -175,9 +193,7 @@ public abstract class L2Transformation implements Cloneable, Runnable
 	
 	// Override if necessary
 	public void onLevelUp()
-	{
-		
-	}
+	{}
 	
 	/**
 	 * Returns true if transformation can do melee attack

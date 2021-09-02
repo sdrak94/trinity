@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.List;
 import java.util.logging.Level;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
@@ -1153,7 +1154,7 @@ public abstract class Inventory extends ItemContainer
 					}
 					if (item.getEnchantLevel() > 0)
 						itemName = "+" + item.getEnchantLevel() + " " + itemName;
-					if (item.isTimeLimitedItem() || item.isShadowItem())
+					if (item.isTimeLimitedItem() || item.isShadowItem() || item.isFakeTempItem())
 						itemName = itemName.concat(" (temp)");
 				}
 				else
@@ -1320,7 +1321,7 @@ public abstract class Inventory extends ItemContainer
 					{
 						return item.getItemId();
 					}
-					if (player != null && player.getClient() != null /* && player.getClient().getState() == GameClientState.IN_GAME */ && player.getRace() == Race.Kamael)
+					if (player instanceof Ghost || player != null && player.getClient() != null /* && player.getClient().getState() == GameClientState.IN_GAME */ && player.getRace() == Race.Kamael)
 					{
 						if (item.getItemType() == L2WeaponType.NONE || item.getItemType() == L2ArmorType.SIGIL) // shields being used by a kamael
 							return 0;
@@ -1582,7 +1583,7 @@ public abstract class Inventory extends ItemContainer
 					{
 						return item.getItemId();
 					}
-					if (player != null && player.getClient() != null /* && player.getClient().getState() == GameClientState.IN_GAME */ && player.getRace() == Race.Kamael)
+					if (player instanceof Ghost || player != null && player.getClient() != null /* && player.getClient().getState() == GameClientState.IN_GAME */ && player.getRace() == Race.Kamael)
 					{
 						if (item.getItemType() == L2WeaponType.NONE || item.getItemType() == L2ArmorType.SIGIL) // shields being used by a kamael
 							return 0;

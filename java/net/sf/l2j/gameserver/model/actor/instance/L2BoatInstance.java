@@ -944,7 +944,7 @@ public class L2BoatInstance extends L2Character
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
 
 	@Override

@@ -26,6 +26,7 @@ public class IconsTable
 	protected IconsTable()
 	{
 		parseData();
+		parseSkillData();
 	}
 	
 	public void reload()
@@ -47,7 +48,7 @@ public class IconsTable
 			final DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
 			
 			
-			final File iconsXml = new File("./data/xml/icons.xml");
+			final File iconsXml = new File("data/xml/icons.xml");
 			
 			final Document doc = docBuilder.parse(iconsXml); 
 			

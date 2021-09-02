@@ -14,6 +14,12 @@
  */
 package net.sf.l2j.util;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import net.sf.l2j.gameserver.model.base.Race;
+
 /**$
  *
  * @author Balancer
@@ -82,4 +88,37 @@ public class Rnd
  	{
  		return nextDouble() <= (chance / 100.);
  	}
+
+	/**
+	 * Returns a randomly selected element taken from the given list.
+	 * @param <T> type of list elements.
+	 * @param list a list.
+	 * @return a randomly selected element.
+	 */
+	public static final <T> T get(List<T> list)
+	{
+		if (list == null || list.size() == 0)
+			return null;
+		
+		return list.get(get(list.size()));
+	}
+	
+	/**
+	 * Returns a randomly selected element taken from the given array.
+	 * @param <T> type of array elements.
+	 * @param array an array.
+	 * @return a randomly selected element.
+	 */
+	public static final <T> T get(T[] array)
+	{
+		if (array == null || array.length == 0)
+			return null;
+		
+		return array[get(array.length)];
+	}
+
+	public static <E> void shuffle(List<E> list)
+	{
+		Collections.shuffle(list);
+	}
 }

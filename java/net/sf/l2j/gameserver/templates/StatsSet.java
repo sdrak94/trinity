@@ -305,7 +305,35 @@ public class StatsSet extends HashMap<String, Object>
 		}
 		return result;
 	}
-	
+	public int[] getIntegerArray(String name, String seperator)
+	{
+		Object val = _set.get(name);
+		if (val == null)
+			throw new IllegalArgumentException("Integer value required, but not specified");
+		if (val instanceof Number)
+		{
+			int[] result =
+			{
+				((Number) val).intValue()
+			};
+			return result;
+		}
+		int c = 0;
+		String[] vals = ((String) val).split(seperator);
+		int[] result = new int[vals.length];
+		for (String v : vals)
+		{
+			try
+			{
+				result[c++] = Integer.parseInt(v);
+			}
+			catch (Exception e)
+			{
+				throw new IllegalArgumentException("Integer value required, but found: " + val);
+			}
+		}
+		return result;
+	}
 	/**
 	 * Returns the long associated to the key put in parameter ("name").
 	 * 

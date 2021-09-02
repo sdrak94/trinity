@@ -3,6 +3,7 @@ package net.sf.l2j;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.math.BigInteger;
@@ -14,6 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javolution.util.FastList;
@@ -56,6 +58,8 @@ public final class Config
 	private static final String					DONATION_CONFIG_FILE					= "./config/Donation.ini";
 	public static final String					SMART_CB								= "./config/SmartCB.properties";
 	public static final String					CHILL_FILE								= "./config/chill.properties";
+	public static final String					NPCBUFFER_CONFIG_FILE					= "./config/npcbuffer.ini";
+	public static final String					INSTANCES_FILE							= "./config/instances.ini";
 	// --------------------------------------------------
 	// Chill settings
 	// --------------------------------------------------
@@ -402,6 +406,7 @@ public final class Config
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_SERVER_BYPASS			= new FloodProtectorConfig("ServerBypassFloodProtector");
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_MULTISELL				= new FloodProtectorConfig("MultiSellFloodProtector");
 	public static final FloodProtectorConfig	FLOOD_PROTECTOR_TRANSACTION				= new FloodProtectorConfig("TransactionFloodProtector");
+	public static File							SCRIPT_ROOT;
 	public static boolean						SERVER_LOCAL							= false;
 	public static boolean						ALLOW_DISCARDITEM;
 	public static int							AUTODESTROY_ITEM_AFTER;
@@ -908,43 +913,80 @@ public final class Config
 	public static long					TVTI_JOIN_NPC_DO_SKILL_AGAIN;
 	public static Map<Integer, Double>	BALANCE_SKILL_LIST;
 	public static boolean				KAMALOKA_DROPS_TO_FULL_PARTY_ONLY;
-	public static double				CLASS_BALANCE_DUELIST;
-	public static double				CLASS_BALANCE_DREADNOUGHT;
-	public static double				CLASS_BALANCE_PHOENIX_KNIGHT;
-	public static double				CLASS_BALANCE_HELL_KNIGHT;
-	public static double				CLASS_BALANCE_SAGITTARIUS;
-	public static double				CLASS_BALANCE_ADVENTURER;
-	public static double				CLASS_BALANCE_ARCHMAGE;
-	public static double				CLASS_BALANCE_SOULTAKER;
-	public static double				CLASS_BALANCE_ARCANA_LORD;
-	public static double				CLASS_BALANCE_CARDINAL;
-	public static double				CLASS_BALANCE_HIEROPHANT;
-	public static double				CLASS_BALANCE_EVA_TEMPLAR;
-	public static double				CLASS_BALANCE_SWORD_MUSE;
-	public static double				CLASS_BALANCE_WIND_RIDER;
-	public static double				CLASS_BALANCE_MOONLIGHT_SENTINEL;
-	public static double				CLASS_BALANCE_MYSTIC_MUSE;
-	public static double				CLASS_BALANCE_ELEMENTAL_MASTER;
-	public static double				CLASS_BALANCE_EVA_SAINT;
-	public static double				CLASS_BALANCE_SHILLIEN_TEMPLAR;
-	public static double				CLASS_BALANCE_SPECTRAL_DANCER;
-	public static double				CLASS_BALANCE_GHOST_HUNTER;
-	public static double				CLASS_BALANCE_GHOST_SENTINEL;
-	public static double				CLASS_BALANCE_STORM_SCREAMER;
-	public static double				CLASS_BALANCE_SPECTRAL_MASTER;
-	public static double				CLASS_BALANCE_SHILLIEN_SAINT;
-	public static double				CLASS_BALANCE_TITAN;
-	public static double				CLASS_BALANCE_GRAND_KHAUATARI;
-	public static double				CLASS_BALANCE_DOMINATOR;
-	public static double				CLASS_BALANCE_DOOMCRYER;
-	public static double				CLASS_BALANCE_FORTUNE_SEEKER;
-	public static double				CLASS_BALANCE_MAESTRO;
-	public static double				CLASS_BALANCE_DOOMBRINGER;
-	public static double				CLASS_BALANCE_MALE_SOULHOUND;
-	public static double				CLASS_BALANCE_FEMALE_SOULHOUND;
-	public static double				CLASS_BALANCE_TRICKSTER;
-	public static double				CLASS_BALANCE_INSPECTOR;
-	public static double				CLASS_BALANCE_JUDICATOR;
+	public static double				PVP_CLASS_BALANCE_DUELIST;
+	public static double				PVP_CLASS_BALANCE_DREADNOUGHT;
+	public static double				PVP_CLASS_BALANCE_PHOENIX_KNIGHT;
+	public static double				PVP_CLASS_BALANCE_HELL_KNIGHT;
+	public static double				PVP_CLASS_BALANCE_SAGITTARIUS;
+	public static double				PVP_CLASS_BALANCE_ADVENTURER;
+	public static double				PVP_CLASS_BALANCE_ARCHMAGE;
+	public static double				PVP_CLASS_BALANCE_SOULTAKER;
+	public static double				PVP_CLASS_BALANCE_ARCANA_LORD;
+	public static double				PVP_CLASS_BALANCE_CARDINAL;
+	public static double				PVP_CLASS_BALANCE_HIEROPHANT;
+	public static double				PVP_CLASS_BALANCE_EVA_TEMPLAR;
+	public static double				PVP_CLASS_BALANCE_SWORD_MUSE;
+	public static double				PVP_CLASS_BALANCE_WIND_RIDER;
+	public static double				PVP_CLASS_BALANCE_MOONLIGHT_SENTINEL;
+	public static double				PVP_CLASS_BALANCE_MYSTIC_MUSE;
+	public static double				PVP_CLASS_BALANCE_ELEMENTAL_MASTER;
+	public static double				PVP_CLASS_BALANCE_EVA_SAINT;
+	public static double				PVP_CLASS_BALANCE_SHILLIEN_TEMPLAR;
+	public static double				PVP_CLASS_BALANCE_SPECTRAL_DANCER;
+	public static double				PVP_CLASS_BALANCE_GHOST_HUNTER;
+	public static double				PVP_CLASS_BALANCE_GHOST_SENTINEL;
+	public static double				PVP_CLASS_BALANCE_STORM_SCREAMER;
+	public static double				PVP_CLASS_BALANCE_SPECTRAL_MASTER;
+	public static double				PVP_CLASS_BALANCE_SHILLIEN_SAINT;
+	public static double				PVP_CLASS_BALANCE_TITAN;
+	public static double				PVP_CLASS_BALANCE_GRAND_KHAUATARI;
+	public static double				PVP_CLASS_BALANCE_DOMINATOR;
+	public static double				PVP_CLASS_BALANCE_DOOMCRYER;
+	public static double				PVP_CLASS_BALANCE_FORTUNE_SEEKER;
+	public static double				PVP_CLASS_BALANCE_MAESTRO;
+	public static double				PVP_CLASS_BALANCE_DOOMBRINGER;
+	public static double				PVP_CLASS_BALANCE_MALE_SOULHOUND;
+	public static double				PVP_CLASS_BALANCE_FEMALE_SOULHOUND;
+	public static double				PVP_CLASS_BALANCE_TRICKSTER;
+	public static double				PVP_CLASS_BALANCE_INSPECTOR;
+	public static double				PVP_CLASS_BALANCE_JUDICATOR;
+	public static double				PVE_CLASS_BALANCE_DUELIST;
+	public static double				PVE_CLASS_BALANCE_DREADNOUGHT;
+	public static double				PVE_CLASS_BALANCE_PHOENIX_KNIGHT;
+	public static double				PVE_CLASS_BALANCE_HELL_KNIGHT;
+	public static double				PVE_CLASS_BALANCE_SAGITTARIUS;
+	public static double				PVE_CLASS_BALANCE_ADVENTURER;
+	public static double				PVE_CLASS_BALANCE_ARCHMAGE;
+	public static double				PVE_CLASS_BALANCE_SOULTAKER;
+	public static double				PVE_CLASS_BALANCE_ARCANA_LORD;
+	public static double				PVE_CLASS_BALANCE_CARDINAL;
+	public static double				PVE_CLASS_BALANCE_HIEROPHANT;
+	public static double				PVE_CLASS_BALANCE_EVA_TEMPLAR;
+	public static double				PVE_CLASS_BALANCE_SWORD_MUSE;
+	public static double				PVE_CLASS_BALANCE_WIND_RIDER;
+	public static double				PVE_CLASS_BALANCE_MOONLIGHT_SENTINEL;
+	public static double				PVE_CLASS_BALANCE_MYSTIC_MUSE;
+	public static double				PVE_CLASS_BALANCE_ELEMENTAL_MASTER;
+	public static double				PVE_CLASS_BALANCE_EVA_SAINT;
+	public static double				PVE_CLASS_BALANCE_SHILLIEN_TEMPLAR;
+	public static double				PVE_CLASS_BALANCE_SPECTRAL_DANCER;
+	public static double				PVE_CLASS_BALANCE_GHOST_HUNTER;
+	public static double				PVE_CLASS_BALANCE_GHOST_SENTINEL;
+	public static double				PVE_CLASS_BALANCE_STORM_SCREAMER;
+	public static double				PVE_CLASS_BALANCE_SPECTRAL_MASTER;
+	public static double				PVE_CLASS_BALANCE_SHILLIEN_SAINT;
+	public static double				PVE_CLASS_BALANCE_TITAN;
+	public static double				PVE_CLASS_BALANCE_GRAND_KHAUATARI;
+	public static double				PVE_CLASS_BALANCE_DOMINATOR;
+	public static double				PVE_CLASS_BALANCE_DOOMCRYER;
+	public static double				PVE_CLASS_BALANCE_FORTUNE_SEEKER;
+	public static double				PVE_CLASS_BALANCE_MAESTRO;
+	public static double				PVE_CLASS_BALANCE_DOOMBRINGER;
+	public static double				PVE_CLASS_BALANCE_MALE_SOULHOUND;
+	public static double				PVE_CLASS_BALANCE_FEMALE_SOULHOUND;
+	public static double				PVE_CLASS_BALANCE_TRICKSTER;
+	public static double				PVE_CLASS_BALANCE_INSPECTOR;
+	public static double				PVE_CLASS_BALANCE_JUDICATOR;
 	public static double				titanium_default_bow_default;
 	public static double				titanium_default_cross_default;
 	public static double				titanium_default_bigb_default;
@@ -1049,7 +1091,7 @@ public final class Config
 	public static int					ENCHANT_CLUTCH_TIER_4;
 	public static int					ENCHANT_CLUTCH_TIER_4_5;
 	public static int					ENCHANT_CLUTCH_TIER_5;
-	public static boolean				MAIL_ENABLED	= false;
+	public static boolean				MAIL_ENABLED				= false;
 	public static String				MAIL_USER;
 	public static String				MAIL_PASSWORD;
 	public static String				DONATE_MAIL_USER;
@@ -1082,21 +1124,7 @@ public final class Config
 	public static int					BONUS_CLAN_REP_AMMOUNT_1_SIDE;
 	public static double				EVENT_HEAL_MUL;
 	public static double				EVENT_MPCONSUME_MUL;
-	public static int					KAMALOKA_PVPS;
-	public static int					KAMALOKA_SUPPORT_PVPS;
-	public static int					KAMALOKA_LEVELS;
-	public static int					EMBRYO_PVPS;
-	public static int					EMBRYO_SUPPORT_PVPS;
-	public static int					EMBRYO_LEVELS;
-	public static int					SOLO_PVPS;
-	public static int					SOLO_SUPPORT_PVPS;
-	public static int					SOLO_LEVELS;
-	public static int					FAFURION_PVPS;
-	public static int					FAFURION_SUPPORT_PVPS;
-	public static int					FAFURION_LEVELS;
-	public static int					ADEN_PVPS;
-	public static int					ADEN_SUPPORT_PVPS;
-	public static int					ADEN_LEVELS;
+
 	public static boolean				AUTO_TVT_ENABLED;
 	public static int[][]				AUTO_TVT_TEAM_LOCATIONS;
 	public static boolean				AUTO_TVT_TEAM_COLORS_RANDOM;
@@ -1178,6 +1206,287 @@ public final class Config
 	public static int					APC_ATTACK_ROW;
 	public static int					APC_ATTACK_ROW_BALANCED;
 	public static int					APC_PATHFIND;
+	public static boolean				NpcBuffer_VIP;
+	public static int					NpcBuffer_VIP_ALV;
+	public static boolean				NpcBuffer_EnableBuff;
+	public static boolean				NpcBuffer_EnableScheme;
+	public static boolean				NpcBuffer_EnableHeal;
+	public static boolean				NpcBuffer_EnableBuffs;
+	public static boolean				NpcBuffer_EnableResist;
+	public static boolean				NpcBuffer_EnableSong;
+	public static boolean				NpcBuffer_EnableDance;
+	public static boolean				NpcBuffer_EnableChant;
+	public static boolean				NpcBuffer_EnableOther;
+	public static boolean				NpcBuffer_EnableSpecial;
+	public static boolean				NpcBuffer_EnableCubic;
+	public static boolean				NpcBuffer_EnableCancel;
+	public static boolean				NpcBuffer_EnableBuffSet;
+	public static boolean				NpcBuffer_EnableBuffPK;
+	public static boolean				NpcBuffer_EnableFreeBuffs;
+	public static boolean				NpcBuffer_EnableTimeOut;
+	public static int					NpcBuffer_TimeOutTime;
+	public static int					NpcBuffer_MinLevel;
+	public static int					NpcBuffer_PriceCancel;
+	public static int					NpcBuffer_PriceHeal;
+	public static int					NpcBuffer_PriceBuffs;
+	public static int					NpcBuffer_PriceResist;
+	public static int					NpcBuffer_PriceSong;
+	public static int					NpcBuffer_PriceDance;
+	public static int					NpcBuffer_PriceChant;
+	public static int					NpcBuffer_PriceOther;
+	public static int					NpcBuffer_PriceSpecial;
+	public static int					NpcBuffer_PriceCubic;
+	public static int					NpcBuffer_PriceSet;
+	public static int					NpcBuffer_PriceScheme;
+	public static int					NpcBuffer_MaxScheme;
+	public static boolean				SCHEME_ALLOW_FLAG;
+	public static List<int[]>			NpcBuffer_BuffSetMage		= new ArrayList<int[]>();
+	public static List<int[]>			NpcBuffer_BuffSetFighter	= new ArrayList<int[]>();
+	public static List<int[]>			NpcBuffer_BuffSetDagger		= new ArrayList<int[]>();
+	public static List<int[]>			NpcBuffer_BuffSetSupport	= new ArrayList<int[]>();
+	public static List<int[]>			NpcBuffer_BuffSetTank		= new ArrayList<int[]>();
+	public static List<int[]>			NpcBuffer_BuffSetArcher		= new ArrayList<int[]>();
+	
+	
+	public static int					KAMALOKA_PVPS;
+	public static int					KAMALOKA_SUPPORT_PVPS;
+	public static int					KAMALOKA_LEVELS;
+	
+	public static int					EMBRYO_PVPS;
+	public static int					EMBRYO_SUPPORT_PVPS;
+	public static int					EMBRYO_LEVELS;
+	
+	public static int					SOLO_PVPS;
+	public static int					SOLO_SUPPORT_PVPS;
+	public static int					SOLO_LEVELS;
+	
+
+	public static int					FAFURION_PVPS;
+	public static int					FAFURION_SUPPORT_PVPS;
+	public static int					FAFURION_LEVELS;
+	public static int					FAFURION_HARD_PVPS;
+	public static int					FAFURION_HARD_SUPPORT_PVPS;
+	public static int					FAFURION_HARD_LEVELS;
+	
+	public static int					ZAKEN_PVPS;
+	public static int					ZAKEN_SUPPORT_PVPS;
+	public static int					ZAKEN_LEVELS;
+	public static int					ZAKEN_HARD_PVPS;
+	public static int					ZAKEN_HARD_SUPPORT_PVPS;
+	public static int					ZAKEN_HARD_LEVELS;
+	
+	public static int					FRINTEZZA_PVPS;
+	public static int					FRINTEZZA_SUPPORT_PVPS;
+	public static int					FRINTEZZA_LEVELS;
+	public static int					FRINTEZZA_HARD_PVPS;
+	public static int					FRINTEZZA_HARD_SUPPORT_PVPS;
+	public static int					FRINTEZZA_HARD_LEVELS;
+	
+	public static int					FREYA_PVPS;
+	public static int					FREYA_SUPPORT_PVPS;
+	public static int					FREYA_LEVELS;
+	public static int					FREYA_HARD_PVPS;
+	public static int					FREYA_HARD_SUPPORT_PVPS;
+	public static int					FREYA_HARD_LEVELS;
+	
+	public static int					ADEN_PVPS;
+	public static int					ADEN_SUPPORT_PVPS;
+	public static int					ADEN_LEVELS;
+	
+	public static ExProperties load(String filename)
+	{
+		return load(new File(filename));
+	}
+	
+	public static ExProperties load(File file)
+	{
+		ExProperties result = new ExProperties();
+		try
+		{
+			result.load(file);
+			_log.log(Level.INFO, "Successfully Loaded " + file.getName());
+		}
+		catch (IOException e)
+		{
+			_log.log(Level.SEVERE, "Error loading config : " + file.getName() + "!", e);
+		}
+		return result;
+	}
+	
+	public static void loadInstances()
+	{
+		ExProperties INSTANCES = load(INSTANCES_FILE);
+		
+		ZAKEN_PVPS = INSTANCES.getProperty("zaken_pvps", 1);
+		ZAKEN_SUPPORT_PVPS = INSTANCES.getProperty("zaken_support_pvps", 1);
+		ZAKEN_LEVELS = INSTANCES.getProperty("zaken_levels", 1);
+		
+		ZAKEN_HARD_PVPS = INSTANCES.getProperty("zaken_hard_pvps", 1);
+		ZAKEN_HARD_SUPPORT_PVPS = INSTANCES.getProperty("zaken_hard_support_pvps", 1);
+		ZAKEN_HARD_LEVELS = INSTANCES.getProperty("zaken_hard_levels", 1);
+		
+		
+		FRINTEZZA_PVPS = INSTANCES.getProperty("frintezza_pvps", 1);
+		FRINTEZZA_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_support_pvps", 1);
+		FRINTEZZA_LEVELS = INSTANCES.getProperty("frintezza_levels", 1);
+		
+		FRINTEZZA_HARD_PVPS = INSTANCES.getProperty("frintezza_hard_pvps", 1);
+		FRINTEZZA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_hard_support_pvps", 1);
+		FRINTEZZA_HARD_LEVELS = INSTANCES.getProperty("frintezza_hard_levels", 1);
+		
+		
+		FREYA_PVPS = INSTANCES.getProperty("freya_pvps", 1);
+		FREYA_SUPPORT_PVPS = INSTANCES.getProperty("freya_support_pvps", 1);
+		FREYA_LEVELS = INSTANCES.getProperty("freya_levels", 1);
+		
+		FREYA_HARD_PVPS = INSTANCES.getProperty("freya_hard_pvps", 1);
+		FREYA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("freya_hard_support_pvps", 1);
+		FREYA_HARD_LEVELS = INSTANCES.getProperty("freya_hard_levels", 1);
+
+
+
+		KAMALOKA_PVPS = INSTANCES.getProperty("kamaloka_pvps", 70);
+		KAMALOKA_SUPPORT_PVPS = INSTANCES.getProperty("kamaloka_support_pvps", 35);
+		KAMALOKA_LEVELS = INSTANCES.getProperty("kamaloka_level", 87);
+		
+		EMBRYO_PVPS = INSTANCES.getProperty("embryo_pvps", 500);
+		EMBRYO_SUPPORT_PVPS = INSTANCES.getProperty("embryo_support_pvps", 250);
+		EMBRYO_LEVELS = INSTANCES.getProperty("embryo_level", 90);
+		
+		SOLO_PVPS = INSTANCES.getProperty("solo_pvps", 50);
+		SOLO_SUPPORT_PVPS = INSTANCES.getProperty("solo_support_pvps", 50);
+		SOLO_LEVELS = INSTANCES.getProperty("solo_level", 86);
+		
+		FAFURION_PVPS = INSTANCES.getProperty("fafurion_pvps", 800);
+		FAFURION_SUPPORT_PVPS = INSTANCES.getProperty("fafurion_support_pvps", 400);
+		FAFURION_LEVELS = INSTANCES.getProperty("fafurion_level", 90);
+		
+		FAFURION_HARD_PVPS = INSTANCES.getProperty("fafurion_hard_pvps", 800);
+		FAFURION_HARD_SUPPORT_PVPS = INSTANCES.getProperty("fafurion_hard_support_pvps", 400);
+		FAFURION_HARD_LEVELS = INSTANCES.getProperty("fafurion_hard_level", 90);
+		
+		ADEN_PVPS = INSTANCES.getProperty("aden_pvps", 1000);
+		ADEN_SUPPORT_PVPS = INSTANCES.getProperty("aden_support_pvps", 500);
+		ADEN_LEVELS = INSTANCES.getProperty("aden_level", 91);
+		
+		ZAKEN_PVPS = INSTANCES.getProperty("zaken_pvps", 1);
+		ZAKEN_SUPPORT_PVPS = INSTANCES.getProperty("zaken_support_pvps", 1);
+		ZAKEN_LEVELS = INSTANCES.getProperty("zaken_levels", 1);
+		ZAKEN_HARD_PVPS = INSTANCES.getProperty("zaken_hard_pvps", 1);
+		ZAKEN_HARD_SUPPORT_PVPS = INSTANCES.getProperty("zaken_hard_support_pvps", 1);
+		ZAKEN_HARD_LEVELS = INSTANCES.getProperty("zaken_hard_levels", 1);
+		
+		
+		FRINTEZZA_PVPS = INSTANCES.getProperty("frintezza_pvps", 1);
+		FRINTEZZA_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_support_pvps", 1);
+		FRINTEZZA_LEVELS = INSTANCES.getProperty("frintezza_levels", 1);
+		FRINTEZZA_HARD_PVPS = INSTANCES.getProperty("frintezza_hard_pvps", 1);
+		FRINTEZZA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_hard_support_pvps", 1);
+		FRINTEZZA_HARD_LEVELS = INSTANCES.getProperty("frintezza_hard_levels", 1);
+		
+		
+		FREYA_PVPS = INSTANCES.getProperty("freya_pvps", 1);
+		FREYA_SUPPORT_PVPS = INSTANCES.getProperty("freya_support_pvps", 1);
+		FREYA_LEVELS = INSTANCES.getProperty("freya_levels", 1);
+		FREYA_HARD_PVPS = INSTANCES.getProperty("freya_hard_pvps", 1);
+		FREYA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("freya_hard_support_pvps", 1);
+		FREYA_HARD_LEVELS = INSTANCES.getProperty("freya_hard_levels", 1);
+	}
+	
+	
+	public static void loadSchemeBuffer()
+	{
+		ExProperties npcbuffer = load(NPCBUFFER_CONFIG_FILE);
+		NpcBuffer_VIP = npcbuffer.getProperty("EnableVIP", false);
+		NpcBuffer_VIP_ALV = npcbuffer.getProperty("VipAccesLevel", 1);
+		NpcBuffer_EnableBuff = npcbuffer.getProperty("EnableBuffSection", true);
+		NpcBuffer_EnableScheme = npcbuffer.getProperty("EnableScheme", true);
+		NpcBuffer_EnableHeal = npcbuffer.getProperty("EnableHeal", true);
+		NpcBuffer_EnableBuffs = npcbuffer.getProperty("EnableBuffs", true);
+		NpcBuffer_EnableResist = npcbuffer.getProperty("EnableResist", true);
+		NpcBuffer_EnableSong = npcbuffer.getProperty("EnableSongs", true);
+		NpcBuffer_EnableDance = npcbuffer.getProperty("EnableDances", true);
+		NpcBuffer_EnableChant = npcbuffer.getProperty("EnableChants", true);
+		NpcBuffer_EnableOther = npcbuffer.getProperty("EnableOther", true);
+		NpcBuffer_EnableSpecial = npcbuffer.getProperty("EnableSpecial", true);
+		NpcBuffer_EnableCubic = npcbuffer.getProperty("EnableCubic", false);
+		NpcBuffer_EnableCancel = npcbuffer.getProperty("EnableRemoveBuffs", true);
+		NpcBuffer_EnableBuffSet = npcbuffer.getProperty("EnableBuffSet", true);
+		NpcBuffer_EnableBuffPK = npcbuffer.getProperty("EnableBuffForPK", false);
+		NpcBuffer_EnableFreeBuffs = npcbuffer.getProperty("EnableFreeBuffs", true);
+		NpcBuffer_EnableTimeOut = npcbuffer.getProperty("EnableTimeOut", true);
+		SCHEME_ALLOW_FLAG = npcbuffer.getProperty("EnableBuffforFlag", false);
+		NpcBuffer_TimeOutTime = npcbuffer.getProperty("TimeoutTime", 10);
+		NpcBuffer_MinLevel = npcbuffer.getProperty("MinimumLevel", 20);
+		NpcBuffer_PriceCancel = npcbuffer.getProperty("RemoveBuffsPrice", 100000);
+		NpcBuffer_PriceHeal = npcbuffer.getProperty("HealPrice", 100000);
+		NpcBuffer_PriceBuffs = npcbuffer.getProperty("BuffsPrice", 100000);
+		NpcBuffer_PriceResist = npcbuffer.getProperty("ResistPrice", 100000);
+		NpcBuffer_PriceSong = npcbuffer.getProperty("SongPrice", 100000);
+		NpcBuffer_PriceDance = npcbuffer.getProperty("DancePrice", 100000);
+		NpcBuffer_PriceChant = npcbuffer.getProperty("ChantsPrice", 100000);
+		NpcBuffer_PriceOther = npcbuffer.getProperty("OtherPrice", 100000);
+		NpcBuffer_PriceSpecial = npcbuffer.getProperty("SpecialPrice", 100000);
+		NpcBuffer_PriceCubic = npcbuffer.getProperty("CubicPrice", 100000);
+		NpcBuffer_PriceSet = npcbuffer.getProperty("SetPrice", 100000);
+		NpcBuffer_PriceScheme = npcbuffer.getProperty("SchemePrice", 100000);
+		NpcBuffer_MaxScheme = npcbuffer.getProperty("MaxScheme", 4);
+		String[] parts;
+		String[] skills = npcbuffer.getProperty("BuffSetMage", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetMage.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+		skills = npcbuffer.getProperty("BuffSetFighter", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetFighter.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+		skills = npcbuffer.getProperty("BuffSetDagger", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetDagger.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+		skills = npcbuffer.getProperty("BuffSetSupport", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetSupport.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+		skills = npcbuffer.getProperty("BuffSetTank", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetTank.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+		skills = npcbuffer.getProperty("BuffSetArcher", "192,1").split(";");
+		for (String sk : skills)
+		{
+			parts = sk.split(",");
+			NpcBuffer_BuffSetArcher.add(new int[]
+			{
+				Integer.parseInt(parts[0]), Integer.parseInt(parts[1])
+			});
+		}
+	}
 	
 	/**
 	 * This class initializes all global variables for configuration.<br>
@@ -1190,6 +1499,7 @@ public final class Config
 		if (Server.serverMode == Server.MODE_GAMESERVER)
 		{
 			_log.info("Loading GameServer Configuration Files...");
+			loadSchemeBuffer();
 			InputStream is = null;
 			try
 			{
@@ -1256,6 +1566,15 @@ public final class Config
 					MIN_PROTOCOL_REVISION = Integer.parseInt(serverSettings.getProperty("MinProtocolRevision", "660"));
 					MAX_PROTOCOL_REVISION = Integer.parseInt(serverSettings.getProperty("MaxProtocolRevision", "665"));
 					SERVER_LOCAL = Boolean.parseBoolean(serverSettings.getProperty("ServerLocal", "True"));
+					try
+					{
+						SCRIPT_ROOT = new File(serverSettings.getString("ScriptRoot", "./data/scripts").replaceAll("\\\\", "/")).getCanonicalFile();
+					}
+					catch (Exception e)
+					{
+						_log.warning("Error setting script root!");
+						SCRIPT_ROOT = new File(".");
+					}
 					if (MIN_PROTOCOL_REVISION > MAX_PROTOCOL_REVISION)
 					{
 						throw new Error("MinProtocolRevision is bigger than MaxProtocolRevision in server configuration file.");
@@ -2072,43 +2391,80 @@ public final class Config
 						}
 					}
 					KAMALOKA_DROPS_TO_FULL_PARTY_ONLY = Boolean.parseBoolean(Luna.getProperty("Kamaloka_drop_to_full_party_only", "True"));
-					CLASS_BALANCE_DUELIST = Double.parseDouble(Luna.getProperty("duelist", "1"));
-					CLASS_BALANCE_DREADNOUGHT = Double.parseDouble(Luna.getProperty("dreadnought", "1"));
-					CLASS_BALANCE_PHOENIX_KNIGHT = Double.parseDouble(Luna.getProperty("phoenix_knight", "1"));
-					CLASS_BALANCE_HELL_KNIGHT = Double.parseDouble(Luna.getProperty("hell_knight", "1"));
-					CLASS_BALANCE_SAGITTARIUS = Double.parseDouble(Luna.getProperty("sagittarius", "1"));
-					CLASS_BALANCE_ADVENTURER = Double.parseDouble(Luna.getProperty("adventurer", "1"));
-					CLASS_BALANCE_ARCHMAGE = Double.parseDouble(Luna.getProperty("archmage", "1"));
-					CLASS_BALANCE_SOULTAKER = Double.parseDouble(Luna.getProperty("soultaker", "1"));
-					CLASS_BALANCE_ARCANA_LORD = Double.parseDouble(Luna.getProperty("arcana_lord", "1"));
-					CLASS_BALANCE_CARDINAL = Double.parseDouble(Luna.getProperty("cardinal", "1"));
-					CLASS_BALANCE_HIEROPHANT = Double.parseDouble(Luna.getProperty("hierophant", "1"));
-					CLASS_BALANCE_EVA_TEMPLAR = Double.parseDouble(Luna.getProperty("eva_templar", "1"));
-					CLASS_BALANCE_SWORD_MUSE = Double.parseDouble(Luna.getProperty("sword_muse", "1"));
-					CLASS_BALANCE_WIND_RIDER = Double.parseDouble(Luna.getProperty("wind_rider", "1"));
-					CLASS_BALANCE_MOONLIGHT_SENTINEL = Double.parseDouble(Luna.getProperty("moonlight_sentinel", "1"));
-					CLASS_BALANCE_MYSTIC_MUSE = Double.parseDouble(Luna.getProperty("mystic_muse", "1"));
-					CLASS_BALANCE_ELEMENTAL_MASTER = Double.parseDouble(Luna.getProperty("elemental_master", "1"));
-					CLASS_BALANCE_EVA_SAINT = Double.parseDouble(Luna.getProperty("eva_saint", "1"));
-					CLASS_BALANCE_SHILLIEN_TEMPLAR = Double.parseDouble(Luna.getProperty("shillien_templar", "1"));
-					CLASS_BALANCE_SPECTRAL_DANCER = Double.parseDouble(Luna.getProperty("spectral_dancer", "1"));
-					CLASS_BALANCE_GHOST_HUNTER = Double.parseDouble(Luna.getProperty("ghost_hunter", "1"));
-					CLASS_BALANCE_GHOST_SENTINEL = Double.parseDouble(Luna.getProperty("ghost_sentinel", "1"));
-					CLASS_BALANCE_STORM_SCREAMER = Double.parseDouble(Luna.getProperty("storm_screamer", "1"));
-					CLASS_BALANCE_SPECTRAL_MASTER = Double.parseDouble(Luna.getProperty("spectral_master", "1"));
-					CLASS_BALANCE_SHILLIEN_SAINT = Double.parseDouble(Luna.getProperty("shillien_saint", "1"));
-					CLASS_BALANCE_TITAN = Double.parseDouble(Luna.getProperty("titan", "1"));
-					CLASS_BALANCE_GRAND_KHAUATARI = Double.parseDouble(Luna.getProperty("grand_khauatari", "1"));
-					CLASS_BALANCE_DOMINATOR = Double.parseDouble(Luna.getProperty("dominator", "1"));
-					CLASS_BALANCE_DOOMCRYER = Double.parseDouble(Luna.getProperty("doomcryer", "1"));
-					CLASS_BALANCE_FORTUNE_SEEKER = Double.parseDouble(Luna.getProperty("fortune_seeker", "1"));
-					CLASS_BALANCE_MAESTRO = Double.parseDouble(Luna.getProperty("maestro", "1"));
-					CLASS_BALANCE_DOOMBRINGER = Double.parseDouble(Luna.getProperty("doombringer", "1"));
-					CLASS_BALANCE_MALE_SOULHOUND = Double.parseDouble(Luna.getProperty("male_soulhound", "1"));
-					CLASS_BALANCE_FEMALE_SOULHOUND = Double.parseDouble(Luna.getProperty("female_soulhound", "1"));
-					CLASS_BALANCE_TRICKSTER = Double.parseDouble(Luna.getProperty("trickster", "1"));
-					CLASS_BALANCE_INSPECTOR = Double.parseDouble(Luna.getProperty("inspector", "1"));
-					CLASS_BALANCE_JUDICATOR = Double.parseDouble(Luna.getProperty("judicator", "1"));
+					PVP_CLASS_BALANCE_DUELIST = Double.parseDouble(Luna.getProperty("pvp_duelist", "1"));
+					PVP_CLASS_BALANCE_DREADNOUGHT = Double.parseDouble(Luna.getProperty("pvp_dreadnought", "1"));
+					PVP_CLASS_BALANCE_PHOENIX_KNIGHT = Double.parseDouble(Luna.getProperty("pvp_phoenix_knight", "1"));
+					PVP_CLASS_BALANCE_HELL_KNIGHT = Double.parseDouble(Luna.getProperty("pvp_hell_knight", "1"));
+					PVP_CLASS_BALANCE_SAGITTARIUS = Double.parseDouble(Luna.getProperty("pvp_sagittarius", "1"));
+					PVP_CLASS_BALANCE_ADVENTURER = Double.parseDouble(Luna.getProperty("pvp_adventurer", "1"));
+					PVP_CLASS_BALANCE_ARCHMAGE = Double.parseDouble(Luna.getProperty("pvp_archmage", "1"));
+					PVP_CLASS_BALANCE_SOULTAKER = Double.parseDouble(Luna.getProperty("pvp_soultaker", "1"));
+					PVP_CLASS_BALANCE_ARCANA_LORD = Double.parseDouble(Luna.getProperty("pvp_arcana_lord", "1"));
+					PVP_CLASS_BALANCE_CARDINAL = Double.parseDouble(Luna.getProperty("pvp_cardinal", "1"));
+					PVP_CLASS_BALANCE_HIEROPHANT = Double.parseDouble(Luna.getProperty("pvp_hierophant", "1"));
+					PVP_CLASS_BALANCE_EVA_TEMPLAR = Double.parseDouble(Luna.getProperty("pvp_eva_templar", "1"));
+					PVP_CLASS_BALANCE_SWORD_MUSE = Double.parseDouble(Luna.getProperty("pvp_sword_muse", "1"));
+					PVP_CLASS_BALANCE_WIND_RIDER = Double.parseDouble(Luna.getProperty("pvp_wind_rider", "1"));
+					PVP_CLASS_BALANCE_MOONLIGHT_SENTINEL = Double.parseDouble(Luna.getProperty("pvp_moonlight_sentinel", "1"));
+					PVP_CLASS_BALANCE_MYSTIC_MUSE = Double.parseDouble(Luna.getProperty("pvp_mystic_muse", "1"));
+					PVP_CLASS_BALANCE_ELEMENTAL_MASTER = Double.parseDouble(Luna.getProperty("pvp_elemental_master", "1"));
+					PVP_CLASS_BALANCE_EVA_SAINT = Double.parseDouble(Luna.getProperty("pvp_eva_saint", "1"));
+					PVP_CLASS_BALANCE_SHILLIEN_TEMPLAR = Double.parseDouble(Luna.getProperty("pvp_shillien_templar", "1"));
+					PVP_CLASS_BALANCE_SPECTRAL_DANCER = Double.parseDouble(Luna.getProperty("pvp_spectral_dancer", "1"));
+					PVP_CLASS_BALANCE_GHOST_HUNTER = Double.parseDouble(Luna.getProperty("pvp_ghost_hunter", "1"));
+					PVP_CLASS_BALANCE_GHOST_SENTINEL = Double.parseDouble(Luna.getProperty("pvp_ghost_sentinel", "1"));
+					PVP_CLASS_BALANCE_STORM_SCREAMER = Double.parseDouble(Luna.getProperty("pvp_storm_screamer", "1"));
+					PVP_CLASS_BALANCE_SPECTRAL_MASTER = Double.parseDouble(Luna.getProperty("pvp_spectral_master", "1"));
+					PVP_CLASS_BALANCE_SHILLIEN_SAINT = Double.parseDouble(Luna.getProperty("pvp_shillien_saint", "1"));
+					PVP_CLASS_BALANCE_TITAN = Double.parseDouble(Luna.getProperty("pvp_titan", "1"));
+					PVP_CLASS_BALANCE_GRAND_KHAUATARI = Double.parseDouble(Luna.getProperty("pvp_grand_khauatari", "1"));
+					PVP_CLASS_BALANCE_DOMINATOR = Double.parseDouble(Luna.getProperty("pvp_dominator", "1"));
+					PVP_CLASS_BALANCE_DOOMCRYER = Double.parseDouble(Luna.getProperty("pvp_doomcryer", "1"));
+					PVP_CLASS_BALANCE_FORTUNE_SEEKER = Double.parseDouble(Luna.getProperty("pvp_fortune_seeker", "1"));
+					PVP_CLASS_BALANCE_MAESTRO = Double.parseDouble(Luna.getProperty("pvp_maestro", "1"));
+					PVP_CLASS_BALANCE_DOOMBRINGER = Double.parseDouble(Luna.getProperty("pvp_doombringer", "1"));
+					PVP_CLASS_BALANCE_MALE_SOULHOUND = Double.parseDouble(Luna.getProperty("pvp_male_soulhound", "1"));
+					PVP_CLASS_BALANCE_FEMALE_SOULHOUND = Double.parseDouble(Luna.getProperty("pvp_female_soulhound", "1"));
+					PVP_CLASS_BALANCE_TRICKSTER = Double.parseDouble(Luna.getProperty("pvp_trickster", "1"));
+					PVP_CLASS_BALANCE_INSPECTOR = Double.parseDouble(Luna.getProperty("pvp_inspector", "1"));
+					PVP_CLASS_BALANCE_JUDICATOR = Double.parseDouble(Luna.getProperty("pvp_judicator", "1"));
+					PVE_CLASS_BALANCE_DUELIST = Double.parseDouble(Luna.getProperty("pve_duelist", "1"));
+					PVE_CLASS_BALANCE_DREADNOUGHT = Double.parseDouble(Luna.getProperty("pve_dreadnought", "1"));
+					PVE_CLASS_BALANCE_PHOENIX_KNIGHT = Double.parseDouble(Luna.getProperty("pve_phoenix_knight", "1"));
+					PVE_CLASS_BALANCE_HELL_KNIGHT = Double.parseDouble(Luna.getProperty("pve_hell_knight", "1"));
+					PVE_CLASS_BALANCE_SAGITTARIUS = Double.parseDouble(Luna.getProperty("pve_sagittarius", "1"));
+					PVE_CLASS_BALANCE_ADVENTURER = Double.parseDouble(Luna.getProperty("pve_adventurer", "1"));
+					PVE_CLASS_BALANCE_ARCHMAGE = Double.parseDouble(Luna.getProperty("pve_archmage", "1"));
+					PVE_CLASS_BALANCE_SOULTAKER = Double.parseDouble(Luna.getProperty("pve_soultaker", "1"));
+					PVE_CLASS_BALANCE_ARCANA_LORD = Double.parseDouble(Luna.getProperty("pve_arcana_lord", "1"));
+					PVE_CLASS_BALANCE_CARDINAL = Double.parseDouble(Luna.getProperty("pve_cardinal", "1"));
+					PVE_CLASS_BALANCE_HIEROPHANT = Double.parseDouble(Luna.getProperty("pve_hierophant", "1"));
+					PVE_CLASS_BALANCE_EVA_TEMPLAR = Double.parseDouble(Luna.getProperty("pve_eva_templar", "1"));
+					PVE_CLASS_BALANCE_SWORD_MUSE = Double.parseDouble(Luna.getProperty("pve_sword_muse", "1"));
+					PVE_CLASS_BALANCE_WIND_RIDER = Double.parseDouble(Luna.getProperty("pve_wind_rider", "1"));
+					PVE_CLASS_BALANCE_MOONLIGHT_SENTINEL = Double.parseDouble(Luna.getProperty("pve_moonlight_sentinel", "1"));
+					PVE_CLASS_BALANCE_MYSTIC_MUSE = Double.parseDouble(Luna.getProperty("pve_mystic_muse", "1"));
+					PVE_CLASS_BALANCE_ELEMENTAL_MASTER = Double.parseDouble(Luna.getProperty("pve_elemental_master", "1"));
+					PVE_CLASS_BALANCE_EVA_SAINT = Double.parseDouble(Luna.getProperty("pve_eva_saint", "1"));
+					PVE_CLASS_BALANCE_SHILLIEN_TEMPLAR = Double.parseDouble(Luna.getProperty("pve_shillien_templar", "1"));
+					PVE_CLASS_BALANCE_SPECTRAL_DANCER = Double.parseDouble(Luna.getProperty("pve_spectral_dancer", "1"));
+					PVE_CLASS_BALANCE_GHOST_HUNTER = Double.parseDouble(Luna.getProperty("pve_ghost_hunter", "1"));
+					PVE_CLASS_BALANCE_GHOST_SENTINEL = Double.parseDouble(Luna.getProperty("pve_ghost_sentinel", "1"));
+					PVE_CLASS_BALANCE_STORM_SCREAMER = Double.parseDouble(Luna.getProperty("pve_storm_screamer", "1"));
+					PVE_CLASS_BALANCE_SPECTRAL_MASTER = Double.parseDouble(Luna.getProperty("pve_spectral_master", "1"));
+					PVE_CLASS_BALANCE_SHILLIEN_SAINT = Double.parseDouble(Luna.getProperty("pve_shillien_saint", "1"));
+					PVE_CLASS_BALANCE_TITAN = Double.parseDouble(Luna.getProperty("pve_titan", "1"));
+					PVE_CLASS_BALANCE_GRAND_KHAUATARI = Double.parseDouble(Luna.getProperty("pve_grand_khauatari", "1"));
+					PVE_CLASS_BALANCE_DOMINATOR = Double.parseDouble(Luna.getProperty("pve_dominator", "1"));
+					PVE_CLASS_BALANCE_DOOMCRYER = Double.parseDouble(Luna.getProperty("pve_doomcryer", "1"));
+					PVE_CLASS_BALANCE_FORTUNE_SEEKER = Double.parseDouble(Luna.getProperty("pve_fortune_seeker", "1"));
+					PVE_CLASS_BALANCE_MAESTRO = Double.parseDouble(Luna.getProperty("pve_maestro", "1"));
+					PVE_CLASS_BALANCE_DOOMBRINGER = Double.parseDouble(Luna.getProperty("pve_doombringer", "1"));
+					PVE_CLASS_BALANCE_MALE_SOULHOUND = Double.parseDouble(Luna.getProperty("pve_male_soulhound", "1"));
+					PVE_CLASS_BALANCE_FEMALE_SOULHOUND = Double.parseDouble(Luna.getProperty("pve_female_soulhound", "1"));
+					PVE_CLASS_BALANCE_TRICKSTER = Double.parseDouble(Luna.getProperty("pve_trickster", "1"));
+					PVE_CLASS_BALANCE_INSPECTOR = Double.parseDouble(Luna.getProperty("pve_inspector", "1"));
+					PVE_CLASS_BALANCE_JUDICATOR = Double.parseDouble(Luna.getProperty("pve_judicator", "1"));
 					// CAPTCHA ANTIBOT
 					BOTS_PREVENTION = Boolean.parseBoolean(Luna.getProperty("EnableBotsPrevention", "false"));
 					KILLS_COUNTER = Integer.parseInt(Luna.getProperty("KillsCounter", "60"));
@@ -2246,21 +2602,8 @@ public final class Config
 					ALLOW_CASTLE_WAREHOUSE = Boolean.parseBoolean(Luna.getProperty("allow_castle_warehouse", "true"));
 					ALLOW_FREIGHT_WAREHOUSE = Boolean.parseBoolean(Luna.getProperty("allow_freight_warehouse", "true"));
 					// instances
-					KAMALOKA_PVPS = Integer.parseInt(Luna.getProperty("kamaloka_pvps", "70"));
-					KAMALOKA_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("kamaloka_support_pvps", "35"));
-					KAMALOKA_LEVELS = Integer.parseInt(Luna.getProperty("kamaloka_level", "87"));
-					EMBRYO_PVPS = Integer.parseInt(Luna.getProperty("embryo_pvps", "500"));
-					EMBRYO_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("embryo_support_pvps", "250"));
-					EMBRYO_LEVELS = Integer.parseInt(Luna.getProperty("embryo_level", "90"));
-					SOLO_PVPS = Integer.parseInt(Luna.getProperty("solo_pvps", "50"));
-					SOLO_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("solo_support_pvps", "50"));
-					SOLO_LEVELS = Integer.parseInt(Luna.getProperty("solo_level", "86"));
-					FAFURION_PVPS = Integer.parseInt(Luna.getProperty("fafurion_pvps", "800"));
-					FAFURION_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("fafurion_support_pvps", "400"));
-					FAFURION_LEVELS = Integer.parseInt(Luna.getProperty("fafurion_level", "90"));
-					ADEN_PVPS = Integer.parseInt(Luna.getProperty("aden_pvps", "1000"));
-					ADEN_SUPPORT_PVPS = Integer.parseInt(Luna.getProperty("aden_support_pvps", "500"));
-					ADEN_LEVELS = Integer.parseInt(Luna.getProperty("aden_level", "91"));
+
+					
 					// logger
 					ENABLE_SUBCLASS_LOGS = Boolean.parseBoolean(Luna.getProperty("enable_subclass_logs", "true"));
 				}

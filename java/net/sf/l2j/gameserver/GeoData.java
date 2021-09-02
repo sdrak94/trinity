@@ -19,9 +19,11 @@ import java.util.logging.Logger;
 
 import com.l2jserver.geodriver.Cell;
 import com.l2jserver.geodriver.GeoDriver;
+import com.l2jserver.geodriver.blocks.FlatBlock;
 
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.DoorTable;
+import net.sf.l2j.gameserver.datatables.FenceTable;
 import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.model.L2World;
@@ -382,29 +384,27 @@ public class GeoData
 	 *            the Z coordinate to end checking at
 	 * @return {@code true} if the character at start coordinates can move to end coordinates, {@code false} otherwise
 	 */
-	public boolean canMove(ILocational from, int toX, int toY, int toZ)
-	{
-		return canMove(from.getX(), from.getY(), from.getZ(), toX, toY, toZ, from.getInstanceWorld());
-	}
-	
-	/**
-	 * Checks if its possible to move from one location to another.
-	 * 
-	 * @param from
-	 *            the {@code ILocational} to start checking from
-	 * @param to
-	 *            the {@code ILocational} to end checking at
-	 * @return {@code true} if the character at start coordinates can move to end coordinates, {@code false} otherwise
-	 */
-	
-	
-	public boolean canMove(ILocational from, ILocational to)
-	{
-		return canMove(from, to.getX(), to.getY(), to.getZ());
-	}
+
 	
 	public boolean canSeeTarget(L2Object cha, ILocational worldPosition)
 	{
 		return canSeeTarget(cha.getX(), cha.getY(), cha.getZ(), cha.getInstanceWorld(), worldPosition.getX(), worldPosition.getY(), worldPosition.getZ());
+	}
+
+	public Location getValidLocation(int ox, int oy, int oz, int tx, int ty, int tz, int instanceId)
+	{
+		// Door checks.
+		if (DoorTable.getInstance().checkIfDoorsBetween(ox, oy, oz, tx, ty, tz, instanceId))
+		{
+			return new Location(ox, oy, oz);
+		}
+		
+		// Fence checks.
+		if (FenceTable.getInstance().checkIfFenceBetween(ox, oy, oz, tx, ty, tz, instanceId))
+		{
+			return new Location(ox, oy, oz);
+		}
+
+		return new Location(tx, ty, tz);
 	}
 }

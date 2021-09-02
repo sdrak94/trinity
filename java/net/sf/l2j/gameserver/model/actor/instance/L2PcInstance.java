@@ -14,6 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
@@ -23,10 +24,15 @@ import java.util.logging.Level;
 
 import org.strixplatform.StrixPlatform;
 
+import ghosts.model.Ghost;
+import gnu.trove.list.array.TIntArrayList;
+import inertia.model.IInertiaBehave;
+import inertia.model.behave.PlayerBehave;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import luna.PassportManager;
 import luna.PlayerPassport;
+import luna.mysql;
 import luna.custom.LunaVariables;
 import luna.custom.eventengine.LunaEvent;
 import luna.custom.eventengine.enums.EventState;
@@ -58,6 +64,7 @@ import net.sf.l2j.gameserver.cache.WarehouseCacheManager;
 import net.sf.l2j.gameserver.communitybbs.BB.Forum;
 import net.sf.l2j.gameserver.communitybbs.Manager.ForumsBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
+import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.BBSSchemeBufferInstance;
 import net.sf.l2j.gameserver.datatables.AccessLevels;
 import net.sf.l2j.gameserver.datatables.AdminCommandAccessRights;
 import net.sf.l2j.gameserver.datatables.CharTemplateTable;
@@ -128,6 +135,7 @@ import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.L2WorldRegion;
 import net.sf.l2j.gameserver.model.Location;
 import net.sf.l2j.gameserver.model.MacroList;
+import net.sf.l2j.gameserver.model.PlayerVar;
 import net.sf.l2j.gameserver.model.ShortCuts;
 import net.sf.l2j.gameserver.model.TradeList;
 import net.sf.l2j.gameserver.model.actor.FakePc;
@@ -286,105 +294,108 @@ import net.sf.l2j.util.Rnd;
  *
  * @version $Revision: 1.66.2.41.2.33 $ $Date: 2005/04/11 10:06:09 $
  */
-public final class L2PcInstance extends L2Playable
+public class L2PcInstance extends L2Playable
 {
-	private static final int[]	TRANSFORMATION_ALLOWED_SKILLS			=
+
+	private final Map<String, Object>				quickVars						= new ConcurrentHashMap<>();
+	
+	private static final int[]		TRANSFORMATION_ALLOWED_SKILLS			=
 	{
 		3, 8, 9, 10, 18, 22, 28, 33, 65, 67, 78, 86, 98, 110, 144, 190, 196, 197, 223, 278, 279, 283, 912, 9009, 289, 293, 320, 361, 362, 400, 401, 402, 403, 404, 406, 407, 437, 440, 449, 494, 539, 540, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 619, 629, 630, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 795, 796, 797, 798, 814, 815, 816, 817, 838, 839, 884, 885, 886, 887, 888, 891, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 1015, 1016, 1018, 1027, 1028, 1034, 1042, 1043, 1201, 1206, 1217, 1264, 1266,
 		1360, 1361, 1400, 1409, 1411, 1417, 1418, 1430, 1303, 1059, 1471, 1472, 1342, 1343, 1508, 1514, 1515, 1523, 1524, 1525, 1528, 1532, 1533, 3328, 3329, 3330, 3331, 3630, 3631, 5437, 5491, 5655, 5656, 5657, 5658, 5659, 8248, 9011, 9012, 16500, 16501, 16502, 16503, 30040
 	};
-	private static final int[]	SUMMONER_TRANSFORMATION_ALLOWED_SKILLS	=
+	private static final int[]		SUMMONER_TRANSFORMATION_ALLOWED_SKILLS	=
 	{
 		896, 897, 898, 899, 900, 38051, 928, 30, 821, 446, 1477, 1514, 38052, 420, 1478, 35, 346, 10026, 38050, 1235, 1236, 4, 1479
 	};
-	private static final int[]	PATH_SKILLS								= new int[]
+	private static final int[]		PATH_SKILLS								= new int[]
 	{
 		9421, 9422, 9423, 9424, 9425, 9426, 9427, 9428, 9429, 9430, 9431, 9432, 9433, 9434, 9435, 9436, 9437, 9438, 9439, 9440, 9441, 9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 9457, 9458, 9459, 9460, 9461, 9462, 9463, 9464, 9465, 9466, 9467, 9468, 9469, 9470, 9471, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 9481, 9482, 9483, 9484, 9485, 9486, 9487, 9488, 9489, 9490, 9491, 9492, 9493, 9494, 9495, 9496, 9497, 9498, 9499, 9500, 9501, 9502, 9503, 9504, 94270, 94271, 94300, 94302, 94350, 94351, 94390, 94391, 94501, 94504, 94510, 94512, 94570, 94571, 94600, 94603, 94710, 94711, 94740, 94741, 94770, 94772, 94830, 94832, 94920, 94922, 94950, 94952, 95010, 95012, 95040, 95041
 	};
-	private static final int[]	CERTIFICATION_SKILLS					= new int[]
+	private static final int[]		CERTIFICATION_SKILLS					= new int[]
 	{
 		35200, 35202, 35204, 35206, 35208, 35210, 35212, 35214, 35216, 35218, 35220, 35222, 35224, 35226, 35228, 35230, 35232, 35234, 35236, 35238, 35240, 35242, 35244, 35246, 35248, 35250, 35252, 35254, 35256, 35258, 35260, 35262, 35264
 	};
-	private static final int[]	PATH_SKILLS_OFFENSIVE					= new int[]
+	private static final int[]		PATH_SKILLS_OFFENSIVE					= new int[]
 	{
 		9421, 9422, 9423, 9424, 9425, 9426, 9427, 9428, 9429, 9430, 9431, 9432, 9433, 9434, 9435, 9436, 9437, 9438, 9439, 9440, 9441, 94270, 94271, 94300, 94302, 94350, 94351, 94390, 94391
 	};
-	private static final int[]	PATH_SKILLS_DEF							= new int[]
+	private static final int[]		PATH_SKILLS_DEF							= new int[]
 	{
 		9463, 9464, 9465, 9466, 9467, 9468, 9469, 9470, 9471, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 9481, 9482, 9483, 94710, 94711, 94740, 94741, 94770, 94772, 94830, 94832
 	};
-	private static final int[]	PATH_SKILLS_MAGE						= new int[]
+	private static final int[]		PATH_SKILLS_MAGE						= new int[]
 	{
 		9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 9457, 9458, 9459, 9460, 9461, 9462, 94501, 94504, 94510, 94512, 94570, 94571, 94600, 94603
 	};
-	private static final int[]	PATH_SKILLS_SUP							= new int[]
+	private static final int[]		PATH_SKILLS_SUP							= new int[]
 	{
 		9484, 9485, 9486, 9487, 9488, 9489, 9490, 9491, 9492, 9493, 9494, 9495, 9496, 9497, 9498, 9499, 9500, 9501, 9502, 9503, 9504, 94920, 94922, 94950, 94952, 95010, 95012, 95040, 95041
 	};
-	public static final int[]	HERO_SKILLS								=
+	public static final int[]		HERO_SKILLS								=
 	{
 		395, 396, 1374, 1375, 1376, 12504, 12503, 12502, 12505, 12501, 12506, 12511, 12509, 12508, 12510
 	};
-	public static final int		NEWBIE_LEVEL							= 76;
+	public static final int			NEWBIE_LEVEL							= 76;
 	// Character Skill SQL String Definitions:
-	private static final String	RESTORE_SKILLS_FOR_CHAR					= "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
-	private static final String	ADD_NEW_SKILL							= "INSERT INTO character_skills (charId,skill_id,skill_level,skill_name,class_index) VALUES (?,?,?,?,?)";
-	private static final String	UPDATE_CHARACTER_SKILL_LEVEL			= "UPDATE character_skills SET skill_level=? WHERE skill_id=? AND charId=? AND class_index=?";
-	private static final String	DELETE_SKILL_FROM_CHAR					= "DELETE FROM character_skills WHERE skill_id=? AND charId=? AND class_index=?";
-	private static final String	DELETE_CHAR_SKILLS						= "DELETE FROM character_skills WHERE charId=? AND class_index=?";
+	private static final String		RESTORE_SKILLS_FOR_CHAR					= "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
+	private static final String		ADD_NEW_SKILL							= "INSERT INTO character_skills (charId,skill_id,skill_level,skill_name,class_index) VALUES (?,?,?,?,?)";
+	private static final String		UPDATE_CHARACTER_SKILL_LEVEL			= "UPDATE character_skills SET skill_level=? WHERE skill_id=? AND charId=? AND class_index=?";
+	private static final String		DELETE_SKILL_FROM_CHAR					= "DELETE FROM character_skills WHERE skill_id=? AND charId=? AND class_index=?";
+	private static final String		DELETE_CHAR_SKILLS						= "DELETE FROM character_skills WHERE charId=? AND class_index=?";
 	// Character Skill Save SQL String Definitions:
-	private static final String	ADD_SKILL_SAVE							= "INSERT INTO character_skills_save (charId,skill_id,skill_level,effect_count,effect_cur_time,reuse_delay,systime,restore_type,class_index,buff_index) VALUES (?,?,?,?,?,?,?,?,?,?)";
-	private static final String	RESTORE_SKILL_SAVE						= "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay, systime FROM character_skills_save WHERE charId=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
-	private static final String	DELETE_SKILL_SAVE						= "DELETE FROM character_skills_save WHERE charId=? AND class_index=?";
+	private static final String		ADD_SKILL_SAVE							= "INSERT INTO character_skills_save (charId,skill_id,skill_level,effect_count,effect_cur_time,reuse_delay,systime,restore_type,class_index,buff_index) VALUES (?,?,?,?,?,?,?,?,?,?)";
+	private static final String		RESTORE_SKILL_SAVE						= "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay, systime FROM character_skills_save WHERE charId=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
+	private static final String		DELETE_SKILL_SAVE						= "DELETE FROM character_skills_save WHERE charId=? AND class_index=?";
 	// Character Character SQL String Definitions:
-	private static final String	INSERT_CHARACTER						= "INSERT INTO characters (account_name,charId,char_name,level,maxHp,curHp,maxCp,curCp,maxMp,curMp,face,hairStyle,hairColor,sex,exp,sp,karma,fame,pvpkills,pkkills,clanid,race,classid,deletetime,cancraft,title,accesslevel,online,isin7sdungeon,clan_privs,wantspeace,base_class,newbie,nobless,power_grade,last_recom_date,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-	private static final String	UPDATE_CHARACTER						= "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,fame=?,pvpkills=?,pkkills=?,rec_have=?,rec_left=?,clanid=?,race=?,classid=?,deletetime=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,newbie=?,nobless=?,power_grade=?,subpledge=?,last_recom_date=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,death_penalty_level=?,bookmarkslot=?,streak=?,lastKill1=?,lastKill2=?,vitality_points=?,heroWpnDel=?,cancraft=?,nameC=?,titleC=?,event_kills=?,raid_kills=?,siege_kills=?,olympiad_wins=?,cp_points=? WHERE charId=?";
-	private static final String	RESTORE_CHARACTER						= "SELECT account_name, charId, char_name, level, maxHp, curHp, maxCp, curCp, maxMp, curMp, face, hairStyle, hairColor, sex, heading, x, y, z, exp, expBeforeDeath, sp, karma, fame, pvpkills, pkkills, clanid, race, classid, deletetime, cancraft, title, rec_have, rec_left, accesslevel, online, char_slot, lastAccess, clan_privs, wantspeace, base_class, onlinetime, isin7sdungeon, punish_level, punish_timer, newbie, nobless, power_grade, subpledge, last_recom_date, lvl_joined_academy, apprentice, sponsor, varka_ketra_ally,clan_join_expiry_time,clan_create_expiry_time,death_penalty_level,bookmarkslot,streak,lastKill1,lastKill2,vitality_points,heroWpnDel,nameC,titleC,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points FROM characters WHERE charId=?";
+	private static final String		INSERT_CHARACTER						= "INSERT INTO characters (account_name,charId,char_name,level,maxHp,curHp,maxCp,curCp,maxMp,curMp,face,hairStyle,hairColor,sex,exp,sp,karma,fame,pvpkills,pkkills,clanid,race,classid,deletetime,cancraft,title,accesslevel,online,isin7sdungeon,clan_privs,wantspeace,base_class,newbie,nobless,power_grade,last_recom_date,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	private static final String		UPDATE_CHARACTER						= "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,fame=?,pvpkills=?,pkkills=?,rec_have=?,rec_left=?,clanid=?,race=?,classid=?,deletetime=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,newbie=?,nobless=?,power_grade=?,subpledge=?,last_recom_date=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,death_penalty_level=?,bookmarkslot=?,streak=?,lastKill1=?,lastKill2=?,vitality_points=?,heroWpnDel=?,cancraft=?,nameC=?,titleC=?,event_kills=?,raid_kills=?,siege_kills=?,olympiad_wins=?,cp_points=? WHERE charId=?";
+	private static final String		RESTORE_CHARACTER						= "SELECT account_name, charId, char_name, level, maxHp, curHp, maxCp, curCp, maxMp, curMp, face, hairStyle, hairColor, sex, heading, x, y, z, exp, expBeforeDeath, sp, karma, fame, pvpkills, pkkills, clanid, race, classid, deletetime, cancraft, title, rec_have, rec_left, accesslevel, online, char_slot, lastAccess, clan_privs, wantspeace, base_class, onlinetime, isin7sdungeon, punish_level, punish_timer, newbie, nobless, power_grade, subpledge, last_recom_date, lvl_joined_academy, apprentice, sponsor, varka_ketra_ally,clan_join_expiry_time,clan_create_expiry_time,death_penalty_level,bookmarkslot,streak,lastKill1,lastKill2,vitality_points,heroWpnDel,nameC,titleC,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points FROM characters WHERE charId=?";
 	// Character Class Path
-	private static final String	INSERT_CLASSPATHS						= "INSERT INTO class_paths VALUES (?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
+	private static final String		INSERT_CLASSPATHS						= "INSERT INTO class_paths VALUES (?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
 	// Character Teleport Bookmark:
-	private static final String	INSERT_TP_BOOKMARK						= "INSERT INTO character_tpbookmark (charId,Id,x,y,z,icon,tag,name) values (?,?,?,?,?,?,?,?)";
-	private static final String	UPDATE_TP_BOOKMARK						= "UPDATE character_tpbookmark SET icon=?,tag=?,name=? where charId=? AND Id=?";
-	private static final String	RESTORE_TP_BOOKMARK						= "SELECT Id,x,y,z,icon,tag,name FROM character_tpbookmark WHERE charId=?";
-	private static final String	DELETE_TP_BOOKMARK						= "DELETE FROM character_tpbookmark WHERE charId=? AND Id=?";
+	private static final String		INSERT_TP_BOOKMARK						= "INSERT INTO character_tpbookmark (charId,Id,x,y,z,icon,tag,name) values (?,?,?,?,?,?,?,?)";
+	private static final String		UPDATE_TP_BOOKMARK						= "UPDATE character_tpbookmark SET icon=?,tag=?,name=? where charId=? AND Id=?";
+	private static final String		RESTORE_TP_BOOKMARK						= "SELECT Id,x,y,z,icon,tag,name FROM character_tpbookmark WHERE charId=?";
+	private static final String		DELETE_TP_BOOKMARK						= "DELETE FROM character_tpbookmark WHERE charId=? AND Id=?";
 	// Character Subclass SQL String Definitions:
-	private static final String	RESTORE_CHAR_SUBCLASSES					= "SELECT class_id,exp,sp,level,class_index FROM character_subclasses WHERE charId=? ORDER BY class_index ASC";
-	private static final String	ADD_CHAR_SUBCLASS						= "INSERT INTO character_subclasses (charId,class_id,exp,sp,level,class_index) VALUES (?,?,?,?,?,?)";
-	private static final String	UPDATE_CHAR_SUBCLASS					= "UPDATE character_subclasses SET exp=?,sp=?,level=?,class_id=? WHERE charId=? AND class_index =?";
-	private static final String	DELETE_CHAR_SUBCLASS					= "DELETE FROM character_subclasses WHERE charId=? AND class_index=?";
+	private static final String		RESTORE_CHAR_SUBCLASSES					= "SELECT class_id,exp,sp,level,class_index FROM character_subclasses WHERE charId=? ORDER BY class_index ASC";
+	private static final String		ADD_CHAR_SUBCLASS						= "INSERT INTO character_subclasses (charId,class_id,exp,sp,level,class_index) VALUES (?,?,?,?,?,?)";
+	private static final String		UPDATE_CHAR_SUBCLASS					= "UPDATE character_subclasses SET exp=?,sp=?,level=?,class_id=? WHERE charId=? AND class_index =?";
+	private static final String		DELETE_CHAR_SUBCLASS					= "DELETE FROM character_subclasses WHERE charId=? AND class_index=?";
 	// Character Henna SQL String Definitions:
-	private static final String	RESTORE_CHAR_HENNAS						= "SELECT slot,symbol_id FROM character_hennas WHERE charId=? AND class_index=?";
-	private static final String	ADD_CHAR_HENNA							= "INSERT INTO character_hennas (charId,symbol_id,slot,class_index) VALUES (?,?,?,?)";
-	private static final String	DELETE_CHAR_HENNA						= "DELETE FROM character_hennas WHERE charId=? AND slot=? AND class_index=?";
-	private static final String	DELETE_CHAR_HENNAS						= "DELETE FROM character_hennas WHERE charId=? AND class_index=?";
+	private static final String		RESTORE_CHAR_HENNAS						= "SELECT slot,symbol_id FROM character_hennas WHERE charId=? AND class_index=?";
+	private static final String		ADD_CHAR_HENNA							= "INSERT INTO character_hennas (charId,symbol_id,slot,class_index) VALUES (?,?,?,?)";
+	private static final String		DELETE_CHAR_HENNA						= "DELETE FROM character_hennas WHERE charId=? AND slot=? AND class_index=?";
+	private static final String		DELETE_CHAR_HENNAS						= "DELETE FROM character_hennas WHERE charId=? AND class_index=?";
 	// Character Shortcut SQL String Definitions:
-	private static final String	DELETE_CHAR_SHORTCUTS					= "DELETE FROM character_shortcuts WHERE charId=? AND class_index=?";
+	private static final String		DELETE_CHAR_SHORTCUTS					= "DELETE FROM character_shortcuts WHERE charId=? AND class_index=?";
 	// Character Recommendation SQL String Definitions:
-	private static final String	RESTORE_CHAR_RECOMS						= "SELECT charId,target_id FROM character_recommends WHERE charId=?";
-	private static final String	ADD_CHAR_RECOM							= "INSERT INTO character_recommends (charId,target_id) VALUES (?,?)";
+	private static final String		RESTORE_CHAR_RECOMS						= "SELECT charId,target_id FROM character_recommends WHERE charId=?";
+	private static final String		ADD_CHAR_RECOM							= "INSERT INTO character_recommends (charId,target_id) VALUES (?,?)";
 	/*
 	 * private static final String DELETE_CHAR_RECOMS = "DELETE FROM character_recommends WHERE charId=?";
 	 */
 	// Character Transformation SQL String Definitions:
-	private static final String	SELECT_CHAR_TRANSFORM					= "SELECT transform_id FROM characters WHERE charId=?";
-	private static final String	UPDATE_CHAR_TRANSFORM					= "UPDATE characters SET transform_id=? WHERE charId=?";
-	public static final int		REQUEST_TIMEOUT							= 15;
-	public static final int		STORE_PRIVATE_NONE						= 0;
-	public static final int		STORE_PRIVATE_SELL						= 1;
-	public static final int		STORE_PRIVATE_BUY						= 3;
-	public static final int		STORE_PRIVATE_MANUFACTURE				= 5;
-	public static final int		STORE_PRIVATE_PACKAGE_SELL				= 8;
-	private L2PcInstance		_lastKiller								= null;
-	public boolean				canSendUserInfo							= false;
-	private int					_lockdownTime							= 0;
-	private long				_lastCaptchaTimeStamp;
-	private String				_secretCode								= null;
-	private String				_pinCode								= null;
-	public String				_reason									= "";
-	public int					EMBRYO_DAMAGE_DEALT;
-	private long				_museumOnlineTime;
-	private final PlayerPassport _passport;
-	static Map<Integer, Long>	_dressMeExpiryDates						= new FastMap<Integer, Long>();
+	private static final String		SELECT_CHAR_TRANSFORM					= "SELECT transform_id FROM characters WHERE charId=?";
+	private static final String		UPDATE_CHAR_TRANSFORM					= "UPDATE characters SET transform_id=? WHERE charId=?";
+	public static final int			REQUEST_TIMEOUT							= 15;
+	public static final int			STORE_PRIVATE_NONE						= 0;
+	public static final int			STORE_PRIVATE_SELL						= 1;
+	public static final int			STORE_PRIVATE_BUY						= 3;
+	public static final int			STORE_PRIVATE_MANUFACTURE				= 5;
+	public static final int			STORE_PRIVATE_PACKAGE_SELL				= 8;
+	private L2PcInstance			_lastKiller								= null;
+	public boolean					canSendUserInfo							= false;
+	private int						_lockdownTime							= 0;
+	private long					_lastCaptchaTimeStamp;
+	private String					_secretCode								= null;
+	private String					_pinCode								= null;
+	public String					_reason									= "";
+	public int						EMBRYO_DAMAGE_DEALT;
+	private long					_museumOnlineTime;
+	private final PlayerPassport	_passport;
+	static Map<Integer, Long>		_dressMeExpiryDates						= new FastMap<Integer, Long>();
 	
 	public static Map<Integer, Long> getDressMeExpiryDates()
 	{
@@ -2297,111 +2308,9 @@ public final class L2PcInstance extends L2Playable
 	{
 		_isCool = isCool;
 	}
-	/*
-	 * final public boolean hasTehForce()
-	 * {
-	 * return _hasTehForce;
-	 * }
-	 * final public void setHasTehForce(final boolean force)
-	 * {
-	 * _hasTehForce = force;
-	 * }
-	 */
-	// ============================================== //
-	// Sql Variables Engine By L][Sunrise Team //
-	// ============================================== //
+
 	
-	private final Map<String, String> user_variables = new ConcurrentHashMap<>();
-	
-	public void setVar(String name, String value)
-	{
-		user_variables.put(name, value);
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("REPLACE INTO luna_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,-1)"))
-		{
-			statement.setInt(1, getObjectId());
-			statement.setString(2, name);
-			statement.setString(3, value);
-			statement.execute();
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-	}
-	
-	public void unsetVar(String name)
-	{
-		if (name == null)
-		{
-			return;
-		}
-		if (user_variables.remove(name) != null)
-		{
-			try (Connection con = L2DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM `luna_variables` WHERE `obj_id`=? AND `type`='user-var' AND `name`=? LIMIT 1"))
-			{
-				statement.setInt(1, getObjectId());
-				statement.setString(2, name);
-				statement.execute();
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-			}
-		}
-	}
-	
-	public String getVar(String name, String defaultVal)
-	{
-		String var = user_variables.get(name);
-		if (var == null)
-		{
-			return defaultVal;
-		}
-		return user_variables.get(name);
-	}
-	
-	public boolean getVarB(String name, boolean defaultVal)
-	{
-		String var = user_variables.get(name);
-		if (var == null)
-		{
-			return defaultVal;
-		}
-		return !(var.equals("0") || var.equalsIgnoreCase("false"));
-	}
-	
-	public boolean getVarB(String name)
-	{
-		String var = user_variables.get(name);
-		return !((var == null) || var.equals("0") || var.equalsIgnoreCase("false"));
-	}
-	
-	public Map<String, String> getVars()
-	{
-		return user_variables;
-	}
-	
-	@SuppressWarnings("unused")
-	private void loadVariables()
-	{
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection(); PreparedStatement offline = con.prepareStatement("SELECT * FROM luna_variables WHERE obj_id = ?"))
-		{
-			offline.setInt(1, getObjectId());
-			try (ResultSet rs = offline.executeQuery())
-			{
-				while (rs.next())
-				{
-					String name = rs.getString("name");
-					String value = Strings.stripSlashes(rs.getString("value"));
-					user_variables.put(name, value);
-				}
-			}
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
-	}
+
 	
 	public void loadEmail()
 	{
@@ -2498,7 +2407,7 @@ public final class L2PcInstance extends L2Playable
 	/** Last NPC Id talked on a quest */
 	private int									_questNpcObject			= 0;
 	/** The table containing all Quests began by the L2PcInstance */
-	private final List<QuestState> _quests = new ArrayList<>();
+	private final List<QuestState>				_quests					= new ArrayList<>();
 	/** The list containing all shortCuts of this L2PcInstance */
 	private final ShortCuts						_shortCuts				= new ShortCuts(this);
 	/** The list containing all macroses of this L2PcInstance */
@@ -3294,18 +3203,22 @@ public final class L2PcInstance extends L2Playable
 	
 	public String getAccountName()
 	{
-		if (getClient() == null || getClient().isDetached())
+		if ((getClient() == null || getClient().isDetached()) && !(this instanceof Ghost))
 			return "disconnected";
-		return getClient().getAccountName();
+		if (this instanceof Ghost)
+			return this._accountName;
+		else
+			return getClient().getAccountName();
 	}
 	
 	public String getAccountNameIgnoreDetached()
 	{
-		if (getClient() == null)
-		{
+		if ((getClient() == null || getClient().isDetached()) && !(this instanceof Ghost))
 			return "disconnected";
-		}
-		return getClient().getAccountName();
+		if (this instanceof Ghost)
+			return this._accountName;
+		else
+			return getClient().getAccountName();
 	}
 	
 	public Map<Integer, String> getAccountChars()
@@ -3664,7 +3577,7 @@ public final class L2PcInstance extends L2Playable
 	 * @param accountName
 	 *            The name of the account including this L2PcInstance
 	 */
-	private L2PcInstance(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
+	protected L2PcInstance(int objectId, L2PcTemplate template, String accountName, PcAppearance app)
 	{
 		super(objectId, template);
 		super.initCharStatusUpdateValues();
@@ -3683,6 +3596,7 @@ public final class L2PcInstance extends L2Playable
 		if (!Config.WAREHOUSE_CACHE)
 			getWarehouse();
 		getFreight();
+		buffSchemes = new CopyOnWriteArrayList<>();
 	}
 	
 	private L2PcInstance(int objectId)
@@ -3691,6 +3605,7 @@ public final class L2PcInstance extends L2Playable
 		super.initCharStatusUpdateValues();
 		initPcStatusUpdateValues();
 		_passport = PassportManager.getInstance().fetch(this);
+		buffSchemes = new CopyOnWriteArrayList<>();
 	}
 	
 	@Override
@@ -4154,9 +4069,7 @@ public final class L2PcInstance extends L2Playable
 					}
 				}
 			}
-		}
-		);
-		
+		});
 		return quests.toArray(new Quest[quests.size()]);
 	}
 	
@@ -4882,7 +4795,6 @@ public final class L2PcInstance extends L2Playable
 		L2ItemInstance old = getInventory().getPaperdollItem(Inventory.PAPERDOLL_LRHAND);
 		if (old == null)
 			old = getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
-
 		if (NewHuntingGrounds._started && _inEventHG)
 		{
 			if (isEquiped)
@@ -5597,6 +5509,11 @@ public final class L2PcInstance extends L2Playable
 		_race = race;
 	}
 	
+	public void setRace(Race race)
+	{
+		_race = race.ordinal();
+	}
+	
 	public Race getRace()
 	{
 		if (_race < 0)
@@ -5628,10 +5545,12 @@ public final class L2PcInstance extends L2Playable
 				return Race.Human;
 		}
 	}
+	
 	public final boolean getSex()
 	{
 		return _appearance.getSex();
 	}
+	
 	public L2Radar getRadar()
 	{
 		return _radar;
@@ -5842,7 +5761,6 @@ public final class L2PcInstance extends L2Playable
 	 */
 	public void standUp()
 	{
-
 		if (eventSitForced && isInKoreanEvent())
 		{
 			sendMessage("You can not stand up at this moment");
@@ -7050,6 +6968,7 @@ public final class L2PcInstance extends L2Playable
 			}
 		}
 	}
+	
 	public Location getCurrentSkillWorldPositionLoc()
 	{
 		return new Location(_currentSkillWorldPosition.getX(), _currentSkillWorldPosition.getY(), _currentSkillWorldPosition.getZ());
@@ -7464,7 +7383,7 @@ public final class L2PcInstance extends L2Playable
 	public void broadcastPacket(L2GameServerPacket mov)
 	{
 		boolean sendPacket = true;
-		if (!canSendUserInfo)
+		if (!canSendUserInfo && !(this instanceof Ghost))
 			return;
 		if (!(mov instanceof CharInfo))
 			sendPacket(mov);
@@ -8446,7 +8365,6 @@ public final class L2PcInstance extends L2Playable
 	{
 		if (!super.doDie(killer))
 			return false;
-
 		if (isInEvent())
 		{
 			LunaEvent activeEvent = EventManager.getInstance().getActiveEvent();
@@ -8536,7 +8454,6 @@ public final class L2PcInstance extends L2Playable
 				}
 			}
 			_streak = 0;
-
 			if (pk != null)
 			{
 				TvTEvent.onKill(killer, this);
@@ -8800,7 +8717,6 @@ public final class L2PcInstance extends L2Playable
 		{
 			// if (_countTvTkills > 19 || _countFOSKills > 19 || _countDMkills > 18)
 			// return;
-
 			increasePvpKills(targetPlayer, false);
 			return;
 		}
@@ -10988,7 +10904,7 @@ public final class L2PcInstance extends L2Playable
 	{
 		return _clan;
 	}
-
+	
 	public final String getClanName()
 	{
 		String _name = "";
@@ -10996,6 +10912,7 @@ public final class L2PcInstance extends L2Playable
 			_name = getClan().getName();
 		return _name;
 	}
+	
 	/**
 	 * Return True if the L2PcInstance is the leader of its clan.<BR>
 	 * <BR>
@@ -11194,7 +11111,6 @@ public final class L2PcInstance extends L2Playable
 		// Don't allow disarming a cursed weapon
 		if (isCursedWeaponEquipped())
 			return false;
-
 		// Unequip the weapon
 		L2ItemInstance wpn = getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
 		if (wpn == null)
@@ -11933,7 +11849,7 @@ public final class L2PcInstance extends L2Playable
 				{
 					player.setClanCreateExpiryTime(0);
 				}
-				player.loadVariables();
+				player.loadVariables(con);
 				int clanId = rset.getInt("clanid");
 				player.setPowerGrade((int) rset.getLong("power_grade"));
 				player.setPledgeType(rset.getInt("subpledge"));
@@ -12045,6 +11961,8 @@ public final class L2PcInstance extends L2Playable
 				}
 				chars.close();
 				stmt.close();
+
+				BBSSchemeBufferInstance.loadSchemes(player, con);
 				// PreparedStatement stmt2 = con.prepareStatement("SELECT charId, char_name, lasthwid FROM characters LEFT JOIN accounts ON characters.account_name = accounts.login where accounts.lasthwid=?");
 				// stmt.setString(1, player.getHWID());
 				// ResultSet chars2 = stmt.executeQuery();
@@ -12827,6 +12745,7 @@ public final class L2PcInstance extends L2Playable
 		}
 		return oldSkill;
 	}
+	
 	@Override
 	public L2Skill removeSkill(L2Skill skill, boolean store)
 	{
@@ -14147,7 +14066,6 @@ public final class L2PcInstance extends L2Playable
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-
 		if (_inEventHG && NewHuntingGrounds._started)
 		{
 			this.sendMessage("You can't use skills in this event");
@@ -16365,13 +16283,6 @@ public final class L2PcInstance extends L2Playable
 				}
 				if (s.sendIcon())
 					sl.addSkill(s.getId(), s.getLevel(), s.isPassive());
-				// if(LunaSkillGuard.getInstance().checkSkill(this, s.getId()))
-				// {
-				// if (s.sendIcon())
-				// sl.addSkill(s.getId(), s.getLevel(), s.isPassive());
-				// }
-				// else
-				// continue;
 			}
 		}
 		else
@@ -17251,7 +17162,6 @@ public final class L2PcInstance extends L2Playable
 			getPet().setFollowStatus(true);
 			getPet().updateAndBroadcastStatus(0);
 		}
-		TvTEvent.onTeleported(this);
 	}
 	
 	public void setLastPartyPosition(int x, int y, int z)
@@ -17427,7 +17337,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			if (bp == null)
 				continue;
-			_log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
+			_log.warning("[BypassValidation]" + getName() + " '" + bp + "'");
 			if (bp.equals(cmd))
 				return true;
 		}
@@ -17435,7 +17345,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			if (bp == null)
 				continue;
-			_log.warning("[BypassValidation]"+getName()+" '"+bp+"'");
+			_log.warning("[BypassValidation]" + getName() + " '" + bp + "'");
 			if (cmd.startsWith(bp))
 				return true;
 		}
@@ -19255,7 +19165,7 @@ public final class L2PcInstance extends L2Playable
 	}
 	
 	@Override
-	public final void sendDamageMessage(L2Character target, int damage, boolean mcrit, boolean pcrit, boolean miss)
+	public void sendDamageMessage(L2Character target, int damage, boolean mcrit, boolean pcrit, boolean miss)
 	{
 		sendDamageMessage(target, damage, mcrit, pcrit, miss, false);
 	}
@@ -20362,7 +20272,7 @@ public final class L2PcInstance extends L2Playable
 	
 	public String getIP()
 	{
-		return getClient().getIP();
+		return (this instanceof Ghost) ? "0.0.0.0" : getClient().getIP();
 	}
 	
 	public String getHWID()
@@ -20529,6 +20439,9 @@ public final class L2PcInstance extends L2Playable
 		}
 		if (isTransformed() || isInStance())
 		{
+			if (getTransformation().getAllowedSkills().contains(skillId))
+				return false;
+			
 			if (isInStance())
 			{
 				if (skillId >= 2000)
@@ -21756,7 +21669,6 @@ public final class L2PcInstance extends L2Playable
 		}
 		return "FFFF77";
 	}
-
 	
 	// Nexus Events start
 	private L2PcTemplate	_antifeedTemplate	= null;
@@ -22173,30 +22085,30 @@ public final class L2PcInstance extends L2Playable
 					if (isCursedWeaponEquipped())
 						return;
 					// Don't allow other Race to Wear Kamael exclusive Weapons.
-					if (!item.isEquipped() && item.getItem() instanceof L2Weapon && !isGM())
-					{
-						L2Weapon wpn = (L2Weapon) item.getItem();
-						switch (this.getRace())
-						{
-							case Human:
-							case MHuman:
-							case Dwarf:
-							case Elf:
-							case DarkElf:
-							case Orc:
-							case MOrc:
-							{
-								switch (wpn.getItemType())
-								{
-									case RAPIER:
-									case CROSSBOW:
-										this.sendPacket(new SystemMessage(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION));
-										return;
-								}
-								break;
-							}
-						}
-					}
+//					if (!item.isEquipped() && item.getItem() instanceof L2Weapon && !isGM())
+//					{
+//						L2Weapon wpn = (L2Weapon) item.getItem();
+//						switch (this.getRace())
+//						{
+//							case Human:
+//							case MHuman:
+//							case Dwarf:
+//							case Elf:
+//							case DarkElf:
+//							case Orc:
+//							case MOrc:
+//							{
+//								switch (wpn.getItemType())
+//								{
+//									case RAPIER:
+//									case CROSSBOW:
+//										this.sendPacket(new SystemMessage(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION));
+//										return;
+//								}
+//								break;
+//							}
+//						}
+//					}
 					break;
 				}
 				case L2Item.SLOT_CHEST:
@@ -22536,7 +22448,6 @@ public final class L2PcInstance extends L2Playable
 		return null;
 	}
 	
-	private Map<String, String>				_userSession;
 	private final FastMap<Integer, Long>	_partyRequests	= new FastMap<>();
 	private long							_lookingForPartyMembers;
 	/** Anti Bot System */
@@ -22555,32 +22466,7 @@ public final class L2PcInstance extends L2Playable
 	{
 		sendPacket(new CreatureSay(objectId, messageType, charName, text));
 	}
-	
-	public String getSessionVar(String key)
-	{
-		if (_userSession == null)
-		{
-			return null;
-		}
-		return _userSession.get(key);
-	}
-	
-	public void setSessionVar(String key, String val)
-	{
-		if (_userSession == null)
-		{
-			_userSession = new ConcurrentHashMap<String, String>();
-		}
-		if ((val == null) || val.isEmpty())
-		{
-			_userSession.remove(key);
-		}
-		else
-		{
-			_userSession.put(key, val);
-		}
-	}
-	
+
 	public boolean isBehind(final L2Object target)
 	{
 		return isBehind(target, calcStat(Stats.BACK_ANGLE_INCREASE, 50, (L2Character) target, null));
@@ -23191,7 +23077,7 @@ public final class L2PcInstance extends L2Playable
 		}
 		return true;
 	}
-
+	
 	@Override
 	public PlayerPassport getPassport()
 	{
@@ -23218,24 +23104,21 @@ public final class L2PcInstance extends L2Playable
 	{
 		if (other == null)
 			return false;
-		
 		final String myHWID = getHWID();
 		final String otHWID = other.getHWID();
-		
-		
 		return myHWID == otHWID;
 	}
-
+	
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
-
+	
 	@Override
 	public ILocational getLocation()
 	{
-		return this.getLoc();
+		return getLoc();
 	}
 	
 	public List<Quest> getAllQuests(final boolean completed)
@@ -23252,17 +23135,460 @@ public final class L2PcInstance extends L2Playable
 		}
 		return quests;
 	}
-
+	
 	public int getSexNumber()
 	{
 		return getSex() ? 1 : 0;
 	}
-
+	
 	public int getRaceId()
 	{
 		return _race;
 	}
-
-
 	
+	public IInertiaBehave createInertiaBehavior()
+	{
+		return new PlayerBehave();
+	}
+	
+	public void setLvl(int lvl)
+	{
+		if (lvl >= 1 && lvl <= Experience.MAX_LEVEL)
+		{
+			long pXp = getExp();
+			long tXp = Experience.LEVEL[lvl];
+			if (pXp > tXp)
+			{
+				removeExpAndSp(pXp - tXp, 0);
+			}
+			else if (pXp < tXp)
+			{
+				_ignoreLevel = true;
+				addExpAndSp(tXp - pXp, 1000000000);
+			}
+		}
+	}
+
+	private final Map<String, PlayerVar> user_variables = new ConcurrentHashMap<String, PlayerVar>();
+	
+	public static void setVarOffline(int playerObjId, String name, String value, long expireDate)
+	{
+		L2PcInstance player = L2World.getInstance().getPlayer(playerObjId);
+		if (player != null)
+			player.setVar(name, value, expireDate);
+		else
+			mysql.set("REPLACE INTO character_custom_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,?)", playerObjId, name, value, expireDate);
+	}
+	
+	public static void setVarOffline(int playerObjId, String name, int value, long expireDate)
+	{
+		setVarOffline(playerObjId, name, String.valueOf(value), expireDate);
+	}
+	
+	public static void setVarOffline(int playerObjId, String name, int value)
+	{
+		setVarOffline(playerObjId, name, String.valueOf(value), -1);
+	}
+	
+	public static void setVarOffline(int playerObjId, String name, long value, long expireDate)
+	{
+		setVarOffline(playerObjId, name, String.valueOf(value), expireDate);
+	}
+	
+	public static void setVarOffline(int playerObjId, String name, long value)
+	{
+		setVarOffline(playerObjId, name, String.valueOf(value), -1);
+	}
+	
+	public static void unsetVarOffline(int playerObjId, String name)
+	{
+		L2PcInstance player = L2World.getInstance().getPlayer(playerObjId);
+		if (player != null)
+			player.unsetVar(name);
+		else
+			mysql.set("DELETE FROM `character_custom_variables` WHERE `obj_id`=? AND `type`='user-var' AND `name`=? LIMIT 1", playerObjId, name);
+	}
+	
+	public void setVar(String name, String value, long expireDate)
+	{
+		if (user_variables.containsKey(name))
+		{
+			getVarObject(name).stopExpireTask();
+		}
+		user_variables.put(name, new PlayerVar(this, name, value, expireDate));
+		mysql.set("REPLACE INTO character_custom_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,?)", getObjectId(), name, value, expireDate);
+	}
+	
+	public void setVar(String name, String value)
+	{
+		setVar(name, value, -1);
+	}
+	
+	public void setVar(String name, int value, long expireDate)
+	{
+		setVar(name, String.valueOf(value), expireDate);
+	}
+	
+	public void setVar(String name, int value)
+	{
+		setVar(name, String.valueOf(value), -1);
+	}
+	
+	public void setVar(String name, long value, long expireDate)
+	{
+		setVar(name, String.valueOf(value), expireDate);
+	}
+	
+	public void setVar(String name, long value)
+	{
+		setVar(name, String.valueOf(value), -1);
+	}
+	
+	public void unsetVar(String name)
+	{
+		if (name == null)
+			return;
+		PlayerVar pv = user_variables.remove(name);
+		if (pv != null)
+		{
+			pv.stopExpireTask();
+			mysql.set("DELETE FROM `character_custom_variables` WHERE `obj_id`=? AND `type`='user-var' AND `name`=? LIMIT 1", getObjectId(), name);
+		}
+	}
+	
+	public String getVar(String name)
+	{
+		PlayerVar pv = getVarObject(name);
+		if (pv == null)
+		{
+			return null;
+		}
+		return pv.getValue();
+	}
+	
+	public long getVarTimeToExpire(String name)
+	{
+		try
+		{
+			return getVarObject(name).getTimeToExpire();
+		}
+		catch (NullPointerException npe)
+		{}
+		return 0;
+	}
+	
+	public PlayerVar getVarObject(String name)
+	{
+		return user_variables.get(name);
+	}
+	
+	public boolean getVarB(String name, boolean defaultVal)
+	{
+		PlayerVar pv = getVarObject(name);
+		if (pv == null)
+		{
+			return defaultVal;
+		}
+		return pv.getValueBoolean();
+	}
+	
+	public boolean getVarB(String name)
+	{
+		return getVarB(name, false);
+	}
+	
+	public long getVarLong(String name)
+	{
+		return getVarLong(name, 0L);
+	}
+	
+	public long getVarLong(String name, long defaultVal)
+	{
+		long result = defaultVal;
+		String var = getVar(name);
+		if (var != null)
+		{
+			result = Long.parseLong(var);
+		}
+		return result;
+	}
+	
+	public int getVarInt(String name)
+	{
+		return getVarInt(name, 0);
+	}
+	
+	public int getVarInt(String name, int defaultVal)
+	{
+		int result = defaultVal;
+		String var = getVar(name);
+		if (var != null)
+		{
+			result = Integer.parseInt(var);
+		}
+		return result;
+	}
+	
+	public Map<String, PlayerVar> getVars()
+	{
+		return user_variables;
+	}
+	
+	private void loadVariables(Connection con)
+	{
+		try (PreparedStatement offline = con.prepareStatement("SELECT * FROM character_custom_variables WHERE obj_id = ?"))
+		{
+			offline.setInt(1, getObjectId());
+			try (ResultSet rs = offline.executeQuery())
+			{
+				while (rs.next())
+				{
+					String name = rs.getString("name");
+					String value = Strings.stripSlashes(rs.getString("value"));
+					long expire_time = rs.getLong("expire_time");
+					long curtime = System.currentTimeMillis();
+					if ((expire_time <= curtime) && (expire_time > 0))
+					{
+						continue;
+					}
+					user_variables.put(name, new PlayerVar(this, name, value, expire_time));
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public static String getVarFromPlayer(int objId, String var)
+	{
+		String value = null;
+		try (Connection con = L2DatabaseFactory.getConnectionS(); PreparedStatement offline = con.prepareStatement("SELECT value FROM character_custom_variables WHERE obj_id = ? AND name = ?"))
+		{
+			offline.setInt(1, objId);
+			offline.setString(2, var);
+			try (ResultSet rs = offline.executeQuery())
+			{
+				if (rs.next())
+				{
+					value = Strings.stripSlashes(rs.getString("value"));
+				}
+			}
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return value;
+	}
+	
+	/**
+	 * Adding Variable to Map<Name, Value>. It's not saved to database.
+	 * Value can be taken back by {@link #getQuickVarO(String, Object...)} method.
+	 * 
+	 * @param name
+	 *            key
+	 * @param value
+	 *            value
+	 */
+	public void addQuickVar(String name, Object value)
+	{
+		if (quickVars.containsKey(name))
+			quickVars.remove(name);
+		quickVars.put(name, value);
+	}
+	
+	/**
+	 * Getting back String Value located in quickVars Map<Name, Value>.
+	 * If value doesn't exist, defaultValue is returned.
+	 * If value isn't String type, throws Error
+	 * 
+	 * @param name
+	 *            key
+	 * @param defaultValue
+	 *            Value returned when <code>name</code> key doesn't exist
+	 * @return value
+	 */
+	public String getQuickVarS(String name, String... defaultValue)
+	{
+		if (!quickVars.containsKey(name))
+		{
+			if (defaultValue.length > 0)
+				return defaultValue[0];
+			return null;
+		}
+		return (String) quickVars.get(name);
+	}
+	
+	/**
+	 * Getting back String Value located in quickVars Map<Name, Value>.
+	 * If value doesn't exist, defaultValue is returned.
+	 * If value isn't Boolean type, throws Error
+	 * 
+	 * @param name
+	 *            key
+	 * @param defaultValue
+	 *            Value returned when <code>name</code> key doesn't exist
+	 * @return value
+	 */
+	public boolean getQuickVarB(String name, boolean... defaultValue)
+	{
+		if (!quickVars.containsKey(name))
+		{
+			if (defaultValue.length > 0)
+				return defaultValue[0];
+			return false;
+		}
+		return ((Boolean) quickVars.get(name)).booleanValue();
+	}
+	
+	/**
+	 * Getting back Integer Value located in quickVars Map<Name, Value>.
+	 * If value doesn't exist, defaultValue is returned.
+	 * If value isn't Integer type, throws Error
+	 * 
+	 * @param name
+	 *            key
+	 * @param defaultValue
+	 *            Value returned when <code>name</code> key doesn't exist
+	 * @return value
+	 */
+	public int getQuickVarI(String name, int... defaultValue)
+	{
+		if (!quickVars.containsKey(name))
+		{
+			if (defaultValue.length > 0)
+				return defaultValue[0];
+			return -1;
+		}
+		return ((Integer) quickVars.get(name)).intValue();
+	}
+	
+	/**
+	 * Getting back Long Value located in quickVars Map<Name, Value>.
+	 * If value doesn't exist, defaultValue is returned.
+	 * If value isn't Long type, throws Error
+	 * 
+	 * @param name
+	 *            key
+	 * @param defaultValue
+	 *            Value returned when <code>name</code> key doesn't exist
+	 * @return value
+	 */
+	public long getQuickVarL(String name, long... defaultValue)
+	{
+		if (!quickVars.containsKey(name))
+		{
+			if (defaultValue.length > 0)
+				return defaultValue[0];
+			return -1L;
+		}
+		return ((Long) quickVars.get(name)).longValue();
+	}
+	
+	/**
+	 * Getting back Object Value located in quickVars Map<Name, Value>.
+	 * If value doesn't exist, defaultValue is returned.
+	 * 
+	 * @param name
+	 *            key
+	 * @param defaultValue
+	 *            Value returned when <code>name</code> key doesn't exist
+	 * @return value
+	 */
+	public Object getQuickVarO(String name, Object... defaultValue)
+	{
+		if (!quickVars.containsKey(name))
+		{
+			if (defaultValue.length > 0)
+				return defaultValue[0];
+			return null;
+		}
+		return quickVars.get(name);
+	}
+	
+	/**
+	 * Checking if quickVars Map<Name, Value> contains a name as a Key
+	 * 
+	 * @param name
+	 *            key
+	 * @return contains name
+	 */
+	public boolean containsQuickVar(String name)
+	{
+		return quickVars.containsKey(name);
+	}
+	
+	/**
+	 * Removing Key from quickVars Map
+	 * 
+	 * @param name
+	 *            - key
+	 */
+	public void deleteQuickVar(String name)
+	{
+		quickVars.remove(name);
+	}
+	
+	private Map<String, String> _userSession;
+	
+	public String getSessionVar(String key)
+	{
+		if (_userSession == null)
+		{
+			return null;
+		}
+		return _userSession.get(key);
+	}
+	
+	public void setSessionVar(String key, String val)
+	{
+		if (_userSession == null)
+		{
+			_userSession = new ConcurrentHashMap<String, String>();
+		}
+		if ((val == null) || val.isEmpty())
+		{
+			_userSession.remove(key);
+		}
+		else
+		{
+			_userSession.put(key, val);
+		}
+	}
+	
+	private final List<BBSSchemeBufferInstance.PlayerScheme> buffSchemes;
+	
+	public List<BBSSchemeBufferInstance.PlayerScheme> getBuffSchemes()
+	{
+		return buffSchemes;
+	}
+	
+	public BBSSchemeBufferInstance.PlayerScheme getBuffSchemeById(int id)
+	{
+		for (BBSSchemeBufferInstance.PlayerScheme scheme : buffSchemes)
+			if (scheme.schemeId == id)
+				return scheme;
+		return null;
+	}
+	
+	public BBSSchemeBufferInstance.PlayerScheme getBuffSchemeByName(String name)
+	{
+		for (BBSSchemeBufferInstance.PlayerScheme scheme : buffSchemes)
+			if (scheme.schemeName.equals(name))
+				return scheme;
+		return null;
+	}
+	
+	public void broadcastSkillOrSocialAnimation(int id, int level, int hitTime, int lockActivityTime)
+	{
+		if (isAlikeDead())
+			return;
+		boolean performSocialAction = (level < 1);
+		if (!performSocialAction)
+			broadcastPacket(new MagicSkillUse(this, this, id, level, hitTime, 0));
+		else
+			broadcastPacket(new SocialAction(getObjectId(), id));
+	}
 }

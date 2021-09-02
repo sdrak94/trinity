@@ -311,8 +311,7 @@
 </skill>
 <skill id="5128" levels="1" name="Symbol of the Sniper">
   <set name="target" val="TARGET_ONE"/>
-  <set name="hitTime" val="500"/>
-  <set name="skillType" val="BUFF"/>
+  <set name="skillType" val="CONT"/>
   <set name="operateType" val="OP_ACTIVE"/>
   <for>
     <effect name="Buff" time="8" val="0">

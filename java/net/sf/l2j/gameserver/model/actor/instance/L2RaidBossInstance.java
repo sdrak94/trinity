@@ -435,7 +435,10 @@ public class L2RaidBossInstance extends L2MonsterInstance
 				Announcements.getInstance().announceToAll(getName() + " has been defeated by " + player.getDisplayName() + clan);
 			}
 			if (!isTempSpawn())
+			{
 				RaidBossSpawnManager.getInstance().updateStatus(this, true);
+				getSpawn().setDeathDate(System.currentTimeMillis());
+			}
 		}
 		Collection<L2PcInstance> ppl = L2World.getInstance().getAllPlayers().values();
 		for (L2PcInstance p : ppl)

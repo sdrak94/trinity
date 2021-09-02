@@ -33,16 +33,17 @@ public class GlobalEventVariablesHolder
 	{
 		if (_night)
 		{
-			Announcements.getInstance().announceToAll("Night begins");
+			//Announcements.getInstance().announceToAll("Night begins");
 			Announcements.getInstance().announceToAll("Pagan's Temple is open");
-			DayNightSpawnManager.getInstance().spawnNightCreatures();
+			//DayNightSpawnManager.getInstance().spawnNightCreatures();
 		}
 		else
 		{
-			DayNightSpawnManager.getInstance().kickAllPlayersFromPTWhenNightIsOver();
-			DayNightSpawnManager.getInstance().spawnDayCreatures();
-			Announcements.getInstance().announceToAll("Day begins");
-			Announcements.getInstance().announceToAll("The sun raised and the undeads vanished.");
+			DayNightSpawnManager.getInstance().kickAllPlayersFromPT();
+			//DayNightSpawnManager.getInstance().spawnDayCreatures();
+			//Announcements.getInstance().announceToAll("Day begins");
+			Announcements.getInstance().announceToAll("Pagan's Temple is forbidden atm.");
+			Announcements.getInstance().announceToAll("The undeads vanished.");
 		}
 	}
 	

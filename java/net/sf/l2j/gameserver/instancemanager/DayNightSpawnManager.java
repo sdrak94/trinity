@@ -17,6 +17,7 @@ package net.sf.l2j.gameserver.instancemanager;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.util.FastMap;
 import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.model.L2Spawn;
@@ -101,11 +102,12 @@ public void spawnDayCreatures()
 	spawnCreatures(_nightCreatures, _dayCreatures, "night", "day");
 }
 
-public void kickAllPlayersFromPTWhenNightIsOver()
+public void kickAllPlayersFromPT()
 {
 	for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 	{
-		if (player.getClient().isDetached())
+
+		if (!(player instanceof Ghost) && player.getClient().isDetached())
 		{
 			continue;
 		}

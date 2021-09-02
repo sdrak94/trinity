@@ -118,29 +118,30 @@ public class ShowBoard extends L2GameServerPacket
 	
 	public static void separateAndSend(String html, L2PcInstance player)
 	{
-		// Alexander - Dont show community board on players below lvl 6
-		if (player.getLevel() < 6)
-		{
-			player.sendMessage("You cannot use the Community Board until you are level 6 or more");
-			return;
-		}
-		if (html.length() < 8180)
+		if (html.length() < 16250)
 		{
 			player.sendPacket(new ShowBoard(html, "101"));
 			player.sendPacket(new ShowBoard(null, "102"));
 			player.sendPacket(new ShowBoard(null, "103"));
 		}
-		else if (html.length() < 8180 * 2)
+		else if (html.length() < (16250 * 2))
 		{
-			player.sendPacket(new ShowBoard(html.substring(0, 8180), "101"));
-			player.sendPacket(new ShowBoard(html.substring(8180, html.length()), "102"));
+			player.sendPacket(new ShowBoard(html.substring(0, 16250), "101"));
+			player.sendPacket(new ShowBoard(html.substring(16250), "102"));
 			player.sendPacket(new ShowBoard(null, "103"));
 		}
-		else if (html.length() < 8180 * 3)
+		else if (html.length() < (16250 * 3))
 		{
-			player.sendPacket(new ShowBoard(html.substring(0, 8180), "101"));
-			player.sendPacket(new ShowBoard(html.substring(8180, 8180 * 2), "102"));
-			player.sendPacket(new ShowBoard(html.substring(8180 * 2, html.length()), "103"));
+			player.sendPacket(new ShowBoard(html.substring(0, 16250), "101"));
+			player.sendPacket(new ShowBoard(html.substring(16250, 16250 * 2), "102"));
+			player.sendPacket(new ShowBoard(html.substring(16250 * 2), "103"));
 		}
+		else
+		{
+			player.sendPacket(new ShowBoard("<html><body><br><center>Error: HTML was too long!</center></body></html>", "101"));
+			player.sendPacket(new ShowBoard(null, "102"));
+			player.sendPacket(new ShowBoard(null, "103"));
+		}
+		player.sendPacket(ActionFailed.STATIC_PACKET);
 	}
 }

@@ -957,7 +957,7 @@ public void sendInfo(L2PcInstance activeChar)
 @Override
 public int getInstanceWorld()
 {
-	return this.getInstanceWorld();
+	return getInstanceId();
 }
 
 @Override

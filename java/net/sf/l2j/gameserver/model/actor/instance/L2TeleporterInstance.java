@@ -2,6 +2,7 @@ package net.sf.l2j.gameserver.model.actor.instance;
 
 import java.util.StringTokenizer;
 
+//import instances.Ultraverse;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.ThreadPoolManager;
@@ -23,7 +24,6 @@ import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.SetupGauge;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
-import scripts.instances.Ultraverse.Ultraverse;
 
 /**
  * @author NightMarez
@@ -369,7 +369,7 @@ public static boolean checkIfCanTeleport(L2PcInstance activeChar)
 		return false;
 	}
 	
-	if (activeChar.getInstanceId() > 0 && (!activeChar.isInUniqueInstance() || InstanceManager.getInstance().getPlayerWorld(activeChar).templateId != Ultraverse.INSTANCEID)&& !activeChar.isInActiveFunEvent())
+	if (activeChar.getInstanceId() > 0 && (!activeChar.isInUniqueInstance() || InstanceManager.getInstance().getPlayerWorld(activeChar).templateId != InstanceManager.ULTRAVERSE_ID)&& !activeChar.isInActiveFunEvent())
 	{
 		activeChar.sendMessage("You cannot teleport while in an instance.");
 		return false;

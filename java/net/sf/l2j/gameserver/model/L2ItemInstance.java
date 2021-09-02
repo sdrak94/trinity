@@ -2726,7 +2726,7 @@ public final class L2ItemInstance extends L2Object
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
 
 	@Override
@@ -2734,5 +2734,16 @@ public final class L2ItemInstance extends L2Object
 	{
 		return this.getLoc();
 	}
-
+	
+	private boolean _fakeTempItem = false;
+	
+	public void setFakeTempItem(Boolean val)
+	{
+		_fakeTempItem = val;
+	}
+	
+	public boolean isFakeTempItem()
+	{
+		return _fakeTempItem;
+	}
 }

@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
@@ -354,6 +355,9 @@ public void addVisibleObject(L2Object object, L2WorldRegion newRegion)
 			L2PcInstance tmp = _allPlayers.get(player.getObjectId());
 			if (tmp != null)
 			{
+				if (player instanceof Ghost || tmp instanceof Ghost)
+					return;
+				
 				_log.warning("Duplicate character!? Closing both characters (" + player.getName() + ")");
 				player.closeNetConnection();
 				tmp.closeNetConnection();

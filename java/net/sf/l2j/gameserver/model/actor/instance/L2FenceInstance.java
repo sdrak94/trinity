@@ -299,12 +299,18 @@ public final class L2FenceInstance extends L2Object
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
 
 	@Override
 	public ILocational getLocation()
 	{
 		return this.getLoc();
+	}
+	
+	@Override
+	public boolean isFence()
+	{
+		return true;
 	}
 }

@@ -97,21 +97,6 @@ public class L2OlympiadManagerInstance extends L2Npc
 					case 5:
 						Olympiad.getInstance().registerNoble(player, true);
 						break;
-					case 6:
-//						passes = Olympiad.getInstance().getNoblessePasses(player, false);
-//						if(passes > 0)
-//						{
-//							html.setFile(Olympiad.OLYMPIAD_HTML_PATH + "noble_settle.htm");
-//							html.replace("%objectId%", String.valueOf(getObjectId()));
-//							player.sendPacket(html);
-//						}
-//						else
-//						{
-//							html.setFile(Olympiad.OLYMPIAD_HTML_PATH + "noble_nopoints.htm");
-//							html.replace("%objectId%", String.valueOf(getObjectId()));
-//							player.sendPacket(html);
-//						}
-						break;
 					case 7:
 						L2Multisell.getInstance().separateAndSend(102, player, getNpcId(), false, getCastle().getTaxRate());
 						break;
@@ -251,6 +236,13 @@ public class L2OlympiadManagerInstance extends L2Npc
 								int id = Integer.parseInt(command.substring(11));
 								Olympiad.addSpectator(id, player, true);
 								break;
+							case 4:
+							{
+								reply.setFile(Olympiad.OLYMPIAD_HTML_PATH + "hero_main2.htm");
+								reply.replace("%objectId%", String.valueOf(getObjectId()));
+								player.sendPacket(reply);
+								break;
+							}
 							default:
 								_logOlymp.warning("Olympiad System: Couldnt send packet for request " + val);
 								break;

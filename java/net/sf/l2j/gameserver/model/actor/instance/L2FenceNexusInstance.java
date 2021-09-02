@@ -124,7 +124,7 @@ public int getHeading()
 @Override
 public int getInstanceWorld()
 {
-	return this.getInstanceWorld();
+	return getInstanceId();
 }
 
 @Override

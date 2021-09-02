@@ -642,12 +642,12 @@ public class L2AirShipInstance extends L2Character
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
 
 	@Override
 	public ILocational getLocation()
 	{
-		return this.getLoc();
+		return getLoc();
 	}
 }

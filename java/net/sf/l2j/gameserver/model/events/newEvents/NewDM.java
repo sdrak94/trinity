@@ -9,6 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import luna.custom.holder.LunaGlobalVariablesHolder;
@@ -1046,6 +1047,8 @@ public class NewDM
 			for (L2PcInstance player : _players)
 			{
 				if (player == null || eventPlayer == null)
+					continue;
+				if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
 					continue;
 				String IP = player.getClient().getIP();
 				String IP2 = eventPlayer.getClient().getIP();

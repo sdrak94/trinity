@@ -1,24 +1,19 @@
 /*
  * $Header: WayPointNode.java, 20/07/2005 19:49:29 luisantonioa Exp $
- *
  * $Author: luisantonioa $
  * $Date: 20/07/2005 19:49:29 $
  * $Revision: 1 $
  * $Log: WayPointNode.java,v $
- * Revision 1  20/07/2005 19:49:29  luisantonioa
+ * Revision 1 20/07/2005 19:49:29 luisantonioa
  * Added copyright notice
- *
- *
-* This program is free software: you can redistribute it and/or modify it under
+ * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 3 of the License, or (at your option) any later
  * version.
- * 
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- * 
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -44,15 +39,14 @@ import net.sf.l2j.util.Point3D;
  *
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
-
 public class WayPointNode extends L2Object
 {
-	private int _id;
-	private String _title, _type;
-	private static final String NORMAL = "Node", SELECTED = "Selected", LINKED = "Linked";
-	private static int _lineId = 5560;
-	private static final String LINE_TYPE = "item";
-	private Map<WayPointNode, List<WayPointNode>> _linkLists;
+	private int										_id;
+	private String									_title, _type;
+	private static final String						NORMAL		= "Node", SELECTED = "Selected", LINKED = "Linked";
+	private static int								_lineId		= 5560;
+	private static final String						LINE_TYPE	= "item";
+	private Map<WayPointNode, List<WayPointNode>>	_linkLists;
 	
 	/**
 	 * @param objectId
@@ -63,7 +57,8 @@ public class WayPointNode extends L2Object
 		_linkLists = Collections.synchronizedMap(new WeakHashMap<WayPointNode, List<WayPointNode>>());
 	}
 	
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
 	 * @see net.sf.l2j.gameserver.model.L2Object#isAutoAttackable(net.sf.l2j.gameserver.model.L2Character)
 	 */
 	@Override
@@ -194,26 +189,19 @@ public class WayPointNode extends L2Object
 		int modX = x1 - x2 > 0 ? -1 : 1;
 		int modY = y1 - y2 > 0 ? -1 : 1;
 		int modZ = z1 - z2 > 0 ? -1 : 1;
-		
 		int diffX = Math.abs(x1 - x2);
 		int diffY = Math.abs(y1 - y2);
 		int diffZ = Math.abs(z1 - z2);
-		
 		int distance = (int) Math.sqrt(diffX * diffX + diffY * diffY + diffZ * diffZ);
-		
 		int steps = distance / 40;
-		
 		List<WayPointNode> lineNodes = new FastList<WayPointNode>();
-		
 		for (int i = 0; i < steps; i++)
 		{
 			x1 = x1 + (modX * diffX / steps);
 			y1 = y1 + (modY * diffY / steps);
 			z1 = z1 + (modZ * diffZ / steps);
-			
 			lineNodes.add(WayPointNode.spawn(LINE_TYPE, _lineId, x1, y1, z1));
 		}
-		
 		nodeA.addLineInfo(nodeB, lineNodes);
 		nodeB.addLineInfo(nodeA, lineNodes);
 	}
@@ -265,33 +253,29 @@ public class WayPointNode extends L2Object
 	public List<WayPointNode> getLineNodes()
 	{
 		List<WayPointNode> list = new FastList<WayPointNode>();
-		
 		for (List<WayPointNode> points : _linkLists.values())
 		{
 			list.addAll(points);
 		}
-		
 		return list;
 	}
-
+	
 	@Override
 	public int getHeading()
 	{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
+	
 	@Override
 	public int getInstanceWorld()
 	{
-		// TODO Auto-generated method stub
-		return 0;
+		return getInstanceId();
 	}
-
+	
 	@Override
 	public ILocational getLocation()
 	{
 		return this.getLoc();
 	}
-	
 }

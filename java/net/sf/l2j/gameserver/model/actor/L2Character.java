@@ -14,6 +14,7 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import luna.custom.handler.AchievementBp;
@@ -858,6 +859,11 @@ public abstract class L2Character extends L2Object
 		// temporary fix for heading on teleports
 		if (heading != 0)
 			getPosition().setHeading(heading);
+		if (this instanceof Ghost)
+		{
+			onTeleported();
+			revalidateZone(true);
+		}
 		if (!(this instanceof L2PcInstance) || (((L2PcInstance) this).getClient() != null && ((L2PcInstance) this).getClient().isDetached()))
 		{
 			onTeleported();
@@ -1056,7 +1062,6 @@ public abstract class L2Character extends L2Object
 			}
 		}
 		_move = null;
-
 		// Reduce the current CP if TIREDNESS configuration is activated
 		if (Config.ALT_GAME_TIREDNESS)
 			setCurrentCp(getCurrentCp() - 10);
@@ -9119,7 +9124,6 @@ public abstract class L2Character extends L2Object
 		}
 		return Config.BUFFS_MAX_AMOUNT + Math.max(0, getSkillLevel(L2Skill.SKILL_DIVINE_INSPIRATION)) + 3;
 	}
-	
 	/**
 	 * Send system message about damage.<BR>
 	 * <BR>
@@ -9321,7 +9325,6 @@ public abstract class L2Character extends L2Object
 			return false;
 		if (player1.isInFunEvent() != player2.isInFunEvent())
 			return false;
-
 		if (TvT._started || NewTvT._started || NewHuntingGrounds._started || FOS._started || NewFOS._started || CTF._started || NewCTF._started || VIP._started || DM._started || NewDM._started || NewDomination._started) // when events started it's slightly different
 		{
 			// if (player1.getInEventPeaceZone())
@@ -9791,7 +9794,7 @@ public abstract class L2Character extends L2Object
 	
 	public void broadcastUserInfo()
 	{}
-
+	
 	public boolean testDoCastConditions(final L2Skill skill)
 	{
 		if (skill == null || isSkillDisabled(skill.getId()) || ((skill.getFlyType() == FlyType.CHARGE.toString()) && isMovementDisabled()))
@@ -9809,7 +9812,7 @@ public abstract class L2Character extends L2Object
 			return false;
 		}
 		// Verify the different types of silence (magic and physic)
-		if (!skill.isPotion()  && (skill.isMagic() && isMuted() || !skill.isMagic() && isPhysicalMuted()))
+		if (!skill.isPotion() && (skill.isMagic() && isMuted() || !skill.isMagic() && isPhysicalMuted()))
 		{
 			return false;
 		}
@@ -9826,7 +9829,8 @@ public abstract class L2Character extends L2Object
 				{
 					return false;
 				}
-			} else if (!region.checkEffectRangeInsidePeaceZone(skill, getX(), getY(), getZ()))
+			}
+			else if (!region.checkEffectRangeInsidePeaceZone(skill, getX(), getY(), getZ()))
 			{
 				return false;
 			}
@@ -9849,6 +9853,4 @@ public abstract class L2Character extends L2Object
 		}
 		return true;
 	}
-	
-	
 }

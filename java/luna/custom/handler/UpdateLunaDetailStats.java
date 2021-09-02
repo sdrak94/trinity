@@ -83,7 +83,9 @@ public final class UpdateLunaDetailStats extends L2GameServerPacket
 		content = content.replace("%ac%", atkCount + "");
 		content = content.replace("%aaoea%", (atkCount > 1 ? (int) (activeChar.getStat().calcStat(Stats.POWER_ATTACK_ANGLE, 120, null, null)) : "N/A") + "");
 		content = content.replace("%aec%", (int) (activeChar.getStat().calcStat(Stats.EVASION_ABSOLUTE, 0, null, null)) + "%");
-		_html = "UpdateStats=1 "+ content;
+		_html = "=:LunaAdvancedStatsUpdateWnd:= "+ content;
+//		_html = "=:LunaAutoPots:= "+ content;
+		
 		
 	}
 	

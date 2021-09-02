@@ -18,9 +18,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -35,6 +40,8 @@ import net.sf.l2j.gameserver.model.L2SkillLearn;
 import net.sf.l2j.gameserver.model.L2TransformSkillLearn;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.base.ClassId;
+import net.sf.l2j.gameserver.model.base.Race;
+import net.sf.l2j.gameserver.skills.DocumentSkill.Skill;
 
 /**
  * This class ...
@@ -922,4 +929,5 @@ public class SkillTreeTable
 	{
 		protected static final SkillTreeTable _instance = new SkillTreeTable();
 	}
+
 }

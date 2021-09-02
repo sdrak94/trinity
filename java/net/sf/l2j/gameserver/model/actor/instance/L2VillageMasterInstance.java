@@ -235,11 +235,16 @@ public class L2VillageMasterInstance extends L2NpcInstance
 						html.setFile("data/html/villagemaster/SubClass_ChangeNo.htm");
 					else
 					{
-						final StringBuilder content2 = StringUtil.startAppend(800);
+						final String base = "Base Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass());
+						
+						final StringBuilder content2 = StringUtil.startAppend(1800);
 						if (player.getActiveClass() != player.getBaseClass() && checkVillageMaster(player.getBaseClass()))
-							StringUtil.append(content2, String.format("<table><tr><td><button value=\"%s\" action=\"bypass -h npc_%s_Subclass 5 0 \" width=156 height=28 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table>", " Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass()), "%objectId%"));
+							StringUtil.append(content2, String.format("<table><tr><td><button value=\"%s\" action=\"bypass -h npc_%s_Subclass 5 0 \" width=156 height=28 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table>", "(BASE) Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass()), "%objectId%"));
 						else
-							StringUtil.append(content2, "<table width=100%><tr><td align=center>Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass()) + "</td></tr></table>");
+
+							StringUtil.append(content2, String.format("<table><tr><td><button value=\"%s\" action=\"\" width=156 height=28 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df_down\"></td></tr></table>", "(BASE) Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass())));
+							//StringUtil.append(content2, "<table width=100%><tr><td align=center><button value=\\" + base  + "\" action=\"\" width=156 height=28 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df_down\"></td></tr></table><br>");
+							//StringUtil.append(content2, "<table width=100%><tr><td align=center>Lv. " + player.getStat().getBaseLevel() + " " + CharTemplateTable.getInstance().getClassNameById(player.getBaseClass()) + "</td></tr></table>");
 						//StringUtil.append(content2, "<a action=\"bypass -h npc_%objectId%_Subclass 5 0\">", CharTemplateTable.getInstance().getClassNameById(player.getBaseClass()) + "</a><font color=LEVEL>   (Base Class)</font>", "</a><br>");
 						StringUtil.append(content2, "<table>");
 						for (final Iterator<SubClass> subList = iterSubClasses(player); subList.hasNext();)
@@ -255,7 +260,8 @@ public class L2VillageMasterInstance extends L2NpcInstance
 							}
 							else
 							{
-								StringUtil.append(content2, String.format("<tr><td align=center> Lv. " + subClass.getLevel() + " " + formatClassForDisplay(subClass.getClassDefinition()) + "</td>"));
+								StringUtil.append(content2, String.format("<tr><td><button value=\"%s\" action=\"\" width=156 height=28 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df_down\"></td>", "(ACTIVE) Lv. " + subClass.getLevel() + " " + formatClassForDisplay(subClass.getClassDefinition()), "%objectId%", subClass.getClassIndex()));
+								//StringUtil.append(content2, String.format("<tr><td align=center> Lv. " + subClass.getLevel() + " " + formatClassForDisplay(subClass.getClassDefinition()) + "</td>"));
 							}
 						
 							
@@ -270,7 +276,9 @@ public class L2VillageMasterInstance extends L2NpcInstance
 
 								else
 								{
-									StringUtil.append(content2, String.format("<td align=center> Lv. " + subClass2.getLevel() + " " + formatClassForDisplay(subClass2.getClassDefinition()) + "</td>"));
+
+									StringUtil.append(content2, String.format("<td><button value=\"%s\" action=\"\" width=156 height=28 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>", "(ACTIVE) Lv. " + subClass2.getLevel() + " " + formatClassForDisplay(subClass2.getClassDefinition()), "%objectId%"));
+									//StringUtil.append(content2, String.format("<td align=center> Lv. " + subClass2.getLevel() + " " + formatClassForDisplay(subClass2.getClassDefinition()) + "</td>"));
 								}
 								
 							}

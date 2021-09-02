@@ -12,6 +12,7 @@
  */
 package net.sf.l2j.gameserver.model.zone.type;
 
+import ghosts.model.Ghost;
 import luna.custom.LunaVariables;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
@@ -150,7 +151,7 @@ public class L2FarmZone extends L2ZoneType
 						{
 							continue;
 						}
-						if (player.getClient().isDetached())
+						if (!(player instanceof Ghost) && player.getClient().isDetached())
 						{
 							continue;
 						}
@@ -188,6 +189,9 @@ public class L2FarmZone extends L2ZoneType
 					{
 						// String HWID = player.getClient().getStrixClientData().getClientHWID();
 						// String HWID2 = getActingPlayer().getClient().getStrixClientData().getClientHWID();
+
+						if (character instanceof Ghost || player instanceof Ghost)
+							continue;
 						String HWID = player.getClient().getIP();
 						String HWID2 = character.getActingPlayer().getIP();
 						if (HWID == null || HWID2 == null || character.getActingPlayer().getName().equalsIgnoreCase("sirvieta"))

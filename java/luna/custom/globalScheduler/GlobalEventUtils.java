@@ -30,10 +30,10 @@ public class GlobalEventUtils
 					if (!Config.ENABLE_OLD_OLY)
 						Olympiad.getInstance().closeOly();
 					break;
-				case "night_start":
+				case "pagan_open":
 					GlobalEventVariablesHolder.getInstance().setNight(true);
 					break;
-				case "night_end":
+				case "pagan_close":
 					GlobalEventVariablesHolder.getInstance().setNight(false);
 					break;
 			}

@@ -299,9 +299,11 @@ import net.sf.l2j.gameserver.model.entity.Hero;
 import net.sf.l2j.gameserver.model.events.EventScheduler;
 import net.sf.l2j.gameserver.model.events.manager.EventEngine;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
+import net.sf.l2j.gameserver.network.GhostClient;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.L2GamePacketHandler;
 import net.sf.l2j.gameserver.pathfinding.PathFinding;
+import net.sf.l2j.gameserver.script.mobius.ScriptEngineManager;
 import net.sf.l2j.gameserver.taskmanager.AutoAnnounceTaskManager;
 import net.sf.l2j.gameserver.taskmanager.KnownListUpdateTaskManager;
 import net.sf.l2j.gameserver.taskmanager.TaskManager;
@@ -355,6 +357,8 @@ public class GameServer
 		new File("log/game").mkdirs();
 		// load script engines
 		CommonUtil.printSection("Scripts");
+
+//		ScriptEngineManager.getInstance();
 //		L2ScriptEngineManager.getInstance();
 		// start game time control early
 		CommonUtil.printSection("GameTime");
@@ -422,7 +426,7 @@ public class GameServer
 			throw new Exception("Could not initialize the npc table");
 		}
 
-		SpawnUtil.getInstance().parseDropsToXml();
+		//SpawnUtil.getInstance().parseDropsToXml();
 		CommonUtil.printSection("Henna");
 		HennaTable.getInstance();
 		HennaTreeTable.getInstance();
@@ -439,14 +443,14 @@ public class GameServer
 		CommonUtil.printSection("General Data");
 		TeleportLocationTable.getInstance();
 
-		try
-		{
-			SpawnUtil.getInstance().parseTeleportsToXml();
-		}
-		catch (Exception e)
-		{
-			e.printStackTrace();
-		}
+//		try
+//		{
+//			SpawnUtil.getInstance().parseTeleportsToXml();
+//		}
+//		catch (Exception e)
+//		{
+//			e.printStackTrace();
+//		}
 		LevelUpData.getInstance();
 		L2World.getInstance();
 		SpawnTable.getInstance();
@@ -817,6 +821,8 @@ public class GameServer
 		sc.SLEEP_TIME = Config.MMO_SELECTOR_SLEEP_TIME;
 		sc.HELPER_BUFFER_COUNT = Config.MMO_HELPER_BUFFER_COUNT;
 		final L2GamePacketHandler gph = new L2GamePacketHandler();
+
+		GhostClient.setGamePacketHandler(gph);
 		_selectorThread = new SelectorThread<L2GameClient>(sc, gph, gph, gph, null);
 		InetAddress bindAddress = null;
 		if (!Config.GAMESERVER_HOSTNAME.equals("*"))

@@ -36,7 +36,8 @@ public class HeroCirclet extends Quest
 		QuestState st = player.getQuestState(getName());
 		if (st == null)
 			st = newQuestState(player);
-		if (Hero.getInstance().isActiveHero(player.getObjectId()))//if (player.isHero())
+//		if (Hero.getInstance().isActiveHero(player.getObjectId()))
+		if (player.isHero())
 		{
 			if (player.getInventory().getItemByItemId(6842) == null)
 				st.giveItems(6842, 1);

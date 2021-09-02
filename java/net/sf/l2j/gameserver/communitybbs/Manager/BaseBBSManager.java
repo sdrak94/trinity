@@ -46,48 +46,66 @@ public abstract class BaseBBSManager
 		if (html == null)
 			return;
 		Map<Integer, Long> times = InstanceManager.getInstance().getAllInstanceTimes(acha.getAccountName());
-		Long soloi = times.get(Integer.valueOf(2010));
-		Long partyi = times.get(Integer.valueOf(2001));
-		Long kamai = times.get(Integer.valueOf(2000));
-		Long fafui = times.get(Integer.valueOf(2005));
-		Long rbi = times.get(Integer.valueOf(2002));
-		Long satani = times.get(Integer.valueOf(2050));
-		Long godi = times.get(Integer.valueOf(2011));
-		int soloinstance = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2010) - System.currentTimeMillis()) / 1000;
-		int partyinstance = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2001) - System.currentTimeMillis()) / 1000;
-		int kamaloka = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2000) - System.currentTimeMillis()) / 1000;
-		int rbuniverse = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2002) - System.currentTimeMillis()) / 1000;
-		int satan = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2050) - System.currentTimeMillis()) / 1000;
-		int god = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2011) - System.currentTimeMillis()) / 1000;
-		int fafurion = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), 2005) - System.currentTimeMillis()) / 1000;
+		Long time_solo = times.get(Integer.valueOf(InstanceManager.SOLO));
+		Long time_kama = times.get(Integer.valueOf(InstanceManager.KAMALOKA_ID));
+		Long time_embryo = times.get(Integer.valueOf(InstanceManager.EMBRYO_ID));
+		Long time_ultraverse = times.get(Integer.valueOf(InstanceManager.ULTRAVERSE_ID));
+		Long time_fafurion = times.get(Integer.valueOf(InstanceManager.FAFURION_ID));
+		Long time_zaken = times.get(Integer.valueOf(InstanceManager.ZAKEN_ID));
+		Long time_frintezza = times.get(Integer.valueOf(InstanceManager.FRINTEZZA_ID));
+		Long time_freya = times.get(Integer.valueOf(InstanceManager.FREYA_ID));
+		
+		
+		int soloinstance = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.SOLO) - System.currentTimeMillis()) / 1000;
+		int kamaloka = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.KAMALOKA_ID) - System.currentTimeMillis()) / 1000;
+		int embryo = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.EMBRYO_ID) - System.currentTimeMillis()) / 1000;
+		int ultraverse = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.ULTRAVERSE_ID) - System.currentTimeMillis()) / 1000;
+		int fafurion = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.FAFURION_ID) - System.currentTimeMillis()) / 1000;
+		int zaken = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.ZAKEN_ID) - System.currentTimeMillis()) / 1000;
+		int frintezza = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.FRINTEZZA_ID) - System.currentTimeMillis()) / 1000;
+		int freya = (int) (InstanceManager.getInstance().getInstanceTime(acha.getAccountName(), InstanceManager.FREYA_ID) - System.currentTimeMillis()) / 1000;
 		int aliveRaids = L2RaidBossInstance.showNumberOfaliveRbs();
+		
 		int uptime = (int) acha.getUptime() / 1000;
+		
 		int h = uptime / 3600;
 		int m = (uptime - h * 3600) / 60;
 		int s = uptime - h * 3600 - m * 60;
-		int hsatan = satan / 3600;
-		int msatan = (satan - hsatan * 3600) / 60;
-		int ssatan = satan - hsatan * 3600 - msatan * 60;
+		
+		
 		int hsolo = soloinstance / 3600;
 		int msolo = (soloinstance - hsolo * 3600) / 60;
 		int ssolo = soloinstance - hsolo * 3600 - msolo * 60;
-		int hparty = partyinstance / 3600;
-		int mparty = (partyinstance - hparty * 3600) / 60;
-		int sparty = partyinstance - hparty * 3600 - mparty * 60;
-		int hgod = god / 3600;
-		int mgod = (god - hgod * 3600) / 60;
-		int sgod = god - hgod * 3600 - mgod * 60;
+		
+		int hembryo = embryo / 3600;
+		int membryo = (embryo - hembryo * 3600) / 60;
+		int sembryo = embryo - hembryo * 3600 - membryo * 60;
+		
 		int hkamaloka = kamaloka / 3600;
 		int mkamaloka = (kamaloka - hkamaloka * 3600) / 60;
 		int skamaloka = kamaloka - hkamaloka * 3600 - mkamaloka * 60;
 
+		int hultraverse = ultraverse / 3600;
+		int multraverse = (ultraverse - hultraverse * 3600) / 60;
+		int sultraverse = ultraverse - hultraverse * 3600 - multraverse * 60;
+		
 		int hfafurion = fafurion / 3600;
 		int mfafurion = (fafurion - hfafurion * 3600) / 60;
 		int sfafurion = fafurion - hfafurion * 3600 - mfafurion * 60;
 		
-		int hrb = rbuniverse / 3600;
-		int mrb = (rbuniverse - hrb * 3600) / 60;
-		int srb = rbuniverse - hrb * 3600 - mrb * 60;
+		int hzaken = zaken / 3600;
+		int mzaken = (zaken - hzaken * 3600) / 60;
+		int szaken = zaken - hzaken * 3600 - mzaken * 60;
+		
+		int hfrintezza = frintezza / 3600;
+		int mfrintezza = (frintezza - hfrintezza * 3600) / 60;
+		int sfrintezza = frintezza - hfrintezza * 3600 - mfrintezza * 60;
+		
+		int hfreya = freya / 3600;
+		int mfreya = (freya - hfreya * 3600) / 60;
+		int sfreya = freya - hfreya * 3600 - mfreya * 60;
+		
+		
 		int tg = GameTimeController.getInstance().getGameTime();
 		String hg = "" + (tg / 60) % 24;
 		String mg;
@@ -170,39 +188,26 @@ public abstract class BaseBBSManager
 		{
 			html = html.replace("%clan%", "Clan: None");
 		}
-		if (satani != null && satani.longValue() > 0L)
-		{
-			html = html.replace("%satan%", "Satan's World: " + hsatan + " : " + msatan + " : " + ssatan);
-		}
-		else
-		{
-			html = html.replace("%satan%", "Satan's World: Ready");
-		}
-		if (godi != null && godi.longValue() > 0L)
-		{
-			html = html.replace("%god%", "God's World: " + hgod + " : " + mgod + " : " + sgod);
-		}
-		else
-		{
-			html = html.replace("%god%", "God's World: Ready");
-		}
-		if (soloi != null && soloi.longValue() > 0L)
+
+		if (time_solo != null && time_solo.longValue() > 0L)
 		{
 			html = html.replace("%soloinstance%", "Solo Instance: " + hsolo + " : " + msolo + " : " + ssolo);
 		}
 		else
 		{
-			html = html.replace("%soloinstance%", "SoloInstance: Ready");
+			html = html.replace("%soloinstance%", "Ready");
 		}
-		if (partyi != null && partyi.longValue() > 0L)
+		
+		if (time_embryo != null && time_embryo.longValue() > 0L)
 		{
-			html = html.replace("%partyinstance%", hparty + " : " + mparty + " :  " + sparty);
+			html = html.replace("%embryo%", hembryo + " : " + membryo + " :  " + sembryo);
 		}
 		else
 		{
-			html = html.replace("%partyinstance%", "Ready");
+			html = html.replace("%embryo%", "Ready");
 		}
-		if (kamai != null && kamai.longValue() > 0L)
+		
+		if (time_kama != null && time_kama.longValue() > 0L)
 		{
 			html = html.replace("%kamaloka%", hkamaloka + " : " + mkamaloka + " :  " + skamaloka);
 		}
@@ -210,7 +215,8 @@ public abstract class BaseBBSManager
 		{
 			html = html.replace("%kamaloka%", "Ready");
 		}
-		if (fafui != null && fafui.longValue() > 0L)
+		
+		if (time_fafurion != null && time_fafurion.longValue() > 0L)
 		{
 			html = html.replace("%fafurion%", hfafurion + " : " + mfafurion + " :  " + sfafurion);
 		}
@@ -218,14 +224,43 @@ public abstract class BaseBBSManager
 		{
 			html = html.replace("%fafurion%", "Ready");
 		}
-		if (rbi != null && rbi.longValue() > 0L)
+		
+		if (time_ultraverse != null && time_ultraverse.longValue() > 0L)
 		{
-			html = html.replace("%rbuniverse%", hrb + " : " + mrb + " : " + srb);
+			html = html.replace("%ultraverse%", hultraverse + " : " + multraverse + " : " + sultraverse);
 		}
 		else
 		{
-			html = html.replace("%rbuniverse%", "Ready");
+			html = html.replace("%ultraverse%", "Ready");
 		}
+		
+		if (time_zaken != null && time_zaken.longValue() > 0L)
+		{
+			html = html.replace("%zaken%", hzaken + " : " + mzaken + " : " + szaken);
+		}
+		else
+		{
+			html = html.replace("%zaken%", "Ready");
+		}
+
+		if (time_frintezza != null && time_frintezza.longValue() > 0L)
+		{
+			html = html.replace("%frintezza%", hfrintezza + " : " + mfrintezza + " : " + sfrintezza);
+		}
+		else
+		{
+			html = html.replace("%frintezza%", "Ready");
+		}
+		
+		if (time_freya != null && time_freya.longValue() > 0L)
+		{
+			html = html.replace("%freya%", hfreya + " : " + mfreya + " : " + sfreya);
+		}
+		else
+		{
+			html = html.replace("%freya%", "Ready");
+		}
+		
 		acha.sendPacket(new ShowBoard(html, "101"));
 	}
 	

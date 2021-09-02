@@ -68,76 +68,76 @@ public class SpawnUtil
 		}
 		return false;
 	}
-	public void parseSpawnsToXml() throws SQLException, IOException
-	{
-		final Map<Integer,L2Spawn> spawns = RaidBossSpawnManager.getSpawns();
-		
-		class Sorted implements Comparable<Sorted>
-		{
-			int _level;
-			String xml;
-			
-			public Sorted(int level, StringBuilder sb)
-			{
-				_level = level;
-				xml = sb.toString();
-			}
-			
-			@Override
-			public int compareTo(Sorted arg)
-			{
-				return _level - arg._level;
-			}
-		}
-		
-		ArrayList<Sorted> sortedList = new ArrayList<>(); 
-		for ( int npcId : spawns.keySet() )
-		{
-			try
-			{
-				if (NpcTable.getInstance().getTemplate(npcId) != null)
-				{
-					StringBuilder sb = new StringBuilder();
-					String levelstr = "0";
-					
-					levelstr = "" + NpcTable.getInstance().getTemplate(npcId).getLevel();
-					
-					sb.append("<!-- Level: " + levelstr + " -->\t\t<npc id=\"" + npcId + "\" x=\"" + spawns.get(npcId).getCurX() + "\" y=\"" + spawns.get(npcId).getCurY() + "\" z=\"" + spawns.get(npcId).getCurZ() + "\" heading=\"" + spawns.get(npcId).getHeading() + "\" respawnDelay=\"" + spawns.get(npcId).getRespawnMaxDelay() + "\" respawnDelay=\"" + spawns.get(npcId).getRespawnMaxDelay() + "\" respawnRandom=\"0\" /> <!--" + NpcTable.getInstance().getTemplate(npcId).getName() + "-->\n");
-					
-					int level = Integer.parseInt(levelstr);
-					
-					Sorted sd = new Sorted(level, sb);
-					sortedList.add(sd);
-				}
-				else
-					continue;
-			}
-			catch (Exception e)
-			{
-				e.printStackTrace();
-			}
-			
-		}
-		Collections.sort(sortedList);
-
-		File f = new File("data/xml/droplists/raid_spawndump_level_sort.xml");
-		FileWriter writer = new FileWriter(f, true);
-
-		if (!f.exists())
-			f.createNewFile();
-		
-		for(Sorted st : sortedList)
-		{
-			try
-			{
-				writer.write(st.xml);
-				System.out.println(st.xml);
-			}
-			finally
-			{
-			}
-		}
-	}
+//	public void parseSpawnsToXml() throws SQLException, IOException
+//	{
+//		final Map<Integer,L2Spawn> spawns = RaidBossSpawnManager.getSpawns();
+//		
+//		class Sorted implements Comparable<Sorted>
+//		{
+//			int _level;
+//			String xml;
+//			
+//			public Sorted(int level, StringBuilder sb)
+//			{
+//				_level = level;
+//				xml = sb.toString();
+//			}
+//			
+//			@Override
+//			public int compareTo(Sorted arg)
+//			{
+//				return _level - arg._level;
+//			}
+//		}
+//		
+//		ArrayList<Sorted> sortedList = new ArrayList<>(); 
+//		for ( int npcId : spawns.keySet() )
+//		{
+//			try
+//			{
+//				if (NpcTable.getInstance().getTemplate(npcId) != null)
+//				{
+//					StringBuilder sb = new StringBuilder();
+//					String levelstr = "0";
+//					
+//					levelstr = "" + NpcTable.getInstance().getTemplate(npcId).getLevel();
+//					
+//					sb.append("<!-- Level: " + levelstr + " -->\t\t<npc id=\"" + npcId + "\" x=\"" + spawns.get(npcId).getCurX() + "\" y=\"" + spawns.get(npcId).getCurY() + "\" z=\"" + spawns.get(npcId).getCurZ() + "\" heading=\"" + spawns.get(npcId).getHeading() + "\" respawnDelay=\"" + spawns.get(npcId).getRespawnMaxDelay() + "\" respawnDelay=\"" + spawns.get(npcId).getRespawnMaxDelay() + "\" respawnRandom=\"0\" /> <!--" + NpcTable.getInstance().getTemplate(npcId).getName() + "-->\n");
+//					
+//					int level = Integer.parseInt(levelstr);
+//					
+//					Sorted sd = new Sorted(level, sb);
+//					sortedList.add(sd);
+//				}
+//				else
+//					continue;
+//			}
+//			catch (Exception e)
+//			{
+//				e.printStackTrace();
+//			}
+//			
+//		}
+//		Collections.sort(sortedList);
+//
+//		File f = new File("data/xml/droplists/raid_spawndump_level_sort.xml");
+//		FileWriter writer = new FileWriter(f, true);
+//
+//		if (!f.exists())
+//			f.createNewFile();
+//		
+//		for(Sorted st : sortedList)
+//		{
+//			try
+//			{
+//				writer.write(st.xml);
+//				System.out.println(st.xml);
+//			}
+//			finally
+//			{
+//			}
+//		}
+//	}
 	
 	
 	

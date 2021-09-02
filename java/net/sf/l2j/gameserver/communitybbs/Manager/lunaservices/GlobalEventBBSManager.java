@@ -90,13 +90,13 @@ public class GlobalEventBBSManager extends BaseBBSManager
 			
 			switch(evtEventId)
 			{
-				case "night_start":
-					eventId = "Night Begins";
-					eventIcon = "icon.ev_invasion_vp_hub";
+				case "pagan_open":
+					eventId = "Pagan Opens";
+					eventIcon = "L2UI_CT12.Minimap.map_inzone_gate_i00";
 					break;
-				case "night_end":
-					eventId = "Night End";
-					eventIcon = "icon.ev_invasion_debuff";
+				case "pagan_close":
+					eventId = "Pagan Close";
+					eventIcon = "L2UI_CT12.map_inzone_gateInactive_i00_Over";
 					break;
 			}
  			Date date = new Date(System.currentTimeMillis());

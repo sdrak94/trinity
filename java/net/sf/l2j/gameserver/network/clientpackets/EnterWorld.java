@@ -1,6 +1,5 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
-import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -110,7 +109,7 @@ public class EnterWorld extends L2GameClientPacket
 	protected void runImpl()
 	{
 		final L2PcInstance activeChar = getClient().getActiveChar();
-		if (StrixPlatform.getInstance().isPlatformEnabled())	
+		if (StrixPlatform.getInstance().isPlatformEnabled())
 		{
 			L2GameClient client = activeChar.getClient();
 			Connection con = null;
@@ -119,9 +118,9 @@ public class EnterWorld extends L2GameClientPacket
 				con = L2DatabaseFactory.getInstance().getConnection();
 				PreparedStatement statement;
 				statement = con.prepareStatement("UPDATE accounts set lasthwid = ? where login = ?");
-				//TODO Local Changes
+				// TODO Local Changes
 				statement.setString(1, client.getStrixClientData().getClientHWID());
-				//statement.setString(1, "LOCAL HWID");
+				// statement.setString(1, "LOCAL HWID");
 				statement.setString(2, activeChar.getAccountName());
 				statement.execute();
 				statement.close();
@@ -163,7 +162,6 @@ public class EnterWorld extends L2GameClientPacket
 				_log.warning("User already exists in Object ID map! User " + activeChar.getName() + " is a character clone.");
 		}
 		// Apply special GM properties to the GM when entering
-
 		DressMeTimeChecker.getInstance().checkForDressTimers(activeChar);
 		if (activeChar.isGM())
 		{
@@ -364,7 +362,6 @@ public class EnterWorld extends L2GameClientPacket
 		sendPacket(new SkillCoolTime(activeChar));
 		SevenSigns.getInstance().sendCurrentPeriodMsg(activeChar);
 		Announcements.getInstance().showAnnouncements(activeChar);
-		
 		if (Config.MAIL_ENABLED)
 		{
 			if (activeChar.hasEmailRegistered() && !EmailRegistration.checkBinds(activeChar))
@@ -379,7 +376,7 @@ public class EnterWorld extends L2GameClientPacket
 			}
 			else if (EmailRegistration.checkBinds(activeChar))
 			{
-				if(activeChar.getLockdownTime() != 0)
+				if (activeChar.getLockdownTime() != 0)
 				{
 					activeChar.setLockdownTime(0);
 					activeChar.doUnLockdown();
@@ -432,11 +429,11 @@ public class EnterWorld extends L2GameClientPacket
 		boolean foundCupidBow = false;
 		for (L2ItemInstance i : activeChar.getInventory().getItems())
 		{
-//			if(i.isFromPvPNpc() && i.getUntradeableTime() > 0)
-//			{
-//				i.setUntradeableTimer(0);
-//				activeChar.sendMessage(i.getItemName() + " is now tradeable.");
-//			}
+			// if(i.isFromPvPNpc() && i.getUntradeableTime() > 0)
+			// {
+			// i.setUntradeableTimer(0);
+			// activeChar.sendMessage(i.getItemName() + " is now tradeable.");
+			// }
 			if (i.isHeroItem())
 			{
 				if (!activeChar.isHero() || (!activeChar.canUseHeroItems() && i.isWeapon()))
@@ -509,7 +506,6 @@ public class EnterWorld extends L2GameClientPacket
 		}
 		RegionBBSManager.getInstance().changeCommunityBoard();
 		TvTEvent.onLogin(activeChar);
-		
 		if ((activeChar.getLevel() >= 20 && activeChar.getClassId().level() == 0) || (activeChar.getLevel() >= 40 && activeChar.getClassId().level() == 1) || (activeChar.getLevel() >= 76 && activeChar.getClassId().level() == 2))
 		{
 			Gem.sendClassChangeHTML(activeChar);
@@ -520,15 +516,15 @@ public class EnterWorld extends L2GameClientPacket
 		}
 		sendPacket(ActionFailed.STATIC_PACKET);
 		ThreadPoolManager.getInstance().scheduleGeneral(new teleportTask(activeChar), 250);
-		//DonationManager.getInstance().checkRewards(activeChar);
-		//activeChar.checkForIncorrectSkills();
+		// DonationManager.getInstance().checkRewards(activeChar);
+		// activeChar.checkForIncorrectSkills();
 	}
 	
-	private class teleportTask implements Runnable
+	public class teleportTask implements Runnable
 	{
 		final L2PcInstance _player;
 		
-		private teleportTask(L2PcInstance player)
+		public teleportTask(L2PcInstance player)
 		{
 			_player = player;
 		}
@@ -689,27 +685,24 @@ public class EnterWorld extends L2GameClientPacket
 			}
 		}
 	}
+	
 	public static void checkForClassPaths(int objid)
 	{
 		Connection con = null;
 		PreparedStatement statement;
-		
 		try
 		{
 			con = L2DatabaseFactory.getInstance().getConnection();
 			{
 				statement = con.prepareStatement("SELECT * FROM class_paths WHERE objid = ?");
 				statement.setInt(1, objid);
-				
 				ResultSet rset = statement.executeQuery();
-				
-				if(!rset.next())
+				if (!rset.next())
 				{
 					PreparedStatement statement2 = con.prepareStatement("INSERT INTO class_paths VALUES (?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);");
 					statement2.setInt(1, objid);
 					statement2.executeUpdate();
 					statement2.close();
-
 					rset.close();
 					statement2.close();
 					statement.close();
@@ -732,6 +725,7 @@ public class EnterWorld extends L2GameClientPacket
 			{}
 		}
 	}
+	
 	private void loadClassPathPoints(L2PcInstance activeChar)
 	{
 		Connection con = null;
@@ -1688,7 +1682,6 @@ public class EnterWorld extends L2GameClientPacket
 		}
 	}
 	
-	
 	private void loadClassPathPoints2(L2PcInstance activeChar)
 	{
 		Connection con = null;
@@ -1771,7 +1764,7 @@ public class EnterWorld extends L2GameClientPacket
 	/**
 	 * @param activeChar
 	 */
-	private void notifyClanMembers(L2PcInstance activeChar)
+	public static void notifyClanMembers(L2PcInstance activeChar)
 	{
 		L2Clan clan = activeChar.getClan();
 		// This null check may not be needed anymore since notifyClanMembers is called from within a null check already. Please remove if we're certain it's ok to do so.
@@ -1813,49 +1806,48 @@ public class EnterWorld extends L2GameClientPacket
 		}
 	}
 	
-	/*	*//**
-			 * @param string
-			 * @return
-			 * @throws UnsupportedEncodingException
-			 *//*
-				 * private String getText(String string)
-				 * {
-				 * try
-				 * {
-				 * String result = new String(Base64.decode(string), "UTF-8");
-				 * return result;
-				 * }
-				 * catch (UnsupportedEncodingException e)
-				 * {
-				 * return null;
-				 * }
-				 * }
-				 */
-	public static void loadTutorial(L2PcInstance player)
+//	/*	*//**
+//			 * @param string
+//			 * @return
+//			 * @throws UnsupportedEncodingException
+//			 *//*
+//				 * private String getText(String string)
+//				 * {
+//				 * try
+//				 * {
+//				 * String result = new String(Base64.decode(string), "UTF-8");
+//				 * return result;
+//				 * }
+//				 * catch (UnsupportedEncodingException e)
+//				 * {
+//				 * return null;
+//				 * }
+//				 * }
+//				 */
+//	public static void loadTutorial(L2PcInstance player)
+//	{
+//		QuestState q = player.getQuestState("255_Tutorial");
+//		if (q != null)
+//		{
+//			/*
+//			 * else if (player.getLevel() == 1 || Rnd.get(10) == 1)
+//			 * {
+//			 * player.processQuestEvent(q.getName(), "ProposePass", null, false);
+//			 * }
+//			 * else
+//			 * {
+//			 * player.processQuestEvent(q.getName(), "UC", null, false);
+//			 * }
+//			 */
+//		}
+//	}
+	
+	private void loadTutorial(L2PcInstance player)
 	{
-		QuestState q = player.getQuestState("255_Tutorial");
-		if (q != null)
-		{
-			/*
-			 * else if (player.getLevel() == 1 || Rnd.get(10) == 1)
-			 * {
-			 * player.processQuestEvent(q.getName(), "ProposePass", null, false);
-			 * }
-			 * else
-			 * {
-			 * player.processQuestEvent(q.getName(), "UC", null, false);
-			 * }
-			 */
-		}
+		QuestState qs = player.getQuestState("255_Tutorial");
+		if (qs != null)
+			qs.getQuest().notifyEvent("UC", null, player);
 	}
-	/*
-	 * private void loadTutorial(L2PcInstance player)
-	 * {
-	 * QuestState qs = player.getQuestState("255_Tutorial");
-	 * if (qs != null)
-	 * qs.getQuest().notifyEvent("UC", null, player);
-	 * }
-	 */
 	
 	/*
 	 * (non-Javadoc)

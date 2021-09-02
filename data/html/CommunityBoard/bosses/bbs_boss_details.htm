@@ -1,0 +1,214 @@
+<html noscrollbar>
+<title>L2Against</title>
+<body><br>
+<table width=755>
+	<tr>
+		<center><td>
+			<table border=0 cellpadding=0 cellspacing=0 width=769 height=492 >
+				<tr>
+					<td valign="top" align="center">
+						<table width=755 height=415>
+							<tr>
+								<td width=755><br>
+									<table border=0 cellspacing=0 cellpadding=0 width=755>
+										<tr>
+											<td WIDTH=755 align=center valign=top>
+												<font name="hs12">Raid Boss</font><br>
+											</td>
+										</tr>
+									</table>
+									<center>
+									<table width=680 height=50>
+										<tr>
+											<td valign="top" align="center">
+												<table border=0 width=600 height=46 cellspacing=4 cellpadding=3 >
+													<tr>
+														<td width=40 align=right valign=top>
+															<img src="icon.skill5012" width=32 height=32>
+														</td>
+														<td width=358 align=left valign=top>
+															<font color="LEVEL">Raid Boss Status</font> <br1> Detailed informations about raids.
+														</td>
+														<td width=100 align=left valign=center>
+															<button value="Refresh" action="bypass _bbsboss_<?sort?>_<?page?>_ <?search?> _<?bossId?>" width=90 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table width=680 height=50>
+										<tr>
+											<td valign="top" align="center">
+												<table border=0 width=600 height=46 cellspacing=4 cellpadding=3 >
+													<tr>
+														<td width=40 align=right valign=top>
+															<img src="icon.skill6169" width=32 height=32>
+														</td>
+														<td width=244 align=left valign=top>
+															<font color="LEVEL">Search Raid Boss</font> <br1> Find deatiled about raid boss.
+														</td>
+														<td width=100 align=center valign=center>
+															<table width=100 height=30>
+																<tr>
+																	<td width=100 height=1>Search
+																	</td>
+																</tr>
+																<tr>
+																	<td width=100 height=5>
+																		<edit var="search" width=100 height=11>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td width=70 align=left valign=top>
+															<button value="Find" action="bypass _bbsbosslist_<?sort?>_0_ $search" width=70 height=32 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table width=680 height=50>
+										<tr>
+											<td valign="top" align="center">
+												<table border=0 width=600 height=340 cellspacing=1 cellpadding=3 >
+													<tr>
+														<td width=586 align=left valign=top>
+															<table width=586>
+																<tr>
+																	<td width=586 align=center>
+																		<table width=586 height=25 bgcolor=0e0d0d>
+																			<tr>
+																				<td align=center>
+																					<table>
+																						<tr>
+																							<td width=310 valign=top>
+																								<font color="bbbbbb">Raid Boss Name</font> 
+																							</td>
+																							<td width=130 align="center" valign=top>
+																								<font color="bbbbbb">Level</font>
+																							</td>
+																							<td width=130 align="center" valign=top>
+																								<font color="bbbbbb">Status</font>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<table width=586 height=34>
+																<tr>
+																	<td width=586 align=center>
+																		<table width=586 height=25 bgcolor=151515>
+																			<tr>
+																				<td align=center>
+																					<table>
+																						<tr>
+																							<td width=310 valign=top>
+																								<font color="FF6666"><?name?></font>
+																							</td>
+																							<td width=130 align="center" valign=top>
+																								<?level?>
+																							</td>
+																							<td width=130 align="center" valign=top>
+																								<font color="<?status_color?>"><?status?></font>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+															<table width=586 height=256 border=0 cellpadding=0 cellspacing=0>
+																<tr>
+																	<td align="center" valign=top width=110 height=182>
+																		<table width=110 height=256 border=0 cellpadding=0 cellspacing=0>
+																			<tr>
+																				<td width=110 height=26>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width=110 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32>
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<img src="icon.etc_map_ivory_i00" width=32 height=32>
+																							</td>
+																						</tr>
+																					</table>
+																					<button action="bypass _bbsboss_<?sort?>_<?page?>_ <?search?> _<?bossId?>_1" value="Show in Map" width=85 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width=110 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32>
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<img src="icon.skill5739" width=32 height=32>
+																							</td>
+																						</tr>
+																					</table>
+																					<button action="bypass _bbsboss_<?sort?>_<?page?>_ <?search?> _<?bossId?>_4" value="Clear Map" width=85 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td align="center" valign=top>
+																	</td>
+																	<td align="center" valign=top width=110 height=182>
+																		<table width=110 height=256 border=0 cellpadding=0 cellspacing=0>
+																			<tr>
+																				<td width=110 height=26>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width=110 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32>
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<img src="icon.skill0629" width=32 height=32>
+																							</td>
+																						</tr>
+																					</table>
+																					<button action="bypass _bbsboss_<?sort?>_<?page?>_ <?search?> _<?bossId?>_2" value="Show Drops" width=85 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td width=110 align=center valign=top>
+																					<table border=0 cellspacing=0 cellpadding=0 width=32 height=32>
+																						<tr>
+																							<td width=32 height=32 align=center valign=top>
+																								<img src="icon.skill6280" width=32 height=32>
+																							</td>
+																						</tr>
+																					</table>
+																					<button action="bypass _bbsboss_<?sort?>_<?page?>_ <?search?> _<?bossId?>_2" value="Show Stats" width=85 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									</center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td></center>
+	</tr>
+</table>
+</body></html>

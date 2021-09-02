@@ -62,7 +62,7 @@ public final class QuestState
 	private final L2PcInstance			_player;
 	private final Quest					_quest;
 	private byte						_state;
-	private final Map<String, String>	_vars							= new HashMap<>();
+	private Map<String, String>	_vars							= new HashMap<>();
 	
 	/**
 	 * Constructor of the QuestState : save the quest in the list of quests of the player.<BR/>
@@ -238,15 +238,25 @@ public final class QuestState
 	 * @param value
 	 *            : String indicating the value of the variable for quest
 	 */
-	public void set(final String var, final String value)
+	
+	public String set(String var, String val)
 	{
-		if (var == null || var.isEmpty() || value == null || value.isEmpty())
-			return;
-		// FastMap.put() returns previous value associated with specified key,
-		// or null if there was no mapping for key.
-		final String old = _vars.put(var, value);
-		setQuestVarInDb(var, value);
+		if (_vars == null)
+			_vars = new HashMap<String, String>();
+
+		if (val == null)
+			val = "";
+
+		// FastMap.put() returns previous value associated with specified key, or null if there was no mapping for key.
+		String old = _vars.put(var, val);
+
+		if (old != null)
+			Quest.updateQuestVarInDb(this, var, val);
+		else
+			Quest.createQuestVarInDb(this, var, val);
+
 		if ("cond".equals(var))
+		{
 			try
 			{
 				int previousVal = 0;
@@ -254,17 +264,48 @@ public final class QuestState
 				{
 					previousVal = Integer.parseInt(old);
 				}
-				catch (final Exception ex)
+				catch (Exception ex)
 				{
 					previousVal = 0;
 				}
-				setCond(Integer.parseInt(value), previousVal);
+				setCond(Integer.parseInt(val), previousVal);
 			}
-			catch (final Exception e)
+			catch (Exception e)
 			{
-				_log.log(Level.WARNING, _player.getName() + ", " + _quest.getName() + " cond [" + value + "] is not an integer. Value stored, but no packet was sent: " + e.getMessage(), e);
+				_log.finer(getPlayer().getName() + ", " + _quest.getName() + " cond [" + val + "] is not an integer.  Value stored, but no packet was sent: " + e);
 			}
+		}
+
+		return val;
 	}
+	
+//	public void set(final String var, final String value)
+//	{
+//		if (var == null || var.isEmpty() || value == null || value.isEmpty())
+//			return;
+//		// FastMap.put() returns previous value associated with specified key,
+//		// or null if there was no mapping for key.
+//		final String old = _vars.put(var, value);
+//		setQuestVarInDb(var, value);
+//		if ("cond".equals(var))
+//			try
+//			{
+//				int previousVal = 0;
+//				try
+//				{
+//					previousVal = Integer.parseInt(old);
+//				}
+//				catch (final Exception ex)
+//				{
+//					previousVal = 0;
+//				}
+//				setCond(Integer.parseInt(value), previousVal);
+//			}
+//			catch (final Exception e)
+//			{
+//				_log.log(Level.WARNING, _player.getName() + ", " + _quest.getName() + " cond [" + value + "] is not an integer. Value stored, but no packet was sent: " + e.getMessage(), e);
+//			}
+//	}
 	
 	/**
 	 * Add parameter used in quests.

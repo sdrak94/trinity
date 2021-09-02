@@ -23,8 +23,9 @@ import net.sf.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.TopBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.TopicBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.AugBBSManager;
-import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.BufferBBSManager;
+import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.BBSSchemeBufferInstance;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.ClassPathsBBSManager;
+import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.CommunityBosses;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.EventBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.GlobalEventBBSManager;
 // import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.ClassPathsBBSManager;
@@ -65,6 +66,7 @@ public class CommunityBoard
 				RegionBBSManager.getInstance().parsecmd(command, activeChar);
 				break;
 			case 2: // new
+
 				if (command.startsWith("_bbsclan"))
 				{
 					ClanBBSManager.getInstance().parsecmd(command, activeChar);
@@ -165,9 +167,13 @@ public class CommunityBoard
 				{
 					PartyBBSManager.getInstance().parsecmd(command, activeChar);
 				}
-				else if (command.startsWith("_bbsbuffer"))
+//				else if (command.startsWith("_bbsbuffer"))
+//				{
+//					BufferBBSManager.getInstance().parsecmd(command, activeChar);
+//				}
+				else if (command.startsWith("_bbsboss"))
 				{
-					BufferBBSManager.getInstance().parsecmd(command, activeChar);
+					CommunityBosses.getInstance().parsecmd(command, activeChar);
 				}
 				else
 				{

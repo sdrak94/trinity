@@ -4439,7 +4439,11 @@ public abstract class L2Skill implements IChanceSkillTrigger
 	{
 		return SkillTable.getInstance().isNobleSkill(this);
 	}
-
+	
+	public boolean noblessSkill()
+	{
+		return getId() == 325 || getId() == 326 || getId() == 327 || getId() == 1323 || getId() == 1324 || getId() == 1325 || getId() == 1326 || getId() == 1327;
+	}
 	public boolean isChillAllow()
 	{
 		return !_chillIgnore;

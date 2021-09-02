@@ -9,6 +9,7 @@ import java.util.Collections;
 import java.util.concurrent.Future;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import javolution.util.FastMap;
@@ -2203,6 +2204,7 @@ public class CTF
 	{
 		try
 		{
+			
 			if (Olympiad.getInstance().isRegistered(eventPlayer))
 			{
 				return false;
@@ -2221,6 +2223,9 @@ public class CTF
 			{
 				if (player == null || eventPlayer == null)
 					continue;
+				if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
+					continue;
+				
 				String HWID = player.getClient().getStrixClientData().getClientHWID();
 				String HWID2 = eventPlayer.getClient().getStrixClientData().getClientHWID();
 				if (HWID == null || HWID2 == null)

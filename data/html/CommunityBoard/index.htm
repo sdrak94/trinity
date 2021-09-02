@@ -46,7 +46,7 @@
 										<table width=180>
 											<tr>
 												<td align=center>
-													<button value="Achievements" action="bypass -h voice .achievements" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
+													<button value="Scheme Buffer" action="bypass _bbsbufferbypass_redirect main 0 0" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
 												</td>
 											</tr>
 										</table>
@@ -57,7 +57,18 @@
 										<table width=180>
 											<tr>
 												<td align=center>
-													<button value="Global Events" action="bypass _bbsGlobalEvents" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
+													<button value="Raid List" action="bypass _bbsbosslist" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table width=180>
+											<tr>
+												<td align=center>
+													<button value="Special Zones" action="bypass _bbsGlobalEvents" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
 												</td>
 											</tr>
 										</table>
@@ -112,17 +123,6 @@
 										<table width=180>
 											<tr>
 												<td align=center>
-													<button value="Buffer" action="bypass _bbsbuffer_menu" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table width=180>
-											<tr>
-												<td align=center>
 													<button value="Change Password" action="bypass -h gem_changepass" width=165 height=30 back="L2UI_CT12.Button_DF_Small_Down" fore="L2UI_CT12.Button_DF_Small_Toggle">
 												</td>
 											</tr>
@@ -162,9 +162,8 @@
 										<center>
 										
 										<table>
-										
 											<tr>
-												<td height=145 width=525>
+												<td height=130 width=525>
 													<table width=565 border=0 cellspacing=2 cellpadding=2 >
 														<tr>
 															<td width=180>
@@ -228,9 +227,15 @@
 														</tr>
 													</table>
 												</td>
-												
 											</tr>
 											</table>
+													<table width=560 height=25 >
+														<tr>
+															<td width=90 align=left valign=center>
+																<font name=hs12 color="5D4026">Server Info:</font>
+															</td>
+														</tr>
+													</table>
 													<table  width="560" bgcolor=00080b>
 														<tr>
 															<td width=130>
@@ -257,93 +262,81 @@
 																<font color="57799B">Ingame Time</font><br1>›&nbsp;<font name="CreditTextSmall" color="c0c0c0">%gameTime%</font>
 															</td>
 														</tr>
-											<tr><td height=16></td></tr>
+											
 													</table>
 													
 										<table  width=520>
 											<tr>
 												<td>
+													<table width=560 height=25 >
+														<tr>
+															<td width=90 align=left valign=center>
+																<font name=hs12 color="5D4026">Instances:</font>
+															</td>
+														</tr>
+													</table>
 													<table width=560 height=25 bgcolor=00080b>
 														<tr>
 															<td width=90 align=left valign=center>
-																<font color="57799B">Name:</font>
+																<font color="57799B">Solo Instance:</font>
 															</td>
 															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%name%</font>
+																<font color="8AC0F6">%soloinstance%</font>
 															</td>
+															<td width=90 align=left valign=center>
+																<font color="57799B">Zaken Instance:</font>
+															</td>
+															<td width=130 align=left valign=center>
+																<font color="8AC0F6">%zaken%</font>
+															</td>
+														</tr>
+													</table>
+													<table width=560 height=25 bgcolor=011118>
+														<tr>
 															<td width=90 align=left valign=center>
 																<font color="57799B">Kamaloka:</font>
 															</td>
 															<td width=130 align=left valign=center>
 																<font color="8AC0F6">%kamaloka%</font>
 															</td>
-														</tr>
-													</table>
-													<table width=560 height=25 bgcolor=011118>
-														<tr>
 															<td width=90 align=left valign=center>
-																<font color="57799B">Class:</font>
+																<font color="57799B">Tezza Instance:</font>
 															</td>
 															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%class%</font>
-															</td>
-															<td width=90 align=left valign=center>
-																<font color="57799B">Embryo Instance:</font>
-															</td>
-															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%partyinstance%</font>
+																<font color="8AC0F6">%frintezza%</font>
 															</td>
 														</tr>
 													</table>
 													<table width=560 height=25 bgcolor=00080b>
 														<tr>
-															<td width=90 align=left valign=center>
-																<font color="57799B">Level:</font>
-															</td>
-															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%level%</font>
-															</td>
-															<td width=90 align=left valign=center>
-																<font color="57799B">Ultraverse:</font>
-															</td>
-															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%rbuniverse%</font>
-															</td>
-														</tr>
-													</table>
-													<table width=560 height=25 bgcolor=011118>
-														<tr>
-															<td width=90 align=left valign=center>
-																<font color="57799B">Clan:</font>
-															</td>
-															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%clan%</font>
-															</td>
 															<td width=90 align=left valign=center>
 																<font color="57799B">Fafurion:</font>
 															</td>
 															<td width=130 align=left valign=center>
 																<font color="8AC0F6">%fafurion%</font>
 															</td>
+															<td width=90 align=left valign=center>
+																<font color="57799B">Freya Instance:</font>
+															</td>
+															<td width=130 align=left valign=center>
+																<font color="8AC0F6">%freya%</font>
+															</td>
 														</tr>
 													</table>
-													<table width=560 height=25 bgcolor=00080b>
+													<table width=560 height=25 bgcolor=011118>
 														<tr>
 															<td width=90 align=left valign=center>
-																<font color="57799B">Online Time:</font>
+																<font color="57799B">Ultraverse:</font>
 															</td>
 															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%online_time%</font>
+																<font color="8AC0F6">%ultraverse%</font>
 															</td>
 															<td width=90 align=left valign=center>
-																<font color="57799B">Killing Streak:</font>
 															</td>
 															<td width=130 align=left valign=center>
-																<font color="8AC0F6">%spree%</font>
 															</td>
 														</tr>
 													</table>
-													
 												</td>
 											</tr>
 										</table>

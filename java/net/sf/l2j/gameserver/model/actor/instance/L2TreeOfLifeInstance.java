@@ -270,7 +270,7 @@ public int getShldDef()
 @Override
 public int getInstanceWorld()
 {
-	return this.getInstanceWorld();
+	return getInstanceId();
 }
 
 @Override

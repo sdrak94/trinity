@@ -1620,22 +1620,22 @@ public class DonatePotion implements IItemHandler
 				player.setPunishLevel(L2PcInstance.PunishLevel.JAIL, 0);
 				return;
 			}
-			if (newRace != 5) // player wants to change into non-kamael race
-			{
-				if (player.isKamaelBaseClassExceptDoombringer())
-				{
-					player.sendMessage("You can't change to a non-Kamael race when your base-class is a Kamael class that uses Rapiers or Crossbows (due to animation issues)");
-					return;
-				}
-			}
-			if (player.getBaseClass() == 114 || player.getBaseClass() == 48) // player's base class is a tyrant
-			{
-				if (newRace == 5) // that's trying to change to a kamael
-				{
-					player.sendMessage("When your base class is a Tyrant/GrandK, you cannot change your race into a Kamael");
-					return;
-				}
-			}
+//			if (newRace != 5) // player wants to change into non-kamael race
+//			{
+//				if (player.isKamaelBaseClassExceptDoombringer())
+//				{
+//					player.sendMessage("You can't change to a non-Kamael race when your base-class is a Kamael class that uses Rapiers or Crossbows (due to animation issues)");
+//					return;
+//				}
+//			}
+//			if (player.getBaseClass() == 114 || player.getBaseClass() == 48) // player's base class is a tyrant
+//			{
+//				if (newRace == 5) // that's trying to change to a kamael
+//				{
+//					player.sendMessage("When your base class is a Tyrant/GrandK, you cannot change your race into a Kamael");
+//					return;
+//				}
+//			}
 			if (player.destroyItemByItemId("Donation Race Change", RACE_CHANGE_ITEMID, 1, player, true))
 			{
 				int[] circlets =

@@ -306,7 +306,7 @@ public abstract class L2Object implements ILocational
 	
 	public Location getLoc()
 	{
-		return new Location(getX(), getY(), getZ(), 0);
+		return new Location(getX(), getY(), getZ(), getInstanceId());
 	}
 	
 	/**
@@ -578,5 +578,10 @@ public abstract class L2Object implements ILocational
 	public PlayerPassport getPassport()
 	{
 		return null;
+	}
+
+	public boolean isFence()
+	{
+		return false;
 	}
 }

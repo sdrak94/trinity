@@ -1,0 +1,63 @@
+<configurations>
+
+	<configuration id="CONF__DUELIST_STARTER">
+		<options>
+			<opt name="SearchType" value="Near" />
+			<opt name="AutoAttack" value="Skills_Reuse" />
+			<opt name="MoveType" value="Not_Set" />
+		</options>
+
+		<actions>
+			<action alias="BATTLE_ROAR" id="121" priority="0" selfhp="30" />
+			<action alias="TRIPLE_SLASH" id="1" priority="1" nextAction="SONIC_FOCUS"/> <!-- Triple Slash -->
+			<action alias="DOUBLE_SONIC_SLASH" id="5" priority="2" /> <!-- Double Sonic Slash -->
+			
+			<action alias="SONIC_FOCUS" id="8" repeat="3" /> <!-- Sonic Focus -->
+			
+		</actions>
+	
+	</configuration>
+	<configuration id="CONF__ADVENTURER_STARTER">
+		<options>
+			<opt name="SearchType" value="Near" />
+			<opt name="AutoAttack" value="Skills_Reuse" />
+			<opt name="MoveType" value="Not_Set" />
+		</options>
+
+		<actions>
+			<action alias="DEADLY_BLOW" id="263" priority="0" />	 <!-- Deadly Blow -->
+			<action alias="LETHAL_BLOW" id="344" priority="1" />	 <!-- Lethal Blow -->
+			<action alias="BLUFF" id="358" priority="2" />			 <!-- Bluff -->
+			<action alias="CRITICAL_BLOW" id="409" priority="3" />	 <!-- Critical Blow -->
+			<action alias="TRICK" id="11" priority="4" />			 <!-- Trick -->
+		</actions>
+	
+	</configuration>
+	
+	<configuration id="CONF__SOULTAKER_STARTER">
+		<options>
+			<opt name="SearchType" value="Far" />
+			<opt name="AutoAttack" value="Never" />
+			<opt name="MoveType" value="Not_Set" />
+		</options>
+
+		<actions>
+			<action alias="DEATH_SPIKE" id="1148" priority="0" />	 <!-- Death Spike -->
+			<action alias="CURSE_GLOOM" id="1263" priority="1" />	 <!-- Curse Gloom -->
+			<action alias="ANCHOR" id="1170" priority="2" />			 <!-- Anchor -->
+			<action alias="DARK_VORTEX" id="1343" priority="3" />	 <!-- Dark Vortex -->
+		</actions>
+	
+	</configuration>
+	
+	<configuration id="CONF__SAGITTARIUS_STARTER">
+		<options>
+			<opt name="SearchType" value="Far" />
+			<opt name="AutoAttack" value="Always" />
+			<opt name="MoveType" value="Not_Set" />
+		</options>
+		
+		<actions>
+		</actions>
+	</configuration>
+</configurations>

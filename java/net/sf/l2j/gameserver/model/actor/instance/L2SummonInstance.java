@@ -333,8 +333,8 @@ public class L2SummonInstance extends L2Summon
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
-	}
+		return getInstanceId();
+}
 
 	@Override
 	public ILocational getLocation()

@@ -163,8 +163,11 @@ public class L2Npc extends L2Character
 	private float					_currentCollisionHeight	= 0;																			// used for npc grow effect skills
 	private float					_currentCollisionRadius	= 0;																			// used for npc grow effect skills
 	private boolean					_tempSpawn				= false;
-
-	public String[] button = {"Registration", "Name"};
+	public String[]					button					=
+	{
+		"Registration", "Name"
+	};
+	
 	public final boolean isTempSpawn()
 	{
 		return _tempSpawn;
@@ -271,243 +274,6 @@ public class L2Npc extends L2Character
 	{
 		return getCurrentHpRatio() * 100;
 	}
-	/*
-	 * public void loadDropHTML()
-	 * {
-	 * StringBuilder npcinfo = new StringBuilder();
-	 * npcinfo.append("<html><body><title>Info of " + getName() + "</title>")
-	 * .append("<br>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * // .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=110 align=center><font color=ac9887>[Combat Stats]</font></td></tr>")
-	 * .append("					</table>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=3>")
-	 * // .append("					<img src=\"L2UI.SquareGray\" width=300 height=2>")
-	 * .append("					<br>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=30><font color=696969>Current HP</font></font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + String.valueOf(getCurrentHpPercents()) + "%</font>")
-	 * .append("					</td><td width=30><font color=696969>Current HP</font></font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + String.valueOf(getCurrentHp()) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>Max.HP</font></font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString((getMaxHp())) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Max.MP</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString((getMaxMp())) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<td width=30></td><td width=50></td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>P.Atk.</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getPAtk(null)) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>M.Atk.</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getMAtk(null, null)) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>P.Def.</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getPDef(null)) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>M.Def.</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getMDef(null, null)) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=70><font color=696969>Acc</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getAccuracy(null)) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Evasion</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getEvasionRate(null)) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>R.Crit</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getCriticalHit(null, null)) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Speed</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getRunSpeed()) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>Atk.Spd</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getPAtkSpd(null)) + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Cst.Spd</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getMAtkSpd(null)) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>Race</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + getTemplate().getRace().toString() + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Exp.</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + formatString(getExpReward()) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>Atk.Ele</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + getAttackElementString() + "</font>")
-	 * .append("					</td><td width=30><font color=696969>Def.Ele</font></td><td width=50>")
-	 * .append("					<font color=dad1b4> " + getDefenseElementString() + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					</table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>");
-	 * final L2Spawn spawn = getSpawn();
-	 * int time = DayNightSpawnManager.getInstance().getNightCreatures().containsKey(spawn) ? 2 :
-	 * DayNightSpawnManager.getInstance().getDayCreatures().containsKey(spawn) ? 1 : 0;
-	 * String respawntime;
-	 * if (this instanceof L2RaidBossInstance)
-	 * {
-	 * respawntime = formatRaidbossRespawnTimes(spawn);
-	 * }
-	 * else
-	 * {
-	 * respawntime = formatMonsterRespawnTime(spawn);
-	 * }
-	 * npcinfo.append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=110 align=center><font color=ac9887>[Special Info]</font></td></tr>")
-	 * .append("					</table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=30px><font color=696969>Elite:</font></td><td>")
-	 * .append("					<font color=dad1b4> " + String.valueOf((getElite() > 0)) + "</font>")
-	 * .append("					</td><td width=30px><font color=696969>Rare:</font></td><td>")
-	 * .append("					<font color=dad1b4> " + String.valueOf((getRare() > 0)) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30px><font color=696969>Random X:</font></td><td>")
-	 * .append("					<font color=dad1b4>" + String.valueOf(spawn != null ? spawn.getSpawnType() == 1 ? "at a random pc" : spawn.getRandomX() : "N/A") +"</font>")
-	 * .append("					</td><td width=30px><font color=696969>Random Y:</font></td><td>")
-	 * .append("					<font color=dad1b4>" + String.valueOf(spawn != null ? spawn.getSpawnType() == 1 ? "at a random pc" : spawn.getRandomY() : "N/A") +"</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30px><font color=696969>Spawn Time:</font></td><td>")
-	 * .append("					<font color=dad1b4>" + String.valueOf(time == 2 ? "Night" : time == 1 ? "Day" : "Always") + "</font>")
-	 * .append("					</td>")
-	 * .append("					<td width=30px><font color=696969>Respawn:</font></td><td>")
-	 * .append("					<font color=dad1b4>"+ respawntime + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>Faction</font></td><td width=50>")
-	 * .append("					<font color=dad1b4>" + getFactionIdString() + "</font>")
-	 * .append("					</td><td width=30><font color=696969>AggroRange</font></td><td width=50>")
-	 * .append("					<font color=dad1b4>" + formatString(getAggroRange()) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					<tr><td width=30><font color=696969>FactionRange</font></td><td width=50>")
-	 * .append("					<font color=dad1b4>" + formatString(getFactionRange()) + "</font>")
-	 * .append("					</td></tr>")
-	 * .append("					</table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=110 align=center><font color=ac9887>[Special Modifiers]</font></td></tr>")
-	 * .append("					</table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>");
-	 * if (getSpawn().getMinPopRequiredToSpawn() >= 10)
-	 * StringUtil.append(npcinfo, "<tr><td align=center><font color=977932>Spawns only if > "+getSpawn().getMinPopRequiredToSpawn()+" players online</font></td></tr>");
-	 * for (L2Skill skill : getAllSkills())
-	 * {
-	 * if (skill != null)
-	 * {
-	 * final String desc = skill.getDescription();
-	 * if (desc != null && !desc.equalsIgnoreCase(""))
-	 * {
-	 * StringUtil.append(npcinfo, "<tr><td align=center><font color=911966>"+desc);
-	 * StringUtil.append(npcinfo, "</font></td></tr>");
-	 * }
-	 * }
-	 * }
-	 * npcinfo.append("					</table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>");
-	 * if (getTemplate().getDropData() != null)
-	 * {
-	 * npcinfo.append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<table width=300 bgcolor=2E2E2E>")
-	 * .append("					<tr><td width=110 align=center><font color=ac9887>[Drop Info]</font></td></tr>")
-	 * //.append("					<tr><td align=center>Rates: <font color=\"55ff55\">100%</font> <font color=\"33ffff\">50%+</font> <font color=\"3366ff\">15%+</font>")
-	 * // .append("					<font color=\"3239ff\">3%+</font> <font color=\"ff5194\">1%+</font> <font color=\"ff3310\">1%-</font></td>")
-	 * .append("					</tr></table>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>")
-	 * .append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>")
-	 * .append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>");
-	 * if (getNpcId() == 96020)
-	 * {
-	 * System.out.println("1");
-	 * }
-	 * for (L2DropCategory cat : getTemplate().getDropData())
-	 * {
-	 * for (L2DropData drop : cat.getAllDrops())
-	 * {
-	 * boolean list = false;
-	 * if (drop.getItemId() > 1000000)
-	 * list = true;
-	 * L2Item item = null;
-	 * String itemName;
-	 * String itemIcon = null;
-	 * if (!list)
-	 * {
-	 * item = ItemTable.getInstance().getTemplate(drop.getItemId());
-	 * if (item == null)
-	 * continue;
-	 * itemName = item.getName();
-	 * itemIcon = item.getIcon();
-	 * }
-	 * else
-	 * {
-	 * itemName = ItemLists.getInstance().getListName(drop.getItemId());
-	 * itemIcon = IconsTable.getInstance().getItemIcon(drop.getItemId());
-	 * }
-	 * final String color;
-	 * if (drop.getChance() >= 1000000)
-	 * color = "b6aa7e";
-	 * else if (drop.getChance() >= 500000)
-	 * color = "afb7d2";
-	 * else if (drop.getChance() >= 150000)
-	 * color = "afd2ca";
-	 * else if (drop.getChance() >= 30000)
-	 * color = "d2afb7";
-	 * else if (drop.getChance() >= 10000)
-	 * color = "945463";
-	 * else
-	 * color = "945463";
-	 * if (drop.getChance() >= 1000000)
-	 * color = "55ff55";
-	 * else if (drop.getChance() >= 500000)
-	 * color = "33ffff";
-	 * else if (drop.getChance() >= 150000)
-	 * color = "3366ff";
-	 * else if (drop.getChance() >= 30000)
-	 * color = "3239ff";
-	 * else if (drop.getChance() >= 10000)
-	 * color = "ff5194";
-	 * else
-	 * color = "ff3310";
-	 * if (drop.getEnchantLevel() > 0)
-	 * {
-	 * if (list || item.isEnchantable())
-	 * itemName = "+"+drop.getEnchantLevel()+" "+itemName;
-	 * }
-	 * else
-	 * {
-	 * if (item != null && item.isEnchantable())
-	 * itemName = "+0"+" "+itemName;
-	 * }
-	 * String dropcount = drop.getPartyDropCount() >= 1 ? drop.getPartyDropCount() + " x " +coolFormat(drop.getMinDrop(), 0) : coolFormat(drop.getMinDrop(), 0)+" - "+coolFormat(drop.getMaxDrop(), 0);
-	 * int dropchance = drop.getChance()/10000;
-	 * npcinfo.append("<table width=300 bgcolor=2E2E2E>")
-	 * .append("<tr><td height=37 width=30><img src="+ itemIcon +" width=33 height=32></td><td width=80><font color=" + color + ">[" + dropchance +"%]</font></td><td width=220><font color=" + color + ">" + itemName +"</font></td><td></font></td><td width=155>" + dropcount + "</td></tr>");
-	 * }
-	 * }
-	 * npcinfo.append("</table>");
-	 * }
-	 * npcinfo.append("</body></html>");
-	 * _dropHTML = new NpcHtmlMessage(getNpcId());
-	 * _dropHTML.setHtml(npcinfo.toString());
-	 * }
-	 * }
-	 */
 	
 	public String getFactionIdString()
 	{
@@ -596,6 +362,11 @@ public class L2Npc extends L2Character
 	
 	private static String formatRaidbossRespawnTimes(L2Spawn spawn)
 	{
+		if (spawn == null)
+		{
+			return "N/A";
+		}
+		
 		double min = spawn.getRespawnMinDelay();
 		double max = spawn.getRespawnMaxDelay();
 		String minHours = new DecimalFormat("0.#").format(min / 3600);
@@ -1185,7 +956,7 @@ public class L2Npc extends L2Character
 						Event e = EventEngine.getInstance().getActiveEvent();
 						if (e != null)
 						{
-							if ( (NewHuntingGrounds._joining && NewHuntingGrounds._started) || (NewDomination._joining && NewDomination._started) || (NewTvT._joining && NewTvT._started) || (NewCTF._joining && NewCTF._started) || (NewFOS._joining && NewFOS._started) || (NewDM._joining && NewDM._started) )
+							if ((NewHuntingGrounds._joining && NewHuntingGrounds._started) || (NewDomination._joining && NewDomination._started) || (NewTvT._joining && NewTvT._started) || (NewCTF._joining && NewCTF._started) || (NewFOS._joining && NewFOS._started) || (NewDM._joining && NewDM._started))
 							{
 								stateFile = "registering.htm";
 							}
@@ -1193,45 +964,42 @@ public class L2Npc extends L2Character
 							{
 								stateFile = "started.htm";
 							}
-						String[] but = generateEventButton(player);
-						String button = but[0];
-						String buttonName = but[1];
-						
-						String html = HtmCache.getInstance().getHtm(player.getHtmlPrefix(), "data/html/custom/Event/" + stateFile);
-						html = html.replace("%eventName%", "["+ e.getType() + "] " +e.getName());
-						html = html.replace("%minLevel%", String.valueOf(e.getMinLvl()));
-						html = html.replace("%maxLevel%", String.valueOf(e.getMaxLvl()));
-						html = html.replace("%minPvP%", "%minPvP%");
-						html = html.replace("%minFame%", "%minFame%");
-						html = html.replace("%time%", Communicator.getInstance().getTimeRemaining());
-						html = html.replace("%regPlayers%", String.valueOf(Communicator.getInstance().getRegPlayers()));
-						html = html.replace("%maxPlayers%", String.valueOf(e.getMaxPl()));
-						html = html.replace("%objectId%", String.valueOf(getObjectId()));
-						html = html.replace("%button%", button);
-						html = html.replace("%buttonName%", buttonName);
-						html = html.replace("%description%", Communicator.getInstance().getEventDescription());
-						
-						NpcHtmlMessage msg = new NpcHtmlMessage(5);
-						msg.setHtml(html);
-						player.sendPacket(msg);
-						player.sendPacket(ActionFailed.STATIC_PACKET);
+							String[] but = generateEventButton(player);
+							String button = but[0];
+							String buttonName = but[1];
+							String html = HtmCache.getInstance().getHtm(player.getHtmlPrefix(), "data/html/custom/Event/" + stateFile);
+							html = html.replace("%eventName%", "[" + e.getType() + "] " + e.getName());
+							html = html.replace("%minLevel%", String.valueOf(e.getMinLvl()));
+							html = html.replace("%maxLevel%", String.valueOf(e.getMaxLvl()));
+							html = html.replace("%minPvP%", "%minPvP%");
+							html = html.replace("%minFame%", "%minFame%");
+							html = html.replace("%time%", Communicator.getInstance().getTimeRemaining());
+							html = html.replace("%regPlayers%", String.valueOf(Communicator.getInstance().getRegPlayers()));
+							html = html.replace("%maxPlayers%", String.valueOf(e.getMaxPl()));
+							html = html.replace("%objectId%", String.valueOf(getObjectId()));
+							html = html.replace("%button%", button);
+							html = html.replace("%buttonName%", buttonName);
+							html = html.replace("%description%", Communicator.getInstance().getEventDescription());
+							NpcHtmlMessage msg = new NpcHtmlMessage(5);
+							msg.setHtml(html);
+							player.sendPacket(msg);
+							player.sendPacket(ActionFailed.STATIC_PACKET);
 						}
 						else
 							player.sendPacket(ActionFailed.STATIC_PACKET);
-							
 					}
 					// else if (_isEventKorean)
 					// L2KoreanRegInstance
 					else
 					{
-//						Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
-//						if ((qlsa != null) && qlsa.length > 0)
-//							player.setLastQuestNpcObject(getObjectId());
-//						Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
-//						if ((qlst != null) && qlst.length == 1)
-//							qlst[0].notifyFirstTalk(this, player);
-//						else
-							showChatWindow(player, 0);
+						// Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+						// if ((qlsa != null) && qlsa.length > 0)
+						// player.setLastQuestNpcObject(getObjectId());
+						// Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
+						// if ((qlst != null) && qlst.length == 1)
+						// qlst[0].notifyFirstTalk(this, player);
+						// else
+						showChatWindow(player, 0);
 					}
 				}
 			}
@@ -1239,9 +1007,9 @@ public class L2Npc extends L2Character
 				player.sendPacket(ActionFailed.STATIC_PACKET);
 		}
 	}
+	
 	public String[] generateEventButton(L2PcInstance p)
 	{
-		
 		Event e = EventEngine.getInstance().getActiveEvent();
 		if (e != null)
 		{
@@ -1323,6 +1091,133 @@ public class L2Npc extends L2Character
 		}
 		return button;
 	}
+	
+	public String getDropHtml(L2PcInstance player)
+	{
+		StringBuilder npcinfo = new StringBuilder();
+		npcinfo.append("<html><body><title>Info of " + getName() + "</title>").append("					<table width=344 >").append("					<tr><td align=center><button value=\"Combat Stats\" width=300 height=25 action=\"\" fore=\"L2UI_CT1_CN.Deco.Gametip_bg\" back=\"L2UI_CT1_CN.Deco.Gametip_bg\"></td></tr>").append("					</table>").append("					<img src=\"L2UI_CT1_CN.Deco.accordion_btn_glow\" width=300 height=5>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<table width=344 >").append("					<tr><td width=30><font color=696969>Current HP %</font></font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getCurrentHpPercents(), 0) + "%</font>").append("					</td><td width=30><font color=696969>Current HP</font></font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getCurrentHp(), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>Max.HP</font></font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat((getMaxHp()), 0) + "</font>").append("					</td><td width=30><font color=696969>Max.MP</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat((getMaxMp()), 0) + "</font>").append("					</td></tr>").append("					<td width=30></td><td width=50></td></tr>").append("					<tr><td width=30><font color=696969>P.Atk.</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getPAtk(null), 0) + "</font>").append("					</td><td width=30><font color=696969>M.Atk.</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getMAtk(null, null), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>P.Def.</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getPDef(null), 0) + "</font>").append("					</td><td width=30><font color=696969>M.Def.</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getMDef(null, null), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=70><font color=696969>Acc</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getAccuracy(null), 0) + "</font>").append("					</td><td width=30><font color=696969>Evasion</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getEvasionRate(null), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>R.Crit</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getCriticalHit(null, null), 0) + "</font>").append("					</td><td width=30><font color=696969>Speed</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getRunSpeed(), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>Atk.Spd</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getPAtkSpd(null), 0) + "</font>").append("					</td><td width=30><font color=696969>Cst.Spd</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getMAtkSpd(null), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>Faction</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + getFactionIdString() + "</font>").append("					</td><td width=30><font color=696969>Exp.</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + coolFormat(getExpReward(), 0) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>Faction Range</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + formatString(getFactionRange()) + "</font>").append("					</td><td width=30><font color=696969>Aggro Range</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + formatString(getAggroRange()) + "</font>").append("					</td></tr>").append("					<tr><td width=30><font color=696969>Atk.Ele</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + getAttackElementString() + "</font>").append("					</td><td width=30><font color=696969>Def.Ele</font></td><td align=left  width=50>").append("					<font color=dad1b4> " + getDefenseElementString() + "</font>").append("					</td></tr>").append("					</table>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>");
+		final L2Spawn spawn = getSpawn();
+		String respawntime;
+		if (this instanceof L2RaidBossInstance)
+		{
+			respawntime = formatRaidbossRespawnTimes(spawn);
+		}
+		else if (this instanceof L2MinionInstance)
+		{
+			return "";
+		}
+		else
+		{
+			respawntime = formatMonsterRespawnTime(spawn);
+		}
+		npcinfo.append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<table width=344 >").append("					<tr><td align=center><button value=\"Respawn Time & Special Modifiers\" width=330 height=25 action=\"\" fore=\"L2UI_CT1_CN.Deco.Gametip_bg\" back=\"L2UI_CT1_CN.Deco.Gametip_bg\"></td></tr>").append("					</table>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<table width=344 >").append("					<tr><td align=center><font color=696969>    Respawn:  </font>").append("					<font color=dad1b4>" + respawntime + "</font>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2><br></td></tr>");
+		for (L2Skill skill : getAllSkills())
+		{
+			if (skill != null)
+			{
+				final String desc = skill.getDescription();
+				if (desc != null && !desc.equalsIgnoreCase(""))
+				{
+					StringUtil.append(npcinfo, "					<tr><td align=center<font color=dad1b4>" + desc + "</font>");
+					StringUtil.append(npcinfo, "					</td></tr>");
+				}
+			}
+		}
+		npcinfo.append("					</table>");
+		if (getTemplate().getDropData() != null)
+		{
+			npcinfo.append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<table width=344 >").append("					<tr><td align=center ><button value=\"Drop Info\" width=300 height=25 action=\"\" fore=\"L2UI_CT1_CN.Deco.Gametip_bg\" back=\"L2UI_CT1_CN.Deco.Gametip_bg\"></td></tr>").append("					</tr>").append("					<tr><td align=center>Rates:   <font color=\"55ff55\">100%</font>   <font color=\"33ffff\">50%+</font>   <font color=\"3366ff\">15%+</font>   ").append("					<font color=\"3239ff\">3%+</font>   <font color=\"ff5194\">1%+</font>   <font color=\"ff3310\">1%-</font></td></table>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI_CT1_CN.Deco.Underline\" width=300 height=2>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>").append("					<img src=\"L2UI.SquareBlank\" width=300 height=3>");
+			int categorySlot = 1;
+			for (L2DropCategory cat : getTemplate().getDropData())
+			{
+				for (L2DropData drop : cat.getAllDrops())
+				{
+					boolean list = false;
+					if (drop.getItemId() > 1000000)
+						list = true;
+					L2Item item = null;
+					String itemName;
+					String itemIcon = null;
+					if (!list)
+					{
+						item = ItemTable.getInstance().getTemplate(drop.getItemId());
+						if (item == null)
+							continue;
+						itemName = item.getName();
+						itemIcon = item.getIcon();
+					}
+					else
+					{
+						itemName = ItemLists.getInstance().getListName(drop.getItemId());
+						itemIcon = IconsTable.getInstance().getItemIcon(drop.getItemId());
+					}
+					final String color;
+					if (drop.getChance() >= 1000000)
+						color = "55ff55";
+					else if (drop.getChance() >= 500000)
+						color = "33ffff";
+					else if (drop.getChance() >= 150000)
+						color = "3366ff";
+					else if (drop.getChance() >= 30000)
+						color = "3239ff";
+					else if (drop.getChance() >= 10000)
+						color = "ff5194";
+					else
+						color = "ff3310";
+					if (drop.getEnchantLevel() > 0)
+					{
+						if (list || item.isEnchantable())
+							itemName = "+" + drop.getEnchantLevel() + " " + itemName;
+					}
+					else
+					{
+						if (item != null && item.isEnchantable())
+							itemName = "+0" + " " + itemName;
+					}
+					int min = drop.getMinDrop();
+					int max = drop.getMaxDrop();
+					final String dropcount;
+					if (min < max)
+					{
+						dropcount = drop.getPartyDropCount() >= 1 ? drop.getPartyDropCount() + " x " + coolFormat(drop.getMinDrop(), 0) : coolFormat(drop.getMinDrop(), 0) + " - " + coolFormat(drop.getMaxDrop(), 0);
+					}
+					else
+					{
+						dropcount = drop.getPartyDropCount() >= 1 ? drop.getPartyDropCount() + " x " + coolFormat(drop.getMinDrop(), 0) : coolFormat(drop.getMinDrop(), 0) + " - " + coolFormat(drop.getMaxDrop(), 0);
+						// dropcount = drop.getPartyDropCount() >= 1 ? drop.getPartyDropCount() + " x " +coolFormat(drop.getMinDrop(), 0) : coolFormat(drop.getMinDrop(), 0);
+					}
+					DecimalFormat df = new DecimalFormat("##.##");
+					final String[] msgs =
+					{
+						("never"),
+						("Low AF"),
+						("QQ"),
+						(":'(")
+					};
+					final String dropchance;
+					if (drop.getFakeChance() > 0)
+					{
+						dropchance = (df.format(drop.getFakeChance()) + "%" + (player.isGM() ? " (" + df.format((double) drop.getChance() / 10000) + "%)" : ""));
+					}
+					else if (drop.getChance() < 100)
+					{
+						dropchance = (msgs[Rnd.get(msgs.length)]);
+					}
+					else
+					{
+						dropchance = ((df.format((double) drop.getChance() / 10000)) + "%");
+					}
+					npcinfo.append("<table width=360>" + "    <tr>" + "        <td width=44 height=36 align=center>" + "            <table cellpadding=6 cellspacing=-5>" + "                <tr>" + "                    <td>" + "                        <button width=32 height=32 back=" + itemIcon + " fore=" + itemIcon + ">" + "                    </td>" + "                </tr>" + "            </table>" + "        </td>" + "        <td width=250><font color=" + color + ">" + /*
+																																																																																																																								*/ itemName + "</font>" + "            <br>" + "		</td>" + "        <td width=80>" + "			<font> " + dropcount + "</font>" + "            <br1>" + "            <br>" + "		</td>" + "        <td width=80>" + "			<font> [" + String.valueOf(categorySlot) + "]</font>" + "            <br1>" + "            <br>" + "		</td>" + "    </tr>");
+				}
+				categorySlot++;
+			}
+			npcinfo.append("</table>").append("<img src=\"L2UI_CT1_CN.Deco.Underline\" width=355 height=2>");
+		}
+		npcinfo.append("</body></html>");
+		return npcinfo.toString();
+	}
+	
 	/**
 	 * Manage and Display the GM console to modify the L2NpcInstance (GM only).<BR>
 	 * <BR>
@@ -1652,14 +1547,14 @@ public class L2Npc extends L2Character
 							}
 							else
 							{
-//								Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
-//								if ((qlsa != null) && qlsa.length > 0)
-//									player.setLastQuestNpcObject(getObjectId());
-//								Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
-//								if ((qlst != null) && qlst.length == 1)
-//									qlst[0].notifyFirstTalk(this, player);
-//								else
-									showChatWindow(player, 0);
+								// Quest[] qlsa = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+								// if ((qlsa != null) && qlsa.length > 0)
+								// player.setLastQuestNpcObject(getObjectId());
+								// Quest[] qlst = getTemplate().getEventQuests(QuestEventType.ON_FIRST_TALK);
+								// if ((qlst != null) && qlst.length == 1)
+								// qlst[0].notifyFirstTalk(this, player);
+								// else
+								showChatWindow(player, 0);
 							}
 						}
 					}
@@ -1777,8 +1672,7 @@ public class L2Npc extends L2Character
 					quest = command.substring(5).trim();
 				}
 				catch (final IndexOutOfBoundsException ioobe)
-				{
-				}
+				{}
 				if (quest.isEmpty())
 					showQuestWindowGeneral(player, this);
 				else
@@ -2153,23 +2047,23 @@ public class L2Npc extends L2Character
 	public void showQuestChooseWindow(L2PcInstance player, Quest[] quests)
 	{
 		final StringBuilder sb = StringUtil.startAppend(150, "<html><body>");
-//		for (Quest q : quests)
-//		{
-//			StringUtil.append(sb, "<a action=\"bypass -h npc_", String.valueOf(getObjectId()), "_Quest ", q.getName(), "\">[", q.getDescr());
-//			QuestState qs = player.getQuestState(q.getScriptName());
-//			if (qs != null)
-//			{
-//				if (qs.getState() == State.STARTED && qs.getInt("cond") > 0)
-//				{
-//					sb.append(" (In Progress)");
-//				}
-//				else if (qs.getState() == State.COMPLETED)
-//				{
-//					sb.append(" (Done)");
-//				}
-//			}
-//			sb.append("]</a><br>");
-//		}
+		// for (Quest q : quests)
+		// {
+		// StringUtil.append(sb, "<a action=\"bypass -h npc_", String.valueOf(getObjectId()), "_Quest ", q.getName(), "\">[", q.getDescr());
+		// QuestState qs = player.getQuestState(q.getScriptName());
+		// if (qs != null)
+		// {
+		// if (qs.getState() == State.STARTED && qs.getInt("cond") > 0)
+		// {
+		// sb.append(" (In Progress)");
+		// }
+		// else if (qs.getState() == State.COMPLETED)
+		// {
+		// sb.append(" (Done)");
+		// }
+		// }
+		// sb.append("]</a><br>");
+		// }
 		sb.append("</body></html>");
 		// Send a Server->Client packet NpcHtmlMessage to the L2PcInstance in order to display the message of the L2NpcInstance
 		insertObjectIdAndShowChatWindow(player, sb.toString());
@@ -2193,14 +2087,10 @@ public class L2Npc extends L2Character
 	public void showQuestWindow(L2PcInstance player, String questId)
 	{
 		String content = null;
-		// Get the state of the selected quest
-
-		// Send a Server->Client packet NpcHtmlMessage to the L2PcInstance in order to display the message of the L2NpcInstance
-		if (content != null)
-			insertObjectIdAndShowChatWindow(player, content);
 		// Send a Server->Client ActionFailed to the L2PcInstance in order to avoid that the client wait another packet
 		player.sendPacket(ActionFailed.STATIC_PACKET);
 	}
+	
 	public static void showQuestWindowGeneral(final L2PcInstance player, final L2Npc npc)
 	{
 		final List<Quest> quests = new ArrayList<>();
@@ -2260,9 +2150,13 @@ public class L2Npc extends L2Character
 	
 	/**
 	 * Shows the list of available quest of the L2Npc.
-	 * @param player The L2PcInstance that talk with the L2Npc.
-	 * @param npc The L2Npc instance.
-	 * @param quests The list containing quests of the L2Npc.
+	 * 
+	 * @param player
+	 *            The L2PcInstance that talk with the L2Npc.
+	 * @param npc
+	 *            The L2Npc instance.
+	 * @param quests
+	 *            The list containing quests of the L2Npc.
 	 */
 	public static void showQuestWindowChoose(final L2PcInstance player, final L2Npc npc, final List<Quest> quests)
 	{
@@ -2300,7 +2194,7 @@ public class L2Npc extends L2Character
 		// collect awaiting quests and start points
 		List<Quest> options = new FastList<Quest>();
 		QuestState[] awaits = player.getQuestsForTalk(getTemplate().npcId);
-		//Quest[] starts = getTemplate().getEventQuests(QuestEventType.QUEST_START);
+		// Quest[] starts = getTemplate().getEventQuests(QuestEventType.QUEST_START);
 		// Quests are limited between 1 and 999 because those are the quests that are supported by the client.
 		// By limiting them there, we are allowed to create custom quests at higher IDs without interfering
 		if (awaits != null)
@@ -2312,15 +2206,15 @@ public class L2Npc extends L2Character
 						options.add(x.getQuest());
 			}
 		}
-//		if (starts != null)
-//		{
-//			for (Quest x : starts)
-//			{
-//				if (!options.contains(x))
-//					if ((x.getQuestId() > 0) && (x.getQuestId() < 20000))
-//						options.add(x);
-//			}
-//		}
+		// if (starts != null)
+		// {
+		// for (Quest x : starts)
+		// {
+		// if (!options.contains(x))
+		// if ((x.getQuestId() > 0) && (x.getQuestId() < 20000))
+		// options.add(x);
+		// }
+		// }
 		// Display a QuestChooseWindow (if several quests are available) or QuestWindow
 		if (options.size() > 1)
 		{
@@ -3413,13 +3307,13 @@ public class L2Npc extends L2Character
 	{
 		_tempSpawn = true;
 	}
-
+	
 	@Override
 	public int getInstanceWorld()
 	{
-		return this.getInstanceWorld();
+		return getInstanceId();
 	}
-
+	
 	@Override
 	public ILocational getLocation()
 	{
@@ -3448,9 +3342,8 @@ public class L2Npc extends L2Character
 		{
 			for (L2PcInstance player : plrs)
 			{
-				((L2Npc)this).sendInfo(player);
+				((L2Npc) this).sendInfo(player);
 			}
 		}
 	}
-	
 }

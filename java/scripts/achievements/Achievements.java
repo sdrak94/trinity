@@ -56,9 +56,9 @@ public class Achievements extends Quest
 	private final List<AchievementCategory> _achievementCategories;
 	private final Map<Integer, Map<Integer, Integer>> _playersAchievements;
 	
-	public Achievements(final int questId, final String name, final String descr)
+	public Achievements()
 	{
-		super(questId, name, descr);
+		super(-1, "Achievements", "custom");
 		
 		_achievementMaxLevels = new HashMap<>();
 		_achievementCategories = new LinkedList<>();
@@ -103,7 +103,7 @@ public class Achievements extends Quest
 							if ((nextLevelAchievement != null) && nextLevelAchievement.isDone(player.getCounters().getPoints(nextLevelAchievement.getType())))
 							{
 								// Make a question mark button.
-								//player.sendPacket(new TutorialShowQuestionMark(player.getObjectId()));
+								player.sendPacket(new TutorialShowQuestionMark(player.getObjectId()));
 								break;
 							}
 						}
@@ -702,7 +702,7 @@ public class Achievements extends Quest
 			}
 		}
 	}
-
+	
 	public Achievement getAchievement(int achievementId, int achievementLevel)
 	{
 		return _achievementCategories.stream().flatMap(c -> c.getAchievements().stream()).filter(a -> (a.getId() == achievementId) && (a.getLevel() == achievementLevel)).findAny().orElse(null);
@@ -830,4 +830,8 @@ public class Achievements extends Quest
 		return content;
 	}
 	
+	public static void main(String[] args)
+	{
+		new Achievements();
+	}
 }

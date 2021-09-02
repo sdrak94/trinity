@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
+import ghosts.model.Ghost;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import net.sf.l2j.Config;
@@ -846,7 +847,9 @@ public static boolean addPlayerOk(L2PcInstance eventPlayer)
 		
 		if(player == null || eventPlayer == null)
 			continue;
-		
+
+		if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
+			continue;
 		String HWID = player.getClient().getStrixClientData().getClientHWID();
 		String HWID2 = eventPlayer.getClient().getStrixClientData().getClientHWID();
 		

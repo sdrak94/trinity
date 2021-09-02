@@ -1,0 +1,364 @@
+<html noscrollbar>
+<title>L2Against</title>
+<body>
+<br>
+<br>
+<center>
+	<table width=600>
+		<tr>
+			<td>
+				<table border=0 width=500 height=46 cellspacing=4 cellpadding=3 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+					<tr>
+						<td width=40 align=right valign=top>
+							<img src="icon.skill6169" width=32 height=32>
+						</td>
+						<td width=244 align=left valign=top>
+							<font color="LEVEL">Search Raid Boss</font> <br1> Find deatiled about raid boss.
+						</td>
+						<td width=100 align=center valign=center>
+							<table width=100 height=30>
+								<tr>
+									<td width=100 height=1>Search:
+									</td>
+								</tr>
+								<tr>
+									<td width=100 height=5>
+										<edit var="search" width=100 height=11>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width=70 align=left valign=top>
+							<button value="Find" action="bypass _bbsbosslist_<?sort?>_0_ $search" width=70 height=32 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						</td>
+					</tr>
+				</table>
+			<br>
+			<br>
+			<br>
+			<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=0e0d0d>
+					<tr>
+						<td width=260 valign=top>
+							<a action="bypass _bbsbosslist_<?sort1?>_0_<?search?>"><font color="bbbbbb">Raid Boss Name</font></a> 
+						</td>
+						<td width=110 align="center" valign=top>
+							<a action="bypass _bbsbosslist_<?sort2?>_0_<?search?>"><font color="bbbbbb">Level</font></a>
+						</td>
+						<td width=110 align="center" valign=top>
+							<a action="bypass _bbsbosslist_<?sort3?>_0_<?search?>"><font color="bbbbbb">Status</font></a>
+						</td>
+						<td width=60 align="center" valign=top>
+							<font color="bbbbbb">Show</font>
+						</td>
+					</tr>
+				</table>
+				<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_1?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_1?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_1?>"><?status_1?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_1?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_2?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_2?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_2?>"><?status_2?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_2?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_3?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_3?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_3?>"><?status_3?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_3?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_4?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_4?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_4?>"><?status_4?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_4?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_5?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_5?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_5?>"><?status_5?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_5?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_6?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_6?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_6?>"><?status_6?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_6?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_7?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_7?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_7?>"><?status_7?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_7?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_8?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_8?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_8?>"><?status_8?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_8?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_9?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_9?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_9?>"><?status_9?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_9?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_10?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_10?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_10?>"><?status_10?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_10?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_11?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_11?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_11?>"><?status_11?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_11?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_12?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_12?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_12?>"><?status_12?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_12?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=151515>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_13?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_13?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_13?>"><?status_13?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_13?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=212121>
+					<tr>
+						<td width=260 valign=top>
+							<font color="FF6666"><?name_14?></font>
+						</td>
+						<td width=110 align="center" valign=top>
+							<?level_14?>
+						</td>
+						<td width=110 align="center" valign=top>
+							<font color="<?status_color_14?>"><?status_14?></font>
+						</td>
+						<td width=60 align="center" valign=top>
+							<?bp_14?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table width=600 bgcolor=0e0d0d>
+					<tr>
+						<td width=300 valign="top" align="right">
+							<br1><?previous?>
+						</td>
+						<td width=60 valign="center" align="center">
+							<br1>[ <?pages?> ]
+						</td>
+						<td width=300 valign="top" align="left">
+							<br1><?next?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</center>
+
+</body>
+</html>

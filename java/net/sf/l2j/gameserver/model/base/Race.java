@@ -14,6 +14,8 @@
  */
 package net.sf.l2j.gameserver.model.base;
 
+import net.sf.l2j.util.Rnd;
+
 /**
  * This class defines all races that a player can choose.<BR>
  * <BR>
@@ -204,6 +206,11 @@ public enum Race
 	public boolean stucks(final Race race)
 	{
 		return race != null && this != race && race.real() == real();
+	}
+
+	public static Race getRandomRace()
+	{
+		return Rnd.get(values());
 	}
 	
 }

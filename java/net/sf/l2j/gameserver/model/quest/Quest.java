@@ -12,6 +12,7 @@
  */
 package net.sf.l2j.gameserver.model.quest;
 
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -47,7 +48,6 @@ import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.network.serverpackets.NpcQuestHtmlMessage;
 import net.sf.l2j.gameserver.scripting.ManagedScript;
-import net.sf.l2j.gameserver.scripting.ScriptManager;
 import net.sf.l2j.gameserver.templates.chars.L2NpcTemplate;
 import net.sf.l2j.gameserver.util.GMAudit;
 import net.sf.l2j.util.Rnd;
@@ -60,7 +60,7 @@ public class Quest extends ManagedScript
 	protected static final Logger					_log						= Logger.getLogger(Quest.class.getName());
 	private static final String						LOAD_QUEST_STATES			= "SELECT name,value FROM character_quests WHERE charId=? AND var='<state>'";
 	private static final String						LOAD_QUEST_VARIABLES		= "SELECT name,var,value FROM character_quests WHERE charId=? AND var<>'<state>'";
-	private static final String						DELETE_INVALID_QUEST		= "DELETE FROM character_quests WHERE name=?";
+	private static final String						DELETE_INVALID_QUEST		= "SELECT FROM character_quests WHERE name=?";
 	private static final String						SET_GLOBAL_QUEST_VAL		= "REPLACE INTO quest_global_data (quest_name,var,value) VALUES (?,?,?)";
 	private static final String						GET_GLOBAL_QUEST_VAL		= "SELECT value FROM quest_global_data WHERE quest_name=? AND var=?";
 	private static final String						DEL_GLOBAL_QUEST_VAL		= "DELETE FROM quest_global_data WHERE quest_name=? AND var=?";
@@ -176,59 +176,98 @@ public class Quest extends ManagedScript
 	 * @param player
 	 *            : Player who is entering the world
 	 */
-	public final static void playerEnter(final L2PcInstance player)
+	public final static void playerEnter(L2PcInstance player)
 	{
-		try (Connection con = L2DatabaseFactory.getInstance().getConnection())
+		
+		Connection con = null;
+		try
 		{
-			final PreparedStatement invalidQuest = con.prepareStatement(DELETE_INVALID_QUEST);
-			PreparedStatement statement = con.prepareStatement(LOAD_QUEST_STATES);
+			// Get list of quests owned by the player from database
+			con = L2DatabaseFactory.getInstance().getConnection();
+			PreparedStatement statement;
+			
+			PreparedStatement invalidQuestData = con.prepareStatement("DELETE FROM character_quests WHERE charId=? and name=?");
+			PreparedStatement invalidQuestDataVar = con.prepareStatement("delete FROM character_quests WHERE charId=? and name=? and var=?");
+			
+			statement = con.prepareStatement("SELECT name,value FROM character_quests WHERE charId=? AND var=?");
 			statement.setInt(1, player.getObjectId());
+			statement.setString(2, "<state>");
 			ResultSet rs = statement.executeQuery();
 			while (rs.next())
 			{
-				final String questId = rs.getString("name");
-				final Quest q = QuestManager.getInstance().getQuest(questId);
+				
+				// Get ID of the quest and ID of its state
+				String questId = rs.getString("name");
+				String statename = rs.getString("value");
+				
+				// Search quest associated with the ID
+				Quest q = QuestManager.getInstance().getQuest(questId);
 				if (q == null)
 				{
+					_log.finer("Unknown quest " + questId + " for player " + player.getName());
 					if (Config.AUTODELETE_INVALID_QUEST_DATA)
 					{
-						invalidQuest.setString(1, questId);
-						invalidQuest.executeUpdate();
+						invalidQuestData.setInt(1, player.getObjectId());
+						invalidQuestData.setString(2, questId);
+						invalidQuestData.executeUpdate();
 					}
-					_log.finer("Unknown  quest " + questId + " for player " + player.getName());
 					continue;
 				}
-				new QuestState(player, q, rs.getByte("value"));
+				
+				// Create a new QuestState for the player that will be added to the player's list of quests
+				new QuestState(player, q, State.getStateId(statename));
 			}
 			rs.close();
+			invalidQuestData.close();
 			statement.close();
-			statement = con.prepareStatement(LOAD_QUEST_VARIABLES);
+			
+			// Get list of quests owned by the player from the DB in order to add variables used in the quest.
+			statement = con.prepareStatement("SELECT name,var,value FROM character_quests WHERE charId=? AND var<>?");
 			statement.setInt(1, player.getObjectId());
+			statement.setString(2, "<state>");
 			rs = statement.executeQuery();
 			while (rs.next())
 			{
-				final String questId = rs.getString("name");
-				final QuestState qs = player.getQuestState(questId);
+				String questId = rs.getString("name");
+				String var = rs.getString("var");
+				String value = rs.getString("value");
+				// Get the QuestState saved in the loop before
+				QuestState qs = player.getQuestState(questId);
 				if (qs == null)
 				{
+					_log.finer("Lost variable " + var + " in quest " + questId + " for player " + player.getName());
 					if (Config.AUTODELETE_INVALID_QUEST_DATA)
 					{
-						invalidQuest.setString(1, questId);
-						invalidQuest.executeUpdate();
+						invalidQuestDataVar.setInt(1, player.getObjectId());
+						invalidQuestDataVar.setString(2, questId);
+						invalidQuestDataVar.setString(3, var);
+						invalidQuestDataVar.executeUpdate();
 					}
-					_log.finer("Unknown quest " + questId + " for player " + player.getName());
 					continue;
 				}
-				qs.setInternal(rs.getString("var"), rs.getString("value"));
+				// Add parameter to the quest
+				qs.setInternal(var, value);
 			}
 			rs.close();
+			invalidQuestDataVar.close();
 			statement.close();
-			invalidQuest.close();
+			
 		}
-		catch (final Exception e)
+		catch (Exception e)
 		{
 			_log.log(Level.WARNING, "could not insert char quest:", e);
 		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch (Exception e)
+			{
+			}
+		}
+		
 	}
 	
 	/**
@@ -965,7 +1004,7 @@ public class Quest extends ManagedScript
 	 */
 	public boolean showError(final L2PcInstance player, final Throwable e)
 	{
-		_log.log(Level.WARNING, getScriptFile().getAbsolutePath(), e);
+		_log.log(Level.WARNING, getScriptFile().toAbsolutePath() + " " +  e);
 		if (e.getMessage() == null)
 			e.printStackTrace();
 		if (player != null && player.isGM())
@@ -1888,11 +1927,7 @@ public class Quest extends ManagedScript
 		return null;
 	}
 	
-	@Override
-	public ScriptManager<?> getScriptManager()
-	{
-		return QuestManager.getInstance();
-	}
+
 	
 	@Override
 	public void setActive(final boolean status)
@@ -2068,5 +2103,78 @@ public class Quest extends ManagedScript
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	public String getScriptName()
+	{
+		return _name;
+	}
+
+	@Override
+	public Path getScriptPath()
+	{
+		return null;
+	}
+	
+	public static void updateQuestVarInDb(QuestState qs, String var, String value)
+	{
+		Connection con = null;
+		try
+		{
+			con = L2DatabaseFactory.getInstance().getConnection();
+			PreparedStatement statement;
+			statement = con.prepareStatement("UPDATE character_quests SET value=? WHERE charId=? AND name=? AND var = ?");
+			statement.setString(1, value);
+			statement.setInt(2, qs.getPlayer().getObjectId());
+			statement.setString(3, qs.getQuest().getName());
+			statement.setString(4, var);
+			statement.executeUpdate();
+			statement.close();
+		}
+		catch (Exception e)
+		{
+			_log.log(Level.WARNING, "could not update char quest:", e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch (Exception e)
+			{
+			}
+		}
+	}
+	public static void createQuestVarInDb(QuestState qs, String var, String value)
+	{
+		Connection con = null;
+		try
+		{
+			con = L2DatabaseFactory.getInstance().getConnection();
+			PreparedStatement statement;
+			statement = con.prepareStatement("INSERT INTO character_quests (charId,name,var,value) VALUES (?,?,?,?)");
+			statement.setInt(1, qs.getPlayer().getObjectId());
+			statement.setString(2, qs.getQuest().getName());
+			statement.setString(3, var);
+			statement.setString(4, value);
+			statement.executeUpdate();
+			statement.close();
+		}
+		catch (Exception e)
+		{
+			_log.log(Level.WARNING, "could not insert char quest:", e);
+		}
+		finally
+		{
+			try
+			{
+				con.close();
+			}
+			catch (Exception e)
+			{
+			}
+		}
 	}
 }

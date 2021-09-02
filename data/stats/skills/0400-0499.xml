@@ -1466,7 +1466,7 @@
 </skill>
 <skill id="455" levels="1" name="Symbol of Noise">
   <set name="target" val="TARGET_GROUND"/>
-  <set name="skillType" val="NOTDONE"/>
+  <set name="skillType" val="SIGNET"/>
   <set name="operateType" val="OP_ACTIVE"/>
   <set name="hitTime" val="5000"/>
   <set name="staticHitTime" val="true"/>

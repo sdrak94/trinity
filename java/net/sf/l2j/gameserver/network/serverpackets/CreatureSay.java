@@ -39,6 +39,14 @@ public final class CreatureSay extends L2GameServerPacket
 		_charName = charName;
 		_text = text;
 	}
+	
+	public CreatureSay(L2PcInstance player, int messageType, String charName, String text)
+	{
+		_objectId = player.getObjectId();
+		_textType = messageType;
+		_charName = charName;
+		_text = text;
+	}
 
 	@Override
 	protected final void writeImpl()

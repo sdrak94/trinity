@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 
+import inertia.controller.InertiaController;
 import javolution.text.TextBuilder;
 import net.sf.l2j.Base64;
 import net.sf.l2j.Config;
@@ -43,7 +44,6 @@ import net.sf.l2j.gameserver.network.serverpackets.SellList;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 import net.sf.l2j.gameserver.skills.Formulas;
 import net.sf.l2j.gameserver.skills.Stats;
-import scripts.instances.Ultraverse.Ultraverse;
 
 public class Gem implements IItemHandler
 {
@@ -560,7 +560,7 @@ public class Gem implements IItemHandler
 				}
 				else
 				{
-					if (player.getInstanceId() > 0 && (player.getInstanceId() == 1 || (InstanceManager.getInstance().getPlayerWorld(player) != null && InstanceManager.getInstance().getPlayerWorld(player).templateId != Ultraverse.INSTANCEID)))
+					if (player.getInstanceId() > 0 && (player.getInstanceId() == 1 || (InstanceManager.getInstance().getPlayerWorld(player) != null && InstanceManager.getInstance().getPlayerWorld(player).templateId != InstanceManager.ULTRAVERSE_ID)))
 					{
 						player.sendMessage("Cannot use while in an instance");
 						return;
@@ -626,6 +626,11 @@ public class Gem implements IItemHandler
 				itemReply.setHtml(content);
 				player.sendPacket(itemReply);
 			}
+		}
+		else if (action.startsWith("inertia_main"))
+		{
+			InertiaController.getInstance().renderChill(player);
+		
 		}
 		else if (action.equalsIgnoreCase("stats"))
 		{

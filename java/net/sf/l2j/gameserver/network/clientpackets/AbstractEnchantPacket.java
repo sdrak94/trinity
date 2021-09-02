@@ -1,17 +1,17 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
-import javolution.util.FastMap;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.templates.item.L2ArmorType;
 import net.sf.l2j.gameserver.templates.item.L2WeaponType;
 
 public abstract class AbstractEnchantPacket extends L2GameClientPacket
 {
-	public static final Map<Integer, EnchantScroll>	_scrolls						= (Map<Integer, EnchantScroll>) new FastMap();
-	public static final Map<Integer, EnchantItem>	_supports						= (Map<Integer, EnchantItem>) new FastMap();
+	public static final Map<Integer, EnchantScroll>	_scrolls						= new HashMap<>();
+	public static final Map<Integer, EnchantItem>	_supports						= new HashMap<>();
 	public static final int							ITEM_DESTROYED					= 0;
 	public static final int							ENCHANT_TO_4_OR_0				= 1;
 	public static final int							ENCHANT_MINUS_ONE_OR_NEXT_LEVEL	= 2;
@@ -473,7 +473,7 @@ public abstract class AbstractEnchantPacket extends L2GameClientPacket
 			{
 				chance += supportItem.getChanceAdd();
 			}
-			//chance += enchantItem.getItem().getWeight();
+			chance += enchantItem.getItem().getWeight();
 			switch (_scrollLvl)
 			{
 				case 0:

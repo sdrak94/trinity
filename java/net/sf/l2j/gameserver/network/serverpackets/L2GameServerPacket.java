@@ -3,12 +3,10 @@
  * the terms of the GNU General Public License as published by the Free Software
  * Foundation, either version 3 of the License, or (at your option) any later
  * version.
- * 
  * This program is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
  * details.
- * 
  * You should have received a copy of the GNU General Public License along with
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -23,17 +21,15 @@ import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
 import net.sf.l2j.gameserver.network.L2GameClient;
 
 /**
- *
- * @author  KenM
+ * @author KenM
  */
 public abstract class L2GameServerPacket extends SendablePacket<L2GameClient>
 {
-private static final Logger _log = Logger.getLogger(L2GameServerPacket.class.getName());
-
-L2GameClient client = getClient();
-protected boolean _invisible = false;
-private static final int[] PAPERDOLL_ORDER = new int[]
-{
+	private static final Logger	_log			= Logger.getLogger(L2GameServerPacket.class.getName());
+	L2GameClient				client			= getClient();
+	protected boolean			_invisible		= false;
+	private static final int[]	PAPERDOLL_ORDER	= new int[]
+	{
 		Inventory.PAPERDOLL_UNDER,
 		Inventory.PAPERDOLL_REAR,
 		Inventory.PAPERDOLL_LEAR,
@@ -56,70 +52,70 @@ private static final int[] PAPERDOLL_ORDER = new int[]
 		Inventory.PAPERDOLL_DECO5,
 		Inventory.PAPERDOLL_DECO6,
 		Inventory.PAPERDOLL_BELT
-
-};
-/**
- * 
- * @return True if packet originated from invisible character.
- */
-public boolean isInvisible()
-{
-	return _invisible;
-}
-
-/**
- * Set "invisible" boolean flag in the packet.
- * Packets from invisible characters will not be broadcasted to players.
- * @param b
- */
-public void setInvisible(boolean b)
-{
-	_invisible = b;
-}
-protected int[] getPaperdollOrder()
-{
-	return PAPERDOLL_ORDER;
-}
-/**
- * @see com.l2jserver.mmocore.network.SendablePacket#write()
- */
-@Override
-protected void write()
-{
-	try
+	};
+	
+	/**
+	 * @return True if packet originated from invisible character.
+	 */
+	public boolean isInvisible()
 	{
-		//Announcements.getInstance().announceToAll(getClass().getSimpleName());
-		//System.out.println(getClass().getSimpleName());
-
-		//_client = getClient();
-		L2GameClient client = getClient();
-		L2GameClient _client = getClient();
-		writeImpl();
+		return _invisible;
 	}
-	catch (Exception e)
+	
+	/**
+	 * Set "invisible" boolean flag in the packet.
+	 * Packets from invisible characters will not be broadcasted to players.
+	 * 
+	 * @param b
+	 */
+	public void setInvisible(boolean b)
 	{
-		final String type = getType();
-		
-		if (type == "[S] 4e PartySmallWindowAll" || type == "[S] 4f PartySmallWindowAdd")
-		{}
-		else
+		_invisible = b;
+	}
+	
+	protected int[] getPaperdollOrder()
+	{
+		return PAPERDOLL_ORDER;
+	}
+	
+	/**
+	 * @see com.l2jserver.mmocore.network.SendablePacket#write()
+	 */
+	@Override
+	protected void write()
+	{
+		try
 		{
-			_log.severe("Client: "+getClient().toString()+" - Failed writing: "+type+" - L2J Server Version: "+Config.SERVER_VERSION+" - DP Revision: "+Config.DATAPACK_VERSION);
-			e.printStackTrace();
+			// Announcements.getInstance().announceToAll(getClass().getSimpleName());
+			// System.out.println(getClass().getSimpleName());
+			// _client = getClient();
+			L2GameClient client = getClient();
+			L2GameClient _client = getClient();
+			writeImpl();
+		}
+		catch (Exception e)
+		{
+			final String type = getType();
+			if (type == "[S] 4e PartySmallWindowAll" || type == "[S] 4f PartySmallWindowAdd")
+			{}
+			else
+			{
+				_log.severe("Client: " + getClient().toString() + " - Failed writing: " + type + " - L2J Server Version: " + Config.SERVER_VERSION + " - DP Revision: " + Config.DATAPACK_VERSION);
+				e.printStackTrace();
+			}
 		}
 	}
-}
-
-public void runImpl()
-{
-	L2GameClient client = getClient();
-	L2GameClient _client = getClient();
-}
-
-protected abstract void writeImpl();
-
-/**
- * @return A String with this packet name for debuging purposes
- */
-public abstract String getType();
+	
+	public void runImpl()
+	{
+		L2GameClient client = getClient();
+		L2GameClient _client = getClient();
+	}
+	
+	protected abstract void writeImpl();
+	
+	/**
+	 * @return A String with this packet name for debuging purposes
+	 */
+	public abstract String getType();
 }

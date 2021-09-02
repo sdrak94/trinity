@@ -1,5 +1,6 @@
 package net.sf.l2j.gameserver.model.zone.type;
 
+import ghosts.model.Ghost;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.L2World;
@@ -28,7 +29,7 @@ protected void onEnter(final L2Character character)
 			String hwid = player.getHWID();
 			for (L2PcInstance player2 : L2World.getInstance().getAllPlayers().values())
 			{
-				if (player2.getClient().isDetached())
+				if (!(player2 instanceof Ghost) && player2.getClient().isDetached())
 				{
 					continue;
 				}

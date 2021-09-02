@@ -15,6 +15,7 @@ import luna.custom.newBie.NewbieHelper;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.communitybbs.CommunityBoard;
+import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.BBSSchemeBufferInstance;
 import net.sf.l2j.gameserver.datatables.AdminCommandAccessRights;
 import net.sf.l2j.gameserver.handler.AdminCommandHandler;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
@@ -89,7 +90,8 @@ public final class RequestBypassToServer extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		_log.info("RBS: -> "+ _command);
+		if(Config.SERVER_LOCAL)
+			_log.info("RBS: -> "+ _command);
 		final L2PcInstance activeChar = getClient().getActiveChar();
 		if (activeChar == null)
 			return;
@@ -530,6 +532,17 @@ public final class RequestBypassToServer extends L2GameClientPacket
 				L2Object object = activeChar.getTarget();
 				if (object instanceof L2Npc)
 					((L2Npc) object).onBypassFeedback(activeChar, _command);
+			}
+
+			if (_command.startsWith("_bbsbufferbypass_"))
+			{
+				BBSSchemeBufferInstance.getInstance().onBypass(activeChar, _command);
+				return;
+			}
+			else if (_command.startsWith("_bbsbuffer"))
+			{
+				BBSSchemeBufferInstance.getInstance().showWindow(activeChar);
+				return;
 			}
 			else if (_command.startsWith("_bbs") || _command.contains("_maillist_0_1_0_") || _command.contains("_friendlist_0_") || _command.startsWith("bbs"))
 			{

@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import ghosts.controller.GhostController;
+import ghosts.controller.GhostTemplateTable;
+import inertia.controller.InertiaController;
 import luna.custom.LunaVariables;
 import luna.custom.email.DonationCodeGenerator;
 import luna.custom.handler.items.bonanzo.BonanzoData;
@@ -19,10 +22,11 @@ import net.sf.l2j.gameserver.network.serverpackets.ExShowScreenMessage;
 import net.sf.l2j.gameserver.network.serverpackets.ItemList;
 import net.sf.l2j.gameserver.templates.item.L2Item;
 import net.sf.l2j.gameserver.util.GMAudit;
+import net.sf.l2j.util.Rnd;
 
 public class AdminLuna implements IAdminCommandHandler
 {
-	private static final String[] ADMIN_COMMANDS =
+	private static final String[]			ADMIN_COMMANDS	=
 	{
 		"admin_send_donate",
 		"admin_flagall",
@@ -43,10 +47,12 @@ public class AdminLuna implements IAdminCommandHandler
 		"admin_custom_pvp_event_zoneid",
 		"admin_checksb",
 		"admin_bonanzo_reload",
-		"admin_checksb2"
+		"admin_checksb2",
+		"admin_spawnrandom",
+		"admin_renderchill"
 	};
-
-	private static List<L2FenceInstance> _fences = new ArrayList<L2FenceInstance>();
+	private static List<L2FenceInstance>	_fences			= new ArrayList<L2FenceInstance>();
+	
 	private void auditAction(String fullCommand, L2PcInstance activeChar, String target)
 	{
 		if (!Config.GMAUDIT)
@@ -73,12 +79,53 @@ public class AdminLuna implements IAdminCommandHandler
 				activeChar.sendMessage("2Usage: //send_donate email ammount");
 			}
 		}
+		else if (command.startsWith("admin_renderchill"))
+		{
+			if (activeChar.getTarget() == null || !(activeChar.getTarget() instanceof L2PcInstance))
+			{
+				final String[] data = command.split(" ");
+				if ((data.length > 1))
+				{
+					int objId = Integer.parseInt(data[0]);
+					L2PcInstance player = (L2PcInstance) L2World.getInstance().getPlayer(objId);
+					InertiaController.getInstance().fetchChill(player).render(activeChar);
+				}
+			}
+			else
+			{
+				if ((activeChar.getTarget() instanceof L2PcInstance))
+					InertiaController.getInstance().fetchChill((L2PcInstance) activeChar.getTarget()).render(activeChar);
+				else
+					activeChar.sendMessage("You ned a player as target");
+			}
+		}
+		else if (command.startsWith("admin_spawnrandom"))
+		{
+			int count = 1;
+			if (command.contains(" "))
+			{
+				String ammount = command.split(" ")[1];
+				count = Integer.parseInt(ammount);
+			}
+			for (int i = 0; i < count; i++)
+			{
+				ArrayList<String> _types = new ArrayList<>();
+				// TODO Add method
+				_types.add("DUELIST_STARTER");
+				_types.add("ADVENTURER_STARTER");
+				_types.add("NECRO_STARTER");
+				_types.add("SAGITTARIUS_STARTER");
+				final var template = GhostTemplateTable.getInstance().getById(Rnd.get(_types));
+				final var ghost = GhostController.getInstance().createGhost(template);
+				GhostController.getInstance().spawnGhost(ghost, activeChar.getX(), activeChar.getY(), activeChar.getZ());
+			}
+			return true;
+		}
 		else if (command.startsWith("admin_checksb"))
 		{
 			if (activeChar.getTarget() != null)
 			{
 				L2Object target = activeChar.getTarget();
-				
 				if (target instanceof L2PcInstance)
 				{
 					target.getActingPlayer().checkForIncorrectSkills();
@@ -90,7 +137,6 @@ public class AdminLuna implements IAdminCommandHandler
 			if (activeChar.getTarget() != null)
 			{
 				L2Object target = activeChar.getTarget();
-				
 				if (target instanceof L2PcInstance)
 				{
 					target.getActingPlayer().checkForIncorrectSkillsAndRemove();
@@ -108,7 +154,7 @@ public class AdminLuna implements IAdminCommandHandler
 					int zoneId = LunaVariables.getInstance().get_customPvPZoneId();
 					if (zoneId != 0)
 					{
-						for(L2PcInstance player : L2World.getInstance().getAllPlayers().values())
+						for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 						{
 							if (player != null)
 							{
@@ -130,7 +176,7 @@ public class AdminLuna implements IAdminCommandHandler
 					int zoneId = LunaVariables.getInstance().get_customPvPZoneId();
 					if (zoneId != 0)
 					{
-						for(L2PcInstance player : L2World.getInstance().getAllPlayers().values())
+						for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 						{
 							if (player != null)
 							{
@@ -145,7 +191,6 @@ public class AdminLuna implements IAdminCommandHandler
 								else
 									continue;
 							}
-							
 						}
 					}
 					activeChar.sendMessage(String.valueOf(LunaVariables.getInstance().getCustomPvPZoneStatus()));
@@ -155,20 +200,17 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //enable_custom_pvp_event true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //enable_custom_pvp_event true/false");
 			}
 		}
-
 		else if (command.startsWith("admin_custom_pvp_event_zoneid"))
 		{
 			try
 			{
 				String val = command.substring(30);
 				int zoneId = Integer.parseInt(val);
-				
 				if (zoneId != 0)
 				{
 					LunaVariables.getInstance().set_customPvPZoneId(zoneId);
@@ -178,7 +220,6 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //enable_custom_pvp_event true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //enable_custom_pvp_event true/false");
@@ -190,7 +231,6 @@ public class AdminLuna implements IAdminCommandHandler
 			{
 				BonanzoData.getInstance().ReloadBonanzo();
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //enable_custom_pvp_event true/false");
@@ -199,7 +239,6 @@ public class AdminLuna implements IAdminCommandHandler
 		else if (command.startsWith("admin_reward_pt"))
 		{
 			final L2Object target = activeChar.getTarget();
-			
 			if (target != null && target instanceof L2PcInstance)
 			{
 				if (target != activeChar)
@@ -266,13 +305,11 @@ public class AdminLuna implements IAdminCommandHandler
 			{
 				activeChar.sendMessage("Invalid target.");
 			}
-			
-			//AdminHelpPage.showHelpPage(activeChar, "itemcreation.htm");
+			// AdminHelpPage.showHelpPage(activeChar, "itemcreation.htm");
 		}
 		else if (command.startsWith("admin_reward_cc"))
 		{
 			final L2Object target = activeChar.getTarget();
-			
 			if (target != null && target instanceof L2PcInstance)
 			{
 				if (target != activeChar)
@@ -287,7 +324,6 @@ public class AdminLuna implements IAdminCommandHandler
 				{
 					String val = command.substring(15);
 					StringTokenizer st = new StringTokenizer(val);
-					
 					if (target.getActingPlayer().getParty().getCommandChannel() == null)
 					{
 						activeChar.sendMessage(target.getName() + " Is not in a Command Channel");
@@ -303,7 +339,7 @@ public class AdminLuna implements IAdminCommandHandler
 							long numval = Long.parseLong(num);
 							String enchant = st.nextToken();
 							int enchantval = Integer.parseInt(enchant);
-							giveItem(activeChar, (L2PcInstance)targets, idval, numval, enchantval, command.startsWith("admin_reward_cc"));
+							giveItem(activeChar, (L2PcInstance) targets, idval, numval, enchantval, command.startsWith("admin_reward_cc"));
 						}
 						else if (st.countTokens() == 2)
 						{
@@ -311,16 +347,15 @@ public class AdminLuna implements IAdminCommandHandler
 							int idval = Integer.parseInt(id);
 							String num = st.nextToken();
 							long numval = Long.parseLong(num);
-							giveItem(activeChar, (L2PcInstance)targets, idval, numval, 0, command.startsWith("admin_reward_cc"));
+							giveItem(activeChar, (L2PcInstance) targets, idval, numval, 0, command.startsWith("admin_reward_cc"));
 						}
 						else if (st.countTokens() == 1)
 						{
 							String id = st.nextToken();
 							int idval = Integer.parseInt(id);
-							giveItem(activeChar, (L2PcInstance)targets, idval, 1, 0, command.startsWith("admin_reward_cc"));
+							giveItem(activeChar, (L2PcInstance) targets, idval, 1, 0, command.startsWith("admin_reward_cc"));
 						}
 					}
-					
 				}
 				catch (StringIndexOutOfBoundsException e)
 				{
@@ -335,8 +370,7 @@ public class AdminLuna implements IAdminCommandHandler
 			{
 				activeChar.sendMessage("Invalid target.");
 			}
-			
-			//AdminHelpPage.showHelpPage(activeChar, "itemcreation.htm");
+			// AdminHelpPage.showHelpPage(activeChar, "itemcreation.htm");
 		}
 		else if (command.startsWith("admin_korean_cubics_denied"))
 		{
@@ -346,7 +380,6 @@ public class AdminLuna implements IAdminCommandHandler
 				if (val.equalsIgnoreCase("true"))
 				{
 					LunaVariables.getInstance().setKoreanCubicSkillsPrevented(true);
-
 					activeChar.sendMessage(String.valueOf(LunaVariables.getInstance().getKoreanCubicSkillsPrevented()));
 				}
 				else if (val.equalsIgnoreCase("false"))
@@ -359,13 +392,11 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //korean_cubics_denied true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //setfarmevent true/false");
 			}
 		}
-
 		else if (command.startsWith("admin_korean_hero_denied"))
 		{
 			try
@@ -386,7 +417,6 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //korean_hero_denied true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //korean_hero_denied true/false");
@@ -412,7 +442,6 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //korean_marriage_denied true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //korean_marriage_denied true/false");
@@ -438,7 +467,6 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //korean_res_denied true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //korean_marriage_denied true/false");
@@ -464,7 +492,6 @@ public class AdminLuna implements IAdminCommandHandler
 					activeChar.sendMessage("You fucked up, //announce_enchant_messages true/false");
 				}
 			}
-
 			catch (StringIndexOutOfBoundsException e)
 			{
 				activeChar.sendMessage("You fucked up, //korean_marriage_denied true/false");
@@ -821,16 +848,15 @@ public class AdminLuna implements IAdminCommandHandler
 		}
 		return true;
 	}
+	
 	private void giveItem(L2PcInstance activeChar, L2PcInstance target, int id, long num, int enchant, boolean bind)
 	{
 		final L2Item template = ItemTable.getInstance().getTemplate(id);
-		
 		if (template == null)
 		{
 			activeChar.sendMessage("This item doesn't exist.");
 			return;
 		}
-		
 		if (num > 30)
 		{
 			if (!template.isStackable())
@@ -839,11 +865,8 @@ public class AdminLuna implements IAdminCommandHandler
 				return;
 			}
 		}
-		
 		String itemName = template.getName();
-		
 		String process = "giveItem";
-		
 		if (id == L2Item.DONATION_TOKEN)
 		{
 			if (!(activeChar.getName().equalsIgnoreCase("[GM]Brado") || activeChar.getName().equalsIgnoreCase("[GM]Fate") || activeChar.getName().equalsIgnoreCase("[GM]Alfie")))
@@ -851,15 +874,12 @@ public class AdminLuna implements IAdminCommandHandler
 			else
 				process = "donation_token";
 		}
-		
 		L2ItemInstance newItem = target.getInventory().addItem(process, id, num, target, activeChar);
-		
 		if (enchant > 0 && newItem.isEnchantable())
 		{
 			newItem.setEnchantLevel(enchant);
-			itemName = "+"+enchant+" "+itemName;
+			itemName = "+" + enchant + " " + itemName;
 		}
-		
 		if (!newItem.isStackable())
 		{
 			if (bind)
@@ -869,11 +889,9 @@ public class AdminLuna implements IAdminCommandHandler
 			else
 			{
 				final long untTime = newItem.getUntradeableTime();
-				
 				if (untTime < 9999999900000L)
 				{
-					final long newTime = System.currentTimeMillis() + (Config.UNTRADEABLE_GM_TRADE*60*60*1000);
-					
+					final long newTime = System.currentTimeMillis() + (Config.UNTRADEABLE_GM_TRADE * 60 * 60 * 1000);
 					if (untTime + 3600000 < newTime)
 					{
 						newItem.setUntradeableTimer(newTime);
@@ -881,14 +899,13 @@ public class AdminLuna implements IAdminCommandHandler
 				}
 			}
 		}
-		
 		ItemList il = new ItemList(target, true);
 		target.sendPacket(il);
-		
-		activeChar.sendMessage("You have spawned " + num + " item(s) number " + id + " ("+itemName+") in "+target.getName()+"'s inventory.");
+		activeChar.sendMessage("You have spawned " + num + " item(s) number " + id + " (" + itemName + ") in " + target.getName() + "'s inventory.");
 		if (activeChar != target)
 			target.sendMessage("Admin has given you " + num + " " + itemName + " in your inventory.");
 	}
+	
 	public String[] getAdminCommandList()
 	{
 		return ADMIN_COMMANDS;

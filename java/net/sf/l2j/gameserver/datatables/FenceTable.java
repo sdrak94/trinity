@@ -130,4 +130,96 @@ public class FenceTable
 	{
 		protected static final FenceTable _instance = new FenceTable();
 	}
+
+	public boolean checkIfFenceBetween(int x, int y, int z, int tx, int ty, int tz, int instanceId)
+	{
+		final L2WorldRegion region = L2World.getInstance().getRegion(x, y);
+		final List<L2FenceInstance> fences = region != null ? region.getFences() : null;
+		if ((fences == null) || fences.isEmpty())
+		{
+			return false;
+		}
+		
+		for (L2FenceInstance fence : fences)
+		{
+			// Check if fence is geodata enabled.
+//			if (!fence.getState().isGeodataEnabled())
+//			{
+//				continue;
+//			}
+			
+			// Check if fence is within the instance we search for.
+			if (fence.getInstanceId() != instanceId)
+			{
+				continue;
+			}
+			
+			final int xMin = fence.getXMin();
+			final int xMax = fence.getXMax();
+			final int yMin = fence.getYMin();
+			final int yMax = fence.getYMax();
+			if ((x < xMin) && (tx < xMin))
+			{
+				continue;
+			}
+			if ((x > xMax) && (tx > xMax))
+			{
+				continue;
+			}
+			if ((y < yMin) && (ty < yMin))
+			{
+				continue;
+			}
+			if ((y > yMax) && (ty > yMax))
+			{
+				continue;
+			}
+			if ((x > xMin) && (tx > xMin) && (x < xMax) && (tx < xMax) && (y > yMin) && (ty > yMin) && (y < yMax) && (ty < yMax))
+			{
+				continue;
+			}
+			if ((crossLinePart(xMin, yMin, xMax, yMin, x, y, tx, ty, xMin, yMin, xMax, yMax) || crossLinePart(xMax, yMin, xMax, yMax, x, y, tx, ty, xMin, yMin, xMax, yMax) || crossLinePart(xMax, yMax, xMin, yMax, x, y, tx, ty, xMin, yMin, xMax, yMax) || crossLinePart(xMin, yMax, xMin, yMin, x, y, tx, ty, xMin, yMin, xMax, yMax)) && (z > (fence.getZ() - 100)) && (z < (fence.getZ() + 100)))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	private boolean crossLinePart(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4, double xMin, double yMin, double xMax, double yMax)
+	{
+		final double[] result = intersection(x1, y1, x2, y2, x3, y3, x4, y4);
+		if (result == null)
+		{
+			return false;
+		}
+		
+		final double xCross = result[0];
+		final double yCross = result[1];
+		if ((xCross <= xMax) && (xCross >= xMin))
+		{
+			return true;
+		}
+		if ((yCross <= yMax) && (yCross >= yMin))
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	private double[] intersection(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+	{
+		final double d = ((x1 - x2) * (y3 - y4)) - ((y1 - y2) * (x3 - x4));
+		if (d == 0)
+		{
+			return null;
+		}
+		
+		final double xi = (((x3 - x4) * ((x1 * y2) - (y1 * x2))) - ((x1 - x2) * ((x3 * y4) - (y3 * x4)))) / d;
+		final double yi = (((y3 - y4) * ((x1 * y2) - (y1 * x2))) - ((y1 - y2) * ((x3 * y4) - (y3 * x4)))) / d;
+		return new double[]
+		{
+			xi,
+			yi
+		};
+	}
 }
