@@ -26,6 +26,7 @@ import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.L2TradeList;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.L2Playable;
+import net.sf.l2j.gameserver.model.actor.instance.L2ClassMasterInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2SymbolMakerInstance;
@@ -34,6 +35,7 @@ import net.sf.l2j.gameserver.model.base.ClassId;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
 import net.sf.l2j.gameserver.network.serverpackets.BuyList;
+import net.sf.l2j.gameserver.network.serverpackets.ClassUpgradeWnd;
 import net.sf.l2j.gameserver.network.serverpackets.ExShowVariationCancelWindow;
 import net.sf.l2j.gameserver.network.serverpackets.ExShowVariationMakeWindow;
 import net.sf.l2j.gameserver.network.serverpackets.HennaEquipList;
@@ -2581,45 +2583,8 @@ public class Gem implements IItemHandler
 	
 	public static void sendClassChangeHTML(L2PcInstance player)
 	{
-		NpcHtmlMessage html = new NpcHtmlMessage(1); // roy the cat default class master
-		TextBuilder sb = new TextBuilder();
-		sb.append("<html><body>");
-		sb.append("Class Upgrader:<br>");
-		sb.append("<br>");
-		final ClassId classId = player.getClassId();
-		final int level = player.getLevel();
-		final int jobLevel = classId.level();
-		final int newJobLevel = jobLevel + 1;
-		if ((((level >= 20 && jobLevel == 0) || (level >= 40 && jobLevel == 1) || (level >= 76 && jobLevel == 2))))
-		{
-			sb.append("You can change your class to following:<br>");
-			for (ClassId child : ClassId.values())
-				if (child.childOf(classId) && child.level() == newJobLevel)
-					sb.append("<br><a action=\"bypass -h gem_upgradeclasschoose " + (child.getId()) + "\"> " + CharTemplateTable.getInstance().getClassNameById(child.getId()) + "</a>");
-			sb.append("<br>");
-		}
-		else
-		{
-			switch (jobLevel)
-			{
-				case 0:
-					sb.append("You must reach lvl 20 to begin class change.<br>");
-					break;
-				case 1:
-					sb.append("You must reach lvl 40 to begin 2nd class change.<br>");
-					break;
-				case 2:
-					sb.append("You must reach lvl 76 to begin 3rd class change.<br>");
-					break;
-				case 3:
-					sb.append("There is no class change available for you anymore.<br>");
-					break;
-			}
-			sb.append("<br>");
-		}
-		sb.append("<br><br>You can access this page from the Class Upgrade option of the Wondrous Cubic (F12)<br>");
-		sb.append("</body></html>");
-		html.setHtml(sb.toString());
-		player.sendPacket(html);
+		if (L2ClassMasterInstance.hasValidClasses(player))
+			player.sendPacket(new ClassUpgradeWnd(player));
+		//player.sendPacket(html);
 	}
 }

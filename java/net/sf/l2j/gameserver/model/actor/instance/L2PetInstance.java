@@ -1190,17 +1190,7 @@ public int getPetSpeed()
 	return getPetData().getPetSpeed();
 }
 
-@Override
-public int getInstanceWorld()
-{
-	return getInstanceId();
-}
 
-@Override
-public ILocational getLocation()
-{
-	return this.getLoc();
-}
 }
 
 

@@ -1,11 +1,13 @@
 package net.sf.l2j.gameserver.network.serverpackets;
 
+import Alpha.autopots.Utils;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.NpcTable;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
 import net.sf.l2j.gameserver.model.Elementals;
 import net.sf.l2j.gameserver.model.actor.L2Summon;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.model.base.Race;
 import net.sf.l2j.gameserver.model.events.FOS;
 import net.sf.l2j.gameserver.model.events.newEvents.NewFOS;
 import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
@@ -264,8 +266,16 @@ protected final void writeImpl()
 	}
 	else
 	{
-		writeD(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-		writeD(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
+		int rhand = _activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_RHAND);
+		int lhand = _activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_LHAND);
+		if (_activeChar.getRace() != Race.Kamael && _activeChar.getRace() != Race.DarkElf)
+		{
+			rhand = Utils.fixIdForNonKamaelDelf(_activeChar, rhand);
+		}
+		writeD(rhand);
+		writeD(lhand);
+//		writeD(rhand);
+//		writeD(lhand);
 	}
 	if(_activeChar._inEventHG && NewHuntingGrounds._started)
 	{
@@ -308,7 +318,13 @@ protected final void writeImpl()
 	}
 	else
 	{
-		writeD(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
+		int lrhand = _activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_LRHAND);
+		
+		if (_activeChar.getRace() != Race.Kamael && _activeChar.getRace() != Race.DarkElf)
+		{
+			lrhand = Utils.fixIdForNonKamaelDelf(_activeChar, lrhand);
+		}
+		writeD(lrhand);
 	}
 	if(_activeChar._inEventHG && NewHuntingGrounds._started)
 	{

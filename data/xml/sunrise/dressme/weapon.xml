@@ -37,7 +37,7 @@
 	<weapon id="900330" name="Alternative Titanium Charger" type="Ancient">
 		<requiredWepId setId="90033" />
 	</weapon>
-	<weapon id="900340" name="Alternative Titanium Raven" type="Crossbow">
+	<weapon id="90034" name="Alternative Titanium Raven" type="Crossbow">
 		<requiredWepId setId="90034" />
 	</weapon>
 	<weapon id="900190" name="Alternative Titanium Blades" type="Dual Sword">

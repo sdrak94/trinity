@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 
 import com.l2jserver.geodriver.Cell;
 import com.l2jserver.geodriver.GeoDriver;
-import com.l2jserver.geodriver.blocks.FlatBlock;
 
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.DoorTable;
@@ -386,9 +385,9 @@ public class GeoData
 	 */
 
 	
-	public boolean canSeeTarget(L2Object cha, ILocational worldPosition)
+	public boolean canSeeTarget(L2Object cha, Location worldPosition)
 	{
-		return canSeeTarget(cha.getX(), cha.getY(), cha.getZ(), cha.getInstanceWorld(), worldPosition.getX(), worldPosition.getY(), worldPosition.getZ());
+		return canSeeTarget(cha.getX(), cha.getY(), cha.getZ(), cha.getInstanceId(), worldPosition.getX(), worldPosition.getY(), worldPosition.getZ());
 	}
 
 	public Location getValidLocation(int ox, int oy, int oz, int tx, int ty, int tz, int instanceId)

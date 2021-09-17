@@ -16,6 +16,7 @@ import inertia.model.enums.EMoveType;
 import inertia.model.enums.EPanelOptions;
 import inertia.model.enums.ESearchType;
 import luna.PlayerPassport;
+import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GeoData;
 import net.sf.l2j.gameserver.GeoEngine;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
@@ -33,11 +34,10 @@ import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.serverpackets.ExServerPrimitive;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import net.sf.l2j.gameserver.util.Util;
-import net.sf.l2j.util.Rnd;
 
 public class Inertia implements Runnable
 {
-	private final long						INIT_TICKS			= 4 * 3_600_000;
+	private final long						INIT_TICKS			= Config.DAILY_CREDIT * 3_600_000;
 	private final IInertiaBehave			_behave;
 	private final PlayerPassport			_playerPassport;
 	private boolean							_running;
@@ -48,7 +48,7 @@ public class Inertia implements Runnable
 	private ESearchType						_searchType;
 	private PlayerPassport					_assistPassport;
 	private Location						_lastSavedLocation;
-	private final ChillAction[]				_chillSkills		= new ChillAction[7];
+	private ChillAction[]					_chillSkills		= new ChillAction[7];
 	private final ChillAction[]				_chillItems			= new ChillAction[2];
 	private final TargetComparator			targetComperator	= new TargetComparator();
 	private final TargetFilter				targetFilter		= new TargetFilter();
@@ -108,7 +108,7 @@ public class Inertia implements Runnable
 	
 	public void addLag(final long newLag)
 	{
-		_lagTicks += newLag * _behave.lagMultiplier();
+		_lagTicks += 0;
 	}
 	
 	public void deleteChillAction(final int slot0, final boolean isSkill)
@@ -120,6 +120,11 @@ public class Inertia implements Runnable
 	public void addCredit(final long ticks)
 	{
 		_remainingTicks += ticks;
+	}
+	
+	public void setCredits(final long ticks)
+	{
+		_remainingTicks = ticks;
 	}
 	
 	public long getCredit()
@@ -142,7 +147,16 @@ public class Inertia implements Runnable
 			setRunning(false);
 			return;
 		}
-		if (!(player instanceof Ghost) && player.isInHuntersVillage() || player.isInActiveFunEvent())
+		if (!(player instanceof Ghost))
+		{
+			if (player.getInstanceId() != 0)
+			{
+				player.sendMessage("Can't use while in instance/event.");
+				turnOff();
+				return;
+			}
+		}
+		if ( !(player instanceof Ghost) && (player.isInGludin() || player.isInHuntersVillage() || player.isInActiveFunEvent()))
 		{
 			setRunning(false);
 			return;
@@ -152,21 +166,45 @@ public class Inertia implements Runnable
 			_behave.whileDead();
 			return;
 		}
-		// if(!(player instanceof Ghost))
-		// {
-		// if (_remainingTicks - ticks < 0 || player == null)
-		// {
-		// _remainingTicks = 0;
-		// _behave.onCreditsEnd();
-		// return;
-		// }
-		// _remainingTicks -= ticks;
-		// }
-		if (_lagTicks > 0)
+		
+		for (final var autoChill : InertiaController.getInstance().getInertias().entrySet())
 		{
-			_lagTicks = Math.max(0, _lagTicks - ticks);
-			return;
+			if (player != null && autoChill.getValue().isRunning())
+			{
+				if (player == autoChill.getKey().getPlayer())
+					continue;
+				try
+				{
+					final String hwid = player.getHWID();
+					final var oldChill = autoChill.getKey().getPlayer().getHWID();
+					if (oldChill.equalsIgnoreCase(hwid))
+					{
+						player.sendMessage("Your HWID is already using AutoFarm on a different session!");
+						autoChill.getValue().setRunning(false);
+						autoChill.getValue().render();
+					}
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
 		}
+		if (!(player instanceof Ghost))
+		{
+			if (_remainingTicks - ticks < 0 || player == null)
+			{
+				_remainingTicks = 0;
+				_behave.onCreditsEnd();
+				return;
+			}
+			_remainingTicks -= ticks;
+		}
+//		if (_lagTicks > 0)
+//		{
+//			_lagTicks = Math.max(0, _lagTicks - ticks);
+//			return;
+//		}
 		_behave.onThinkStart();
 		// final var oldTarget = player.getTarget();
 		// if (! (player.getTarget() instanceof L2Character))
@@ -227,7 +265,7 @@ public class Inertia implements Runnable
 		{
 			if (_moveType == EMoveType.Follow_Target && !((player.getTarget() == assistPlayer.getTarget() && (assistPlayer.isInCombat()))))
 			{
-				if (player.isInsideRadius(assistPlayer, 200, false))
+				if (player.isInsideRadius(assistPlayer.getLoc(), 200, false, false))
 				{
 					_behave.onFollowClose(assistPlayer);
 				}
@@ -253,6 +291,8 @@ public class Inertia implements Runnable
 		// setRunning(false);
 		// render();
 		// }
+
+		_lagTicks = _lagTicks / Config.INERTIA_RT;
 		if (_autoAttack == EAutoAttack.Always || (player.isAllSkillsDisabled() && _autoAttack == EAutoAttack.Skills_Reuse))
 		{
 			if (_searchType == ESearchType.Assist)
@@ -287,8 +327,16 @@ public class Inertia implements Runnable
 									{
 										if (player.checkDoCastConditions(availSkill))
 										{
-											player.useMagic(availSkill, false, false);
-											availAction.initReuse();
+											if (player.getSkillLevel(availSkill.getId()) >= 1)
+											{
+												player.useMagic(availSkill, false, false);
+												availAction.initReuse();
+											}
+											else
+											{
+												Util.clearArray(_chillSkills);
+												render();
+											}
 										}
 									}
 									else
@@ -421,9 +469,9 @@ public class Inertia implements Runnable
 		}
 	}
 	
-	public ILocational getSearchLocation()
+	public Location getSearchLocation()
 	{
-		final var loc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : getActivePlayer();
+		final Location loc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : getActivePlayer().getLoc();
 		return loc;
 	}
 	
@@ -495,16 +543,23 @@ public class Inertia implements Runnable
 		{
 			if (t == null)
 				return false;
-			if (t.isReuse())
+			if (getActivePlayer().getSkillLevel(t.getActionId()) >= 1)
+			{
+				if (t.isReuse())
+					return false;
+				final var player = getActivePlayer();
+				if (player == null)
+					return false;
+				if (!t.isUserHp(player))
+					return false;
+				final var targetPlayer = player.getTarget();
+				if (targetPlayer != null && !t.isTargetHp((L2Character) targetPlayer))
+					return false;
+			}
+			else
+			{
 				return false;
-			final var player = getActivePlayer();
-			if (player == null)
-				return false;
-			if (!t.isUserHp(player))
-				return false;
-			final var targetPlayer = player.getTarget();
-			if (targetPlayer != null && !t.isTargetHp((L2Character) targetPlayer))
-				return false;
+			}
 			return true;
 		}
 	}
@@ -514,17 +569,25 @@ public class Inertia implements Runnable
 		@Override
 		public boolean test(final ChillAction chillAction)
 		{
+			final var player = getActivePlayer();
 			if (chillAction == null)
 				return false;
-			final var skill = SkillTable.getInstance().getInfoLevelMax(chillAction.getActionId());
-			if (skill == null)
-				return false;
-			final var player = getActivePlayer();
-			final L2Object[] targets = skill.getTargetList(player, false);
-			if (targets == null || targets.length == 0)
-				return false;
-			if (!player.checkDoCastConditions(skill))
-				return false;
+			if (player.getSkillLevel(chillAction.getActionId()) >= 1)
+			{
+				final var skill = SkillTable.getInstance().getInfoLevelMax(chillAction.getActionId());
+				if (skill == null)
+					return false;
+				final L2Object[] targets = skill.getTargetList(player, false);
+				if (targets == null || targets.length == 0)
+					return false;
+				if (!player.checkDoCastConditions(skill))
+					return false;
+			}
+			else
+			{
+				Util.clearArray(_chillSkills);
+				render();
+			}
 			return true;
 		}
 	}
@@ -535,14 +598,14 @@ public class Inertia implements Runnable
 		public int compare(L2Character o1, L2Character o2)
 		{
 			final var loc = getSearchLocation();
-			final double d1 = Util.calculateDistance(loc, o1, true);
-			final double d2 = Util.calculateDistance(loc, o2, true);
+			final double d1 = Util.calculateDistance(loc, o1.getLoc(), true);
+			final double d2 = Util.calculateDistance(loc, o2.getLoc(), true);
 			if (d1 > d2)
 				return 1;
 			return -1;
 		}
 	}
-
+	
 	public L2PcInstance getActivePlayer()
 	{
 		final var player = _playerPassport.getOnlinePlayer();
@@ -589,12 +652,12 @@ public class Inertia implements Runnable
 		_assistPassport = targetPassport;
 		if (_assistPassport == null)
 		{
-			player.sendMessage("ChillMode PartyTarget changed to -> UNSET");
+			player.sendMessage("Auto Farm PartyTarget changed to -> UNSET");
 			if (_moveType == EMoveType.Follow_Target)
 				setMoveType(EMoveType.Not_Set);
 		}
 		else
-			player.sendMessage("ChillMode PartyTarget changed to -> [" + _assistPassport.getPlayerName() + "]");
+			player.sendMessage("Auto Farm PartyTarget changed to -> [" + _assistPassport.getPlayerName() + "]");
 	}
 	
 	public void setAutoAttack(final EAutoAttack autoAttack)
@@ -603,7 +666,7 @@ public class Inertia implements Runnable
 			return;
 		_autoAttack = autoAttack;
 		final var player = getActivePlayer();
-		player.sendMessage("ChillMode AttackType changed to -> [" + _autoAttack + "]");
+		player.sendMessage("Auto Farm AttackType changed to -> [" + _autoAttack + "]");
 	}
 	
 	public void setMoveType(EMoveType moveType)
@@ -611,7 +674,7 @@ public class Inertia implements Runnable
 		final var player = getActivePlayer();
 		if (moveType == EMoveType.Current_Location)
 		{
-			_lastSavedLocation = new Location(player.getLocation());
+			_lastSavedLocation = new Location(player.getLoc());
 			player.sendMessage("Updated search location to current position.");
 			moveType = EMoveType.Saved_Location;
 		}
@@ -619,7 +682,7 @@ public class Inertia implements Runnable
 		if (moveType == _moveType)
 			return;
 		_moveType = moveType;
-		player.sendMessage("ChillMode MoveType changed to -> [" + _moveType + "]");
+		player.sendMessage("Auto Farm MoveType changed to -> [" + _moveType + "]");
 		renderRange();
 	}
 	
@@ -629,7 +692,7 @@ public class Inertia implements Runnable
 			return;
 		_searchType = searchType;
 		final var player = getActivePlayer();
-		player.sendMessage("ChillMode SearchType changed to -> [" + _searchType + "]");
+		player.sendMessage("Auto Farm SearchType changed to -> [" + _searchType + "]");
 		renderRange();
 	}
 	
@@ -651,8 +714,8 @@ public class Inertia implements Runnable
 			npcHtml.replace("%opt%", buildOptions());
 			npcHtml.replace("%search%", buildSearch());
 			npcHtml.replace("%time%", buildTime());
-			npcHtml.replace("%ask%", buildActions(_chillSkills));
-			npcHtml.replace("%ait%", buildActions(_chillItems));
+			npcHtml.replace("%ask%", buildActions(player, _chillSkills));
+			npcHtml.replace("%ait%", buildActions(player, _chillItems));
 			viewer.sendPacket(npcHtml);
 		}
 	}
@@ -715,11 +778,11 @@ public class Inertia implements Runnable
 	
 	private String buildTime()
 	{
-		// final long hours = _remainingTicks / 3_600_000;
-		// final long minutes = (_remainingTicks - (3_600_000 * hours)) / 60_000;
-		// final long seconds = _remainingTicks - hours * 3_600_000 - minutes * 60_000;
-		// return String.format("%02d Hours %02d Minutes %02d Seconds", hours, minutes, seconds / 1000);
-		return "";
+		 final long hours = _remainingTicks / 3_600_000;
+		 final long minutes = (_remainingTicks - (3_600_000 * hours)) / 60_000;
+		 final long seconds = _remainingTicks - hours * 3_600_000 - minutes * 60_000;
+		 return String.format("%02d Hours %02d Minutes %02d Seconds", hours, minutes, seconds / 1000);
+		//return "";
 	}
 	
 	private String buildAutoAttack()
@@ -797,14 +860,22 @@ public class Inertia implements Runnable
 	
 	private static final String actionTemplate = "<td align=center width=50><table height=32 cellspacing=0 cellpadding=0><tr><td><table cellspacing=0 cellpadding=0><tr><td><button action=\"bypass chill_action_edit %s\" width=32 height=32 back=%s fore=%s></td></tr></table></td></tr></table></td>";
 	
-	private String buildActions(final ChillAction[] chillActions)
+	private String buildActions(L2PcInstance player, final ChillAction[] chillActions)
 	{
 		final StringBuilder sb = new StringBuilder(1024);
 		int aid = 0;
 		for (final var chillAction : chillActions)
 		{
 			if (chillAction != null)
-				sb.append(String.format(actionTemplate, String.valueOf(aid++), chillAction.getIcon(), chillAction.getIcon()));
+			{
+				for (var a : player.getAllSkills())
+				{
+					if (chillAction.getActionId() == a.getId())
+					{
+						sb.append(String.format(actionTemplate, String.valueOf(aid++), chillAction.getIcon(), chillAction.getIcon()));
+					}
+				}
+			}
 			else
 				sb.append(String.format(actionTemplate, String.valueOf(aid++), "L2UI_CT1.Inventory_DF_CloakSlot_Disable", "L2UI_CT1.Inventory_DF_CloakSlot_Disable"));
 		}
@@ -885,7 +956,7 @@ public class Inertia implements Runnable
 		if ((player instanceof Ghost) || player == null)
 			return;
 		final int searchRange = _searchType.getRange();
-		final ILocational renderLoc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : player;
+		final ILocational renderLoc = _moveType == EMoveType.Saved_Location ? _lastSavedLocation : player.getLoc();
 		final ExServerPrimitive renderRange = new ExServerPrimitive("SearchRange", renderLoc);
 		if ((_moveType != EMoveType.Follow_Target) && (searchRange > 1))
 		{

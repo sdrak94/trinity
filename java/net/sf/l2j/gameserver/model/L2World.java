@@ -269,7 +269,19 @@ public L2PcInstance getPlayer(String name)
 	
 	return null;
 }
-
+public L2PcInstance getPlayerByHwid(String hwid)
+{
+	if (hwid == null)
+		return null;
+	
+	for (L2PcInstance player : _allPlayers.values())
+	{
+		if (player != null && player.getHWID().equals(hwid))
+			return player;
+	}
+	
+	return null;
+}
 /**
  * Return the pet instance from the given ownerId.<BR><BR>
  *

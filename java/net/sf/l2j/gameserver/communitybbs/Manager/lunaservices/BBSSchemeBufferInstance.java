@@ -27,13 +27,11 @@ import net.sf.l2j.gameserver.model.L2Effect;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.L2Playable;
-import net.sf.l2j.gameserver.model.actor.L2Summon;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.clientpackets.Say2;
 import net.sf.l2j.gameserver.network.serverpackets.CreatureSay;
-import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;
 import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
 
 public class BBSSchemeBufferInstance extends BaseBBSManager
@@ -1509,7 +1507,7 @@ public class BBSSchemeBufferInstance extends BaseBBSManager
 				else
 				{
 					SkillTable.getInstance().getInfo(Integer.parseInt(eventParam1), Integer.parseInt(eventParam2)).getEffects(player, player);
-					npc.broadcastPacket(new MagicSkillUse(npc, player, Integer.parseInt(eventParam1), Integer.parseInt(eventParam2), 2, 0));
+					//npc.broadcastPacket(new MagicSkillUse(npc, player, Integer.parseInt(eventParam1), Integer.parseInt(eventParam2), 2, 0));
 				}
 			}
 			msg = buildHtml(eventParam3, player);
@@ -1548,7 +1546,7 @@ public class BBSSchemeBufferInstance extends BaseBBSManager
 					for (int[] i : buff_sets)
 					{
 						SkillTable.getInstance().getInfo(i[0], i[1]).getEffects(player, player);
-						npc2.broadcastPacket(new MagicSkillUse(npc2, player, i[0], i[1], 0, 0));
+						//npc2.broadcastPacket(new MagicSkillUse(npc2, player, i[0], i[1], 0, 0));
 					}
 				}
 			}, 500);
@@ -1693,7 +1691,7 @@ public class BBSSchemeBufferInstance extends BaseBBSManager
 							if (!getpetbuff)
 							{
 								SkillTable.getInstance().getInfo(buffs.get(i), levels.get(i)).getEffects(player, player);
-								npc2.broadcastPacket(new MagicSkillUse(npc2, player, buffs.get(i), levels.get(i), 0, 0));
+								//npc2.broadcastPacket(new MagicSkillUse(npc2, player, buffs.get(i), levels.get(i), 0, 0));
 							}
 							try
 							{
@@ -1834,6 +1832,7 @@ public class BBSSchemeBufferInstance extends BaseBBSManager
 				showCommunity(player, buildIndex(player));
 				return;
 			}
+			deleteScheme(schemeId, player);
 			msg = buildIndex(player);
 		}
 		else if (eventParam0.equalsIgnoreCase("delete_c"))
@@ -1899,7 +1898,7 @@ public class BBSSchemeBufferInstance extends BaseBBSManager
 						for (int i : buff_sets)
 						{
 							SkillTable.getInstance().getInfo(i, SkillTable.getInstance().getMaxLevel(i)).getEffects(player, player);
-							npc2.broadcastPacket(new MagicSkillUse(npc2, player, i, SkillTable.getInstance().getMaxLevel(i), 0, 0));
+							//npc2.broadcastPacket(new MagicSkillUse(npc2, player, i, SkillTable.getInstance().getMaxLevel(i), 0, 0));
 						}
 					}
 				}, 500);

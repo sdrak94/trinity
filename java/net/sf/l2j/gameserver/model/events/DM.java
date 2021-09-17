@@ -850,8 +850,8 @@ public static boolean addPlayerOk(L2PcInstance eventPlayer)
 
 		if (eventPlayer instanceof Ghost || eventPlayer instanceof Ghost)
 			continue;
-		String HWID = player.getClient().getStrixClientData().getClientHWID();
-		String HWID2 = eventPlayer.getClient().getStrixClientData().getClientHWID();
+		String HWID = player.getClient().getFullHwid();
+		String HWID2 = eventPlayer.getClient().getFullHwid();
 		
 		if(HWID == null || HWID2 == null)
 			continue;

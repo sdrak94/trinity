@@ -15,7 +15,6 @@ package net.sf.l2j.gameserver.model.zone.type;
 import ghosts.model.Ghost;
 import luna.custom.globalScheduler.GlobalEventVariablesHolder;
 import net.sf.l2j.Config;
-import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.L2Character;
@@ -38,36 +37,20 @@ public class L2PaganZone extends L2ZoneType
 	{
 		if (character instanceof L2PcInstance)
 		{
-			if (Config.ENABLE_OLD_NIGHT)
+			if (!GlobalEventVariablesHolder.getInstance().getPagansStatus() && !character.isGM())
 			{
-				if (!GameTimeController.getInstance().isNowNight() && !character.isGM())
-				{
-					character.setInsideZone(L2Character.ZONE_CHAOTIC, false);
-					character.getActingPlayer().setIsInFT(false);
-					character.sendMessage("Pagan's Temple is a night zone!");
-					character.setIsPendingRevive(true);
-					character.teleToLocation(83380, 148107, -3404, true);
-					return;
-				}
-			}
-			else
-			{
-				if (!GlobalEventVariablesHolder.getInstance().getNight())
-				{
-					character.setInsideZone(L2Character.ZONE_CHAOTIC, false);
-					character.getActingPlayer().setIsInFT(false);
-					character.sendMessage("Pagan's Temple is a night zone!");
-					character.setIsPendingRevive(true);
-					character.teleToLocation(83380, 148107, -3404, true);
-					return;
-				}
+				character.setInsideZone(L2Character.ZONE_CHAOTIC, false);
+				character.getActingPlayer().setIsInFT(false);
+				character.sendMessage("Pagan's Temple is closed atm.");
+				character.setIsPendingRevive(true);
+				character.teleToLocation(83380, 148107, -3404, true);
+				return;
 			}
 			if (Config.HWID_FARMZONES_CHECK && !character.isGM())
 			{
 				String hwid = ((L2PcInstance) character).getHWID();
 				for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 				{
-
 					if (!(player instanceof Ghost) && player.getClient().isDetached())
 					{
 						continue;
@@ -84,7 +67,7 @@ public class L2PaganZone extends L2ZoneType
 					{
 						continue;
 					}
-					String plr_hwid = player.getClient().getStrixClientData().getClientHWID();
+					String plr_hwid = player.getClient().getFullHwid();
 					if (plr_hwid.equalsIgnoreCase(hwid))
 					{
 						character.setIsPendingRevive(true);

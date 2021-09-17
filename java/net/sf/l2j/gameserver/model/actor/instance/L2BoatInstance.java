@@ -941,15 +941,4 @@ public class L2BoatInstance extends L2Character
         }
     }
 
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
 }

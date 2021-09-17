@@ -186,7 +186,7 @@ private static final String[] SQL_ITEM_SELECTS = {
 							+ " material, crystal_type, p_dam, rnd_dam, weaponType, critical, hit_modify, avoid_modify,"
 							+ " shield_def, shield_def_rate, atk_speed, mp_consume, m_dam, duration, time, price, crystal_count,"
 							+ " sellable, dropable, destroyable, tradeable, depositable, skill,enchant4_skill_id,enchant4_skill_lvl, onCast_skill_id, onCast_skill_lvl,"
-							+ " onCast_skill_chance, onCrit_skill_id, onCrit_skill_lvl, onCrit_skill_chance, change_weaponId, bind_equip, perm_chance, uniqueness, size FROM weapon" };
+							+ " onCast_skill_chance, onCrit_skill_id, onCrit_skill_lvl, onCrit_skill_chance, change_weaponId, bind_equip, perm_chance, uniqueness, size, nonKamaelDisplayId FROM weapon" };
 
 private static final String[] SQL_CUSTOM_ITEM_SELECTS = {
 	"SELECT item_id, name, crystallizable, item_type, weight, consume_type, material,"
@@ -200,7 +200,7 @@ private static final String[] SQL_CUSTOM_ITEM_SELECTS = {
 							+ " material, crystal_type, p_dam, rnd_dam, weaponType, critical, hit_modify, avoid_modify,"
 							+ " shield_def, shield_def_rate, atk_speed, mp_consume, m_dam, duration, time, price, crystal_count,"
 							+ " sellable, dropable, destroyable, tradeable, depositable, skill,enchant4_skill_id,enchant4_skill_lvl, onCast_skill_id, onCast_skill_lvl,"
-							+ " onCast_skill_chance, onCrit_skill_id, onCrit_skill_lvl, onCrit_skill_chance, change_weaponId, bind_equip, perm_chance, size, uniqueness  FROM custom_weapon" };
+							+ " onCast_skill_chance, onCrit_skill_id, onCrit_skill_lvl, onCrit_skill_chance, change_weaponId, bind_equip, perm_chance, size, uniqueness, nonKamaelDisplayId  FROM custom_weapon" };
 
 /**
  * Returns instance of ItemTable
@@ -446,6 +446,7 @@ private Item readWeapon(ResultSet rset) throws SQLException
 	item.set.set("perm_chance", rset.getInt("perm_chance"));
 	item.set.set("size", rset.getFloat("size"));
 	item.set.set("uniqueness", rset.getFloat("uniqueness"));
+	item.set.set("nonKamaelDisplayId", rset.getInt("nonKamaelDisplayId"));
 	
 	if (item.type == L2WeaponType.PET)
 	{

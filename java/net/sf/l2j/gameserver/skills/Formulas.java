@@ -1669,6 +1669,11 @@ public final class Formulas
 			damage = target.calcStat(Stats.POWER_DEFENCE_BEHIND, damage, attacker, skill);
 		if (attacker instanceof L2Attackable && target instanceof L2PcInstance && target.getActingPlayer().isSitting())
 			damage *= 3;
+
+		if (attacker instanceof L2PcInstance && target instanceof L2Playable)
+			damage = calcConfigsPvPDamage(attacker.getActingPlayer(), damage);
+		else if (attacker instanceof L2PcInstance && target instanceof L2MonsterInstance)
+			damage = calcConfigsPvEDamage(attacker.getActingPlayer(), damage);
 		damage += attacker.calcStat(Stats.DMG_ADD, 0, target, skill);
 		damage -= target.calcStat(Stats.DMG_REMOVE, 0, attacker, skill);
 		if (shld > 0)
@@ -2091,18 +2096,10 @@ public final class Formulas
 			damage = target.calcStat(Stats.POWER_DEFENCE_BEHIND, damage, attacker, skill);
 		if (attacker instanceof L2Attackable && target instanceof L2PcInstance && target.getActingPlayer().isSitting())
 			damage *= 3;
-		
-		
-		
-		
-		if(attacker instanceof L2PcInstance && target instanceof L2Playable)
+		if (attacker instanceof L2PcInstance && target instanceof L2Playable)
 			damage = calcConfigsPvPDamage(attacker.getActingPlayer(), damage);
 		else if (attacker instanceof L2PcInstance && target instanceof L2MonsterInstance)
 			damage = calcConfigsPvEDamage(attacker.getActingPlayer(), damage);
-		
-		
-		
-		
 		if (skill != null)
 		{
 			damage += attacker.calcStat(Stats.DMG_ADD, 0, target, skill);
@@ -2118,172 +2115,247 @@ public final class Formulas
 		}
 		return damage;
 	}
+	
 	public static final double calcConfigsPvPDamage(L2PcInstance player, double damage)
 	{
-			String ActiveClass = player.getClassId().getName();
-			switch (ActiveClass)
-			{
-				case "Duelist":
-					damage *= Config.PVP_CLASS_BALANCE_DUELIST;
-					break;
-				case "Dreadnought":
-					damage *= Config.PVP_CLASS_BALANCE_DREADNOUGHT;
-					break;
-				case "Phoenix Knight":
-					damage *= Config.PVP_CLASS_BALANCE_PHOENIX_KNIGHT;
-					break;
-				case "Hell Knight":
-					damage *= Config.PVP_CLASS_BALANCE_HELL_KNIGHT;
-					break;
-				case "Sagittarius":
-					damage *= Config.PVP_CLASS_BALANCE_SAGITTARIUS;
-					break;
-				case "Adventurer":
-					damage *= Config.PVP_CLASS_BALANCE_ADVENTURER;
-					break;
-				case "Hierophant":
-					damage *= Config.PVP_CLASS_BALANCE_HIEROPHANT;
-					break;
-				case "Eva Templar":
-					damage *= Config.PVP_CLASS_BALANCE_EVA_TEMPLAR;
-					break;
-				case "Sword Muse":
-					damage *= Config.PVP_CLASS_BALANCE_SWORD_MUSE;
-					break;
-				case "Wind Rider":
-					damage *= Config.PVP_CLASS_BALANCE_WIND_RIDER;
-					break;
-				case "Moonlight Sentinel":
-					damage *= Config.PVP_CLASS_BALANCE_MOONLIGHT_SENTINEL;
-					break;
-				case "Shillien Templar":
-					damage *= Config.PVP_CLASS_BALANCE_SHILLIEN_TEMPLAR;
-					break;
-				case "Spectral Dancer":
-					damage *= Config.PVP_CLASS_BALANCE_SPECTRAL_DANCER;
-					break;
-				case "Ghost Hunter":
-					damage *= Config.PVP_CLASS_BALANCE_GHOST_HUNTER;
-					break;
-				case "Ghost Sentinel":
-					damage *= Config.PVP_CLASS_BALANCE_GHOST_SENTINEL;
-					break;
-				case "Titan":
-					damage *= Config.PVP_CLASS_BALANCE_TITAN;
-					break;
-				case "Grand Khauatari":
-					damage *= Config.PVP_CLASS_BALANCE_GRAND_KHAUATARI;
-					break;
-				case "Fortune Seeker":
-					damage *= Config.PVP_CLASS_BALANCE_FORTUNE_SEEKER;
-					break;
-				case "Maestro":
-					damage *= Config.PVP_CLASS_BALANCE_MAESTRO;
-					break;
-				case "Doombringer":
-					damage *= Config.PVP_CLASS_BALANCE_DOOMBRINGER;
-					break;
-				case "Male Soulhound":
-					damage *= Config.PVP_CLASS_BALANCE_MALE_SOULHOUND;
-					break;
-				case "Female Soulhound":
-					damage *= Config.PVP_CLASS_BALANCE_FEMALE_SOULHOUND;
-					break;
-				case "Trickster":
-					damage *= Config.PVP_CLASS_BALANCE_TRICKSTER;
-					break;
-				case "Inspector":
-					damage *= Config.PVP_CLASS_BALANCE_INSPECTOR;
-					break;
-				case "Judicator":
-					damage *= Config.PVP_CLASS_BALANCE_JUDICATOR;
-					break;
-			}
-			return damage;
+		String ActiveClass = player.getClassId().getName();
+		switch (ActiveClass)
+		{
+			case "Duelist":
+				damage *= Config.PVP_CLASS_BALANCE_DUELIST;
+				break;
+			case "Dreadnought":
+				damage *= Config.PVP_CLASS_BALANCE_DREADNOUGHT;
+				break;
+			case "Phoenix Knight":
+				damage *= Config.PVP_CLASS_BALANCE_PHOENIX_KNIGHT;
+				break;
+			case "Hell Knight":
+				damage *= Config.PVP_CLASS_BALANCE_HELL_KNIGHT;
+				break;
+			case "Sagittarius":
+				damage *= Config.PVP_CLASS_BALANCE_SAGITTARIUS;
+				break;
+			case "Adventurer":
+				damage *= Config.PVP_CLASS_BALANCE_ADVENTURER;
+				break;
+			case "Hierophant":
+				damage *= Config.PVP_CLASS_BALANCE_HIEROPHANT;
+				break;
+			case "Eva Templar":
+				damage *= Config.PVP_CLASS_BALANCE_EVA_TEMPLAR;
+				break;
+			case "Sword Muse":
+				damage *= Config.PVP_CLASS_BALANCE_SWORD_MUSE;
+				break;
+			case "Wind Rider":
+				damage *= Config.PVP_CLASS_BALANCE_WIND_RIDER;
+				break;
+			case "Moonlight Sentinel":
+				damage *= Config.PVP_CLASS_BALANCE_MOONLIGHT_SENTINEL;
+				break;
+			case "Shillien Templar":
+				damage *= Config.PVP_CLASS_BALANCE_SHILLIEN_TEMPLAR;
+				break;
+			case "Spectral Dancer":
+				damage *= Config.PVP_CLASS_BALANCE_SPECTRAL_DANCER;
+				break;
+			case "Ghost Hunter":
+				damage *= Config.PVP_CLASS_BALANCE_GHOST_HUNTER;
+				break;
+			case "Ghost Sentinel":
+				damage *= Config.PVP_CLASS_BALANCE_GHOST_SENTINEL;
+				break;
+			case "Titan":
+				damage *= Config.PVP_CLASS_BALANCE_TITAN;
+				break;
+			case "Grand Khauatari":
+				damage *= Config.PVP_CLASS_BALANCE_GRAND_KHAUATARI;
+				break;
+			case "Fortune Seeker":
+				damage *= Config.PVP_CLASS_BALANCE_FORTUNE_SEEKER;
+				break;
+			case "Maestro":
+				damage *= Config.PVP_CLASS_BALANCE_MAESTRO;
+				break;
+			case "Doombringer":
+				damage *= Config.PVP_CLASS_BALANCE_DOOMBRINGER;
+				break;
+			case "Male Soulhound":
+				damage *= Config.PVP_CLASS_BALANCE_MALE_SOULHOUND;
+				break;
+			case "Female Soulhound":
+				damage *= Config.PVP_CLASS_BALANCE_FEMALE_SOULHOUND;
+				break;
+			case "Trickster":
+				damage *= Config.PVP_CLASS_BALANCE_TRICKSTER;
+				break;
+			case "Inspector":
+				damage *= Config.PVP_CLASS_BALANCE_INSPECTOR;
+				break;
+			case "Judicator":
+				damage *= Config.PVP_CLASS_BALANCE_JUDICATOR;
+				break;
+			case "Archmage":
+				damage *= Config.PVP_CLASS_BALANCE_ARCHMAGE;
+				break;
+			case "Soultaker":
+				damage *= Config.PVP_CLASS_BALANCE_SOULTAKER;
+				break;
+			case "Arcana Lord":
+				damage *= Config.PVP_CLASS_BALANCE_ARCANA_LORD;
+				break;
+			case "Cardinal":
+				damage *= Config.PVP_CLASS_BALANCE_CARDINAL;
+				break;
+			case "Mystic Muse":
+				damage *= Config.PVP_CLASS_BALANCE_MYSTIC_MUSE;
+				break;
+			case "Elemental Master":
+				damage *= Config.PVP_CLASS_BALANCE_ELEMENTAL_MASTER;
+				break;
+			case "Eva Saint":
+				damage *= Config.PVP_CLASS_BALANCE_EVA_SAINT;
+				break;
+			case "Storm Screamer":
+				damage *= Config.PVP_CLASS_BALANCE_STORM_SCREAMER;
+				break;
+			case "Spectral Master":
+				damage *= Config.PVP_CLASS_BALANCE_SPECTRAL_MASTER;
+				break;
+			case "Shillien Saint":
+				damage *= Config.PVP_CLASS_BALANCE_SHILLIEN_SAINT;
+				break;
+			case "Dominator":
+				damage *= Config.PVP_CLASS_BALANCE_DOMINATOR;
+				break;
+			case "Doomcryer":
+				damage *= Config.PVP_CLASS_BALANCE_DOOMCRYER;
+				break;
+		}
+		return damage;
 	}
+	
 	public static final double calcConfigsPvEDamage(L2PcInstance player, double damage)
 	{
-			String ActiveClass = player.getClassId().getName();
-			switch (ActiveClass)
-			{
-				case "Duelist":
-					damage *= Config.PVE_CLASS_BALANCE_DUELIST;
-					break;
-				case "Dreadnought":
-					damage *= Config.PVE_CLASS_BALANCE_DREADNOUGHT;
-					break;
-				case "Phoenix Knight":
-					damage *= Config.PVE_CLASS_BALANCE_PHOENIX_KNIGHT;
-					break;
-				case "Hell Knight":
-					damage *= Config.PVE_CLASS_BALANCE_HELL_KNIGHT;
-					break;
-				case "Sagittarius":
-					damage *= Config.PVE_CLASS_BALANCE_SAGITTARIUS;
-					break;
-				case "Adventurer":
-					damage *= Config.PVE_CLASS_BALANCE_ADVENTURER;
-					break;
-				case "Hierophant":
-					damage *= Config.PVE_CLASS_BALANCE_HIEROPHANT;
-					break;
-				case "Eva Templar":
-					damage *= Config.PVE_CLASS_BALANCE_EVA_TEMPLAR;
-					break;
-				case "Sword Muse":
-					damage *= Config.PVE_CLASS_BALANCE_SWORD_MUSE;
-					break;
-				case "Wind Rider":
-					damage *= Config.PVE_CLASS_BALANCE_WIND_RIDER;
-					break;
-				case "Moonlight Sentinel":
-					damage *= Config.PVE_CLASS_BALANCE_MOONLIGHT_SENTINEL;
-					break;
-				case "Shillien Templar":
-					damage *= Config.PVE_CLASS_BALANCE_SHILLIEN_TEMPLAR;
-					break;
-				case "Spectral Dancer":
-					damage *= Config.PVE_CLASS_BALANCE_SPECTRAL_DANCER;
-					break;
-				case "Ghost Hunter":
-					damage *= Config.PVE_CLASS_BALANCE_GHOST_HUNTER;
-					break;
-				case "Ghost Sentinel":
-					damage *= Config.PVE_CLASS_BALANCE_GHOST_SENTINEL;
-					break;
-				case "Titan":
-					damage *= Config.PVE_CLASS_BALANCE_TITAN;
-					break;
-				case "Grand Khauatari":
-					damage *= Config.PVE_CLASS_BALANCE_GRAND_KHAUATARI;
-					break;
-				case "Fortune Seeker":
-					damage *= Config.PVE_CLASS_BALANCE_FORTUNE_SEEKER;
-					break;
-				case "Maestro":
-					damage *= Config.PVE_CLASS_BALANCE_MAESTRO;
-					break;
-				case "Doombringer":
-					damage *= Config.PVE_CLASS_BALANCE_DOOMBRINGER;
-					break;
-				case "Male Soulhound":
-					damage *= Config.PVE_CLASS_BALANCE_MALE_SOULHOUND;
-					break;
-				case "Female Soulhound":
-					damage *= Config.PVE_CLASS_BALANCE_FEMALE_SOULHOUND;
-					break;
-				case "Trickster":
-					damage *= Config.PVE_CLASS_BALANCE_TRICKSTER;
-					break;
-				case "Inspector":
-					damage *= Config.PVE_CLASS_BALANCE_INSPECTOR;
-					break;
-				case "Judicator":
-					damage *= Config.PVE_CLASS_BALANCE_JUDICATOR;
-					break;
-			}
-			return damage;
+		String ActiveClass = player.getClassId().getName();
+		switch (ActiveClass)
+		{
+			case "Duelist":
+				damage *= Config.PVE_CLASS_BALANCE_DUELIST;
+				break;
+			case "Dreadnought":
+				damage *= Config.PVE_CLASS_BALANCE_DREADNOUGHT;
+				break;
+			case "Phoenix Knight":
+				damage *= Config.PVE_CLASS_BALANCE_PHOENIX_KNIGHT;
+				break;
+			case "Hell Knight":
+				damage *= Config.PVE_CLASS_BALANCE_HELL_KNIGHT;
+				break;
+			case "Sagittarius":
+				damage *= Config.PVE_CLASS_BALANCE_SAGITTARIUS;
+				break;
+			case "Adventurer":
+				damage *= Config.PVE_CLASS_BALANCE_ADVENTURER;
+				break;
+			case "Hierophant":
+				damage *= Config.PVE_CLASS_BALANCE_HIEROPHANT;
+				break;
+			case "Eva Templar":
+				damage *= Config.PVE_CLASS_BALANCE_EVA_TEMPLAR;
+				break;
+			case "Sword Muse":
+				damage *= Config.PVE_CLASS_BALANCE_SWORD_MUSE;
+				break;
+			case "Wind Rider":
+				damage *= Config.PVE_CLASS_BALANCE_WIND_RIDER;
+				break;
+			case "Moonlight Sentinel":
+				damage *= Config.PVE_CLASS_BALANCE_MOONLIGHT_SENTINEL;
+				break;
+			case "Shillien Templar":
+				damage *= Config.PVE_CLASS_BALANCE_SHILLIEN_TEMPLAR;
+				break;
+			case "Spectral Dancer":
+				damage *= Config.PVE_CLASS_BALANCE_SPECTRAL_DANCER;
+				break;
+			case "Ghost Hunter":
+				damage *= Config.PVE_CLASS_BALANCE_GHOST_HUNTER;
+				break;
+			case "Ghost Sentinel":
+				damage *= Config.PVE_CLASS_BALANCE_GHOST_SENTINEL;
+				break;
+			case "Titan":
+				damage *= Config.PVE_CLASS_BALANCE_TITAN;
+				break;
+			case "Grand Khauatari":
+				damage *= Config.PVE_CLASS_BALANCE_GRAND_KHAUATARI;
+				break;
+			case "Fortune Seeker":
+				damage *= Config.PVE_CLASS_BALANCE_FORTUNE_SEEKER;
+				break;
+			case "Maestro":
+				damage *= Config.PVE_CLASS_BALANCE_MAESTRO;
+				break;
+			case "Doombringer":
+				damage *= Config.PVE_CLASS_BALANCE_DOOMBRINGER;
+				break;
+			case "Male Soulhound":
+				damage *= Config.PVE_CLASS_BALANCE_MALE_SOULHOUND;
+				break;
+			case "Female Soulhound":
+				damage *= Config.PVE_CLASS_BALANCE_FEMALE_SOULHOUND;
+				break;
+			case "Trickster":
+				damage *= Config.PVE_CLASS_BALANCE_TRICKSTER;
+				break;
+			case "Inspector":
+				damage *= Config.PVE_CLASS_BALANCE_INSPECTOR;
+				break;
+			case "Judicator":
+				damage *= Config.PVE_CLASS_BALANCE_JUDICATOR;
+				break;
+			case "Archmage":
+				damage *= Config.PVE_CLASS_BALANCE_ARCHMAGE;
+				break;
+			case "Soultaker":
+				damage *= Config.PVE_CLASS_BALANCE_SOULTAKER;
+				break;
+			case "Arcana Lord":
+				damage *= Config.PVE_CLASS_BALANCE_ARCANA_LORD;
+				break;
+			case "Cardinal":
+				damage *= Config.PVE_CLASS_BALANCE_CARDINAL;
+				break;
+			case "Mystic Muse":
+				damage *= Config.PVE_CLASS_BALANCE_MYSTIC_MUSE;
+				break;
+			case "Elemental Master":
+				damage *= Config.PVE_CLASS_BALANCE_ELEMENTAL_MASTER;
+				break;
+			case "Eva Saint":
+				damage *= Config.PVE_CLASS_BALANCE_EVA_SAINT;
+				break;
+			case "Storm Screamer":
+				damage *= Config.PVE_CLASS_BALANCE_STORM_SCREAMER;
+				break;
+			case "Spectral Master":
+				damage *= Config.PVE_CLASS_BALANCE_SPECTRAL_MASTER;
+				break;
+			case "Shillien Saint":
+				damage *= Config.PVE_CLASS_BALANCE_SHILLIEN_SAINT;
+				break;
+			case "Dominator":
+				damage *= Config.PVE_CLASS_BALANCE_DOMINATOR;
+				break;
+			case "Doomcryer":
+				damage *= Config.PVE_CLASS_BALANCE_DOOMCRYER;
+				break;
+		}
+		return damage;
 	}
+	
 	public static final double calcMagicDam(L2Character attacker, L2Character target, L2Skill skill, byte shld, boolean ss, boolean bss, boolean mcrit)
 	{
 		double mAtk = attacker.getMAtk(target, skill);
@@ -2427,20 +2499,12 @@ public final class Formulas
 			damage = target.calcStat(Stats.MAGIC_DEFENCE_BEHIND, damage, attacker, skill);
 		if (attacker instanceof L2Attackable && target instanceof L2PcInstance && target.getActingPlayer().isSitting())
 			damage *= 3;
-		
-		
-		
-		if(attacker instanceof L2PcInstance && target instanceof L2Playable)
+		if (attacker instanceof L2PcInstance && target instanceof L2Playable)
 			damage = calcConfigsPvPDamage(attacker.getActingPlayer(), damage);
 		else if (attacker instanceof L2PcInstance && target instanceof L2MonsterInstance)
 			damage = calcConfigsPvEDamage(attacker.getActingPlayer(), damage);
-		
-		
 		damage += attacker.calcStat(Stats.DMG_ADD, 0, target, skill);
 		damage -= target.calcStat(Stats.DMG_REMOVE, 0, attacker, skill);
-		
-		
-		
 		if (shld > 0)
 			damage -= target.calcStat(Stats.DMG_REMOVE_SHIELD, 0, attacker, skill);
 		if (damage < 0)

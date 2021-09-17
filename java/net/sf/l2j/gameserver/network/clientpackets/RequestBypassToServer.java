@@ -1,5 +1,7 @@
 package net.sf.l2j.gameserver.network.clientpackets;
 
+import static net.sf.l2j.gameserver.model.actor.instance.L2ClassMasterInstance.checkAndChangeClass;
+
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
@@ -52,9 +54,10 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.QuestState;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
+import net.sf.l2j.gameserver.network.serverpackets.AlphaOpenUrl;
 import net.sf.l2j.gameserver.network.serverpackets.ExHeroList;
+import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;
 import net.sf.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
-import net.sf.l2j.gameserver.network.serverpackets.ServerToClientCommunicationPacket;
 import net.sf.l2j.gameserver.util.GMAudit;
 
 /**
@@ -160,8 +163,20 @@ public final class RequestBypassToServer extends L2GameClientPacket
 			}
 			else if (_command.startsWith("url_ "))
 			{
-				activeChar.sendPacket(new ServerToClientCommunicationPacket(_command.substring(5), ServerToClientCommunicationPacket.ServerRequest.SC_SERVER_REQUEST_OPEN_URL));
-				// playerHelp(activeChar, _command.substring(5));
+				activeChar.sendPacket(new AlphaOpenUrl(_command.substring(5)));
+				activeChar.sendPacket(ActionFailed.STATIC_PACKET);
+			}
+			else if (_command.startsWith("trinity_change_class"))
+			{
+				final int id = Integer.parseInt(_command.split(" ")[1]);
+				if (checkAndChangeClass(activeChar, id))
+				{
+					// self-animation
+					activeChar.broadcastPacket(new MagicSkillUse(activeChar, activeChar, 5103, 1, 0, 0));
+					//final NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
+					//html.setFile("data/html/classmaster/ok.htm");
+					//html.replace("%name%", CharTemplateTable.getInstance().getClassNameById(val));
+				}
 			}
 			else if (_command.startsWith("bdoBox_getItem_ "))
 			{
@@ -491,6 +506,16 @@ public final class RequestBypassToServer extends L2GameClientPacket
 				{
 					PvPColorChanger.onBypass(activeChar, action);
 					activeChar.sendPacket(ActionFailed.STATIC_PACKET);
+				}
+				catch (NumberFormatException nfe)
+				{}
+			}
+			else if (_command.startsWith("_useCPPOT"))
+			{
+				String action = _command.substring(10);
+				try
+				{
+					activeChar.useItem(0, false);
 				}
 				catch (NumberFormatException nfe)
 				{}

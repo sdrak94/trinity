@@ -66,6 +66,8 @@ public final class Config
 	/** Auto Chill */
 	public static int							CHILL_SLEEP_TICKS;
 	public static int							DAILY_CREDIT;
+	public static int							EVENT_CREDIT;
+	public static int							INERTIA_RT;
 	public static int							LAG_NEW_TARGET;
 	public static int							LAG_DIE_TARGET;
 	public static int							LAG_KIL_TARGET;
@@ -2900,7 +2902,9 @@ public final class Config
 					is = new FileInputStream(new File(CHILL_FILE));
 					chill.load(is);
 					CHILL_SLEEP_TICKS = Integer.parseInt(chill.getProperty("SleepTicks", "333"));
-					DAILY_CREDIT = Integer.parseInt(chill.getProperty("DailyCredit", "14400000"));
+					DAILY_CREDIT = Integer.parseInt(chill.getProperty("DailyCredit", "8"));
+					EVENT_CREDIT = Integer.parseInt(chill.getProperty("EventCredit", "3600000"));
+					INERTIA_RT = Integer.parseInt(chill.getProperty("InertiaResponsetime", "6"));
 					LAG_NEW_TARGET = Integer.parseInt(chill.getProperty("LagNewTarget", "2000"));
 					LAG_DIE_TARGET = Integer.parseInt(chill.getProperty("LagDieTarget", "1000"));
 					LAG_KIL_TARGET = Integer.parseInt(chill.getProperty("LagKilTarget", "1000"));

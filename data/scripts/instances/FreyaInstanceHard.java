@@ -102,6 +102,7 @@ public class FreyaInstanceHard extends Quest
 		super(questId, name, descr);
 		addStartNpc(DEVICE);
 		addTalkId(DEVICE);
+		addTalkId(EXIT_DEVICE);
 		for (int mob : MOBS)
 			addKillId(mob);
 	}

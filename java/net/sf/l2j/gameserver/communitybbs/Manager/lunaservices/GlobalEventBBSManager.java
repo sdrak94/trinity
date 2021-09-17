@@ -19,6 +19,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import luna.custom.globalScheduler.template.FuturedGlobalEvent;
+import luna.util.LunaUtil;
 import net.sf.l2j.gameserver.cache.HtmCache;
 import net.sf.l2j.gameserver.communitybbs.Manager.BaseBBSManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -104,8 +105,9 @@ public class GlobalEventBBSManager extends BaseBBSManager
 			LocalTime start = LocalTime.parse(timeStr);
 			LocalTime stop = LocalTime.parse(evt.getTime());
 			Duration duration = Duration.between(start, stop);
-			String timeLeftForEventToBegin = duration.toMinutes()>60?" " +duration.toHours()+" Hr":duration.getSeconds()>60?" " +duration.toMinutes()+" Min":" " +duration.toMinutes() *60+" sec";
-			String timeLeftForEventToBegin2 = duration.toMinutes()>60?" " +duration.toHours()+" Hr":duration.getSeconds()>60?" " +duration.toMinutes()+" Min":" " +duration.toMinutes() *60+" sec";
+			String timeLeft = "" + LunaUtil.formatTime((int) duration.toSeconds());
+			String timeLeftForEventToBegin = timeLeft;
+			String timeLeftForEventToBegin2 = timeLeft;
 
 			if(evt.getDay() != Calendar.getInstance().get(Calendar.DAY_OF_WEEK))
 			{
@@ -138,9 +140,9 @@ public class GlobalEventBBSManager extends BaseBBSManager
 				stop = LocalTime.parse(evt.getTime());
 				duration = Duration.between(start, stop);
 				duration = duration.plusHours(hoursDiff);
-
-				timeLeftForEventToBegin = duration.toMinutes()>60?" " +duration.toHours()+" Hr":duration.getSeconds()>60?" " +duration.toMinutes()+" Min":" " +duration.toMinutes() *60+" sec";
-				timeLeftForEventToBegin2 = duration.toMinutes()>60?" " +duration.toHours()+" Hr":duration.getSeconds()>60?" " +duration.toMinutes()+" Min":" " +duration.toMinutes() *60+" sec";
+				timeLeft = "" + LunaUtil.formatTime((int) duration.toSeconds());
+				timeLeftForEventToBegin = timeLeft;
+				timeLeftForEventToBegin2 = timeLeft;
 				
 			}
 			

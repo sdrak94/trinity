@@ -45,7 +45,7 @@ protected void onEnter(final L2Character character)
 				{
 					continue;
 				}
-				String plr_hwid = player2.getClient().getStrixClientData().getClientHWID();
+				String plr_hwid = player2.getClient().getFullHwid();
 				if (plr_hwid.equalsIgnoreCase(hwid))
 				{
 					character.setIsPendingRevive(true);

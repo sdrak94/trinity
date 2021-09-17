@@ -1507,8 +1507,8 @@ public class NewHuntingGrounds
 			{
 				if (player == null || eventPlayer == null)
 					continue;
-				String HWID = player.getClient().getStrixClientData().getClientHWID();
-				String HWID2 = eventPlayer.getClient().getStrixClientData().getClientHWID();
+				String HWID = player.getClient().getFullHwid();
+				String HWID2 = eventPlayer.getClient().getFullHwid();
 				if (HWID == null || HWID2 == null)
 					continue;
 				if (HWID.equalsIgnoreCase(HWID2))

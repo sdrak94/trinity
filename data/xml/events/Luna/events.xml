@@ -377,9 +377,9 @@
 				</tie>
 			</rewards>
 		</event>
-		<event id="4" Type="DM" Name="Hellbound Quary" Description="Event Description" regAll="false" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
+		<event id="4" Type="DM" Name="Hellbound Quary" Description="Event Description" regAll="true" JoinLocName="Hunter's Village" instanceId="1" respawnDelay="5" respawnDelayMul="1" minLvL="85" maxLvL="95">
 			<spawnRegNpc npcId="865000" spawnX="116513" spawnY="76023" spawnZ="-2720" />
-			<timers joinTime="15" eventTime="15" />
+			<timers joinTime="1" eventTime="5" />
 			<doublePvPs doublePvPs="true"/>
 			<players minPlayers="2" maxPlayers="500" />
 			

@@ -31,10 +31,10 @@ public class GlobalEventUtils
 						Olympiad.getInstance().closeOly();
 					break;
 				case "pagan_open":
-					GlobalEventVariablesHolder.getInstance().setNight(true);
+					GlobalEventVariablesHolder.getInstance().setPagansMode(true);
 					break;
 				case "pagan_close":
-					GlobalEventVariablesHolder.getInstance().setNight(false);
+					GlobalEventVariablesHolder.getInstance().setPagansMode(false);
 					break;
 			}
 			// System.out.println("Schedule Event here.");

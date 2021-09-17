@@ -1,160 +1,188 @@
-size=400x420size_end
+size=400x470size_end
 <html noscrollbar="1">
-   <title>Inertia Assist</title>
-   <body>
-      <center>
-	  
+<title>Inertia Assist</title>
+<body>
+	<center>
+
 		<br>
-		 
-		<table background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=1 cellpadding=1 width=100%>
-			 <tr>
-               <td align=center width=100%>
-                  <font name="hs12" color="e3e3e3">Status</font>
-               </td>
-            </tr>
+
+		<table background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=1
+			cellpadding=1 width=100%>
+			<tr>
+				<td align=center width=100%><font name="hs12" color="e3e3e3">Status</font>
+				</td>
+			</tr>
 			<tr>
 				<td align=center>
 					<table align=center width=100% cellspacing=2 cellpadding=2>
-						
+
 						<tr>
 							<td><img width=70 /></td>
 							<td><img width=70 /></td>
 							<td><img width=70 /></td>
 							<td><img width=70 /></td>
-							
+
 						</tr>
-						
-					    <tr>
-						   %state%
-						   <td align=center>
-							  <button value="Refresh" action="bypass chill_refresh" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
-						   <td align=center>
-							  <button value="Reset" action="bypass chill_reset" width=70 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
+
+						<tr>
+							%state%
+							<td align=center>
+								<button value="Refresh" action="bypass chill_refresh" width=70
+									height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+							</td>
+							<td align=center>
+								<button value="Reset" action="bypass chill_reset" width=70
+									height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+							</td>
 						</tr>
-						
+
 					</table>
 				</td>
 			</tr>
-			
-			
 
-
+			
 			<tr>
-				<td><img height=5/></td>
+				<td align=center>
+					<font color="e3e3e3">Time Left </font>
+					<font color="d2a679">%time%</font>
+				</td>
+			</tr>
+			<tr>
+				<td><img height=5 /></td>
 			</tr>
 
-         </table>
-	    
+		</table>
+
 		<br>
 
-         <table background="l2ui_ct1.Windows_DF_TooltipBG" width=100% height=60>
+		<table background="l2ui_ct1.Windows_DF_TooltipBG" width=100% height=60>
 			<tr>
-				<td align=center width=100%>
-                  <font name="hs12" color="e3e3e3">Behavior</font>
-                </td>
+				<td align=center width=100%><font name="hs12" color="e3e3e3">Behavior</font>
+				</td>
 
 			</tr>
 			<tr>
 				<td>
 					<table width=100%>
-					    <tr>
-						   <td align=center>
-							  <font color="e3e3e3">Auto Attack: </font>
-						   </td>
-						   <td align=center>
-							  <combobox width=135 var="target" list="%attack%">
-						   </td>
-						   <td align=center>
-							  <button value="Set" action="bypass chill_attack_type $target" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
+						<tr>
+							<td align=center><font color="e3e3e3">Auto Attack: </font></td>
+							<td align=center><combobox width=135 var="target"
+									list="%attack%"></td>
+							<td align=center>
+								<button value="Set" action="bypass chill_attack_type $target"
+									width=60 height=22 back="L2UI_ct1.button_df"
+									fore="L2UI_ct1.button_df">
+							</td>
 						</tr>
 						<tr>
-						   <td align=center>
-							  <font color="e3e3e3">Party Target: </font>
-						   </td>
-						   <td align=center>
-							  <combobox width=135 var="party" list="%party%">
-						   </td>
-						   <td align=center>
-							  <button value="Set" action="bypass chill_party_target $party" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
+							<td align=center><font color="e3e3e3">Party Target: </font>
+							</td>
+							<td align=center><combobox width=135 var="party"
+									list="%party%"></td>
+							<td align=center>
+								<button value="Set" action="bypass chill_party_target $party"
+									width=60 height=22 back="L2UI_ct1.button_df"
+									fore="L2UI_ct1.button_df">
+							</td>
 						</tr>
 						<tr>
-						   <td align=center>
-							  <font color="e3e3e3">Movement: </font>
-						   </td>
-						   <td align=center>
-							  <combobox width=135 var="move" list="%move%">
-						   </td>
-						   <td align=center>
-							  <button value="Set" action="bypass chill_move_type $move" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
+							<td align=center><font color="e3e3e3">Movement: </font></td>
+							<td align=center><combobox width=135 var="move"
+									list="%move%"></td>
+							<td align=center>
+								<button value="Set" action="bypass chill_move_type $move"
+									width=60 height=22 back="L2UI_ct1.button_df"
+									fore="L2UI_ct1.button_df">
+							</td>
 						</tr>
 						<tr>
-						   <td align=center>
-							  <font color="e3e3e3">More Options: </font>
-						   </td>
-						   <td align=center>
-							  <combobox width=135 var="opt" list="%opt%">
-						   </td>
-						   <td align=center>
-							  <button value="Open" action="bypass chill_open_menu $opt" width=60 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
-						   </td>
+							<td align=center><font color="e3e3e3">More Options: </font>
+							</td>
+							<td align=center><combobox width=135 var="opt" list="%opt%"></td>
+							<td align=center>
+								<button value="Open" action="bypass chill_open_menu $opt"
+									width=60 height=22 back="L2UI_ct1.button_df"
+									fore="L2UI_ct1.button_df">
+							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 			<tr>
-				<td><img height=5/></td>
+				<td><img height=5 /></td>
 			</tr>
-         </table>
-		 
-		 <br>
+		</table>
 
-         <table width=100% background="l2ui_ct1.Windows_DF_TooltipBG" cellspacing=2 cellpadding=2>
-             <tr>
-              <td align=center width=100%>
-                  <font name="hs12" color="e3e3e3">Targeting</font>
-               </td>
-            </tr>
+		<table width=100% cellspacing=2 cellpadding=2>
 			<tr>
-				<td>
-				
-					<table width=100% align=center>
-					
-						<tr>
-							%search%
-						</tr>
-			
-					</table>
-				
+				<td align=center width=100%><font name="hs12" color="e3e3e3">Auto
+						Pots</font></td>
+			</tr>
+		</table>
+		<table width=400 >
+			<tr>
+				<td align=center><font name=hs11 color=074863>CP %</font></td>
+				<td align=center><edit width=25 var="cp"></td>
+				<td align=center>
+					<button value="Set" action="bypass chill_autopot cp $cp" width=40
+						height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
 				</td>
-			
+				<td align=center><font name=hs11 color=074863>HP %</font></td>
+				<td align=center><edit width=25 var="hp"></td>
+				<td align=center>
+					<button value="Set" action="bypass chill_autopot hp $hp" width=40
+						height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+				</td>
+
+				<td align=center><font name=hs11 color=074863>R.Cake %</font></td>
+				<td align=center><edit width=25 var="mp"></td>
+				<td align=center>
+					<button value="Set" action="bypass chill_autopot mp $mp" width=40
+						height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df">
+				</td>
 			</tr>
+		</table>
+		<br>
+
+		<table width=100% background="l2ui_ct1.Windows_DF_TooltipBG"
+			cellspacing=2 cellpadding=2>
 			<tr>
-				<td><img height=5/></td>
+				<td align=center width=100%><font name="hs12" color="e3e3e3">Targeting</font>
+				</td>
 			</tr>
-         </table>
-         <br>
-		 
-         <table width=100%>
 			<tr>
 				<td>
-				
+
+					<table width=100% align=center>
+
+						<tr>%search%
+						</tr>
+
+					</table>
+
+				</td>
+
+			</tr>
+			<tr>
+				<td><img height=5 /></td>
+			</tr>
+		</table>
+		<br>
+
+		<table width=100%>
+			<tr>
+				<td>
+
 					<table width=100% background="l2ui_ct1.Windows_DF_TooltipBG">
-					
+
 						<tr>
-						   <td align=center width=100%>
-							  <font name="hs12" color="e3e3e3">Auto Skill</font>
-						   </td>
+							<td align=center width=100%><font name="hs12" color="e3e3e3">Auto
+									Skill</font></td>
 						</tr>
 						<tr>
 							<td>
 								<table>
-									<tr>
-										%ask%
+									<tr>%ask%
 									</tr>
 									<tr>
 										<td><img height=5 /></td>
@@ -172,22 +200,22 @@ size=400x420size_end
 							</td>
 						</tr>
 						<tr>
-							<td><img height=5/></td>
+							<td><img height=5 /></td>
 						</tr>
-					
-					
+
+
 					</table>
-				
+
 				</td>
-				<td><img width=1/></td>
-				
+				<td><img width=1 /></td>
+
 			</tr>
-         </table>
-		 
-		 <br>
-		 
+		</table>
+
+		<br>
 
 
-      </center>
-   </body>
+
+	</center>
+</body>
 </html>

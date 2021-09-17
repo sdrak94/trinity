@@ -24,7 +24,7 @@ public class ZakenInstanceHard extends Quest
 	{
 	 	1010050,1010051,1010052,1010053
 	};
-	private static String		qn			= "ZakenWorld";
+	private static String		qn			= "ZakenInstance";
 	private static final int	INSTANCEID	= 5002;
 	private static boolean		debug		= false;
 
@@ -101,6 +101,7 @@ public class ZakenInstanceHard extends Quest
 		super(questId, name, descr);
 		addStartNpc(DEVICE);
 		addTalkId(DEVICE);
+		addTalkId(EXIT_DEVICE);
 		for (int mob : MOBS)
 			addKillId(mob);
 	}

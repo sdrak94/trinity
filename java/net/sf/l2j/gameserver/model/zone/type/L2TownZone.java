@@ -343,7 +343,7 @@ public class L2TownZone extends L2ZoneType
 								{
 									continue;
 								}
-								String plr_hwid = player1.getClient().getStrixClientData().getClientHWID();
+								String plr_hwid = player1.getClient().getFullHwid();
 								if (plr_hwid.equalsIgnoreCase(hwid))
 								{
 									character.setIsPendingRevive(true);

@@ -309,27 +309,24 @@ public class ThreadPoolManager
 		};
 	}
 	
-	private class PriorityThreadFactory implements ThreadFactory
+	public static class PriorityThreadFactory implements ThreadFactory
 	{
-		private int				_prio;
-		private String			_name;
-		private AtomicInteger	_threadNumber	= new AtomicInteger(1);
-		private ThreadGroup		_group;
+		private final int _prio;
+		private final String _name;
+		private final AtomicInteger _threadNumber = new AtomicInteger(1);
+		private final ThreadGroup _group;
 		
-		public PriorityThreadFactory(String name, int prio)
+		public PriorityThreadFactory(final String name, final int prio)
 		{
 			_prio = prio;
 			_name = name;
 			_group = new ThreadGroup(_name);
 		}
 		
-		/*
-		 * (non-Javadoc)
-		 * @see java.util.concurrent.ThreadFactory#newThread(java.lang.Runnable)
-		 */
-		public Thread newThread(Runnable r)
+		@Override
+		public Thread newThread(final Runnable r)
 		{
-			Thread t = new Thread(_group, r);
+			final Thread t = new Thread(_group, r);
 			t.setName(_name + "-" + _threadNumber.getAndIncrement());
 			t.setPriority(_prio);
 			return t;

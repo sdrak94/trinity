@@ -18,7 +18,7 @@ import net.sf.l2j.gameserver.templates.item.L2EtcItemType;
 
 public class ItemSkills implements IItemHandler
 {
-public void useItem(L2Playable playable, L2ItemInstance item, final boolean forceUse)
+	public void useItem(L2Playable playable, L2ItemInstance item, final boolean forceUse)
 {
 	L2PcInstance activeChar; // use activeChar only for L2PcInstance checks where cannot be used			 // PetInstance
 	boolean isPet = playable instanceof L2PetInstance;

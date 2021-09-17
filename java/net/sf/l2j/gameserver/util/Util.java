@@ -33,6 +33,7 @@ import java.util.Date;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.model.ILocational;
 import net.sf.l2j.gameserver.model.L2Object;
+import net.sf.l2j.gameserver.model.Location;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
@@ -134,7 +135,13 @@ public final class Util
 		
 		return calculateDistance(obj1.getPosition().getX(), obj1.getPosition().getY(), obj1.getPosition().getZ(), obj2.getPosition().getX(), obj2.getPosition().getY(), obj2.getPosition().getZ(), includeZAxis);
 	}
-
+	public static double calculateDistance(Location obj1, Location obj2, boolean includeZAxis)
+	{
+		if (obj1 == null || obj2 == null)
+			return 1000000;
+		
+		return calculateDistance(obj1.getX(), obj1.getY(), obj1.getZ(), obj2.getX(), obj2.getY(), obj2.getZ(), includeZAxis);
+	}
 	public static double calculateDistance(ILocational loc1, ILocational loc2, boolean includeZAxis)
 	{
 		return calculateDistance(loc1.getX(), loc1.getY(), loc1.getZ(), loc2.getX(), loc2.getY(), loc2.getZ(), includeZAxis, false);

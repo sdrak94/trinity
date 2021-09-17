@@ -18,7 +18,6 @@ import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.model.L2CharPosition;
 import net.sf.l2j.gameserver.model.actor.L2Npc;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
-import net.sf.l2j.gameserver.model.quest.QuestEventType;
 import net.sf.l2j.util.Rnd;
 import scripts.ai.groupTemplates.L2AttackableAIScript;
 

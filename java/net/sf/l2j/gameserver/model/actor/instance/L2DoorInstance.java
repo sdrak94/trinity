@@ -954,15 +954,5 @@ public void sendInfo(L2PcInstance activeChar)
 	activeChar.sendPacket(new StaticObject(this, false));
 }
 
-@Override
-public int getInstanceWorld()
-{
-	return getInstanceId();
-}
 
-@Override
-public ILocational getLocation()
-{
-	return this.getLoc();
-}
 }

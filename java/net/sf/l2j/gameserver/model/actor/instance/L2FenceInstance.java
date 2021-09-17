@@ -289,24 +289,7 @@ public final class L2FenceInstance extends L2Object
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 	}
 
-	@Override
-	public int getHeading()
-	{
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
 	
 	@Override
 	public boolean isFence()

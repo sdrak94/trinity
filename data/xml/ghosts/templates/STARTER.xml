@@ -3,7 +3,6 @@
 	
 		<races>
 			<race name="Human" />
-			<race name="Elf" />
 		</races>
 		
 		<InertiaExtensions>
@@ -13,24 +12,26 @@
 		<stats>
 			<set name="level" value="86" />
 			<set name="inertia_configuration_id" value="CONF__DUELIST_STARTER" />
-			<set name="pvp" value="1000-15000" />
+			<set name="pvp" value="10-35" />
 		</stats>
 		
 		<hennas>
-			<henna id="170" /> <!-- STR +4 DEX -4 -->
+			<henna id="169" /> <!-- STR +4 CON -4 -->
 		</hennas>
 		
 		
 		<inventory>
-			<armorset id="71001" enchant="8-12" element="50-90" equipped="true" />
+			<armorset id="9419" enchant="18" element="50-90" equipped="true" temp="true" />
 			<item id="57" count="2000000000" />
-			<item id="91028" enchant="10-15" element="100-300" equipped="true" />	<!-- Star Smashers -->
-			<item id="70001" enchant="16" equipped="true" temp="true" /> <!-- Antharas' Tremor -->
-			<item id="70003" enchant="16" equipped="true" temp="true" /> <!-- Zaken's Dementia -->
-			<item id="70000" enchant="16" equipped="true" temp="true" /> <!-- Valakas' Fiery -->
-			<item id="70002" enchant="16" equipped="true" temp="true" /> <!-- Baium's Anger -->
-			<item id="70004" enchant="16" equipped="true" temp="true" /> <!-- Queen's Grasp -->
-			<item id="77010" equipped="true" /> <!-- Warrior's Cloak -->
+			<item id="10004" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8180" equipped="true"  temp="true" /> <!-- Ice fairty tiara -->
+			<item id="7680" equipped="true"  temp="true"/> <!-- Raccoon Ear -->
+			<item id="485" equipped="true"  /> <!-- Tattoo of Power -->
 		</inventory>
 		
 		
@@ -50,24 +51,26 @@
 		<stats>
 			<set name="level" value="86" />
 			<set name="inertia_configuration_id" value="CONF__ADVENTURER_STARTER" />
-			<set name="pvp" value="1000-15000" />
+			<set name="pvp" value="10-45" />
 		</stats>
 		
 		<hennas>
-			<henna id="170" /> <!-- STR +4 DEX -4 -->
+			<henna id="169" /> <!-- STR +4 CON -4 -->
 		</hennas>
 		
 		
 		<inventory>
-			<armorset id="71011" enchant="8-12" element="50-90" equipped="true" />
+			<armorset id="9426" enchant="18" element="50-90" equipped="true" temp="true" />
 			<item id="57" count="2000000000" />
-			<item id="90001" enchant="10-15" element="100-300" equipped="true" /> <!-- Dread Talon -->
-			<item id="70001" enchant="16" equipped="true" temp="true" /> <!-- Antharas' Tremor -->
-			<item id="70003" enchant="16" equipped="true" temp="true" /> <!-- Zaken's Dementia -->
-			<item id="70000" enchant="16" equipped="true" temp="true" /> <!-- Valakas' Fiery -->
-			<item id="70002" enchant="16" equipped="true" temp="true" /> <!-- Baium's Anger -->
-			<item id="70004" enchant="16" equipped="true" temp="true" /> <!-- Queen's Grasp -->
-			<item id="77009" equipped="true" /> <!-- Rogue's Cloak -->
+			<item id="13882" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="7060" equipped="true"  temp="true" /> <!-- Tatteosian hairband -->
+			<item id="7680" equipped="true"  temp="true"/> <!-- Raccoon Ear -->
+			<item id="485" equipped="true"  /> <!-- Tattoo of Power -->
 		</inventory>
 		
 		
@@ -75,8 +78,6 @@
 	</template>
 
 	<template id="NECRO_STARTER" classId="soultaker" tier="STARTER" >
-	
-	
 		<InertiaExtensions>
 			<ext name="Kite" />
 			<ext name="MoveArround" />
@@ -90,29 +91,147 @@
 		<stats>
 			<set name="level" value="86" />
 			<set name="inertia_configuration_id" value="CONF__SOULTAKER_STARTER" />
-			<set name="pvp" value="1000-15000" />
+			<set name="pvp" value="10-39" />
 		</stats>
 		
 		<hennas>
-			<henna id="170" /> <!-- STR +4 DEX -4 -->
+			<henna id="180" /> <!-- WIT +4 MEN -4 -->
+			<henna id="175" /> <!-- INT +4 MEN -4 -->
+			<henna id="120" /> <!-- WIT +1 MEN -1 -->
 		</hennas>
 		
 		
 		<inventory>
-			<armorset id="71021" enchant="8-12" element="50-90" equipped="true" />
+			<armorset id="9435" enchant="18" element="50-90" equipped="true" temp="true" />
 			<item id="57" count="2000000000" />
-			<item id="91007" enchant="10-15" element="100-300" equipped="true" />
-			<item id="91008" enchant="10-15" element="100-300" equipped="true" />
-			<item id="70001" enchant="16" equipped="true" /> <!-- Antharas' Tremor -->
-			<item id="70003" enchant="16" equipped="true" /> <!-- Zaken's Dementia -->
-			<item id="70000" enchant="16" equipped="true" /> <!-- Valakas' Fiery -->
-			<item id="70002" enchant="16" equipped="true" /> <!-- Baium's Anger -->
-			<item id="70004" enchant="16" equipped="true" /> <!-- Queen's Grasp -->
-			<item id="77012" equipped="true" /> <!-- Wizard's Cloak -->
+			<item id="9875" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Mace -->
+			<item id="12812" enchant="20" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8558" equipped="true"  temp="true" /> <!-- Eva's Mark -->
+			<item id="6843" equipped="true"  temp="true"/> <!-- Cat Ear -->
+			<item id="488" equipped="true"  /> <!-- Tattoo of Flame -->
 		</inventory>
+	</template>
+	
+	<template id="ARCHMAGE_STARTER" classId="archmage" tier="STARTER" >
+		<InertiaExtensions>
+			<ext name="Kite" />
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<races>
+			<race name="Human" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__ARCHMAGE_STARTER" />
+			<set name="pvp" value="10-55" />
+		</stats>
+		
+		<hennas>
+			<henna id="180" /> <!-- WIT +4 MEN -4 -->
+			<henna id="175" /> <!-- INT +4 MEN -4 -->
+			<henna id="120" /> <!-- WIT +1 MEN -1 -->
+		</hennas>
 		
 		
+		<inventory>
+			<armorset id="9435" enchant="18" element="50-90" equipped="true" temp="true" />
+			<item id="57" count="2000000000" />
+			<item id="9875" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Mace -->
+			<item id="12812" enchant="20" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8558" equipped="true"  temp="true" /> <!-- Eva's Mark -->
+			<item id="6843" equipped="true"  temp="true"/> <!-- Cat Ear -->
+			<item id="488" equipped="true"  /> <!-- Tattoo of Flame -->
+		</inventory>
+	</template>
+	
+		<template id="MYSTICMUSE_STARTER" classId="mysticMuse" tier="STARTER" >
+		<InertiaExtensions>
+			<ext name="Kite" />
+			<ext name="MoveArround" />
+		</InertiaExtensions>
 		
+		<races>
+			<race name="Elf" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__MYSTICMUSE_STARTER" />
+			<set name="pvp" value="10-55" />
+		</stats>
+		
+		<hennas>
+			<henna id="180" /> <!-- WIT +4 MEN -4 -->
+			<henna id="175" /> <!-- INT +4 MEN -4 -->
+			<henna id="120" /> <!-- WIT +1 MEN -1 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="9435" enchant="18" element="50-90" equipped="true" temp="true" />
+			<item id="57" count="2000000000" />
+			<item id="9875" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Mace -->
+			<item id="12812" enchant="20" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8558" equipped="true"  temp="true" /> <!-- Eva's Mark -->
+			<item id="6843" equipped="true"  temp="true"/> <!-- Cat Ear -->
+			<item id="488" equipped="true"  /> <!-- Tattoo of Flame -->
+		</inventory>
+	</template>
+	
+	<template id="STORMSCREAMER_STARTER" classId="stormScreamer" tier="STARTER" >
+		<InertiaExtensions>
+			<ext name="Kite" />
+			<ext name="MoveArround" />
+		</InertiaExtensions>
+		
+		<races>
+			<race name="DarkElf" />
+		</races>
+		
+		<stats>
+			<set name="level" value="86" />
+			<set name="inertia_configuration_id" value="CONF__STORMSCREAMER_STARTER" />
+			<set name="pvp" value="10-55" />
+		</stats>
+		
+		<hennas>
+			<henna id="180" /> <!-- WIT +4 MEN -4 -->
+			<henna id="175" /> <!-- INT +4 MEN -4 -->
+			<henna id="120" /> <!-- WIT +1 MEN -1 -->
+		</hennas>
+		
+		
+		<inventory>
+			<armorset id="9435" enchant="18" element="50-90" equipped="true" temp="true" />
+			<item id="57" count="2000000000" />
+			<item id="9875" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Mace -->
+			<item id="12812" enchant="20" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="17" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8558" equipped="true"  temp="true" /> <!-- Eva's Mark -->
+			<item id="6843" equipped="true"  temp="true"/> <!-- Cat Ear -->
+			<item id="488" equipped="true"  /> <!-- Tattoo of Flame -->
+		</inventory>
 	</template>
 	
 	
@@ -127,35 +246,37 @@
 		
 		<races>
 			<race name="Human" />
-			<race name="Elf" />
 		</races>
 		
 		<stats>
 			<set name="level" value="86" />
 			<set name="inertia_configuration_id" value="CONF__SAGITTARIUS_STARTER" />
-			<set name="pvp" value="1000-15000" />
+			<set name="pvp" value="15-35" />
 		</stats>
 		
 		<hennas>
-			<henna id="170" /> <!-- STR +4 DEX -4 -->
+			<henna id="169" /> <!-- STR +4 CON -4 -->
 		</hennas>
 		
 		
 		<inventory>
-			<armorset id="71011" enchant="8-12" element="50-90" equipped="true" /> <!-- id == Chest ID -->
+			<armorset id="9427" enchant="18" element="50-90" equipped="true" temp="true" />
 			<item id="57" count="2000000000" />
-			<item id="91002" enchant="10-15" element="100-300" equipped="true" />
-			<item id="70001" enchant="16" equipped="true" /> <!-- Antharas' Tremor -->
-			<item id="70003" enchant="16" equipped="true" /> <!-- Zaken's Dementia -->
-			<item id="70000" enchant="16" equipped="true" /> <!-- Valakas' Fiery -->
-			<item id="70002" enchant="16" equipped="true" /> <!-- Baium's Anger -->
-			<item id="70004" enchant="16" equipped="true" /> <!-- Queen's Grasp -->
-			<item id="77006" equipped="true" /> <!-- Archer's Cloak -->
+			<item id="9863" enchant="20" element="10-30" equipped="true" temp="true"  />	<!-- Dynasty Duals -->
+			<item id="9456" enchant="20" equipped="true" temp="true" /> <!-- Dynasty Amulet -->
+			<item id="9455" enchant="20" equipped="true" temp="true" /> <!-- Dynasty Earring -->
+			<item id="9458" enchant="20" equipped="true" temp="true" /> <!-- Dynasty Pendalt -->
+			<item id="9457" enchant="20" equipped="true" temp="true" /> <!-- Dynasty Ring -->
+			<item id="9460" enchant="20" equipped="true" temp="true" /> <!-- Dynasty Band -->
+			<item id="8180" equipped="true"  temp="true" /> <!-- Ice fairty tiara -->
+			<item id="7680" equipped="true"  temp="true"/> <!-- Raccoon Ear -->
+			<item id="485" equipped="true"  /> <!-- Tattoo of Power -->
 		</inventory>
 		
 		
 		
 	</template>
+
 	
 	
 	

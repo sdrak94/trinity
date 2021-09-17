@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -22,10 +23,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 
-import org.strixplatform.StrixPlatform;
-
+import Alpha.skillGuard.StuckSubGuard;
 import ghosts.model.Ghost;
-import gnu.trove.list.array.TIntArrayList;
+import inertia.controller.InertiaController;
 import inertia.model.IInertiaBehave;
 import inertia.model.behave.PlayerBehave;
 import javolution.util.FastList;
@@ -189,7 +189,7 @@ import net.sf.l2j.gameserver.model.itemcontainer.PcWarehouse;
 import net.sf.l2j.gameserver.model.itemcontainer.PetInventory;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.Quest;
-import net.sf.l2j.gameserver.model.quest.QuestEventType;
+import net.sf.l2j.gameserver.model.quest.Quest.QuestEventType;
 import net.sf.l2j.gameserver.model.quest.QuestState;
 import net.sf.l2j.gameserver.model.zone.L2ZoneType;
 import net.sf.l2j.gameserver.network.L2GameClient;
@@ -296,106 +296,104 @@ import net.sf.l2j.util.Rnd;
  */
 public class L2PcInstance extends L2Playable
 {
-
-	private final Map<String, Object>				quickVars						= new ConcurrentHashMap<>();
-	
-	private static final int[]		TRANSFORMATION_ALLOWED_SKILLS			=
+	private final Map<String, Object>	quickVars								= new ConcurrentHashMap<>();
+	private static final int[]			TRANSFORMATION_ALLOWED_SKILLS			=
 	{
 		3, 8, 9, 10, 18, 22, 28, 33, 65, 67, 78, 86, 98, 110, 144, 190, 196, 197, 223, 278, 279, 283, 912, 9009, 289, 293, 320, 361, 362, 400, 401, 402, 403, 404, 406, 407, 437, 440, 449, 494, 539, 540, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 619, 629, 630, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 795, 796, 797, 798, 814, 815, 816, 817, 838, 839, 884, 885, 886, 887, 888, 891, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 1015, 1016, 1018, 1027, 1028, 1034, 1042, 1043, 1201, 1206, 1217, 1264, 1266,
 		1360, 1361, 1400, 1409, 1411, 1417, 1418, 1430, 1303, 1059, 1471, 1472, 1342, 1343, 1508, 1514, 1515, 1523, 1524, 1525, 1528, 1532, 1533, 3328, 3329, 3330, 3331, 3630, 3631, 5437, 5491, 5655, 5656, 5657, 5658, 5659, 8248, 9011, 9012, 16500, 16501, 16502, 16503, 30040
 	};
-	private static final int[]		SUMMONER_TRANSFORMATION_ALLOWED_SKILLS	=
+	private static final int[]			SUMMONER_TRANSFORMATION_ALLOWED_SKILLS	=
 	{
 		896, 897, 898, 899, 900, 38051, 928, 30, 821, 446, 1477, 1514, 38052, 420, 1478, 35, 346, 10026, 38050, 1235, 1236, 4, 1479
 	};
-	private static final int[]		PATH_SKILLS								= new int[]
+	private static final int[]			PATH_SKILLS								= new int[]
 	{
 		9421, 9422, 9423, 9424, 9425, 9426, 9427, 9428, 9429, 9430, 9431, 9432, 9433, 9434, 9435, 9436, 9437, 9438, 9439, 9440, 9441, 9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 9457, 9458, 9459, 9460, 9461, 9462, 9463, 9464, 9465, 9466, 9467, 9468, 9469, 9470, 9471, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 9481, 9482, 9483, 9484, 9485, 9486, 9487, 9488, 9489, 9490, 9491, 9492, 9493, 9494, 9495, 9496, 9497, 9498, 9499, 9500, 9501, 9502, 9503, 9504, 94270, 94271, 94300, 94302, 94350, 94351, 94390, 94391, 94501, 94504, 94510, 94512, 94570, 94571, 94600, 94603, 94710, 94711, 94740, 94741, 94770, 94772, 94830, 94832, 94920, 94922, 94950, 94952, 95010, 95012, 95040, 95041
 	};
-	private static final int[]		CERTIFICATION_SKILLS					= new int[]
+	private static final int[]			CERTIFICATION_SKILLS					= new int[]
 	{
 		35200, 35202, 35204, 35206, 35208, 35210, 35212, 35214, 35216, 35218, 35220, 35222, 35224, 35226, 35228, 35230, 35232, 35234, 35236, 35238, 35240, 35242, 35244, 35246, 35248, 35250, 35252, 35254, 35256, 35258, 35260, 35262, 35264
 	};
-	private static final int[]		PATH_SKILLS_OFFENSIVE					= new int[]
+	private static final int[]			PATH_SKILLS_OFFENSIVE					= new int[]
 	{
 		9421, 9422, 9423, 9424, 9425, 9426, 9427, 9428, 9429, 9430, 9431, 9432, 9433, 9434, 9435, 9436, 9437, 9438, 9439, 9440, 9441, 94270, 94271, 94300, 94302, 94350, 94351, 94390, 94391
 	};
-	private static final int[]		PATH_SKILLS_DEF							= new int[]
+	private static final int[]			PATH_SKILLS_DEF							= new int[]
 	{
 		9463, 9464, 9465, 9466, 9467, 9468, 9469, 9470, 9471, 9472, 9473, 9474, 9475, 9476, 9477, 9478, 9479, 9480, 9481, 9482, 9483, 94710, 94711, 94740, 94741, 94770, 94772, 94830, 94832
 	};
-	private static final int[]		PATH_SKILLS_MAGE						= new int[]
+	private static final int[]			PATH_SKILLS_MAGE						= new int[]
 	{
 		9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 9457, 9458, 9459, 9460, 9461, 9462, 94501, 94504, 94510, 94512, 94570, 94571, 94600, 94603
 	};
-	private static final int[]		PATH_SKILLS_SUP							= new int[]
+	private static final int[]			PATH_SKILLS_SUP							= new int[]
 	{
 		9484, 9485, 9486, 9487, 9488, 9489, 9490, 9491, 9492, 9493, 9494, 9495, 9496, 9497, 9498, 9499, 9500, 9501, 9502, 9503, 9504, 94920, 94922, 94950, 94952, 95010, 95012, 95040, 95041
 	};
-	public static final int[]		HERO_SKILLS								=
+	public static final int[]			HERO_SKILLS								=
 	{
 		395, 396, 1374, 1375, 1376, 12504, 12503, 12502, 12505, 12501, 12506, 12511, 12509, 12508, 12510
 	};
-	public static final int			NEWBIE_LEVEL							= 76;
+	public static final int				NEWBIE_LEVEL							= 76;
 	// Character Skill SQL String Definitions:
-	private static final String		RESTORE_SKILLS_FOR_CHAR					= "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
-	private static final String		ADD_NEW_SKILL							= "INSERT INTO character_skills (charId,skill_id,skill_level,skill_name,class_index) VALUES (?,?,?,?,?)";
-	private static final String		UPDATE_CHARACTER_SKILL_LEVEL			= "UPDATE character_skills SET skill_level=? WHERE skill_id=? AND charId=? AND class_index=?";
-	private static final String		DELETE_SKILL_FROM_CHAR					= "DELETE FROM character_skills WHERE skill_id=? AND charId=? AND class_index=?";
-	private static final String		DELETE_CHAR_SKILLS						= "DELETE FROM character_skills WHERE charId=? AND class_index=?";
+	private static final String			RESTORE_SKILLS_FOR_CHAR					= "SELECT skill_id,skill_level FROM character_skills WHERE charId=? AND class_index=?";
+	private static final String			ADD_NEW_SKILL							= "REPLACE INTO character_skills (charId,skill_id,skill_level,skill_name,class_index) VALUES (?,?,?,?,?)";
+	private static final String			UPDATE_CHARACTER_SKILL_LEVEL			= "UPDATE character_skills SET skill_level=? WHERE skill_id=? AND charId=? AND class_index=?";
+	private static final String			DELETE_SKILL_FROM_CHAR					= "DELETE FROM character_skills WHERE skill_id=? AND charId=? AND class_index=?";
+	private static final String			DELETE_CHAR_SKILLS						= "DELETE FROM character_skills WHERE charId=? AND class_index=?";
 	// Character Skill Save SQL String Definitions:
-	private static final String		ADD_SKILL_SAVE							= "INSERT INTO character_skills_save (charId,skill_id,skill_level,effect_count,effect_cur_time,reuse_delay,systime,restore_type,class_index,buff_index) VALUES (?,?,?,?,?,?,?,?,?,?)";
-	private static final String		RESTORE_SKILL_SAVE						= "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay, systime FROM character_skills_save WHERE charId=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
-	private static final String		DELETE_SKILL_SAVE						= "DELETE FROM character_skills_save WHERE charId=? AND class_index=?";
+	private static final String			ADD_SKILL_SAVE							= "REPLACE INTO character_skills_save (charId,skill_id,skill_level,effect_count,effect_cur_time,reuse_delay,systime,restore_type,class_index,buff_index) VALUES (?,?,?,?,?,?,?,?,?,?)";
+	private static final String			RESTORE_SKILL_SAVE						= "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay, systime FROM character_skills_save WHERE charId=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
+	private static final String			DELETE_SKILL_SAVE						= "DELETE FROM character_skills_save WHERE charId=? AND class_index=?";
 	// Character Character SQL String Definitions:
-	private static final String		INSERT_CHARACTER						= "INSERT INTO characters (account_name,charId,char_name,level,maxHp,curHp,maxCp,curCp,maxMp,curMp,face,hairStyle,hairColor,sex,exp,sp,karma,fame,pvpkills,pkkills,clanid,race,classid,deletetime,cancraft,title,accesslevel,online,isin7sdungeon,clan_privs,wantspeace,base_class,newbie,nobless,power_grade,last_recom_date,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-	private static final String		UPDATE_CHARACTER						= "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,fame=?,pvpkills=?,pkkills=?,rec_have=?,rec_left=?,clanid=?,race=?,classid=?,deletetime=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,newbie=?,nobless=?,power_grade=?,subpledge=?,last_recom_date=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,death_penalty_level=?,bookmarkslot=?,streak=?,lastKill1=?,lastKill2=?,vitality_points=?,heroWpnDel=?,cancraft=?,nameC=?,titleC=?,event_kills=?,raid_kills=?,siege_kills=?,olympiad_wins=?,cp_points=? WHERE charId=?";
-	private static final String		RESTORE_CHARACTER						= "SELECT account_name, charId, char_name, level, maxHp, curHp, maxCp, curCp, maxMp, curMp, face, hairStyle, hairColor, sex, heading, x, y, z, exp, expBeforeDeath, sp, karma, fame, pvpkills, pkkills, clanid, race, classid, deletetime, cancraft, title, rec_have, rec_left, accesslevel, online, char_slot, lastAccess, clan_privs, wantspeace, base_class, onlinetime, isin7sdungeon, punish_level, punish_timer, newbie, nobless, power_grade, subpledge, last_recom_date, lvl_joined_academy, apprentice, sponsor, varka_ketra_ally,clan_join_expiry_time,clan_create_expiry_time,death_penalty_level,bookmarkslot,streak,lastKill1,lastKill2,vitality_points,heroWpnDel,nameC,titleC,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points FROM characters WHERE charId=?";
+	private static final String			INSERT_CHARACTER						= "INSERT INTO characters (account_name,charId,char_name,level,maxHp,curHp,maxCp,curCp,maxMp,curMp,face,hairStyle,hairColor,sex,exp,sp,karma,fame,pvpkills,pkkills,clanid,race,classid,deletetime,cancraft,title,accesslevel,online,isin7sdungeon,clan_privs,wantspeace,base_class,newbie,nobless,power_grade,last_recom_date,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	private static final String			UPDATE_CHARACTER						= "UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,face=?,hairStyle=?,hairColor=?,sex=?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,fame=?,pvpkills=?,pkkills=?,rec_have=?,rec_left=?,clanid=?,race=?,classid=?,deletetime=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs=?,wantspeace=?,base_class=?,onlinetime=?,punish_level=?,punish_timer=?,newbie=?,nobless=?,power_grade=?,subpledge=?,last_recom_date=?,lvl_joined_academy=?,apprentice=?,sponsor=?,varka_ketra_ally=?,clan_join_expiry_time=?,clan_create_expiry_time=?,death_penalty_level=?,bookmarkslot=?,streak=?,lastKill1=?,lastKill2=?,vitality_points=?,heroWpnDel=?,cancraft=?,nameC=?,titleC=?,event_kills=?,raid_kills=?,siege_kills=?,olympiad_wins=?,cp_points=? WHERE charId=?";
+	private static final String			RESTORE_CHARACTER						= "SELECT account_name, charId, char_name, level, maxHp, curHp, maxCp, curCp, maxMp, curMp, face, hairStyle, hairColor, sex, heading, x, y, z, exp, expBeforeDeath, sp, karma, fame, pvpkills, pkkills, clanid, race, classid, deletetime, cancraft, title, rec_have, rec_left, accesslevel, online, char_slot, lastAccess, clan_privs, wantspeace, base_class, onlinetime, isin7sdungeon, punish_level, punish_timer, newbie, nobless, power_grade, subpledge, last_recom_date, lvl_joined_academy, apprentice, sponsor, varka_ketra_ally,clan_join_expiry_time,clan_create_expiry_time,death_penalty_level,bookmarkslot,streak,lastKill1,lastKill2,vitality_points,heroWpnDel,nameC,titleC,event_kills,raid_kills,siege_kills,olympiad_wins,cp_points FROM characters WHERE charId=?";
 	// Character Class Path
-	private static final String		INSERT_CLASSPATHS						= "INSERT INTO class_paths VALUES (?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
+	private static final String			INSERT_CLASSPATHS						= "INSERT INTO class_paths VALUES (?,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);";
 	// Character Teleport Bookmark:
-	private static final String		INSERT_TP_BOOKMARK						= "INSERT INTO character_tpbookmark (charId,Id,x,y,z,icon,tag,name) values (?,?,?,?,?,?,?,?)";
-	private static final String		UPDATE_TP_BOOKMARK						= "UPDATE character_tpbookmark SET icon=?,tag=?,name=? where charId=? AND Id=?";
-	private static final String		RESTORE_TP_BOOKMARK						= "SELECT Id,x,y,z,icon,tag,name FROM character_tpbookmark WHERE charId=?";
-	private static final String		DELETE_TP_BOOKMARK						= "DELETE FROM character_tpbookmark WHERE charId=? AND Id=?";
+	private static final String			INSERT_TP_BOOKMARK						= "INSERT INTO character_tpbookmark (charId,Id,x,y,z,icon,tag,name) values (?,?,?,?,?,?,?,?)";
+	private static final String			UPDATE_TP_BOOKMARK						= "UPDATE character_tpbookmark SET icon=?,tag=?,name=? where charId=? AND Id=?";
+	private static final String			RESTORE_TP_BOOKMARK						= "SELECT Id,x,y,z,icon,tag,name FROM character_tpbookmark WHERE charId=?";
+	private static final String			DELETE_TP_BOOKMARK						= "DELETE FROM character_tpbookmark WHERE charId=? AND Id=?";
 	// Character Subclass SQL String Definitions:
-	private static final String		RESTORE_CHAR_SUBCLASSES					= "SELECT class_id,exp,sp,level,class_index FROM character_subclasses WHERE charId=? ORDER BY class_index ASC";
-	private static final String		ADD_CHAR_SUBCLASS						= "INSERT INTO character_subclasses (charId,class_id,exp,sp,level,class_index) VALUES (?,?,?,?,?,?)";
-	private static final String		UPDATE_CHAR_SUBCLASS					= "UPDATE character_subclasses SET exp=?,sp=?,level=?,class_id=? WHERE charId=? AND class_index =?";
-	private static final String		DELETE_CHAR_SUBCLASS					= "DELETE FROM character_subclasses WHERE charId=? AND class_index=?";
+	private static final String			RESTORE_CHAR_SUBCLASSES					= "SELECT class_id,exp,sp,level,class_index FROM character_subclasses WHERE charId=? ORDER BY class_index ASC";
+	private static final String			ADD_CHAR_SUBCLASS						= "INSERT INTO character_subclasses (charId,class_id,exp,sp,level,class_index) VALUES (?,?,?,?,?,?)";
+	private static final String			UPDATE_CHAR_SUBCLASS					= "UPDATE character_subclasses SET exp=?,sp=?,level=?,class_id=? WHERE charId=? AND class_index =?";
+	private static final String			DELETE_CHAR_SUBCLASS					= "DELETE FROM character_subclasses WHERE charId=? AND class_index=?";
 	// Character Henna SQL String Definitions:
-	private static final String		RESTORE_CHAR_HENNAS						= "SELECT slot,symbol_id FROM character_hennas WHERE charId=? AND class_index=?";
-	private static final String		ADD_CHAR_HENNA							= "INSERT INTO character_hennas (charId,symbol_id,slot,class_index) VALUES (?,?,?,?)";
-	private static final String		DELETE_CHAR_HENNA						= "DELETE FROM character_hennas WHERE charId=? AND slot=? AND class_index=?";
-	private static final String		DELETE_CHAR_HENNAS						= "DELETE FROM character_hennas WHERE charId=? AND class_index=?";
+	private static final String			RESTORE_CHAR_HENNAS						= "SELECT slot,symbol_id FROM character_hennas WHERE charId=? AND class_index=?";
+	private static final String			ADD_CHAR_HENNA							= "INSERT INTO character_hennas (charId,symbol_id,slot,class_index) VALUES (?,?,?,?)";
+	private static final String			DELETE_CHAR_HENNA						= "DELETE FROM character_hennas WHERE charId=? AND slot=? AND class_index=?";
+	private static final String			DELETE_CHAR_HENNAS						= "DELETE FROM character_hennas WHERE charId=? AND class_index=?";
 	// Character Shortcut SQL String Definitions:
-	private static final String		DELETE_CHAR_SHORTCUTS					= "DELETE FROM character_shortcuts WHERE charId=? AND class_index=?";
+	private static final String			DELETE_CHAR_SHORTCUTS					= "DELETE FROM character_shortcuts WHERE charId=? AND class_index=?";
 	// Character Recommendation SQL String Definitions:
-	private static final String		RESTORE_CHAR_RECOMS						= "SELECT charId,target_id FROM character_recommends WHERE charId=?";
-	private static final String		ADD_CHAR_RECOM							= "INSERT INTO character_recommends (charId,target_id) VALUES (?,?)";
+	private static final String			RESTORE_CHAR_RECOMS						= "SELECT charId,target_id FROM character_recommends WHERE charId=?";
+	private static final String			ADD_CHAR_RECOM							= "INSERT INTO character_recommends (charId,target_id) VALUES (?,?)";
 	/*
 	 * private static final String DELETE_CHAR_RECOMS = "DELETE FROM character_recommends WHERE charId=?";
 	 */
 	// Character Transformation SQL String Definitions:
-	private static final String		SELECT_CHAR_TRANSFORM					= "SELECT transform_id FROM characters WHERE charId=?";
-	private static final String		UPDATE_CHAR_TRANSFORM					= "UPDATE characters SET transform_id=? WHERE charId=?";
-	public static final int			REQUEST_TIMEOUT							= 15;
-	public static final int			STORE_PRIVATE_NONE						= 0;
-	public static final int			STORE_PRIVATE_SELL						= 1;
-	public static final int			STORE_PRIVATE_BUY						= 3;
-	public static final int			STORE_PRIVATE_MANUFACTURE				= 5;
-	public static final int			STORE_PRIVATE_PACKAGE_SELL				= 8;
-	private L2PcInstance			_lastKiller								= null;
-	public boolean					canSendUserInfo							= false;
-	private int						_lockdownTime							= 0;
-	private long					_lastCaptchaTimeStamp;
-	private String					_secretCode								= null;
-	private String					_pinCode								= null;
-	public String					_reason									= "";
-	public int						EMBRYO_DAMAGE_DEALT;
-	private long					_museumOnlineTime;
-	private final PlayerPassport	_passport;
-	static Map<Integer, Long>		_dressMeExpiryDates						= new FastMap<Integer, Long>();
+	private static final String			SELECT_CHAR_TRANSFORM					= "SELECT transform_id FROM characters WHERE charId=?";
+	private static final String			UPDATE_CHAR_TRANSFORM					= "UPDATE characters SET transform_id=? WHERE charId=?";
+	public static final int				REQUEST_TIMEOUT							= 15;
+	public static final int				STORE_PRIVATE_NONE						= 0;
+	public static final int				STORE_PRIVATE_SELL						= 1;
+	public static final int				STORE_PRIVATE_BUY						= 3;
+	public static final int				STORE_PRIVATE_MANUFACTURE				= 5;
+	public static final int				STORE_PRIVATE_PACKAGE_SELL				= 8;
+	private L2PcInstance				_lastKiller								= null;
+	public boolean						canSendUserInfo							= false;
+	private int							_lockdownTime							= 0;
+	private long						_lastCaptchaTimeStamp;
+	private String						_secretCode								= null;
+	private String						_pinCode								= null;
+	public String						_reason									= "";
+	public int							EMBRYO_DAMAGE_DEALT;
+	private long						_museumOnlineTime;
+	private final PlayerPassport		_passport;
+	static Map<Integer, Long>			_dressMeExpiryDates						= new FastMap<Integer, Long>();
 	
 	public static Map<Integer, Long> getDressMeExpiryDates()
 	{
@@ -2161,7 +2159,7 @@ public class L2PcInstance extends L2Playable
 	private long								_onlineBeginTime;
 	private CharactersTable.CharacterLoginData	_loginData;
 	private long								_lastAccess;
-	private long								_uptime;
+	public long									_uptime;
 	private int									_ping			= -1;
 	private final ReentrantLock					_subclassLock	= new ReentrantLock();
 	protected int								_baseClass;
@@ -2308,9 +2306,6 @@ public class L2PcInstance extends L2Playable
 	{
 		_isCool = isCool;
 	}
-
-	
-
 	
 	public void loadEmail()
 	{
@@ -7580,18 +7575,18 @@ public class L2PcInstance extends L2Playable
 			return;
 		int count = item.getCount();
 		// if(item.getChance() < 1000000)
-		if (item.getChance() < 10000)
-		{
-			String itemEnch = item.getEnchantLevel() > 0 ? "+" + item.getEnchantLevel() + " " : "";
-			String itemName = itemEnch + ItemTable.getInstance().getTemplate(item.getItemId()).getName();
-			String msg = getName() + " has obtained " + itemName + " from " + target.getName();
-			for (L2PcInstance allPlayers : L2World.getInstance().getAllPlayers().values())
-			{
-				// if(isGM())
-				// break;
-				allPlayers.sendPacket(new ExShowScreenMessage(1, -1, 2, 0, 1, 0, 0, true, 5000, 0, msg));
-			}
-		}
+//		if (item.getChance() < 10000)
+//		{
+//			String itemEnch = item.getEnchantLevel() > 0 ? "+" + item.getEnchantLevel() + " " : "";
+//			String itemName = itemEnch + ItemTable.getInstance().getTemplate(item.getItemId()).getName();
+//			String msg = getName() + " has obtained " + itemName + " from " + target.getName();
+//			for (L2PcInstance allPlayers : L2World.getInstance().getAllPlayers().values())
+//			{
+//				// if(isGM())
+//				// break;
+//				allPlayers.sendPacket(new ExShowScreenMessage(1, -1, 2, 0, 1, 0, 0, true, 5000, 0, msg));
+//			}
+//		}
 		if (item.getItemId() == 97003 || item.getItemId() == 4355 && dropRateBoost > 0)
 		{
 			double rate = calcStat(Stats.DROP_COUNT_RATE, 1, null, null);
@@ -8843,12 +8838,23 @@ public class L2PcInstance extends L2Playable
 			return;
 		if (Config.PVP_PROTECTIONS && !isInFunEvent() && !isGM())
 		{
-			if (target.getObjectId() == _prevKill || target.getObjectId() == _prevKill2)
+			if (! (target instanceof Ghost))
 			{
-				passedProtections = false;
-				msg = "You have already received a pvp from this player's IP.";
-				sendMessage(msg);
-				return;
+				if (target.getObjectId() == _prevKill || target.getObjectId() == _prevKill2)
+				{
+					passedProtections = false;
+					msg = "You have already received a pvp from this player.";
+					sendMessage(msg);
+					return;
+				}
+
+				if (target.getIP().equalsIgnoreCase(_prev1IP) || target.getIP().equalsIgnoreCase(_prev2IP))
+				{
+					msg = "Same Ip as before, you have already earned +1 from this ip.";
+					sendMessage(msg);
+					passedProtections = false;
+					return;
+				}
 			}
 			if (getParty() != null && getParty().getPartyMembers().contains(target))
 			{
@@ -8874,13 +8880,6 @@ public class L2PcInstance extends L2Playable
 			if (getIP() != null && target.getIP() != null && getIP().equals(target.getIP()))
 			{
 				msg = "Same Ip this might be you or someone next to you, be friendly with your locals.";
-				sendMessage(msg);
-				passedProtections = false;
-				return;
-			}
-			if (target.getIP().equalsIgnoreCase(_prev1IP) || target.getIP().equalsIgnoreCase(_prev2IP))
-			{
-				msg = "Same Ip as before, you have already earned +1 from this ip.";
 				sendMessage(msg);
 				passedProtections = false;
 				return;
@@ -9158,7 +9157,7 @@ public class L2PcInstance extends L2Playable
 						// System.out.println(">3");
 						// sendMessage("Chance based on ("+String.valueOf(supports)+") Supports: " +String.valueOf(chance));
 					}
-					if (Rnd.get(100) < 100) // Start Synergy
+					if (Rnd.get(100) < chance) // Start Synergy
 					{
 						// collects all the supports
 						List<L2PcInstance> availableMembers = new FastList<L2PcInstance>();
@@ -9177,6 +9176,9 @@ public class L2PcInstance extends L2Playable
 									if (!(mate1.isInFunEvent() || mate1.isInSiege()))
 										continue;
 								}
+								if (mate1.isDead())
+									continue;
+								
 								if (mate1.isInsideRadius(this, Config.SYNERGY_RADIUS, false, false))
 								{
 									availableMembers.add(mate1);
@@ -11961,7 +11963,6 @@ public class L2PcInstance extends L2Playable
 				}
 				chars.close();
 				stmt.close();
-
 				BBSSchemeBufferInstance.loadSchemes(player, con);
 				// PreparedStatement stmt2 = con.prepareStatement("SELECT charId, char_name, lasthwid FROM characters LEFT JOIN accounts ON characters.account_name = accounts.login where accounts.lasthwid=?");
 				// stmt.setString(1, player.getHWID());
@@ -12920,7 +12921,9 @@ public class L2PcInstance extends L2Playable
 		catch (Exception e)
 		{
 			removeSkill(newSkill.getId());
-			_log.warning("Error could not store char skills: " + e);
+			_log.warning( getName() + " Error could not store char skills: " + e);
+			//getClient().closeNow();
+			//_log.warning("Error could not store char skills: " + e);
 		}
 		finally
 		{
@@ -12975,7 +12978,9 @@ public class L2PcInstance extends L2Playable
 		catch (Exception e)
 		{
 			removeSkill(newSkill.getId());
-			_log.warning("Error could not store char skills: " + e);
+
+			getClient().closeNow();
+			//_log.warning("Error could not store char skills: " + e);
 			ok = false;
 			this.getClient().closeNow();
 		}
@@ -13506,8 +13511,6 @@ public class L2PcInstance extends L2Playable
 				else
 					return false;
 			}
-			if (TvTEvent.isStarted() && TvTEvent.isPlayerParticipant(getObjectId()))
-				return true;
 			if (attacker.isInFunEvent())
 			{
 				if (isInFunEvent())
@@ -16346,10 +16349,17 @@ public class L2PcInstance extends L2Playable
 			return false;
 		try
 		{
-			if (isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
+			// if (isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
+			if (isParalyzed() || isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
+			{
+				sendMessage("Cannot modify your class while Paralyzed/in Combat/Olympiad/Transformed.");
 				return false;
+			}
 			if (getTotalSubClasses() == Config.MAX_SUBCLASS)
+			{
+				sendMessage("You have reach the maximum number of available subclasses.");
 				return false;
+			}
 			if (classIndex == 0)
 			{
 				_log.warning(getName() + " add subclass classindex = 0");
@@ -16430,6 +16440,7 @@ public class L2PcInstance extends L2Playable
 					// }
 				}
 			}
+			StuckSubGuard.getInstance().checkPlayer(this);
 			if (Config.DEBUG)
 				_log.info(getName() + " was given " + getAllSkills().length + " skills for their new sub class.");
 			return true;
@@ -16456,7 +16467,10 @@ public class L2PcInstance extends L2Playable
 		if (!_subclassLock.tryLock())
 			return false;
 		if (isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
+		{
+			sendMessage("Cannot modify your class while Paralyzed/in Combat/Olympiad/Transformed.");
 			return false;
+		}
 		if (cannotChangeSubsDueToInstance())
 		{
 			sendMessage("You can't change your subclass while you have an instance active");
@@ -16623,7 +16637,10 @@ public class L2PcInstance extends L2Playable
 		try
 		{
 			if (isParalyzed() || isInDuel() || isInOlympiadMode() || isInCombat() || _transformation != null || Olympiad.getInstance().isRegistered(this))
+			{
+				sendMessage("Cannot modify your class while Paralyzed/in Combat/Olympiad/Transformed.");
 				return false;
+			}
 			if (cannotChangeSubsDueToInstance())
 			{
 				sendMessage("You can't change your subclass while you have an instance active");
@@ -16736,6 +16753,7 @@ public class L2PcInstance extends L2Playable
 				_henna[i] = null;
 			restoreHenna();
 			sendPacket(new HennaInfo(this));
+			InertiaController.getInstance().fetchChill(getActingPlayer()).reset();
 			if (getCurrentHp() > getMaxHp())
 				setCurrentHp(getMaxHp());
 			if (getCurrentMp() > getMaxMp())
@@ -16752,6 +16770,7 @@ public class L2PcInstance extends L2Playable
 			broadcastPacket(new SocialAction(getObjectId(), SocialAction.LEVEL_UP));
 			sendPacket(new SkillCoolTime(this));
 			sendPacket(new ExStorageMaxCount(this));
+			StuckSubGuard.getInstance().checkPlayer(this);
 			sendSkillList();
 			// LunaSkillGuard.getInstance().checkForIncorrectSkills(this);
 			// decayMe();
@@ -16760,6 +16779,11 @@ public class L2PcInstance extends L2Playable
 			{
 				LunaLogger.getInstance().log("subclass_logs", getName() + " Set Active Class: -> " + getClassId().getName());
 			}
+			clearPath();
+			CreatureSay cs = new CreatureSay(getObjectId(), Say2.MSNCHAT, getName(), "Your classpath trees has been reseted.\r\nSet them up again.");
+			CreatureSay cs2 = new CreatureSay(getObjectId(), Say2.PARTYROOM_COMMANDER, getName(), "Your classpath trees has been reseted.\r\n  Do not forget to set them up again.");
+			sendPacket(cs2);
+			sendPacket(cs);
 			return true;
 		}
 		finally
@@ -20272,14 +20296,18 @@ public class L2PcInstance extends L2Playable
 	
 	public String getIP()
 	{
-		return (this instanceof Ghost) ? "0.0.0.0" : getClient().getIP();
+		return (this instanceof Ghost) ? String.valueOf(getObjectId()) : getClient().getIP();
 	}
 	
 	public String getHWID()
 	{
-		if (StrixPlatform.getInstance().isPlatformEnabled())
+		if (this instanceof Ghost)
 		{
-			return getClient().getStrixClientData().getClientHWID();
+			return String.valueOf(Long.MAX_VALUE - getObjectId());
+		}
+		if (!getClient().getFullHwid().isEmpty())
+		{
+			return getClient().getFullHwid();
 		}
 		else
 		{
@@ -20441,7 +20469,6 @@ public class L2PcInstance extends L2Playable
 		{
 			if (getTransformation().getAllowedSkills().contains(skillId))
 				return false;
-			
 			if (isInStance())
 			{
 				if (skillId >= 2000)
@@ -21867,12 +21894,12 @@ public class L2PcInstance extends L2Playable
 			return;
 		}
 		final int itemId = item.getItemId();
-		if (itemId != 1539) // greater healing pot is ignored
-		{
-			// Flood protect UseItem
-			if (!getFloodProtectors().getUseItem().tryPerformAction("use item"))
-				return;
-		}
+		// if (itemId != 1539) // greater healing pot is ignored
+		// {
+		// // Flood protect UseItem
+		// if (!getFloodProtectors().getUseItem().tryPerformAction("use item"))
+		// return;
+		// }
 		/*
 		 * Alt game - Karma punishment // SOE
 		 * 736 Scroll of Escape
@@ -22085,30 +22112,30 @@ public class L2PcInstance extends L2Playable
 					if (isCursedWeaponEquipped())
 						return;
 					// Don't allow other Race to Wear Kamael exclusive Weapons.
-//					if (!item.isEquipped() && item.getItem() instanceof L2Weapon && !isGM())
-//					{
-//						L2Weapon wpn = (L2Weapon) item.getItem();
-//						switch (this.getRace())
-//						{
-//							case Human:
-//							case MHuman:
-//							case Dwarf:
-//							case Elf:
-//							case DarkElf:
-//							case Orc:
-//							case MOrc:
-//							{
-//								switch (wpn.getItemType())
-//								{
-//									case RAPIER:
-//									case CROSSBOW:
-//										this.sendPacket(new SystemMessage(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION));
-//										return;
-//								}
-//								break;
-//							}
-//						}
-//					}
+					// if (!item.isEquipped() && item.getItem() instanceof L2Weapon && !isGM())
+					// {
+					// L2Weapon wpn = (L2Weapon) item.getItem();
+					// switch (this.getRace())
+					// {
+					// case Human:
+					// case MHuman:
+					// case Dwarf:
+					// case Elf:
+					// case DarkElf:
+					// case Orc:
+					// case MOrc:
+					// {
+					// switch (wpn.getItemType())
+					// {
+					// case RAPIER:
+					// case CROSSBOW:
+					// this.sendPacket(new SystemMessage(SystemMessageId.CANNOT_EQUIP_ITEM_DUE_TO_BAD_CONDITION));
+					// return;
+					// }
+					// break;
+					// }
+					// }
+					// }
 					break;
 				}
 				case L2Item.SLOT_CHEST:
@@ -22466,7 +22493,7 @@ public class L2PcInstance extends L2Playable
 	{
 		sendPacket(new CreatureSay(objectId, messageType, charName, text));
 	}
-
+	
 	public boolean isBehind(final L2Object target)
 	{
 		return isBehind(target, calcStat(Stats.BACK_ANGLE_INCREASE, 50, (L2Character) target, null));
@@ -23109,17 +23136,6 @@ public class L2PcInstance extends L2Playable
 		return myHWID == otHWID;
 	}
 	
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-	
-	@Override
-	public ILocational getLocation()
-	{
-		return getLoc();
-	}
 	
 	public List<Quest> getAllQuests(final boolean completed)
 	{
@@ -23168,7 +23184,7 @@ public class L2PcInstance extends L2Playable
 			}
 		}
 	}
-
+	
 	private final Map<String, PlayerVar> user_variables = new ConcurrentHashMap<String, PlayerVar>();
 	
 	public static void setVarOffline(int playerObjId, String name, String value, long expireDate)
@@ -23590,5 +23606,23 @@ public class L2PcInstance extends L2Playable
 			broadcastPacket(new MagicSkillUse(this, this, id, level, hitTime, 0));
 		else
 			broadcastPacket(new SocialAction(getObjectId(), id));
+	}
+	
+	private Map<Integer, Future<?>> _autoPotTasks = new HashMap<>();
+	
+	public boolean isAutoPot(int id)
+	{
+		return _autoPotTasks.keySet().contains(id);
+	}
+	
+	public void setAutoPot(int id, Future<?> task, boolean add)
+	{
+		if (add)
+			_autoPotTasks.put(id, task);
+		else
+		{
+			_autoPotTasks.get(id).cancel(true);
+			_autoPotTasks.remove(id);
+		}
 	}
 }

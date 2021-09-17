@@ -12,21 +12,13 @@ import java.util.concurrent.ConcurrentLinkedDeque;
 import ghosts.model.Ghost;
 import ghosts.model.GhostTemplate;
 import net.sf.l2j.L2DatabaseFactory;
-import net.sf.l2j.gameserver.GameServer;
 import net.sf.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import net.sf.l2j.gameserver.datatables.CharNameTable;
 import net.sf.l2j.gameserver.datatables.CharTemplateTable;
-import net.sf.l2j.gameserver.datatables.CharactersTable;
 import net.sf.l2j.gameserver.datatables.ItemTable;
 import net.sf.l2j.gameserver.idfactory.IdFactory;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.appearance.PcAppearance;
-import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
-import net.sf.l2j.gameserver.model.base.Race;
-import net.sf.l2j.gameserver.network.serverpackets.CharInfo;
-import net.sf.l2j.gameserver.network.serverpackets.MagicSkillLaunched;
-import net.sf.l2j.gameserver.network.serverpackets.MagicSkillUse;
-import net.sf.l2j.gameserver.network.serverpackets.RelationChanged;
 import net.sf.l2j.gameserver.templates.chars.L2PcTemplate;
 import net.sf.l2j.gameserver.templates.item.L2Henna;
 import net.sf.l2j.util.Rnd;
@@ -103,7 +95,8 @@ public class GhostController
 		ghost.setName(ghostName);
 		ghost.setTitle(titles.get(Rnd.get(titles.size() -1)));
 		ghost.setPvpKills(ghostTemplate.getPvPs());
-		ghost.setUptime((System.currentTimeMillis() - GameServer.dateTimeServerStarted.getTimeInMillis()) / Rnd.get(2, 6));
+		ghost.setUptime(System.currentTimeMillis());
+		ghost.setFame((int) (ghost.getPvpKills() * 1.16));
 		//ghost.setOnlineStatus(true);
 		preprocessGhost(ghost);
 		return ghost;
@@ -118,6 +111,12 @@ public class GhostController
 		L2World.getInstance().addVisibleObject(ghost, ghost.getPosition().getWorldRegion());
 		// ghost.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(ghost.getX() + Rnd.get(-1000, 1000), ghost.getY() + Rnd.get(-1000, 1000), ghost.getZ()));
 		ghost.setupAutoChill();
+		RegionBBSManager.getInstance().changeCommunityBoard();
+	}
+	
+	public void deleteGhost(final Ghost ghost)
+	{
+		ghost.deleteMe();
 		RegionBBSManager.getInstance().changeCommunityBoard();
 	}
 	

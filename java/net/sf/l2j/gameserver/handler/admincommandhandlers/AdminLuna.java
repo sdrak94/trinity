@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 import ghosts.controller.GhostController;
 import ghosts.controller.GhostTemplateTable;
+import ghosts.model.Ghost;
 import inertia.controller.InertiaController;
 import luna.custom.LunaVariables;
 import luna.custom.email.DonationCodeGenerator;
@@ -49,6 +50,7 @@ public class AdminLuna implements IAdminCommandHandler
 		"admin_bonanzo_reload",
 		"admin_checksb2",
 		"admin_spawnrandom",
+		"admin_delete_ghost",
 		"admin_renderchill"
 	};
 	private static List<L2FenceInstance>	_fences			= new ArrayList<L2FenceInstance>();
@@ -79,6 +81,32 @@ public class AdminLuna implements IAdminCommandHandler
 				activeChar.sendMessage("2Usage: //send_donate email ammount");
 			}
 		}
+		else if (command.startsWith("admin_delete_ghost"))
+		{
+			if (!(activeChar.getTarget() instanceof Ghost))
+			{
+				activeChar.sendMessage("Target must be a ghost");
+				return false;
+			}
+			if (activeChar.getTarget() == null)
+			{
+				final String[] data = command.split(" ");
+				if ((data.length > 1))
+				{
+					int objId = Integer.parseInt(data[0]);
+					Ghost player = (Ghost) L2World.getInstance().getPlayer(objId);
+					GhostController.getInstance().deleteGhost(player);
+				}
+			}
+			else
+			{
+				if ((activeChar.getTarget() instanceof Ghost))
+					GhostController.getInstance().deleteGhost((Ghost) activeChar.getTarget());
+				else
+					activeChar.sendMessage("You need a ghost as target");
+			}
+			return true;
+		}
 		else if (command.startsWith("admin_renderchill"))
 		{
 			if (activeChar.getTarget() == null || !(activeChar.getTarget() instanceof L2PcInstance))
@@ -98,6 +126,7 @@ public class AdminLuna implements IAdminCommandHandler
 				else
 					activeChar.sendMessage("You ned a player as target");
 			}
+			return true;
 		}
 		else if (command.startsWith("admin_spawnrandom"))
 		{
@@ -115,6 +144,9 @@ public class AdminLuna implements IAdminCommandHandler
 				_types.add("ADVENTURER_STARTER");
 				_types.add("NECRO_STARTER");
 				_types.add("SAGITTARIUS_STARTER");
+				_types.add("ARCHMAGE_STARTER");
+				_types.add("MYSTICMUSE_STARTER");
+				_types.add("STORMSCREAMER_STARTER");
 				final var template = GhostTemplateTable.getInstance().getById(Rnd.get(_types));
 				final var ghost = GhostController.getInstance().createGhost(template);
 				GhostController.getInstance().spawnGhost(ghost, activeChar.getX(), activeChar.getY(), activeChar.getZ());
@@ -675,7 +707,7 @@ public class AdminLuna implements IAdminCommandHandler
 					{
 						continue;
 					}
-					final String id = plr.getClient().getStrixClientData().getClientHWID();
+					final String id = plr.getClient().getFullHwid();
 					// final String id = plr.getClient().getConnection().getInetAddress().getHostAddress();
 					if (rewarded.contains(id))
 					{
@@ -752,7 +784,7 @@ public class AdminLuna implements IAdminCommandHandler
 					{
 						continue;
 					}
-					final String id = plr.getClient().getStrixClientData().getClientHWID();
+					final String id = plr.getClient().getFullHwid();
 					// final String id = plr.getClient().getConnection().getInetAddress().getHostAddress();
 					if (rewarded.contains(id))
 					{

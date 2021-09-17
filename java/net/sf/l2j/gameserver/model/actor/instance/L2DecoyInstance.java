@@ -366,16 +366,5 @@ public class L2DecoyInstance extends L2Decoy
 	{
 		return getActingPlayer().getStat().getShldDef();
 	}
-	
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-	
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
+
 }

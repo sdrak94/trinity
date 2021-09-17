@@ -77,6 +77,37 @@ public class Quest extends ManagedScript
 	private boolean									_onEnterWorld;
 	protected int[]									questItemIds				= null;
 	
+	public static enum QuestEventType
+	{
+		ON_FIRST_TALK(false), // control the first dialog shown by NPCs when they are clicked (some quests must override the default npc action)
+		QUEST_START(true), // onTalk action from start npcs
+		ON_TALK(true), // onTalk action from npcs participating in a quest
+		ON_ATTACK(true), // onAttack action triggered when a mob gets attacked by someone
+		ON_KILL(true), // onKill action triggered when a mob gets killed.
+		ON_SPAWN(true), // onSpawn action triggered when an NPC is spawned or respawned.
+		ON_SKILL_SEE(true), // NPC or Mob saw a person casting a skill (regardless what the target is).
+		ON_FACTION_CALL(true), // NPC or Mob saw a person casting a skill (regardless what the target is).
+		ON_AGGRO_RANGE_ENTER(true), // a person came within the Npc/Mob's range
+		ON_SPELL_FINISHED(true), // on spell finished action when npc finish casting skill
+		ON_SKILL_LEARN(false), // control the AcquireSkill dialog from quest script
+		ON_ENTER_ZONE(true), // on zone enter
+		ON_EXIT_ZONE(true); // on zone exit
+		
+		// control whether this event type is allowed for the same npc template in multiple quests
+		// or if the npc must be registered in at most one quest for the specified event
+		private boolean _allowMultipleRegistration;
+		
+		QuestEventType(boolean allowMultipleRegistration)
+		{
+			_allowMultipleRegistration = allowMultipleRegistration;
+		}
+		
+		public boolean isMultipleRegistrationAllowed()
+		{
+			return _allowMultipleRegistration;
+		}
+	}
+	
 	/**
 	 * (Constructor)Add values to class variables and put the quest in HashMaps.
 	 * 
@@ -178,28 +209,23 @@ public class Quest extends ManagedScript
 	 */
 	public final static void playerEnter(L2PcInstance player)
 	{
-		
 		Connection con = null;
 		try
 		{
 			// Get list of quests owned by the player from database
 			con = L2DatabaseFactory.getInstance().getConnection();
 			PreparedStatement statement;
-			
 			PreparedStatement invalidQuestData = con.prepareStatement("DELETE FROM character_quests WHERE charId=? and name=?");
 			PreparedStatement invalidQuestDataVar = con.prepareStatement("delete FROM character_quests WHERE charId=? and name=? and var=?");
-			
 			statement = con.prepareStatement("SELECT name,value FROM character_quests WHERE charId=? AND var=?");
 			statement.setInt(1, player.getObjectId());
 			statement.setString(2, "<state>");
 			ResultSet rs = statement.executeQuery();
 			while (rs.next())
 			{
-				
 				// Get ID of the quest and ID of its state
 				String questId = rs.getString("name");
 				String statename = rs.getString("value");
-				
 				// Search quest associated with the ID
 				Quest q = QuestManager.getInstance().getQuest(questId);
 				if (q == null)
@@ -213,14 +239,12 @@ public class Quest extends ManagedScript
 					}
 					continue;
 				}
-				
 				// Create a new QuestState for the player that will be added to the player's list of quests
 				new QuestState(player, q, State.getStateId(statename));
 			}
 			rs.close();
 			invalidQuestData.close();
 			statement.close();
-			
 			// Get list of quests owned by the player from the DB in order to add variables used in the quest.
 			statement = con.prepareStatement("SELECT name,var,value FROM character_quests WHERE charId=? AND var<>?");
 			statement.setInt(1, player.getObjectId());
@@ -251,7 +275,6 @@ public class Quest extends ManagedScript
 			rs.close();
 			invalidQuestDataVar.close();
 			statement.close();
-			
 		}
 		catch (Exception e)
 		{
@@ -264,10 +287,8 @@ public class Quest extends ManagedScript
 				con.close();
 			}
 			catch (Exception e)
-			{
-			}
+			{}
 		}
-		
 	}
 	
 	/**
@@ -643,6 +664,7 @@ public class Quest extends ManagedScript
 	{
 		startQuestTimer(name, time, npc, player, false);
 	}
+	
 	public void startQuestTimer(final String name, final long time, final L2Npc npc, final L2PcInstance player, final boolean repeating)
 	{
 		// Get quest timers for this timer type.
@@ -1004,7 +1026,7 @@ public class Quest extends ManagedScript
 	 */
 	public boolean showError(final L2PcInstance player, final Throwable e)
 	{
-		_log.log(Level.WARNING, getScriptFile().toAbsolutePath() + " " +  e);
+		_log.log(Level.WARNING, getScriptFile().toAbsolutePath() + " " + e);
 		if (e.getMessage() == null)
 			e.printStackTrace();
 		if (player != null && player.isGM())
@@ -1127,9 +1149,14 @@ public class Quest extends ManagedScript
 		return showResult(npc, attacker, res);
 	}
 	
+	public String onAttack(L2Npc npc, L2PcInstance attacker, int damage, boolean isPet)
+	{
+		return null;
+	}
+
 	public String onAttack(L2Npc npc, L2PcInstance attacker, int damage, boolean isPet, L2Skill skill)
 	{
-		return onAttack(npc, attacker, damage, isPet, skill);
+		return onAttack(npc, attacker, damage, isPet);
 	}
 	
 	/**
@@ -1145,13 +1172,13 @@ public class Quest extends ManagedScript
 		final L2NpcTemplate[] value = new L2NpcTemplate[npcIds.length];
 		int i = 0;
 		for (final int npcId : npcIds)
-			value[i++] = addEventId(npcId, QuestEventType.ON_ATTACK_ACT);
+			value[i++] = addEventId(npcId, QuestEventType.ON_ATTACK);
 		return value;
 	}
 	
 	public L2NpcTemplate addAttackActId(final int attackId)
 	{
-		return addEventId(attackId, QuestEventType.ON_ATTACK_ACT);
+		return addEventId(attackId, QuestEventType.ON_ATTACK);
 	}
 	
 	/**
@@ -1304,6 +1331,7 @@ public class Quest extends ManagedScript
 	{
 		return null;
 	}
+	
 	public final boolean notifyDeath(L2Character killer, L2Character victim, QuestState qs)
 	{
 		String res = null;
@@ -1317,7 +1345,7 @@ public class Quest extends ManagedScript
 		}
 		return showResult(qs.getPlayer(), res);
 	}
-
+	
 	public final boolean notifyCreatureKill(L2Character killer, L2Character victim, QuestState qs)
 	{
 		String res = null;
@@ -1331,6 +1359,7 @@ public class Quest extends ManagedScript
 		}
 		return showResult(qs.getPlayer(), res);
 	}
+	
 	public boolean showResult(L2PcInstance player, String res)
 	{
 		if (res == null || res.isEmpty() || player == null)
@@ -1362,22 +1391,19 @@ public class Quest extends ManagedScript
 	{
 		String questName = getName();
 		int questId = getQuestId();
-		//Create handler to file linked to the quest
+		// Create handler to file linked to the quest
 		String directory = getDescr().toLowerCase();
 		String content = HtmCache.getInstance().getHtm("data/scripts/" + directory + "/" + questName + "/" + fileName);
-		
 		if (content == null)
 			content = HtmCache.getInstance().getHtmForce("data/scripts/quests/" + questName + "/" + fileName);
-		
 		if (player != null && player.getTarget() != null)
 			content = content.replaceAll("%objectId%", String.valueOf(player.getTarget().getObjectId()));
-		
-		//Send message to client if message not empty
+		// Send message to client if message not empty
 		if (content != null)
 		{
 			if (questId > 0 && questId < 20000)
 			{
-				NpcQuestHtmlMessage npcReply = new NpcQuestHtmlMessage(5,questId);
+				NpcQuestHtmlMessage npcReply = new NpcQuestHtmlMessage(5, questId);
 				npcReply.setHtml(content);
 				npcReply.replace("%playername%", player.getName());
 				player.sendPacket(npcReply);
@@ -1391,10 +1417,8 @@ public class Quest extends ManagedScript
 			}
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 		}
-		
 		return content;
 	}
-	
 	
 	public String onCreatureKill(L2Character killer, L2Character victim, QuestState qs)
 	{
@@ -1927,8 +1951,6 @@ public class Quest extends ManagedScript
 		return null;
 	}
 	
-
-	
 	@Override
 	public void setActive(final boolean status)
 	{}
@@ -2104,13 +2126,13 @@ public class Quest extends ManagedScript
 		}
 		return false;
 	}
-
+	
 	@Override
 	public String getScriptName()
 	{
 		return _name;
 	}
-
+	
 	@Override
 	public Path getScriptPath()
 	{
@@ -2143,10 +2165,10 @@ public class Quest extends ManagedScript
 				con.close();
 			}
 			catch (Exception e)
-			{
-			}
+			{}
 		}
 	}
+	
 	public static void createQuestVarInDb(QuestState qs, String var, String value)
 	{
 		Connection con = null;
@@ -2173,8 +2195,7 @@ public class Quest extends ManagedScript
 				con.close();
 			}
 			catch (Exception e)
-			{
-			}
+			{}
 		}
 	}
 }

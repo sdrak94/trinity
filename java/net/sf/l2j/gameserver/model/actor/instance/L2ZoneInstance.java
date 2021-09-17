@@ -20,15 +20,7 @@ public class L2ZoneInstance extends L2NpcInstance
 		_zoneRadius = template.getZoneRadius();
 	}
 	
-	public void mkPrimitive(final int color, final int radius)
-	{
-		_circle = new ExServerPrimitive(String.valueOf(getObjectId()), getLocation());
-		_circle.addCircle(color, radius, 27, 1);
-		_circle.addCircle(Color.WHITE, radius, 27, 2);
-		_circle.addCircle(color, radius, 27, 3);
-		
-		broadcastPacket(_circle);
-	}
+
 	
 	@Override
 	public void sendInfo(L2PcInstance activeChar)
@@ -43,11 +35,5 @@ public class L2ZoneInstance extends L2NpcInstance
 	{
 		return _zoneRadius;
 	}
-	
-	public boolean isInZoneRadius(final ILocational loc)
-	{
-		final var dist = Util.calculateDistance(this, loc, true); 
-		
-		return dist < _zoneRadius;
-	}
+
 }

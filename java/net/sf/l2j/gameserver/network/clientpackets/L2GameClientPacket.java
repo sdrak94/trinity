@@ -65,12 +65,12 @@ protected final void sendPacket(L2GameServerPacket gsp)
 }
 
 /**
- * @return A String with this packet name for debuging purposes
+ * @return A String with this packet name for debugging purposes
  */
 public abstract String getType();
 
 /**
- * Overriden with true value on some packets that should disable spawn protection
+ * Overridden with true value on some packets that should disable spawn protection
  */
 protected boolean triggersOnActionRequest()
 {

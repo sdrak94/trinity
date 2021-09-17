@@ -14,11 +14,9 @@ import java.util.logging.Logger;
 
 import org.mmocore.network.MMOClient;
 import org.mmocore.network.MMOConnection;
-import org.strixplatform.network.IStrixClientData;
-import org.strixplatform.network.cipher.StrixGameCrypt;
-import org.strixplatform.utils.StrixClientData;
 
 import javolution.util.FastList;
+import luna.HexUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.LoginServerThread;
@@ -43,7 +41,7 @@ import net.sf.l2j.util.EventData;
  * 
  * @author KenM
  */
-public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> implements IStrixClientData
+public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>>
 {
 	protected static final Logger _log = Logger.getLogger(L2GameClient.class.getName());
 	
@@ -66,6 +64,50 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 	private String			_accountName;
 	private String			_password;
 	private boolean			_loggingOut	= false;
+	
+	private String _fullHwid;
+	
+	private String _hwidCPU;
+	private String _hwidBIOS;
+	private String _hwidHDD;
+	private String _hwidMAC;
+	
+
+	
+	public void DebugHwid()
+	{
+		System.out.println("FullHwid: " + _fullHwid);
+	}
+	
+	public void setFullHwid(byte[] hwid)
+	{
+		_fullHwid = HexUtil.hexstr(hwid);
+	}
+	
+	public String getFullHwid()
+	{
+		return _fullHwid;
+	}
+	
+	public String getCPUHwid()
+	{
+		return _hwidCPU;
+	}
+	
+	public String getBIOSHwid()
+	{
+		return _hwidBIOS;
+	}
+	
+	public String getHDDHwid()
+	{
+		return _hwidHDD;
+	}
+	
+	public String getMACHwid()
+	{
+		return _hwidMAC;
+	}
 	
 	public final boolean isLoggingOut()
 	{
@@ -109,9 +151,8 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 	protected final ScheduledFuture<?>	_autoSaveInDB;
 	protected ScheduledFuture<?>		_cleanupTask			= null;
 	// Crypt
-	// private final GameCrypt _crypt;
-	public StrixGameCrypt				gameCrypt				= null;
-	private StrixClientData				clientData;
+	 private final GameCrypt _crypt;
+
 	// Flood protection
 	public byte							packetsSentInSec		= 0;
 	public int							packetsSentStartTick	= 0;
@@ -125,8 +166,8 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 		super(con);
 		state = GameClientState.CONNECTED;
 		_connectionStartTime = System.currentTimeMillis();
-		// _crypt = new GameCrypt();
-		gameCrypt = new StrixGameCrypt();
+		 _crypt = new GameCrypt();
+//		gameCrypt = new StrixGameCrypt();
 		if (Config.CHAR_STORE_INTERVAL > 0)
 		{
 			_autoSaveInDB = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new AutoSaveTask(), 300000L, (Config.CHAR_STORE_INTERVAL * 60000L));
@@ -185,7 +226,7 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 	public byte[] enableCrypt()
 	{
 		byte[] key = BlowFishKeygen.getRandomKey();
-		gameCrypt.setKey(key);
+		_crypt.setKey(key);
 		return key;
 	}
 	
@@ -207,14 +248,14 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 	@Override
 	public boolean decrypt(ByteBuffer buf, int size)
 	{
-		gameCrypt.decrypt(buf.array(), buf.position(), size);
+		_crypt.decrypt(buf.array(), buf.position(), size);
 		return true;
 	}
 	
 	@Override
 	public boolean encrypt(final ByteBuffer buf, final int size)
 	{
-		gameCrypt.encrypt(buf.array(), buf.position(), size);
+		_crypt.encrypt(buf.array(), buf.position(), size);
 		buf.position(buf.position() + size);
 		return true;
 	}
@@ -852,18 +893,6 @@ public class L2GameClient extends MMOClient<MMOConnection<L2GameClient>> impleme
 	public void setProtocolOk(boolean b)
 	{
 		_protocol = b;
-	}
-	
-	@Override
-	public void setStrixClientData(final StrixClientData clientData)
-	{
-		this.clientData = clientData;
-	}
-	
-	@Override
-	public StrixClientData getStrixClientData()
-	{
-		return clientData;
 	}
 	
 	private int revision = 0;

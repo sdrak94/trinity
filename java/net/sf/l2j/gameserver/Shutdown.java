@@ -514,7 +514,8 @@ public class Shutdown extends Thread
 		_log.info("TradeController: All count Item Saved");
 		Olympiad.getInstance().saveOlympiadStatus();
 		_log.info("Olympiad System: Data saved!!");
-
+		for (Savable sv : savables)
+			sv.store();
 		//GlobalVariablesManager.getInstance();
 		// Save all manor data
 		CastleManorManager.getInstance().save();

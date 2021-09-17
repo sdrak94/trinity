@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.logging.Level;
 
-import org.strixplatform.StrixPlatform;
-
+import Alpha.skillGuard.StuckSubGuard;
+import guard.HwidController;
 import luna.custom.captcha.instancemanager.BotsPreventionManager;
 import luna.custom.email.EmailRegistration;
 import luna.custom.guard.LunaSkillGuard;
@@ -25,7 +25,6 @@ import net.sf.l2j.gameserver.datatables.AdminCommandAccessRights;
 import net.sf.l2j.gameserver.datatables.CharSchemesTable;
 import net.sf.l2j.gameserver.datatables.MapRegionTable.TeleportWhereType;
 import net.sf.l2j.gameserver.datatables.SkillTable;
-import net.sf.l2j.gameserver.handler.itemhandlers.Gem;
 import net.sf.l2j.gameserver.instancemanager.CastleManager;
 import net.sf.l2j.gameserver.instancemanager.ClanHallManager;
 import net.sf.l2j.gameserver.instancemanager.CoupleManager;
@@ -43,6 +42,7 @@ import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.L2Skill;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.L2Character;
+import net.sf.l2j.gameserver.model.actor.instance.L2ClassMasterInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2TeleporterInstance;
 import net.sf.l2j.gameserver.model.entity.ClanHall;
@@ -71,6 +71,7 @@ import net.sf.l2j.gameserver.model.quest.QuestState;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
+import net.sf.l2j.gameserver.network.serverpackets.ClassUpgradeWnd;
 import net.sf.l2j.gameserver.network.serverpackets.Die;
 import net.sf.l2j.gameserver.network.serverpackets.EtcStatusUpdate;
 import net.sf.l2j.gameserver.network.serverpackets.ExBasicActionList;
@@ -109,7 +110,13 @@ public class EnterWorld extends L2GameClientPacket
 	protected void runImpl()
 	{
 		final L2PcInstance activeChar = getClient().getActiveChar();
-		if (StrixPlatform.getInstance().isPlatformEnabled())
+		if (activeChar == null)
+		{
+			_log.warning("EnterWorld failed! activeChar returned 'null'.");
+			getClient().closeNow();
+			return;
+		}
+		if (!activeChar.getClient().getFullHwid().isEmpty())
 		{
 			L2GameClient client = activeChar.getClient();
 			Connection con = null;
@@ -119,7 +126,7 @@ public class EnterWorld extends L2GameClientPacket
 				PreparedStatement statement;
 				statement = con.prepareStatement("UPDATE accounts set lasthwid = ? where login = ?");
 				// TODO Local Changes
-				statement.setString(1, client.getStrixClientData().getClientHWID());
+				statement.setString(1, client.getFullHwid());
 				// statement.setString(1, "LOCAL HWID");
 				statement.setString(2, activeChar.getAccountName());
 				statement.execute();
@@ -141,11 +148,9 @@ public class EnterWorld extends L2GameClientPacket
 			}
 			// activeChar.sendPacket(new ServerToClientCommunicationPacket("L2Trinity"));
 		}
-		if (activeChar == null)
+		if (!activeChar.getClient().getFullHwid().isEmpty())
 		{
-			_log.warning("EnterWorld failed! activeChar returned 'null'.");
-			getClient().closeNow();
-			return;
+			HwidController.getInstance().storeHwid(activeChar.getAccountName(), activeChar.getName(), activeChar.getHWID(), System.currentTimeMillis());
 		}
 		// Restore to instanced area if enabled
 		if (Config.RESTORE_PLAYER_INSTANCE)
@@ -325,7 +330,7 @@ public class EnterWorld extends L2GameClientPacket
 		{
 			activeChar.setInsideZone(L2Character.ZONE_CHAOTIC, false);
 			activeChar.getActingPlayer().setIsInFT(false);
-			activeChar.sendMessage("Pagan's Temple is a night zone!");
+			activeChar.sendMessage("Pagan's Temple disabled atm.");
 			activeChar.setIsPendingRevive(true);
 			ThreadPoolManager.getInstance().scheduleGeneral(new Runnable()
 			{
@@ -506,14 +511,15 @@ public class EnterWorld extends L2GameClientPacket
 		}
 		RegionBBSManager.getInstance().changeCommunityBoard();
 		TvTEvent.onLogin(activeChar);
-		if ((activeChar.getLevel() >= 20 && activeChar.getClassId().level() == 0) || (activeChar.getLevel() >= 40 && activeChar.getClassId().level() == 1) || (activeChar.getLevel() >= 76 && activeChar.getClassId().level() == 2))
-		{
-			Gem.sendClassChangeHTML(activeChar);
-		}
+		
+		if (L2ClassMasterInstance.hasValidClasses(activeChar))
+			activeChar.sendPacket(new ClassUpgradeWnd(activeChar));
 		if (BotsPreventionManager.get_validation() != null && BotsPreventionManager.get_validation().containsKey(activeChar.getObjectId()))
 		{
 			BotsPreventionManager.getInstance().validationtasks(activeChar);
 		}
+
+		StuckSubGuard.getInstance().checkPlayer(activeChar);
 		sendPacket(ActionFailed.STATIC_PACKET);
 		ThreadPoolManager.getInstance().scheduleGeneral(new teleportTask(activeChar), 250);
 		// DonationManager.getInstance().checkRewards(activeChar);

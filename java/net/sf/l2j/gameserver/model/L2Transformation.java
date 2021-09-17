@@ -15,8 +15,6 @@ package net.sf.l2j.gameserver.model;
 import java.util.ArrayList;
 
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
-import net.sf.l2j.gameserver.model.actor.transform.TransformType;
-import net.sf.l2j.gameserver.templates.StatsSet;
 
 /**
  * @author KenM

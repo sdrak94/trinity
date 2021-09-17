@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 
 import org.w3c.dom.Document;
 
-
 import net.sf.l2j.Config;
 import net.sf.l2j.util.IXmlReader;
 

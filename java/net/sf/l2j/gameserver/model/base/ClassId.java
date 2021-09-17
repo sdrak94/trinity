@@ -154,7 +154,7 @@ public enum ClassId
 	 shillienSaint(0x70, "Shillien Saint", true, Race.DarkElf, shillienElder),
 
 	 titan(0x71, "Titan", false, Race.Orc, destroyer),
-	 grandKhauatari(0x72, "Grand Khauatari", false, Race.Orc, tyrant),
+	 grandKhauatari(0x72, "Grand Khavatari", false, Race.Orc, tyrant),
 	 dominator(0x73, "Dominator", true, Race.Orc, overlord),
 	 doomcryer(0x74, "Doomcryer", true, Race.Orc, warcryer),
 

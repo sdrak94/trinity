@@ -1,22 +1,25 @@
 package luna.custom.globalScheduler;
 
+import ghosts.model.Ghost;
 import net.sf.l2j.gameserver.Announcements;
-import net.sf.l2j.gameserver.instancemanager.DayNightSpawnManager;
+import net.sf.l2j.gameserver.model.L2World;
+import net.sf.l2j.gameserver.model.actor.L2Character;
+import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 public class GlobalEventVariablesHolder
 {
-	boolean												_night		= false;
-	boolean												_olympiad	= false;
+	boolean	_pagansMode	= false;
+	boolean	_olympiad	= false;
 	
-	public void setNight(boolean val)
+	public void setPagansMode(boolean val)
 	{
-		_night = val;
-		nightMode();
+		_pagansMode = val;
+		pagansMode();
 	}
 	
-	public boolean getNight()
+	public boolean getPagansStatus()
 	{
-		return _night;
+		return _pagansMode;
 	}
 	
 	public void setOlympiad(boolean val)
@@ -29,24 +32,43 @@ public class GlobalEventVariablesHolder
 		return _olympiad;
 	}
 	
-	public void nightMode()
+	public void pagansMode()
 	{
-		if (_night)
+		if (_pagansMode)
 		{
-			//Announcements.getInstance().announceToAll("Night begins");
-			Announcements.getInstance().announceToAll("Pagan's Temple is open");
-			//DayNightSpawnManager.getInstance().spawnNightCreatures();
+			Announcements.getInstance().announceToAll("Pagan's Temple is open.");
 		}
 		else
 		{
-			DayNightSpawnManager.getInstance().kickAllPlayersFromPT();
-			//DayNightSpawnManager.getInstance().spawnDayCreatures();
-			//Announcements.getInstance().announceToAll("Day begins");
-			Announcements.getInstance().announceToAll("Pagan's Temple is forbidden atm.");
-			Announcements.getInstance().announceToAll("The undeads vanished.");
+			kickAllPlayersFromPT();
+			Announcements.getInstance().announceToAll("Pagan's Temple is now closed.");
+			//Announcements.getInstance().announceToAll("The undeads vanished.");
 		}
 	}
-	
+	public void kickAllPlayersFromPT()
+	{
+		for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
+		{
+
+			if (!(player instanceof Ghost) && player.getClient().isDetached())
+			{
+				continue;
+			}
+			if (player.isGM())
+			{
+				continue;
+			}
+			if (player.isInFT())
+			{
+				player.setIsPendingRevive(true);
+				player.teleToLocation(83380, 148107, -3404, true);
+				player.setInsideZone(L2Character.ZONE_FARM, false);
+				player.setInsideZone(L2Character.ZONE_CHAOTIC, false);
+				player.setIsInFT(false);
+				//player.sendMessage("The sun raised, the undeads vanished, so did you.");
+			}
+		}
+	}
 	public static GlobalEventVariablesHolder getInstance()
 	{
 		return SingletonHolder._instance;

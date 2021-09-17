@@ -26,7 +26,7 @@ public class FrintezzaInstanceHard extends Quest
 	{
 		1010027,1010060,1010061,1010062,1010063,1010064
 	};
-	private static String		qn			= "FrintezzaWorld";
+	private static String		qn			= "FrintezzaInstanceHard";
 	private static final int	INSTANCEID	= 5003;
 	private static boolean		debug		= false;
 
@@ -103,6 +103,7 @@ public class FrintezzaInstanceHard extends Quest
 		super(questId, name, descr);
 		addStartNpc(DEVICE);
 		addTalkId(DEVICE);
+		addTalkId(EXIT_DEVICE);
 		for (int mob : MOBS)
 			addKillId(mob);
 	}
@@ -278,6 +279,7 @@ public class FrintezzaInstanceHard extends Quest
 				auditInstances(player, template, instanceId);
 				teleportplayer(player, teleto);
 			}
+			storeGates(world);
 			spawnMobs(player, (FrintezzaWorld) world, null);
 			return instanceId;
 		}

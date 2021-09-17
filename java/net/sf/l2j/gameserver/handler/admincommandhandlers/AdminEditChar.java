@@ -85,7 +85,9 @@ private static Logger _log = Logger.getLogger(AdminEditChar.class.getName());
 
 private static final String[] ADMIN_COMMANDS =
 {
-	"admin_edit_character", "admin_current_player", "admin_nokarma", // this is to remove karma from selected char...
+	"admin_edit_character",
+	"admin_current_player",
+	"admin_nokarma", // this is to remove karma from selected char...
 	"admin_setkarma", // sets karma of target char to any amount. //setkarma <karma>
 	"admin_setpvp", // sets pvp of target char to any amount. //setpvp <pvp>
 	"admin_setpk", // sets pk of target char to any amount. //setpk <pk>
@@ -1974,7 +1976,7 @@ private void findCharactersPerHWID(L2PcInstance activeChar, String HWIDaddress) 
 				}
 				else
 				{
-					HWID = client.getStrixClientData().getClientHWID();
+					HWID = client.getFullHwid();
 					if (!HWID.equals(HWIDaddress))
 						continue;
 				}

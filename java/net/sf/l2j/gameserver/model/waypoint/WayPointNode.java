@@ -259,23 +259,5 @@ public class WayPointNode extends L2Object
 		}
 		return list;
 	}
-	
-	@Override
-	public int getHeading()
-	{
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-	
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
+
 }

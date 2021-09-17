@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import ghosts.model.Ghost;
+import inertia.controller.InertiaController;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import luna.custom.holder.LunaGlobalVariablesHolder;
@@ -1646,6 +1647,7 @@ public class NewDomination
 							player.stopAbnormalEffect(AbnormalEffect.HOLD_1);
 							player.setIsParalyzed(false);
 							player.setIsInvul(false);
+							InertiaController.getInstance().fetchChill(player).addCredit(Config.EVENT_CREDIT);
 						}
 						else
 						{

@@ -22,7 +22,6 @@ import java.util.logging.Logger;
 
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
-import net.sf.l2j.gameserver.GmListTable;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.util.Util;
 
@@ -205,7 +204,7 @@ public class HtmCache
 			_log.warning("Cache[HTML]: Missing HTML page: " + path);
 		}
 
-		GmListTable.broadcastMessageToGMs(path);
+		//GmListTable.broadcastMessageToGMs(path);
 		return content;
 	}
 	public String getHtm(String path)
@@ -220,7 +219,7 @@ public class HtmCache
 		{
 			content = loadFile(new File(Config.DATAPACK_ROOT, path));
 		}
-		GmListTable.broadcastMessageToGMs(path);
+		//GmListTable.broadcastMessageToGMs(path);
 		return content;
 	}
 	

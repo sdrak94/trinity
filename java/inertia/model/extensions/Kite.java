@@ -22,6 +22,8 @@ public class Kite extends AbstractBehave
 	{
 
 		L2PcInstance player = _autoChill.getActivePlayer();
+		if (player == null)
+			return;
 		L2Character attackTarget = (L2Character) player.getTarget();
 		if (attackTarget == null)
 			return;

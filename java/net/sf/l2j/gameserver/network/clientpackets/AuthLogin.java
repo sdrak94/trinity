@@ -15,20 +15,19 @@ package net.sf.l2j.gameserver.network.clientpackets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Arrays;
 import java.util.logging.Logger;
 
-import org.strixplatform.StrixPlatform;
-
+import guard.HwidBanController;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.LoginServerThread;
 import net.sf.l2j.gameserver.LoginServerThread.SessionKey;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.serverpackets.LeaveWorld;
-import net.sf.l2j.gameserver.network.serverpackets.ServerClose;
 
 public final class AuthLogin extends L2GameClientPacket
 {
-	private static Logger	_log	= Logger.getLogger(AuthLogin.class.getName());
+	private static Logger	_log		= Logger.getLogger(AuthLogin.class.getName());
 	// loginName + keys must match what the loginserver used.
 	private String			_loginName;
 	/*
@@ -41,16 +40,29 @@ public final class AuthLogin extends L2GameClientPacket
 	private int				_playKey2;
 	private int				_loginKey1;
 	private int				_loginKey2;
+
+	private byte[] guardData = null;
 	
 	@Override
 	protected void readImpl()
 	{
+
+		//System.out.println(_buf.limit());
+		//HexUtil.hexdump(_buf.array(), 77, 0, ' ', 4);
 		_loginName = readS().toLowerCase();
 		_playKey2 = readD();
 		_playKey1 = readD();
 		_loginKey1 = readD();
 		_loginKey2 = readD();
+		readD(); // lang
+		if (_buf.remaining() >= 32)
+		{
+			// last 32 bytes
+			guardData = new byte[32];
+			guardData = Arrays.copyOfRange(_buf.array(), _buf.limit() - 32, _buf.limit());
+		}
 	}
+	
 	@Override
 	protected void runImpl()
 	{
@@ -64,58 +76,19 @@ public final class AuthLogin extends L2GameClientPacket
 				client.setAccountName(_loginName);
 				LoginServerThread.getInstance().addWaitingClientAndSendRequest(_loginName, client, key);
 				getPassword(client);
+				client.setFullHwid(guardData);
 			}
 			else
 				client.close(new LeaveWorld());
-        if(StrixPlatform.getInstance().isPlatformEnabled())
-        {
-            if(client.getStrixClientData() != null)
-            {
-                client.getStrixClientData().setClientAccount(_loginName);
-                if(StrixPlatform.getInstance().isAuthLogEnabled())
-                {
-                	_log.warning("Account: [" + _loginName + "] HWID: [" + client.getStrixClientData().getClientHWID() + "] SessionID: [" + client.getStrixClientData().getSessionId() + "] entered to Game Server");
-                }
-            }
-            else
-            {
-                client.close(ServerClose.STATIC_PACKET);
-                return;
-            }
-        }
-	}	
-//	@Override
-//	protected void runImpl()
-//	{
-//		final L2GameClient client = getClient();
-//		if (_loginName.isEmpty() || !client.isProtocolOk())
-//		{
-//			client.close(new LeaveWorld());
-//			return;
-//		}
-//		SessionKey key = new SessionKey(_loginKey1, _loginKey2, _playKey1, _playKey2);
-//		if (Config.DEBUG)
-//		{
-//			_log.info("user:" + _loginName);
-//			_log.info("key:" + key);
-//		}
-//		// avoid potential exploits
-//		if (client.getAccountName() != null)
-//		{
-//			return;
-//		}
-//		
-//        if (LoginServerThread.getInstance().addGameServerLogin(_loginName, client))
-//        {
-//                client.setAccountName(_loginName);
-//                LoginServerThread.getInstance().addWaitingClientAndSendRequest(_loginName, client, key);
-//                getPassword(client);
-//        }
-//        else
-//        {
-//        	client.close(new LeaveWorld());
-//        }
-//	}
+		
+		if(!client.getFullHwid().isEmpty())
+		{
+			if(HwidBanController.getInstance().checkIfBanned(client.getFullHwid()))
+			{
+				client.closeNow();
+			}
+		}
+	}
 	
 	private void getPassword(final L2GameClient client)
 	{

@@ -472,8 +472,11 @@ public void deleteVisibleNpcSpawns()
 				L2Spawn spawn = target.getSpawn();
 				if (spawn != null)
 				{
-					spawn.stopRespawn();
-					SpawnTable.getInstance().deleteSpawn(spawn, false);
+					if (spawn.getInstanceId() == 0)
+					{
+						spawn.stopRespawn();
+						SpawnTable.getInstance().deleteSpawn(spawn, false);
+					}
 				}
 				_log.finest("Removed NPC " + target.getObjectId());
 			}

@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 
 import org.mmocore.network.SelectorConfig;
 import org.mmocore.network.SelectorThread;
-import org.strixplatform.StrixPlatform;
 
 // import luna.custom.BossEvent.PortalData;
 // import luna.custom.BossEvent.PortalScheduler;
@@ -25,7 +24,6 @@ import luna.custom.handler.items.bonanzo.BonanzoData;
 import luna.custom.loader.Loader;
 import luna.custom.ranking.Ranking;
 import luna.custom.ranking.xml.data.RanksParser;
-import luna.custom.utils.SpawnUtil;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.Server;
@@ -303,7 +301,6 @@ import net.sf.l2j.gameserver.network.GhostClient;
 import net.sf.l2j.gameserver.network.L2GameClient;
 import net.sf.l2j.gameserver.network.L2GamePacketHandler;
 import net.sf.l2j.gameserver.pathfinding.PathFinding;
-import net.sf.l2j.gameserver.script.mobius.ScriptEngineManager;
 import net.sf.l2j.gameserver.taskmanager.AutoAnnounceTaskManager;
 import net.sf.l2j.gameserver.taskmanager.KnownListUpdateTaskManager;
 import net.sf.l2j.gameserver.taskmanager.TaskManager;
@@ -340,7 +337,6 @@ public class GameServer
 	
 	public GameServer() throws Exception
 	{
-		StrixPlatform.getInstance();
 		long serverLoadStart = System.currentTimeMillis();
 		gameServer = this;
 		_log.finest("used mem:" + getUsedMemoryMB() + "MB");

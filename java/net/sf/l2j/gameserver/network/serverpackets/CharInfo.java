@@ -2,10 +2,12 @@ package net.sf.l2j.gameserver.network.serverpackets;
 
 import java.util.logging.Logger;
 
+import Alpha.autopots.Utils;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.NpcTable;
 import net.sf.l2j.gameserver.instancemanager.CursedWeaponsManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
+import net.sf.l2j.gameserver.model.base.Race;
 import net.sf.l2j.gameserver.model.events.DM;
 import net.sf.l2j.gameserver.model.events.newEvents.NewDM;
 import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
@@ -240,7 +242,7 @@ public class CharInfo extends L2GameServerPacket
 			writeD(_activeChar.getObjectId());
 			//writeS(_forceNoName ? "" : _activeChar.getAppearance().getVisibleName());
 
-			writeS(_forceNoName ? "" : getClient().getActiveChar().isGM()?_activeChar.getName():_activeChar.getAppearance().getVisibleName());
+			writeS(_forceNoName ? "" : getClient() == null? _activeChar.getAppearance().getVisibleName() : getClient().getActiveChar().isGM()?_activeChar.getName():_activeChar.getAppearance().getVisibleName());
 			writeD(_activeChar.getRace().getRealOrdinal());
 			if (olympiad)
 				writeD(Rnd.get(1));
@@ -342,8 +344,18 @@ public class CharInfo extends L2GameServerPacket
 			}
 			else
 			{
-				writeD(_inv.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-				writeD(_inv.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
+				int rhand = _inv.getPaperdollItemId(Inventory.PAPERDOLL_RHAND);
+				int lhand = _inv.getPaperdollItemId(Inventory.PAPERDOLL_LHAND);
+				
+				if (_activeChar.getRace() != Race.Kamael && _activeChar.getRace() != Race.DarkElf)
+				{
+					rhand = Utils.fixIdForNonKamaelDelf(_activeChar, rhand);
+				}
+				
+				writeD(rhand);
+				writeD(lhand);
+//				writeD(_inv.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
+//				writeD(_inv.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
 			}
 			if (_activeChar._inEventHG && NewHuntingGrounds._started)
 			{
@@ -397,7 +409,14 @@ public class CharInfo extends L2GameServerPacket
 			}
 			else
 			{
-				writeD(_inv.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
+				int lrhand = _inv.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND);
+				
+				if (_activeChar.getRace() != Race.Kamael && _activeChar.getRace() != Race.DarkElf)
+				{
+					lrhand = Utils.fixIdForNonKamaelDelf(_activeChar, lrhand);
+				}
+				
+				writeD(lrhand);
 			}
 			if (_activeChar._inEventHG && NewHuntingGrounds._started)
 			{

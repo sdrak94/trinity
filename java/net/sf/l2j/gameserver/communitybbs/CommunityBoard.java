@@ -23,7 +23,6 @@ import net.sf.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.TopBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.TopicBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.AugBBSManager;
-import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.BBSSchemeBufferInstance;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.ClassPathsBBSManager;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.CommunityBosses;
 import net.sf.l2j.gameserver.communitybbs.Manager.lunaservices.EventBBSManager;

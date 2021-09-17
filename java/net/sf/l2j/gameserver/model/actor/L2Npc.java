@@ -83,7 +83,7 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.itemcontainer.NpcInventory;
 import net.sf.l2j.gameserver.model.olympiad.Olympiad;
 import net.sf.l2j.gameserver.model.quest.Quest;
-import net.sf.l2j.gameserver.model.quest.QuestEventType;
+import net.sf.l2j.gameserver.model.quest.Quest.QuestEventType;
 import net.sf.l2j.gameserver.model.quest.QuestState;
 import net.sf.l2j.gameserver.model.zone.type.L2TownZone;
 import net.sf.l2j.gameserver.network.L2GameClient;
@@ -3307,18 +3307,7 @@ public class L2Npc extends L2Character
 	{
 		_tempSpawn = true;
 	}
-	
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-	
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
+
 	
 	public L2Npc scheduleDespawn(final long delay)
 	{

@@ -1497,6 +1497,10 @@ public abstract class Inventory extends ItemContainer
 					e.printStackTrace();
 				}
 			}
+//			if (item.getNonKamaelDisplayId() > 0)
+//			{
+//				return item.getNonKamaelDisplayId();
+//			}
 			return item.getItemId();
 		}
 		else if (slot == PAPERDOLL_HAIR)

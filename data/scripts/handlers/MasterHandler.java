@@ -10,6 +10,7 @@ import instances.Fafurion;
 import instances.FreyaInstance;
 import instances.FreyaInstanceHard;
 import instances.FrintezzaInstance;
+import instances.FrintezzaInstanceHard;
 import instances.Kamaloka;
 import instances.NewbieLair;
 import instances.Ultraverse;
@@ -30,17 +31,18 @@ public class MasterHandler
 		QuestManager.getInstance().addQuest(new Ultraverse(-1, "Ultraverse", "instances"));
 		QuestManager.getInstance().addQuest(new DemigodsLair(-1, "DemigodsLair", "instances"));
 		QuestManager.getInstance().addQuest(new ZakenInstance(-1, "ZakenInstance", "instances"));
-		QuestManager.getInstance().addQuest(new FrintezzaInstance(-1, "FrintezzaInstance", "instances"));
 		QuestManager.getInstance().addQuest(new FreyaInstance(-1, "FreyaInstance", "instances"));
 		QuestManager.getInstance().addQuest(new FreyaInstanceHard(-1, "FreyaInstanceHard", "instances"));
+		QuestManager.getInstance().addQuest(new FrintezzaInstance(-1, "FrintezzaInstance", "instances"));
+		QuestManager.getInstance().addQuest(new FrintezzaInstanceHard(-1, "FrintezzaInstanceHard", "instances"));
 
 		LOGGER.log(Level.WARNING, "Loaded Instances");
 	}
 	private static void loadAchievements()
 	{
-		QuestManager.getInstance().addQuest(new Achievements());
+		//QuestManager.getInstance().addQuest(new Achievements());
 
-		LOGGER.log(Level.WARNING, "Loaded Achievements");
+		//LOGGER.log(Level.WARNING, "Loaded Achievements");
 	}
 	private static void loadTransformations()
 	{

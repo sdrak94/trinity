@@ -26,6 +26,7 @@ import net.sf.l2j.gameserver.instancemanager.MercTicketManager;
 import net.sf.l2j.gameserver.model.actor.L2Character;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.actor.knownlist.NullKnownList;
+import net.sf.l2j.gameserver.model.base.Race;
 import net.sf.l2j.gameserver.model.itemcontainer.PcInventory;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.clientpackets.AbstractRefinePacket;
@@ -43,6 +44,7 @@ import net.sf.l2j.gameserver.templates.item.L2EtcItem;
 import net.sf.l2j.gameserver.templates.item.L2EtcItemType;
 import net.sf.l2j.gameserver.templates.item.L2Item;
 import net.sf.l2j.gameserver.templates.item.L2Weapon;
+import net.sf.l2j.gameserver.templates.item.L2WeaponType;
 import net.sf.l2j.gameserver.util.Broadcast;
 import net.sf.l2j.gameserver.util.GMAudit;
 import net.sf.l2j.util.Rnd;
@@ -1320,11 +1322,10 @@ public final class L2ItemInstance extends L2Object
 	
 	public int getElementDefAttr(byte element)
 	{
-		if(!canBeAttrEnchanted() && isArmor() && _elementals != null && _elementals.getElement() == element)
+		if (!canBeAttrEnchanted() && isArmor() && _elementals != null && _elementals.getElement() == element)
 		{
-			L2PcInstance player =  L2World.getInstance().findObject(getOwnerId()).getActingPlayer();
-			
-			//LunaLogger.getInstance().log("adrenaline_hacks", player.getName() +" " + getName() + " had illegal element");
+			L2PcInstance player = L2World.getInstance().findObject(getOwnerId()).getActingPlayer();
+			// LunaLogger.getInstance().log("adrenaline_hacks", player.getName() +" " + getName() + " had illegal element");
 			clearElementAttr();
 		}
 		if (isArmor() && _elementals != null && _elementals.getElement() == element)
@@ -2309,10 +2310,10 @@ public final class L2ItemInstance extends L2Object
 	{
 		return _item.getStandardShopItem();
 	}
+	
 	public boolean canBeAttrEnchanted()
 	{
 		boolean can = false;
-		
 		switch (_item.getBodyPart())
 		{
 			case L2Item.SLOT_CHEST:
@@ -2347,13 +2348,11 @@ public final class L2ItemInstance extends L2Object
 				can = false;
 				break;
 		}
-		if(isWeapon() && ( _item.getBodyPart() == L2Item.SLOT_R_HAND || _item.getBodyPart() == L2Item.SLOT_LR_HAND))
+		if (isWeapon() && (_item.getBodyPart() == L2Item.SLOT_R_HAND || _item.getBodyPart() == L2Item.SLOT_LR_HAND))
 			can = true;
-		
-		
-		
 		return can;
 	}
+	
 	public void addAutoAugmentation()
 	{
 		if (AbstractRefinePacket.isValidAutoAugment(this))
@@ -2629,10 +2628,12 @@ public final class L2ItemInstance extends L2Object
 	{
 		return _item.isDread();
 	}
+	
 	public boolean isCorrupted()
 	{
 		return _item.isCorrupted();
 	}
+	
 	public boolean isTit()
 	{
 		return _item.isTit();
@@ -2652,15 +2653,17 @@ public final class L2ItemInstance extends L2Object
 	{
 		return _item.isWarForged();
 	}
-
+	
 	public boolean isRelicJew()
 	{
 		return _item.isRelicJew();
 	}
+	
 	public boolean isTalisman()
 	{
 		return _item.isTalisman();
 	}
+	
 	public boolean isStarterItem()
 	{
 		return getUntradeableTime() == 9999999900004L;
@@ -2668,12 +2671,44 @@ public final class L2ItemInstance extends L2Object
 	
 	public int getDisplayId()
 	{
+		if (getItem() instanceof L2Weapon)
+		{
+			L2Weapon weap = (L2Weapon) getItem();
+			if (weap.getItemType() == L2WeaponType.CROSSBOW)
+			{
+				if (getActingPlayer().getRace() != Race.Kamael && getActingPlayer().getRace() != Race.DarkElf)
+				{
+					return getItem().getNonKamaelDisplayId();
+				}
+			}
+		}
 		return getItem().getDisplayId();
+	}
+	
+	public int getNonKamaelDisplayId()
+	{
+		return getItem().getNonKamaelDisplayId();
 	}
 	
 	public int getDisplayId1()
 	{
 		return getItem().getItemId();
+	}
+	
+	public int fixIdForNonKamaelDelf(int id)
+	{
+		L2Weapon weap = (L2Weapon) ItemTable.getInstance().getTemplate(id);
+		if (weap.getItemType() == L2WeaponType.CROSSBOW)
+		{
+			L2PcInstance player = L2World.getInstance().getPlayer(_ownerId);
+			if (player == null)
+				return id;
+			if (player.getRace() != Race.Kamael && player.getRace() != Race.DarkElf)
+			{
+				return getItem().getNonKamaelDisplayId();
+			}
+		}
+		return id;
 	}
 	
 	// Used for dress me engine
@@ -2715,25 +2750,8 @@ public final class L2ItemInstance extends L2Object
 	{
 		_tryingItemId = itemId;
 	}
+	
 
-	@Override
-	public int getHeading()
-	{
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-	}
-
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
 	
 	private boolean _fakeTempItem = false;
 	

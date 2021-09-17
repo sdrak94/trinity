@@ -6,10 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-import org.strixplatform.utils.ThreadPoolManager;
-
 import luna.custom.email.DonationCodeGenerator;
 import net.sf.l2j.L2DatabaseFactory;
+import net.sf.l2j.gameserver.ThreadPoolManager;
 
 public class DonateGiverTaskManager
 {
@@ -27,7 +26,7 @@ public class DonateGiverTaskManager
 	
 	protected DonateGiverTaskManager()
 	{
-		ThreadPoolManager.getInstance().scheduleAtFixedRate(() -> start(), 5000, 5000);
+		ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(() -> start(), 5000, 5000);
 		_log.info("DonateGiver: started.");
 	}
 	

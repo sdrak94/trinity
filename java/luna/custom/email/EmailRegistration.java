@@ -147,22 +147,27 @@ public class EmailRegistration
 		props.setProperty("mail.smtps.auth", "false");
 		props.put("mail.smtps.quitwait", "false");
 		Session session = Session.getInstance(props, null);
-		// -- Create a new message --
 		final MimeMessage msg = new MimeMessage(session);
-		// -- Set the FROM and TO fields --
-		msg.setFrom(new InternetAddress(Config.MAIL_USER));
-		msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail, false));
-		if (ccEmail.length() > 0)
+		try
 		{
-			msg.setRecipients(Message.RecipientType.CC, InternetAddress.parse(ccEmail, false));
+			msg.setFrom(new InternetAddress(Config.MAIL_USER));
+			msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail, false));
+			if (ccEmail.length() > 0)
+			{
+				msg.setRecipients(Message.RecipientType.CC, InternetAddress.parse(ccEmail, false));
+			}
+			msg.setSubject(title);
+			msg.setText(message, StandardCharsets.UTF_8.displayName(), "html");
+			msg.setSentDate(new Date());
+			SMTPTransport t = (SMTPTransport) session.getTransport("smtps");
+			t.connect("smtp.gmail.com", Config.MAIL_USER, Config.MAIL_PASSWORD);
+			t.sendMessage(msg, msg.getAllRecipients());
+			t.close();
 		}
-		msg.setSubject(title);
-		msg.setText(message, StandardCharsets.UTF_8.displayName(), "html");
-		msg.setSentDate(new Date());
-		SMTPTransport t = (SMTPTransport) session.getTransport("smtps");
-		t.connect("smtp.gmail.com", Config.MAIL_USER, Config.MAIL_PASSWORD);
-		t.sendMessage(msg, msg.getAllRecipients());
-		t.close();
+		catch (MessagingException e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
 	private static void sendEmail(final String email, final String message)
@@ -312,7 +317,7 @@ public class EmailRegistration
 			PreparedStatement statement = con.prepareStatement("INSERT INTO account_security (account,ip,hwid) VALUES (?,?,?)");
 			statement.setString(1, activeChar.getAccountName());
 			statement.setString(2, activeChar.getIP());
-			statement.setString(3, client.getStrixClientData().getClientHWID());
+			statement.setString(3, client.getFullHwid());
 			statement.execute();
 			statement.close();
 		}

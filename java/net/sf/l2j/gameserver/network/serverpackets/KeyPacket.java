@@ -14,9 +14,6 @@
  */
 package net.sf.l2j.gameserver.network.serverpackets;
 
-import org.strixplatform.StrixPlatform;
-import org.strixplatform.utils.StrixClientData;
-
 /**
  * This class ...
  *
@@ -28,20 +25,12 @@ public final class KeyPacket extends L2GameServerPacket
 
 	private byte[] _key;
 	private int _id;
-	private final StrixClientData clientData;
 
-	public KeyPacket(final byte[] key, final int id)
+	public KeyPacket(byte[] key, int id)
 	{
-		this._key = key;
-		this._id = id;
-		this.clientData = null;
+		_key = key;
+		_id = id;
 	}
-	
-    public KeyPacket(final byte[] key, final StrixClientData clientData)
-    {
-        this._key = key;
-        this.clientData = clientData;
-    }
 
 	@Override
 	public void writeImpl()
@@ -51,11 +40,6 @@ public final class KeyPacket extends L2GameServerPacket
 		for (int i = 0; i < 8; i++)
 		{
 			writeC(_key[i]); // key
-	        if(StrixPlatform.getInstance().isBackNotificationEnabled() && clientData != null)
-	        {
-	             writeC(clientData.getServerResponse().ordinal() + 1);
-	                //body.writeQ(); Resolved to send ban time expire.
-	        }
 		}
 		writeD(0x01);
 		writeD(0x01); // server id

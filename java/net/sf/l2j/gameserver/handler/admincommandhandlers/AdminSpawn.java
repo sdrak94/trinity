@@ -20,14 +20,12 @@ import java.util.logging.Logger;
 
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.GmListTable;
-import net.sf.l2j.gameserver.SevenSigns;
 import net.sf.l2j.gameserver.datatables.AdminCommandAccessRights;
 import net.sf.l2j.gameserver.datatables.NpcTable;
 import net.sf.l2j.gameserver.datatables.SpawnTable;
 import net.sf.l2j.gameserver.datatables.TeleportLocationTable;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
 import net.sf.l2j.gameserver.instancemanager.DayNightSpawnManager;
-import net.sf.l2j.gameserver.instancemanager.QuestManager;
 import net.sf.l2j.gameserver.instancemanager.RaidBossSpawnManager;
 import net.sf.l2j.gameserver.model.AutoChatHandler;
 import net.sf.l2j.gameserver.model.AutoSpawnHandler;
@@ -191,8 +189,8 @@ public boolean useAdminCommand(String command, L2PcInstance activeChar)
 		RaidBossSpawnManager.getInstance().reloadBosses();
 		AutoSpawnHandler.getInstance().reload();
 		AutoChatHandler.getInstance().reload();
-		SevenSigns.getInstance().spawnSevenSignsNPC();
-		QuestManager.getInstance().reloadAllQuests();
+		//SevenSigns.getInstance().spawnSevenSignsNPC();
+		//QuestManager.getInstance().reloadAllQuests();
 		GmListTable.broadcastMessageToGMs("NPC Respawn completed!");
 	}
 	else if (command.startsWith("admin_teleport_reload"))

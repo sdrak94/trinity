@@ -330,15 +330,4 @@ public class L2SummonInstance extends L2Summon
 		return super.getDefenseElementValue(attribute) + getOwner().getDefenseElementValue(attribute);
 	}
 
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-}
-
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
 }

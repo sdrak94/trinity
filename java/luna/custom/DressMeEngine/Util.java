@@ -29,7 +29,7 @@ public class Util
 	
 	public static String getItemIcon(int itemId)
 	{
-		return ItemTable.getInstance().getTemplate(itemId).getIcon();
+		return ItemTable.getInstance().getTemplate(itemId) == null ? "Icon.Default" : ItemTable.getInstance().getTemplate(itemId).getIcon();
 	}
 	
 	public static String formatPay(L2PcInstance player, long count, int item)

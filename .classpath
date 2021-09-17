@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="luna/museum/|net/sf/l2j/gameserver/model/actor/instance/L2MuseumStatueInstance.java|aluna/|aluna/datatables/|aluna/datatables/blueprint/|aluna/datatables/node/|aluna/drivers/|aluna/instance/|aluna/instance/world/|aluna/l2event/|aluna/l2event/events/|aluna/l2event/events/games/|aluna/l2event/events/worlds/|aluna/model/|aluna/model/controlers/|aluna/model/enums/|aluna/model/interfaces/|aluna/model/template/data/|aluna/model/template/enums/|aluna/model/template/event/|aluna/model/template/world/|aluna/model/world/|aluna/util/" including="**/*.java" kind="src" output="bin" path="java">
+	<classpathentry excluding="luna/museum/|net/sf/l2j/gameserver/model/actor/instance/L2MuseumStatueInstance.java|aluna/|aluna/datatables/|aluna/datatables/blueprint/|aluna/datatables/node/|aluna/drivers/|aluna/instance/|aluna/instance/world/|aluna/l2event/|aluna/l2event/events/|aluna/l2event/events/games/|aluna/l2event/events/worlds/|aluna/model/|aluna/model/controlers/|aluna/model/enums/|aluna/model/interfaces/|aluna/model/template/data/|aluna/model/template/enums/|aluna/model/template/event/|aluna/model/template/world/|aluna/model/world/|aluna/util/|scripts/transformations/|scripts/instances/DemigodsLair/|scripts/instances/DVC/|scripts/instances/Embryo/|scripts/instances/Fafurion/|scripts/instances/Kamaloka/|scripts/instances/NewbieLair/|scripts/instances/Tezza/|scripts/instances/Ultraverse/|scripts/instances/Zaken/|scripts/achievements/|net/sf/l2j/gameserver/instances/CrystalCaverns/|net/sf/l2j/gameserver/instances/DarkCloudMansion/|net/sf/l2j/gameserver/instances/DVC/|net/sf/l2j/gameserver/instances/Embryo/|net/sf/l2j/gameserver/instances/Fafurion/|net/sf/l2j/gameserver/instances/Kamaloka/" including="**/*.java" kind="src" output="bin" path="java">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="optional" value="true"/>
@@ -18,7 +18,6 @@
 	<classpathentry kind="lib" path="lib/commons-pool-1.5.4.jar"/>
 	<classpathentry kind="lib" path="lib/ecj.jar"/>
 	<classpathentry kind="lib" path="lib/geodata.jar"/>
-	<classpathentry kind="lib" path="lib/javax.mail.jar"/>
 	<classpathentry kind="lib" path="lib/javolution-5.5.1.jar"/>
 	<classpathentry kind="lib" path="lib/JDA-4.1.1_101-withDependencies.jar"/>
 	<classpathentry kind="lib" path="lib/jsse.jar"/>
@@ -26,7 +25,6 @@
 	<classpathentry kind="lib" path="lib/jython-2.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/jython-engine.jar"/>
 	<classpathentry kind="lib" path="lib/mmocore.jar"/>
-	<classpathentry kind="lib" path="lib/strixplatform-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/trove-3.0.3.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.7-bin.jar"/>
 	<classpathentry kind="lib" path="lib/bsh-2.0b5.jar"/>
@@ -36,5 +34,7 @@
 	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="G:/LINEAGE PROJECTS/SOURCES/L2TRINITY/lib/commons-io-2.8.0.jar"/>
 	<classpathentry kind="lib" path="lib/java-engine.jar"/>
+	<classpathentry kind="lib" path="lib/mail-1.4.7.jar" sourcepath="C:/Users/Brado/Desktop/New folder/mail-1.4.7-sources.jar"/>
+	<classpathentry kind="lib" path="lib/activation-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

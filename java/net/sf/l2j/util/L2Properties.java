@@ -1,10 +1,4 @@
 package net.sf.l2j.util;
-/*
- * Decompiled with CFR 0.139.
- * Could not load the following classes:
- * org.slf4j.Logger
- * org.slf4j.LoggerFactory
- */
 
 import java.io.File;
 import java.io.FileInputStream;

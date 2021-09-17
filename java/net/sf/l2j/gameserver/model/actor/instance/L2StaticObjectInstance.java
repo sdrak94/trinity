@@ -347,14 +347,5 @@ public class L2StaticObjectInstance extends L2Character
     {
     	activeChar.sendPacket(new StaticObject(this));
     }
-	@Override
-	public int getInstanceWorld()
-	{
-		return getInstanceId();
-}
-	@Override
-	public ILocational getLocation()
-	{
-		return this.getLoc();
-	}
+
 }

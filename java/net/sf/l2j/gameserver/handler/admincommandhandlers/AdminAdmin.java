@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.util.StringTokenizer;
 
 import ghosts.controller.GhostTemplateTable;
-import inertia.controller.InertiaController;
 import inertia.model.extensions.tables.InertiaConfigurationTable;
 import luna.custom.DressMeEngine.DressMeLoader;
 import luna.custom.handler.items.bdoBox.BdoData;

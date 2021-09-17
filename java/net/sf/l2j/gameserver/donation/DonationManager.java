@@ -24,12 +24,11 @@ import javax.mail.Session;
 import javax.mail.Store;
 import javax.mail.search.FlagTerm;
 
-import org.strixplatform.utils.ThreadPoolManager;
-
 import com.sun.mail.imap.IMAPFolder;
 
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
+import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.datatables.CharNameTable;
 import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -53,7 +52,7 @@ public final class DonationManager
 		{
 			if (!Config.GMAIL_ADDRESS.isEmpty() && !Config.GMAIL_PASSWORD.isEmpty())
 			{
-				ThreadPoolManager.getInstance().scheduleAtFixedRate(new DonationTask(), Config.DONATION_CHECKER_INITIAL_DELAY, Config.DONATION_CHECKER_INTERVAL);
+				ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new DonationTask(), Config.DONATION_CHECKER_INITIAL_DELAY, Config.DONATION_CHECKER_INTERVAL);
 			}
 		}
 	}

@@ -6,8 +6,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import org.strixplatform.utils.ThreadPoolManager;
-
 import gnu.trove.map.hash.TIntLongHashMap;
 import inertia.model.IInertiaBehave;
 import inertia.model.Inertia;
@@ -21,10 +19,11 @@ import luna.PassportManager;
 import luna.PlayerPassport;
 import luna.custom.globalScheduler.ITimeTrigger;
 import luna.custom.globalScheduler.RealTimeController;
-import luna.custom.utils.ThreadPool;
+import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.Shutdown;
 import net.sf.l2j.gameserver.Shutdown.Savable;
+import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.network.clientpackets.RequestBypassToServer;
 
@@ -55,7 +54,6 @@ public class InertiaController implements IBypassHandler, Savable, ITimeTrigger
 					INERTIA_POOL.execute(inertia);
 			}
 			ThreadPoolManager.getInstance().schedule(this, TICKS);
-			
 		}
 	}
 	
@@ -86,6 +84,12 @@ public class InertiaController implements IBypassHandler, Savable, ITimeTrigger
 		final var autoChill = fetchChill(player);
 		final StringTokenizer st = new StringTokenizer(cmd);
 		st.nextToken();
+		if (cmd.startsWith("chill_toggle"))
+		{
+			autoChill.setRunning(!autoChill.isRunning());
+			autoChill.render();
+			return true;
+		}
 		if (cmd.startsWith("chill_start"))
 		{
 			autoChill.setRunning(true);
@@ -108,6 +112,43 @@ public class InertiaController implements IBypassHandler, Savable, ITimeTrigger
 		{
 			autoChill.render();
 			return true;
+		}
+		else if (cmd.startsWith("chill_autopot"))
+		{
+			if (st.hasMoreTokens())
+			{
+				String type = cmd.split(" ")[1];
+				String perc = cmd.split(" ")[2];
+				if ((type.isEmpty() || perc.isEmpty()))
+				{
+					player.sendMessage("You have to put numeric values between 1-99.");
+					autoChill.render();
+					return true;
+				}
+				if (perc.length() > 2)
+				{
+					player.sendMessage("You have to put numeric values between 1-99.");
+					autoChill.render();
+					return true;
+				}
+				else
+				{
+					try
+					{
+						final int percent = Integer.parseInt(perc);
+						player.setVar("perc_autopot_" + type, percent);
+						if (type.equalsIgnoreCase("mp"))
+							type = type.replace("mp", "Rice Cake");
+						player.sendMessage("Auto " + type.toUpperCase() + " Percentage : " + perc + "%");
+					}
+					catch (NumberFormatException e)
+					{
+						player.sendMessage("You have to put numeric values between 1-99.");
+						autoChill.render();
+						return true;
+					}
+				}
+			}
 		}
 		else if (cmd.startsWith("chill_attack_type"))
 		{
@@ -332,35 +373,31 @@ public class InertiaController implements IBypassHandler, Savable, ITimeTrigger
 		}
 	}
 	
-	@Override
-	public void notify(String dayName, String timeString)
+	public ConcurrentHashMap<PlayerPassport, Inertia> getInertias()
 	{
-		// if (timeString.equals(Config.DAILY_CREDIT_TIME))
-		// {
-		// for (final var autoChill : _playerChills.values())
-		// {
-		// autoChill.addCredit(Config.DAILY_CREDIT);
-		// final var player = autoChill.getActivePlayer();
-		//
-		// if (player != null)
-		// {
-		// player.sendMessage(String.format("You have been rewarded with %.2f hours of daily auto chill credit.", Config.DAILY_CREDIT / 3_600_000D));
-		//
-		// if(player.isPremium())
-		// {
-		// autoChill.addCredit(Config.DAILY_CREDIT_PREMIUM_BONUS);
-		// player.sendMessage(String.format("You have been rewarded with extra %.2f hours.", Config.DAILY_CREDIT_PREMIUM_BONUS / 3_600_000D));
-		// }
-		//
-		// }
-		// }
-		// }
+		return _playerInertias;
 	}
-
+	
 	@Override
-	public void notify(int day, String trigger)
+	public void notify(int dayName, String timeString)
+	{
+		if (timeString.equals(Config.DAILY_CREDIT_TIME))
+		{
+			for (final var autoChill : _playerInertias.values())
+			{
+				autoChill.setCredits(Config.DAILY_CREDIT * 3_600_000);
+				final var player = autoChill.getActivePlayer();
+				if (player != null)
+				{
+					player.sendMessage(String.format("You have been rewarded with %.2f hours of daily auto chill credit.", Config.DAILY_CREDIT / 3_600_000D));
+				}
+			}
+		}
+	}
+	
+	@Override
+	public void notify(String day, String trigger)
 	{
 		// TODO Auto-generated method stub
-		
 	}
 }

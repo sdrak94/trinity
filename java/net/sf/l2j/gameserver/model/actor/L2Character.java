@@ -93,7 +93,7 @@ import net.sf.l2j.gameserver.model.events.newEvents.NewHuntingGrounds;
 import net.sf.l2j.gameserver.model.events.newEvents.NewTvT;
 import net.sf.l2j.gameserver.model.itemcontainer.Inventory;
 import net.sf.l2j.gameserver.model.quest.Quest;
-import net.sf.l2j.gameserver.model.quest.QuestEventType;
+import net.sf.l2j.gameserver.model.quest.Quest.QuestEventType;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 import net.sf.l2j.gameserver.network.serverpackets.AbstractNpcInfo;
 import net.sf.l2j.gameserver.network.serverpackets.ActionFailed;
@@ -5636,6 +5636,8 @@ public abstract class L2Character extends L2Object
 			else
 				return;
 		}
+		if (getInstanceId() == 0)
+			setInstanceId(0);
 		getWorldRegion().revalidateZones(this);
 	}
 	
@@ -6237,7 +6239,10 @@ public abstract class L2Character extends L2Object
 	{
 		return isInsideRadius(object.getX(), object.getY(), object.getZ(), radius, checkZ, strictCheck);
 	}
-	
+	public final boolean isInsideRadius(Location object, int radius, boolean checkZ, boolean strictCheck)
+	{
+		return isInsideRadius(object.getX(), object.getY(), object.getZ(), radius, checkZ, strictCheck);
+	}
 	/**
 	 * Check if this object is inside the given plan radius around the given point. Warning: doesn't cover collision radius!<BR>
 	 * <BR>

@@ -60,7 +60,7 @@ public class L2EventZone extends L2ZoneType
 						continue;
 					}
 					
-					String plr_hwid = player.getClient().getStrixClientData().getClientHWID();
+					String plr_hwid = player.getClient().getFullHwid();
 					if (plr_hwid.equalsIgnoreCase(hwid))
 					{
 						character.setIsPendingRevive(true);

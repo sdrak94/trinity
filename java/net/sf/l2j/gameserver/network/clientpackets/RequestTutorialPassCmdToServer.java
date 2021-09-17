@@ -23,10 +23,8 @@ import luna.custom.handler.items.bonanzo.BonanzoData;
 import luna.custom.handler.items.bonanzo.BonanzoData.RewardData;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.datatables.ItemTable;
-import net.sf.l2j.gameserver.model.L2World;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 import net.sf.l2j.gameserver.model.quest.QuestState;
-import net.sf.l2j.gameserver.network.serverpackets.ExShowScreenMessage;
 import net.sf.l2j.gameserver.network.serverpackets.TutorialCloseHtml;
 import net.sf.l2j.gameserver.templates.item.L2Item;
 import net.sf.l2j.gameserver.util.Util;
@@ -97,12 +95,12 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 									{
 										L2Item reward = ItemTable.getInstance().getTemplate(item.getItemId());
 										
-										for (L2PcInstance allPlayers : L2World.getInstance().getAllPlayers().values())
-										{
-											if(player.isGM())
-												break;
-											allPlayers.sendPacket(new ExShowScreenMessage(1, -1, 2, 0, 1, 0, 0, true, 5000, 0, player.getName() +" has obtained "+ EnchDisp+ reward.getName() +" from " + item.getTitleToDisplay()));
-										}
+//										for (L2PcInstance allPlayers : L2World.getInstance().getAllPlayers().values())
+//										{
+//											if(player.isGM())
+//												break;
+//											allPlayers.sendPacket(new ExShowScreenMessage(1, -1, 2, 0, 1, 0, 0, true, 5000, 0, player.getName() +" has obtained "+ EnchDisp+ reward.getName() +" from " + item.getTitleToDisplay()));
+//										}
 									}
 									if(item.getAug())
 									{
