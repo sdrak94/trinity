@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import ghosts.model.Ghost;
+import inertia.controller.InertiaController;
 import javolution.text.TextBuilder;
 import javolution.util.FastList;
 import javolution.util.FastMap;
@@ -1803,6 +1804,7 @@ public class NewHuntingGrounds
 							player.setIsInvul(false);
 							player.getStatus().setCurrentHp(player.getMaxHp());
 							player.getStatus().setCurrentCp(player.getMaxCp());
+							InertiaController.getInstance().fetchChill(player).addCredit(Config.EVENT_CREDIT);
 						}
 						else
 						{

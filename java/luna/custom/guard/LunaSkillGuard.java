@@ -103,7 +103,7 @@ public class LunaSkillGuard
 				if (!classSkillIds.contains(skill.getId()))
 				{
 					// System.out.println("removed skill: "+ skill.getName());
-					LunaLogger.getInstance().log("incorrect_skills", "Player: " + player.getName() + " has incorrect skill: "+ skill.getName() + " ID: " + skill.getId() + " on class: " +player.getClassId().getName());
+					//LunaLogger.getInstance().log("incorrect_skills", "Player: " + player.getName() + " has incorrect skill: "+ skill.getName() + " ID: " + skill.getId() + " on class: " +player.getClassId().getName());
 					//player.removeSkill(skill.getId());
 					//player.sendSkillList();
 					continue;

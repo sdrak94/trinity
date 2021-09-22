@@ -18,10 +18,22 @@ public class DressMeHandler
 	
 	public static void tryingItem(L2PcInstance player, L2ItemInstance item, int visual)
 	{
+		boolean isWeapon = item.isWeapon();
+		
+		if (player.isTrying() && isWeapon)
+		{
+			player.sendMessage("You are already Trying an item.");
+			return;
+		}
+		
 		int tryTime = 2500;
 		item.setTryingItemId(visual);
 		if (visual > 0)
 		{
+			if(isWeapon)
+			{
+				player.setIsTrying(true);
+			}
 			String itemName = Util.getItemName(visual);
 			player.sendMessage("You are now trying " + Util.getItemName(visual));
 			ThreadPoolManager.getInstance().scheduleGeneral(() ->
@@ -31,6 +43,10 @@ public class DressMeHandler
 					if (item != null)
 					{
 						player.sendMessage("You are no longer trying " + itemName);
+						if(isWeapon)
+						{
+							player.setIsTrying(false);
+						}
 						DressMeHandler.tryingItem(player, item, 0);
 						player.broadcastUserInfo();
 					}

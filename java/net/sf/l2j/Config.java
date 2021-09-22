@@ -1254,6 +1254,10 @@ public final class Config
 	public static int					KAMALOKA_SUPPORT_PVPS;
 	public static int					KAMALOKA_LEVELS;
 	
+	public static int					KAMALOKA_HARD_PVPS;
+	public static int					KAMALOKA_HARD_SUPPORT_PVPS;
+	public static int					KAMALOKA_HARD_LEVELS;
+	
 	public static int					EMBRYO_PVPS;
 	public static int					EMBRYO_SUPPORT_PVPS;
 	public static int					EMBRYO_LEVELS;
@@ -1319,37 +1323,41 @@ public final class Config
 	{
 		ExProperties INSTANCES = load(INSTANCES_FILE);
 		
-		ZAKEN_PVPS = INSTANCES.getProperty("zaken_pvps", 1);
-		ZAKEN_SUPPORT_PVPS = INSTANCES.getProperty("zaken_support_pvps", 1);
-		ZAKEN_LEVELS = INSTANCES.getProperty("zaken_levels", 1);
-		
-		ZAKEN_HARD_PVPS = INSTANCES.getProperty("zaken_hard_pvps", 1);
-		ZAKEN_HARD_SUPPORT_PVPS = INSTANCES.getProperty("zaken_hard_support_pvps", 1);
-		ZAKEN_HARD_LEVELS = INSTANCES.getProperty("zaken_hard_levels", 1);
-		
-		
-		FRINTEZZA_PVPS = INSTANCES.getProperty("frintezza_pvps", 1);
-		FRINTEZZA_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_support_pvps", 1);
-		FRINTEZZA_LEVELS = INSTANCES.getProperty("frintezza_levels", 1);
-		
-		FRINTEZZA_HARD_PVPS = INSTANCES.getProperty("frintezza_hard_pvps", 1);
-		FRINTEZZA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_hard_support_pvps", 1);
-		FRINTEZZA_HARD_LEVELS = INSTANCES.getProperty("frintezza_hard_levels", 1);
-		
-		
-		FREYA_PVPS = INSTANCES.getProperty("freya_pvps", 1);
-		FREYA_SUPPORT_PVPS = INSTANCES.getProperty("freya_support_pvps", 1);
-		FREYA_LEVELS = INSTANCES.getProperty("freya_levels", 1);
-		
-		FREYA_HARD_PVPS = INSTANCES.getProperty("freya_hard_pvps", 1);
-		FREYA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("freya_hard_support_pvps", 1);
-		FREYA_HARD_LEVELS = INSTANCES.getProperty("freya_hard_levels", 1);
+//		ZAKEN_PVPS = INSTANCES.getProperty("zaken_pvps", 1);
+//		ZAKEN_SUPPORT_PVPS = INSTANCES.getProperty("zaken_support_pvps", 1);
+//		ZAKEN_LEVELS = INSTANCES.getProperty("zaken_levels", 1);
+//		
+//		ZAKEN_HARD_PVPS = INSTANCES.getProperty("zaken_hard_pvps", 1);
+//		ZAKEN_HARD_SUPPORT_PVPS = INSTANCES.getProperty("zaken_hard_support_pvps", 1);
+//		ZAKEN_HARD_LEVELS = INSTANCES.getProperty("zaken_hard_levels", 1);
+//		
+//		
+//		FRINTEZZA_PVPS = INSTANCES.getProperty("frintezza_pvps", 1);
+//		FRINTEZZA_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_support_pvps", 1);
+//		FRINTEZZA_LEVELS = INSTANCES.getProperty("frintezza_levels", 1);
+//		
+//		FRINTEZZA_HARD_PVPS = INSTANCES.getProperty("frintezza_hard_pvps", 1);
+//		FRINTEZZA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("frintezza_hard_support_pvps", 1);
+//		FRINTEZZA_HARD_LEVELS = INSTANCES.getProperty("frintezza_hard_levels", 1);
+//		
+//		
+//		FREYA_PVPS = INSTANCES.getProperty("freya_pvps", 1);
+//		FREYA_SUPPORT_PVPS = INSTANCES.getProperty("freya_support_pvps", 1);
+//		FREYA_LEVELS = INSTANCES.getProperty("freya_levels", 1);
+//		
+//		FREYA_HARD_PVPS = INSTANCES.getProperty("freya_hard_pvps", 1);
+//		FREYA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("freya_hard_support_pvps", 1);
+//		FREYA_HARD_LEVELS = INSTANCES.getProperty("freya_hard_levels", 1);
 
 
 
 		KAMALOKA_PVPS = INSTANCES.getProperty("kamaloka_pvps", 70);
 		KAMALOKA_SUPPORT_PVPS = INSTANCES.getProperty("kamaloka_support_pvps", 35);
 		KAMALOKA_LEVELS = INSTANCES.getProperty("kamaloka_level", 87);
+
+		KAMALOKA_HARD_PVPS = INSTANCES.getProperty("kamaloka_hard_pvps", 1000);
+		KAMALOKA_HARD_SUPPORT_PVPS = INSTANCES.getProperty("kamaloka_hard_support_pvps", 600);
+		KAMALOKA_HARD_LEVELS = INSTANCES.getProperty("kamaloka_hard_level", 91);
 		
 		EMBRYO_PVPS = INSTANCES.getProperty("embryo_pvps", 500);
 		EMBRYO_SUPPORT_PVPS = INSTANCES.getProperty("embryo_support_pvps", 250);
@@ -1502,6 +1510,7 @@ public final class Config
 		{
 			_log.info("Loading GameServer Configuration Files...");
 			loadSchemeBuffer();
+			loadInstances();
 			InputStream is = null;
 			try
 			{

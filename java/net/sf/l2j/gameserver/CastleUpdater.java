@@ -31,12 +31,12 @@ public class CastleUpdater implements Runnable
 			{
 				Castle castle = CastleManager.getInstance().getCastleById(_clan.getHasCastle());
 				
-				warehouse.addItem("Castle", 4357, 2000, null, null); //3000 silver
+				warehouse.addItem("Castle", 97003, 3000, null, null); //3000 silver
 				warehouse.addItem("Castle", 961, 4, null, null); //4 crystal enchant weapon
 				warehouse.addItem("Castle", 962, 20, null, null); //20 crystal enchant armor
 				warehouse.addItem("Castle", 5283, 15, null, null); //15 rice cake
-				warehouse.addItem("Castle", 9546+Rnd.get(6), 1, null, null); // random elemental stone
-				warehouse.addItem("Castle", 4355, 500, null, null);   //blue eva
+				warehouse.addItem("Castle", 9546+Rnd.get(6), 2, null, null); // random elemental stone
+				warehouse.addItem("Castle", 4355, 2000, null, null);   //blue eva
 				
 				if (Rnd.get(100) < 12) warehouse.addItem("Castle", 8752, 1, null, null); // high life stone
 				

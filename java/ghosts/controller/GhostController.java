@@ -111,6 +111,8 @@ public class GhostController
 		L2World.getInstance().addVisibleObject(ghost, ghost.getPosition().getWorldRegion());
 		// ghost.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(ghost.getX() + Rnd.get(-1000, 1000), ghost.getY() + Rnd.get(-1000, 1000), ghost.getZ()));
 		ghost.setupAutoChill();
+		ghost.setProtection(false);
+		ghost.setForceNoSpawnProtection(true);
 		RegionBBSManager.getInstance().changeCommunityBoard();
 	}
 	
@@ -167,6 +169,7 @@ public class GhostController
 		newGhost.setNameColorsDueToPVP();
 		newGhost.buffSelf();
 		newGhost.setClient(null);
+		
 	}
 	
 	private void giveInitItems(final Ghost ghost)

@@ -51,11 +51,15 @@ public class L2PaganZone extends L2ZoneType
 				String hwid = ((L2PcInstance) character).getHWID();
 				for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
 				{
+					if (character.isInFunEvent() || player.isInFunEvent())
+					{
+						continue;
+					}
 					if (!(player instanceof Ghost) && player.getClient().isDetached())
 					{
 						continue;
 					}
-					if (!(player.isInsideZone(L2Character.ZONE_FARM) || player.isInsideZone(L2Character.ZONE_RAID) || player.isInHuntersVillage() || player.isInHuntersVillage()))
+					if (!(player.isInsideZone(L2Character.ZONE_FARM) || player.isInsideZone(L2Character.ZONE_RAID) || player.isInsideZone(L2Character.ZONE_CHAOTIC) || player.isInsideZone(L2Character.ZONE_EVENT) || player.isInHuntersVillage() || player.isInPI()))
 					{
 						continue;
 					}
@@ -67,7 +71,8 @@ public class L2PaganZone extends L2ZoneType
 					{
 						continue;
 					}
-					String plr_hwid = player.getClient().getFullHwid();
+					String plr_hwid = player.getHWID();
+					// String plr_hwid = character.getName();
 					if (plr_hwid.equalsIgnoreCase(hwid))
 					{
 						character.setIsPendingRevive(true);
@@ -84,6 +89,26 @@ public class L2PaganZone extends L2ZoneType
 						}
 					}
 				}
+				for (L2PcInstance player : L2World.getInstance().getAllPlayers().values())
+				{
+					if (character instanceof Ghost || player instanceof Ghost)
+						continue;
+					String HWID = player.getHWID();
+					String HWID2 = character.getActingPlayer().getHWID();
+					if (HWID == null || HWID2 == null)
+						continue;
+					if (HWID.equalsIgnoreCase(HWID2))
+					{
+						if (player.isInActiveFunEvent())
+						{
+							character.setIsPendingRevive(true);
+							character.teleToLocation(83380, 148107, -3404, true);
+							character.setInsideZone(L2Character.ZONE_FARM, false);
+							character.sendMessage("You can't have multiple windows in Farm/Event/PvP zones.");
+							break;
+						}
+					}
+				}
 			}
 			if (_id == 60003 && !character.getActingPlayer().isInFT()) // FT
 			{
@@ -91,30 +116,6 @@ public class L2PaganZone extends L2ZoneType
 				character.setInsideZone(L2Character.ZONE_CHAOTIC, true);
 				character.getActingPlayer().setIsInFT(true);
 				character.sendMessage("You have entered a chaotic zone, where no penalty is applied upon death with karma and karma gain is reduced by 40%");
-				character.sendMessage("You have entered Pagan's Temple grounds, you cannot use S grade or below weapons or armors");
-				if (!character.isGM())
-				{
-					boolean update = false;
-					for (L2ItemInstance item : character.getInventory().getItems())
-					{
-						if (item != null && item.isEquipped())
-						{
-							if (item.isARestrictedItemFT())
-							{
-								if (item.isAugmented())
-									item.getAugmentation().removeBonus(character.getActingPlayer());
-								L2ItemInstance[] unequiped = character.getInventory().unEquipItemInBodySlotAndRecord(character.getInventory().getSlotFromItem(item));
-								InventoryUpdate iu = new InventoryUpdate();
-								for (L2ItemInstance element : unequiped)
-									iu.addModifiedItem(element);
-								character.sendPacket(iu);
-								update = true;
-							}
-						}
-					}
-					if (update)
-						character.getActingPlayer().broadcastUserInfo();
-				}
 			}
 		}
 	}

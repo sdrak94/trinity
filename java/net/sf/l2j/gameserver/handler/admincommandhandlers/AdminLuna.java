@@ -8,6 +8,7 @@ import ghosts.controller.GhostController;
 import ghosts.controller.GhostTemplateTable;
 import ghosts.model.Ghost;
 import inertia.controller.InertiaController;
+import inertia.model.Inertia;
 import luna.custom.LunaVariables;
 import luna.custom.email.DonationCodeGenerator;
 import luna.custom.handler.items.bonanzo.BonanzoData;
@@ -29,29 +30,13 @@ public class AdminLuna implements IAdminCommandHandler
 {
 	private static final String[]			ADMIN_COMMANDS	=
 	{
-		"admin_send_donate",
-		"admin_flagall",
-		"admin_flag",
-		"admin_unlockdown",
-		"admin_reward_all",
-		"admin_reward_all_range",
-		"admin_setfarmevent",
-		"admin_announcescreen",
-		"admin_kickfromfarmevent",
-		"admin_reward_pt",
-		"admin_reward_cc",
-		"admin_korean_cubics_denied",
-		"admin_korean_res_denied",
-		"admin_korean_hero_denied",
-		"admin_korean_marriage_denied",
-		"admin_enable_custom_pvp_event",
-		"admin_custom_pvp_event_zoneid",
-		"admin_checksb",
-		"admin_bonanzo_reload",
-		"admin_checksb2",
-		"admin_spawnrandom",
-		"admin_delete_ghost",
-		"admin_renderchill"
+		"admin_send_donate", "admin_flagall", "admin_flag",
+		"admin_unlockdown", "admin_reward_all", "admin_reward_all_range", "admin_setfarmevent",
+		"admin_announcescreen", "admin_kickfromfarmevent", "admin_reward_pt", "admin_reward_cc",
+		"admin_korean_cubics_denied", "admin_korean_res_denied", "admin_korean_hero_denied",
+		"admin_korean_marriage_denied", "admin_enable_custom_pvp_event", "admin_custom_pvp_event_zoneid",
+		"admin_checksb", "admin_bonanzo_reload", "admin_checksb2", "admin_spawnrandom", "admin_delete_ghost",
+		"admin_renderchill", "admin_addtime"
 	};
 	private static List<L2FenceInstance>	_fences			= new ArrayList<L2FenceInstance>();
 	
@@ -80,6 +65,45 @@ public class AdminLuna implements IAdminCommandHandler
 				// parameter
 				activeChar.sendMessage("2Usage: //send_donate email ammount");
 			}
+		}
+		else if (command.startsWith("admin_addtime"))
+		{
+			StringTokenizer st = new StringTokenizer(command);
+			st.nextToken();
+			if (st.countTokens() != 2)
+			{
+				activeChar.sendMessage("Usage: //addtime name time");
+				return false;
+			}
+			else
+			{
+				String name = st.nextToken();
+				String ammount = st.nextToken();
+				try
+				{
+					try
+					{
+						L2PcInstance player = L2World.getInstance().getPlayer(name);
+						int time = Integer.parseInt(ammount);
+						Inertia inertia = InertiaController.getInstance().fetchChill(player);
+						inertia.addCredit(time * 3_600_000);
+						activeChar.sendMessage("You added " + time + " hours to " + player.getName());
+					}
+					catch (NullPointerException e)
+					{
+						activeChar.sendMessage("the character: " + name + " doesn't exist.");
+					}
+					catch (NumberFormatException ee)
+					{
+						activeChar.sendMessage("Specify a numeric number after name");
+					}
+				}
+				catch (Exception e)
+				{
+					activeChar.sendMessage("you fucked it up");
+				}
+			}
+			return true;
 		}
 		else if (command.startsWith("admin_delete_ghost"))
 		{

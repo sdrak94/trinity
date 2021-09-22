@@ -1806,7 +1806,7 @@ public final class L2ItemInstance extends L2Object
 			statement.setInt(8, getMana());
 			statement.setLong(9, getTime());
 			statement.setLong(10, _untradeableTime);
-			statement.setInt(11, getVisualItemId());
+			statement.setInt(11, getVisualItemIdForDb());
 			statement.setLong(12, this.getVisualTimer());
 			statement.setInt(13, getObjectId());
 			statement.executeUpdate();
@@ -1864,7 +1864,7 @@ public final class L2ItemInstance extends L2Object
 			statement.setLong(12, _untradeableTime);
 			statement.setString(13, _source);
 			statement.setString(14, _instanceDroppedFrom);
-			statement.setInt(15, getVisualItemId());
+			statement.setInt(15, getVisualItemIdForDb());
 			statement.setLong(16, getVisualTimer());
 			statement.executeUpdate();
 			_existsInDb = true;
@@ -2724,6 +2724,11 @@ public final class L2ItemInstance extends L2Object
 		return _visualItemId;
 	}
 	
+	public int getVisualItemIdForDb()
+	{
+		return _visualItemId;
+	}
+	
 	public void setVisualItemId(int itemId)
 	{
 		_visualItemId = itemId;
@@ -2750,8 +2755,6 @@ public final class L2ItemInstance extends L2Object
 	{
 		_tryingItemId = itemId;
 	}
-	
-
 	
 	private boolean _fakeTempItem = false;
 	

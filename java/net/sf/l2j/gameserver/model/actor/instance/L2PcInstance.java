@@ -297,6 +297,7 @@ import net.sf.l2j.util.Rnd;
 public class L2PcInstance extends L2Playable
 {
 	private final Map<String, Object>	quickVars								= new ConcurrentHashMap<>();
+	private boolean _isTrying = false;
 	private static final int[]			TRANSFORMATION_ALLOWED_SKILLS			=
 	{
 		3, 8, 9, 10, 18, 22, 28, 33, 65, 67, 78, 86, 98, 110, 144, 190, 196, 197, 223, 278, 279, 283, 912, 9009, 289, 293, 320, 361, 362, 400, 401, 402, 403, 404, 406, 407, 437, 440, 449, 494, 539, 540, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 619, 629, 630, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 795, 796, 797, 798, 814, 815, 816, 817, 838, 839, 884, 885, 886, 887, 888, 891, 896, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 911, 1015, 1016, 1018, 1027, 1028, 1034, 1042, 1043, 1201, 1206, 1217, 1264, 1266,
@@ -20311,7 +20312,7 @@ public class L2PcInstance extends L2Playable
 		}
 		else
 		{
-			System.out.println("Temp HWID:" + Rnd.get(0, 99999999));
+			System.out.println(getName() + " Temp HWID:" + Rnd.get(0, 99999999));
 			return "Temp HWID:" + Rnd.get(0, 99999999);
 		}
 	}
@@ -23625,4 +23626,12 @@ public class L2PcInstance extends L2Playable
 			_autoPotTasks.remove(id);
 		}
 	}
+	public boolean isTrying()
+	{
+		return _isTrying;
+	}
+	public void setIsTrying(boolean val)
+	{
+		_isTrying = val;
+	}	
 }

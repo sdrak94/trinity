@@ -1046,6 +1046,11 @@ public abstract class L2Item
 		return true;
 	}
 	
+	public boolean isPvpWeapon()
+	{
+		return (_itemId >= 81000 && _itemId <= 81020) || (_itemId >= 80000 && _itemId <= 80017);
+	}
+	
 	public boolean isCorrupted()
 	{
 		return getUniqueness() >= 4.5 && getName().contains("Corrupted");

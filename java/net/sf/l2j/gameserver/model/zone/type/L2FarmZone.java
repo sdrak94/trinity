@@ -192,8 +192,8 @@ public class L2FarmZone extends L2ZoneType
 
 						if (character instanceof Ghost || player instanceof Ghost)
 							continue;
-						String HWID = player.getClient().getIP();
-						String HWID2 = character.getActingPlayer().getIP();
+						String HWID = player.getHWID();
+						String HWID2 = character.getActingPlayer().getHWID();
 						if (HWID == null || HWID2 == null || character.getActingPlayer().getName().equalsIgnoreCase("sirvieta"))
 							continue;
 						if (HWID.equalsIgnoreCase(HWID2))

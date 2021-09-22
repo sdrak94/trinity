@@ -329,6 +329,17 @@ public abstract class AbstractEnchantPacket extends L2GameClientPacket
 							chance -= 50;
 							break;
 					}
+					if(enchantItem.getWeaponItem().isPvpWeapon())
+					{
+						if (enchantItem.getEnchantLevel() >= 18)
+						{
+							chance -= 25;
+						}
+						else if (enchantItem.getEnchantLevel() >= 16)
+						{
+							chance -= 15;
+						}
+					}
 					if (enchantItem.isAtOrOverMustBreakEnchantLevel())
 					{
 						chance -= 7;
